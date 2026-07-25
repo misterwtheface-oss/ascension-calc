@@ -1,0 +1,1521 @@
+{
+ "class": "Warlock",
+ "slug": "warlock",
+ "pointCap": 51,
+ "trees": [
+  {
+   "name": "Affliction",
+   "accent": "#7a5fa8",
+   "background": "assets/icons/warlock/backgrounds/affliction.jpg"
+  },
+  {
+   "name": "Demonology",
+   "accent": "#3d9e5c",
+   "background": "assets/icons/warlock/backgrounds/demonology.jpg"
+  },
+  {
+   "name": "Destruction",
+   "accent": "#c04428",
+   "background": "assets/icons/warlock/backgrounds/destruction.jpg"
+  }
+ ],
+ "talents": {
+  "improved_curse_of_agony": {
+   "name": "Improved Curse of Agony",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Curse of Agony by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "suppression": {
+   "name": "Suppression",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to hit with spells by [V1]%, and reduces the mana cost of your Affliction spells by [V2]%.",
+   "rankValues": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     6
+    ]
+   ]
+  },
+  "improved_corruption": {
+   "name": "Improved Corruption",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Corruption by [V1]%, and increases the critical strike chance of your Seed of Corruption by [V2]%.",
+   "rankValues": [
+    [
+     2,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     10,
+     5
+    ]
+   ]
+  },
+  "improved_curse_of_weakness": {
+   "name": "Improved Curse of Weakness",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount of attack power reduced by your Curse of Weakness by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "improved_drain_soul": {
+   "name": "Improved Drain Soul",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Returns [V1]% of your maximum mana if the target is killed by you while you drain its soul. In addition, your Affliction spells generate [V2]% less threat.",
+   "rankValues": [
+    [
+     7,
+     10
+    ],
+    [
+     15,
+     20
+    ]
+   ]
+  },
+  "improved_life_tap": {
+   "name": "Improved Life Tap",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount of Mana awarded by your Life Tap spell by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "soul_siphon": {
+   "name": "Soul Siphon",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount drained by your Drain Life and Drain Soul spells by an additional [V1]% for each of your Affliction effects on the target, up to a maximum of [V2]% additional effect.",
+   "rankValues": [
+    [
+     3,
+     9
+    ],
+    [
+     6,
+     18
+    ]
+   ]
+  },
+  "improved_fear": {
+   "name": "Improved Fear",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Causes your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by [V1]% for 5 sec.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "fel_concentration": {
+   "name": "Fel Concentration",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the pushback suffered from damaging attacks while casting Drain Life, Drain Mana, Drain Soul, Unstable Affliction, and Haunt by [V1]%.",
+   "rankValues": [
+    [
+     23
+    ],
+    [
+     46
+    ],
+    [
+     70
+    ]
+   ]
+  },
+  "amplify_curse": {
+   "name": "Amplify Curse",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the global cooldown of your Curses by 0.5 sec."
+  },
+  "grim_reach": {
+   "name": "Grim Reach",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the range of your Affliction spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "nightfall": {
+   "name": "Nightfall",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Corruption and Drain Life spells a [V1]% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.\n\nThis chance increases by an additional [V1]% every time Shadow Trance does not trigger.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ]
+   ]
+  },
+  "empowered_corruption": {
+   "name": "Empowered Corruption",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of your Corruption spell by an amount equal to [V1]% of your spell power.",
+   "rankValues": [
+    [
+     12
+    ],
+    [
+     24
+    ],
+    [
+     36
+    ]
+   ]
+  },
+  "shadow_embrace": {
+   "name": "Shadow Embrace",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Your Shadow Bolt and Haunt spells apply the Shadow Embrace effect, increasing all shadow periodic damage dealt to the target by you by [V1]%, and reduces all periodic healing done to the target by [V2]%. Lasts for 12 sec. Stacks up to 3 times.",
+   "rankValues": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     10
+    ]
+   ]
+  },
+  "siphon_life": {
+   "name": "Siphon Life",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When you deal damage with your Corruption spell, you are instantly healed for 40% of the damage done. In addition, the damage done by your Corruption, Seed of Corruption and Unstable Affliction damage over time effects is increased by 5%."
+  },
+  "curse_of_exhaustion": {
+   "name": "Curse of Exhaustion",
+   "maxPts": 1,
+   "prereq": "amplify_curse",
+   "tooltipTemplate": "6% of base mana\nInstant cast\n\nReduces the target's movement speed by 30% for 12 sec. Only one Curse per Warlock can be active on any one target."
+  },
+  "improved_felhunter": {
+   "name": "Improved Felhunter",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Your Felhunter regains [V1]% of its maximum mana each time it hits with its Shadow Bite ability and the cooldown on that ability is reduced by [V2] sec. In addition, increases the effect of your Felhunter's Fel Intelligence by [V3]%.",
+   "rankValues": [
+    [
+     4,
+     2,
+     5
+    ],
+    [
+     8,
+     4,
+     10
+    ]
+   ]
+  },
+  "shadow_mastery": {
+   "name": "Shadow Mastery",
+   "maxPts": 5,
+   "prereq": "siphon_life",
+   "tooltipTemplate": "Increases the damage dealt or life drained by your Shadow spells and your Felhunter's Shadow Bite ability by [V1]%.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ],
+    [
+     9
+    ],
+    [
+     12
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "eradication": {
+   "name": "Eradication",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "When you deal damage with Corruption, you have 6% chance to increase your spell casting speed by [V1]% for 10 sec.",
+   "rankValues": [
+    [
+     6
+    ],
+    [
+     12
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "contagion": {
+   "name": "Contagion",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of Curse of Agony, Corruption and Seed of Corruption by [V1]% and reduces the chance your helpful Affliction spells and damage over time effects will be dispelled by an additional [V2]%.",
+   "rankValues": [
+    [
+     2,
+     10
+    ],
+    [
+     4,
+     15
+    ],
+    [
+     6,
+     20
+    ]
+   ]
+  },
+  "dark_pact": {
+   "name": "Dark Pact",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Instant cast\nDrains 305+SP*0.96 of your summoned demon's Mana, returning 100% to you."
+  },
+  "improved_howl_of_terror": {
+   "name": "Improved Howl of Terror",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the casting time of your Howl of Terror spell by [V1] sec.",
+   "rankValues": [
+    [
+     0.8
+    ],
+    [
+     1.5
+    ]
+   ]
+  },
+  "malediction": {
+   "name": "Malediction",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your spell damage by [V1]%, increases the periodic critical strike chance of your Corruption and Unstable Affliction spells by [V2]%, and makes your Curse of the Elements increase magic damage taken by an additional [V1]%.",
+   "rankValues": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     3,
+     9
+    ]
+   ]
+  },
+  "deaths_embrace": {
+   "name": "Death's Embrace",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount drained by your Drain Life by [V1]% while your health is at or below 20% health, and increases the damage done by your Shadow spells by [V2]% when your target is at or below 35% health.",
+   "iconFile": "death's_embrace",
+   "rankValues": [
+    [
+     10,
+     4
+    ],
+    [
+     20,
+     8
+    ],
+    [
+     30,
+     12
+    ]
+   ]
+  },
+  "unstable_affliction": {
+   "name": "Unstable Affliction",
+   "maxPts": 1,
+   "prereq": "contagion",
+   "tooltipTemplate": "15% of base mana\n1.5 sec cast\nShadow energy slowly destroys the target, causing 640 damage over 15 sec. In addition, if the Unstable Affliction is dispelled it will cause $*11.25;s1 damage to the dispeller and silence them for 5 sec. Only one Unstable Affliction or Immolate per Warlock can be active on any one target."
+  },
+  "pandemic": {
+   "name": "Pandemic",
+   "maxPts": 1,
+   "prereq": "unstable_affliction",
+   "tooltipTemplate": "Grants the periodic damage from your Corruption and Unstable Affliction spells the ability to critically hit for 100% increased damage, and increases the critical strike damage bonus of your Haunt spell by 100%."
+  },
+  "everlasting_affliction": {
+   "name": "Everlasting Affliction",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your Corruption and Unstable Affliction spells gain an additional [V1]% of your bonus spell damage, and your Drain Life, Drain Soul, Shadow Bolt, and Haunt spells have a [V2]% chance to reset the duration of your Corruption spell on the target.",
+   "rankValues": [
+    [
+     2,
+     33
+    ],
+    [
+     4,
+     66
+    ],
+    [
+     6,
+     100
+    ]
+   ]
+  },
+  "haunt": {
+   "name": "Haunt",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "12% of base mana\n1.5 sec cast        8 sec cooldown\nYou send a ghostly soul into the target, dealing 405 to 473 Shadow damage and increasing all damage done by your Shadow damage-over-time effects on the target by 20% for 12 sec. When the Haunt spell ends or is dispelled, the soul returns to you, healing you for 100% of the damage it did to the target."
+  },
+  "improved_healthstone": {
+   "name": "Improved Healthstone",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount of Health restored by your Healthstone by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "improved_imp": {
+   "name": "Improved Imp",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "demonic_embrace": {
+   "name": "Demonic Embrace",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your total Stamina by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "fel_synergy": {
+   "name": "Fel Synergy",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "You have a [V1]% chance to heal your pet for 15% of the amount of spell damage done by you.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ]
+   ]
+  },
+  "improved_health_funnel": {
+   "name": "Improved Health Funnel",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount of Health transferred by your Health Funnel spell by [V1]% and reduces the health cost by [V1]%. In addition, your summoned Demon takes [V2]% less damage while under the effect of your Health Funnel.",
+   "rankValues": [
+    [
+     10,
+     15
+    ],
+    [
+     20,
+     30
+    ]
+   ]
+  },
+  "demonic_brutality": {
+   "name": "Demonic Brutality",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by [V1]%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by [V2]%.",
+   "rankValues": [
+    [
+     10,
+     1
+    ],
+    [
+     20,
+     2
+    ],
+    [
+     30,
+     3
+    ]
+   ]
+  },
+  "fel_vitality": {
+   "name": "Fel Vitality",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by [V1]% and increases your maximum health and mana by [V2]%.",
+   "rankValues": [
+    [
+     5,
+     1
+    ],
+    [
+     10,
+     2
+    ],
+    [
+     15,
+     3
+    ]
+   ]
+  },
+  "dark_fixation": {
+   "name": "Dark Fixation",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Requires: Dark Apotheosis\nIncreases your armor by [V1]% of your spell power. Damage dealt to yourself with Life Tap is converted into an absorb shield equal to [V2]% of the self-inflicted damage.",
+   "rankValues": [
+    [
+     100,
+     50
+    ],
+    [
+     200,
+     100
+    ]
+   ]
+  },
+  "improved_succubus": {
+   "name": "Improved Succubus",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cast time of your Succubus' Seduction by [V1]%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by [V2]%.",
+   "rankValues": [
+    [
+     22,
+     10
+    ],
+    [
+     44,
+     20
+    ],
+    [
+     66,
+     30
+    ]
+   ]
+  },
+  "soul_link": {
+   "name": "Soul Link",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Soul Link\n16% of base mana\nInstant cast\n\nWhen active, 20% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Felhunter, Felguard, or enslaved demon instead. That damage cannot be prevented. Lasts as long as the demon is active and controlled."
+  },
+  "fel_domination": {
+   "name": "Fel Domination",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Fel Domination\nInstant cast\t3 min cooldown\nYour next Imp, Voidwalker, Succubus, Felhunter or Felguard Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%."
+  },
+  "demonic_aegis": {
+   "name": "Demonic Aegis",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the effectiveness of your Demon Armor, Summoner's Armor and Fel Armor spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "unholy_power": {
+   "name": "Unholy Power",
+   "maxPts": 3,
+   "prereq": "soul_link",
+   "tooltipTemplate": "Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ]
+  },
+  "master_summoner": {
+   "name": "Master Summoner",
+   "maxPts": 2,
+   "prereq": "fel_domination",
+   "tooltipTemplate": "Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by [V1] sec and the Mana cost by [V2]%.",
+   "rankValues": [
+    [
+     2,
+     20
+    ],
+    [
+     4,
+     40
+    ]
+   ]
+  },
+  "mana_feed": {
+   "name": "Mana Feed",
+   "maxPts": 1,
+   "prereq": "unholy_power",
+   "tooltipTemplate": "Instant\nWhen you gain mana from Drain Mana or Life Tap spells, your summoned demon gains 100% of the mana you gain."
+  },
+  "master_conjuror": {
+   "name": "Master Conjuror",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the combat ratings gained from your conjured Firestone and Spellstone by [V1]%.",
+   "rankValues": [
+    [
+     150
+    ],
+    [
+     300
+    ]
+   ]
+  },
+  "taste_for_torment": {
+   "name": "Taste for Torment",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Requires: Dark Apotheosis\nSoul Gorge’s healing is increased by up to [V1]% of damage taken in the last 5 seconds. Searing Pain has a [V1]% chance to reset the cooldown of Soul Gorge.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "master_demonologist": {
+   "name": "Master Demonologist",
+   "maxPts": 5,
+   "prereq": "unholy_power",
+   "tooltipTemplate": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Increases your Fire damage by [V1]%, and increases the critical effect chance of your Fire spells by [V1]%.\n\nVoidwalker - Reduces Physical damage taken by [V2]%.\n\nSuccubus - Increases your Shadow damage by [V1]%, and increases the critical effect chance of your Shadow spells by [V1]%.\n\nFelhunter - Reduces all spell damage taken by [V2]%.\n\nFelguard - Increases all damage done by [V1]%, and reduces all damage taken by [V1]%.\n\nEnslaved Demons - Increases all damage done by [V1]%, and reduces all damage taken by [V1]%.",
+   "rankValues": [
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     5,
+     10
+    ]
+   ]
+  },
+  "molten_core": {
+   "name": "Molten Core",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the duration of your Immolate by 3 sec, and you have a [V1]% chance to gain the Molten Core effect when your Corruption deals damage. The Molten Core effect empowers your next 3 Incinerate or Soul Fire spells cast within 15 sec.\n\nIncinerate - Increases damage done by [V2]% and reduces cast time by [V3]%.\n\nSoul Fire - Increases damage done by [V2]% and increases critical strike chance by [V1]%.",
+   "rankValues": [
+    [
+     5,
+     6,
+     10
+    ],
+    [
+     10,
+     12,
+     20
+    ],
+    [
+     15,
+     18,
+     30
+    ]
+   ]
+  },
+  "demonic_resilience": {
+   "name": "Demonic Resilience",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the chance you'll be critically hit by melee and spells by [V1]% and reduces all damage your summoned demon takes by [V2]%.",
+   "rankValues": [
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     6,
+     15
+    ]
+   ]
+  },
+  "demonic_empowerment": {
+   "name": "Demonic Empowerment",
+   "maxPts": 1,
+   "prereq": "master_demonologist",
+   "tooltipTemplate": "6% of base mana\nInstant cast        1 min cooldown\nGrants the Warlock's summoned demon Empowerment.\n\nImp - Increases the Imp's spell critical strike chance by 20% for 30 sec.\n\nVoidwalker - Increases the Voidwalker's health by 20%, and its threat generated from spells and attacks by 20% for 20 sec.\n\nSuccubus - Instantly vanishes, causing the Succubus to go into an improved Invisibility state. The vanish effect removes all stuns, snares and movement impairing effects from the Succubus.\n\nFelhunter - Dispels all magical effects from the Felhunter.\n\nFelguard - Increases the Felguard's attack speed by 20% and breaks all stun, snare and movement impairing effects and makes your Felguard immune to them for 15 sec."
+  },
+  "demonic_knowledge": {
+   "name": "Demonic Knowledge",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your spell damage by an amount equal to [V1]% of the total of your active demon's Stamina plus Intellect.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     8
+    ],
+    [
+     12
+    ]
+   ]
+  },
+  "demonic_tactics": {
+   "name": "Demonic Tactics",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases melee and spell critical strike chance for you and your summoned demon by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "decimation": {
+   "name": "Decimation",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "When you Shadow Bolt, Incinerate or Soul Fire a target that is at or below 35% health, the cast time of Soul Fire spell is reduced by [V1]% for 10 sec. Soul Fires cast under the effect of Decimation cost no shard.",
+   "rankValues": [
+    [
+     20
+    ],
+    [
+     40
+    ]
+   ]
+  },
+  "improved_demonic_tactics": {
+   "name": "Improved Demonic Tactics",
+   "maxPts": 3,
+   "prereq": "demonic_tactics",
+   "tooltipTemplate": "Increases the critical strike chance of your summoned demon by an amount equal to [V1]% of your spell critical strike chance.\n\nAdditionally, when your pet is below 20% health, the damage it takes from your Soul Link is reduced by 30%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "summon_felguard": {
+   "name": "Summon Felguard",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Summons a Felguard under the command of the Warlock."
+  },
+  "nemesis": {
+   "name": "Nemesis",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Demonic Empowerment, Metamorphosis, Fel Domination and Reign of Dread spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "demonic_pact": {
+   "name": "Demonic Pact",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your spell damage by [V1]%, and your pet's criticals apply the Demonic Pact effect to yourself, party and raid members. Demonic Pact increases spell power by [V1]% of your Spell Damage for 45 sec. This effect has a 20 sec cooldown. Does not work on Enslaved demons.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "metamorphosis": {
+   "name": "Metamorphosis",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Metamorphosis\nInstant\nYou transform into a Demon for 30 sec. This form increases your armor by 600%, damage by 20%, reduces the chance you'll be critically hit by melee attacks by 6% and reduces the duration of stun and snare effects by 50%. You gain some unique demon abilities in addition to your normal abilities. 3 minute cooldown."
+  },
+  "reign_of_dread": {
+   "name": "Reign of Dread",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "15% of base mana\nChanneled        1 min cooldown\nRequires: Dark Apotheosis\nSurge into the air and scorch all enemies below with 1590 Shadowflame damage over 2 sec.\n\nWhile airborne, melee attacks against you have 60% increased chance to miss."
+  },
+  "improved_shadow_bolt": {
+   "name": "Improved Shadow Bolt",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Shadow Bolt spell by [V1]%, and your Shadow Bolt has a [V2]% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec.",
+   "rankValues": [
+    [
+     2,
+     20
+    ],
+    [
+     4,
+     40
+    ],
+    [
+     6,
+     60
+    ],
+    [
+     8,
+     80
+    ],
+    [
+     10,
+     100
+    ]
+   ]
+  },
+  "bane": {
+   "name": "Bane",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by [V1] sec and your Soul Fire spell by [V2] sec.",
+   "rankValues": [
+    [
+     0.1,
+     0.4
+    ],
+    [
+     0.2,
+     0.8
+    ],
+    [
+     0.3,
+     1.2
+    ],
+    [
+     0.4,
+     1.6
+    ],
+    [
+     0.5,
+     2
+    ]
+   ]
+  },
+  "aftermath": {
+   "name": "Aftermath",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the periodic damage done by your Immolate by [V1]%, and your Conflagrate has a [V2]% chance to daze the target for 5 sec.",
+   "rankValues": [
+    [
+     3,
+     50
+    ],
+    [
+     6,
+     100
+    ]
+   ]
+  },
+  "molten_skin": {
+   "name": "Molten Skin",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces all damage taken by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ]
+  },
+  "cataclysm": {
+   "name": "Cataclysm",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the Mana cost of your Destruction spells by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "demonic_power": {
+   "name": "Demonic Power",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Succubus' Lash of Pain spell by [V1] sec. and reduces the casting time of your Imp's Firebolt spell by [V2] sec.",
+   "rankValues": [
+    [
+     3,
+     0.25
+    ],
+    [
+     6,
+     0.5
+    ]
+   ]
+  },
+  "shadowburn": {
+   "name": "Shadowburn",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "20% of base mana\nInstant cast\t15 sec cooldown\nReagents:\nSoul Shard\n\nInstantly blasts the target for 104 to 116 Shadowflame damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
+  },
+  "ruin": {
+   "name": "Ruin",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by [V1]%.",
+   "rankValues": [
+    [
+     20
+    ],
+    [
+     40
+    ],
+    [
+     60
+    ],
+    [
+     80
+    ],
+    [
+     100
+    ]
+   ]
+  },
+  "intensity": {
+   "name": "Intensity",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the pushback suffered from damaging attacks while casting or channeling any Destruction spell by [V1]%.",
+   "rankValues": [
+    [
+     35
+    ],
+    [
+     70
+    ]
+   ]
+  },
+  "destructive_reach": {
+   "name": "Destructive Reach",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the range of your Destruction spells by [V1]% and reduces threat caused by Destruction spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "improved_searing_pain": {
+   "name": "Improved Searing Pain",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Searing Pain spell by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ]
+  },
+  "backlash": {
+   "name": "Backlash",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your critical strike chance with spells by an additional [V1]% and gives you a [V2]% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by 100%. This effect lasts 8 sec and will not occur more than once every 8 seconds.",
+   "rankValues": [
+    [
+     1,
+     8
+    ],
+    [
+     2,
+     16
+    ],
+    [
+     3,
+     25
+    ]
+   ]
+  },
+  "improved_immolate": {
+   "name": "Improved Immolate",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Immolate spell by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "devastation": {
+   "name": "Devastation",
+   "maxPts": 1,
+   "prereq": "ruin",
+   "tooltipTemplate": "Increases the critical strike chance of your Destruction spells by 5%."
+  },
+  "nether_protection": {
+   "name": "Nether Protection",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "After being hit with a spell, you have a [V1]% chance to gain Nether Protection, reducing all damage by that spell school by 30% for 8 sec.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "emberstorm": {
+   "name": "Emberstorm",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Fire and Shadow spells by [V1]% and reduces the cast time of your Incinerate spell by [V2] sec.",
+   "rankValues": [
+    [
+     3,
+     0.05
+    ],
+    [
+     6,
+     0.1
+    ],
+    [
+     9,
+     0.15
+    ],
+    [
+     12,
+     0.2
+    ],
+    [
+     15,
+     0.25
+    ]
+   ]
+  },
+  "conflagrate": {
+   "name": "Conflagrate",
+   "maxPts": 1,
+   "prereq": "improved_immolate",
+   "tooltipTemplate": "16% of base mana\nInstant cast        10 sec cooldown\nConsumes an Immolate or Shadowflame effect on the enemy target to instantly deal damage equal to 60% of your Immolate or Shadowflame, and causes an additional 40% damage over until cancelled."
+  },
+  "soul_leech": {
+   "name": "Soul Leech",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Shadow Bolt, Shadowburn, Chaos Bolt, Soul Fire, Incinerate, Searing Pain and Conflagrate spells a [V1]% chance to return health equal to 20% of the damage caused.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "pyroclasm": {
+   "name": "Pyroclasm",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "When you critically strike with Searing Pain or Conflagrate, your Fire and Shadow spell damage is increased by [V1]% for 10 sec.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ]
+  },
+  "shadow_and_flame": {
+   "name": "Shadow and Flame",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your Shadow Bolt, Shadowburn, Chaos Bolt and Incinerate spells gain an additional [V1]% of your bonus spell damage effects.",
+   "rankValues": [
+    [
+     7
+    ],
+    [
+     14
+    ],
+    [
+     20
+    ]
+   ]
+  },
+  "improved_soul_leech": {
+   "name": "Improved Soul Leech",
+   "maxPts": 2,
+   "prereq": "soul_leech",
+   "tooltipTemplate": "Your Soul Leech effect also restores mana to you and your summoned demon equal to [V1]% of maximum mana, and has a [V2]% chance to grant up to 10 party or raid members mana regeneration equal to 1% of maximum mana per 5 sec. Lasts for 15 sec.",
+   "rankValues": [
+    [
+     1,
+     50
+    ],
+    [
+     2,
+     100
+    ]
+   ]
+  },
+  "backdraft": {
+   "name": "Backdraft",
+   "maxPts": 3,
+   "prereq": "conflagrate",
+   "tooltipTemplate": "When you cast Conflagrate, the cast time and global cooldown of your next three Destruction spells is reduced by [V1]%. Lasts 15 sec.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ]
+  },
+  "shadowfury": {
+   "name": "Shadowfury",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "27% of base mana\nInstant cast\t20 sec cooldown\nShadowfury is unleashed, causing 343 to 407 Shadow damage and stunning all enemies within 8 yds for 3 sec."
+  },
+  "empowered_imp": {
+   "name": "Empowered Imp",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Imp's Firebolt by [V1]%, and all critical hits done by your Imp have a [V2]% chance to increase your spell critical hit chance for your next spell by 100%. This effect lasts 8 sec.",
+   "rankValues": [
+    [
+     10,
+     33
+    ],
+    [
+     20,
+     66
+    ],
+    [
+     30,
+     100
+    ]
+   ]
+  },
+  "fire_and_brimstone": {
+   "name": "Fire and Brimstone",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Incinerate and Chaos Bolt spells to targets afflicted by your Immolate by [V1]%, and the critical strike chance of your Conflagrate spell is increased by [V2]%.",
+   "rankValues": [
+    [
+     4,
+     9
+    ],
+    [
+     7,
+     17
+    ],
+    [
+     10,
+     25
+    ]
+   ]
+  },
+  "chaos_bolt": {
+   "name": "Chaos Bolt",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "7% of base mana\n2.5 sec cast        12 sec cooldown\nSends a bolt of chaotic fire at the enemy, dealing 870 to 1049 Shadowflame damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects."
+  }
+ },
+ "layout": {
+  "Affliction": [
+   [
+    "improved_curse_of_agony",
+    "suppression",
+    "improved_corruption",
+    null
+   ],
+   [
+    "improved_curse_of_weakness",
+    "improved_drain_soul",
+    "improved_life_tap",
+    "soul_siphon"
+   ],
+   [
+    "improved_fear",
+    "fel_concentration",
+    "amplify_curse",
+    null
+   ],
+   [
+    "grim_reach",
+    "nightfall",
+    null,
+    "empowered_corruption"
+   ],
+   [
+    "shadow_embrace",
+    "siphon_life",
+    "curse_of_exhaustion",
+    null
+   ],
+   [
+    "improved_felhunter",
+    "shadow_mastery",
+    null,
+    null
+   ],
+   [
+    "eradication",
+    "contagion",
+    "dark_pact",
+    null
+   ],
+   [
+    "improved_howl_of_terror",
+    null,
+    "malediction",
+    null
+   ],
+   [
+    "deaths_embrace",
+    "unstable_affliction",
+    "pandemic",
+    null
+   ],
+   [
+    null,
+    "everlasting_affliction",
+    null,
+    null
+   ],
+   [
+    null,
+    "haunt",
+    null,
+    null
+   ]
+  ],
+  "Demonology": [
+   [
+    "improved_healthstone",
+    "improved_imp",
+    "demonic_embrace",
+    "fel_synergy"
+   ],
+   [
+    "improved_health_funnel",
+    "demonic_brutality",
+    "fel_vitality",
+    "dark_fixation"
+   ],
+   [
+    "improved_succubus",
+    "soul_link",
+    "fel_domination",
+    "demonic_aegis"
+   ],
+   [
+    null,
+    "unholy_power",
+    "master_summoner",
+    null
+   ],
+   [
+    "mana_feed",
+    null,
+    "master_conjuror",
+    "taste_for_torment"
+   ],
+   [
+    null,
+    "master_demonologist",
+    "molten_core",
+    null
+   ],
+   [
+    "demonic_resilience",
+    "demonic_empowerment",
+    "demonic_knowledge",
+    null
+   ],
+   [
+    null,
+    "demonic_tactics",
+    "decimation",
+    null
+   ],
+   [
+    "improved_demonic_tactics",
+    "summon_felguard",
+    "nemesis",
+    null
+   ],
+   [
+    null,
+    "demonic_pact",
+    null,
+    null
+   ],
+   [
+    null,
+    "metamorphosis",
+    "reign_of_dread",
+    null
+   ]
+  ],
+  "Destruction": [
+   [
+    null,
+    "improved_shadow_bolt",
+    "bane",
+    null
+   ],
+   [
+    "aftermath",
+    "molten_skin",
+    "cataclysm",
+    null
+   ],
+   [
+    "demonic_power",
+    "shadowburn",
+    "ruin",
+    null
+   ],
+   [
+    "intensity",
+    "destructive_reach",
+    null,
+    "improved_searing_pain"
+   ],
+   [
+    "backlash",
+    "improved_immolate",
+    "devastation",
+    null
+   ],
+   [
+    "nether_protection",
+    null,
+    "emberstorm",
+    null
+   ],
+   [
+    null,
+    "conflagrate",
+    "soul_leech",
+    "pyroclasm"
+   ],
+   [
+    null,
+    "shadow_and_flame",
+    "improved_soul_leech",
+    null
+   ],
+   [
+    "backdraft",
+    "shadowfury",
+    "empowered_imp",
+    null
+   ],
+   [
+    null,
+    "fire_and_brimstone",
+    null,
+    null
+   ],
+   [
+    null,
+    "chaos_bolt",
+    null,
+    null
+   ]
+  ]
+ }
+}

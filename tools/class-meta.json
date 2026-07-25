@@ -1,0 +1,10 @@
+{
+  "warlock": {
+    "name": "Warlock",
+    "trees": {
+      "Affliction": "#7a5fa8",
+      "Demonology": "#3d9e5c",
+      "Destruction": "#c04428"
+    }
+  }
+}

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talent Calculator | Ascension Classic+</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/*
+  Tree-reactive accent system — accents are set from class data at runtime
+  (inline custom properties on <html>); :root holds the neutral brass used
+  on the Summary and Enchants tabs.
+*/
+:root {
+  --accent:        #8a7868;
+  --accent-border: rgba(138, 120, 104, 0.2);
+  --accent-glow:   rgba(138, 120, 104, 0.28);
+}
+
+body {
+  background: #060810;
+  color: #7a6e80;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 28px 12px;
+}
+
+/* Sized so five tabs fit the longest spec names in one line
+   (e.g. Hunter's "Beast Mastery" + point badge ≈ 125px per tab) */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+}
+
+/* ── Header ─────────────────────────────────────── */
+.calc-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.calc-title {
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #e8dcc8;
+  line-height: 1;
+}
+.calc-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #58505e;
+  margin-top: 7px;
+}
+.header-right { text-align: right; }
+.pts-count {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  color: var(--accent);
+  line-height: 1;
+}
+.pts-count .pts-denom { color: #3e3848; font-size: 17px; }
+.pts-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4a4458;
+  margin-top: 3px;
+}
+.reset-btn {
+  margin-top: 7px;
+  font-size: 11px;
+  color: #4a4458;
+  background: none;
+  border: 1px solid #2a2430;
+  border-radius: 2px;
+  padding: 3px 9px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.15s, border-color 0.15s;
+}
+.reset-btn:hover { color: #904030; border-color: #904030; }
+
+/* ── Container — tab header + panel body as one framed unit ── */
+.calc-container {
+  background: #0c0b14;
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ── Tab bar — header strip inside the container ── */
+.tab-bar {
+  display: flex;
+  background: #110f1b;
+  border-bottom: 1px solid var(--accent-border);
+}
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #524a60;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  white-space: nowrap;
+  transition: color 0.15s, background 0.15s;
+}
+.tab + .tab { border-left: 1px solid #17131f; }
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 10%; right: 10%;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+}
+.tab:hover { color: #7a7090; }
+.tab.active { color: var(--accent); background: #0c0b14; }
+.tab.active::after { opacity: 1; }
+.tab-pts {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  opacity: 0.65;
+  margin-left: 2px;
+}
+
+/* ── Panel area ──────────────────────────────────── */
+.panel-area {
+  padding: 16px;
+}
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ── Tree wrap + grid ────────────────────────────── */
+.tree-wrap {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  z-index: 1;
+}
+/* Tree background art — sharp copy behind the grid, veiled so icons stay
+   legible. --tree-bg is set per tree from class data. */
+.tree-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -16px;
+  border-radius: 3px;
+  background-image: linear-gradient(rgba(8,7,14,0.42), rgba(8,7,14,0.68)), var(--tree-bg);
+  background-size: cover;
+  background-position: center top;
+  pointer-events: none;
+}
+/* Ambient fill — blurred copy of the same art floods the whole panel,
+   so the flat container never shows as bars beside the sharp art */
+.tree-panel {
+  position: relative;
+  overflow: hidden;
+  margin: -16px;
+  padding: 16px;
+}
+.tree-panel::before {
+  content: '';
+  position: absolute;
+  inset: -32px;
+  background-image: var(--tree-bg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(13px) brightness(0.55);
+  pointer-events: none;
+}
+.tree-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 58px);
+  grid-template-rows: repeat(11, 58px);
+  gap: 12px 5px; /* row gap must match ROW_GAP in the JS */
+  position: relative;
+  z-index: 1;
+}
+.talent-cell {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.talent-icon {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #141020;
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0810;
+  cursor: pointer;
+  transition: filter 0.12s;
+  user-select: none;
+}
+.talent-icon.unavailable {
+  filter: grayscale(100%) brightness(0.22);
+  cursor: default;
+}
+/* Available or partially filled: WoW green — points can still go here */
+.talent-icon.available,
+.talent-icon.partial {
+  border-color: #1eff00;
+  filter: brightness(0.85);
+}
+.talent-icon.available:hover,
+.talent-icon.partial:hover { filter: brightness(1.05); }
+/* Maxed: WoW gold, full brightness */
+.talent-icon.maxed {
+  border-color: #ffd100;
+  filter: brightness(1.0);
+  box-shadow: 0 0 9px rgba(255, 209, 0, 0.28);
+}
+.point-counter {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  line-height: 1;
+  pointer-events: none;
+}
+.talent-icon.available .point-counter,
+.talent-icon.partial .point-counter   { color: #1eff00; }
+.talent-icon.maxed .point-counter     { color: #ffd100; }
+.talent-icon.unavailable .point-counter { color: #808080; }
+.connector-svg {
+  position: absolute;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Arrow CSS — thick WoW-style shafts; head color comes from the per-state markers */
+.connector-svg path { stroke-width: 6; stroke-linejoin: miter; }
+.arr-active   { stroke: #c9a227; }
+.arr-inactive { stroke: #505050; }
+
+/* ── Summary panel ───────────────────────────────── */
+/* --sum-accent / --sum-accent-border are set per tree card from class data */
+.sum-trees { display: flex; flex-direction: column; gap: 8px; }
+.sum-tree {
+  border: 1px solid #181420;
+  border-radius: 3px;
+  padding: 10px 14px;
+  background: #09080f;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.sum-tree:hover { border-color: var(--sum-accent-border); }
+.sum-tree-row { display: flex; justify-content: space-between; align-items: baseline; }
+.sum-tree-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6a6278;
+}
+.sum-tree-pts {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--sum-accent);
+}
+.sum-invested {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.sum-empty { font-size: 12px; font-weight: 500; color: #5a5268; }
+.sum-talent { display: flex; gap: 11px; align-items: flex-start; }
+.sum-talent-icon {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--sum-accent); /* spec identity borders in the summary */
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0810;
+}
+.sum-talent-head {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e8dcc8;
+}
+.sum-talent-rank {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  font-weight: bold;
+  color: #1eff00;
+  margin-left: 5px;
+}
+.sum-talent.maxed .sum-talent-rank { color: #ffd100; }
+.sum-talent-body {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #8a8290;
+  line-height: 1.5;
+  margin-top: 2px;
+  white-space: pre-wrap;
+}
+.sum-hint {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #4a4458;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Mystic Enchants — radial slot board ─────────── */
+.enchant-board {
+  position: relative;
+  width: 336px;
+  height: 336px;
+  margin: 22px auto 4px;
+}
+.enchant-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+.enchant-ring-outer { left: 8px;  top: 8px;  width: 320px; height: 320px; }
+.enchant-ring-inner { left: 68px; top: 68px; width: 200px; height: 200px; }
+.enchant-slot {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(11, 12, 18, 0.9);
+  border: 2px dashed;
+  cursor: pointer;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.enchant-slot.artifact  { border-color: rgba(230, 204, 128, 0.45); }
+.enchant-slot.legendary { border-color: rgba(255, 128, 0, 0.45); }
+.enchant-slot.epic      { border-color: rgba(163, 53, 238, 0.45); }
+.enchant-slot.rare      { border-color: rgba(0, 112, 221, 0.45); }
+.enchant-slot.artifact:hover  { border-color: #e6cc80; box-shadow: 0 0 10px rgba(230, 204, 128, 0.3); }
+.enchant-slot.legendary:hover { border-color: #ff8000; box-shadow: 0 0 10px rgba(255, 128, 0, 0.3); }
+.enchant-slot.epic:hover      { border-color: #a335ee; box-shadow: 0 0 10px rgba(163, 53, 238, 0.3); }
+.enchant-slot.rare:hover      { border-color: #0070dd; box-shadow: 0 0 10px rgba(0, 112, 221, 0.3); }
+.enchant-legend {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 11px;
+  color: #8a8290;
+  margin-top: 10px;
+}
+.enchant-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.enchants-ph {
+  text-align: center;
+  color: #5a5268;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  padding: 14px 0 6px;
+}
+
+/* ── Interaction hint ────────────────────────────── */
+.interact-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #4a4458;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Load error ──────────────────────────────────── */
+.load-error {
+  text-align: center;
+  color: #904030;
+  font-size: 13px;
+  padding: 40px 0;
+}
+
+/* ── Tooltip ─────────────────────────────────────── */
+.tooltip {
+  display: none;
+  position: fixed;
+  background: #080810;
+  border: 1px solid var(--accent-border);
+  border-radius: 3px;
+  padding: 12px 14px;
+  max-width: 280px;
+  z-index: 1000;
+  pointer-events: none;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.tooltip.visible { display: block; }
+.tt-name {
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #e8dcc8;
+  margin-bottom: 2px;
+}
+.tt-rank {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+.tt-prereq { color: #b05030; font-size: 11px; margin-top: 7px; letter-spacing: 0.02em; }
+.tt-body { font-family: Georgia, serif; font-size: 13px; color: #9a9098; white-space: pre-wrap; }
+.tt-next { margin-top: 9px; padding-top: 9px; border-top: 1px solid var(--accent-border); }
+.tt-next-label { font-family: 'Courier New', Courier, monospace; font-size: 10px; color: var(--accent); opacity: 0.7; margin-bottom: 4px; }
+.tt-next-body { font-family: Georgia, serif; font-size: 12px; color: #6a6278; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="calc-header">
+    <div>
+      <div class="calc-title" id="calc-title">&nbsp;</div>
+      <div class="calc-subtitle">Talent Calculator — Ascension Classic+</div>
+    </div>
+    <div class="header-right">
+      <div class="pts-count"><span id="total-spent">0</span><span class="pts-denom" id="pts-denom"> / 51</span></div>
+      <div class="pts-label">talent points</div>
+      <button class="reset-btn" id="reset-btn">Reset</button>
+    </div>
+  </div>
+
+  <div class="calc-container">
+
+  <div class="tab-bar" id="tab-bar"></div>
+
+  <div class="panel-area" id="panel-area">
+
+    <div class="panel active" id="panel-summary">
+      <div class="sum-trees" id="sum-trees"></div>
+      <div class="sum-hint">Click a tree to open it</div>
+    </div>
+
+    <div class="panel" id="panel-enchants">
+      <div class="enchant-board" id="enchant-board">
+        <div class="enchant-ring enchant-ring-outer"></div>
+        <div class="enchant-ring enchant-ring-inner"></div>
+      </div>
+      <div class="enchant-legend">
+        <span><i class="enchant-dot" style="background:#e6cc80"></i>Artifact</span>
+        <span><i class="enchant-dot" style="background:#ff8000"></i>Legendary</span>
+        <span><i class="enchant-dot" style="background:#a335ee"></i>Epic</span>
+        <span><i class="enchant-dot" style="background:#0070dd"></i>Rare</span>
+      </div>
+      <div class="enchants-ph">Enchant data coming soon — slots shown empty</div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <div class="interact-hint">Left-click to add · Right-click to remove</div>
+</div>
+
+<div class="tooltip" id="tooltip">
+  <div class="tt-name" id="tt-name"></div>
+  <div class="tt-rank" id="tt-rank"></div>
+  <div class="tt-body" id="tt-body"></div>
+  <div class="tt-next" id="tt-next" style="display:none">
+    <div class="tt-next-label" id="tt-next-label"></div>
+    <div class="tt-next-body" id="tt-next-body"></div>
+  </div>
+  <div class="tt-prereq" id="tt-prereq"></div>
+</div>
+
+<script>
+// ─── CLASS DATA ──────────────────────────────────────────────────────────────
+// The engine is class-agnostic. Class data comes from either:
+//   1. window.CLASS_DATA  — inlined by the skill for standalone offline artifacts
+//   2. data/<class>.json  — fetched when hosted (?class=warlock selects the class)
+let DATA, T, LAYOUT, TREE_NAMES, ICON_BASE, POINT_CAP;
+
+// ─── GRID GEOMETRY — 4 columns; row gap wider than column gap for arrow room ──
+const COL_W = 58;
+const ROW_H = 58;
+const GAP     = 5;  // column gap
+const ROW_GAP = 12; // row gap — must match .tree-grid CSS
+const STEP     = COL_W + GAP;
+const ROW_STEP = ROW_H + ROW_GAP;
+const SVG_W = 4 * COL_W + 3 * GAP;
+const SVG_H = 11 * ROW_H + 10 * ROW_GAP;
+
+function cx(col)        { return col * STEP + COL_W / 2; }
+function cy(row)        { return row * ROW_STEP + ROW_H / 2; }
+function cellBottom(row){ return row * ROW_STEP + ROW_H; }
+function cellTop(row)   { return row * ROW_STEP; }
+
+// ─── STATE & LOOKUP ──────────────────────────────────────────────────────────
+const pts = {};
+const pos = {};
+
+function talentPts(key) { return pts[key] || 0; }
+function treePts(tree)  { return LAYOUT[tree].flat().filter(Boolean).reduce((s,k) => s + talentPts(k), 0); }
+function totalPts()     { return Object.values(pts).reduce((s,v) => s + v, 0); }
+
+function getIconSrc(key) {
+  const file = T[key].iconFile || key;
+  return ICON_BASE + file + '.jpg';
+}
+
+function talentState(key) {
+  const t = T[key], p = talentPts(key);
+  if (p >= t.maxPts) return 'maxed';
+  if (p > 0)         return 'partial';
+  const { tree, row } = pos[key];
+  if (treePts(tree) < row * 5) return 'unavailable';
+  if (t.prereq && talentPts(t.prereq) < T[t.prereq].maxPts) return 'unavailable';
+  // Point pool exhausted: untouched talents dim exactly like level-locked ones
+  if (totalPts() >= POINT_CAP) return 'unavailable';
+  return 'available';
+}
+
+function canAdd(key) {
+  if (totalPts() >= POINT_CAP) return false;
+  const s = talentState(key);
+  return s === 'available' || s === 'partial';
+}
+
+function canRemove(key) {
+  if (talentPts(key) <= 0) return false;
+  const { tree, row } = pos[key];
+  pts[key] = (pts[key] || 0) - 1;
+  let ok = true;
+  LAYOUT[tree].forEach((r, ri) => {
+    if (ri <= row) return;
+    if (treePts(tree) < ri * 5) {
+      r.forEach(k => { if (k && talentPts(k) > 0) ok = false; });
+    }
+  });
+  if (ok) {
+    Object.entries(T).forEach(([k, t]) => {
+      if (t.prereq === key && talentPts(k) > 0 && talentPts(key) < T[key].maxPts) ok = false;
+    });
+  }
+  pts[key]++;
+  return ok;
+}
+
+// ─── ACCENTS ─────────────────────────────────────────────────────────────────
+function hexRgb(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+function rgba(hex, a) { return `rgba(${hexRgb(hex).join(', ')}, ${a})`; }
+
+// ─── RENDERING ───────────────────────────────────────────────────────────────
+function buildArrows(tree) {
+  const tid = tree.toLowerCase().replace(/[^a-z0-9]+/g, '-'); // marker namespace per tree
+  const lines = [];
+  LAYOUT[tree].forEach((row, r) => {
+    row.forEach((key, c) => {
+      if (!key || !T[key].prereq) return;
+      const prereq = T[key].prereq;
+      if (!pos[prereq] || pos[prereq].tree !== tree) return;
+      const pr = pos[prereq].row, pc = pos[prereq].col;
+      if (pr === r) return; // same-row prereqs: tooltip handles it
+      const active = talentPts(prereq) >= T[prereq].maxPts;
+      const tx = cx(c);
+      // Shaft stops at the head's base; the 9px marker extends beyond it,
+      // so the tip lands 1px under the target icon border without overshoot.
+      const shaftEnd = cellTop(r) - 5;
+      let path;
+      if (pc === c) {
+        // straight drop from prereq bottom
+        path = `M${tx},${cellBottom(pr) - 4} L${tx},${shaftEnd}`;
+      } else {
+        // WoW-style elbow: exit the prereq's flank at center height, across, then down
+        const dir = c < pc ? -1 : 1;
+        path = `M${cx(pc) + dir * 20},${cy(pr)} L${tx},${cy(pr)} L${tx},${shaftEnd}`;
+      }
+      const cls = active ? 'arr-active' : 'arr-inactive';
+      // Markers can't inherit the path's color (currentColor resolves at the
+      // definition site), so active/inactive use separately-filled markers.
+      lines.push(`<path class="${cls}" d="${path}" fill="none" marker-end="url(#${tid}-arrow-${active ? 'on' : 'off'})"/>`);
+    });
+  });
+  return `<svg class="connector-svg" width="${SVG_W}" height="${SVG_H}" viewBox="0 0 ${SVG_W} ${SVG_H}">
+  <defs>
+    <marker id="${tid}-arrow-on" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="12" refX="0" refY="6" orient="auto">
+      <path d="M0,0 L0,12 L9,6 z" fill="#c9a227"/>
+    </marker>
+    <marker id="${tid}-arrow-off" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="12" refX="0" refY="6" orient="auto">
+      <path d="M0,0 L0,12 L9,6 z" fill="#505050"/>
+    </marker>
+  </defs>
+  ${lines.join('\n  ')}
+</svg>`;
+}
+
+function buildCell(key) {
+  const cell = document.createElement('div');
+  cell.className = 'talent-cell';
+  if (!key) return cell;
+
+  const t = T[key], p = talentPts(key), state = talentState(key);
+  const icon = document.createElement('div');
+  icon.className = `talent-icon ${state}`;
+  icon.style.backgroundImage = `url("${getIconSrc(key)}")`;
+  icon.dataset.key = key;
+
+  const counter = document.createElement('span');
+  counter.className = 'point-counter';
+  counter.textContent = `${p}/${t.maxPts}`;
+  icon.appendChild(counter);
+
+  icon.addEventListener('click', e => {
+    e.preventDefault();
+    if (canAdd(key)) { pts[key] = (pts[key] || 0) + 1; refresh(); }
+  });
+  icon.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    if (canRemove(key)) { pts[key]--; refresh(); }
+  });
+  icon.addEventListener('mouseenter', e => showTip(key, e));
+  icon.addEventListener('mousemove', moveTip);
+  icon.addEventListener('mouseleave', hideTip);
+
+  cell.appendChild(icon);
+  return cell;
+}
+
+function refresh() {
+  document.getElementById('total-spent').textContent = totalPts();
+  syncUrl();
+
+  TREE_NAMES.forEach(tree => {
+    const tp = treePts(tree);
+
+    // Tab badge
+    document.getElementById(`badge-${tree}`).textContent = tp;
+
+    // Summary panel — icon + current-rank tooltip per invested talent,
+    // in tree order (left to right, top to bottom)
+    document.getElementById(`sum-pts-${tree}`).textContent = tp;
+    const invested = LAYOUT[tree].flat().filter(k => k && talentPts(k) > 0);
+    const inv = document.getElementById(`sum-inv-${tree}`);
+    inv.innerHTML = '';
+    if (!invested.length) {
+      const empty = document.createElement('div');
+      empty.className = 'sum-empty';
+      empty.textContent = '—';
+      inv.appendChild(empty);
+    } else {
+      invested.forEach(k => {
+        const t = T[k], p = talentPts(k);
+        const row = document.createElement('div');
+        row.className = 'sum-talent' + (p >= t.maxPts ? ' maxed' : '');
+
+        const ic = document.createElement('div');
+        ic.className = 'sum-talent-icon';
+        ic.style.backgroundImage = `url("${getIconSrc(k)}")`;
+
+        const txt = document.createElement('div');
+        const head = document.createElement('div');
+        head.className = 'sum-talent-head';
+        head.textContent = t.name;
+        const rank = document.createElement('span');
+        rank.className = 'sum-talent-rank';
+        rank.textContent = `${p}/${t.maxPts}`;
+        head.appendChild(rank);
+        const body = document.createElement('div');
+        body.className = 'sum-talent-body';
+        body.textContent = getTooltipText(t, p);
+        txt.append(head, body);
+
+        row.append(ic, txt);
+        inv.appendChild(row);
+      });
+    }
+
+    // Tree grid
+    const grid = document.getElementById(`grid-${tree}`);
+    grid.innerHTML = '';
+    LAYOUT[tree].forEach(row => row.forEach(key => grid.appendChild(buildCell(key))));
+
+    // Arrows
+    const wrap = document.getElementById(`wrap-${tree}`);
+    const old = wrap.querySelector('.connector-svg');
+    if (old) old.remove();
+    wrap.insertAdjacentHTML('afterbegin', buildArrows(tree));
+  });
+}
+
+// ─── TABS ────────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  // Tree-reactive accents: set inline custom props for tree tabs,
+  // clear them on Summary/Enchants so :root's neutral brass returns.
+  const tr = DATA.trees.find(t => t.name === tab);
+  const rootStyle = document.documentElement.style;
+  if (tr) {
+    rootStyle.setProperty('--accent', tr.accent);
+    rootStyle.setProperty('--accent-border', rgba(tr.accent, 0.22));
+    rootStyle.setProperty('--accent-glow', rgba(tr.accent, 0.32));
+  } else {
+    ['--accent', '--accent-border', '--accent-glow'].forEach(p => rootStyle.removeProperty(p));
+  }
+  document.querySelectorAll('.tab').forEach(el =>
+    el.classList.toggle('active', el.dataset.tab === tab));
+  document.querySelectorAll('.panel').forEach(el =>
+    el.classList.toggle('active', el.id === `panel-${tab}`));
+}
+
+// ─── TOOLTIP ─────────────────────────────────────────────────────────────────
+const tip = document.getElementById('tooltip');
+
+// Returns the tooltip body text for a talent at a specific point investment.
+//   t.tooltipTemplate = 'Increases damage by [V1]%, crit by [V2]%.'
+//   t.rankValues      = [[2,1],[4,2],[6,3],[8,4],[10,5]]
+//   pts=0 → all values slashed: "2/4/6/8/10%", "1/2/3/4/5%"
+//   pts=N → rank N values substituted
+function getTooltipText(t, ptsIn) {
+  if (!t.tooltipTemplate) return '';
+  if (!t.rankValues) return t.tooltipTemplate; // static talent — no substitution
+  const rv = t.rankValues;
+  if (ptsIn === 0) {
+    let text = t.tooltipTemplate.replace(/\[Rank\]/g, rv.map((_, i) => i + 1).join('/'));
+    rv[0].forEach((_, vi) => {
+      text = text.replace(new RegExp(`\\[V${vi + 1}\\]`, 'g'), rv.map(r => r[vi]).join('/'));
+    });
+    return text;
+  }
+  const rank = rv[Math.min(ptsIn, rv.length) - 1];
+  let text = t.tooltipTemplate.replace(/\[Rank\]/g, ptsIn);
+  rank.forEach((v, vi) => { text = text.replace(new RegExp(`\\[V${vi + 1}\\]`, 'g'), v); });
+  return text;
+}
+
+function showTip(key, e) {
+  const t = T[key], p = talentPts(key);
+
+  document.getElementById('tt-name').textContent = t.name;
+
+  // Rank line — unallocated multi-rank talents show the full range "Rank 1/2/3"
+  if (p === 0 && t.maxPts > 1) {
+    document.getElementById('tt-rank').textContent =
+      `Rank ${Array.from({length: t.maxPts}, (_, i) => i + 1).join('/')}`;
+  } else {
+    document.getElementById('tt-rank').textContent = `Rank ${Math.max(1, p)} / ${t.maxPts}`;
+  }
+
+  document.getElementById('tt-body').textContent = getTooltipText(t, p);
+
+  // Next rank section — only when allocated but not maxed
+  const nextEl    = document.getElementById('tt-next');
+  const nextLabel = document.getElementById('tt-next-label');
+  const nextBody  = document.getElementById('tt-next-body');
+  if (p > 0 && p < t.maxPts) {
+    nextLabel.textContent = `Rank ${p + 1} →`;
+    nextBody.textContent  = getTooltipText(t, p + 1);
+    nextEl.style.display  = '';
+  } else {
+    nextEl.style.display  = 'none';
+  }
+
+  document.getElementById('tt-prereq').textContent =
+    t.prereq ? `Requires: ${T[t.prereq].name} (maxed)` : '';
+
+  tip.classList.add('visible');
+  moveTip(e);
+}
+function moveTip(e) {
+  tip.style.left = `${Math.min(e.clientX + 14, window.innerWidth  - 280)}px`;
+  tip.style.top  = `${Math.min(e.clientY + 14, window.innerHeight - 220)}px`;
+}
+function hideTip() { tip.classList.remove('visible'); }
+
+// ─── MYSTIC ENCHANT BOARD ────────────────────────────────────────────────────
+// 11 slots: 1 Legendary center, 3 Epic on the inner ring (120° apart from top),
+// 1 Artifact + 6 Rare on the outer ring (evenly spaced at 360/7°, Artifact at bottom).
+function buildEnchantBoard() {
+  const board = document.getElementById('enchant-board');
+  const CXB = 168, CYB = 168, DEG = Math.PI / 180;
+  const slots = [{ rarity: 'legendary', size: 56, x: CXB, y: CYB }];
+  [-90, 30, 150].forEach(a =>
+    slots.push({ rarity: 'epic', size: 48, x: CXB + 68 * Math.cos(a * DEG), y: CYB + 68 * Math.sin(a * DEG) }));
+  slots.push({ rarity: 'artifact', size: 48, x: CXB, y: CYB + 132 });
+  for (let k = 1; k < 7; k++) {
+    const a = (90 + k * 360 / 7) * DEG;
+    slots.push({ rarity: 'rare', size: 40, x: CXB + 132 * Math.cos(a), y: CYB + 132 * Math.sin(a) });
+  }
+  slots.forEach(s => {
+    const el = document.createElement('div');
+    el.className = `enchant-slot ${s.rarity}`;
+    el.style.width = el.style.height = `${s.size}px`;
+    el.style.left = `${s.x - s.size / 2}px`;
+    el.style.top  = `${s.y - s.size / 2}px`;
+    el.title = `${s.rarity[0].toUpperCase() + s.rarity.slice(1)} slot — empty`;
+    board.appendChild(el);
+  });
+}
+
+// ─── BUILD STRINGS ───────────────────────────────────────────────────────────
+// A build is the point allocation encoded as one digit per talent, in
+// deterministic order (trees in data order, layout rows top→bottom, cols
+// left→right), trailing zeros trimmed. Lives in the ?build= URL param so any
+// state is shareable and the theorycraft skill can publish builds as links.
+function buildOrder() { return TREE_NAMES.flatMap(tr => LAYOUT[tr].flat().filter(Boolean)); }
+
+function encodeBuild() {
+  const s = buildOrder().map(k => talentPts(k)).join('');
+  return /[^0]/.test(s) ? s.replace(/0+$/, '') : '';
+}
+
+function applyBuildString(s) {
+  const order = buildOrder();
+  [...s].forEach((ch, i) => {
+    if (i >= order.length) return;
+    const n = Math.min(parseInt(ch, 10) || 0, T[order[i]].maxPts);
+    if (n > 0) pts[order[i]] = n;
+  });
+}
+
+function syncUrl() {
+  const b = encodeBuild();
+  const url = new URL(location);
+  if (b) url.searchParams.set('build', b);
+  else url.searchParams.delete('build');
+  history.replaceState(null, '', url);
+}
+
+// ─── UI CONSTRUCTION FROM CLASS DATA ─────────────────────────────────────────
+function buildStaticUI() {
+  document.title = `${DATA.class} — Talent Calculator | Ascension Classic+`;
+  document.getElementById('calc-title').textContent = DATA.class;
+  document.getElementById('pts-denom').textContent = ` / ${POINT_CAP}`;
+
+  // Tabs: Summary · <trees> · Enchants
+  document.getElementById('tab-bar').innerHTML =
+    `<div class="tab active" data-tab="summary">Summary</div>` +
+    TREE_NAMES.map(n =>
+      `<div class="tab" data-tab="${n}">${n} <span class="tab-pts" id="badge-${n}">0</span></div>`).join('') +
+    `<div class="tab" data-tab="enchants">Enchants</div>`;
+
+  // Summary tree cards
+  document.getElementById('sum-trees').innerHTML = DATA.trees.map(tr =>
+    `<div class="sum-tree" data-jump="${tr.name}" style="--sum-accent:${tr.accent}; --sum-accent-border:${rgba(tr.accent, 0.25)}">
+      <div class="sum-tree-row">
+        <span class="sum-tree-name">${tr.name}</span>
+        <span class="sum-tree-pts" id="sum-pts-${tr.name}">0</span>
+      </div>
+      <div class="sum-invested" id="sum-inv-${tr.name}"></div>
+    </div>`).join('');
+
+  // Tree panels, inserted between Summary and Enchants
+  document.getElementById('panel-summary').insertAdjacentHTML('afterend',
+    DATA.trees.map(tr =>
+      `<div class="panel tree-panel" id="panel-${tr.name}" style="--tree-bg:url('${tr.background}')">
+        <div class="tree-wrap" id="wrap-${tr.name}">
+          <div class="tree-grid" id="grid-${tr.name}"></div>
+        </div>
+      </div>`).join(''));
+
+  // Position lookup
+  Object.entries(LAYOUT).forEach(([tree, rows]) => {
+    rows.forEach((row, r) => row.forEach((key, c) => {
+      if (key) pos[key] = { tree, row: r, col: c };
+    }));
+  });
+
+  // Events
+  document.getElementById('tab-bar').addEventListener('click', e => {
+    const tab = e.target.closest('[data-tab]');
+    if (tab) switchTab(tab.dataset.tab);
+  });
+  document.getElementById('sum-trees').addEventListener('click', e => {
+    const card = e.target.closest('[data-jump]');
+    if (card) switchTab(card.dataset.jump);
+  });
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    Object.keys(pts).forEach(k => { pts[k] = 0; });
+    refresh();
+  });
+}
+
+// ─── BOOT ────────────────────────────────────────────────────────────────────
+(async function boot() {
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('class') || 'warlock';
+  try {
+    DATA = window.CLASS_DATA || await (await fetch(`data/${slug}.json`)).json();
+  } catch (err) {
+    document.getElementById('panel-area').innerHTML =
+      `<div class="load-error">Could not load class data (data/${slug}.json). ` +
+      `If opened as a local file, serve the folder over HTTP or use a standalone build.</div>`;
+    return;
+  }
+  T = DATA.talents;
+  LAYOUT = DATA.layout;
+  TREE_NAMES = DATA.trees.map(t => t.name);
+  ICON_BASE = `assets/icons/${DATA.slug}/talents/`;
+  POINT_CAP = DATA.pointCap || 51;
+
+  buildStaticUI();
+  buildEnchantBoard();
+  const build = params.get('build');
+  if (build) applyBuildString(build);
+  refresh();
+  switchTab('summary');
+})();
+</script>
+</body>
+</html>
