@@ -87,6 +87,19 @@ body {
   transition: color 0.15s, border-color 0.15s;
 }
 .reset-btn:hover { color: #904030; border-color: #904030; }
+.build-select {
+  display: block;
+  margin-top: 7px;
+  margin-left: auto;
+  max-width: 170px;
+  background: #0c0b14;
+  color: #7a6e80;
+  border: 1px solid #2a2430;
+  border-radius: 2px;
+  font-size: 11px;
+  font-family: inherit;
+  padding: 3px 4px;
+}
 
 /* ── Container — tab header + panel body as one framed unit ── */
 .calc-container {
@@ -447,6 +460,7 @@ body {
       <div class="pts-count"><span id="total-spent">0</span><span class="pts-denom" id="pts-denom"> / 51</span></div>
       <div class="pts-label">talent points</div>
       <button class="reset-btn" id="reset-btn">Reset</button>
+      <select class="build-select" id="build-select" style="display:none"></select>
     </div>
   </div>
 
@@ -848,6 +862,33 @@ function syncUrl() {
   history.replaceState(null, '', url);
 }
 
+// ─── SAVED BUILDS ────────────────────────────────────────────────────────────
+// Theorycraft sessions publish builds as JSON files in builds/ — each carries
+// a name and a { talent_key: points } map. builds/index.json lists them
+// (regenerate with tools/build-index.mjs). Matching builds for the current
+// class appear in a header dropdown; selecting one populates the trees.
+async function initBuildList(slug) {
+  let list;
+  try { list = await (await fetch('builds/index.json')).json(); } catch { return; }
+  const mine = list.filter(b => b.class === slug);
+  if (!mine.length) return;
+  const sel = document.getElementById('build-select');
+  sel.style.display = '';
+  sel.innerHTML = '<option value="">Load a build…</option>' +
+    mine.map(b => `<option value="${b.file}">${b.name}</option>`).join('');
+  sel.addEventListener('change', async () => {
+    if (!sel.value) return;
+    try {
+      const build = await (await fetch(`builds/${sel.value}`)).json();
+      Object.keys(pts).forEach(k => delete pts[k]);
+      Object.entries(build.points || {}).forEach(([k, n]) => {
+        if (T[k]) pts[k] = Math.min(n, T[k].maxPts);
+      });
+      refresh();
+    } catch { /* leave current allocation untouched */ }
+  });
+}
+
 // ─── UI CONSTRUCTION FROM CLASS DATA ─────────────────────────────────────────
 function buildStaticUI() {
   document.title = `${DATA.class} — Talent Calculator | Ascension Classic+`;
@@ -926,6 +967,7 @@ function buildStaticUI() {
   if (build) applyBuildString(build);
   refresh();
   switchTab('summary');
+  initBuildList(slug);
 })();
 </script>
 </body>
