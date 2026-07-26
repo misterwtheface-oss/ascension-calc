@@ -973,11 +973,12 @@ function refMet(r) {
 // Recommended refs already present in the build — drives the gold synergy ring
 function recommendsMet(e) { return (e.recommends || []).filter(refMet); }
 
-// Fulfilled requirements — drives the green ring (enchIssues already
-// guarantees none are unmet when this shows). Tree-gate ("crossover")
+// Fulfilled requirements — shown in the tooltip's green line
+function requirementsMet(e) { return (e.requires || []).filter(refMet); }
+// Green ring keys off hard requirements only. Tree-gate ("crossover")
 // requirements are excluded: half the rare pool passes them once a tree
-// hits 30, so they only surface when unmet (grey picker / red board).
-function requirementsMet(e) { return (e.requires || []).filter(r => !r.anyOf && refMet(r)); }
+// hits 30, so as rings they're noise — the tooltip still lists them.
+function hardRequirementsMet(e) { return requirementsMet(e).filter(r => !r.anyOf); }
 
 // Spec identity color for enchant labels ("All" gets the neutral brass)
 function specColor(spec) {
@@ -1030,7 +1031,7 @@ function openEnchantPicker(slotIdx) {
       const isTaken = taken.has(e.key);
       const state = enchIssues(e).length ? ' invalid'
         : recommendsMet(e).length ? ' synergy'
-        : requirementsMet(e).length ? ' reqmet' : '';
+        : hardRequirementsMet(e).length ? ' reqmet' : '';
       const c = document.createElement('div');
       c.className = `enchant-choice ${rarity}` + (isTaken ? ' taken' : '') + state;
       c.style.backgroundImage = `url("${enchIconSrc(e)}")`;
