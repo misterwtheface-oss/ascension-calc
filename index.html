@@ -371,6 +371,65 @@ body {
 .enchant-slot.legendary:hover { border-color: #ff8000; box-shadow: 0 0 10px rgba(255, 128, 0, 0.3); }
 .enchant-slot.epic:hover      { border-color: #a335ee; box-shadow: 0 0 10px rgba(163, 53, 238, 0.3); }
 .enchant-slot.rare:hover      { border-color: #0070dd; box-shadow: 0 0 10px rgba(0, 112, 221, 0.3); }
+/* Filled slot: solid border, icon art, rarity glow */
+.enchant-slot.filled {
+  border-style: solid;
+  background-size: cover;
+  background-position: center;
+}
+.enchant-slot.filled.artifact  { border-color: #e6cc80; box-shadow: 0 0 8px rgba(230, 204, 128, 0.3); }
+.enchant-slot.filled.legendary { border-color: #ff8000; box-shadow: 0 0 8px rgba(255, 128, 0, 0.3); }
+.enchant-slot.filled.epic      { border-color: #a335ee; box-shadow: 0 0 8px rgba(163, 53, 238, 0.3); }
+.enchant-slot.filled.rare      { border-color: #0070dd; box-shadow: 0 0 8px rgba(0, 112, 221, 0.3); }
+
+/* Enchant picker — opens under the board when a slot is clicked */
+.enchant-picker {
+  margin: 14px auto 0;
+  background: #09080f;
+  border: 1px solid #181420;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.enchant-picker-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  color: #8a8290;
+  margin-bottom: 10px;
+}
+.enchant-picker-close {
+  cursor: pointer;
+  color: #524a60;
+  font-size: 11px;
+}
+.enchant-picker-close:hover { color: #904030; }
+.enchant-spec-label {
+  width: 100%;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5a5268;
+  margin: 6px 0 2px;
+}
+.enchant-picker-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.enchant-choice {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid;
+  background-size: cover;
+  background-position: center;
+  background-color: #0b0c12;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.enchant-choice.artifact  { border-color: #e6cc80; }
+.enchant-choice.legendary { border-color: #ff8000; }
+.enchant-choice.epic      { border-color: #a335ee; }
+.enchant-choice.rare      { border-color: #0070dd; }
+.enchant-choice:hover     { box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); }
+.enchant-choice.taken     { opacity: 0.25; pointer-events: none; }
 .enchant-legend {
   display: flex;
   justify-content: center;
@@ -774,6 +833,8 @@ function showTip(key, e) {
 
   document.getElementById('tt-name').textContent = t.name;
 
+  document.getElementById('tt-rank').style.color = ''; // may hold an enchant rarity color
+
   // Rank line — unallocated multi-rank talents show the full range "Rank 1/2/3"
   if (p === 0 && t.maxPts > 1) {
     document.getElementById('tt-rank').textContent =
@@ -811,26 +872,123 @@ function hideTip() { tip.classList.remove('visible'); }
 // ─── MYSTIC ENCHANT BOARD ────────────────────────────────────────────────────
 // 11 slots: 1 Legendary center, 3 Epic on the inner ring (120° apart from top),
 // 1 Artifact + 6 Rare on the outer ring (evenly spaced at 360/7°, Artifact at bottom).
+// SLOT_RARITIES fixes the slot order used by URL state and build files.
+const SLOT_RARITIES = ['legendary','epic','epic','epic','artifact','rare','rare','rare','rare','rare','rare'];
+const enchPicks = new Array(SLOT_RARITIES.length).fill(null); // slot index -> enchant key
+const slotEls = [];
+let enchByKey = {};
+
+function enchIconSrc(e) {
+  return `assets/icons/${DATA.slug}/mystic-enchants/${e.iconFile || e.key}.jpg`;
+}
+
 function buildEnchantBoard() {
   const board = document.getElementById('enchant-board');
   const CXB = 168, CYB = 168, DEG = Math.PI / 180;
-  const slots = [{ rarity: 'legendary', size: 56, x: CXB, y: CYB }];
+  const geo = [{ size: 56, x: CXB, y: CYB }];
   [-90, 30, 150].forEach(a =>
-    slots.push({ rarity: 'epic', size: 48, x: CXB + 68 * Math.cos(a * DEG), y: CYB + 68 * Math.sin(a * DEG) }));
-  slots.push({ rarity: 'artifact', size: 48, x: CXB, y: CYB + 132 });
+    geo.push({ size: 48, x: CXB + 68 * Math.cos(a * DEG), y: CYB + 68 * Math.sin(a * DEG) }));
+  geo.push({ size: 48, x: CXB, y: CYB + 132 });
   for (let k = 1; k < 7; k++) {
     const a = (90 + k * 360 / 7) * DEG;
-    slots.push({ rarity: 'rare', size: 40, x: CXB + 132 * Math.cos(a), y: CYB + 132 * Math.sin(a) });
+    geo.push({ size: 40, x: CXB + 132 * Math.cos(a), y: CYB + 132 * Math.sin(a) });
   }
-  slots.forEach(s => {
+  geo.forEach((s, i) => {
     const el = document.createElement('div');
-    el.className = `enchant-slot ${s.rarity}`;
+    el.className = `enchant-slot ${SLOT_RARITIES[i]}`;
     el.style.width = el.style.height = `${s.size}px`;
     el.style.left = `${s.x - s.size / 2}px`;
     el.style.top  = `${s.y - s.size / 2}px`;
-    el.title = `${s.rarity[0].toUpperCase() + s.rarity.slice(1)} slot — empty`;
+    el.addEventListener('click', () => openEnchantPicker(i));
+    el.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      enchPicks[i] = null;
+      refreshEnchantBoard();
+    });
+    el.addEventListener('mouseenter', e => {
+      const pick = enchPicks[i] && enchByKey[enchPicks[i]];
+      if (pick) showEnchTip(pick, e);
+    });
+    el.addEventListener('mousemove', moveTip);
+    el.addEventListener('mouseleave', hideTip);
     board.appendChild(el);
+    slotEls.push(el);
   });
+}
+
+function refreshEnchantBoard() {
+  slotEls.forEach((el, i) => {
+    const e = enchPicks[i] && enchByKey[enchPicks[i]];
+    el.classList.toggle('filled', !!e);
+    el.style.backgroundImage = e ? `url("${enchIconSrc(e)}")` : '';
+    el.title = e ? '' : `${SLOT_RARITIES[i][0].toUpperCase() + SLOT_RARITIES[i].slice(1)} slot — empty`;
+  });
+  syncUrl();
+}
+
+function openEnchantPicker(slotIdx) {
+  closeEnchantPicker();
+  if (!DATA.enchants) return;
+  const rarity = SLOT_RARITIES[slotIdx];
+  const pool = DATA.enchants.filter(e => e.rarity === rarity);
+  if (!pool.length) return;
+
+  const picker = document.createElement('div');
+  picker.className = 'enchant-picker';
+  picker.id = 'enchant-picker';
+  const head = document.createElement('div');
+  head.className = 'enchant-picker-head';
+  head.innerHTML = `<span>Choose a ${rarity[0].toUpperCase() + rarity.slice(1)} enchant</span>` +
+    `<span class="enchant-picker-close">close ×</span>`;
+  head.querySelector('.enchant-picker-close').addEventListener('click', closeEnchantPicker);
+  picker.appendChild(head);
+
+  const grid = document.createElement('div');
+  grid.className = 'enchant-picker-grid';
+  const taken = new Set(enchPicks.filter((k, i) => k && i !== slotIdx));
+  const bySpec = {};
+  pool.forEach(e => (bySpec[e.spec] ??= []).push(e));
+  Object.keys(bySpec).sort().forEach(spec => {
+    const label = document.createElement('div');
+    label.className = 'enchant-spec-label';
+    label.textContent = spec;
+    grid.appendChild(label);
+    bySpec[spec].sort((a, b) => a.name.localeCompare(b.name)).forEach(e => {
+      const c = document.createElement('div');
+      c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '');
+      c.style.backgroundImage = `url("${enchIconSrc(e)}")`;
+      c.addEventListener('click', () => {
+        enchPicks[slotIdx] = e.key;
+        closeEnchantPicker();
+        refreshEnchantBoard();
+      });
+      c.addEventListener('mouseenter', ev => showEnchTip(e, ev));
+      c.addEventListener('mousemove', moveTip);
+      c.addEventListener('mouseleave', hideTip);
+      grid.appendChild(c);
+    });
+  });
+  picker.appendChild(grid);
+  document.getElementById('enchant-board').after(picker);
+}
+
+function closeEnchantPicker() {
+  const p = document.getElementById('enchant-picker');
+  if (p) p.remove();
+  hideTip();
+}
+
+const RARITY_COLORS = { artifact: '#e6cc80', legendary: '#ff8000', epic: '#a335ee', rare: '#0070dd' };
+function showEnchTip(e, ev) {
+  document.getElementById('tt-name').textContent = e.name;
+  const rankEl = document.getElementById('tt-rank');
+  rankEl.textContent = `${e.rarity[0].toUpperCase() + e.rarity.slice(1)} · ${e.spec}`;
+  rankEl.style.color = RARITY_COLORS[e.rarity] || '';
+  document.getElementById('tt-body').textContent = e.tooltip;
+  document.getElementById('tt-next').style.display = 'none';
+  document.getElementById('tt-prereq').textContent = '';
+  tip.classList.add('visible');
+  moveTip(ev);
 }
 
 // ─── BUILD STRINGS ───────────────────────────────────────────────────────────
@@ -859,7 +1017,18 @@ function syncUrl() {
   const url = new URL(location);
   if (b) url.searchParams.set('build', b);
   else url.searchParams.delete('build');
+  // Enchant picks: comma-joined keys in slot order, trailing blanks trimmed
+  const e = enchPicks.map(k => k || '').join(',').replace(/,+$/, '');
+  if (e) url.searchParams.set('ench', e);
+  else url.searchParams.delete('ench');
   history.replaceState(null, '', url);
+}
+
+function applyEnchants(list) {
+  SLOT_RARITIES.forEach((rarity, i) => {
+    const k = list[i];
+    enchPicks[i] = (k && enchByKey[k] && enchByKey[k].rarity === rarity) ? k : null;
+  });
 }
 
 // ─── SAVED BUILDS ────────────────────────────────────────────────────────────
@@ -884,6 +1053,8 @@ async function initBuildList(slug) {
       Object.entries(build.points || {}).forEach(([k, n]) => {
         if (T[k]) pts[k] = Math.min(n, T[k].maxPts);
       });
+      applyEnchants(build.enchants || []);
+      refreshEnchantBoard();
       refresh();
     } catch { /* leave current allocation untouched */ }
   });
@@ -894,6 +1065,10 @@ function buildStaticUI() {
   document.title = `${DATA.class} — Talent Calculator | Ascension Classic+`;
   document.getElementById('calc-title').textContent = DATA.class;
   document.getElementById('pts-denom').textContent = ` / ${POINT_CAP}`;
+  if (DATA.enchants) {
+    document.querySelector('.enchants-ph').textContent =
+      'Click a slot to choose an enchant · Right-click to clear';
+  }
 
   // Tabs: Summary · <trees> · Enchants
   document.getElementById('tab-bar').innerHTML =
@@ -960,11 +1135,15 @@ function buildStaticUI() {
   TREE_NAMES = DATA.trees.map(t => t.name);
   ICON_BASE = `assets/icons/${DATA.slug}/talents/`;
   POINT_CAP = DATA.pointCap || 51;
+  enchByKey = Object.fromEntries((DATA.enchants || []).map(e => [e.key, e]));
 
   buildStaticUI();
   buildEnchantBoard();
   const build = params.get('build');
   if (build) applyBuildString(build);
+  const ench = params.get('ench');
+  if (ench) applyEnchants(ench.split(','));
+  refreshEnchantBoard();
   refresh();
   switchTab('summary');
   initBuildList(slug);

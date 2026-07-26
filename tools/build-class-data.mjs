@@ -147,6 +147,39 @@ for (const key of Object.keys(talents))
 for (const tree of treeNames)
   if (!meta.trees[tree]) errors.push(`class-meta.json has no accent color for tree '${tree}'`);
 
+// ── mystic-enchants.csv (optional) ──
+// Columns: Mystic Enchant, Icon_Path, Rarity, Specialization, Tooltip
+const RARITIES = ['Rare', 'Epic', 'Legendary', 'Artifact'];
+let enchants;
+try {
+  const eText = readFileSync(join(dataDir, 'mystic-enchants.csv'), 'utf8');
+  const eRows = parseCSV(eText);
+  const eHeader = eRows.shift().map(h => h.trim());
+  const ec = name => eHeader.findIndex(h => h.toLowerCase() === name.toLowerCase());
+  const E = { name: ec('Mystic Enchant'), icon: ec('Icon_Path'), rarity: ec('Rarity'), spec: ec('Specialization'), tooltip: ec('Tooltip') };
+  const iconsDir = join(skillDir, 'assets', 'icons', slug, 'mystic-enchants');
+  enchants = [];
+  for (const r of eRows) {
+    const name = r[E.name].trim();
+    if (!name) continue;
+    const key = keyOf(name);
+    const stem = iconStem(r[E.icon].trim());
+    const rarity = r[E.rarity].trim();
+    if (!RARITIES.includes(rarity)) errors.push(`enchant ${name}: unknown rarity '${rarity}'`);
+    try { readFileSync(join(iconsDir, stem + '.jpg')); }
+    catch { errors.push(`enchant ${name}: icon '${stem}.jpg' not found in skill assets`); }
+    // Tooltips open with "<Name>  <Rarity>" + "Mystic Enchant" header lines; drop both
+    const tooltip = r[E.tooltip].trim().replace(/\\n/g, '\n')
+      .replace(/^.*\n+Mystic Enchant\s*\n+/, '');
+    const e = { key, name, rarity: rarity.toLowerCase(), spec: r[E.spec].trim(), tooltip };
+    if (stem !== key) e.iconFile = stem;
+    enchants.push(e);
+  }
+} catch (err) {
+  if (err.code !== 'ENOENT') throw err;
+  enchants = undefined; // no enchant data for this class yet
+}
+
 if (errors.length) {
   console.error(`FAILED — ${errors.length} error(s):\n  ` + errors.join('\n  '));
   process.exit(1);
@@ -164,8 +197,10 @@ const out = {
   talents,
   layout,
 };
+if (enchants) out.enchants = enchants;
 
 mkdirSync(join(ROOT, 'data'), { recursive: true });
 const outPath = join(ROOT, 'data', `${slug}.json`);
 writeFileSync(outPath, JSON.stringify(out, null, 1));
-console.log(`OK — ${Object.keys(talents).length} talents, ${treeNames.length} trees -> ${outPath}`);
+console.log(`OK — ${Object.keys(talents).length} talents, ${treeNames.length} trees` +
+  (enchants ? `, ${enchants.length} enchants` : '') + ` -> ${outPath}`);

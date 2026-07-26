@@ -54,6 +54,22 @@ for (const file of readdirSync(buildsDir).sort()) {
   }
   if (total > (D.pointCap || 51)) errors.push(`${file}: ${total} pts exceeds cap`);
 
+  // Optional enchant picks: array of keys (or null) in slot order
+  if (b.enchants) {
+    const SLOT_RARITIES = ['legendary','epic','epic','epic','artifact','rare','rare','rare','rare','rare','rare'];
+    const byKey = Object.fromEntries((D.enchants || []).map(e => [e.key, e]));
+    if (!Array.isArray(b.enchants) || b.enchants.length > SLOT_RARITIES.length)
+      errors.push(`${file}: "enchants" must be an array of up to ${SLOT_RARITIES.length} slot keys`);
+    else b.enchants.forEach((k, i) => {
+      if (!k) return;
+      if (!byKey[k]) errors.push(`${file}: unknown enchant '${k}'`);
+      else if (byKey[k].rarity !== SLOT_RARITIES[i])
+        errors.push(`${file}: enchant '${k}' is ${byKey[k].rarity}, slot ${i} takes ${SLOT_RARITIES[i]}`);
+    });
+    const filled = b.enchants.filter(Boolean);
+    if (new Set(filled).size !== filled.length) errors.push(`${file}: duplicate enchant picks`);
+  }
+
   entries.push({ file, name: b.name, class: b.class, focus: b.focus || null, points: total });
 }
 
