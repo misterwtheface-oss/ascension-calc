@@ -430,10 +430,18 @@ body {
 .enchant-choice.rare      { border-color: #0070dd; }
 .enchant-choice:hover     { box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); }
 .enchant-choice.taken     { opacity: 0.25; pointer-events: none; }
-/* Red tint: requirements unmet or conflicting talent allocated */
-.enchant-slot.invalid,
-.enchant-choice.invalid {
+/* Socketed but invalid: red tint (requirements unmet / conflicting talent) */
+.enchant-slot.invalid {
   box-shadow: inset 0 0 0 60px rgba(220, 38, 38, 0.38), 0 0 8px rgba(220, 38, 38, 0.3);
+}
+/* In the picker, invalid choices grey out like unavailable talents —
+   still hoverable for the reason, still clickable for planning ahead */
+.enchant-choice.invalid { filter: grayscale(100%) brightness(0.45); }
+/* Synergy: a recommended talent/enchant is already in the build */
+.enchant-slot.synergy,
+.enchant-choice.synergy {
+  outline: 2px solid #c9a227;
+  outline-offset: 2px;
 }
 .enchant-legend {
   display: flex;
@@ -953,11 +961,28 @@ function enchIssues(e) {
   return issues;
 }
 
+// Recommended refs already present in the build (allocated talent, socketed
+// enchant, or met tree gate) — drives the gold synergy ring
+function recommendsMet(e) {
+  return (e.recommends || []).filter(r =>
+    (r.talent && talentPts(r.talent) >= (r.rank || 1)) ||
+    (r.enchant && enchPicks.includes(r.enchant)) ||
+    (r.anyOf && r.anyOf.some(a => treePts(a.tree) >= a.pts)));
+}
+
+// Spec identity color for enchant labels ("All" gets the neutral brass)
+function specColor(spec) {
+  const tr = DATA.trees.find(t => t.name === spec);
+  return tr ? tr.accent : '#8a7868';
+}
+
 function refreshEnchantBoard() {
   slotEls.forEach((el, i) => {
     const e = enchPicks[i] && enchByKey[enchPicks[i]];
+    const invalid = !!(e && enchIssues(e).length);
     el.classList.toggle('filled', !!e);
-    el.classList.toggle('invalid', !!(e && enchIssues(e).length));
+    el.classList.toggle('invalid', invalid);
+    el.classList.toggle('synergy', !!(e && !invalid && recommendsMet(e).length));
     el.style.backgroundImage = e ? `url("${enchIconSrc(e)}")` : '';
     el.title = e ? '' : `${SLOT_RARITIES[i][0].toUpperCase() + SLOT_RARITIES[i].slice(1)} slot — empty`;
   });
@@ -992,11 +1017,13 @@ function openEnchantPicker(slotIdx) {
     const label = document.createElement('div');
     label.className = 'enchant-spec-label';
     label.textContent = spec;
+    label.style.color = specColor(spec);
     grid.appendChild(label);
     bySpec[spec].sort((a, b) => a.name.localeCompare(b.name)).forEach(e => {
+      const invalid = enchIssues(e).length > 0;
       const c = document.createElement('div');
       c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '') +
-        (enchIssues(e).length ? ' invalid' : '');
+        (invalid ? ' invalid' : (recommendsMet(e).length ? ' synergy' : ''));
       c.style.backgroundImage = `url("${enchIconSrc(e)}")`;
       c.addEventListener('click', () => {
         enchPicks[slotIdx] = e.key;
@@ -1022,17 +1049,25 @@ function closeEnchantPicker() {
 const RARITY_COLORS = { artifact: '#e6cc80', legendary: '#ff8000', epic: '#a335ee', rare: '#0070dd' };
 function showEnchTip(e, ev) {
   document.getElementById('tt-name').textContent = e.name;
+  // Rarity in rarity color, spec in its tree identity color
   const rankEl = document.getElementById('tt-rank');
-  rankEl.textContent = `${e.rarity[0].toUpperCase() + e.rarity.slice(1)} · ${e.spec}`;
-  rankEl.style.color = RARITY_COLORS[e.rarity] || '';
+  rankEl.style.color = '';
+  rankEl.innerHTML =
+    `<span style="color:${RARITY_COLORS[e.rarity]}">${e.rarity[0].toUpperCase() + e.rarity.slice(1)}</span>` +
+    ` · <span style="color:${specColor(e.spec)}">${e.spec}</span>`;
   document.getElementById('tt-body').textContent = e.tooltip;
   document.getElementById('tt-next').style.display = 'none';
-  // Footer line: unmet requirements/conflicts in red, else synergy note in gold
+  // Footer: unmet requirements/conflicts in red; active synergy in bright gold;
+  // otherwise the recommendation in muted gold
   const preEl = document.getElementById('tt-prereq');
   const issues = enchIssues(e);
+  const met = recommendsMet(e);
   if (issues.length) {
     preEl.style.color = '';
     preEl.textContent = issues.join(' · ');
+  } else if (met.length) {
+    preEl.style.color = '#ffd100';
+    preEl.textContent = 'Synergy active: ' + met.map(refName).join(', ');
   } else if (e.recommends) {
     preEl.style.color = '#c9a227';
     preEl.textContent = 'Pairs well with: ' + e.recommends.map(refName).join(', ');
