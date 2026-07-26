@@ -437,14 +437,13 @@ body {
 /* In the picker, invalid choices grey out like unavailable talents —
    still hoverable for the reason, still clickable for planning ahead */
 .enchant-choice.invalid { filter: grayscale(100%) brightness(0.45); }
+/* Status rings — picker only; the board keeps just the red invalid tint */
 /* Synergy: a recommended talent/enchant is already in the build */
-.enchant-slot.synergy,
 .enchant-choice.synergy {
   outline: 2px solid #c9a227;
   outline-offset: 2px;
 }
 /* Requirements fulfilled (green ring; synergy gold takes precedence) */
-.enchant-slot.reqmet,
 .enchant-choice.reqmet {
   outline: 2px solid #1eff00;
   outline-offset: 2px;
@@ -990,12 +989,8 @@ function specColor(spec) {
 function refreshEnchantBoard() {
   slotEls.forEach((el, i) => {
     const e = enchPicks[i] && enchByKey[enchPicks[i]];
-    const invalid = !!(e && enchIssues(e).length);
-    const synergy = !!(e && !invalid && recommendsMet(e).length);
     el.classList.toggle('filled', !!e);
-    el.classList.toggle('invalid', invalid);
-    el.classList.toggle('synergy', synergy);
-    el.classList.toggle('reqmet', !!(e && !invalid && !synergy && requirementsMet(e).length));
+    el.classList.toggle('invalid', !!(e && enchIssues(e).length));
     el.style.backgroundImage = e ? `url("${enchIconSrc(e)}")` : '';
     el.title = e ? '' : `${SLOT_RARITIES[i][0].toUpperCase() + SLOT_RARITIES[i].slice(1)} slot — empty`;
   });
