@@ -82,8 +82,9 @@ for (const r of tRows) {
   const key = keyOf(name);
   const stem = iconStem(r[C.icon].trim());
   const maxPts = parseInt(r[C.points], 10);
-  // CSVs may carry literal backslash-n; normalize to real newlines
-  let template = r[C.template].trim().replace(/\\n/g, '\n');
+  // CSVs may carry literal backslash-n or CRLF; normalize to real LF newlines
+  // (CR would defeat the header-strip regexes below: `.` never matches \r in JS)
+  let template = r[C.template].trim().replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
   // Most CSV tooltips open with an embedded "<Name>   Rank 1" header line;
   // the calculator renders name/rank itself, so drop it.
   template = template.replace(/^.*Rank 1\s*\n+/, '');
@@ -170,7 +171,7 @@ try {
     try { readFileSync(join(iconsDir, stem + '.jpg')); }
     catch { errors.push(`enchant ${name}: icon '${stem}.jpg' not found in skill assets`); }
     // Tooltips open with "<Name>  <Rarity>" + "Mystic Enchant" header lines; drop both
-    const tooltip = r[E.tooltip].trim().replace(/\\n/g, '\n')
+    const tooltip = r[E.tooltip].trim().replace(/\\n/g, '\n').replace(/\r\n?/g, '\n')
       .replace(/^.*\n+Mystic Enchant\s*\n+/, '');
     const e = { key, name, rarity: rarity.toLowerCase(), spec: r[E.spec].trim(), tooltip };
     if (stem !== key) e.iconFile = stem;
