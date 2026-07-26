@@ -156,7 +156,8 @@ try {
   const eRows = parseCSV(eText);
   const eHeader = eRows.shift().map(h => h.trim());
   const ec = name => eHeader.findIndex(h => h.toLowerCase() === name.toLowerCase());
-  const E = { name: ec('Mystic Enchant'), icon: ec('Icon_Path'), rarity: ec('Rarity'), spec: ec('Specialization'), tooltip: ec('Tooltip') };
+  const E = { name: ec('Mystic Enchant'), icon: ec('Icon_Path'), rarity: ec('Rarity'), spec: ec('Specialization'), tooltip: ec('Tooltip'),
+              conflicting: ec('Conflicting'), required: ec('Required'), recommended: ec('Recommended') };
   const iconsDir = join(skillDir, 'assets', 'icons', slug, 'mystic-enchants');
   enchants = [];
   for (const r of eRows) {
@@ -173,7 +174,58 @@ try {
       .replace(/^.*\n+Mystic Enchant\s*\n+/, '');
     const e = { key, name, rarity: rarity.toLowerCase(), spec: r[E.spec].trim(), tooltip };
     if (stem !== key) e.iconFile = stem;
+    // Raw relation columns; resolved to keys in a second pass below
+    e._raw = {
+      conflicts: E.conflicting >= 0 ? r[E.conflicting] : '',
+      requires: E.required >= 0 ? r[E.required] : '',
+      recommends: E.recommended >= 0 ? r[E.recommended] : '',
+    };
     enchants.push(e);
+  }
+
+  // Second pass: resolve Conflicting/Required/Recommended names to keys.
+  // Names may point at talents, other enchants, or plain abilities; matching
+  // collapses separators so "Shadow Fury" finds the talent "Shadowfury".
+  const collapse = s => keyOf(s).replace(/_/g, '');
+  const talentByCollapsed = Object.fromEntries(
+    Object.entries(talents).map(([k, t]) => [collapse(t.name), k]));
+  const enchantByCollapsed = Object.fromEntries(
+    enchants.map(en => [collapse(en.name), en.key]));
+
+  const parseRefs = raw => {
+    raw = (raw || '').trim();
+    if (!raw || raw === '-') return undefined;
+    return raw.split(',').map(part => {
+      part = part.trim();
+      // Tree-investment gates: "30 Affliction or 30 Demonology" — any-of
+      if (/^\d+\s+/.test(part)) {
+        const alts = part.split(/\s+or\s+/i).map(alt => {
+          const am = alt.trim().match(/^(\d+)\s+(.+)$/);
+          return am && treeNames.includes(am[2].trim())
+            ? { tree: am[2].trim(), pts: parseInt(am[1], 10) } : null;
+        });
+        if (alts.every(Boolean)) return { anyOf: alts };
+      }
+      const m = part.match(/^(.*?)\s*\(\s*Rank\s*(\d+)\s*\)$/i);
+      const name = (m ? m[1] : part).trim();
+      const c = collapse(name);
+      const ref = {};
+      if (talentByCollapsed[c]) ref.talent = talentByCollapsed[c];
+      else if (enchantByCollapsed[c]) ref.enchant = enchantByCollapsed[c];
+      else ref.name = name; // ability or stance — informational only
+      if (m) ref.rank = parseInt(m[2], 10);
+      return ref;
+    });
+  };
+
+  for (const e of enchants) {
+    const conflicts = parseRefs(e._raw.conflicts);
+    const requires = parseRefs(e._raw.requires);
+    const recommends = parseRefs(e._raw.recommends);
+    delete e._raw;
+    if (conflicts) e.conflicts = conflicts;
+    if (requires) e.requires = requires;
+    if (recommends) e.recommends = recommends;
   }
 } catch (err) {
   if (err.code !== 'ENOENT') throw err;

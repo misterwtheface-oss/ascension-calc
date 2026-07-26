@@ -1545,7 +1545,12 @@
    "name": "Feeding the Abyss",
    "rarity": "legendary",
    "spec": "Demonology",
-   "tooltip": "Feeding the Abyss\tLegendary\r\nMystic Enchant\r\nYour ability to Dodge is replaced with a dark hunger. You have a chance to fully absorb incoming physical damage, storing it for later use. After 10 seconds the stored damage is fed to the abyss, causing your next Life Tap to deal damage to nearby enemies, healing you and your pet based on the damage dealt.\r\n\r\nThe chance for the absorb to trigger is equal to 10% plus your spell critical strike chance."
+   "tooltip": "Feeding the Abyss\tLegendary\r\nMystic Enchant\r\nYour ability to Dodge is replaced with a dark hunger. You have a chance to fully absorb incoming physical damage, storing it for later use. After 10 seconds the stored damage is fed to the abyss, causing your next Life Tap to deal damage to nearby enemies, healing you and your pet based on the damage dealt.\r\n\r\nThe chance for the absorb to trigger is equal to 10% plus your spell critical strike chance.",
+   "recommends": [
+    {
+     "name": "Dark Apotheosis"
+    }
+   ]
   },
   {
    "key": "bane_of_havoc",
@@ -1553,28 +1558,48 @@
    "rarity": "legendary",
    "spec": "Destruction",
    "tooltip": "Teaches you: Bane of Havoc.\n\nBane of Havoc\n8% of base mana\nInstant        35 sec cooldown\nCurses the ground with a demonic bane, causing your Shadow Bolt, Incinerate, Soul Fire and Chaos Bolt spells to also strike targets marked with the bane for 50% of the damage dealt and have 15% increased critical strike chance. Lasts 15 sec.",
-   "iconFile": "bane"
+   "iconFile": "bane",
+   "recommends": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "nether_portal",
    "name": "Nether Portal",
    "rarity": "legendary",
    "spec": "Demonology",
-   "tooltip": "Teaches you: Nether Portal.\n\r\nNether Portal\r\nInstant\t2 min cooldown\r\nTear open a portal to the Twisting Nether for 30 sec. Casting Shadow Bolt, Soul Fire or Incinerate summons a demon to fight for you. During Decimation your Soul Fire summons an additional demon."
+   "tooltip": "Teaches you: Nether Portal.\n\r\nNether Portal\r\nInstant\t2 min cooldown\r\nTear open a portal to the Twisting Nether for 30 sec. Casting Shadow Bolt, Soul Fire or Incinerate summons a demon to fight for you. During Decimation your Soul Fire summons an additional demon.",
+   "recommends": [
+    {
+     "talent": "decimation"
+    }
+   ]
   },
   {
    "key": "soul_erosion",
    "name": "Soul Erosion",
    "rarity": "legendary",
    "spec": "Affliction",
-   "tooltip": "Soul Erosion\tLegendary\r\nMystic Enchant\r\nDealing damage with Unstable Affliction and Curse of Agony has a 8% chance to increase the damage of your next Drain Soul by 300% (500% if the target is below 25% health). Drain Soul cast this way only lasts for 6 sec but is impervious to spell pushback.\r\n\r\nIn addition, using Drain Soul the duration of your Haunt, Unstable Affliction, and Shadow Embrace is not reduced on the target."
+   "tooltip": "Soul Erosion\tLegendary\r\nMystic Enchant\r\nDealing damage with Unstable Affliction and Curse of Agony has a 8% chance to increase the damage of your next Drain Soul by 300% (500% if the target is below 25% health). Drain Soul cast this way only lasts for 6 sec but is impervious to spell pushback.\r\n\r\nIn addition, using Drain Soul the duration of your Haunt, Unstable Affliction, and Shadow Embrace is not reduced on the target.",
+   "recommends": [
+    {
+     "talent": "unstable_affliction"
+    }
+   ]
   },
   {
    "key": "cataclysmic_burst",
    "name": "Cataclysmic Burst",
    "rarity": "legendary",
    "spec": "Destruction",
-   "tooltip": "Cataclysmic Burst\tLegendary\r\nMystic Enchant\r\nDealing damage with Incinerate extends the duration of your Immolate by 2 seconds and increases the periodic damage of Immolate by 10%, stacking up to 4 times. This effect is consumed when casting Conflagrate."
+   "tooltip": "Cataclysmic Burst\tLegendary\r\nMystic Enchant\r\nDealing damage with Incinerate extends the duration of your Immolate by 2 seconds and increases the periodic damage of Immolate by 10%, stacking up to 4 times. This effect is consumed when casting Conflagrate.",
+   "recommends": [
+    {
+     "talent": "conflagrate"
+    }
+   ]
   },
   {
    "key": "soul_harvest",
@@ -1616,7 +1641,12 @@
    "name": "Demonic Reoccurence",
    "rarity": "legendary",
    "spec": "Demonology",
-   "tooltip": "Demonic Reoccurence\tLegendary\r\nMystic Enchant\r\n\r\nReduces the cooldown of Metamorphosis by 75 sec, but reduces the bonus armor granted by 50% and you no longer benefit from the reduced chance to be crit or reduced duration of stuns and snares."
+   "tooltip": "Demonic Reoccurence\tLegendary\r\nMystic Enchant\r\n\r\nReduces the cooldown of Metamorphosis by 75 sec, but reduces the bonus armor granted by 50% and you no longer benefit from the reduced chance to be crit or reduced duration of stuns and snares.",
+   "requires": [
+    {
+     "talent": "metamorphosis"
+    }
+   ]
   },
   {
    "key": "shadow_crash",
@@ -1672,14 +1702,24 @@
    "name": "Demonic Whirl",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Requires: Summon Felguard\n\nDealing damage with Shadow Bolt or Incinerate causes your Felguard to cast a Whirlwind, dealing damage to enemies within 8 yards.\n\nThis can only occur once every 3 sec."
+   "tooltip": "Dealing damage with Shadow Bolt or Incinerate causes your Felguard to cast a Whirlwind, dealing damage to enemies within 8 yards.\n\nThis can only occur once every 3 sec.",
+   "requires": [
+    {
+     "talent": "summon_felguard"
+    }
+   ]
   },
   {
    "key": "eternal_torment",
    "name": "Eternal Torment",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Haunt\n\nCasting Haunt on a target already affected by your Haunt makes it guaranteed to critically strike. Your Haunt increases the damage of your Shadow damage-over-time effects by an additional 7%.\n\nYour Soul Swap: Exhale can now be cast to apply your DoTs on two targets."
+   "tooltip": "Casting Haunt on a target already affected by your Haunt makes it guaranteed to critically strike. Your Haunt increases the damage of your Shadow damage-over-time effects by an additional 7%.\n\nYour Soul Swap: Exhale can now be cast to apply your DoTs on two targets.",
+   "requires": [
+    {
+     "talent": "haunt"
+    }
+   ]
   },
   {
    "key": "agonizing_coil",
@@ -1693,14 +1733,25 @@
    "name": "Dread Communion",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Requires: Demonic Empowerment\n\nYour demon is healed for 25% of the healing you receive. Casting Demonic Empowerment triples the effect of your Master Demonologist talent for 10 seconds."
+   "tooltip": "Your demon is healed for 25% of the healing you receive. Casting Demonic Empowerment triples the effect of your Master Demonologist talent for 10 seconds.",
+   "requires": [
+    {
+     "talent": "demonic_empowerment"
+    }
+   ]
   },
   {
    "key": "doomcallers_wrath",
    "name": "Doomcaller's Wrath",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Eradication (Rank 3)\n\nUsing Curse of Doom grants you Eradication.\n\nDuration of Eradication is increased by 5 seconds.\n\nIncreases the damage of Curse of Doom by 30%."
+   "tooltip": "Using Curse of Doom grants you Eradication.\n\nDuration of Eradication is increased by 5 seconds.\n\nIncreases the damage of Curse of Doom by 30%.",
+   "requires": [
+    {
+     "talent": "eradication",
+     "rank": 3
+    }
+   ]
   },
   {
    "key": "searing_flames",
@@ -1715,14 +1766,25 @@
    "rarity": "epic",
    "spec": "Destruction",
    "tooltip": "Your Shadowburn deals 25% more damage to targets below 35% health and restores 10% health when you gain a Soul Shard from Shadowburn.",
-   "iconFile": "shadow_siphon"
+   "iconFile": "shadow_siphon",
+   "requires": [
+    {
+     "talent": "shadowburn"
+    }
+   ]
   },
   {
    "key": "twilight_reaper",
    "name": "Twilight Reaper",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Nightfall (Rank 1)\nThe Shadow Trance effect from Nightfall also reduces the mana cost of your Shadow Bolt by 100%.\n\nShadow Trance also makes the Shadow Bolt heal you for 50% of the damage dealt.\n\nAfter killing an opponent that yields experience or honor you trigger Shadow Trance."
+   "tooltip": "The Shadow Trance effect from Nightfall also reduces the mana cost of your Shadow Bolt by 100%.\n\nShadow Trance also makes the Shadow Bolt heal you for 50% of the damage dealt.\n\nAfter killing an opponent that yields experience or honor you trigger Shadow Trance.",
+   "requires": [
+    {
+     "talent": "nightfall",
+     "rank": 1
+    }
+   ]
   },
   {
    "key": "shadow_funnel",
@@ -1743,21 +1805,36 @@
    "name": "Dark Harvest",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Dark Harvest\tEpic\r\nMystic Enchant\r\nDealing periodic damage with Corruption, Curse of Agony, Seed of Corruption or Unstable Affliction increases the damage of your next Drain Life by 5%, stacking up to 10 times.\r\n\r\nKilling an opponent that yields experience or honor grants 3 stacks."
+   "tooltip": "Dealing periodic damage with Corruption, Curse of Agony, Seed of Corruption or Unstable Affliction increases the damage of your next Drain Life by 5%, stacking up to 10 times.\n\nKilling an opponent that yields experience or honor grants 3 stacks.",
+   "recommends": [
+    {
+     "talent": "unstable_affliction"
+    }
+   ]
   },
   {
    "key": "soul_link",
    "name": "Soul Link",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Soul Link\tEpic\r\nMystic Enchant\r\nTeaches you: Soul Link.\r\n\r\nCan not be used if the Soul Link talent is learned."
+   "tooltip": "Teaches you: Soul Link.\n\nCan not be used if the Soul Link talent is learned.",
+   "conflicts": [
+    {
+     "talent": "soul_link"
+    }
+   ]
   },
   {
    "key": "agent_of_chaos",
    "name": "Agent of Chaos",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Agent of Chaos\tEpic\r\nMystic Enchant\r\n\r\nImmolate deals half as much direct damage but lasts for 3 seconds longer.\r\n\r\nPeriodic damage from Immolate benefits from spell haste and reduces the cooldown of Chaos Bolt by 0.5 sec."
+   "tooltip": "Agent of Chaos\tEpic\r\nMystic Enchant\r\n\r\nImmolate deals half as much direct damage but lasts for 3 seconds longer.\r\n\r\nPeriodic damage from Immolate benefits from spell haste and reduces the cooldown of Chaos Bolt by 0.5 sec.",
+   "recommends": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "heating_up",
@@ -1765,28 +1842,51 @@
    "rarity": "epic",
    "spec": "Destruction",
    "tooltip": "Requires: Conflagrate\n\nYour Conflagrate has 15% increased critical chance and increases your Fire damage dealt to the target by 2%, stacking up to 5 times.",
-   "iconFile": "heating_up!"
+   "iconFile": "heating_up!",
+   "requires": [
+    {
+     "talent": "conflagrate"
+    }
+   ]
   },
   {
    "key": "demonic_influence",
    "name": "Demonic Influence",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Demonic Influence\tEpic\r\nMystic Enchant\r\n\r\nWhile in Metamorphosis your Demon and Wild Imps deal 20% increased damage."
+   "tooltip": "While in Metamorphosis your Demon and Wild Imps deal 20% increased damage.",
+   "requires": [
+    {
+     "talent": "metamorphosis"
+    }
+   ]
   },
   {
    "key": "wild_felfire",
    "name": "Wild Felfire",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Wild Felfire\tEpic\r\nMystic Enchant\r\n\r\nDealing damage with Chaos Bolt calls down a fiery rain, dealing 84*$+SP*0.04 Fire damage to nearby enemies every second for 4 sec."
+   "tooltip": "Dealing damage with Chaos Bolt calls down a fiery rain, dealing 84*$+SP*0.04 Fire damage to nearby enemies every second for 4 sec.",
+   "requires": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "pure_shadow",
    "name": "Pure Shadow",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Pure Shadow\tEpic\r\nMystic Enchant\r\nCasting offensive Shadow spells increases the damage of Shadow Bolt by 1%, Shadow Crash by 5% and Shadowfury by 10%. Lasts for 15 sec and stacks up to 6 times."
+   "tooltip": "Pure Shadow\tEpic\r\nMystic Enchant\r\nCasting offensive Shadow spells increases the damage of Shadow Bolt by 1%, Shadow Crash by 5% and Shadowfury by 10%. Lasts for 15 sec and stacks up to 6 times.",
+   "recommends": [
+    {
+     "enchant": "shadow_crash"
+    },
+    {
+     "talent": "shadowfury"
+    }
+   ]
   },
   {
    "key": "demonic_siphon",
@@ -1800,7 +1900,12 @@
    "name": "Demonic Persistence",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Casting Hand of Gul'dan increases the damage of your summoned demon and Wild Imps by 5%, stacking up to 3 times. Lasts 35 seconds."
+   "tooltip": "Casting Hand of Gul'dan increases the damage of your summoned demon and Wild Imps by 5%, stacking up to 3 times. Lasts 35 seconds.",
+   "requires": [
+    {
+     "enchant": "hand_of_guldan"
+    }
+   ]
   },
   {
    "key": "heretic_of_guldan",
@@ -1808,14 +1913,24 @@
    "rarity": "epic",
    "spec": "Demonology",
    "tooltip": "Your Incinerate, Soul Fire and Shadow Bolt reduce the cooldown of Hand of Gul'dan by 2 sec.",
-   "iconFile": "heretic_of_gul'dan"
+   "iconFile": "heretic_of_gul'dan",
+   "requires": [
+    {
+     "enchant": "hand_of_guldan"
+    }
+   ]
   },
   {
    "key": "endless_flames",
    "name": "Endless Flames",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Endless Flames\tEpic\r\nMystic Enchant\r\nIncreases the duration of Pyroclasm and Shadowflame by 6 seconds. Additionally, Shadowflame deals 15% increased damage."
+   "tooltip": "Endless Flames\tEpic\r\nMystic Enchant\r\nIncreases the duration of Pyroclasm and Shadowflame by 6 seconds. Additionally, Shadowflame deals 15% increased damage.",
+   "recommends": [
+    {
+     "talent": "pyroclasm"
+    }
+   ]
   },
   {
    "key": "cursed_shadows",
@@ -1829,7 +1944,12 @@
    "name": "Pyroclasmic Shadows",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Pyroclasmic Shadows\tEpic\r\nMystic Enchant\r\n\r\nYour Pyroclasm also increases the critical strike chance of your Shadow Bolt by 20%."
+   "tooltip": "Pyroclasmic Shadows\tEpic\r\nMystic Enchant\r\n\r\nYour Pyroclasm also increases the critical strike chance of your Shadow Bolt by 20%.",
+   "requires": [
+    {
+     "talent": "pyroclasm"
+    }
+   ]
   },
   {
    "key": "guldans_chosen",
@@ -1837,35 +1957,70 @@
    "rarity": "epic",
    "spec": "Destruction",
    "tooltip": "Gul'dan's Chosen\tEpic\r\nMystic Enchant\r\n\r\nCasting Chaos Bolt causes your Destruction spells to not consume Backdraft for 4 sec.",
-   "iconFile": "gul'dan's_chosen"
+   "iconFile": "gul'dan's_chosen",
+   "requires": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ],
+   "recommends": [
+    {
+     "talent": "backdraft"
+    }
+   ]
   },
   {
    "key": "decisive_decimation",
    "name": "Decisive Decimation",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Decisive Decimation\tEpic\r\nMystic Enchant\r\n\r\nCasting Conflagrate reduces the cast time of your next Soul Fire by 30% and removes the Soul Shard cost."
+   "tooltip": "Decisive Decimation\tEpic\r\nMystic Enchant\r\n\r\nCasting Conflagrate reduces the cast time of your next Soul Fire by 30% and removes the Soul Shard cost.",
+   "requires": [
+    {
+     "talent": "conflagrate"
+    }
+   ]
   },
   {
    "key": "chaos_manifesting",
    "name": "Chaos Manifesting",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Chaos Manifesting\tEpic\r\nMystic Enchant\r\nAfter casting Chaos Bolt, you get a buff for either Fire or Shadow Empowerment that increases your damage dealt by that school by 10% for 10 seconds."
+   "tooltip": "Chaos Manifesting\tEpic\r\nMystic Enchant\r\nAfter casting Chaos Bolt, you get a buff for either Fire or Shadow Empowerment that increases your damage dealt by that school by 10% for 10 seconds.",
+   "requires": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "fire_attunement",
    "name": "Fire Attunement",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Fire Attunement\tEpic\r\nMystic Enchant\r\n\r\nDealing damage with Immolate grants you Fire Attunement.\r\n\r\n Fire Attunement\r\nIncreases the chance to trigger your next Molten Core talent by 1%. Stacks up to 15 and lasts 15 sec."
+   "tooltip": "Fire Attunement\tEpic\r\nMystic Enchant\r\n\r\nDealing damage with Immolate grants you Fire Attunement.\r\n\r\n Fire Attunement\r\nIncreases the chance to trigger your next Molten Core talent by 1%. Stacks up to 15 and lasts 15 sec.",
+   "requires": [
+    {
+     "talent": "molten_core"
+    }
+   ]
   },
   {
    "key": "dusk_till_dawn",
    "name": "Dusk Till Dawn",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Dusk Till Dawn\tEpic\r\nMystic Enchant\r\nCasting Shadow Bolt, Incinerate, Soul Fire, Searing Pain or Chaos Bolt grants you Dusk Till Dawn.\r\n\r\n Dusk Till Dawn\r\nIncreases the damage of your next Shadowburn by 10%. Stacks up to 5 times and lasts 15 sec.\r\n\r\nWhen used with at least 3 stacks, Shadowburn hits 2 additional targets, applies Corruption to the targets and doesn't cost a Soul Shard."
+   "tooltip": "Dusk Till Dawn\tEpic\r\nMystic Enchant\r\nCasting Shadow Bolt, Incinerate, Soul Fire, Searing Pain or Chaos Bolt grants you Dusk Till Dawn.\r\n\r\n Dusk Till Dawn\r\nIncreases the damage of your next Shadowburn by 10%. Stacks up to 5 times and lasts 15 sec.\r\n\r\nWhen used with at least 3 stacks, Shadowburn hits 2 additional targets, applies Corruption to the targets and doesn't cost a Soul Shard.",
+   "requires": [
+    {
+     "talent": "shadowburn"
+    }
+   ],
+   "recommends": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "inner_flame",
@@ -1879,7 +2034,20 @@
    "name": "Unstable Void",
    "rarity": "epic",
    "spec": "Destruction",
-   "tooltip": "Unstable Void\tEpic\r\nMystic Enchant\r\n\r\n\r\nYour Shadowfury and Shadow Crash trigger your Backdraft talent. If these deal damage to a monster Backlash talent also triggers.\r\n\r\n Backdraft\r\nCast time and global cooldown of your next three Destruction spell reduced by 30%."
+   "tooltip": "Unstable Void\tEpic\r\nMystic Enchant\r\n\r\n\r\nYour Shadowfury and Shadow Crash trigger your Backdraft talent. If these deal damage to a monster Backlash talent also triggers.\r\n\r\n Backdraft\r\nCast time and global cooldown of your next three Destruction spell reduced by 30%.",
+   "requires": [
+    {
+     "talent": "backdraft"
+    }
+   ],
+   "recommends": [
+    {
+     "enchant": "shadow_crash"
+    },
+    {
+     "talent": "shadowfury"
+    }
+   ]
   },
   {
    "key": "inferno",
@@ -1893,7 +2061,15 @@
    "name": "Fel Damnation",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Fel Damnation\tEpic\r\nMystic Enchant\r\nAfter using Fel Domination your next Hand of Gul'dan summons double the amount of Wild Imps. Casting Hand of Gul'dan reduces the cooldown of Fel Domination by 15 seconds."
+   "tooltip": "Fel Damnation\tEpic\r\nMystic Enchant\r\nAfter using Fel Domination your next Hand of Gul'dan summons double the amount of Wild Imps. Casting Hand of Gul'dan reduces the cooldown of Fel Domination by 15 seconds.",
+   "requires": [
+    {
+     "enchant": "hand_of_guldan"
+    },
+    {
+     "talent": "fel_domination"
+    }
+   ]
   },
   {
    "key": "curseweaver",
@@ -1914,7 +2090,12 @@
    "name": "Glyph of Siphon Life",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Glyph of Siphon Life\tRare\r\nMystic Enchant\r\nIncreases the healing you receive from your Siphon Life talent by 25%."
+   "tooltip": "Glyph of Siphon Life\tRare\r\nMystic Enchant\r\nIncreases the healing you receive from your Siphon Life talent by 25%.",
+   "requires": [
+    {
+     "talent": "siphon_life"
+    }
+   ]
   },
   {
    "key": "glyph_of_howl_of_terror",
@@ -1956,7 +2137,12 @@
    "name": "Glyph of Shadowburn",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Glyph of Shadowburn\tRare\r\nMystic Enchant\r\nIncreases the critical strike chance and damage of Shadowburn by 20% when the target is below 35% health."
+   "tooltip": "Glyph of Shadowburn\tRare\r\nMystic Enchant\r\nIncreases the critical strike chance and damage of Shadowburn by 20% when the target is below 35% health.",
+   "requires": [
+    {
+     "talent": "shadowburn"
+    }
+   ]
   },
   {
    "key": "glyph_of_soulstone",
@@ -1977,14 +2163,24 @@
    "name": "Glyph of Unstable Affliction",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Glyph of Unstable Affliction\tRare\r\nMystic Enchant\r\nDecreases the casting time of your Unstable Affliction by 0.2 sec and your Unstable Affliction lasts for 3 additional seconds."
+   "tooltip": "Glyph of Unstable Affliction\tRare\r\nMystic Enchant\r\nDecreases the casting time of your Unstable Affliction by 0.2 sec and your Unstable Affliction lasts for 3 additional seconds.",
+   "requires": [
+    {
+     "talent": "unstable_affliction"
+    }
+   ]
   },
   {
    "key": "glyph_of_conflagrate",
    "name": "Glyph of Conflagrate",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Glyph of Conflagrate\tRare\r\nMystic Enchant\r\nYour Conflagrate spell no longer consumes your Immolate or Shadowflame spell from the target."
+   "tooltip": "Glyph of Conflagrate\tRare\r\nMystic Enchant\r\nYour Conflagrate spell no longer consumes your Immolate or Shadowflame spell from the target.",
+   "requires": [
+    {
+     "talent": "conflagrate"
+    }
+   ]
   },
   {
    "key": "glyph_of_health_funnel",
@@ -2026,7 +2222,12 @@
    "name": "Glyph of Felguard",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Glyph of Felguard\tRare\r\nMystic Enchant\r\nIncreases the Felguard's total attack power by 20%."
+   "tooltip": "Glyph of Felguard\tRare\r\nMystic Enchant\r\nIncreases the Felguard's total attack power by 20%.",
+   "requires": [
+    {
+     "talent": "summon_felguard"
+    }
+   ]
   },
   {
    "key": "glyph_of_voidwalker",
@@ -2061,21 +2262,36 @@
    "name": "Glyph of Haunt",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Glyph of Haunt\tRare\r\nMystic Enchant\r\nThe bonus damage granted by your Haunt spell is increased by an additional 3%."
+   "tooltip": "Glyph of Haunt\tRare\r\nMystic Enchant\r\nThe bonus damage granted by your Haunt spell is increased by an additional 3%.",
+   "requires": [
+    {
+     "talent": "haunt"
+    }
+   ]
   },
   {
    "key": "glyph_of_metamorphosis",
    "name": "Glyph of Metamorphosis",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Glyph of Metamorphosis\tRare\r\nMystic Enchant\r\nIncreases the duration of your Metamorphosis by 6 sec."
+   "tooltip": "Glyph of Metamorphosis\tRare\r\nMystic Enchant\r\nIncreases the duration of your Metamorphosis by 6 sec.",
+   "requires": [
+    {
+     "talent": "metamorphosis"
+    }
+   ]
   },
   {
    "key": "glyph_of_chaos_bolt",
    "name": "Glyph of Chaos Bolt",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Glyph of Chaos Bolt\tRare\r\nMystic Enchant\r\nReduces the cooldown on Chaos Bolt by 2 sec."
+   "tooltip": "Glyph of Chaos Bolt\tRare\r\nMystic Enchant\r\nReduces the cooldown on Chaos Bolt by 2 sec.",
+   "requires": [
+    {
+     "talent": "chaos_bolt"
+    }
+   ]
   },
   {
    "key": "glyph_of_demonic_circle",
@@ -2096,14 +2312,24 @@
    "name": "Glyph of Soul Link",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Glyph of Soul Link\tRare\r\nMystic Enchant\r\nIncreases the percentage of damage shared via your Soul Link by an additional 5%."
+   "tooltip": "Glyph of Soul Link\tRare\r\nMystic Enchant\r\nIncreases the percentage of damage shared via your Soul Link by an additional 5%.",
+   "requires": [
+    {
+     "talent": "soul_link"
+    }
+   ]
   },
   {
    "key": "glyph_of_life_tap",
    "name": "Glyph of Life Tap",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Glyph of Life Tap\tRare\r\nMystic Enchant\r\nWhen you use Life Tap or Dark Pact, you gain 20% of your Spirit as spell power for 40 sec."
+   "tooltip": "Glyph of Life Tap\tRare\r\nMystic Enchant\r\nWhen you use Life Tap or Dark Pact, you gain 20% of your Spirit as spell power for 40 sec.",
+   "recommends": [
+    {
+     "talent": "dark_pact"
+    }
+   ]
   },
   {
    "key": "glyph_of_quick_decay",
@@ -2117,245 +2343,910 @@
    "name": "Cataclysm",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Cataclysm\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the Mana cost of your Destruction spells by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Cataclysm Talent."
+   "tooltip": "Cataclysm\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the Mana cost of your Destruction spells by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Cataclysm Talent.",
+   "conflicts": [
+    {
+     "talent": "cataclysm"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "fel_concentration",
    "name": "Fel Concentration",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Fel Concentration\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the pushback suffered from damaging attacks while casting Drain Life, Drain Mana, Drain Soul, Unstable Affliction, and Haunt spells by 70%.\r\n\r\nThis Mystic Enchant does not stack with the Fel Concentration Talent."
+   "tooltip": "Fel Concentration\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the pushback suffered from damaging attacks while casting Drain Life, Drain Mana, Drain Soul, Unstable Affliction, and Haunt spells by 70%.\r\n\r\nThis Mystic Enchant does not stack with the Fel Concentration Talent.",
+   "conflicts": [
+    {
+     "talent": "fel_concentration"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "bane",
    "name": "Bane",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Bane\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec.\r\n\r\nThis Mystic Enchant does not stack with the Bane Talent."
+   "tooltip": "Bane\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec.\r\n\r\nThis Mystic Enchant does not stack with the Bane Talent.",
+   "conflicts": [
+    {
+     "talent": "bane"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_shadow_bolt",
    "name": "Improved Shadow Bolt",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Improved Shadow Bolt\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Shadow Bolt spell by 10%, and your Shadow Bolt has a 100% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec.\r\n\r\nThis Mystic Enchant does not stack with the Improved Shadow Bolt Talent."
+   "tooltip": "Improved Shadow Bolt\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Shadow Bolt spell by 10%, and your Shadow Bolt has a 100% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec.\r\n\r\nThis Mystic Enchant does not stack with the Improved Shadow Bolt Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_shadow_bolt"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "soul_siphon",
    "name": "Soul Siphon",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Soul Siphon\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Affliction effects on the target, up to a maximum of 18% additional effect.\r\n\r\nThis Mystic Enchant does not stack with the Soul Siphon Talent."
+   "tooltip": "Soul Siphon\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Affliction effects on the target, up to a maximum of 18% additional effect.\r\n\r\nThis Mystic Enchant does not stack with the Soul Siphon Talent.",
+   "conflicts": [
+    {
+     "talent": "soul_siphon"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_corruption",
    "name": "Improved Corruption",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Improved Corruption\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Corruption by 10%, and increases the critical strike chance of your Seed of Corruption by 5%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Corruption Talent."
+   "tooltip": "Improved Corruption\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Corruption by 10%, and increases the critical strike chance of your Seed of Corruption by 5%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Corruption Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_corruption"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "destructive_reach",
    "name": "Destructive Reach",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Destructive Reach\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the range of your Destruction spells by 20% and reduces threat caused by Destruction spells by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Destructive Reach Talent."
+   "tooltip": "Destructive Reach\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the range of your Destruction spells by 20% and reduces threat caused by Destruction spells by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Destructive Reach Talent.",
+   "conflicts": [
+    {
+     "talent": "destructive_reach"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_searing_pain",
    "name": "Improved Searing Pain",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Improved Searing Pain\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the critical strike chance of your Searing Pain spell by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Searing Pain Talent."
+   "tooltip": "Improved Searing Pain\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the critical strike chance of your Searing Pain spell by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Searing Pain Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_searing_pain"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "nightfall",
    "name": "Nightfall",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Nightfall\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nGives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.\r\n\r\nThis chance increases by an additional 2% every time Shadow Trance does not trigger.\r\n\r\nThis Mystic Enchant does not stack with the Nightfall Talent."
+   "tooltip": "Nightfall\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nGives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.\r\n\r\nThis chance increases by an additional 2% every time Shadow Trance does not trigger.\r\n\r\nThis Mystic Enchant does not stack with the Nightfall Talent.",
+   "conflicts": [
+    {
+     "talent": "nightfall"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "aftermath",
    "name": "Aftermath",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Aftermath\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the periodic damage done by your Immolate by 6%, and your Conflagrate has a 100% chance to daze the target for 5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Aftermath Talent."
+   "tooltip": "Aftermath\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the periodic damage done by your Immolate by 6%, and your Conflagrate has a 100% chance to daze the target for 5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Aftermath Talent.",
+   "conflicts": [
+    {
+     "talent": "aftermath"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "demonic_power",
    "name": "Demonic Power",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Demonic Power\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the cooldown of your Succubus' Lash of Pain spell by 6 sec. and reduces the casting time of your Imp's Firebolt spell by 0.5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Power Talent."
+   "tooltip": "Demonic Power\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the cooldown of your Succubus' Lash of Pain spell by 6 sec. and reduces the casting time of your Imp's Firebolt spell by 0.5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Power Talent.",
+   "conflicts": [
+    {
+     "talent": "demonic_power"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "intensity",
    "name": "Intensity",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Intensity\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the pushback suffered from damaging attacks while casting or channeling any Destruction spell by 70%.\r\n\r\nThis Mystic Enchant does not stack with the Intensity Talent."
+   "tooltip": "Intensity\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the pushback suffered from damaging attacks while casting or channeling any Destruction spell by 70%.\r\n\r\nThis Mystic Enchant does not stack with the Intensity Talent.",
+   "conflicts": [
+    {
+     "talent": "intensity"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "suppression",
    "name": "Suppression",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Suppression\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases your chance to hit with spells by 3%, and reduces the mana cost of your Affliction spells by 6%.\r\n\r\nThis Mystic Enchant does not stack with the Suppression Talent."
+   "tooltip": "Suppression\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases your chance to hit with spells by 3%, and reduces the mana cost of your Affliction spells by 6%.\r\n\r\nThis Mystic Enchant does not stack with the Suppression Talent.",
+   "conflicts": [
+    {
+     "talent": "suppression"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_curse_of_weakness",
    "name": "Improved Curse of Weakness",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Improved Curse of Weakness\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of attack power reduced by your Curse of Weakness by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Curse of Weakness Talent."
+   "tooltip": "Improved Curse of Weakness\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of attack power reduced by your Curse of Weakness by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Curse of Weakness Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_curse_of_weakness"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_life_tap",
    "name": "Improved Life Tap",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Improved Life Tap\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Mana awarded by your Life Tap spell by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Life Tap Talent."
+   "tooltip": "Improved Life Tap\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Mana awarded by your Life Tap spell by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Life Tap Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_life_tap"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "amplify_curse",
    "name": "Amplify Curse",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Amplify Curse\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the global cooldown of your Curses by 0.5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Amplify Curse Talent."
+   "tooltip": "Amplify Curse\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the global cooldown of your Curses by 0.5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Amplify Curse Talent.",
+   "conflicts": [
+    {
+     "talent": "amplify_curse"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_drain_soul",
    "name": "Improved Drain Soul",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Crossover Talent\nReturns 15% of your maximum mana if the target is killed by you while you drain its soul. In addition, your Affliction spells generate 20% less threat.\n\nThis Mystic Enchant does not stack with the Improved Drain Soul Talent."
+   "tooltip": "Crossover Talent\nReturns 15% of your maximum mana if the target is killed by you while you drain its soul. In addition, your Affliction spells generate 20% less threat.\n\nThis Mystic Enchant does not stack with the Improved Drain Soul Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_drain_soul"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_healthstone",
    "name": "Improved Healthstone",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Improved Healthstone\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Health restored by your Healthstone by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Healthstone Talent."
+   "tooltip": "Improved Healthstone\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Health restored by your Healthstone by 20%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Healthstone Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_healthstone"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_imp",
    "name": "Improved Imp",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Improved Imp\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Imp Talent."
+   "tooltip": "Improved Imp\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Imp Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_imp"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "demonic_embrace",
    "name": "Demonic Embrace",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Demonic Embrace\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases your total Stamina by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Embrace Talent."
+   "tooltip": "Demonic Embrace\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases your total Stamina by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Embrace Talent.",
+   "conflicts": [
+    {
+     "talent": "demonic_embrace"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_health_funnel",
    "name": "Improved Health Funnel",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Improved Health Funnel\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Health transferred by your Health Funnel spell by 20% and reduces the health cost by 20%. In addition, your summoned Demon takes 30% less damage while under the effect of your Health Funnel.\r\n\r\nThis Mystic Enchant does not stack with the Improved Health Funnel Talent."
+   "tooltip": "Improved Health Funnel\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the amount of Health transferred by your Health Funnel spell by 20% and reduces the health cost by 20%. In addition, your summoned Demon takes 30% less damage while under the effect of your Health Funnel.\r\n\r\nThis Mystic Enchant does not stack with the Improved Health Funnel Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_health_funnel"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "demonic_brutality",
    "name": "Demonic Brutality",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Demonic Brutality\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 3%.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Brutality Talent."
+   "tooltip": "Demonic Brutality\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 3%.\r\n\r\nThis Mystic Enchant does not stack with the Demonic Brutality Talent.",
+   "conflicts": [
+    {
+     "talent": "demonic_brutality"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "master_summoner",
    "name": "Master Summoner",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Master Summoner\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by 4 sec and the Mana cost by 40%.\r\n\r\nThis Mystic Enchant does not stack with the Master Summoner Talent."
+   "tooltip": "Master Summoner\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by 4 sec and the Mana cost by 40%.\r\n\r\nThis Mystic Enchant does not stack with the Master Summoner Talent.",
+   "conflicts": [
+    {
+     "talent": "master_summoner"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "fel_vitality",
    "name": "Fel Vitality",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Fel Vitality\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 3%.\r\n\r\nThis Mystic Enchant does not stack with the Fel Vitality Talent."
+   "tooltip": "Fel Vitality\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 3%.\r\n\r\nThis Mystic Enchant does not stack with the Fel Vitality Talent.",
+   "conflicts": [
+    {
+     "talent": "fel_vitality"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_succubus",
    "name": "Improved Succubus",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Improved Succubus\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the cast time of your Succubus' Seduction by 66%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Succubus Talent."
+   "tooltip": "Improved Succubus\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces the cast time of your Succubus' Seduction by 66%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Succubus Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_succubus"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "unholy_power",
    "name": "Unholy Power",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Unholy Power\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 15%.\r\n\r\nThis Mystic Enchant does not stack with the Unholy Power Talent."
+   "tooltip": "Unholy Power\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 15%.\r\n\r\nThis Mystic Enchant does not stack with the Unholy Power Talent.",
+   "conflicts": [
+    {
+     "talent": "unholy_power"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_curse_of_agony",
    "name": "Improved Curse of Agony",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Improved Curse of Agony\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Curse of Agony by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Curse of Agony Talent."
+   "tooltip": "Improved Curse of Agony\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage done by your Curse of Agony by 10%.\r\n\r\nThis Mystic Enchant does not stack with the Improved Curse of Agony Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_curse_of_agony"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "demonic_aegis",
    "name": "Demonic Aegis",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Crossover Talent\nIncreases the effectiveness of your Demon Armor, Summoner's Armor and Fel Armor spells by 30%.\n\nThis Mystic Enchant does not stack with the Demonic Aegis Talent."
+   "tooltip": "Crossover Talent\nIncreases the effectiveness of your Demon Armor, Summoner's Armor and Fel Armor spells by 30%.\n\nThis Mystic Enchant does not stack with the Demonic Aegis Talent.",
+   "conflicts": [
+    {
+     "talent": "demonic_aegis"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "empowered_corruption",
    "name": "Empowered Corruption",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Empowered Corruption\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage of your Corruption spell by an amount equal to 36% of your spell power.\r\n\r\nThis Mystic Enchant does not stack with the Empowered Corruption Talent."
+   "tooltip": "Empowered Corruption\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the damage of your Corruption spell by an amount equal to 36% of your spell power.\r\n\r\nThis Mystic Enchant does not stack with the Empowered Corruption Talent.",
+   "conflicts": [
+    {
+     "talent": "empowered_corruption"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "fel_synergy",
    "name": "Fel Synergy",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Crossover Talent\nYou have a 100% chance to heal your pet for 15% of the amount of spell damage done by you.\n\nThis Mystic Enchant does not stack with the Fel Synergy Talent."
+   "tooltip": "Crossover Talent\nYou have a 100% chance to heal your pet for 15% of the amount of spell damage done by you.\n\nThis Mystic Enchant does not stack with the Fel Synergy Talent.",
+   "conflicts": [
+    {
+     "talent": "fel_synergy"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "improved_fear",
    "name": "Improved Fear",
    "rarity": "rare",
    "spec": "Affliction",
-   "tooltip": "Improved Fear\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nCauses your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by 30% for 5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Improved Fear Talent."
+   "tooltip": "Improved Fear\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nCauses your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by 30% for 5 sec.\r\n\r\nThis Mystic Enchant does not stack with the Improved Fear Talent.",
+   "conflicts": [
+    {
+     "talent": "improved_fear"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Demonology",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "ruin",
    "name": "Ruin",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Ruin\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 100%.\r\n\r\nThis Mystic Enchant does not stack with the Ruin Talent."
+   "tooltip": "Ruin\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nIncreases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 100%.\r\n\r\nThis Mystic Enchant does not stack with the Ruin Talent.",
+   "conflicts": [
+    {
+     "talent": "ruin"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "molten_skin",
    "name": "Molten Skin",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Molten Skin\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces all damage taken by 6%.\r\n\r\nThis Mystic Enchant does not stack with the Molten Skin Talent."
+   "tooltip": "Molten Skin\tRare\r\nMystic Enchant\r\nCrossover Talent\r\nReduces all damage taken by 6%.\r\n\r\nThis Mystic Enchant does not stack with the Molten Skin Talent.",
+   "conflicts": [
+    {
+     "talent": "molten_skin"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "shadowburn",
    "name": "Shadowburn",
    "rarity": "rare",
    "spec": "Destruction",
-   "tooltip": "Shadowburn\tRare\r\nMystic Enchant\r\nTeaches you: Shadowburn\r\n\r\nCan not be used if the Shadowburn talent is learned."
+   "tooltip": "Shadowburn\tRare\r\nMystic Enchant\r\nTeaches you: Shadowburn\r\n\r\nCan not be used if the Shadowburn talent is learned.",
+   "conflicts": [
+    {
+     "talent": "shadowburn"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Demonology",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   },
   {
    "key": "fel_domination",
    "name": "Fel Domination",
    "rarity": "rare",
    "spec": "Demonology",
-   "tooltip": "Fel Domination\tRare\r\nMystic Enchant\r\nTeaches you: Fel Domination\r\n\r\nCan not be used if the Fel Domination talent is learned."
+   "tooltip": "Fel Domination\tRare\r\nMystic Enchant\r\nTeaches you: Fel Domination\r\n\r\nCan not be used if the Fel Domination talent is learned.",
+   "conflicts": [
+    {
+     "talent": "fel_domination"
+    }
+   ],
+   "requires": [
+    {
+     "anyOf": [
+      {
+       "tree": "Affliction",
+       "pts": 30
+      },
+      {
+       "tree": "Destruction",
+       "pts": 30
+      }
+     ]
+    }
+   ]
   }
  ]
 }

@@ -430,6 +430,11 @@ body {
 .enchant-choice.rare      { border-color: #0070dd; }
 .enchant-choice:hover     { box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); }
 .enchant-choice.taken     { opacity: 0.25; pointer-events: none; }
+/* Red tint: requirements unmet or conflicting talent allocated */
+.enchant-slot.invalid,
+.enchant-choice.invalid {
+  box-shadow: inset 0 0 0 60px rgba(220, 38, 38, 0.38), 0 0 8px rgba(220, 38, 38, 0.3);
+}
 .enchant-legend {
   display: flex;
   justify-content: center;
@@ -782,6 +787,9 @@ function refresh() {
     if (old) old.remove();
     wrap.insertAdjacentHTML('afterbegin', buildArrows(tree));
   });
+
+  // Talent changes can (in)validate socketed enchants — re-tint the board
+  if (slotEls.length) refreshEnchantBoard();
 }
 
 // ─── TABS ────────────────────────────────────────────────────────────────────
@@ -833,7 +841,9 @@ function showTip(key, e) {
 
   document.getElementById('tt-name').textContent = t.name;
 
-  document.getElementById('tt-rank').style.color = ''; // may hold an enchant rarity color
+  // Clear inline colors an enchant tooltip may have left behind
+  document.getElementById('tt-rank').style.color = '';
+  document.getElementById('tt-prereq').style.color = '';
 
   // Rank line — unallocated multi-rank talents show the full range "Rank 1/2/3"
   if (p === 0 && t.maxPts > 1) {
@@ -916,10 +926,38 @@ function buildEnchantBoard() {
   });
 }
 
+// Human-readable name for a relation ref
+function refName(r) {
+  if (r.talent)  return T[r.talent].name + (r.rank ? ` (Rank ${r.rank})` : '');
+  if (r.enchant) return `${enchByKey[r.enchant].name} enchant`;
+  if (r.anyOf)   return r.anyOf.map(a => `${a.pts} ${a.tree}`).join(' or ');
+  return r.name;
+}
+
+// Unmet requirements + active conflicts for an enchant, given current talents
+// and socketed enchants. Plain-name refs (abilities/stances) can't be checked.
+function enchIssues(e) {
+  const issues = [];
+  (e.requires || []).forEach(r => {
+    if (r.talent) {
+      if (talentPts(r.talent) < (r.rank || 1)) issues.push(`Requires ${refName(r)}`);
+    } else if (r.enchant) {
+      if (!enchPicks.includes(r.enchant)) issues.push(`Requires ${refName(r)}`);
+    } else if (r.anyOf) {
+      if (!r.anyOf.some(a => treePts(a.tree) >= a.pts)) issues.push(`Requires ${refName(r)}`);
+    }
+  });
+  (e.conflicts || []).forEach(r => {
+    if (r.talent && talentPts(r.talent) > 0) issues.push(`Conflicts with ${T[r.talent].name} talent`);
+  });
+  return issues;
+}
+
 function refreshEnchantBoard() {
   slotEls.forEach((el, i) => {
     const e = enchPicks[i] && enchByKey[enchPicks[i]];
     el.classList.toggle('filled', !!e);
+    el.classList.toggle('invalid', !!(e && enchIssues(e).length));
     el.style.backgroundImage = e ? `url("${enchIconSrc(e)}")` : '';
     el.title = e ? '' : `${SLOT_RARITIES[i][0].toUpperCase() + SLOT_RARITIES[i].slice(1)} slot — empty`;
   });
@@ -957,7 +995,8 @@ function openEnchantPicker(slotIdx) {
     grid.appendChild(label);
     bySpec[spec].sort((a, b) => a.name.localeCompare(b.name)).forEach(e => {
       const c = document.createElement('div');
-      c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '');
+      c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '') +
+        (enchIssues(e).length ? ' invalid' : '');
       c.style.backgroundImage = `url("${enchIconSrc(e)}")`;
       c.addEventListener('click', () => {
         enchPicks[slotIdx] = e.key;
@@ -988,7 +1027,18 @@ function showEnchTip(e, ev) {
   rankEl.style.color = RARITY_COLORS[e.rarity] || '';
   document.getElementById('tt-body').textContent = e.tooltip;
   document.getElementById('tt-next').style.display = 'none';
-  document.getElementById('tt-prereq').textContent = '';
+  // Footer line: unmet requirements/conflicts in red, else synergy note in gold
+  const preEl = document.getElementById('tt-prereq');
+  const issues = enchIssues(e);
+  if (issues.length) {
+    preEl.style.color = '';
+    preEl.textContent = issues.join(' · ');
+  } else if (e.recommends) {
+    preEl.style.color = '#c9a227';
+    preEl.textContent = 'Pairs well with: ' + e.recommends.map(refName).join(', ');
+  } else {
+    preEl.textContent = '';
+  }
   tip.classList.add('visible');
   moveTip(ev);
 }
