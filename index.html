@@ -429,19 +429,16 @@ body {
 .enchant-choice.epic      { border-color: #a335ee; }
 .enchant-choice.rare      { border-color: #0070dd; }
 .enchant-choice:hover     { box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); }
-/* Already socketed elsewhere — dimmed, hoverable for the tooltip, not pickable */
-.enchant-choice.taken       { opacity: 0.3; cursor: default; }
-.enchant-choice.taken:hover { opacity: 0.55; box-shadow: none; }
+/* Already socketed elsewhere — greyed, hoverable for the tooltip, not pickable */
+.enchant-choice.taken       { filter: grayscale(100%) brightness(0.45); cursor: default; }
+.enchant-choice.taken:hover { filter: grayscale(100%) brightness(0.7); box-shadow: none; }
 /* Socketed but invalid: red tint (requirements unmet / conflicting talent) */
 .enchant-slot.invalid {
   box-shadow: inset 0 0 0 60px rgba(220, 38, 38, 0.38), 0 0 8px rgba(220, 38, 38, 0.3);
 }
-/* In the picker: missing requirements show the faded red tint;
-   conflicts grey out like unavailable talents. Both stay hoverable
-   for the reason and clickable for planning ahead. */
-.enchant-choice.invalid-req {
-  box-shadow: inset 0 0 0 60px rgba(220, 38, 38, 0.38);
-}
+/* In the picker, invalid choices (unmet requirements or conflicts) grey out
+   like unavailable talents — hoverable for the reason, clickable for planning.
+   Red is reserved for socketed slots on the board. */
 .enchant-choice.invalid { filter: grayscale(100%) brightness(0.45); }
 /* Status rings — picker only; the board keeps just the red invalid tint */
 /* Synergy: a recommended talent/enchant is already in the build */
@@ -1028,8 +1025,7 @@ function openEnchantPicker(slotIdx) {
     grid.appendChild(label);
     bySpec[spec].sort((a, b) => a.name.localeCompare(b.name)).forEach(e => {
       const isTaken = taken.has(e.key);
-      const state = unmetRequirements(e).length ? ' invalid-req'
-        : activeConflicts(e).length ? ' invalid'
+      const state = enchIssues(e).length ? ' invalid'
         : recommendsMet(e).length ? ' synergy'
         : requirementsMet(e).length ? ' reqmet' : '';
       const c = document.createElement('div');
