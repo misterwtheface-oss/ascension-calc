@@ -25,5 +25,12 @@
   "pandemic": 1,
   "everlasting_affliction": 3,
   "haunt": 1
- }
+ },
+ "enchants": [
+  "affliction_mastery",
+  "eternal_torment", "agonizing_coil", "dark_harvest",
+  "blood_horror",
+  "glyph_of_haunt", "glyph_of_corruption", "glyph_of_unstable_affliction",
+  "glyph_of_curse_of_agony", "glyph_of_quick_decay", "glyph_of_life_tap"
+ ]
 }

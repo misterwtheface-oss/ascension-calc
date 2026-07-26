@@ -68,6 +68,25 @@ for (const file of readdirSync(buildsDir).sort()) {
     });
     const filled = b.enchants.filter(Boolean);
     if (new Set(filled).size !== filled.length) errors.push(`${file}: duplicate enchant picks`);
+
+    // Relations: each pick's requirements must hold against the build's own
+    // talents and socketed enchants, with no active conflicts
+    const treeTotal = tree => LAYOUT[tree].flat().filter(Boolean).reduce((s, k) => s + pts(k), 0);
+    const refMet = r =>
+      (r.talent && pts(r.talent) >= (r.rank || 1)) ||
+      (r.enchant && filled.includes(r.enchant)) ||
+      (r.anyOf && r.anyOf.some(a => treeTotal(a.tree) >= a.pts));
+    filled.forEach(k => {
+      const e = byKey[k];
+      if (!e) return;
+      (e.requires || []).forEach(r => {
+        if (!r.name && !refMet(r)) errors.push(`${file}: '${k}' requirement unmet in this build`);
+      });
+      (e.conflicts || []).forEach(r => {
+        if (r.talent && pts(r.talent) > 0)
+          errors.push(`${file}: '${k}' conflicts with allocated talent '${r.talent}'`);
+      });
+    });
   }
 
   entries.push({ file, name: b.name, class: b.class, focus: b.focus || null, points: total });
