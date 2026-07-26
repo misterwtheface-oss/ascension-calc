@@ -18,9 +18,28 @@ tools/
 ## URLs
 
 - `?class=warlock` — pick the class (default: warlock)
-- `&build=2350222...` — point allocation, one digit per talent in layout order.
-  The page keeps this parameter updated as you click, so the address bar is
-  always a shareable snapshot of the current build.
+- `&build=2350222...` — point allocation, one digit per talent in layout order
+- `&ench=key,key,...` — enchant picks in slot order (1 Legendary, 3 Epic,
+  1 Artifact, 6 Rare); blanks allowed
+
+The page keeps both parameters updated as you click, so the address bar is
+always a shareable snapshot of the current build.
+
+## Build files
+
+`builds/<class>-<name>.json`:
+
+```json
+{ "name": "Display Name", "class": "warlock",
+  "focus": "PvE — Raiding", "notes": "optional",
+  "points": { "talent_key": 3 },
+  "enchants": ["legendary", "e1", "e2", "e3", "artifact", "r1", "r2", "r3", "r4", "r5", "r6"] }
+```
+
+`node tools/build-index.mjs` validates everything (point caps, prereqs, row
+gates, enchant slot rarities, and that each enchant's requirements hold
+against the build's own talents) and regenerates `builds/index.json`, which
+feeds the site's "Load a build…" dropdown.
 
 ## Adding a class
 
