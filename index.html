@@ -948,7 +948,9 @@ function openEnchantPicker(slotIdx) {
   const taken = new Set(enchPicks.filter((k, i) => k && i !== slotIdx));
   const bySpec = {};
   pool.forEach(e => (bySpec[e.spec] ??= []).push(e));
-  Object.keys(bySpec).sort().forEach(spec => {
+  // "All"-spec enchants lead, then specs alphabetically
+  Object.keys(bySpec).sort((a, b) =>
+    (a === 'All' ? -1 : b === 'All' ? 1 : a.localeCompare(b))).forEach(spec => {
     const label = document.createElement('div');
     label.className = 'enchant-spec-label';
     label.textContent = spec;
