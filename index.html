@@ -974,8 +974,10 @@ function refMet(r) {
 function recommendsMet(e) { return (e.recommends || []).filter(refMet); }
 
 // Fulfilled requirements — drives the green ring (enchIssues already
-// guarantees none are unmet when this shows)
-function requirementsMet(e) { return (e.requires || []).filter(refMet); }
+// guarantees none are unmet when this shows). Tree-gate ("crossover")
+// requirements are excluded: half the rare pool passes them once a tree
+// hits 30, so they only surface when unmet (grey picker / red board).
+function requirementsMet(e) { return (e.requires || []).filter(r => !r.anyOf && refMet(r)); }
 
 // Spec identity color for enchant labels ("All" gets the neutral brass)
 function specColor(spec) {
