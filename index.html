@@ -616,6 +616,9 @@ const pos = {};
 
 function talentPts(key) { return pts[key] || 0; }
 function treePts(tree)  { return LAYOUT[tree].flat().filter(Boolean).reduce((s,k) => s + talentPts(k), 0); }
+// Tier gating counts only points in rows strictly below the tier: a row-N talent
+// needs N*5 points beneath it, so points in its own row or higher can't unlock it.
+function treePtsBelow(tree, row) { return LAYOUT[tree].slice(0, row).flat().filter(Boolean).reduce((s,k) => s + talentPts(k), 0); }
 function totalPts()     { return Object.values(pts).reduce((s,v) => s + v, 0); }
 
 function getIconSrc(key) {
@@ -628,7 +631,7 @@ function talentState(key) {
   if (p >= t.maxPts) return 'maxed';
   if (p > 0)         return 'partial';
   const { tree, row } = pos[key];
-  if (treePts(tree) < row * 5) return 'unavailable';
+  if (treePtsBelow(tree, row) < row * 5) return 'unavailable';
   if (t.prereq && talentPts(t.prereq) < T[t.prereq].maxPts) return 'unavailable';
   // Point pool exhausted: untouched talents dim exactly like level-locked ones
   if (totalPts() >= POINT_CAP) return 'unavailable';
@@ -648,7 +651,7 @@ function canRemove(key) {
   let ok = true;
   LAYOUT[tree].forEach((r, ri) => {
     if (ri <= row) return;
-    if (treePts(tree) < ri * 5) {
+    if (treePtsBelow(tree, ri) < ri * 5) {
       r.forEach(k => { if (k && talentPts(k) > 0) ok = false; });
     }
   });
