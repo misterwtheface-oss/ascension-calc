@@ -443,6 +443,12 @@ body {
   outline: 2px solid #c9a227;
   outline-offset: 2px;
 }
+/* Requirements fulfilled (green ring; synergy gold takes precedence) */
+.enchant-slot.reqmet,
+.enchant-choice.reqmet {
+  outline: 2px solid #1eff00;
+  outline-offset: 2px;
+}
 .enchant-legend {
   display: flex;
   justify-content: center;
@@ -961,14 +967,19 @@ function enchIssues(e) {
   return issues;
 }
 
-// Recommended refs already present in the build (allocated talent, socketed
-// enchant, or met tree gate) — drives the gold synergy ring
-function recommendsMet(e) {
-  return (e.recommends || []).filter(r =>
-    (r.talent && talentPts(r.talent) >= (r.rank || 1)) ||
+// A relation ref currently satisfied by the build?
+function refMet(r) {
+  return (r.talent && talentPts(r.talent) >= (r.rank || 1)) ||
     (r.enchant && enchPicks.includes(r.enchant)) ||
-    (r.anyOf && r.anyOf.some(a => treePts(a.tree) >= a.pts)));
+    (r.anyOf && r.anyOf.some(a => treePts(a.tree) >= a.pts));
 }
+
+// Recommended refs already present in the build — drives the gold synergy ring
+function recommendsMet(e) { return (e.recommends || []).filter(refMet); }
+
+// Fulfilled requirements — drives the green ring (enchIssues already
+// guarantees none are unmet when this shows)
+function requirementsMet(e) { return (e.requires || []).filter(refMet); }
 
 // Spec identity color for enchant labels ("All" gets the neutral brass)
 function specColor(spec) {
@@ -980,9 +991,11 @@ function refreshEnchantBoard() {
   slotEls.forEach((el, i) => {
     const e = enchPicks[i] && enchByKey[enchPicks[i]];
     const invalid = !!(e && enchIssues(e).length);
+    const synergy = !!(e && !invalid && recommendsMet(e).length);
     el.classList.toggle('filled', !!e);
     el.classList.toggle('invalid', invalid);
-    el.classList.toggle('synergy', !!(e && !invalid && recommendsMet(e).length));
+    el.classList.toggle('synergy', synergy);
+    el.classList.toggle('reqmet', !!(e && !invalid && !synergy && requirementsMet(e).length));
     el.style.backgroundImage = e ? `url("${enchIconSrc(e)}")` : '';
     el.title = e ? '' : `${SLOT_RARITIES[i][0].toUpperCase() + SLOT_RARITIES[i].slice(1)} slot — empty`;
   });
@@ -1021,9 +1034,11 @@ function openEnchantPicker(slotIdx) {
     grid.appendChild(label);
     bySpec[spec].sort((a, b) => a.name.localeCompare(b.name)).forEach(e => {
       const invalid = enchIssues(e).length > 0;
+      const state = invalid ? ' invalid'
+        : recommendsMet(e).length ? ' synergy'
+        : requirementsMet(e).length ? ' reqmet' : '';
       const c = document.createElement('div');
-      c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '') +
-        (invalid ? ' invalid' : (recommendsMet(e).length ? ' synergy' : ''));
+      c.className = `enchant-choice ${rarity}` + (taken.has(e.key) ? ' taken' : '') + state;
       c.style.backgroundImage = `url("${enchIconSrc(e)}")`;
       c.addEventListener('click', () => {
         enchPicks[slotIdx] = e.key;
@@ -1060,19 +1075,19 @@ function showEnchTip(e, ev) {
   // Footer: unmet requirements/conflicts in red; active synergy in bright gold;
   // otherwise the recommendation in muted gold
   const preEl = document.getElementById('tt-prereq');
+  preEl.style.color = '';
   const issues = enchIssues(e);
-  const met = recommendsMet(e);
   if (issues.length) {
-    preEl.style.color = '';
     preEl.textContent = issues.join(' · ');
-  } else if (met.length) {
-    preEl.style.color = '#ffd100';
-    preEl.textContent = 'Synergy active: ' + met.map(refName).join(', ');
-  } else if (e.recommends) {
-    preEl.style.color = '#c9a227';
-    preEl.textContent = 'Pairs well with: ' + e.recommends.map(refName).join(', ');
   } else {
-    preEl.textContent = '';
+    // Stacked status lines: green fulfilled reqs, gold synergy/recommendation
+    const lines = [];
+    const reqs = requirementsMet(e);
+    const met = recommendsMet(e);
+    if (reqs.length) lines.push(['#1eff00', 'Requirements met: ' + reqs.map(refName).join(', ')]);
+    if (met.length) lines.push(['#ffd100', 'Synergy active: ' + met.map(refName).join(', ')]);
+    else if (e.recommends) lines.push(['#c9a227', 'Pairs well with: ' + e.recommends.map(refName).join(', ')]);
+    preEl.innerHTML = lines.map(([c, t]) => `<div style="color:${c}">${t}</div>`).join('');
   }
   tip.classList.add('visible');
   moveTip(ev);
