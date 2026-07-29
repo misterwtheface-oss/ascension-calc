@@ -343,6 +343,162 @@ body {
   font-style: italic;
 }
 
+/* ── Summary ability cards ───────────────────────── */
+.sum-spec-group { margin-bottom: 22px; }
+.sum-spec-group:last-child { margin-bottom: 0; }
+.sum-spec-head {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--spec-accent-border, #17131f);
+  color: var(--spec-accent, #524a60);
+}
+.abl-card {
+  margin-bottom: 10px;
+  border: 1px solid #181420;
+  border-radius: 5px;
+  background: #09080f;
+  overflow: hidden;
+}
+.abl-card-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 12px 8px;
+}
+.abl-card-icon {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #1e1a2a;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0810;
+}
+.abl-card-meta { flex: 1; min-width: 0; }
+.abl-card-name {
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  font-size: 14px;
+  color: #e8dcc8;
+  line-height: 1.2;
+}
+.abl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 4px;
+}
+.abl-tag {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: #0f0e1a;
+  border: 1px solid #1e1a2a;
+  color: #7a7090;
+  white-space: nowrap;
+}
+.abl-tag.school-shadow { color: #9070c0; border-color: rgba(144,112,192,0.35); }
+.abl-tag.school-fire   { color: #b87040; border-color: rgba(184,112,64,0.35); }
+.abl-tag.school-nature { color: #509850; border-color: rgba(80,152,80,0.35); }
+.abl-tag.school-holy   { color: #b8a060; border-color: rgba(184,160,96,0.35); }
+.abl-tag.school-physical { color: #9a9080; border-color: rgba(154,144,128,0.35); }
+.abl-card-tooltip {
+  padding: 0 12px 8px;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #8a8290;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+.abl-card-mods {
+  border-top: 1px solid #12101a;
+  padding: 6px 12px;
+}
+.abl-card-mods-ph {
+  font-size: 11px;
+  color: #2e2838;
+  font-style: italic;
+}
+.abl-card-notes {
+  border-top: 1px solid #12101a;
+  padding: 8px 12px;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #6a6278;
+  line-height: 1.6;
+  outline: none;
+  min-height: 20px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.abl-card-notes:empty::before {
+  content: attr(data-placeholder);
+  color: #1e1828;
+  pointer-events: none;
+  display: block;
+}
+.sum-no-abilities {
+  text-align: center;
+  color: #4a4458;
+  font-size: 12px;
+  font-style: italic;
+  padding: 24px 0;
+}
+
+/* ── Investment tab enchant rows ─────────────────── */
+.sum-ench-block {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #1e1a2a;
+}
+.sum-ench-block-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #3e3848;
+  margin-bottom: 8px;
+}
+.sum-ench {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.sum-ench-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0810;
+}
+.sum-ench-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e8dcc8;
+  line-height: 1.3;
+}
+.sum-ench-rarity {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  margin-left: 4px;
+}
+.sum-ench-body {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #8a8290;
+  line-height: 1.5;
+  margin-top: 2px;
+  white-space: pre-wrap;
+}
+.sum-all-ench { margin-top: 10px; }
+
 /* ── Mystic Enchants — radial slot board ─────────── */
 .enchant-board {
   position: relative;
@@ -723,8 +879,8 @@ body {
         <div class="build-desc-text" id="build-desc-text" contenteditable="true"
              data-placeholder="Describe your build concept, goals, and playstyle…"></div>
       </div>
-      <div class="sum-trees" id="sum-trees"></div>
-      <div class="sum-hint">Click a tree to open it</div>
+      <div id="sum-abilities"></div>
+      <div class="sum-no-abilities" id="sum-no-abilities">Load class data to see ability breakdown</div>
     </div>
 
     <div class="panel" id="panel-enchants">
@@ -741,19 +897,11 @@ body {
       <div class="enchants-ph">Enchant data coming soon — slots shown empty</div>
     </div>
 
-    <div class="panel" id="panel-abilities">
-      <div class="abl-section">
-        <div class="abl-section-label">Active Modifiers</div>
-        <div id="abl-modifiers"></div>
-      </div>
-      <div class="abl-section">
-        <div class="abl-section-label">Ability Breakdown</div>
-        <p class="abl-breakdown-note">Per-ability damage values, modifier math, and DPS estimates will appear here once ability base data is integrated into the engine.</p>
-        <ul class="abl-breakdown-list">
-          <li>Base damage &amp; healing at current character level</li>
-          <li>How each talent and enchant modifier affects the ability</li>
-          <li>Net effective values and estimated DPS contribution</li>
-        </ul>
+    <div class="panel" id="panel-investment">
+      <div class="sum-trees" id="sum-trees"></div>
+      <div class="sum-all-ench" id="sum-ench-all" style="display:none">
+        <div class="sum-ench-block-label" style="margin-top:16px;padding-top:16px;border-top:1px solid #17131f">All Specs</div>
+        <div id="sum-ench-all-list"></div>
       </div>
     </div>
 
@@ -934,87 +1082,197 @@ function buildCell(key) {
   return cell;
 }
 
-// ─── ABILITIES TAB ───────────────────────────────────────────────────────────
-function refreshAbilitiesTab() {
-  const modList = document.getElementById('abl-modifiers');
-  if (!modList) return;
-  modList.innerHTML = '';
-
-  const hasAny = TREE_NAMES.some(tree =>
-    LAYOUT[tree].flat().some(k => k && talentPts(k) > 0)
-  ) || enchPicks.some(Boolean);
-
-  if (!hasAny) {
-    modList.innerHTML = '<div class="abl-empty">No talents or enchants invested yet.</div>';
-    return;
-  }
-
-  TREE_NAMES.forEach(tree => {
-    const invested = LAYOUT[tree].flat().filter(k => k && talentPts(k) > 0);
-    if (!invested.length) return;
-    const treeData = DATA.trees.find(t => t.name === tree);
-    const label = document.createElement('div');
-    label.className = 'abl-tree-label';
-    label.textContent = tree;
-    if (treeData) label.style.color = treeData.accent;
-    modList.appendChild(label);
-    invested.forEach(k => {
-      const t = T[k], p = talentPts(k);
-      const row = document.createElement('div');
-      row.className = 'abl-mod-row';
-      const icon = document.createElement('div');
-      icon.className = 'abl-mod-icon';
-      icon.style.backgroundImage = `url("${getIconSrc(k)}")`;
-      if (treeData) icon.style.borderColor = treeData.accent;
-      const info = document.createElement('div');
-      const name = document.createElement('div');
-      name.className = 'abl-mod-name';
-      name.textContent = t.name;
-      const rankSpan = document.createElement('span');
-      rankSpan.className = 'abl-mod-rank' + (p >= t.maxPts ? ' maxed' : '');
-      rankSpan.textContent = ` ${p}/${t.maxPts}`;
-      name.appendChild(rankSpan);
-      const body = document.createElement('div');
-      body.className = 'abl-mod-body';
-      body.textContent = getTooltipText(t, p);
-      info.append(name, body);
-      row.append(icon, info);
-      modList.appendChild(row);
-    });
+// ─── INVESTMENT TAB — enchants within spec blocks ────────────────────────────
+function refreshInvestmentEnchants() {
+  // Group active enchants by spec (including 'All')
+  const bySpec = {};
+  enchPicks.forEach(k => {
+    const e = k && enchByKey[k];
+    if (!e) return;
+    (bySpec[e.spec] ??= []).push(e);
   });
 
-  const activeEnch = enchPicks.map(k => k && enchByKey[k]).filter(Boolean);
-  if (activeEnch.length) {
-    const label = document.createElement('div');
-    label.className = 'abl-tree-label';
-    label.textContent = 'Mystic Enchants';
-    label.style.color = '#8a7868';
-    modList.appendChild(label);
-    activeEnch.forEach(e => {
-      const row = document.createElement('div');
-      row.className = 'abl-mod-row';
-      const icon = document.createElement('div');
-      icon.className = 'abl-mod-icon';
-      icon.style.backgroundImage = `url("${enchIconSrc(e)}")`;
-      icon.style.borderRadius = '50%';
-      icon.style.borderColor = RARITY_COLORS[e.rarity];
-      const info = document.createElement('div');
-      const name = document.createElement('div');
-      name.className = 'abl-mod-name';
-      name.textContent = e.name;
-      const rankSpan = document.createElement('span');
-      rankSpan.className = 'abl-mod-rank';
-      rankSpan.style.color = RARITY_COLORS[e.rarity];
-      rankSpan.textContent = ` ${e.rarity[0].toUpperCase() + e.rarity.slice(1)}`;
-      name.appendChild(rankSpan);
-      const body = document.createElement('div');
-      body.className = 'abl-mod-body';
-      body.textContent = e.tooltip;
-      info.append(name, body);
-      row.append(icon, info);
-      modList.appendChild(row);
-    });
+  // Per-spec enchant blocks (inside tree cards)
+  TREE_NAMES.forEach(tree => {
+    const block = document.getElementById(`sum-ench-${tree}`);
+    const list  = document.getElementById(`sum-ench-${tree}-list`);
+    if (!block || !list) return;
+    const enchants = bySpec[tree] || [];
+    block.style.display = enchants.length ? '' : 'none';
+    list.innerHTML = '';
+    enchants.forEach(e => list.appendChild(buildEnchRow(e)));
+  });
+
+  // "All" spec enchants at the bottom
+  const allBlock = document.getElementById('sum-ench-all');
+  const allList  = document.getElementById('sum-ench-all-list');
+  if (allBlock && allList) {
+    const allEnch = bySpec['All'] || [];
+    allBlock.style.display = allEnch.length ? '' : 'none';
+    allList.innerHTML = '';
+    allEnch.forEach(e => allList.appendChild(buildEnchRow(e)));
   }
+}
+
+function buildEnchRow(e) {
+  const row = document.createElement('div');
+  row.className = 'sum-ench';
+  const icon = document.createElement('div');
+  icon.className = 'sum-ench-icon';
+  icon.style.backgroundImage = `url("${enchIconSrc(e)}")`;
+  icon.style.borderColor = RARITY_COLORS[e.rarity];
+  const info = document.createElement('div');
+  const nameEl = document.createElement('div');
+  nameEl.className = 'sum-ench-name';
+  nameEl.textContent = e.name;
+  const rar = document.createElement('span');
+  rar.className = 'sum-ench-rarity';
+  rar.style.color = RARITY_COLORS[e.rarity];
+  rar.textContent = e.rarity[0].toUpperCase() + e.rarity.slice(1);
+  nameEl.appendChild(rar);
+  const body = document.createElement('div');
+  body.className = 'sum-ench-body';
+  body.textContent = e.tooltip;
+  info.append(nameEl, body);
+  row.append(icon, info);
+  return row;
+}
+
+// ─── SUMMARY TAB — ability-first cards ───────────────────────────────────────
+function getAbilityIconSrc(a) {
+  return `assets/icons/${DATA.slug}/abilities/${a.iconFile || a.key}.jpg`;
+}
+
+function getAbilityTooltip(a) {
+  if (!a.tooltipTemplate) return '';
+  if (!a.rank60) return a.tooltipTemplate;
+  let text = a.tooltipTemplate;
+  a.rank60.forEach((v, vi) => {
+    text = text.replace(new RegExp(`\\[V${vi + 1}\\]`, 'g'), v);
+  });
+  return text;
+}
+
+function fmtCastTime(ct) {
+  if (ct === null || ct === undefined) return null;
+  if (ct === 'Channeled') return 'Channeled';
+  if (ct === 0) return 'Instant';
+  return `${ct}s`;
+}
+
+function fmtCost(a) {
+  if (!a.costValue) return null;
+  const pwr = a.costPower || 'mana';
+  if (a.costUnit === 'percent') return `${Math.round(parseFloat(a.costValue) * 100)}% ${pwr}`;
+  return `${a.costValue} ${pwr}`;
+}
+
+function schoolCls(school) {
+  if (!school) return '';
+  const s = school.toLowerCase();
+  if (s.includes('shadow'))   return 'school-shadow';
+  if (s.includes('fire'))     return 'school-fire';
+  if (s.includes('holy'))     return 'school-holy';
+  if (s.includes('nature'))   return 'school-nature';
+  if (s.includes('physical')) return 'school-physical';
+  return '';
+}
+
+function refreshSummaryAbilities() {
+  const container = document.getElementById('sum-abilities');
+  const noMsg     = document.getElementById('sum-no-abilities');
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (!DATA.abilities || !DATA.abilities.length) {
+    if (noMsg) noMsg.style.display = '';
+    return;
+  }
+  if (noMsg) noMsg.style.display = 'none';
+
+  // Group by spec (tree order)
+  const bySpec = {};
+  DATA.trees.forEach(tr => { bySpec[tr.name] = []; });
+  DATA.abilities.forEach(a => {
+    if (!a.hidden && bySpec[a.spec]) bySpec[a.spec].push(a);
+  });
+
+  DATA.trees.forEach(tr => {
+    const list = bySpec[tr.name];
+    if (!list.length) return;
+    const group = document.createElement('div');
+    group.className = 'sum-spec-group';
+    group.style.setProperty('--spec-accent', tr.accent);
+    group.style.setProperty('--spec-accent-border', rgba(tr.accent, 0.25));
+    const head = document.createElement('div');
+    head.className = 'sum-spec-head';
+    head.textContent = tr.name;
+    group.appendChild(head);
+
+    list.forEach(a => {
+      const card = document.createElement('div');
+      card.className = 'abl-card';
+
+      // Header: icon + name + tags
+      const cardHead = document.createElement('div');
+      cardHead.className = 'abl-card-head';
+      const icon = document.createElement('div');
+      icon.className = 'abl-card-icon';
+      icon.style.backgroundImage = `url("${getAbilityIconSrc(a)}")`;
+      icon.style.borderColor = tr.accent;
+      const meta = document.createElement('div');
+      meta.className = 'abl-card-meta';
+      const nameEl = document.createElement('div');
+      nameEl.className = 'abl-card-name';
+      nameEl.textContent = a.name;
+      const tags = document.createElement('div');
+      tags.className = 'abl-tags';
+      const addTag = (text, cls) => {
+        if (!text) return;
+        const t = document.createElement('span');
+        t.className = 'abl-tag' + (cls ? ' ' + cls : '');
+        t.textContent = text;
+        tags.appendChild(t);
+      };
+      addTag(a.school, schoolCls(a.school));
+      addTag(fmtCastTime(a.castTime));
+      addTag(fmtCost(a));
+      if (a.cooldown) addTag(`CD: ${a.cooldown}`);
+      if (a.duration) addTag(a.duration);
+      if (a.source !== 'Core') addTag(a.source);
+      meta.append(nameEl, tags);
+      cardHead.append(icon, meta);
+
+      // Tooltip text
+      const tipText = getAbilityTooltip(a);
+      const tipEl = document.createElement('div');
+      tipEl.className = 'abl-card-tooltip';
+      tipEl.textContent = tipText;
+
+      // Modifier placeholder (will auto-populate once Effect_N parsing lands)
+      const mods = document.createElement('div');
+      mods.className = 'abl-card-mods';
+      mods.innerHTML = '<div class="abl-card-mods-ph">Talent &amp; enchant modifier breakdown — coming once Effect grammar is wired up</div>';
+
+      // Per-ability notes (contenteditable, localStorage)
+      const notesKey = `abl-note-${DATA.slug}-${a.key}`;
+      const notes = document.createElement('div');
+      notes.className = 'abl-card-notes';
+      notes.contentEditable = 'true';
+      notes.dataset.placeholder = 'Add notes: how this ability fits the build, why these talents matter, rotation priority…';
+      const saved = localStorage.getItem(notesKey);
+      if (saved) notes.textContent = saved;
+      notes.addEventListener('input', () => {
+        const v = notes.textContent.trim();
+        if (v) localStorage.setItem(notesKey, notes.textContent);
+        else   localStorage.removeItem(notesKey);
+      });
+
+      card.append(cardHead, tipEl, mods, notes);
+      group.appendChild(card);
+    });
+    container.appendChild(group);
+  });
 }
 
 function refresh() {
@@ -1080,7 +1338,6 @@ function refresh() {
 
   // Talent changes can (in)validate socketed enchants — re-tint the board
   if (slotEls.length) refreshEnchantBoard();
-  refreshAbilitiesTab();
 }
 
 // ─── TABS ────────────────────────────────────────────────────────────────────
@@ -1264,6 +1521,7 @@ function specColor(spec) {
 }
 
 function refreshEnchantBoard() {
+  refreshInvestmentEnchants();
   slotEls.forEach((el, i) => {
     const e = enchPicks[i] && enchByKey[enchPicks[i]];
     el.classList.toggle('filled', !!e);
@@ -1487,9 +1745,9 @@ function buildStaticUI() {
     TREE_NAMES.map(n =>
       `<div class="tab" data-tab="${n}">${n} <span class="tab-pts" id="badge-${n}">0</span></div>`).join('') +
     `<div class="tab" data-tab="enchants">Enchants</div>` +
-    `<div class="tab" data-tab="abilities">Abilities</div>`;
+    `<div class="tab" data-tab="investment">Investment</div>`;
 
-  // Summary tree cards
+  // Investment tab — tree spec cards (talents + enchant placeholders)
   document.getElementById('sum-trees').innerHTML = DATA.trees.map(tr =>
     `<div class="sum-tree" data-jump="${tr.name}" style="--sum-accent:${tr.accent}; --sum-accent-border:${rgba(tr.accent, 0.25)}">
       <div class="sum-tree-row">
@@ -1497,6 +1755,10 @@ function buildStaticUI() {
         <span class="sum-tree-pts" id="sum-pts-${tr.name}">0</span>
       </div>
       <div class="sum-invested" id="sum-inv-${tr.name}"></div>
+      <div class="sum-ench-block" id="sum-ench-${tr.name}" style="display:none">
+        <div class="sum-ench-block-label">Enchants</div>
+        <div id="sum-ench-${tr.name}-list"></div>
+      </div>
     </div>`).join('');
 
   // Tree panels, inserted between Summary and Enchants
@@ -1564,6 +1826,7 @@ function buildStaticUI() {
 
   buildStaticUI();
   buildEnchantBoard();
+  refreshSummaryAbilities();
   const build = params.get('build');
   if (build) applyBuildString(build);
   const ench = params.get('ench');

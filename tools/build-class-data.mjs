@@ -238,6 +238,157 @@ if (errors.length) {
   process.exit(1);
 }
 
+// ── abilities.csv (optional) ──
+// Reads display-relevant fields only; Effect_N columns are preserved raw for
+// future modifier calculations but are NOT parsed here.
+let abilities;
+try {
+  const abText = readFileSync(join(dataDir, `${slug}-abilities.csv`), 'utf8');
+  const abRows = parseCSV(abText);
+  const abHeader = abRows.shift().map(h => h.trim());
+  const ac = name => abHeader.findIndex(h => h.toLowerCase() === name.toLowerCase());
+  const AB = {
+    name: ac('Spell'), icon: ac('Icon_Path'), spec: ac('Specialization'),
+    source: ac('Source'), replaces: ac('Replaces'), requires: ac('Requires'),
+    lvl: ac('Lvl'), costValue: ac('Cost_Value'), costUnit: ac('Cost_Unit'),
+    costPower: ac('Cost_Power'), durInt: ac('Dur_Int'), durStr: ac('Dur_Str'),
+    range: ac('Range'), school: ac('School'), castTime: ac('Cast_Time'),
+    cooldownInt: ac('Cooldown_Int'), cooldownStr: ac('Cooldown_Str'),
+    gcd: ac('GCD'), spDirect: ac('SP_Direct_Coeff'), spTick: ac('SP_Tick_Coeff'),
+    tooltip: ac('Tooltip_Template'), rankValues: ac('Rank_Values'),
+  };
+
+  // Only tree specs; exclude pet/stance/form sources for this initial display
+  const treeSet = new Set(treeNames);
+  const DISP_SRC = new Set(['Core', 'Talent', 'Mystic Enchant', 'Stance', 'Form']);
+
+  // Build set of spells that are superseded (appear in another spell's Replaces field)
+  const superseded = new Set();
+  for (const r of abRows) {
+    const rep = r[AB.replaces]?.trim();
+    if (rep && rep !== '-') superseded.add(rep);
+  }
+
+  abilities = [];
+  for (const r of abRows) {
+    const name = r[AB.name]?.trim();
+    if (!name) continue;
+    const spec = r[AB.spec]?.trim();
+    const src  = r[AB.source]?.trim();
+    if (!treeSet.has(spec) || !DISP_SRC.has(src)) continue;
+    if (superseded.has(name)) continue; // old rank in an upgrade chain — skip
+
+    const key  = keyOf(name);
+    const stem = iconStem(r[AB.icon]?.trim() || '');
+
+    // per-rank level array — determines rank active at lvl 60
+    const lvls = (r[AB.lvl]?.trim() || '60').split('|').map(v => parseInt(v, 10) || 0);
+    const rank60idx = lvls.reduce((best, lvl, i) => lvl <= 60 ? i : best, 0);
+
+    // pick the value at rank-60 from a pipe-delimited field (or return null for '-')
+    const atRank = field => {
+      const s = r[field]?.trim();
+      if (!s || s === '-') return null;
+      const parts = s.split('|');
+      return parts[Math.min(rank60idx, parts.length - 1)].trim() || null;
+    };
+    const toNum = v => { const n = parseFloat(v); return isNaN(n) ? null : n; };
+
+    // Scalars (not per-rank)
+    const school   = r[AB.school]?.trim() || null;
+    const gcd      = toNum(r[AB.gcd]?.trim());
+
+    const ctRaw = r[AB.castTime]?.trim();
+    const castTime = ctRaw === 'Channeled' ? 'Channeled'
+      : ctRaw === '-' ? null : toNum(ctRaw);
+
+    const cdInt = atRank(AB.cooldownInt);
+    const cdStr = r[AB.cooldownStr]?.trim();
+    const cooldown = cdInt && cdInt !== '-' && cdStr && cdStr !== '-'
+      ? `${cdInt} ${cdStr}` : null;
+
+    const dInt = atRank(AB.durInt);
+    const dStr = r[AB.durStr]?.trim();
+    const duration = dInt && dInt !== '-' && dStr && dStr !== '-'
+      ? `${dInt} ${dStr}` : null;
+
+    const rangeVal = toNum(r[AB.range]?.trim());
+
+    // Cost at rank 60
+    const costValue = atRank(AB.costValue);
+    const costUnit  = r[AB.costUnit]?.trim() || null;
+    const costPower = r[AB.costPower]?.trim() || null;
+
+    // SP coefficients (may be per-rank)
+    const spDirect = toNum(atRank(AB.spDirect));
+    const spTick   = toNum(r[AB.spTick]?.trim() === '-' ? null : r[AB.spTick]?.trim());
+
+    // Tooltip: strip the in-game header lines (spell name, cost, cast time, cooldown)
+    // so only the description text remains.  [V\d] placeholders stand in for
+    // per-rank cast times and costs in some tooltips — strip those too.
+    const rawTip = (r[AB.tooltip]?.trim() || '').replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
+    const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const tooltipTemplate = rawTip
+      .replace(new RegExp('^' + escapedName + '[^\\n]*\\n+', 'i'), '')  // spell name line
+      .replace(/^\d[\d.]*%[^\n]*mana[^\n]*\n+/i, '')                     // percent mana
+      .replace(/^\d+\s+(?:Mana|Energy|Rage)[^\n]*\n+/i, '')             // flat resource
+      .replace(/^(?:Instant(?:\s+cast)?|Channeled|(?:\d[\d.]*|\[V\d+\])\s*sec(?:\s+cast)?)[^\n]*\n+/i, '') // cast time (incl. [Vn] variant)
+      .replace(/^(?:\d[\d.]*|\[V\d+\])\s+(?:sec|min)(?:\s+cooldown)?[^\n]*\n+/i, '')  // cooldown
+      .replace(/^Reagents?:[^\n]*\n+/i, '')
+      .trim();
+
+    // Rank values: rank-60 slice for tooltip substitution
+    const rvRaw = r[AB.rankValues]?.trim();
+    let rank60 = null;
+    if (rvRaw && rvRaw !== '-') {
+      const allRanks = rvRaw.split('|').map(rank =>
+        rank.split(',').map(v => { const n = parseFloat(v.trim()); return isNaN(n) ? v.trim() : n; }));
+      rank60 = allRanks[Math.min(rank60idx, allRanks.length - 1)];
+    }
+
+    const a = { key, name, spec, source: src, school, castTime, gcd, rank60idx };
+    if (stem !== key) a.iconFile = stem;
+    if (costValue !== null) { a.costValue = costValue; a.costUnit = costUnit; a.costPower = costPower; }
+    if (cooldown)  a.cooldown  = cooldown;
+    if (duration)  a.duration  = duration;
+    if (rangeVal !== null) a.range = rangeVal;
+    if (spDirect !== null) a.spDirect = spDirect;
+    if (spTick   !== null) a.spTick   = spTick;
+    if (tooltipTemplate) a.tooltipTemplate = tooltipTemplate;
+    if (rank60)   a.rank60 = rank60;
+    const repRaw = r[AB.replaces]?.trim();
+    if (repRaw && repRaw !== '-') a.replaces = repRaw;
+    const reqRaw = r[AB.requires]?.trim();
+    if (reqRaw && reqRaw !== '-') a.requires = reqRaw;
+    abilities.push(a);
+  }
+
+  // Mark known non-combat utilities so the frontend can hide them by default.
+  // These are kept in the data (never deleted) so a future "show all" toggle works.
+  const UTILITY_BY_CLASS = {
+    warlock: new Set([
+      'unending_breath', 'eye_of_kilrogg', 'detect_invisibility',
+      'create_healthstone', 'create_soulstone', 'create_firestone', 'create_spellstone',
+      'ritual_of_summoning', 'ritual_of_doom', 'temporary_enslave_demon',
+    ]),
+  };
+  const utilitySet = UTILITY_BY_CLASS[slug] || new Set();
+  abilities.forEach(a => { if (utilitySet.has(a.key)) a.hidden = true; });
+
+  // Sort: tree order → source order → name
+  const srcOrder = ['Core', 'Stance', 'Form', 'Talent', 'Mystic Enchant'];
+  abilities.sort((a, b) => {
+    const si = treeNames.indexOf(a.spec) - treeNames.indexOf(b.spec);
+    if (si !== 0) return si;
+    const oi = srcOrder.indexOf(a.source) - srcOrder.indexOf(b.source);
+    if (oi !== 0) return oi;
+    return a.name.localeCompare(b.name);
+  });
+} catch (err) {
+  if (err.code !== 'ENOENT') throw err;
+  abilities = undefined;
+}
+
 const out = {
   class: meta.name,
   slug,
@@ -250,7 +401,8 @@ const out = {
   talents,
   layout,
 };
-if (enchants) out.enchants = enchants;
+if (enchants)   out.enchants   = enchants;
+if (abilities)  out.abilities  = abilities;
 
 mkdirSync(join(ROOT, 'data'), { recursive: true });
 const outPath = join(ROOT, 'data', `${slug}.json`);
@@ -268,4 +420,6 @@ try {
 } catch (err) { console.warn(`Warning: could not update classes.json: ${err.message}`); }
 
 console.log(`OK — ${Object.keys(talents).length} talents, ${treeNames.length} trees` +
-  (enchants ? `, ${enchants.length} enchants` : '') + ` -> ${outPath}`);
+  (enchants   ? `, ${enchants.length} enchants`   : '') +
+  (abilities  ? `, ${abilities.length} abilities`  : '') +
+  ` -> ${outPath}`);
