@@ -3,8 +3,8 @@
 //
 //   node tools/build-class-data.mjs <class> [skill-dir]
 //
-// Reads:  <skill-dir>/references/data/<class>/talents.csv
-//         <skill-dir>/references/data/<class>/talents-layout.csv
+// Reads:  <skill-dir>/references/data/<class>/<class>-talents.csv
+//         <skill-dir>/references/data/<class>/<class>-talents-layout.csv
 //         tools/class-meta.json  (tree accent colors per class)
 // Writes: data/<class>.json
 //
@@ -58,7 +58,7 @@ const meta = JSON.parse(readFileSync(join(ROOT, 'tools', 'class-meta.json'), 'ut
 if (!meta) { console.error(`no entry for '${slug}' in tools/class-meta.json`); process.exit(1); }
 
 // ── talents.csv ──
-const tRows = parseCSV(readFileSync(join(dataDir, 'talents.csv'), 'utf8'));
+const tRows = parseCSV(readFileSync(join(dataDir, `${slug}-talents.csv`), 'utf8'));
 const header = tRows.shift().map(h => h.trim());
 const col = name => {
   const i = header.findIndex(h => h.toLowerCase() === name.toLowerCase());
@@ -125,8 +125,8 @@ for (const t of Object.values(talents)) {
   t.prereq = pk;
 }
 
-// ── talents-layout.csv ──
-const lRows = parseCSV(readFileSync(join(dataDir, 'talents-layout.csv'), 'utf8'));
+// ── layout.csv (accepts both icon paths and display names as cell values) ──
+const lRows = parseCSV(readFileSync(join(dataDir, `${slug}-layout.csv`), 'utf8'));
 const lHeader = lRows.shift().map(h => h.trim());
 const treeNames = [...new Set(lHeader)];
 const layout = {};
@@ -134,8 +134,8 @@ treeNames.forEach((tree, ti) => {
   layout[tree] = lRows.map((row, ri) => row.slice(ti * 4, ti * 4 + 4).map(cell => {
     const c = cell.trim();
     if (!c || c === '-') return null;
-    const key = stemToKey[iconStem(c)];
-    if (!key) errors.push(`layout ${tree} row ${ri + 1}: no talent matches icon '${iconStem(c)}'`);
+    const key = stemToKey[iconStem(c)] || nameToKey[c];
+    if (!key) errors.push(`layout ${tree} row ${ri + 1}: no talent matches '${c}'`);
     return key || null;
   }));
 });
@@ -153,7 +153,7 @@ for (const tree of treeNames)
 const RARITIES = ['Rare', 'Epic', 'Legendary', 'Artifact'];
 let enchants;
 try {
-  const eText = readFileSync(join(dataDir, 'mystic-enchants.csv'), 'utf8');
+  const eText = readFileSync(join(dataDir, `${slug}-enchants.csv`), 'utf8');
   const eRows = parseCSV(eText);
   const eHeader = eRows.shift().map(h => h.trim());
   const ec = name => eHeader.findIndex(h => h.toLowerCase() === name.toLowerCase());

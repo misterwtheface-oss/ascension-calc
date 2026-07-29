@@ -1558,7 +1558,6 @@
    "rarity": "legendary",
    "spec": "Destruction",
    "tooltip": "Teaches you: Bane of Havoc.\n\nBane of Havoc\n8% of base mana\nInstant        35 sec cooldown\nCurses the ground with a demonic bane, causing your Shadow Bolt, Incinerate, Soul Fire and Chaos Bolt spells to also strike targets marked with the bane for 50% of the damage dealt and have 15% increased critical strike chance. Lasts 15 sec.",
-   "iconFile": "bane",
    "recommends": [
     {
      "talent": "chaos_bolt"
@@ -1702,7 +1701,7 @@
    "name": "Demonic Whirl",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Requires: Summon Felguard\n\nDealing damage with Shadow Bolt or Incinerate causes your Felguard to cast a Whirlwind, dealing damage to enemies within 8 yards.\n\nThis can only occur once every 3 sec.",
+   "tooltip": "Dealing damage with Shadow Bolt or Incinerate causes your Felguard to cast a Whirlwind, dealing damage to enemies within 8 yards.\n\nThis can only occur once every 3 sec.",
    "requires": [
     {
      "talent": "summon_felguard"
@@ -1714,7 +1713,7 @@
    "name": "Eternal Torment",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Haunt\n\nCasting Haunt on a target already affected by your Haunt makes it guaranteed to critically strike. Your Haunt increases the damage of your Shadow damage-over-time effects by an additional 7%.\n\nYour Soul Swap: Exhale can now be cast to apply your DoTs on two targets.",
+   "tooltip": "Casting Haunt on a target already affected by your Haunt makes it guaranteed to critically strike. Your Haunt increases the damage of your Shadow damage-over-time effects by an additional 7%.\n\nYour Soul Swap: Exhale can now be cast to apply your DoTs on two targets.",
    "requires": [
     {
      "talent": "haunt"
@@ -1733,7 +1732,7 @@
    "name": "Dread Communion",
    "rarity": "epic",
    "spec": "Demonology",
-   "tooltip": "Requires: Demonic Empowerment\n\nYour demon is healed for 25% of the healing you receive. Casting Demonic Empowerment triples the effect of your Master Demonologist talent for 10 seconds.",
+   "tooltip": "Your demon is healed for 25% of the healing you receive. Casting Demonic Empowerment triples the effect of your Master Demonologist talent for 10 seconds.",
    "requires": [
     {
      "talent": "demonic_empowerment"
@@ -1745,7 +1744,7 @@
    "name": "Doomcaller's Wrath",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Eradication (Rank 3)\n\nUsing Curse of Doom grants you Eradication.\n\nDuration of Eradication is increased by 5 seconds.\n\nIncreases the damage of Curse of Doom by 30%.",
+   "tooltip": "Using Curse of Doom grants you Eradication.\n\nDuration of Eradication is increased by 5 seconds.\n\nIncreases the damage of Curse of Doom by 30%.",
    "requires": [
     {
      "talent": "eradication",
@@ -1761,12 +1760,11 @@
    "tooltip": "The periodic effect of Immolate now deals damage to all enemies within 8 yards of the target, but can only be active on one target at a time.\n\nEach time Immolate deals periodic damage, your Imp's Firebolt critical strike chance increases by 3%, consumed when it critically hits."
   },
   {
-   "key": "shadow_siphoner",
-   "name": "Shadow Siphoner",
+   "key": "shadow_siphon",
+   "name": "Shadow Siphon",
    "rarity": "epic",
    "spec": "Destruction",
    "tooltip": "Your Shadowburn deals 25% more damage to targets below 35% health and restores 10% health when you gain a Soul Shard from Shadowburn.",
-   "iconFile": "shadow_siphon",
    "requires": [
     {
      "talent": "shadowburn"
@@ -1778,7 +1776,7 @@
    "name": "Twilight Reaper",
    "rarity": "epic",
    "spec": "Affliction",
-   "tooltip": "Requires: Nightfall (Rank 1)\nThe Shadow Trance effect from Nightfall also reduces the mana cost of your Shadow Bolt by 100%.\n\nShadow Trance also makes the Shadow Bolt heal you for 50% of the damage dealt.\n\nAfter killing an opponent that yields experience or honor you trigger Shadow Trance.",
+   "tooltip": "The Shadow Trance effect from Nightfall also reduces the mana cost of your Shadow Bolt by 100%.\n\nShadow Trance also makes the Shadow Bolt heal you for 50% of the damage dealt.\n\nAfter killing an opponent that yields experience or honor you trigger Shadow Trance.",
    "requires": [
     {
      "talent": "nightfall",
