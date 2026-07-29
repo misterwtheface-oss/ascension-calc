@@ -894,8 +894,11 @@ function showTip(key, e) {
   moveTip(e);
 }
 function moveTip(e) {
-  tip.style.left = `${Math.min(e.clientX + 14, window.innerWidth  - 280)}px`;
-  tip.style.top  = `${Math.min(e.clientY + 14, window.innerHeight - 220)}px`;
+  const tw = tip.offsetWidth, th = tip.offsetHeight, gap = 14;
+  const left = (e.clientX + gap + tw > window.innerWidth)  ? e.clientX - tw - gap : e.clientX + gap;
+  const top  = (e.clientY + gap + th > window.innerHeight) ? e.clientY - th - gap : e.clientY + gap;
+  tip.style.left = `${Math.max(0, left)}px`;
+  tip.style.top  = `${Math.max(0, top)}px`;
 }
 function hideTip() { tip.classList.remove('visible'); }
 
