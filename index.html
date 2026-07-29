@@ -493,6 +493,29 @@ body {
   z-index: 1;
 }
 .abl-card-remove:hover { color: #904030; }
+.abl-card-grip {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  color: #2a2430;
+  font-size: 10px;
+  letter-spacing: -1px;
+  user-select: none;
+  transition: color 0.15s;
+}
+.abl-card-grip:active { cursor: grabbing; }
+.abl-card:hover .abl-card-grip { color: #4a4058; }
+.abl-card-head { padding-left: 20px; }
+.abl-card-ghost { opacity: 0; }
+.abl-card-chosen {
+  box-shadow: 0 12px 36px rgba(0,0,0,0.7), 0 0 0 1px rgba(138,112,168,0.25);
+  transform: scale(1.015);
+  z-index: 10;
+}
 .sum-no-abilities {
   text-align: center;
   color: #4a4458;
@@ -1260,6 +1283,13 @@ function buildAbilityCard(a) {
 
   const card = document.createElement('div');
   card.className = 'abl-card';
+  card.dataset.key = a.key;
+
+  // Drag grip
+  const grip = document.createElement('div');
+  grip.className = 'abl-card-grip';
+  grip.innerHTML = '⠿';
+  grip.title = 'Drag to reorder';
 
   // Remove (×) button
   const removeBtn = document.createElement('button');
@@ -1325,7 +1355,7 @@ function buildAbilityCard(a) {
     else   localStorage.removeItem(notesKey);
   });
 
-  card.append(removeBtn, cardHead, tipEl, mods, notes);
+  card.append(grip, removeBtn, cardHead, tipEl, mods, notes);
   return card;
 }
 
@@ -1386,6 +1416,20 @@ function refreshSummaryAbilities() {
   container.appendChild(cardsDiv);
 
   renderPinnedAbilities();
+
+  if (window.Sortable) {
+    Sortable.create(cardsDiv, {
+      animation: 180,
+      easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+      handle: '.abl-card-grip',
+      ghostClass: 'abl-card-ghost',
+      chosenClass: 'abl-card-chosen',
+      onEnd() {
+        const keys = [...cardsDiv.children].map(el => el.dataset.key).filter(Boolean);
+        savePins(keys);
+      },
+    });
+  }
 }
 
 function refresh() {
@@ -1950,5 +1994,6 @@ function buildStaticUI() {
   initBuildList(slug);
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
 </body>
 </html>
