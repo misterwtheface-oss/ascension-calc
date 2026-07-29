@@ -441,6 +441,58 @@ body {
   pointer-events: none;
   display: block;
 }
+.abl-picker-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.abl-picker-select {
+  flex: 1;
+  background: #09080f;
+  color: #7a6e80;
+  border: 1px solid #2a2430;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+.abl-picker-select:focus { outline: none; border-color: var(--accent-border); }
+.abl-picker-add {
+  background: none;
+  border: 1px solid #2a2430;
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: 17px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30px;
+  transition: border-color 0.15s, color 0.15s;
+  padding: 0;
+  line-height: 1;
+}
+.abl-picker-add:hover { border-color: var(--accent); }
+.abl-card { position: relative; }
+.abl-card-remove {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  background: none;
+  border: none;
+  color: #2e2838;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0 3px;
+  line-height: 1;
+  transition: color 0.12s;
+  z-index: 1;
+}
+.abl-card-remove:hover { color: #904030; }
 .sum-no-abilities {
   text-align: center;
   color: #4a4458;
@@ -1178,9 +1230,108 @@ function schoolCls(school) {
   return '';
 }
 
+// ─── ABILITY PIN HELPERS ──────────────────────────────────────────────────────
+function loadPins() {
+  try { return JSON.parse(localStorage.getItem(`abl-pins-${DATA.slug}`) || '[]'); } catch { return []; }
+}
+function savePins(pins) {
+  localStorage.setItem(`abl-pins-${DATA.slug}`, JSON.stringify(pins));
+}
+
+function renderPinnedAbilities() {
+  const cardsDiv = document.getElementById('abl-cards');
+  if (!cardsDiv || !DATA.abilities) return;
+  cardsDiv.innerHTML = '';
+  const pins = loadPins();
+  if (!pins.length) {
+    cardsDiv.innerHTML = '<div class="sum-no-abilities">No abilities pinned yet — use the selector above to add abilities to your build view.</div>';
+    return;
+  }
+  const ablByKey = Object.fromEntries(DATA.abilities.map(a => [a.key, a]));
+  pins.forEach(key => {
+    const a = ablByKey[key];
+    if (a) cardsDiv.appendChild(buildAbilityCard(a));
+  });
+}
+
+function buildAbilityCard(a) {
+  const treeData = DATA.trees.find(t => t.name === a.spec);
+  const accent = treeData ? treeData.accent : '#8a7868';
+
+  const card = document.createElement('div');
+  card.className = 'abl-card';
+
+  // Remove (×) button
+  const removeBtn = document.createElement('button');
+  removeBtn.className = 'abl-card-remove';
+  removeBtn.textContent = '×';
+  removeBtn.title = 'Remove from build view';
+  removeBtn.addEventListener('click', () => {
+    savePins(loadPins().filter(k => k !== a.key));
+    renderPinnedAbilities();
+  });
+
+  // Icon + name + tags
+  const cardHead = document.createElement('div');
+  cardHead.className = 'abl-card-head';
+  const icon = document.createElement('div');
+  icon.className = 'abl-card-icon';
+  icon.style.backgroundImage = `url("${getAbilityIconSrc(a)}")`;
+  icon.style.borderColor = accent;
+  const meta = document.createElement('div');
+  meta.className = 'abl-card-meta';
+  const nameEl = document.createElement('div');
+  nameEl.className = 'abl-card-name';
+  nameEl.textContent = a.name;
+  const tags = document.createElement('div');
+  tags.className = 'abl-tags';
+  const addTag = (text, cls) => {
+    if (!text) return;
+    const t = document.createElement('span');
+    t.className = 'abl-tag' + (cls ? ' ' + cls : '');
+    t.textContent = text;
+    tags.appendChild(t);
+  };
+  addTag(a.school, schoolCls(a.school));
+  addTag(fmtCastTime(a.castTime));
+  addTag(fmtCost(a));
+  if (a.cooldown) addTag(`CD: ${a.cooldown}`);
+  if (a.duration) addTag(a.duration);
+  if (a.source !== 'Core') addTag(a.source);
+  meta.append(nameEl, tags);
+  cardHead.append(icon, meta);
+
+  // Tooltip body
+  const tipEl = document.createElement('div');
+  tipEl.className = 'abl-card-tooltip';
+  tipEl.textContent = getAbilityTooltip(a);
+
+  // Modifier placeholder — auto-populates when Effect grammar parser lands
+  const mods = document.createElement('div');
+  mods.className = 'abl-card-mods';
+  mods.innerHTML = '<div class="abl-card-mods-ph">Talent &amp; enchant modifier breakdown — pending Effect grammar integration</div>';
+
+  // Per-ability notes (contenteditable, localStorage)
+  const notesKey = `abl-note-${DATA.slug}-${a.key}`;
+  const notes = document.createElement('div');
+  notes.className = 'abl-card-notes';
+  notes.contentEditable = 'true';
+  notes.dataset.placeholder = 'How this ability fits the build, why these talents matter, rotation priority…';
+  const saved = localStorage.getItem(notesKey);
+  if (saved) notes.textContent = saved;
+  notes.addEventListener('input', () => {
+    const v = notes.textContent.trim();
+    if (v) localStorage.setItem(notesKey, notes.textContent);
+    else   localStorage.removeItem(notesKey);
+  });
+
+  card.append(removeBtn, cardHead, tipEl, mods, notes);
+  return card;
+}
+
 function refreshSummaryAbilities() {
   const container = document.getElementById('sum-abilities');
-  const noMsg     = document.getElementById('sum-no-abilities');
+  const noMsg = document.getElementById('sum-no-abilities');
   if (!container) return;
   container.innerHTML = '';
 
@@ -1190,89 +1341,51 @@ function refreshSummaryAbilities() {
   }
   if (noMsg) noMsg.style.display = 'none';
 
-  // Group by spec (tree order)
-  const bySpec = {};
-  DATA.trees.forEach(tr => { bySpec[tr.name] = []; });
-  DATA.abilities.forEach(a => {
-    if (!a.hidden && bySpec[a.spec]) bySpec[a.spec].push(a);
-  });
+  // Ability selector row
+  const pickerRow = document.createElement('div');
+  pickerRow.className = 'abl-picker-row';
 
+  const sel = document.createElement('select');
+  sel.className = 'abl-picker-select';
+  const defaultOpt = document.createElement('option');
+  defaultOpt.value = '';
+  defaultOpt.textContent = 'Add an ability to your build view…';
+  sel.appendChild(defaultOpt);
   DATA.trees.forEach(tr => {
-    const list = bySpec[tr.name];
-    if (!list.length) return;
-    const group = document.createElement('div');
-    group.className = 'sum-spec-group';
-    group.style.setProperty('--spec-accent', tr.accent);
-    group.style.setProperty('--spec-accent-border', rgba(tr.accent, 0.25));
-    const head = document.createElement('div');
-    head.className = 'sum-spec-head';
-    head.textContent = tr.name;
-    group.appendChild(head);
-
-    list.forEach(a => {
-      const card = document.createElement('div');
-      card.className = 'abl-card';
-
-      // Header: icon + name + tags
-      const cardHead = document.createElement('div');
-      cardHead.className = 'abl-card-head';
-      const icon = document.createElement('div');
-      icon.className = 'abl-card-icon';
-      icon.style.backgroundImage = `url("${getAbilityIconSrc(a)}")`;
-      icon.style.borderColor = tr.accent;
-      const meta = document.createElement('div');
-      meta.className = 'abl-card-meta';
-      const nameEl = document.createElement('div');
-      nameEl.className = 'abl-card-name';
-      nameEl.textContent = a.name;
-      const tags = document.createElement('div');
-      tags.className = 'abl-tags';
-      const addTag = (text, cls) => {
-        if (!text) return;
-        const t = document.createElement('span');
-        t.className = 'abl-tag' + (cls ? ' ' + cls : '');
-        t.textContent = text;
-        tags.appendChild(t);
-      };
-      addTag(a.school, schoolCls(a.school));
-      addTag(fmtCastTime(a.castTime));
-      addTag(fmtCost(a));
-      if (a.cooldown) addTag(`CD: ${a.cooldown}`);
-      if (a.duration) addTag(a.duration);
-      if (a.source !== 'Core') addTag(a.source);
-      meta.append(nameEl, tags);
-      cardHead.append(icon, meta);
-
-      // Tooltip text
-      const tipText = getAbilityTooltip(a);
-      const tipEl = document.createElement('div');
-      tipEl.className = 'abl-card-tooltip';
-      tipEl.textContent = tipText;
-
-      // Modifier placeholder (will auto-populate once Effect_N parsing lands)
-      const mods = document.createElement('div');
-      mods.className = 'abl-card-mods';
-      mods.innerHTML = '<div class="abl-card-mods-ph">Talent &amp; enchant modifier breakdown — coming once Effect grammar is wired up</div>';
-
-      // Per-ability notes (contenteditable, localStorage)
-      const notesKey = `abl-note-${DATA.slug}-${a.key}`;
-      const notes = document.createElement('div');
-      notes.className = 'abl-card-notes';
-      notes.contentEditable = 'true';
-      notes.dataset.placeholder = 'Add notes: how this ability fits the build, why these talents matter, rotation priority…';
-      const saved = localStorage.getItem(notesKey);
-      if (saved) notes.textContent = saved;
-      notes.addEventListener('input', () => {
-        const v = notes.textContent.trim();
-        if (v) localStorage.setItem(notesKey, notes.textContent);
-        else   localStorage.removeItem(notesKey);
+    const grp = document.createElement('optgroup');
+    grp.label = tr.name;
+    DATA.abilities
+      .filter(a => a.spec === tr.name && !a.hidden)
+      .forEach(a => {
+        const opt = document.createElement('option');
+        opt.value = a.key;
+        opt.textContent = a.name + (a.source !== 'Core' ? ` (${a.source})` : '');
+        grp.appendChild(opt);
       });
-
-      card.append(cardHead, tipEl, mods, notes);
-      group.appendChild(card);
-    });
-    container.appendChild(group);
+    sel.appendChild(grp);
   });
+
+  const addBtn = document.createElement('button');
+  addBtn.className = 'abl-picker-add';
+  addBtn.title = 'Add to build view';
+  addBtn.textContent = '+';
+  addBtn.addEventListener('click', () => {
+    const key = sel.value;
+    if (!key) return;
+    const pins = loadPins();
+    if (!pins.includes(key)) { pins.push(key); savePins(pins); renderPinnedAbilities(); }
+    sel.value = '';
+  });
+
+  pickerRow.append(sel, addBtn);
+  container.appendChild(pickerRow);
+
+  // Card area
+  const cardsDiv = document.createElement('div');
+  cardsDiv.id = 'abl-cards';
+  container.appendChild(cardsDiv);
+
+  renderPinnedAbilities();
 }
 
 function refresh() {
