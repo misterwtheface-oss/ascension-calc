@@ -255,5 +255,17 @@ if (enchants) out.enchants = enchants;
 mkdirSync(join(ROOT, 'data'), { recursive: true });
 const outPath = join(ROOT, 'data', `${slug}.json`);
 writeFileSync(outPath, JSON.stringify(out, null, 1));
+
+// Mark this class available in data/classes.json
+const classesPath = join(ROOT, 'data', 'classes.json');
+try {
+  let classList = [];
+  try { classList = JSON.parse(readFileSync(classesPath, 'utf8')); } catch {}
+  const entry = classList.find(c => c.slug === slug);
+  if (entry) { entry.available = true; }
+  else classList.push({ slug, name: meta.name, accent: Object.values(meta.trees)[0], available: true });
+  writeFileSync(classesPath, JSON.stringify(classList, null, 1));
+} catch (err) { console.warn(`Warning: could not update classes.json: ${err.message}`); }
+
 console.log(`OK — ${Object.keys(talents).length} talents, ${treeNames.length} trees` +
   (enchants ? `, ${enchants.length} enchants` : '') + ` -> ${outPath}`);

@@ -494,6 +494,49 @@ body {
   padding: 40px 0;
 }
 
+/* ── Class picker ────────────────────────────────── */
+.class-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 16px;
+}
+.class-card {
+  padding: 14px 16px;
+  border: 1px solid #1a1626;
+  border-radius: 5px;
+  background: #09080f;
+  user-select: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.class-card.available { cursor: pointer; }
+.class-card.available:hover {
+  border-color: var(--card-accent);
+  box-shadow: 0 0 14px var(--card-glow);
+}
+.class-card.unavailable { opacity: 0.3; cursor: default; }
+.class-card-name {
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+  font-size: 15px;
+  color: var(--card-accent);
+}
+.class-card-soon {
+  font-size: 10px;
+  color: #4a4458;
+  margin-top: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.class-back {
+  display: none;
+  font-size: 11px;
+  color: #4a4458;
+  text-decoration: none;
+  margin-top: 5px;
+  transition: color 0.15s;
+}
+.class-back:hover { color: #7a6e80; }
+
 /* ── Tooltip ─────────────────────────────────────── */
 .tooltip {
   display: none;
@@ -536,8 +579,9 @@ body {
     <div>
       <div class="calc-title" id="calc-title">&nbsp;</div>
       <div class="calc-subtitle">Talent Calculator — Ascension Classic+</div>
+      <a class="class-back" id="class-back" href=".">← All Classes</a>
     </div>
-    <div class="header-right">
+    <div class="header-right" id="header-right">
       <div class="pts-count"><span id="total-spent">0</span><span class="pts-denom" id="pts-denom"> / 51</span></div>
       <div class="pts-label">talent points</div>
       <button class="reset-btn" id="reset-btn">Reset</button>
@@ -550,6 +594,10 @@ body {
   <div class="tab-bar" id="tab-bar"></div>
 
   <div class="panel-area" id="panel-area">
+
+    <div class="panel" id="panel-picker">
+      <div class="class-picker-grid" id="class-picker-grid"></div>
+    </div>
 
     <div class="panel active" id="panel-summary">
       <div class="sum-trees" id="sum-trees"></div>
@@ -1166,10 +1214,39 @@ async function initBuildList(slug) {
   });
 }
 
+// ─── CLASS PICKER ────────────────────────────────────────────────────────────
+async function showClassPicker() {
+  document.getElementById('calc-title').textContent = 'Ascension Classic+';
+  document.getElementById('header-right').style.display = 'none';
+  document.getElementById('tab-bar').style.display = 'none';
+  document.querySelector('.interact-hint').style.display = 'none';
+  document.getElementById('panel-picker').classList.add('active');
+  document.getElementById('panel-summary').classList.remove('active');
+
+  let classes;
+  try { classes = await (await fetch('data/classes.json')).json(); } catch {
+    document.getElementById('class-picker-grid').innerHTML =
+      '<div class="load-error" style="padding:20px">Could not load class list.</div>';
+    return;
+  }
+  const grid = document.getElementById('class-picker-grid');
+  classes.forEach(cls => {
+    const card = document.createElement('div');
+    card.className = `class-card ${cls.available ? 'available' : 'unavailable'}`;
+    card.style.setProperty('--card-accent', cls.accent);
+    card.style.setProperty('--card-glow', rgba(cls.accent, 0.25));
+    card.innerHTML = `<div class="class-card-name">${cls.name}</div>` +
+      (!cls.available ? '<div class="class-card-soon">Coming soon</div>' : '');
+    if (cls.available) card.addEventListener('click', () => { location.href = `?class=${cls.slug}`; });
+    grid.appendChild(card);
+  });
+}
+
 // ─── UI CONSTRUCTION FROM CLASS DATA ─────────────────────────────────────────
 function buildStaticUI() {
   document.title = `${DATA.class} — Talent Calculator | Ascension Classic+`;
   document.getElementById('calc-title').textContent = DATA.class;
+  document.getElementById('class-back').style.display = 'block';
   document.getElementById('pts-denom').textContent = ` / ${POINT_CAP}`;
   if (DATA.enchants) {
     document.querySelector('.enchants-ph').textContent =
@@ -1227,7 +1304,8 @@ function buildStaticUI() {
 // ─── BOOT ────────────────────────────────────────────────────────────────────
 (async function boot() {
   const params = new URLSearchParams(location.search);
-  const slug = params.get('class') || 'warlock';
+  const slug = params.get('class');
+  if (!slug) { await showClassPicker(); return; }
   try {
     DATA = window.CLASS_DATA || await (await fetch(`data/${slug}.json`)).json();
   } catch (err) {
