@@ -20,7 +20,8 @@
 
 body {
   background:
-    radial-gradient(ellipse 110% 55% at 50% 0%, #12162c 0%, transparent 65%),
+    radial-gradient(ellipse 80% 65% at 15% 100%, #12162c 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 88% 0%,  #0e1020 0%, transparent 55%),
     #060810;
   background-attachment: fixed;
   color: #7a6e80;
@@ -121,7 +122,7 @@ body {
 .tab {
   flex: 1;
   text-align: center;
-  padding: 12px 6px;
+  padding: 12px 4px;
   font-size: 13px;
   font-weight: 600;
   color: #524a60;
@@ -540,6 +541,120 @@ body {
 }
 .class-back:hover { color: #7a6e80; }
 
+/* ── Build description ───────────────────────────── */
+.build-desc {
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border: 1px solid #181420;
+  border-radius: 5px;
+  background: #09080f;
+  transition: border-color 0.15s;
+}
+.build-desc:focus-within { border-color: var(--accent-border); }
+.build-desc-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #3e3848;
+  margin-bottom: 6px;
+}
+.build-desc-text {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #9a9098;
+  line-height: 1.65;
+  outline: none;
+  min-height: 22px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.build-desc-text:empty::before {
+  content: attr(data-placeholder);
+  color: #2e2838;
+  pointer-events: none;
+  display: block;
+}
+
+/* ── Abilities tab ───────────────────────────────── */
+.abl-section { padding: 2px 0; }
+.abl-section + .abl-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #17131f;
+}
+.abl-section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #524a60;
+  margin-bottom: 12px;
+}
+.abl-tree-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 12px 0 6px;
+}
+.abl-tree-label:first-child { margin-top: 0; }
+.abl-mod-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.abl-mod-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0810;
+}
+.abl-mod-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e8dcc8;
+  line-height: 1.3;
+}
+.abl-mod-rank {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  color: #1eff00;
+  margin-left: 4px;
+  font-weight: bold;
+}
+.abl-mod-rank.maxed { color: #ffd100; }
+.abl-mod-body {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #8a8290;
+  line-height: 1.5;
+  margin-top: 2px;
+  white-space: pre-wrap;
+}
+.abl-empty {
+  font-size: 12px;
+  color: #5a5268;
+  font-style: italic;
+}
+.abl-breakdown-note {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #4a4458;
+  line-height: 1.65;
+  font-style: italic;
+}
+.abl-breakdown-list {
+  margin: 8px 0 0 16px;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #3e3848;
+  line-height: 1.7;
+}
+
 /* ── Tooltip ─────────────────────────────────────── */
 .tooltip {
   display: none;
@@ -603,6 +718,11 @@ body {
     </div>
 
     <div class="panel active" id="panel-summary">
+      <div class="build-desc" id="build-desc" style="display:none">
+        <div class="build-desc-label">Build Notes</div>
+        <div class="build-desc-text" id="build-desc-text" contenteditable="true"
+             data-placeholder="Describe your build concept, goals, and playstyle…"></div>
+      </div>
       <div class="sum-trees" id="sum-trees"></div>
       <div class="sum-hint">Click a tree to open it</div>
     </div>
@@ -619,6 +739,22 @@ body {
         <span><i class="enchant-dot" style="background:#0070dd"></i>Rare</span>
       </div>
       <div class="enchants-ph">Enchant data coming soon — slots shown empty</div>
+    </div>
+
+    <div class="panel" id="panel-abilities">
+      <div class="abl-section">
+        <div class="abl-section-label">Active Modifiers</div>
+        <div id="abl-modifiers"></div>
+      </div>
+      <div class="abl-section">
+        <div class="abl-section-label">Ability Breakdown</div>
+        <p class="abl-breakdown-note">Per-ability damage values, modifier math, and DPS estimates will appear here once ability base data is integrated into the engine.</p>
+        <ul class="abl-breakdown-list">
+          <li>Base damage &amp; healing at current character level</li>
+          <li>How each talent and enchant modifier affects the ability</li>
+          <li>Net effective values and estimated DPS contribution</li>
+        </ul>
+      </div>
     </div>
 
   </div>
@@ -798,6 +934,89 @@ function buildCell(key) {
   return cell;
 }
 
+// ─── ABILITIES TAB ───────────────────────────────────────────────────────────
+function refreshAbilitiesTab() {
+  const modList = document.getElementById('abl-modifiers');
+  if (!modList) return;
+  modList.innerHTML = '';
+
+  const hasAny = TREE_NAMES.some(tree =>
+    LAYOUT[tree].flat().some(k => k && talentPts(k) > 0)
+  ) || enchPicks.some(Boolean);
+
+  if (!hasAny) {
+    modList.innerHTML = '<div class="abl-empty">No talents or enchants invested yet.</div>';
+    return;
+  }
+
+  TREE_NAMES.forEach(tree => {
+    const invested = LAYOUT[tree].flat().filter(k => k && talentPts(k) > 0);
+    if (!invested.length) return;
+    const treeData = DATA.trees.find(t => t.name === tree);
+    const label = document.createElement('div');
+    label.className = 'abl-tree-label';
+    label.textContent = tree;
+    if (treeData) label.style.color = treeData.accent;
+    modList.appendChild(label);
+    invested.forEach(k => {
+      const t = T[k], p = talentPts(k);
+      const row = document.createElement('div');
+      row.className = 'abl-mod-row';
+      const icon = document.createElement('div');
+      icon.className = 'abl-mod-icon';
+      icon.style.backgroundImage = `url("${getIconSrc(k)}")`;
+      if (treeData) icon.style.borderColor = treeData.accent;
+      const info = document.createElement('div');
+      const name = document.createElement('div');
+      name.className = 'abl-mod-name';
+      name.textContent = t.name;
+      const rankSpan = document.createElement('span');
+      rankSpan.className = 'abl-mod-rank' + (p >= t.maxPts ? ' maxed' : '');
+      rankSpan.textContent = ` ${p}/${t.maxPts}`;
+      name.appendChild(rankSpan);
+      const body = document.createElement('div');
+      body.className = 'abl-mod-body';
+      body.textContent = getTooltipText(t, p);
+      info.append(name, body);
+      row.append(icon, info);
+      modList.appendChild(row);
+    });
+  });
+
+  const activeEnch = enchPicks.map(k => k && enchByKey[k]).filter(Boolean);
+  if (activeEnch.length) {
+    const label = document.createElement('div');
+    label.className = 'abl-tree-label';
+    label.textContent = 'Mystic Enchants';
+    label.style.color = '#8a7868';
+    modList.appendChild(label);
+    activeEnch.forEach(e => {
+      const row = document.createElement('div');
+      row.className = 'abl-mod-row';
+      const icon = document.createElement('div');
+      icon.className = 'abl-mod-icon';
+      icon.style.backgroundImage = `url("${enchIconSrc(e)}")`;
+      icon.style.borderRadius = '50%';
+      icon.style.borderColor = RARITY_COLORS[e.rarity];
+      const info = document.createElement('div');
+      const name = document.createElement('div');
+      name.className = 'abl-mod-name';
+      name.textContent = e.name;
+      const rankSpan = document.createElement('span');
+      rankSpan.className = 'abl-mod-rank';
+      rankSpan.style.color = RARITY_COLORS[e.rarity];
+      rankSpan.textContent = ` ${e.rarity[0].toUpperCase() + e.rarity.slice(1)}`;
+      name.appendChild(rankSpan);
+      const body = document.createElement('div');
+      body.className = 'abl-mod-body';
+      body.textContent = e.tooltip;
+      info.append(name, body);
+      row.append(icon, info);
+      modList.appendChild(row);
+    });
+  }
+}
+
 function refresh() {
   document.getElementById('total-spent').textContent = totalPts();
   syncUrl();
@@ -861,6 +1080,7 @@ function refresh() {
 
   // Talent changes can (in)validate socketed enchants — re-tint the board
   if (slotEls.length) refreshEnchantBoard();
+  refreshAbilitiesTab();
 }
 
 // ─── TABS ────────────────────────────────────────────────────────────────────
@@ -1213,6 +1433,11 @@ async function initBuildList(slug) {
       applyEnchants(build.enchants || []);
       refreshEnchantBoard();
       refresh();
+      const desc = build.description || build.notes;
+      if (desc) {
+        const dt = document.getElementById('build-desc-text');
+        if (dt) { dt.textContent = desc; localStorage.setItem(`build-desc-${slug}`, desc); }
+      }
     } catch { /* leave current allocation untouched */ }
   });
 }
@@ -1261,7 +1486,8 @@ function buildStaticUI() {
     `<div class="tab active" data-tab="summary">Summary</div>` +
     TREE_NAMES.map(n =>
       `<div class="tab" data-tab="${n}">${n} <span class="tab-pts" id="badge-${n}">0</span></div>`).join('') +
-    `<div class="tab" data-tab="enchants">Enchants</div>`;
+    `<div class="tab" data-tab="enchants">Enchants</div>` +
+    `<div class="tab" data-tab="abilities">Abilities</div>`;
 
   // Summary tree cards
   document.getElementById('sum-trees').innerHTML = DATA.trees.map(tr =>
@@ -1301,6 +1527,18 @@ function buildStaticUI() {
   document.getElementById('reset-btn').addEventListener('click', () => {
     Object.keys(pts).forEach(k => { pts[k] = 0; });
     refresh();
+  });
+
+  // Build description — show section and restore any locally-saved content
+  const descEl = document.getElementById('build-desc');
+  const descText = document.getElementById('build-desc-text');
+  descEl.style.display = '';
+  const savedDesc = localStorage.getItem(`build-desc-${DATA.slug}`);
+  if (savedDesc) descText.textContent = savedDesc;
+  descText.addEventListener('input', () => {
+    const v = descText.textContent.trim();
+    if (v) localStorage.setItem(`build-desc-${DATA.slug}`, descText.textContent);
+    else localStorage.removeItem(`build-desc-${DATA.slug}`);
   });
 }
 
