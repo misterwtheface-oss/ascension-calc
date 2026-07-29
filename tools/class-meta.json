@@ -1,10 +1,74 @@
 {
+  "warrior": {
+    "name": "Warrior",
+    "trees": {
+      "Arms":       "#B83A28",
+      "Fury":       "#C87030",
+      "Protection": "#5880A8"
+    }
+  },
+  "paladin": {
+    "name": "Paladin",
+    "trees": {
+      "Holy":       "#D4B848",
+      "Protection": "#5880A8",
+      "Retribution":"#C85828"
+    }
+  },
+  "hunter": {
+    "name": "Hunter",
+    "trees": {
+      "Beast Mastery": "#80A848",
+      "Marksmanship":  "#6898B8",
+      "Survival":      "#A86830"
+    }
+  },
+  "rogue": {
+    "name": "Rogue",
+    "trees": {
+      "Assassination": "#8050A0",
+      "Combat":        "#B07020",
+      "Subtlety":      "#406070"
+    }
+  },
+  "priest": {
+    "name": "Priest",
+    "trees": {
+      "Discipline": "#6878A8",
+      "Holy":       "#C8B858",
+      "Shadow":     "#6050A0"
+    }
+  },
+  "shaman": {
+    "name": "Shaman",
+    "trees": {
+      "Elemental":   "#3888C8",
+      "Enhancement": "#B07830",
+      "Restoration": "#389870"
+    }
+  },
+  "mage": {
+    "name": "Mage",
+    "trees": {
+      "Arcane": "#8050C0",
+      "Fire":   "#C04820",
+      "Frost":  "#4898C8"
+    }
+  },
   "warlock": {
     "name": "Warlock",
     "trees": {
-      "Affliction": "#7a5fa8",
-      "Demonology": "#3d9e5c",
+      "Affliction":  "#7a5fa8",
+      "Demonology":  "#3d9e5c",
       "Destruction": "#c04428"
+    }
+  },
+  "druid": {
+    "name": "Druid",
+    "trees": {
+      "Balance":      "#8060A8",
+      "Feral Combat": "#B86820",
+      "Restoration":  "#408840"
     }
   }
 }
