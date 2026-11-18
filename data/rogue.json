@@ -8,17 +8,17 @@
   {
    "name": "Assassination",
    "accent": "#8050A0",
-   "background": "assets/game/rogue/backgrounds/rogueassassination.jpg"
+   "background": "assets/game/rogue/backgrounds/rogueassassination.jpg?v=77d7edc9"
   },
   {
    "name": "Combat",
    "accent": "#B07020",
-   "background": "assets/game/rogue/backgrounds/roguecombat.jpg"
+   "background": "assets/game/rogue/backgrounds/roguecombat.jpg?v=f4fb7f20"
   },
   {
    "name": "Subtlety",
    "accent": "#406070",
-   "background": "assets/game/rogue/backgrounds/roguesubtlety.jpg"
+   "background": "assets/game/rogue/backgrounds/roguesubtlety.jpg?v=1e47972f"
   }
  ],
  "talents": {
@@ -38,7 +38,7 @@
      1.5
     ]
    ],
-   "iconFile": "ability_gouge"
+   "icon": "assets/game/rogue/talents/ability_gouge.jpg?v=7629d89e"
   },
   "improved_sinister_strike": {
    "name": "Improved Sinister Strike",
@@ -53,7 +53,7 @@
      5
     ]
    ],
-   "iconFile": "spell_shadow_ritualofsacrifice"
+   "icon": "assets/game/rogue/talents/spell_shadow_ritualofsacrifice.jpg?v=59c51f4d"
   },
   "dual_wield_specialization": {
    "name": "Dual Wield Specialization",
@@ -77,7 +77,7 @@
      50
     ]
    ],
-   "iconFile": "ability_dualwield"
+   "icon": "assets/game/rogue/talents/ability_dualwield.jpg?v=468895df"
   },
   "improved_slice_and_dice": {
    "name": "Improved Slice and Dice",
@@ -92,7 +92,7 @@
      50
     ]
    ],
-   "iconFile": "ability_rogue_slicedice"
+   "icon": "assets/game/rogue/talents/ability_rogue_slicedice.jpg?v=59bec9ca"
   },
   "deflection": {
    "name": "Deflection",
@@ -110,7 +110,7 @@
      6
     ]
    ],
-   "iconFile": "ability_parry"
+   "icon": "assets/game/rogue/talents/ability_parry.jpg?v=fbdd48d9"
   },
   "precision": {
    "name": "Precision",
@@ -134,7 +134,7 @@
      5
     ]
    ],
-   "iconFile": "ability_marksmanship"
+   "icon": "assets/game/rogue/talents/ability_marksmanship.jpg?v=2af51777"
   },
   "endurance": {
    "name": "Endurance",
@@ -151,14 +151,14 @@
      4
     ]
    ],
-   "iconFile": "spell_shadow_shadowward"
+   "icon": "assets/game/rogue/talents/spell_shadow_shadowward.jpg?v=d6f3ab10"
   },
   "riposte": {
    "name": "Riposte",
    "maxPts": 1,
    "prereq": "deflection",
    "tooltipTemplate": "A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and slows their melee attack speed by 20% for 30 sec.  Awards 2 combo point.",
-   "iconFile": "ability_warrior_challange"
+   "icon": "assets/game/rogue/talents/ability_warrior_challange.jpg?v=d7a3970f"
   },
   "close_quarters_combat": {
    "name": "Close Quarters Combat",
@@ -182,7 +182,7 @@
      5
     ]
    ],
-   "iconFile": "inv_weapon_shortblade_05"
+   "icon": "assets/game/rogue/talents/inv_weapon_shortblade_05.jpg?v=c02ba998"
   },
   "improved_kick": {
    "name": "Improved Kick",
@@ -197,7 +197,7 @@
      100
     ]
    ],
-   "iconFile": "ability_kick"
+   "icon": "assets/game/rogue/talents/ability_kick.jpg?v=f2598161"
   },
   "improved_sprint": {
    "name": "Improved Sprint",
@@ -212,7 +212,7 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_sprint"
+   "icon": "assets/game/rogue/talents/ability_rogue_sprint.jpg?v=5a0b6ba1"
   },
   "lightning_reflexes": {
    "name": "Lightning Reflexes",
@@ -233,7 +233,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_invisibilty"
+   "icon": "assets/game/rogue/talents/spell_nature_invisibilty.jpg?v=0445197d"
   },
   "aggression": {
    "name": "Aggression",
@@ -257,7 +257,7 @@
      15
     ]
    ],
-   "iconFile": "ability_racial_avatar"
+   "icon": "assets/game/rogue/talents/ability_racial_avatar.jpg?v=ddb48eb0"
   },
   "mace_specialization": {
    "name": "Mace Specialization",
@@ -281,14 +281,14 @@
      15
     ]
    ],
-   "iconFile": "inv_mace_01"
+   "icon": "assets/game/rogue/talents/inv_mace_01.jpg?v=f3201020"
   },
   "blade_flurry": {
    "name": "Blade Flurry",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases your attack speed by 20%.  In addition, attacks strike an additional nearby opponent.  Lasts 15 sec.",
-   "iconFile": "ability_warrior_punishingblow"
+   "icon": "assets/game/rogue/talents/ability_warrior_punishingblow.jpg?v=ac435dc1"
   },
   "hack_and_slash": {
    "name": "Hack and Slash",
@@ -312,7 +312,7 @@
      5
     ]
    ],
-   "iconFile": "inv_sword_27"
+   "icon": "assets/game/rogue/talents/inv_sword_27.jpg?v=a7c5c95d"
   },
   "weapon_expertise": {
    "name": "Weapon Expertise",
@@ -327,7 +327,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_blessingofstrength"
+   "icon": "assets/game/rogue/talents/spell_holy_blessingofstrength.jpg?v=d0c23110"
   },
   "blade_twisting": {
    "name": "Blade Twisting",
@@ -344,7 +344,7 @@
      8
     ]
    ],
-   "iconFile": "ability_rogue_bladetwisting"
+   "icon": "assets/game/rogue/talents/ability_rogue_bladetwisting.jpg?v=7407524e"
   },
   "vitality": {
    "name": "Vitality",
@@ -362,14 +362,14 @@
      25
     ]
    ],
-   "iconFile": "ability_warrior_revenge"
+   "icon": "assets/game/rogue/talents/ability_warrior_revenge.jpg?v=98110028"
   },
   "adrenaline_rush": {
    "name": "Adrenaline Rush",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases your Energy regeneration rate by 100% for 15 sec.",
-   "iconFile": "spell_shadow_shadowworddominate"
+   "icon": "assets/game/rogue/talents/spell_shadow_shadowworddominate.jpg?v=10f6799e"
   },
   "nerves_of_steel": {
    "name": "Nerves of Steel",
@@ -384,7 +384,7 @@
      30
     ]
    ],
-   "iconFile": "ability_rogue_nervesofsteel"
+   "icon": "assets/game/rogue/talents/ability_rogue_nervesofsteel.jpg?v=c4c2dafa"
   },
   "throwing_specialization": {
    "name": "Throwing Specialization",
@@ -401,7 +401,7 @@
      20
     ]
    ],
-   "iconFile": "ability_rogue_throwingspecialization"
+   "icon": "assets/game/rogue/talents/ability_rogue_throwingspecialization.jpg?v=92bb95d3"
   },
   "combat_potency": {
    "name": "Combat Potency",
@@ -419,7 +419,7 @@
      15
     ]
    ],
-   "iconFile": "inv_weapon_shortblade_38"
+   "icon": "assets/game/rogue/talents/inv_weapon_shortblade_38.jpg?v=9a338907"
   },
   "unfair_advantage": {
    "name": "Unfair Advantage",
@@ -434,14 +434,14 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_unfairadvantage"
+   "icon": "assets/game/rogue/talents/ability_rogue_unfairadvantage.jpg?v=f04d5fca"
   },
   "surprise_attacks": {
    "name": "Surprise Attacks",
    "maxPts": 1,
    "prereq": "adrenaline_rush",
    "tooltipTemplate": "Your finishing moves can no longer be dodged, and the damage dealt by your Sinister Strike, Backstab, Shiv, Hemorrhage and Gouge abilities is increased by 10%.",
-   "iconFile": "ability_rogue_surpriseattack"
+   "icon": "assets/game/rogue/talents/ability_rogue_surpriseattack.jpg?v=50925a56"
   },
   "savage_combat": {
    "name": "Savage Combat",
@@ -458,7 +458,7 @@
      4
     ]
    ],
-   "iconFile": "ability_creature_disease_03"
+   "icon": "assets/game/rogue/talents/ability_creature_disease_03.jpg?v=7d11bbff"
   },
   "prey_on_the_weak": {
    "name": "Prey on the Weak",
@@ -476,14 +476,14 @@
      20
     ]
    ],
-   "iconFile": "ability_rogue_preyontheweak"
+   "icon": "assets/game/rogue/talents/ability_rogue_preyontheweak.jpg?v=3e00a52e"
   },
   "killing_spree": {
    "name": "Killing Spree",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Step through the shadows from enemy to enemy within 10 yards, attacking an enemy every 0.5 sec with both weapons until 5 assaults are made, and increasing all damage done by 40% for the duration.  Can hit the same target multiple times.  Cannot hit invisible or stealthed targets.",
-   "iconFile": "ability_rogue_murderspree",
+   "icon": "assets/game/rogue/talents/ability_rogue_murderspree.jpg?v=d3ec3b27",
    "active": true
   },
   "relentless_strikes": {
@@ -508,14 +508,14 @@
      20
     ]
    ],
-   "iconFile": "ability_warrior_decisivestrike"
+   "icon": "assets/game/rogue/talents/ability_warrior_decisivestrike.jpg?v=cafa367a"
   },
   "master_of_deception": {
    "name": "Master of Deception",
    "maxPts": 3,
    "prereq": null,
    "tooltipTemplate": "Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 2).",
-   "iconFile": "spell_shadow_charm"
+   "icon": "assets/game/rogue/talents/spell_shadow_charm.jpg?v=80b37ddd"
   },
   "opportunity": {
    "name": "Opportunity",
@@ -530,7 +530,7 @@
      20
     ]
    ],
-   "iconFile": "ability_warrior_warcry"
+   "icon": "assets/game/rogue/talents/ability_warrior_warcry.jpg?v=050e7df9"
   },
   "sleight_of_hand": {
    "name": "Sleight of Hand",
@@ -547,7 +547,7 @@
      20
     ]
    ],
-   "iconFile": "ability_rogue_feint"
+   "icon": "assets/game/rogue/talents/ability_rogue_feint.jpg?v=96884e0d"
   },
   "dirty_tricks": {
    "name": "Dirty Tricks",
@@ -564,7 +564,7 @@
      50
     ]
    ],
-   "iconFile": "ability_sap"
+   "icon": "assets/game/rogue/talents/ability_sap.jpg?v=0cebe5f6"
   },
   "camouflage": {
    "name": "Camouflage",
@@ -585,7 +585,7 @@
      6
     ]
    ],
-   "iconFile": "ability_stealth"
+   "icon": "assets/game/rogue/talents/ability_stealth.jpg?v=9ee5053c"
   },
   "elusiveness": {
    "name": "Elusiveness",
@@ -602,14 +602,14 @@
      30
     ]
    ],
-   "iconFile": "spell_magic_lesserinvisibilty"
+   "icon": "assets/game/rogue/talents/spell_magic_lesserinvisibilty.jpg?v=0da63e08"
   },
   "ghostly_strike": {
    "name": "Ghostly Strike",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "A strike that deals 125% weapon damage (180% if a dagger is equipped) and increases your chance to dodge by 15% for 7 sec.  Awards 1 combo point.",
-   "iconFile": "spell_shadow_curse"
+   "icon": "assets/game/rogue/talents/spell_shadow_curse.jpg?v=65cf53ca"
   },
   "serrated_blades": {
    "name": "Serrated Blades",
@@ -630,7 +630,7 @@
      30
     ]
    ],
-   "iconFile": "inv_sword_17"
+   "icon": "assets/game/rogue/talents/inv_sword_17.jpg?v=08afc330"
   },
   "setup": {
    "name": "Setup",
@@ -648,7 +648,7 @@
      100
     ]
    ],
-   "iconFile": "spell_nature_mirrorimage"
+   "icon": "assets/game/rogue/talents/spell_nature_mirrorimage.jpg?v=2ccd33fe"
   },
   "initiative": {
    "name": "Initiative",
@@ -666,7 +666,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_fumble"
+   "icon": "assets/game/rogue/talents/spell_shadow_fumble.jpg?v=0737b3ab"
   },
   "improved_ambush": {
    "name": "Improved Ambush",
@@ -681,21 +681,21 @@
      50
     ]
    ],
-   "iconFile": "ability_rogue_ambush"
+   "icon": "assets/game/rogue/talents/ability_rogue_ambush.jpg?v=2f142527"
   },
   "heightened_senses": {
    "name": "Heightened Senses",
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by 4%.  More effective than Heightened Senses (Rank 1).",
-   "iconFile": "ability_ambush"
+   "icon": "assets/game/rogue/talents/ability_ambush.jpg?v=82ac5e06"
   },
   "preparation": {
    "name": "Preparation",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, this ability immediately finishes the cooldown on your Evasion, Sprint, Vanish, Cold Blood and Shadowstep abilities.",
-   "iconFile": "spell_shadow_antishadow"
+   "icon": "assets/game/rogue/talents/spell_shadow_antishadow.jpg?v=e2b0b420"
   },
   "dirty_deeds": {
    "name": "Dirty Deeds",
@@ -712,14 +712,14 @@
      25
     ]
    ],
-   "iconFile": "spell_shadow_summonsuccubus"
+   "icon": "assets/game/rogue/talents/spell_shadow_summonsuccubus.jpg?v=f558276c"
   },
   "hemorrhage": {
    "name": "Hemorrhage",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "An instant strike that deals 110% weapon damage (159.5% if a dagger is equipped) and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 13.  Lasts 10 charges or 15 sec.  Awards 1 combo point.",
-   "iconFile": "spell_shadow_lifedrain",
+   "icon": "assets/game/rogue/talents/spell_shadow_lifedrain.jpg?v=92864693",
    "active": true
   },
   "master_of_subtlety": {
@@ -738,7 +738,7 @@
      10
     ]
    ],
-   "iconFile": "ability_rogue_masterofsubtlety"
+   "icon": "assets/game/rogue/talents/ability_rogue_masterofsubtlety.jpg?v=4ff4b1fa"
   },
   "deadliness": {
    "name": "Deadliness",
@@ -762,7 +762,7 @@
      10
     ]
    ],
-   "iconFile": "inv_weapon_crossbow_11"
+   "icon": "assets/game/rogue/talents/inv_weapon_crossbow_11.jpg?v=5bc09d1d"
   },
   "enveloping_shadows": {
    "name": "Enveloping Shadows",
@@ -780,14 +780,14 @@
      30
     ]
    ],
-   "iconFile": "ability_rogue_envelopingshadows"
+   "icon": "assets/game/rogue/talents/ability_rogue_envelopingshadows.jpg?v=6f744105"
   },
   "premeditation": {
    "name": "Premeditation",
    "maxPts": 1,
    "prereq": "preparation",
    "tooltipTemplate": "When used, adds 2 combo points to your target.  You must add to or use those combo points within 20 sec or the combo points are lost.",
-   "iconFile": "spell_shadow_possession"
+   "icon": "assets/game/rogue/talents/spell_shadow_possession.jpg?v=6ba1c768"
   },
   "cheat_death": {
    "name": "Cheat Death",
@@ -805,7 +805,7 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_cheatdeath"
+   "icon": "assets/game/rogue/talents/ability_rogue_cheatdeath.jpg?v=e8d45832"
   },
   "sinister_calling": {
    "name": "Sinister Calling",
@@ -826,7 +826,7 @@
      10
     ]
    ],
-   "iconFile": "ability_rogue_sinistercalling"
+   "icon": "assets/game/rogue/talents/ability_rogue_sinistercalling.jpg?v=a1b10d44"
   },
   "waylay": {
    "name": "Waylay",
@@ -841,7 +841,7 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_waylay"
+   "icon": "assets/game/rogue/talents/ability_rogue_waylay.jpg?v=08946b48"
   },
   "honor_among_thieves": {
    "name": "Honor Among Thieves",
@@ -859,14 +859,14 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_honoramongstthieves"
+   "icon": "assets/game/rogue/talents/ability_rogue_honoramongstthieves.jpg?v=7fa9e7fb"
   },
   "shadowstep": {
    "name": "Shadowstep",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Attempts to step through the shadows and reappear behind your enemy and increases movement speed by 70% for 3 sec.  The damage of your next ability is increased by 20% and the threat caused is reduced by 50%.  Lasts 10 sec.",
-   "iconFile": "ability_rogue_shadowstep",
+   "icon": "assets/game/rogue/talents/ability_rogue_shadowstep.jpg?v=81338686",
    "active": true
   },
   "filthy_tricks": {
@@ -886,7 +886,7 @@
      3
     ]
    ],
-   "iconFile": "ability_rogue_wrongfullyaccused"
+   "icon": "assets/game/rogue/talents/ability_rogue_wrongfullyaccused.jpg?v=1ab6523a"
   },
   "slaughter_from_the_shadows": {
    "name": "Slaughter from the Shadows",
@@ -910,14 +910,14 @@
      3
     ]
    ],
-   "iconFile": "ability_rogue_slaughterfromtheshadows"
+   "icon": "assets/game/rogue/talents/ability_rogue_slaughterfromtheshadows.jpg?v=cad9ce9e"
   },
   "shadow_dance": {
    "name": "Shadow Dance",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Enter the Shadow Dance for 8 sec, allowing the use of Sap, Garrote, Ambush, Cheap Shot, Premeditation, Pickpocket and Disarm Trap regardless of being stealthed.",
-   "iconFile": "ability_rogue_shadowdance",
+   "icon": "assets/game/rogue/talents/ability_rogue_shadowdance.jpg?v=43ad879e",
    "active": true
   },
   "improved_eviscerate": {
@@ -936,7 +936,7 @@
      20
     ]
    ],
-   "iconFile": "ability_rogue_eviscerate"
+   "icon": "assets/game/rogue/talents/ability_rogue_eviscerate.jpg?v=0ec2a64b"
   },
   "remorseless_attacks": {
    "name": "Remorseless Attacks",
@@ -951,7 +951,7 @@
      40
     ]
    ],
-   "iconFile": "ability_fiegndead"
+   "icon": "assets/game/rogue/talents/ability_fiegndead.jpg?v=16bc4cdd"
   },
   "malice": {
    "name": "Malice",
@@ -975,7 +975,7 @@
      5
     ]
    ],
-   "iconFile": "ability_racial_bloodrage"
+   "icon": "assets/game/rogue/talents/ability_racial_bloodrage.jpg?v=ca10903b"
   },
   "ruthlessness": {
    "name": "Ruthlessness",
@@ -993,7 +993,7 @@
      60
     ]
    ],
-   "iconFile": "ability_druid_disembowel"
+   "icon": "assets/game/rogue/talents/ability_druid_disembowel.jpg?v=72970d31"
   },
   "blood_spatter": {
    "name": "Blood Spatter",
@@ -1008,7 +1008,7 @@
      30
     ]
    ],
-   "iconFile": "ability_rogue_bloodsplatter"
+   "icon": "assets/game/rogue/talents/ability_rogue_bloodsplatter.jpg?v=e7fbbe9d"
   },
   "puncturing_wounds": {
    "name": "Puncturing Wounds",
@@ -1029,14 +1029,14 @@
      15
     ]
    ],
-   "iconFile": "ability_backstab"
+   "icon": "assets/game/rogue/talents/ability_backstab.jpg?v=46407cae"
   },
   "vigor": {
    "name": "Vigor",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases your maximum Energy by 10.",
-   "iconFile": "spell_nature_earthbindtotem"
+   "icon": "assets/game/rogue/talents/spell_nature_earthbindtotem.jpg?v=8c560169"
   },
   "improved_expose_armor": {
    "name": "Improved Expose Armor",
@@ -1051,7 +1051,7 @@
      10
     ]
    ],
-   "iconFile": "ability_warrior_riposte"
+   "icon": "assets/game/rogue/talents/ability_warrior_riposte.jpg?v=d1b29ded"
   },
   "lethality": {
    "name": "Lethality",
@@ -1075,7 +1075,7 @@
      30
     ]
    ],
-   "iconFile": "ability_criticalstrike"
+   "icon": "assets/game/rogue/talents/ability_criticalstrike.jpg?v=cbf85b3f"
   },
   "vile_poisons": {
    "name": "Vile Poisons",
@@ -1096,7 +1096,7 @@
      30
     ]
    ],
-   "iconFile": "ability_rogue_feigndeath"
+   "icon": "assets/game/rogue/talents/ability_rogue_feigndeath.jpg?v=9f1d281e"
   },
   "improved_poisons": {
    "name": "Improved Poisons",
@@ -1125,7 +1125,7 @@
      50
     ]
    ],
-   "iconFile": "ability_poisons"
+   "icon": "assets/game/rogue/talents/ability_poisons.jpg?v=7a283627"
   },
   "fleet_footed": {
    "name": "Fleet Footed",
@@ -1142,14 +1142,14 @@
      15
     ]
    ],
-   "iconFile": "ability_rogue_fleetfooted"
+   "icon": "assets/game/rogue/talents/ability_rogue_fleetfooted.jpg?v=d22c70cf"
   },
   "mutilate": {
    "name": "Mutilate",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Instantly attacks with both weapons for 100% weapon damage plus an additional 34 with each weapon.  Damage is increased by 20% against Poisoned targets.  Awards 2 combo points.",
-   "iconFile": "ability_rogue_shadowstrikes",
+   "icon": "assets/game/rogue/talents/ability_rogue_shadowstrikes.jpg?v=3fe9f6ba",
    "active": true
   },
   "improved_kidney_shot": {
@@ -1168,7 +1168,7 @@
      9
     ]
    ],
-   "iconFile": "ability_rogue_kidneyshot"
+   "icon": "assets/game/rogue/talents/ability_rogue_kidneyshot.jpg?v=e8393b13"
   },
   "quick_recovery": {
    "name": "Quick Recovery",
@@ -1185,7 +1185,7 @@
      80
     ]
    ],
-   "iconFile": "ability_rogue_quickrecovery"
+   "icon": "assets/game/rogue/talents/ability_rogue_quickrecovery.jpg?v=9dd410ba"
   },
   "seal_fate": {
    "name": "Seal Fate",
@@ -1203,7 +1203,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_chilltouch"
+   "icon": "assets/game/rogue/talents/spell_shadow_chilltouch.jpg?v=bf6768d5"
   },
   "murder": {
    "name": "Murder",
@@ -1218,7 +1218,7 @@
      4
     ]
    ],
-   "iconFile": "spell_shadow_deathscream"
+   "icon": "assets/game/rogue/talents/spell_shadow_deathscream.jpg?v=47725f82"
   },
   "deadly_brew": {
    "name": "Deadly Brew",
@@ -1233,14 +1233,14 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_deadlybrew"
+   "icon": "assets/game/rogue/talents/ability_rogue_deadlybrew.jpg?v=a98cc53b"
   },
   "overkill": {
    "name": "Overkill",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "While stealthed, and for 20 seconds after breaking stealth, you regenerate 30% additional energy.",
-   "iconFile": "ability_hunter_rapidkilling"
+   "icon": "assets/game/rogue/talents/ability_hunter_rapidkilling.jpg?v=e75c6452"
   },
   "deadened_nerves": {
    "name": "Deadened Nerves",
@@ -1258,7 +1258,7 @@
      6
     ]
    ],
-   "iconFile": "ability_rogue_deadenednerves"
+   "icon": "assets/game/rogue/talents/ability_rogue_deadenednerves.jpg?v=14c62107"
   },
   "focused_attacks": {
    "name": "Focused Attacks",
@@ -1276,7 +1276,7 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_focusedattacks"
+   "icon": "assets/game/rogue/talents/ability_rogue_focusedattacks.jpg?v=f0caa489"
   },
   "find_weakness": {
    "name": "Find Weakness",
@@ -1294,7 +1294,7 @@
      6
     ]
    ],
-   "iconFile": "ability_rogue_findweakness"
+   "icon": "assets/game/rogue/talents/ability_rogue_findweakness.jpg?v=39a79459"
   },
   "master_poisoner": {
    "name": "Master Poisoner",
@@ -1318,14 +1318,14 @@
      100
     ]
    ],
-   "iconFile": "ability_creature_poison_06"
+   "icon": "assets/game/rogue/talents/ability_creature_poison_06.jpg?v=104a2973"
   },
   "cold_blood": {
    "name": "Cold Blood",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, increases the critical strike chance of your next offensive ability by 100%.",
-   "iconFile": "spell_ice_lament"
+   "icon": "assets/game/rogue/talents/spell_ice_lament.jpg?v=e49ce646"
   },
   "turn_the_tables": {
    "name": "Turn the Tables",
@@ -1343,7 +1343,7 @@
      6
     ]
    ],
-   "iconFile": "ability_rogue_turnthetables"
+   "icon": "assets/game/rogue/talents/ability_rogue_turnthetables.jpg?v=47e02153"
   },
   "cut_to_the_chase": {
    "name": "Cut to the Chase",
@@ -1361,14 +1361,14 @@
      100
     ]
    ],
-   "iconFile": "ability_rogue_cuttothechase"
+   "icon": "assets/game/rogue/talents/ability_rogue_cuttothechase.jpg?v=0d8e2bcf"
   },
   "hunger_for_blood": {
    "name": "Hunger For Blood",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Enrages you, increasing all damage caused by 5%.  Requires a bleed effect to be active on the target.  Lasts 1 min.",
-   "iconFile": "ability_rogue_hungerforblood",
+   "icon": "assets/game/rogue/talents/ability_rogue_hungerforblood.jpg?v=0c9003e4",
    "active": true
   }
  },
@@ -1583,45 +1583,55 @@
    "key": "combat_readiness",
    "name": "Combat Readiness",
    "rarity": "artifact",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Teaches you: Combat Readiness. \nCombat Readiness: Enter a state of heightened defensive awareness. Each time you're hit by a spell or ability you reduce your overall damage taken by 5% for 10 sec, stacking 5 times. Lasts 20 sec or until not attacked for 10 sec.",
-   "iconFile": "ability_rogue_combatreadiness",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_combatreadiness.jpg?v=a74219ce",
    "requiredLevel": 35
   },
   {
    "key": "grappling_hook",
    "name": "Grappling Hook",
    "rarity": "artifact",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Teaches you: Grappling Hook. \nGrappling Hook: Launch a grappling hook and pull yourself to the target location.",
-   "iconFile": "ability_rogue_grapplinghook",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_grapplinghook.jpg?v=88b78123",
    "requiredLevel": 35
   },
   {
    "key": "recuperate",
    "name": "Recuperate",
    "rarity": "artifact",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Teaches you: Recuperate. \nRecuperate: Finishing move that consumes combo points on your target to restore 3% of health every 3 sec. Lasts longer per combo point:\n   1 point : 6 seconds\n   2 points: 12 seconds\n   3 points: 18 seconds\n   4 points: 24 seconds\n   5 points: 30 seconds\n\nKilling an opponent that yields experience or honor extends the duration of Recuperate to its 5 combo point maximum.\nKilling an opponent that yields experience or honor extends the duration of Recuperate to its 5 combo point maximum.",
-   "iconFile": "ability_rogue_honoramongstthieves",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_honoramongstthieves.jpg?v=7fa9e7fb",
    "requiredLevel": 35
   },
   {
    "key": "smoke_bomb",
    "name": "Smoke Bomb",
    "rarity": "artifact",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Teaches you: Smoke Bomb. \nSmoke Bomb: Creates a cloud of thick smoke in an 8 yard radius around you for 5 sec. Enemies are unable to target into or out of the smoke cloud.",
-   "iconFile": "ability_rogue_smoke",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_smoke.jpg?v=39c357e3",
    "requiredLevel": 35
   },
   {
    "key": "adrenaline_junkie",
    "name": "Adrenaline Junkie",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Adrenaline Rush\nYour finishing moves have a 20% chance per combo point to reduce the cooldown of Adrenaline Rush by 12 sec. In addition, Adrenaline Rush does not trigger a global cooldown.",
-   "iconFile": "_d3dashingstrike",
+   "icon": "assets/game/rogue/mystic-enchants/_d3dashingstrike.jpg?v=57addeac",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1634,9 +1644,11 @@
    "key": "assassins_rush",
    "name": "Assassin's Rush",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Adrenaline Rush\nIncreases your attack speed by 10% and causes Adrenaline Rush to further increase your attack speed and movement speed by 20% while active.",
-   "iconFile": "ability_rogue_turnthetables",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_turnthetables.jpg?v=47e02153",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1649,9 +1661,11 @@
    "key": "blade_vortex",
    "name": "Blade Vortex",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Blade Flurry\nYour damaging melee finishing moves have a 20% chance per combo point to reduce the cooldown of Blade Flurry by 5 sec and while Blade Flurry is active to also create a Blade Vortex.\n\nDamaging casts of Fan of Knives grants 1 combo point while Blade Flurry is active.\nBlade Vortex: Deals 88.87 Physical damage to nearby enemies every second for 3 sec.\n\nWhen triggered, increases the duration of Blade Flurry by 3 seconds.",
-   "iconFile": "ability_butcher_whirl",
+   "icon": "assets/game/rogue/mystic-enchants/ability_butcher_whirl.jpg?v=6f9d0939",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1664,18 +1678,22 @@
    "key": "bleeding_edge",
    "name": "Bleeding Edge",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "You gain 4 energy whenever you deal bleed damage with Garrote or Rupture or instant damage with Crimson Tempest.",
-   "iconFile": "ability_warrior_bloodbath",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_bloodbath.jpg?v=e303d1d7",
    "requiredLevel": 15
   },
   {
    "key": "blood_soaked_mutilation",
    "name": "Blood-Soaked Mutilation",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Mutilate\nMutilate damage is increased by 6% for every active bleed effect that you have applied to the target.\n\nCrimson Tempest has a 20% chance per combo point to allow Garrote to be used outside of stealth. When used this way Garrote does not trigger its silence effect.",
-   "iconFile": "inv_artifact_bloodoftheassassinated",
+   "icon": "assets/game/rogue/mystic-enchants/inv_artifact_bloodoftheassassinated.jpg?v=7afd693e",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1688,9 +1706,11 @@
    "key": "bloodshed",
    "name": "Bloodshed",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Hunger For Blood\nUsing Hunger for Blood increases the damage of your Rogue bleed effects by 15% for 10 sec and causes the target to take 30% additional damage from bleed effects for 30 sec.\n\nIn addition, your Hunger for Blood has no energy cost and generates 10 energy when used.\n\n@ext:The additional bleed damage taken does not stack with other similar effects.:ext@",
-   "iconFile": "ability_ironmaidens_corruptedblood",
+   "icon": "assets/game/rogue/mystic-enchants/ability_ironmaidens_corruptedblood.jpg?v=8788665d",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1703,9 +1723,11 @@
    "key": "combat_proficiency",
    "name": "Combat Proficiency",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Combat Potency\nIncreases your armor penetration by 10% and the chance to trigger the Combat Potency talent by 50%.",
-   "iconFile": "inv_weapon_shortblade_38",
+   "icon": "assets/game/rogue/mystic-enchants/inv_weapon_shortblade_38.jpg?v=9a338907",
    "requiredLevel": 45,
    "requires": [
     {
@@ -1718,45 +1740,55 @@
    "key": "dispatch",
    "name": "Dispatch",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Teaches you: Dispatch. \nDispatch: Finishing move that causes damage per combo point:\n   1 point  : 54-78 damage\n   2 points: 95-119 damage\n   3 points: 136-160 damage\n   4 points: 177-201 damage\n   5 points: 218-242 damage\n\nIf used on a target below 35% health, your next Eviscerate or Envenom deals 20% increased damage. Dispatch does not consume combo points.",
-   "iconFile": "ability_rogue_waylay",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_waylay.jpg?v=08946b48",
    "requiredLevel": 32
   },
   {
    "key": "energy_surge",
    "name": "Energy Surge",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the energy cost of Gouge by 20 and using Gouge on a monster doubles your energy regeneration while the Gouge lasts.\n\nIn addition, breaking Gouge with a damaging Rogue ability increases the damage of that ability by 30%.",
-   "iconFile": "ability_rogue_imrovedrecuperate",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_imrovedrecuperate.jpg?v=6ab11e1c",
    "requiredLevel": 15
   },
   {
    "key": "envenomed",
    "name": "Envenomed",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Deal 10% additional damage with poisons to bleeding targets. In addition, the energy cost of Envenom is reduced by 5.",
-   "iconFile": "trade_brewpoison",
+   "icon": "assets/game/rogue/mystic-enchants/trade_brewpoison.jpg?v=db90727c",
    "requiredLevel": 20
   },
   {
    "key": "fatal_counter",
    "name": "Fatal Counter",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the damage of Riposte by 10%.\n\nKilling an opponent that yields experience or honor allows one use of Riposte for 10 sec.",
-   "iconFile": "ability_rogue_bladetwisting",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_bladetwisting.jpg?v=7407524e",
    "requiredLevel": 20
   },
   {
    "key": "from_the_shadows",
    "name": "From the Shadows",
    "rarity": "epic",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Requires Shadow Dance\nBackstab and Hemorrhage reduces the cooldown of Shadow Dance by 1 second.\n\nShadow Dance increases your damage done against creatures by 30%.",
-   "iconFile": "ability_rogue_slaughterfromtheshadows",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_slaughterfromtheshadows.jpg?v=cad9ce9e",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1769,18 +1801,22 @@
    "key": "hazardous_escape",
    "name": "Hazardous Escape",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Your Sprint leaves behind a trail of poison that deals ${20*0.99+0*0..05} Nature damage every second to nearby enemies.\n\nThis damage reduces the cooldown of Sprint by 2 seconds but the cooldown can only be reduced once every second.\n\n@ext:This effect does not trigger while in Stealth.:ext@",
-   "iconFile": "nhi_naturepoisonedstep_border",
+   "icon": "assets/game/rogue/mystic-enchants/nhi_naturepoisonedstep_border.jpg?v=efc4b09d",
    "requiredLevel": 15
   },
   {
    "key": "massacre",
    "name": "Massacre",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Killing Spree\nKilling Spree also deals 100% weapon damage to nearby enemies and applies Massacre to all targets hit. Dealing damage with Sinister Strike reduces the cooldown of Killing Spree by 0 sec.\n\nMassacre: Damage done to the target from the Rogue is increased by 2%. Stacks up to 5 times and lasts for 30 sec.",
-   "iconFile": "ability_rogue_dirtydeeds",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_dirtydeeds.jpg?v=4cba0cb2",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1793,18 +1829,22 @@
    "key": "methodical_approach",
    "name": "Methodical Approach",
    "rarity": "epic",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Dealing damage with Ambush reduces the energy cost of your next Eviscerate by 15 and causes it to increase the duration of Rupture by 8 sec.",
-   "iconFile": "ability_rogue_deadliness",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_deadliness.jpg?v=2aa575d1",
    "requiredLevel": 18
   },
   {
    "key": "murder_rush",
    "name": "Murder Rush",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Requires Sprint\nKilling an enemy that yields experience or honor gives you Sprint for 5 seconds. If Sprint is already active, its duration is fully refreshed. In addition, while Sprint is active you deal 10% more damage.",
-   "iconFile": "_d3sprint",
+   "icon": "assets/game/rogue/mystic-enchants/_d3sprint.jpg?v=ec78960d",
    "requiredLevel": 15,
    "requires": [
     {
@@ -1816,9 +1856,11 @@
    "key": "natural_energy",
    "name": "Natural Energy",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Mutilate\nWhile Envenom is active the energy cost of your Mutilate is reduced by 7.",
-   "iconFile": "nhi_natureunity_border",
+   "icon": "assets/game/rogue/mystic-enchants/nhi_natureunity_border.jpg?v=32b4a9f4",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1831,9 +1873,11 @@
    "key": "no_remorse",
    "name": "No Remorse",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Remorseless Attacks\nRemorseless Attacks increases the critical strike chance of the ability by 100% and also reduces its energy cost by 50%.",
-   "iconFile": "ability_fiegndead",
+   "icon": "assets/game/rogue/mystic-enchants/ability_fiegndead.jpg?v=16bc4cdd",
    "requiredLevel": 15,
    "requires": [
     {
@@ -1846,72 +1890,88 @@
    "key": "phantom_stab",
    "name": "Phantom Stab",
    "rarity": "epic",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Using Ghostly Strike increases the damage of your next Backstab by 10% and allows it to be used without being behind the target.\n\nUsing Backstab reduces the cooldown of Ghostly Strike by 0 sec.",
-   "iconFile": "achievement_halloween_ghost_01",
+   "icon": "assets/game/rogue/mystic-enchants/achievement_halloween_ghost_01.jpg?v=87c3a7f7",
    "requiredLevel": 20
   },
   {
    "key": "poison_bomb",
    "name": "Poison Bomb",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Teaches you: Poison Bomb. \nPoison Bomb: Throw a Poison Bomb that unleashes deadly fumes, immediately applying a stack of Deadly Poison and an additional stack to nearby enemies every 2 seconds for 10 sec.",
-   "iconFile": "inv_eng_bombpoison",
+   "icon": "assets/game/rogue/mystic-enchants/inv_eng_bombpoison.jpg?v=c7a8a1c2",
    "requiredLevel": 30
   },
   {
    "key": "prison_tactics",
    "name": "Prison Tactics",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your Shiv has a 8 second cooldown and dealing damage with Shiv extends the duration of your Adrenaline Rush by 6 seconds and grants you Prison Tactics.\nPrison Tactics: Increases your attack speed by 20% for 4 seconds.",
-   "iconFile": "ability_skeer_bloodletting",
+   "icon": "assets/game/rogue/mystic-enchants/ability_skeer_bloodletting.jpg?v=a38999ce",
    "requiredLevel": 50
   },
   {
    "key": "repartee",
    "name": "Repartee",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the cooldown of Feint by 4 seconds, and Feint enables the use of Riposte for 6 sec. Riposte has 20% increased critical strike chance when used this way.",
-   "iconFile": "ability_parry",
+   "icon": "assets/game/rogue/mystic-enchants/ability_parry.jpg?v=fbdd48d9",
    "requiredLevel": 20
   },
   {
    "key": "shadow_of_death",
    "name": "Shadow of Death",
    "rarity": "epic",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Using Ambush on a target affected by your Rupture triggers an additional 30% Shadow damage in a 10 yard radius around the target.\n\nWhile Shadow Dance is active your abilities deal 50% increased damage against monsters below 35% health.\n\n@ext:Deals 20% of the Ambush damage in PvP combat.:ext@",
-   "iconFile": "_darkhand_shadow",
+   "icon": "assets/game/rogue/mystic-enchants/_darkhand_shadow.jpg?v=54bc6eca",
    "requiredLevel": 30
   },
   {
    "key": "shattering_execution",
    "name": "Shattering Execution",
    "rarity": "epic",
-   "spec": "Arms",
+   "specs": [
+    "Arms"
+   ],
    "tooltip": "Your Eviscerate and Dispatch have a 20% chance per combo point to shatter your target's armor, allowing your attacks to ignore 8% (5% against players) its armor for 15 sec, stacking up to 5 times.",
-   "iconFile": "epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border",
+   "icon": "assets/game/rogue/mystic-enchants/epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border.jpg?v=56bbe66b",
    "requiredLevel": 15
   },
   {
    "key": "sinister_finisher",
    "name": "Sinister Finisher",
    "rarity": "epic",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Using Sinister Strike grants Sinister Finisher.\n\nSinister Finisher: Reduces the cost of your next Eviscerate by 10 and causes it to hit an additional nearby target for 15% of the damage dealt. Stacks up to 3 and lasts 12 seconds.",
-   "iconFile": "ability_rogue_surpriseattack2",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_surpriseattack2.jpg?v=8f5ca5cd",
    "requiredLevel": 15
   },
   {
    "key": "veiled_wire",
    "name": "Veiled Wire",
    "rarity": "epic",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Requires Shadow Dance\nWhile Shadow Dance is active your Garrote hits 4 nearby targets.",
-   "iconFile": "custom_assassinskill_22_border",
+   "icon": "assets/game/rogue/mystic-enchants/custom_assassinskill_22_border.jpg?v=9c1366b7",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1924,27 +1984,33 @@
    "key": "venomous_edge",
    "name": "Venomous Edge",
    "rarity": "epic",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Dealing damage with Envenom increases the critical strike chance of your combo point generating abilities by 3%. Stacks up to 3 times and lasts for 15 sec. In addition, using Kingsbane triggers Overkill (if learned).",
-   "iconFile": "ability_rogue_poisonedknife",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_poisonedknife.jpg?v=7d415797",
    "requiredLevel": 40
   },
   {
    "key": "assassination_mastery",
    "name": "Assassination Mastery",
    "rarity": "legendary",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the damage of your Poisons by 8% and the damage of your Envenom by 5%.",
-   "iconFile": "ability_poisons",
+   "icon": "assets/game/rogue/mystic-enchants/ability_poisons.jpg?v=7a283627",
    "requiredLevel": 30
   },
   {
    "key": "assuaging_shadows",
    "name": "Assuaging Shadows",
    "rarity": "legendary",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Requires Shadow Dance\nUsing Shadow Dance causes a shadow eruption, slowing nearby enemies by 70% for 2 sec and applying 3 shadow marks.\n\nUsing Ambush on a marked enemy allows you to ignore the cooldown of Shadowstep for 2 sec and increases your damage done by 6% for 10 sec.\n\nUsing Shadowstep grants you 20 energy.\n\n@ext:Only 1 mark is applied versus players.:ext@",
-   "iconFile": "spell_shadow_shadesofdarkness",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_shadesofdarkness.jpg?v=019640d0",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1957,36 +2023,44 @@
    "key": "chasin_the_rush",
    "name": "Chasin' the Rush",
    "rarity": "legendary",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your finishing moves have a 4% chance per combo point spent to grant you 20% energy regeneration and 20% attack speed for 10 sec.",
-   "iconFile": "rogue_burstofspeed",
+   "icon": "assets/game/rogue/mystic-enchants/rogue_burstofspeed.jpg?v=4c6dd9dc",
    "requiredLevel": 30
   },
   {
    "key": "combat_mastery",
    "name": "Combat Mastery",
    "rarity": "legendary",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your attacks penetrate through 12% of the target's armor.",
-   "iconFile": "classicon_rogue",
+   "icon": "assets/game/rogue/mystic-enchants/classicon_rogue.jpg?v=e73eb389",
    "requiredLevel": 30
   },
   {
    "key": "crimson_hunger",
    "name": "Crimson Hunger",
    "rarity": "legendary",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crimson Tempest deals 50% increased damage to your main target. \n\nWhen Wound Poison strikes a bleeding enemy, it deals additional bleed damage and puts you into a Crimson Hunger.\n\nCrimson Hunger: Increases the damage of your Rogue bleeds by 2% for 20 sec seconds, stacking up to 30 times.",
-   "iconFile": "ability_revendreth_rogue",
+   "icon": "assets/game/rogue/mystic-enchants/ability_revendreth_rogue.jpg?v=691874c1",
    "requiredLevel": 30
   },
   {
    "key": "festering_wound",
    "name": "Festering Wound",
    "rarity": "legendary",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Mutilate\nYour Mutilate critical strikes apply Festering Wound. In addition, your Deadly Poison can stack up to 8 and your Envenom damage is increased by 5% for each stack above 5.\nFestering Wound: Increases your Nature damage dealt to the target by 1%. Stacks up to 5 times and lasts 10 sec.",
-   "iconFile": "ability_rogue_deviouspoisons",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_deviouspoisons.jpg?v=fef1d6a8",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1999,27 +2073,33 @@
    "key": "kingsbane",
    "name": "Kingsbane",
    "rarity": "legendary",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Teaches you: Kingsbane. \nKingsbane: Release a lethal poison from your weapons and inject it into your target, dealing 132.32 Nature damage instantly and 1415.98 additional Nature damage over 12 sec.\n\nEach time you apply a Deadly, Instant or Wound Poison to a target affected by your Kingsbane, its damage increases by 10%.\n\nAwards 3 combo point.",
-   "iconFile": "inv_knife_1h_artifactgarona_d_02",
+   "icon": "assets/game/rogue/mystic-enchants/inv_knife_1h_artifactgarona_d_02.jpg?v=d99e690e",
    "requiredLevel": 30
   },
   {
    "key": "roll_the_bones",
    "name": "Roll the Bones",
    "rarity": "legendary",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Teaches you: Roll the Bones. \nRoll the Bones: Roll the dice of fate, providing 1, 2, 3 or when in great luck, 5 random combat enhancements. Lasts longer per combo point:\n  1 point  : 6 seconds\n  2 points: 12 seconds\n  3 points: 18 seconds\n  4 points: 24 seconds\n  5 points: 30 seconds",
-   "iconFile": "ability_rogue_rollthebones",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_rollthebones.jpg?v=84bda206",
    "requiredLevel": 30
   },
   {
    "key": "rush_of_blood",
    "name": "Rush of Blood",
    "rarity": "legendary",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Requires Hemorrhage\nAmbush has no positional requirement versus monsters and costs 10 less energy. \n\nUsing Hemorrhage twice in a row makes your next Ambush usable outside Stealth. Using Hemorrhage a third time regenerates 30 energy. Using any other ability resets the sequence.",
-   "iconFile": "ability_xavius_crushingshadows",
+   "icon": "assets/game/rogue/mystic-enchants/ability_xavius_crushingshadows.jpg?v=107a31f6",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2032,360 +2112,440 @@
    "key": "shadow_blades",
    "name": "Shadow Blades",
    "rarity": "legendary",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Teaches you: Shadow Blades. \nShadow Blades: Draws upon surrounding shadows to empower your weapons, causing your direct damaging melee combo point generating abilities to generate an additional combo point and deal 15% additional damage as Shadow for 15 sec. Does not break stealth.",
-   "iconFile": "inv_knife_1h_grimbatolraid_d_03",
+   "icon": "assets/game/rogue/mystic-enchants/inv_knife_1h_grimbatolraid_d_03.jpg?v=e097a634",
    "requiredLevel": 30
   },
   {
    "key": "sinister_flurry",
    "name": "Sinister Flurry",
    "rarity": "legendary",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your Sinister Strike has a 33% chance to trigger an additional strike which deals 75% weapon damage, awards an additional combo point and generates 10 energy.",
-   "iconFile": "inv_sword_31",
+   "icon": "assets/game/rogue/mystic-enchants/inv_sword_31.jpg?v=9c58efdf",
    "requiredLevel": 30
   },
   {
    "key": "subtlety_mastery",
    "name": "Subtlety Mastery",
    "rarity": "legendary",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Increases the damage done by your Ambush, Backstab, Hemorrhage and finishing moves by 6%.",
-   "iconFile": "ability_stealth",
+   "icon": "assets/game/rogue/mystic-enchants/ability_stealth.jpg?v=9ee5053c",
    "requiredLevel": 30
   },
   {
    "key": "aggression",
    "name": "Aggression",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 15%.\n\nThis Mystic Enchant does not stack with the Aggression Talent.",
-   "iconFile": "ability_racial_avatar",
+   "icon": "assets/game/rogue/mystic-enchants/ability_racial_avatar.jpg?v=ddb48eb0",
    "requiredLevel": 45
   },
   {
    "key": "blood_spatter",
    "name": "Blood Spatter",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage caused by your Garrote and Rupture abilities by 30%.\n\nThis Mystic Enchant does not stack with the Blood Spatter Talent.",
-   "iconFile": "ability_rogue_bloodsplatter",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_bloodsplatter.jpg?v=e7fbbe9d",
    "requiredLevel": 45
   },
   {
    "key": "camouflage",
    "name": "Camouflage",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nIncreases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 6 sec.\n\nThis Mystic Enchant does not stack with the Camouflage Talent.",
-   "iconFile": "ability_stealth",
+   "icon": "assets/game/rogue/mystic-enchants/ability_stealth.jpg?v=9ee5053c",
    "requiredLevel": 45
   },
   {
    "key": "close_quarters_combat",
    "name": "Close Quarters Combat",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to get a critical strike with Daggers and Fist Weapons by 5%.\n\nThis Mystic Enchant does not stack with the Close Quarters Combat Talent.",
-   "iconFile": "inv_weapon_shortblade_05",
+   "icon": "assets/game/rogue/mystic-enchants/inv_weapon_shortblade_05.jpg?v=c02ba998",
    "requiredLevel": 45
   },
   {
    "key": "deflection",
    "name": "Deflection",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Parry chance by 6%.\n\nThis Mystic Enchant does not stack with the Deflection Talent.",
-   "iconFile": "ability_parry",
+   "icon": "assets/game/rogue/mystic-enchants/ability_parry.jpg?v=fbdd48d9",
    "requiredLevel": 45
   },
   {
    "key": "dirty_tricks",
    "name": "Dirty Tricks",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your Blind and Sap abilities by 5 yards and reduces the energy cost of your Blind and Sap abilities by 50%.\n\nThis Mystic Enchant does not stack with the Dirty Tricks Talent.",
-   "iconFile": "ability_sap",
+   "icon": "assets/game/rogue/mystic-enchants/ability_sap.jpg?v=0cebe5f6",
    "requiredLevel": 45
   },
   {
    "key": "doppelganger",
    "name": "Doppelganger",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Your Vanish now spawns a Doppelganger that looks like you and runs in a random direction, taking the hits so you can get away. Lasts 4 seconds.",
-   "iconFile": "spell_nature_mirrorimage",
+   "icon": "assets/game/rogue/mystic-enchants/spell_nature_mirrorimage.jpg?v=2ccd33fe",
    "requiredLevel": 22
   },
   {
    "key": "dual_wield_specialization",
    "name": "Dual Wield Specialization",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your off-hand weapon by 50%.\n\nThis Mystic Enchant does not stack with the Dual Wield Specialization Talent.",
-   "iconFile": "ability_dualwield",
+   "icon": "assets/game/rogue/mystic-enchants/ability_dualwield.jpg?v=468895df",
    "requiredLevel": 45
   },
   {
    "key": "elusiveness",
    "name": "Elusiveness",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Vanish and Blind abilities by 60 sec and your Cloak of Shadows ability by 30 sec.\n\nThis Mystic Enchant does not stack with the Elusiveness Talent.",
-   "iconFile": "spell_magic_lesserinvisibilty",
+   "icon": "assets/game/rogue/mystic-enchants/spell_magic_lesserinvisibilty.jpg?v=0da63e08",
    "requiredLevel": 45
   },
   {
    "key": "endurance",
    "name": "Endurance",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Sprint and Evasion abilities by 60 sec and increases your total Stamina by 4%.\n\nThis Mystic Enchant does not stack with the Endurance Talent.",
-   "iconFile": "spell_shadow_shadowward",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_shadowward.jpg?v=d6f3ab10",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_adrenaline_rush",
    "name": "Glyph of Adrenaline Rush",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the duration of Adrenaline Rush by 5 sec.",
-   "iconFile": "spell_shadow_shadowworddominate",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_shadowworddominate.jpg?v=10f6799e",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_ambush",
    "name": "Glyph of Ambush",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the range on Ambush by 5 yards and its critical damage by 15%.",
-   "iconFile": "ability_rogue_ambush",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_ambush.jpg?v=2f142527",
    "requiredLevel": 18
   },
   {
    "key": "glyph_of_backstab",
    "name": "Glyph of Backstab",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your Backstab increases the duration of your Rupture effect on the target by 2 seconds, up to a maximum of 8 additional seconds.",
-   "iconFile": "ability_backstab",
+   "icon": "assets/game/rogue/mystic-enchants/ability_backstab.jpg?v=46407cae",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_blade_flurry",
    "name": "Glyph of Blade Flurry",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the energy cost of Blade Flurry by 100%.",
-   "iconFile": "ability_warrior_punishingblow",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_punishingblow.jpg?v=ac435dc1",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_cloak_of_shadows",
    "name": "Glyph of Cloak of Shadows",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "While Cloak of Shadows is active, you take 40% less physical damage.",
-   "iconFile": "spell_shadow_nethercloak",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_nethercloak.jpg?v=f4b16232",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_crippling_poison",
    "name": "Glyph of Crippling Poison",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the chance to inflict your target with Crippling Poison by an additional 20%.",
-   "iconFile": "ability_poisonsting",
+   "icon": "assets/game/rogue/mystic-enchants/ability_poisonsting.jpg?v=5526a586",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_deadly_throw",
    "name": "Glyph of Deadly Throw",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the slowing effect on Deadly Throw by 20%.",
-   "iconFile": "inv_throwingknife_06",
+   "icon": "assets/game/rogue/mystic-enchants/inv_throwingknife_06.jpg?v=1d5dc7d6",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_evasion",
    "name": "Glyph of Evasion",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the duration of Evasion by 5 sec.",
-   "iconFile": "spell_shadow_shadowward",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_shadowward.jpg?v=d6f3ab10",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_eviscerate",
    "name": "Glyph of Eviscerate",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the critical strike chance of Eviscerate by 10%.",
-   "iconFile": "ability_rogue_eviscerate",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_eviscerate.jpg?v=0ec2a64b",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_expose_armor",
    "name": "Glyph of Expose Armor",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the duration of Expose Armor by 12 sec.",
-   "iconFile": "ability_warrior_riposte",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_riposte.jpg?v=d1b29ded",
    "requiredLevel": 14
   },
   {
    "key": "glyph_of_fan_of_knives",
    "name": "Glyph of Fan of Knives",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the damage done by Fan of Knives by 20%.",
-   "iconFile": "ability_rogue_fanofknives",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_fanofknives.jpg?v=3f676834",
    "requiredLevel": 36
   },
   {
    "key": "glyph_of_feint",
    "name": "Glyph of Feint",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the energy cost of Feint by 20.",
-   "iconFile": "ability_rogue_feint",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_feint.jpg?v=96884e0d",
    "requiredLevel": 16
   },
   {
    "key": "glyph_of_garrote",
    "name": "Glyph of Garrote",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the damage of Garrote by 20%.",
-   "iconFile": "ability_rogue_garrote",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_garrote.jpg?v=5cbfe620",
    "requiredLevel": 14
   },
   {
    "key": "glyph_of_ghostly_strike",
    "name": "Glyph of Ghostly Strike",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Increases the damage dealt by Ghostly Strike by 40% and the duration of its effect by 4 sec, but increases its cooldown by 10 sec.",
-   "iconFile": "spell_shadow_curse",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_curse.jpg?v=65cf53ca",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_gouge",
    "name": "Glyph of Gouge",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the energy cost of Gouge by 15.",
-   "iconFile": "ability_gouge",
+   "icon": "assets/game/rogue/mystic-enchants/ability_gouge.jpg?v=7629d89e",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_hemorrhage",
    "name": "Glyph of Hemorrhage",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Your Hemorrhage criticals restore 10 energy.",
-   "iconFile": "spell_shadow_lifedrain",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_lifedrain.jpg?v=92864693",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_hunger_for_blood",
    "name": "Glyph of Hunger For Blood",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the bonus damage from Hunger For Blood by 3%.",
-   "iconFile": "ability_demonhunter_bloodlet",
+   "icon": "assets/game/rogue/mystic-enchants/ability_demonhunter_bloodlet.jpg?v=62694f69",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_killing_spree",
    "name": "Glyph of Killing Spree",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the cooldown on Killing Spree by -45 sec.",
-   "iconFile": "ability_rogue_murderspree",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_murderspree.jpg?v=d3ec3b27",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_mutilate",
    "name": "Glyph of Mutilate",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Reduces the cost of Mutilate by 5 energy.",
-   "iconFile": "ability_rogue_shadowstrikes",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_shadowstrikes.jpg?v=3fe9f6ba",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_preparation",
    "name": "Glyph of Preparation",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Your Preparation ability also instantly resets the cooldown of Blade Flurry, Dismantle, and Kick.",
-   "iconFile": "spell_shadow_antishadow",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_antishadow.jpg?v=e2b0b420",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_rupture",
    "name": "Glyph of Rupture",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Increases the duration of Rupture by 4 sec.",
-   "iconFile": "ability_rogue_rupture",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_rupture.jpg?v=278b4c9e",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_sap",
    "name": "Glyph of Sap",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Increases the duration of Sap by 20 sec.",
-   "iconFile": "ability_sap",
+   "icon": "assets/game/rogue/mystic-enchants/ability_sap.jpg?v=0cebe5f6",
    "requiredLevel": 28
   },
   {
    "key": "glyph_of_sinister_strike",
    "name": "Glyph of Sinister Strike",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Your Sinister Strike critical strikes have a 50% chance to add an additional combo point.",
-   "iconFile": "spell_shadow_ritualofsacrifice",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_ritualofsacrifice.jpg?v=59c51f4d",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_slice_and_dice",
    "name": "Glyph of Slice and Dice",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the duration of Slice and Dice by 3 sec.",
-   "iconFile": "ability_rogue_slicedice",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_slicedice.jpg?v=59bec9ca",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_sprint",
    "name": "Glyph of Sprint",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Increases the movement speed of your Sprint ability by an additional 30%.",
-   "iconFile": "ability_rogue_sprint",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_sprint.jpg?v=5a0b6ba1",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_tricks_of_the_trade",
    "name": "Glyph of Tricks of the Trade",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "The bonus damage and threat redirection granted by your Tricks of the Trade ability lasts an additional 4 sec.",
-   "iconFile": "ability_rogue_tricksofthetrade",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_tricksofthetrade.jpg?v=0a96578a",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_vigor",
    "name": "Glyph of Vigor",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Requires Vigor\nVigor grants an additional 10 maximum energy.",
-   "iconFile": "spell_nature_earthbindtotem",
+   "icon": "assets/game/rogue/mystic-enchants/spell_nature_earthbindtotem.jpg?v=8c560169",
    "requiredLevel": 20,
    "requires": [
     {
@@ -2398,225 +2558,275 @@
    "key": "hastened_feint",
    "name": "Hastened Feint",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Reduces the cooldown of your Feint ability by 4 seconds.",
-   "iconFile": "ability_rogue_feint",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_feint.jpg?v=96884e0d",
    "requiredLevel": 40
   },
   {
    "key": "improved_ambush",
    "name": "Improved Ambush",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Ambush ability by 50%.\n\nThis Mystic Enchant does not stack with the Improved Ambush Talent.",
-   "iconFile": "ability_rogue_ambush",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_ambush.jpg?v=2f142527",
    "requiredLevel": 45
   },
   {
    "key": "improved_eviscerate",
    "name": "Improved Eviscerate",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Eviscerate ability by 20%.\n\nThis Mystic Enchant does not stack with the Improved Eviscerate Talent.",
-   "iconFile": "ability_rogue_eviscerate",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_eviscerate.jpg?v=0ec2a64b",
    "requiredLevel": 45
   },
   {
    "key": "improved_expose_armor",
    "name": "Improved Expose Armor",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nReduces the energy cost of your Expose Armor ability by 10.\n\nThis Mystic Enchant does not stack with the Improved Expose Armor Talent.",
-   "iconFile": "ability_warrior_riposte",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_riposte.jpg?v=d1b29ded",
    "requiredLevel": 45
   },
   {
    "key": "improved_gouge",
    "name": "Improved Gouge",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect duration of your Gouge ability by 1.5 sec.\n\nThis Mystic Enchant does not stack with the Improved Gouge Talent.",
-   "iconFile": "ability_gouge",
+   "icon": "assets/game/rogue/mystic-enchants/ability_gouge.jpg?v=7629d89e",
    "requiredLevel": 45
   },
   {
    "key": "improved_poisons",
    "name": "Improved Poisons",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the chance to apply Deadly Poison to your target by 12% and the frequency of applying Instant Poison to your target by 30%.\n\nThis Mystic Enchant does not stack with the Improved Poisons Talent.",
-   "iconFile": "ability_poisons",
+   "icon": "assets/game/rogue/mystic-enchants/ability_poisons.jpg?v=7a283627",
    "requiredLevel": 45
   },
   {
    "key": "improved_sinister_strike",
    "name": "Improved Sinister Strike",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nReduces the Energy cost of your Sinister Strike ability by 5.\n\nThis Mystic Enchant does not stack with the Improved Sinister Strike Talent.",
-   "iconFile": "spell_shadow_ritualofsacrifice",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_ritualofsacrifice.jpg?v=59c51f4d",
    "requiredLevel": 45
   },
   {
    "key": "improved_slice_and_dice",
    "name": "Improved Slice and Dice",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases the duration of your Slice and Dice ability by 50%.\n\nThis Mystic Enchant does not stack with the Improved Slice and Dice Talent.",
-   "iconFile": "ability_rogue_slicedice",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_slicedice.jpg?v=59bec9ca",
    "requiredLevel": 45
   },
   {
    "key": "initiative",
    "name": "Initiative",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nGives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.\n\nThis Mystic Enchant does not stack with the Initiative Talent.",
-   "iconFile": "spell_shadow_fumble",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_fumble.jpg?v=0737b3ab",
    "requiredLevel": 45
   },
   {
    "key": "lethality",
    "name": "Lethality",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of all combo point-generating abilities that do not require stealth by 30%.\n\nThis Mystic Enchant does not stack with the Lethality Talent.",
-   "iconFile": "ability_criticalstrike",
+   "icon": "assets/game/rogue/mystic-enchants/ability_criticalstrike.jpg?v=cbf85b3f",
    "requiredLevel": 45
   },
   {
    "key": "lightning_reflexes",
    "name": "Lightning Reflexes",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Dodge chance by 6% and gives you 10% melee haste.\n\nThis Mystic Enchant does not stack with the Lightning Reflexes Talent.",
-   "iconFile": "spell_nature_invisibilty",
+   "icon": "assets/game/rogue/mystic-enchants/spell_nature_invisibilty.jpg?v=0445197d",
    "requiredLevel": 45
   },
   {
    "key": "malice",
    "name": "Malice",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases your critical strike chance by 5%.\n\nThis Mystic Enchant does not stack with the Malice Talent.",
-   "iconFile": "ability_racial_bloodrage",
+   "icon": "assets/game/rogue/mystic-enchants/ability_racial_bloodrage.jpg?v=ca10903b",
    "requiredLevel": 45
   },
   {
    "key": "master_of_deception",
    "name": "Master of Deception",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nReduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 2).\n\nThis Mystic Enchant does not stack with the Master of Deception Talent.",
-   "iconFile": "spell_shadow_charm",
+   "icon": "assets/game/rogue/mystic-enchants/spell_shadow_charm.jpg?v=80b37ddd",
    "requiredLevel": 45
   },
   {
    "key": "opportunity",
    "name": "Opportunity",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage dealt with your Backstab, Mutilate, Garrote and Ambush abilities by 20%.\n\nThis Mystic Enchant does not stack with the Opportunity Talent.",
-   "iconFile": "ability_warrior_warcry",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_warcry.jpg?v=050e7df9",
    "requiredLevel": 45
   },
   {
    "key": "precision",
    "name": "Precision",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to hit with weapon and poison attacks by 5%.\n\nThis Mystic Enchant does not stack with the Precision Talent.",
-   "iconFile": "ability_marksmanship",
+   "icon": "assets/game/rogue/mystic-enchants/ability_marksmanship.jpg?v=2af51777",
    "requiredLevel": 45
   },
   {
    "key": "puncturing_wounds",
    "name": "Puncturing Wounds",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Backstab ability by 30%, and the critical strike chance of your Mutilate ability by 15%.\n\nThis Mystic Enchant does not stack with the Puncturing Wounds Talent.",
-   "iconFile": "ability_backstab",
+   "icon": "assets/game/rogue/mystic-enchants/ability_backstab.jpg?v=46407cae",
    "requiredLevel": 45
   },
   {
    "key": "relentless_strikes",
    "name": "Relentless Strikes",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nYour finishing moves have a 20% chance per combo point to restore 25 energy.\n\nThis Mystic Enchant does not stack with the Relentless Strikes Talent.",
-   "iconFile": "ability_warrior_decisivestrike",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_decisivestrike.jpg?v=cafa367a",
    "requiredLevel": 45
   },
   {
    "key": "remorseless_attacks",
    "name": "Remorseless Attacks",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nAfter killing an opponent that yields experience or honor, gives you a 40% increased critical strike chance on your next Sinister Strike, Hemorrhage, Backstab, Mutilate, Ambush, or Ghostly Strike.  Lasts 20 sec.\n\nThis Mystic Enchant does not stack with the Remorseless Attacks Talent.",
-   "iconFile": "ability_fiegndead",
+   "icon": "assets/game/rogue/mystic-enchants/ability_fiegndead.jpg?v=16bc4cdd",
    "requiredLevel": 45
   },
   {
    "key": "riposte",
    "name": "Riposte",
    "rarity": "rare",
-   "spec": "Combat",
+   "specs": [
+    "Combat"
+   ],
    "tooltip": "Teaches you: Riposte.\n\n@ext:Can not be used if the Riposte talent is learned.:ext@\n@s:1464251:0:0:0:-48@",
-   "iconFile": "ability_warrior_challange",
+   "icon": "assets/game/rogue/mystic-enchants/ability_warrior_challange.jpg?v=d7a3970f",
    "requiredLevel": 45
   },
   {
    "key": "ruthlessness",
    "name": "Ruthlessness",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nGives your melee finishing moves a 60% chance to add a combo point to your target.\n\nThis Mystic Enchant does not stack with the Ruthlessness Talent.",
-   "iconFile": "ability_druid_disembowel",
+   "icon": "assets/game/rogue/mystic-enchants/ability_druid_disembowel.jpg?v=72970d31",
    "requiredLevel": 45
   },
   {
    "key": "serrated_blades",
    "name": "Serrated Blades",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nCauses your attacks to ignore up to 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%.\n\nThis Mystic Enchant does not stack with the Serrated Blades Talent.",
-   "iconFile": "inv_sword_17",
+   "icon": "assets/game/rogue/mystic-enchants/inv_sword_17.jpg?v=08afc330",
    "requiredLevel": 45
   },
   {
    "key": "setup",
    "name": "Setup",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nGives you a 100% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.  This cannot happen more than once per second.\n\nThis Mystic Enchant does not stack with the Setup Talent.",
-   "iconFile": "spell_nature_mirrorimage",
+   "icon": "assets/game/rogue/mystic-enchants/spell_nature_mirrorimage.jpg?v=2ccd33fe",
    "requiredLevel": 45
   },
   {
    "key": "sleight_of_hand",
    "name": "Sleight of Hand",
    "rarity": "rare",
-   "spec": "Subtlety",
+   "specs": [
+    "Subtlety"
+   ],
    "tooltip": "Crossover Talent\nReduces the chance you are critically hit by melee and ranged attacks by 2% and increases the threat reduction of your Feint ability by 20%.\n\nThis Mystic Enchant does not stack with the Sleight of Hand Talent.",
-   "iconFile": "ability_rogue_feint",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_feint.jpg?v=96884e0d",
    "requiredLevel": 45
   },
   {
    "key": "vigor",
    "name": "Vigor",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases your maximum Energy by 10.\n\nThis Mystic Enchant does not stack with the Vigor Talent.",
-   "iconFile": "spell_nature_earthbindtotem",
+   "icon": "assets/game/rogue/mystic-enchants/spell_nature_earthbindtotem.jpg?v=8c560169",
    "requiredLevel": 45
   },
   {
    "key": "vile_poisons",
    "name": "Vile Poisons",
    "rarity": "rare",
-   "spec": "Assassination",
+   "specs": [
+    "Assassination"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage dealt by your poisons and Envenom ability by 20% and gives your damage over time poisons an additional 30% chance to resist dispel effects.\n\nThis Mystic Enchant does not stack with the Vile Poisons Talent.",
-   "iconFile": "ability_rogue_feigndeath",
+   "icon": "assets/game/rogue/mystic-enchants/ability_rogue_feigndeath.jpg?v=9f1d281e",
    "requiredLevel": 45
   }
  ],
@@ -2631,7 +2841,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Ambush the target, causing 319% weapon damage plus 371.25 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards 2 combo points.",
-   "iconFile": "ability_rogue_ambush",
+   "icon": "assets/game/rogue/abilities/ability_rogue_ambush.jpg?v=2f142527",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2647,7 +2857,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats your weapon with poison for 2 hours. Each hit has a 50% chance to deal 68 to 86 Nature damage instantly and dispel 1 Enrage effect, without generating extra threat.",
-   "iconFile": "spell_nature_slowpoison"
+   "icon": "assets/game/rogue/abilities/spell_nature_slowpoison.jpg?v=cc198ff3"
   },
   {
    "key": "cheap_shot",
@@ -2659,7 +2869,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Stuns the target for 4 sec.  Must be stealthed.  Awards 2 combo points.",
-   "iconFile": "ability_cheapshot",
+   "icon": "assets/game/rogue/abilities/ability_cheapshot.jpg?v=566d0528",
    "costValue": "60",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2676,7 +2886,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that slashes at the flesh of all enemies within 8 yards, dealing Physical damage and causing them to bleed per combo point:\n   1 point:  9.06 physical damage and 194.81 bleed damage over 8 sec.\n   2 points: 10.11 physical damage and 217.62 bleed damage over 8 sec.\n   3 points: 11.17 physical damage and 240.43 bleed damage over 8 sec.\n   4 points: 12.22 physical damage and 263.24 bleed damage over 8 sec.\n   5 points: 13.28 physical damage and 286.05 bleed damage over 8 sec.",
-   "iconFile": "inv_knife_1h_cataclysm_c_05",
+   "icon": "assets/game/rogue/abilities/inv_knife_1h_cataclysm_c_05.jpg?v=913a7885",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2735,7 +2945,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats a weapon with poison that lasts for 1 hour. Each strike has a 50% chance of poisoning the enemy, slowing their movement speed by 70% for 12 sec.",
-   "iconFile": "ability_poisonsting"
+   "icon": "assets/game/rogue/abilities/ability_poisonsting.jpg?v=5526a586"
   },
   {
    "key": "deadly_poison",
@@ -2747,7 +2957,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats a weapon with poison that lasts for 1 hour. Each strike has a 30% chance of poisoning the enemy for 96 Nature damage over 12 sec.  Stacks up to 5 times on a single target.   Once stacked to 5 times, each application of Deadly Poison also causes the poison on the Rogue's other weapon to apply.",
-   "iconFile": "ability_rogue_dualweild",
+   "icon": "assets/game/rogue/abilities/ability_rogue_dualweild.jpg?v=682df832",
    "scaling": [
     {
      "stat": "AP",
@@ -2765,7 +2975,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that reduces the movement of the target by 50% for 6 sec and causes increased thrown weapon damage:\n   1 point  : ${59+(105*1)+30wb} - ${75+(105*1)+30WB} damage\n   2 points: ${59+(105*2)+30wb} - ${75+(105*2)+30WB} damage\n   3 points: ${59+(105*3)+30wb} - ${75+(105*3)+30WB} damage\n   4 points: ${59+(105*4)+30wb} - ${75+(105*4)+30WB} damage\n   5 points: ${59+(105*5)+30wb} - ${75+(105*5)+30WB} damage",
-   "iconFile": "inv_throwingknife_06",
+   "icon": "assets/game/rogue/abilities/inv_throwingknife_06.jpg?v=1d5dc7d6",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2782,7 +2992,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Disarm the enemy, removing all weapons, shield or other equipment carried for 10 sec.",
-   "iconFile": "ability_rogue_dismantle",
+   "icon": "assets/game/rogue/abilities/ability_rogue_dismantle.jpg?v=1419ba16",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2800,7 +3010,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that consumes your Deadly Poison doses on the target and deals instant poison damage.  Following the Envenom attack you have an additional 15% chance to apply Deadly Poison and a 30% increased frequency of applying Instant Poison for 1 sec plus an additional 1 sec per combo point.  One dose is consumed for each combo point:\n  1 dose:  104 damage\n  2 doses: 208 damage\n  3 doses: 312 damage\n  4 doses: 416 damage\n  5 doses: 520 damage",
-   "iconFile": "ability_rogue_disembowel",
+   "icon": "assets/game/rogue/abilities/ability_rogue_disembowel.jpg?v=d6c824d5",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2839,7 +3049,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage per combo point:\n   1 point  : 224-332 damage\n   2 points: 394-502 damage\n   3 points: 564-672 damage\n   4 points: 734-842 damage\n   5 points: 904-1012 damage",
-   "iconFile": "ability_rogue_eviscerate",
+   "icon": "assets/game/rogue/abilities/ability_rogue_eviscerate.jpg?v=0ec2a64b",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2897,7 +3107,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that exposes the target, reducing armor by 20% and lasting longer per combo point:\n   1 point  : 6 sec.\n   2 points: 12 sec.\n   3 points: 18 sec.\n   4 points: 24 sec.\n   5 points: 30 sec.",
-   "iconFile": "ability_warrior_riposte",
+   "icon": "assets/game/rogue/abilities/ability_warrior_riposte.jpg?v=d1b29ded",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2913,7 +3123,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Garrote the enemy, silencing them for 3 sec causing 426 damage over 18 sec, increased by attack power.  Must be stealthed and behind the target.  Awards 1 combo point.",
-   "iconFile": "ability_rogue_garrote",
+   "icon": "assets/game/rogue/abilities/ability_rogue_garrote.jpg?v=5cbfe620",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2936,7 +3146,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Enrages you, increasing all damage caused by 5%.  Requires a bleed effect to be active on the target.  Lasts 1 min.",
-   "iconFile": "ability_rogue_hungerforblood"
+   "icon": "assets/game/rogue/abilities/ability_rogue_hungerforblood.jpg?v=0c9003e4"
   },
   {
    "key": "instant_poison",
@@ -2948,7 +3158,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats a weapon with poison that lasts for 1 hour. Each strike has a chance of poisoning the enemy which instantly inflicts 13 Nature damage.",
-   "iconFile": "ability_poisons",
+   "icon": "assets/game/rogue/abilities/ability_poisons.jpg?v=7a283627",
    "scaling": [
     {
      "stat": "AP",
@@ -2966,7 +3176,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that stuns the target.  Lasts longer per combo point:\n   1 point  : 2 seconds\n   2 points: 3 seconds\n   3 points: 4 seconds\n   4 points: 5 seconds\n   5 points: 6 seconds",
-   "iconFile": "ability_rogue_kidneyshot",
+   "icon": "assets/game/rogue/abilities/ability_rogue_kidneyshot.jpg?v=e8393b13",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -2984,7 +3194,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats a weapon with poison that lasts for 1 hour. Each strike has a 50% chance of poisoning the enemy, increasing their casting time by 30% for 10 sec. Does not stack with other similar effects.",
-   "iconFile": "spell_nature_nullifydisease"
+   "icon": "assets/game/rogue/abilities/spell_nature_nullifydisease.jpg?v=875567ea"
   },
   {
    "key": "mutilate",
@@ -2996,7 +3206,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Instantly attacks with both weapons for 100% weapon damage plus an additional 34 with each weapon.  Damage is increased by 20% against Poisoned targets.  Awards 2 combo points.",
-   "iconFile": "ability_rogue_shadowstrikes"
+   "icon": "assets/game/rogue/abilities/ability_rogue_shadowstrikes.jpg?v=3fe9f6ba"
   },
   {
    "key": "poison_nova",
@@ -3008,7 +3218,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Release a pulse of poison around you, dealing Nature damage per combo point.\n\n   1 point  : 224-224 damage\n   2 points: 394-394 damage\n   3 points: 564-564 damage\n   4 points: 734-734 damage\n   5 points: 904-904 damage\n\nPoison Nova increases the damage taken from the casters Deadly Poison, Envenom and Instant Poison by 8% for 12 sec.\n\n@ext:This uses Instant Poison modifiers.:ext@\n\n@ext:Usable in Cat Form.:ext@",
-   "iconFile": "epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border",
+   "icon": "assets/game/rogue/abilities/epic_rpg_icon_pack_poison_icon_0002s_0000_poison-nova_border.jpg?v=56bbe66b",
    "costValue": "40",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3106,7 +3316,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage over time, increased by your attack power.  Lasts longer per combo point:\n   1 point  : 272 damage over 8 secs\n   2 points: 380 damage over 10 secs\n   3 points: 504 damage over 12 secs\n   4 points: 644 damage over 14 secs\n   5 points: 800 damage over 16 secs",
-   "iconFile": "ability_rogue_rupture",
+   "icon": "assets/game/rogue/abilities/ability_rogue_rupture.jpg?v=278b4c9e",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3145,7 +3355,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that increases melee attack speed by 40%.  Lasts longer per combo point:\n   1 point  : ${(9+$[0])*(100+0)/100} seconds\n   2 points: ${(12+$[0])*(100+0)/100} seconds\n   3 points: ${(15+$[0])*(100+0)/100} seconds\n   4 points: ${(18+$[0])*(100+0)/100} seconds\n   5 points: ${(21+$[0])*(100+0)/100} seconds",
-   "iconFile": "ability_rogue_slicedice",
+   "icon": "assets/game/rogue/abilities/ability_rogue_slicedice.jpg?v=59bec9ca",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3162,7 +3372,7 @@
    "castTime": 1.5,
    "gcd": 0,
    "tooltipTemplate": "Coats a weapon with poison that lasts for 1 hour. Each strike has a chance of poisoning the enemy, causing 16 Nature damage and reducing all healing effects used on them by 50% for 15 sec. Does not stack with other similar effects.",
-   "iconFile": "inv_misc_herb_16",
+   "icon": "assets/game/rogue/abilities/inv_misc_herb_16.jpg?v=c8950fc7",
    "scaling": [
     {
      "stat": "AP",
@@ -3180,7 +3390,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Backstab the target, causing 150% weapon damage plus 279 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards 1 combo point.",
-   "iconFile": "ability_backstab",
+   "icon": "assets/game/rogue/abilities/ability_backstab.jpg?v=46407cae",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3196,7 +3406,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases the rogue's dodge chance by 50% and reduces the chance ranged attacks hit the rogue by 25%.  Lasts 15 sec.",
-   "iconFile": "spell_shadow_shadowward",
+   "icon": "assets/game/rogue/abilities/spell_shadow_shadowward.jpg?v=d6f3ab10",
    "cooldown": "3 min",
    "duration": "15 sec"
   },
@@ -3210,7 +3420,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Instantly throw both weapons at all targets within 8 yards, causing 105% weapon damage with daggers, and 70% weapon damage with all other weapons.",
-   "iconFile": "ability_rogue_fanofknives",
+   "icon": "assets/game/rogue/abilities/ability_rogue_fanofknives.jpg?v=3f676834",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy"
@@ -3225,7 +3435,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.  In addition, reduces the damage you take from area of effect attacks by 50% for 6 sec.",
-   "iconFile": "ability_rogue_feint",
+   "icon": "assets/game/rogue/abilities/ability_rogue_feint.jpg?v=96884e0d",
    "costValue": "20",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3243,7 +3453,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Causes 1 damage, incapacitating the opponent for 4 sec, and turns off your attack.  Target must be facing you.  Any damage caused will revive the target.  Awards 1 combo point.",
-   "iconFile": "ability_gouge",
+   "icon": "assets/game/rogue/abilities/ability_gouge.jpg?v=7629d89e",
    "costValue": "45",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3267,7 +3477,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A quick kick that interrupts spellcasting and prevents any spell in that school from being cast for 5 sec.",
-   "iconFile": "ability_kick",
+   "icon": "assets/game/rogue/abilities/ability_kick.jpg?v=f2598161",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3285,7 +3495,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Step through the shadows from enemy to enemy within 10 yards, attacking an enemy every 0.5 sec with both weapons until 5 assaults are made, and increasing all damage done by 40% for the duration.  Can hit the same target multiple times.  Cannot hit invisible or stealthed targets.",
-   "iconFile": "ability_rogue_murderspree"
+   "icon": "assets/game/rogue/abilities/ability_rogue_murderspree.jpg?v=d3ec3b27"
   },
   {
    "key": "saber_slash",
@@ -3297,7 +3507,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage per combo point:\n   1 point  : ${69+2.5*60+((2*60+51*1)+(0*0.012)*1)+0*0.006)*1}-${104+2.5*60+((2*60+51*1)+(0*0.012)*1)+0*0.006)*1} damage\n   2 point  : ${69+2.5*60+((4*60+51*2)+(0*0.012)*2)+0*0.006)*2}-${104+2.5*60+((4*60+51*2)+(0*0.012)*2)+0*0.006)*2} damage\n   3 point  : ${69+2.5*60+((6*60+51*3)+(0*0.012)*3)+0*0.006)*3}-${104+2.5*60+((6*60+51*3)+(0*0.012)*3)+0*0.006)*3} damage\n   4 point  : ${69+2.5*60+((8*60+51*4)+(0*0.012)*4)+0*0.006)*4}-${104+2.5*60+((8*60+51*4)+(0*0.012)*4)+0*0.006)*4} damage\n   5 point  : ${69+2.5*60+((10*60+51*5)+(0*0.012)*5)+0*0.006)*5}-${104+2.5*60+((10*60+51*5)+(0*0.012)*5)+0*0.006)*5} damage\n\nWhen used at 5 combo points spreads your Rupture to 2 nearby targets.",
-   "iconFile": "nhi_bloodsword_border",
+   "icon": "assets/game/rogue/abilities/nhi_bloodsword_border.jpg?v=83515871",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3396,7 +3606,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Performs an instant off-hand weapon attack that automatically applies the poison from your off-hand weapon to the target.  Slower weapons require more Energy.  Shiv can not critically strike.  Awards 1 combo point.",
-   "iconFile": "inv_throwingknife_04",
+   "icon": "assets/game/rogue/abilities/inv_throwingknife_04.jpg?v=d08451e7",
    "costValue": "20",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3412,7 +3622,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "An instant strike that causes 118 damage in addition to 100% of your normal weapon damage.  Awards 1 combo point.",
-   "iconFile": "spell_shadow_ritualofsacrifice",
+   "icon": "assets/game/rogue/abilities/spell_shadow_ritualofsacrifice.jpg?v=59c51f4d",
    "costValue": "45",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3428,7 +3638,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases the rogue's movement speed by 70% for 15 sec.  Does not break stealth.",
-   "iconFile": "ability_rogue_sprint",
+   "icon": "assets/game/rogue/abilities/ability_rogue_sprint.jpg?v=5a0b6ba1",
    "cooldown": "3 min",
    "duration": "15 sec"
   },
@@ -3442,7 +3652,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Blinds the target, causing it to wander disoriented for up to 10 sec.  Any damage caused will remove the effect.",
-   "iconFile": "spell_shadow_mindsteal",
+   "icon": "assets/game/rogue/abilities/spell_shadow_mindsteal.jpg?v=4f5527cc",
    "costValue": "30",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3460,7 +3670,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Instantly removes all existing harmful spell effects and increases your chance to resist all spells by 100% for 5 sec.  Does not remove effects that prevent you from using Cloak of Shadows.",
-   "iconFile": "spell_shadow_nethercloak",
+   "icon": "assets/game/rogue/abilities/spell_shadow_nethercloak.jpg?v=f4b16232",
    "cooldown": "1.5 min",
    "duration": "5 sec"
   },
@@ -3474,7 +3684,7 @@
    "castTime": 1,
    "gcd": 0,
    "tooltipTemplate": "Disarm a hostile trap.",
-   "iconFile": "spell_shadow_grimward",
+   "icon": "assets/game/rogue/abilities/spell_shadow_grimward.jpg?v=fcc37849",
    "range": 20
   },
   {
@@ -3487,7 +3697,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Throws a distraction, attracting the attention of all nearby monsters for 10 seconds.  Does not break stealth.",
-   "iconFile": "ability_rogue_distract",
+   "icon": "assets/game/rogue/abilities/ability_rogue_distract.jpg?v=7af3863c",
    "costValue": "30",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3504,7 +3714,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "An instant strike that deals 110% weapon damage (159.5% if a dagger is equipped) and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 13.  Lasts 10 charges or 15 sec.  Awards 1 combo point.",
-   "iconFile": "spell_shadow_lifedrain"
+   "icon": "assets/game/rogue/abilities/spell_shadow_lifedrain.jpg?v=92864693"
   },
   {
    "key": "pick_lock",
@@ -3516,7 +3726,7 @@
    "castTime": 5,
    "gcd": 0,
    "tooltipTemplate": "Allows opening of locked chests and doors.",
-   "iconFile": "spell_nature_moonkey",
+   "icon": "assets/game/rogue/abilities/spell_nature_moonkey.jpg?v=07568b61",
    "range": 5
   },
   {
@@ -3529,7 +3739,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Pick the target's pocket.",
-   "iconFile": "inv_misc_bag_11",
+   "icon": "assets/game/rogue/abilities/inv_misc_bag_11.jpg?v=40ac7a8d",
    "range": 5
   },
   {
@@ -3542,7 +3752,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Incapacitates the target for up to 1 min.  Must be stealthed.  Only works on Humanoids, Beasts, Demons and Dragonkin that are not in combat.  Any damage caused will revive the target.  Only 1 target may be sapped at a time.",
-   "iconFile": "ability_sap",
+   "icon": "assets/game/rogue/abilities/ability_sap.jpg?v=0cebe5f6",
    "costValue": "65",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3559,7 +3769,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Enter the Shadow Dance for 8 sec, allowing the use of Sap, Garrote, Ambush, Cheap Shot, Premeditation, Pickpocket and Disarm Trap regardless of being stealthed.",
-   "iconFile": "ability_rogue_shadowdance"
+   "icon": "assets/game/rogue/abilities/ability_rogue_shadowdance.jpg?v=43ad879e"
   },
   {
    "key": "shadowstep",
@@ -3571,7 +3781,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Attempts to step through the shadows and reappear behind your enemy and increases movement speed by 70% for 3 sec.  The damage of your next ability is increased by 20% and the threat caused is reduced by 50%.  Lasts 10 sec.",
-   "iconFile": "ability_rogue_shadowstep"
+   "icon": "assets/game/rogue/abilities/ability_rogue_shadowstep.jpg?v=81338686"
   },
   {
    "key": "stealth",
@@ -3583,7 +3793,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Allows the rogue to sneak around, but reduces your speed by 30%.  Lasts until cancelled.",
-   "iconFile": "ability_stealth",
+   "icon": "assets/game/rogue/abilities/ability_stealth.jpg?v=9ee5053c",
    "cooldown": "10 sec"
   },
   {
@@ -3596,7 +3806,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "The current party or raid member becomes the target of your Tricks of the Trade.  The threat caused by your next damaging attack and all actions taken for 6 sec afterwards will be transferred to the target.  In addition, all damage caused by the target is increased by 15% during this time.",
-   "iconFile": "ability_rogue_tricksofthetrade",
+   "icon": "assets/game/rogue/abilities/ability_rogue_tricksofthetrade.jpg?v=0a96578a",
    "costValue": "15",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3614,7 +3824,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec.  Also breaks movement impairing effects.  More effective than Vanish (Rank 1).",
-   "iconFile": "ability_vanish",
+   "icon": "assets/game/rogue/abilities/ability_vanish.jpg?v=927512a4",
    "cooldown": "3 min"
   }
  ]

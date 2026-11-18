@@ -8,17 +8,17 @@
   {
    "name": "Discipline",
    "accent": "#6878A8",
-   "background": "assets/game/priest/backgrounds/priestdiscipline.jpg"
+   "background": "assets/game/priest/backgrounds/priestdiscipline.jpg?v=b73892ad"
   },
   {
    "name": "Holy",
    "accent": "#C8B858",
-   "background": "assets/game/priest/backgrounds/priestholy.jpg"
+   "background": "assets/game/priest/backgrounds/priestholy.jpg?v=eeb81e4d"
   },
   {
    "name": "Shadow",
    "accent": "#6050A0",
-   "background": "assets/game/priest/backgrounds/priestshadow.jpg"
+   "background": "assets/game/priest/backgrounds/priestshadow.jpg?v=6878d109"
   }
  ],
  "talents": {
@@ -35,7 +35,7 @@
      70
     ]
    ],
-   "iconFile": "spell_holy_healingfocus"
+   "icon": "assets/game/priest/talents/spell_holy_healingfocus.jpg?v=6724b1cd"
   },
   "improved_renew": {
    "name": "Improved Renew",
@@ -53,7 +53,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_renew"
+   "icon": "assets/game/priest/talents/spell_holy_renew.jpg?v=977a1c8b"
   },
   "holy_specialization": {
    "name": "Holy Specialization",
@@ -77,7 +77,7 @@
      5
     ]
    ],
-   "iconFile": "spell_holy_sealofsalvation"
+   "icon": "assets/game/priest/talents/spell_holy_sealofsalvation.jpg?v=6b716fd7"
   },
   "spell_warding": {
    "name": "Spell Warding",
@@ -101,7 +101,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_spellwarding"
+   "icon": "assets/game/priest/talents/spell_holy_spellwarding.jpg?v=f2a1fcfe"
   },
   "divine_fury": {
    "name": "Divine Fury",
@@ -125,14 +125,14 @@
      0.5
     ]
    ],
-   "iconFile": "spell_holy_sealofwrath"
+   "icon": "assets/game/priest/talents/spell_holy_sealofwrath.jpg?v=6198edc2"
   },
   "desperate_prayer": {
    "name": "Desperate Prayer",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Instantly heals the caster for 333.",
-   "iconFile": "spell_holy_restoration",
+   "icon": "assets/game/priest/talents/spell_holy_restoration.jpg?v=202162e8",
    "active": true
   },
   "blessed_recovery": {
@@ -151,7 +151,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_blessedrecovery"
+   "icon": "assets/game/priest/talents/spell_holy_blessedrecovery.jpg?v=0acaac3a"
   },
   "afterkindling": {
    "name": "Afterkindling",
@@ -180,7 +180,7 @@
      20
     ]
    ],
-   "iconFile": "ability_priest_clarityofpurpose"
+   "icon": "assets/game/priest/talents/ability_priest_clarityofpurpose.jpg?v=54677b2d"
   },
   "inspiration": {
    "name": "Inspiration",
@@ -198,7 +198,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_layonhands"
+   "icon": "assets/game/priest/talents/spell_holy_layonhands.jpg?v=e3bc35ab"
   },
   "holy_reach": {
    "name": "Holy Reach",
@@ -213,7 +213,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_purify"
+   "icon": "assets/game/priest/talents/spell_holy_purify.jpg?v=7972b511"
   },
   "improved_healing": {
    "name": "Improved Healing",
@@ -231,7 +231,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_heal02"
+   "icon": "assets/game/priest/talents/spell_holy_heal02.jpg?v=6260789e"
   },
   "searing_light": {
    "name": "Searing Light",
@@ -249,7 +249,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_searinglightpriest"
+   "icon": "assets/game/priest/talents/spell_holy_searinglightpriest.jpg?v=c41d1bd3"
   },
   "blessed_vengeance": {
    "name": "Blessed Vengeance",
@@ -273,7 +273,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_holysmite"
+   "icon": "assets/game/priest/talents/spell_holy_holysmite.jpg?v=f7735432"
   },
   "healing_prayers": {
    "name": "Healing Prayers",
@@ -288,14 +288,14 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_prayerofhealing02"
+   "icon": "assets/game/priest/talents/spell_holy_prayerofhealing02.jpg?v=10f417fd"
   },
   "spirit_of_redemption": {
    "name": "Spirit of Redemption",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases total Spirit by 5% and upon death, the priest becomes the Spirit of Redemption for 15 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form the priest can cast any healing spell free of cost.  When the effect ends, the priest dies.",
-   "iconFile": "inv_enchant_essenceeternallarge"
+   "icon": "assets/game/priest/talents/inv_enchant_essenceeternallarge.jpg?v=e36694ba"
   },
   "spiritual_guidance": {
    "name": "Spiritual Guidance",
@@ -319,7 +319,7 @@
      25
     ]
    ],
-   "iconFile": "spell_holy_spiritualguidence"
+   "icon": "assets/game/priest/talents/spell_holy_spiritualguidence.jpg?v=7c0c34f0"
   },
   "surge_of_light": {
    "name": "Surge of Light",
@@ -334,7 +334,7 @@
      50
     ]
    ],
-   "iconFile": "spell_holy_surgeoflight"
+   "icon": "assets/game/priest/talents/spell_holy_surgeoflight.jpg?v=f3a2291c"
   },
   "spiritual_healing": {
    "name": "Spiritual Healing",
@@ -352,7 +352,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_moonglow"
+   "icon": "assets/game/priest/talents/spell_nature_moonglow.jpg?v=79775dac"
   },
   "holy_concentration": {
    "name": "Holy Concentration",
@@ -370,14 +370,14 @@
      50
     ]
    ],
-   "iconFile": "spell_holy_fanaticism"
+   "icon": "assets/game/priest/talents/spell_holy_fanaticism.jpg?v=4a12f18b"
   },
   "lightwell": {
    "name": "Lightwell",
    "maxPts": 1,
    "prereq": "spirit_of_redemption",
    "tooltipTemplate": "Creates a Holy Lightwell. \n\nLightwell will attempt to heal a nearby party or raid member within 20 yards every second if they have less than 50% health for 876.68. \n\nLightwell lasts for 30 seconds or until it heals 10 times.",
-   "iconFile": "spell_holy_summonlightwell",
+   "icon": "assets/game/priest/talents/spell_holy_summonlightwell.jpg?v=23b61bf7",
    "active": true
   },
   "blessed_resilience": {
@@ -399,7 +399,7 @@
      60
     ]
    ],
-   "iconFile": "spell_holy_blessedresillience"
+   "icon": "assets/game/priest/talents/spell_holy_blessedresillience.jpg?v=0520dc6a"
   },
   "radiant_fury": {
    "name": "Radiant Fury",
@@ -428,7 +428,7 @@
      5
     ]
    ],
-   "iconFile": "spell_holy_searinglight"
+   "icon": "assets/game/priest/talents/spell_holy_searinglight.jpg?v=0249f8ad"
   },
   "body_and_soul": {
    "name": "Body and Soul",
@@ -445,7 +445,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_symbolofhope"
+   "icon": "assets/game/priest/talents/spell_holy_symbolofhope.jpg?v=9a84b011"
   },
   "empowered_healing": {
    "name": "Empowered Healing",
@@ -474,7 +474,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_greaterheal"
+   "icon": "assets/game/priest/talents/spell_holy_greaterheal.jpg?v=3ca40f3b"
   },
   "serendipity": {
    "name": "Serendipity",
@@ -492,7 +492,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_serendipity"
+   "icon": "assets/game/priest/talents/spell_holy_serendipity.jpg?v=12114aec"
   },
   "divine_accuracy": {
    "name": "Divine Accuracy",
@@ -513,7 +513,7 @@
      3
     ]
    ],
-   "iconFile": "inv_helm_robe_raidpriest_k_01"
+   "icon": "assets/game/priest/talents/inv_helm_robe_raidpriest_k_01.jpg?v=537b35f1"
   },
   "empowered_renew": {
    "name": "Empowered Renew",
@@ -534,14 +534,14 @@
      15
     ]
    ],
-   "iconFile": "ability_paladin_infusionoflight"
+   "icon": "assets/game/priest/talents/ability_paladin_infusionoflight.jpg?v=330649c0"
   },
   "circle_of_healing": {
    "name": "Circle of Healing",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Heals up to 5 friendly party or raid members within 15 yards of the target for 347.",
-   "iconFile": "spell_holy_circleofrenewal",
+   "icon": "assets/game/priest/talents/spell_holy_circleofrenewal.jpg?v=745aae31",
    "active": true
   },
   "test_of_faith": {
@@ -560,7 +560,7 @@
      12
     ]
    ],
-   "iconFile": "spell_holy_testoffaith"
+   "icon": "assets/game/priest/talents/spell_holy_testoffaith.jpg?v=fbd15834"
   },
   "divine_providence": {
    "name": "Divine Providence",
@@ -581,7 +581,7 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_divineprovidence"
+   "icon": "assets/game/priest/talents/spell_holy_divineprovidence.jpg?v=2780e7ab"
   },
   "epiphany_of_light": {
    "name": "Epiphany of Light",
@@ -602,14 +602,14 @@
      100
     ]
    ],
-   "iconFile": "ability_paladin_blindinglight2"
+   "icon": "assets/game/priest/talents/ability_paladin_blindinglight2.jpg?v=bad414f5"
   },
   "guardian_spirit": {
    "name": "Guardian Spirit",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Calls upon a guardian spirit to watch over the friendly target. The spirit increases the healing received by the target by 40%, and also prevents the target from dying by sacrificing itself.  This sacrifice terminates the effect but heals the target of 50% of their maximum health. Lasts 10 sec.",
-   "iconFile": "spell_holy_guardianspirit",
+   "icon": "assets/game/priest/talents/spell_holy_guardianspirit.jpg?v=11b44338",
    "active": true
   },
   "spirit_tap": {
@@ -628,7 +628,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_requiem"
+   "icon": "assets/game/priest/talents/spell_shadow_requiem.jpg?v=564ea500"
   },
   "improved_spirit_tap": {
    "name": "Improved Spirit Tap",
@@ -645,7 +645,7 @@
      50
     ]
    ],
-   "iconFile": "spell_shadow_requiem"
+   "icon": "assets/game/priest/talents/spell_shadow_requiem.jpg?v=564ea500"
   },
   "darkness": {
    "name": "Darkness",
@@ -669,7 +669,7 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_twilight"
+   "icon": "assets/game/priest/talents/spell_shadow_twilight.jpg?v=4d2eabad"
   },
   "shadow_affinity": {
    "name": "Shadow Affinity",
@@ -690,7 +690,7 @@
      15
     ]
    ],
-   "iconFile": "spell_shadow_shadowward"
+   "icon": "assets/game/priest/talents/spell_shadow_shadowward.jpg?v=d6f3ab10"
   },
   "improved_shadow_word_pain": {
    "name": "Improved Shadow Word: Pain",
@@ -705,7 +705,7 @@
      12
     ]
    ],
-   "iconFile": "spell_shadow_shadowwordpain"
+   "icon": "assets/game/priest/talents/spell_shadow_shadowwordpain.jpg?v=b37fcc7d"
   },
   "shadow_focus": {
    "name": "Shadow Focus",
@@ -726,7 +726,7 @@
      6
     ]
    ],
-   "iconFile": "spell_shadow_burningspirit"
+   "icon": "assets/game/priest/talents/spell_shadow_burningspirit.jpg?v=f86d8a40"
   },
   "improved_psychic_scream": {
    "name": "Improved Psychic Scream",
@@ -741,7 +741,7 @@
      4
     ]
    ],
-   "iconFile": "spell_shadow_psychicscream"
+   "icon": "assets/game/priest/talents/spell_shadow_psychicscream.jpg?v=5d90952e"
   },
   "improved_mind_blast": {
    "name": "Improved Mind Blast",
@@ -770,14 +770,14 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_unholyfrenzy"
+   "icon": "assets/game/priest/talents/spell_shadow_unholyfrenzy.jpg?v=cd4c3920"
   },
   "mind_flay": {
    "name": "Mind Flay",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Assault the target's mind with Shadow energy, causing 45 Shadow damage over 3 sec and slowing their movement speed by 50%.",
-   "iconFile": "spell_shadow_siphonmana",
+   "icon": "assets/game/priest/talents/spell_shadow_siphonmana.jpg?v=2f0053ef",
    "active": true
   },
   "veiled_shadows": {
@@ -785,7 +785,7 @@
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "Decreases the cooldown of your Fade ability by 6 sec, and reduces the cooldown of your Shadowfiend ability by 2 minutes.",
-   "iconFile": "spell_magic_lesserinvisibilty"
+   "icon": "assets/game/priest/talents/spell_magic_lesserinvisibilty.jpg?v=0da63e08"
   },
   "shadow_reach": {
    "name": "Shadow Reach",
@@ -800,7 +800,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_chilltouch"
+   "icon": "assets/game/priest/talents/spell_shadow_chilltouch.jpg?v=bf6768d5"
   },
   "shadow_weaving": {
    "name": "Shadow Weaving",
@@ -818,21 +818,21 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_blackplague"
+   "icon": "assets/game/priest/talents/spell_shadow_blackplague.jpg?v=0737a7b6"
   },
   "silence": {
    "name": "Silence",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Silences the target, preventing them from casting spells for 5 sec.  Non-player victim spellcasting is also interrupted for 3 sec.",
-   "iconFile": "spell_shadow_impphaseshift"
+   "icon": "assets/game/priest/talents/spell_shadow_impphaseshift.jpg?v=d74acc8d"
   },
   "vampiric_embrace": {
    "name": "Vampiric Embrace",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Fills you with the embrace of Shadow energy, causing you to be healed for 8% and other party members to be healed for 2% of any single-target Shadow spell damage you deal for 30 min.",
-   "iconFile": "spell_shadow_unsummonbuilding"
+   "icon": "assets/game/priest/talents/spell_shadow_unsummonbuilding.jpg?v=ef8abcc7"
   },
   "improved_vampiric_embrace": {
    "name": "Improved Vampiric Embrace",
@@ -847,7 +847,7 @@
      66
     ]
    ],
-   "iconFile": "spell_shadow_improvedvampiricembrace"
+   "icon": "assets/game/priest/talents/spell_shadow_improvedvampiricembrace.jpg?v=3e3dae74"
   },
   "focused_mind": {
    "name": "Focused Mind",
@@ -865,7 +865,7 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_focusedmind"
+   "icon": "assets/game/priest/talents/spell_nature_focusedmind.jpg?v=56e6c5ef"
   },
   "mind_melt": {
    "name": "Mind Melt",
@@ -882,7 +882,7 @@
      6
     ]
    ],
-   "iconFile": "spell_shadow_skull"
+   "icon": "assets/game/priest/talents/spell_shadow_skull.jpg?v=66288add"
   },
   "improved_devouring_plague": {
    "name": "Improved Devouring Plague",
@@ -903,14 +903,14 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_devouringplague."
+   "icon": "assets/game/priest/talents/spell_shadow_devouringplague..jpg?v=652714e8"
   },
   "shadowform": {
    "name": "Shadowform",
    "maxPts": 1,
    "prereq": "vampiric_embrace",
    "tooltipTemplate": "Assume a Shadowform, increasing your Shadow damage by 15%, reducing all damage done to you by 15% and threat generated by 30%.  However, you may not cast Holy spells while in this form except Cure Disease and Abolish Disease. \n\nGrants the periodic damage from your Shadow Word: Pain, Devouring Plague, and Vampiric Touch spells the ability to critically hit for 100% and the ability to benefit from haste.",
-   "iconFile": "spell_shadow_shadowform"
+   "icon": "assets/game/priest/talents/spell_shadow_shadowform.jpg?v=dade7d7a"
   },
   "shadow_power": {
    "name": "Shadow Power",
@@ -928,7 +928,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_shadowpower"
+   "icon": "assets/game/priest/talents/spell_shadow_shadowpower.jpg?v=1db8c60c"
   },
   "improved_shadowform": {
    "name": "Improved Shadowform",
@@ -945,7 +945,7 @@
      70
     ]
    ],
-   "iconFile": "spell_shadow_summonvoidwalker"
+   "icon": "assets/game/priest/talents/spell_shadow_summonvoidwalker.jpg?v=7e7553df"
   },
   "misery": {
    "name": "Misery",
@@ -966,14 +966,14 @@
      25
     ]
    ],
-   "iconFile": "spell_shadow_misery"
+   "icon": "assets/game/priest/talents/spell_shadow_misery.jpg?v=3e902fd9"
   },
   "psychic_horror": {
    "name": "Psychic Horror",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You terrify the target, causing them to tremble in horror for 3 sec and drop their main hand and ranged weapons for 10 sec.",
-   "iconFile": "spell_shadow_psychichorrors",
+   "icon": "assets/game/priest/talents/spell_shadow_psychichorrors.jpg?v=a7a1a406",
    "active": true
   },
   "vampiric_touch": {
@@ -981,7 +981,7 @@
    "maxPts": 1,
    "prereq": "shadowform",
    "tooltipTemplate": "Causes 505 Shadow damage over 15 sec to your target and causes up to 10 party or raid members to gain 1% of their maximum mana per 5 sec when you deal damage from Mind Blast. In addition, if the Vampiric Touch is dispelled it will cause 808 damage to the afflicted target.",
-   "iconFile": "spell_holy_stoicism",
+   "icon": "assets/game/priest/talents/spell_holy_stoicism.jpg?v=100e595c",
    "active": true
   },
   "pain_and_suffering": {
@@ -1003,7 +1003,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_painandsuffering"
+   "icon": "assets/game/priest/talents/spell_shadow_painandsuffering.jpg?v=9d297b3c"
   },
   "twisted_faith": {
    "name": "Twisted Faith",
@@ -1024,14 +1024,14 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_mindtwisting"
+   "icon": "assets/game/priest/talents/spell_shadow_mindtwisting.jpg?v=20a4bf9b"
   },
   "dispersion": {
    "name": "Dispersion",
    "maxPts": 1,
    "prereq": "vampiric_touch",
    "tooltipTemplate": "You disperse into pure Shadow energy, reducing all damage taken by 90%.  You are unable to attack or cast spells, but you regenerate 6% mana every 1 sec for 6 sec. Dispersion can be cast while stunned, feared or silenced and clears all snare and movement impairing effects when cast, and makes you immune to them while dispersed.",
-   "iconFile": "spell_shadow_dispersion",
+   "icon": "assets/game/priest/talents/spell_shadow_dispersion.jpg?v=e847ea56",
    "active": true
   },
   "unbreakable_will": {
@@ -1056,7 +1056,7 @@
      30
     ]
    ],
-   "iconFile": "spell_magic_magearmor"
+   "icon": "assets/game/priest/talents/spell_magic_magearmor.jpg?v=a0653142"
   },
   "twin_disciplines": {
    "name": "Twin Disciplines",
@@ -1080,7 +1080,7 @@
      5
     ]
    ],
-   "iconFile": "spell_holy_sealofvengeance"
+   "icon": "assets/game/priest/talents/spell_holy_sealofvengeance.jpg?v=2988cc06"
   },
   "silent_resolve": {
    "name": "Silent Resolve",
@@ -1101,7 +1101,7 @@
      30
     ]
    ],
-   "iconFile": "spell_nature_manaregentotem"
+   "icon": "assets/game/priest/talents/spell_nature_manaregentotem.jpg?v=0dd2f3fa"
   },
   "improved_inner_fire": {
    "name": "Improved Inner Fire",
@@ -1122,7 +1122,7 @@
      12
     ]
    ],
-   "iconFile": "spell_holy_innerfire"
+   "icon": "assets/game/priest/talents/spell_holy_innerfire.jpg?v=7ddf2b8b"
   },
   "improved_power_word_fortitude": {
    "name": "Improved Power Word: Fortitude",
@@ -1139,7 +1139,7 @@
      4
     ]
    ],
-   "iconFile": "spell_holy_wordfortitude"
+   "icon": "assets/game/priest/talents/spell_holy_wordfortitude.jpg?v=eb27e947"
   },
   "martyrdom": {
    "name": "Martyrdom",
@@ -1156,7 +1156,7 @@
      20
     ]
    ],
-   "iconFile": "spell_nature_tranquility"
+   "icon": "assets/game/priest/talents/spell_nature_tranquility.jpg?v=b66dfe7e"
   },
   "meditation": {
    "name": "Meditation",
@@ -1174,14 +1174,14 @@
      50
     ]
    ],
-   "iconFile": "spell_nature_sleep"
+   "icon": "assets/game/priest/talents/spell_nature_sleep.jpg?v=3fdd4589"
   },
   "inner_focus": {
    "name": "Inner Focus",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, reduces the mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect.",
-   "iconFile": "spell_frost_windwalkon"
+   "icon": "assets/game/priest/talents/spell_frost_windwalkon.jpg?v=3786c3f2"
   },
   "improved_power_word_shield": {
    "name": "Improved Power Word: Shield",
@@ -1199,7 +1199,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_powerwordshield"
+   "icon": "assets/game/priest/talents/spell_holy_powerwordshield.jpg?v=3da2a601"
   },
   "absolution": {
    "name": "Absolution",
@@ -1217,7 +1217,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_absolution"
+   "icon": "assets/game/priest/talents/spell_holy_absolution.jpg?v=02e402eb"
   },
   "mental_agility": {
    "name": "Mental Agility",
@@ -1235,7 +1235,7 @@
      10
     ]
    ],
-   "iconFile": "ability_hibernation"
+   "icon": "assets/game/priest/talents/ability_hibernation.jpg?v=0f7e1aff"
   },
   "improved_mana_burn": {
    "name": "Improved Mana Burn",
@@ -1250,7 +1250,7 @@
      1
     ]
    ],
-   "iconFile": "spell_shadow_manaburn"
+   "icon": "assets/game/priest/talents/spell_shadow_manaburn.jpg?v=94096be0"
   },
   "reflective_shield": {
    "name": "Reflective Shield",
@@ -1265,7 +1265,7 @@
      45
     ]
    ],
-   "iconFile": "spell_holy_powerwordshield"
+   "icon": "assets/game/priest/talents/spell_holy_powerwordshield.jpg?v=3da2a601"
   },
   "mental_strength": {
    "name": "Mental Strength",
@@ -1289,14 +1289,14 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_enchantarmor"
+   "icon": "assets/game/priest/talents/spell_nature_enchantarmor.jpg?v=cbfd1a70"
   },
   "soul_warding": {
    "name": "Soul Warding",
    "maxPts": 1,
    "prereq": "improved_power_word_shield",
    "tooltipTemplate": "Reduces the cooldown of your Power Word: Shield ability by 4 sec, and reduces the mana cost of your Power Word: Shield by 15%.",
-   "iconFile": "spell_holy_pureofheart"
+   "icon": "assets/game/priest/talents/spell_holy_pureofheart.jpg?v=e54d2347"
   },
   "focused_power": {
    "name": "Focused Power",
@@ -1313,7 +1313,7 @@
      1
     ]
    ],
-   "iconFile": "spell_shadow_focusedpower"
+   "icon": "assets/game/priest/talents/spell_shadow_focusedpower.jpg?v=96bbf845"
   },
   "enlightenment": {
    "name": "Enlightenment",
@@ -1334,7 +1334,7 @@
      6
     ]
    ],
-   "iconFile": "spell_arcane_mindmastery"
+   "icon": "assets/game/priest/talents/spell_arcane_mindmastery.jpg?v=afdf12a2"
   },
   "focused_will": {
    "name": "Focused Will",
@@ -1358,14 +1358,14 @@
      5
     ]
    ],
-   "iconFile": "spell_arcane_focusedpower"
+   "icon": "assets/game/priest/talents/spell_arcane_focusedpower.jpg?v=bbea2b89"
   },
   "power_infusion": {
    "name": "Power Infusion",
    "maxPts": 1,
    "prereq": "mental_strength",
    "tooltipTemplate": "Infuses the target with power, increasing spell casting speed by 20% and reducing the mana cost of all spells by 20%.  Lasts 15 sec.",
-   "iconFile": "spell_holy_powerinfusion"
+   "icon": "assets/game/priest/talents/spell_holy_powerinfusion.jpg?v=98a8bf13"
   },
   "improved_flash_heal": {
    "name": "Improved Flash Heal",
@@ -1386,7 +1386,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_chastise"
+   "icon": "assets/game/priest/talents/spell_holy_chastise.jpg?v=06042471"
   },
   "renewed_hope": {
    "name": "Renewed Hope",
@@ -1403,7 +1403,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_holyprotection"
+   "icon": "assets/game/priest/talents/spell_holy_holyprotection.jpg?v=e4a911d0"
   },
   "rapture": {
    "name": "Rapture",
@@ -1424,7 +1424,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_rapture"
+   "icon": "assets/game/priest/talents/spell_holy_rapture.jpg?v=f39007dd"
   },
   "aspiration": {
    "name": "Aspiration",
@@ -1439,7 +1439,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_aspiration"
+   "icon": "assets/game/priest/talents/spell_holy_aspiration.jpg?v=4576f1cb"
   },
   "divine_aegis": {
    "name": "Divine Aegis",
@@ -1454,14 +1454,14 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_devineaegis"
+   "icon": "assets/game/priest/talents/spell_holy_devineaegis.jpg?v=2a9b7fe0"
   },
   "pain_suppression": {
    "name": "Pain Suppression",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Instantly reduces a friendly target's threat by 5%, reduces all damage taken by 40% and increases resistance to Dispel mechanics by 65% for 8 sec.",
-   "iconFile": "spell_holy_painsupression",
+   "icon": "assets/game/priest/talents/spell_holy_painsupression.jpg?v=e81432c0",
    "active": true
   },
   "grace": {
@@ -1477,7 +1477,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_hopeandgrace"
+   "icon": "assets/game/priest/talents/spell_holy_hopeandgrace.jpg?v=f93720c3"
   },
   "borrowed_time": {
    "name": "Borrowed Time",
@@ -1498,14 +1498,14 @@
      40
     ]
    ],
-   "iconFile": "spell_holy_borrowedtime"
+   "icon": "assets/game/priest/talents/spell_holy_borrowedtime.jpg?v=d22702ae"
   },
   "penance": {
    "name": "Penance",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Launches a volley of holy light at the target, causing 205 Holy damage to an enemy, or 570 to 643 healing to an ally instantly and every 0.95 sec for 2 sec.",
-   "iconFile": "spell_holy_penance",
+   "icon": "assets/game/priest/talents/spell_holy_penance.jpg?v=fdccb7e2",
    "active": true
   }
  },
@@ -1720,90 +1720,113 @@
    "key": "angelic_feather",
    "name": "Angelic Feather",
    "rarity": "artifact",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Angelic Feather. \nAngelic Feather: 3 Charges\n20 sec recharge\nPlace a feather at the target location, lasting for 15 sec. If allies walk through it, they gain 50% increased movement speed for 4 sec.",
-   "iconFile": "ability_priest_angelicfeather",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_angelicfeather.jpg?v=c1180103",
    "requiredLevel": 35
   },
   {
    "key": "holy_word_chastise",
    "name": "Holy Word: Chastise",
    "rarity": "artifact",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Holy Word: Chastise. \nHoly Word: Chastise: Chastise the target, incapacitating it for 3 sec. Any damage caused will revive the target.",
-   "iconFile": "spell_holy_chastise",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_chastise.jpg?v=06042471",
    "requiredLevel": 35
   },
   {
    "key": "leap_of_faith",
    "name": "Leap of Faith",
    "rarity": "artifact",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Leap of Faith. \nLeap of Faith: Pulls the spirit of a party or raid member, moving them to you. The same target can only be affected by this once every 30 seconds.",
-   "iconFile": "priest_spell_leapoffaith_a",
+   "icon": "assets/game/priest/mystic-enchants/priest_spell_leapoffaith_a.jpg?v=bada289c",
    "requiredLevel": 35
   },
   {
    "key": "power_word_barrier",
    "name": "Power Word: Barrier",
    "rarity": "artifact",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Teaches you: Power Word: Barrier.\n \nPower Word: Barrier: Summons a holy barrier to protect all allies at the target location for 8 sec, reducing all damage taken by 20% and reduces the pushback suffered from damaging attacks while casting by 100%.",
-   "iconFile": "spell_holy_powerwordbarrier",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_powerwordbarrier.jpg?v=22a4effb",
    "requiredLevel": 35
   },
   {
    "key": "void_shift",
    "name": "Void Shift",
    "rarity": "artifact",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Teaches you: Void Shift. \nVoid Shift: You and the currently targeted party or raid member swap health percentages. Increases the health percentage of you and your ally to 10% if below that amount.",
-   "iconFile": "spell_priest_voidshift",
+   "icon": "assets/game/priest/mystic-enchants/spell_priest_voidshift.jpg?v=7e0f8979",
    "requiredLevel": 35
   },
   {
    "key": "accelerated_ascension",
    "name": "Accelerated Ascension",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Casting Smite reduces the cooldown of Holy Fire and Guardian Spirit by 0 second.",
-   "iconFile": "paladin_holy",
+   "icon": "assets/game/priest/mystic-enchants/paladin_holy.jpg?v=536b05b9",
    "requiredLevel": 20
   },
   {
    "key": "centered",
    "name": "Centered",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Your Holy Word: Chastise deals Holy damage to monsters, chaining to up to 4 nearby enemies. After casting you become Centered.\n\nCentered: Your Holy Fire and Smite casts are 20% faster and reduce the cooldown of Holy Word: Chastise by 2 seconds. This effect has five charges plus an additional charge for each chain target.",
-   "iconFile": "spell_holy_pureofheart",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_pureofheart.jpg?v=e54d2347",
    "requiredLevel": 15
   },
   {
    "key": "circle_of_life",
    "name": "Circle of Life",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Casting Flash Heal, Greater Heal, Prayer of Healing and Circle of Healing reduces the cooldown of Halo by 0 sec.",
-   "iconFile": "ability_priest_halo",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_halo.jpg?v=c8791fcd",
    "requiredLevel": 35
   },
   {
    "key": "dark_focus",
    "name": "Dark Focus",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Dealing damage with Shadow Word: Pain, Mind Flay or Mind Sear has a 15% chance to cause your next Mind Blast to have no cooldown and cost no mana.\n\nThis effect can only occur once every 6 seconds.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_twilight.jpg?v=4d2eabad",
    "requiredLevel": 15
   },
   {
    "key": "divine_symmetry",
    "name": "Divine Symmetry",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Requires Penance\nDealing damage with Penance empowers your next healing Penance, and healing with Penance empowers your next damaging Penance. Empowered Penances are 30% more powerful and each hit reduces cooldown of Penance by 0.75 seconds.",
-   "iconFile": "spell_priest_burningwill",
+   "icon": "assets/game/priest/mystic-enchants/spell_priest_burningwill.jpg?v=d1b77eb3",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1816,36 +1839,45 @@
    "key": "endless_void",
    "name": "Endless Void",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Your Mind Blast casts extends the periodic Shadow damage increase granted from Void Eruption by 5 sec. This can exceed the original duration.\n@s:2110185:0:s@",
-   "iconFile": "spell_shadow_shadesofdarkness",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadesofdarkness.jpg?v=019640d0",
    "requiredLevel": 35
   },
   {
    "key": "energizing_prayer",
    "name": "Energizing Prayer",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "When Desperate Prayer restores you to full health it replenishes 25% of your total mana and if also used while not in combat, the cooldown of Desperate Prayer is reduced by 50%.",
-   "iconFile": "spell_holy_symbolofhope",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_symbolofhope.jpg?v=9a84b011",
    "requiredLevel": 20
   },
   {
    "key": "faith_rekindled",
    "name": "Faith Rekindled",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Each time your Renew heals a target they receive Faith.\nFaith: All healing received increased by 1% and healing received from your Renew increased by 5%. Stacks up to 3 times. Lasts 4 sec.",
-   "iconFile": "ability_essence_reapingflames",
+   "icon": "assets/game/priest/mystic-enchants/ability_essence_reapingflames.jpg?v=c44cb96f",
    "requiredLevel": 15
   },
   {
    "key": "good_fortune",
    "name": "Good Fortune",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Serendipity\nCasting Renew triggers Serendipity.\n\nConsuming a fully stacked Serendipity increases your Holy spell critical strike chance by 7% for 12 sec.",
-   "iconFile": "item_holyspark",
+   "icon": "assets/game/priest/mystic-enchants/item_holyspark.jpg?v=57603efd",
    "requiredLevel": 45,
    "requires": [
     {
@@ -1858,126 +1890,158 @@
    "key": "grateful_prayer",
    "name": "Grateful Prayer",
    "rarity": "epic",
-   "spec": "Discipline, Holy",
+   "specs": [
+    "Discipline",
+    "Holy"
+   ],
    "tooltip": "Your Prayer of Mending heals for 35% more but has one less charge.",
-   "iconFile": "spell_holy_prayerofmendingtga",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_prayerofmendingtga.jpg?v=3bacbb84",
    "requiredLevel": 44
   },
   {
    "key": "higher_power",
    "name": "Higher Power",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "When your mana is above 50%, Greater Heal has 30% increased critical effect chance but costs 20% more mana. When your mana is below 50%, Greater Heal costs 30% less mana.",
-   "iconFile": "spell_holy_greaterheal",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_greaterheal.jpg?v=3ca40f3b",
    "requiredLevel": 40
   },
   {
    "key": "holy_servitude",
    "name": "Holy Servitude",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Your Greater Heal heals an additional 12% of its healing over 12 sec. This effect can stack up to 3 times.",
-   "iconFile": "spell_holy_aspiration",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_aspiration.jpg?v=4576f1cb",
    "requiredLevel": 40
   },
   {
    "key": "impending_doom",
    "name": "Impending Doom",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Your Mind Blast and Shadow Word: Death apply 3 charges of Impending Doom. Can store up to 9 charges.\nImpending Doom: Increases the next periodic Shadow damage taken from the Priest by 20%.",
-   "iconFile": "spell_shadow_nightofthedead",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_nightofthedead.jpg?v=db3c961c",
    "requiredLevel": 15
   },
   {
    "key": "intense_focus",
    "name": "Intense Focus",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Reduces the cooldown of Inner Focus by 60 sec.\n\nCasting Flash Heal, Lesser Heal, Heal, Greater Heal, or Power Word: Shield reduces the cooldown by an additional 3 sec.",
-   "iconFile": "spell_frost_windwalkon",
+   "icon": "assets/game/priest/mystic-enchants/spell_frost_windwalkon.jpg?v=3786c3f2",
    "requiredLevel": 20
   },
   {
    "key": "light_and_shadow",
    "name": "Light and Shadow",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "The critical strike chance of your Smite is increased by 8% on targets affected by your Shadow Word: Pain. In addition, the duration of Shadow Word: Pain is increased by 3 sec.",
-   "iconFile": "ability_priest_innerlightandshadow",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_innerlightandshadow.jpg?v=50516d0b",
    "requiredLevel": 15
   },
   {
    "key": "light_at_the_end_of_the_tunnel",
    "name": "Light at the End of the Tunnel",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the critical strike chance of your Holy Fire and Smite by 3%. In addition, consuming Surge of Light increases your spell haste by 1% for 18 sec, stacking up to 5 times.",
-   "iconFile": "custom_priestskill_46_nobg_border",
+   "icon": "assets/game/priest/mystic-enchants/custom_priestskill_46_nobg_border.jpg?v=4d0f926a",
    "requiredLevel": 15
   },
   {
    "key": "lightburst",
    "name": "Lightburst",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Casting Holy Fire charges your next Holy Nova, causing it to deal 25% increased damage and healing and reducing its mana cost by 100%.",
-   "iconFile": "spell_holy_holynova",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_holynova.jpg?v=70e86665",
    "requiredLevel": 20
   },
   {
    "key": "overflowing_light",
    "name": "Overflowing Light",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Healing an ally to full health with Lesser Heal, Heal or Greater Heal restores 12% base mana and increases the amount healed of your next Lesser Heal, Heal or Greater Heal by 20%. This can trigger the final rank of Serendipity if known.",
-   "iconFile": "spell_holy_searinglightpriest",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_searinglightpriest.jpg?v=c41d1bd3",
    "requiredLevel": 15
   },
   {
    "key": "pendulum",
    "name": "Pendulum",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "Receive 3% spell haste while above 50% mana and 3% spell critical strike chance while below 50% mana.",
-   "iconFile": "inv_elemental_mote_mana",
+   "icon": "assets/game/priest/mystic-enchants/inv_elemental_mote_mana.jpg?v=715abc19",
    "requiredLevel": 15
   },
   {
    "key": "power_of_generosity",
    "name": "Power of Generosity",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Casting Power Infusion on an ally grants you Power of Generosity.\n\nReduces cooldown of Power Infusion by 30%.\nPower of Generosity: Infuses yourself with power, increasing spell casting speed by 10% and reducing the mana cost of all spells by 10%.  Lasts 15 sec.",
-   "iconFile": "spell_holy_powerinfusion",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_powerinfusion.jpg?v=98a8bf13",
    "requiredLevel": 40
   },
   {
    "key": "prayer_circle",
    "name": "Prayer Circle",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Casting Holy Fire and Prayer of Mending reduces the cast time of your next Prayer of Healing by 50% and its mana cost by 50%.",
-   "iconFile": "spell_holy_circleofrenewal",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_circleofrenewal.jpg?v=745aae31",
    "requiredLevel": 50
   },
   {
    "key": "promise_of_renewal",
    "name": "Promise of Renewal",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Casting Renew on an ally above 75% health reduces the mana cost of your next direct healing spell by 30% and increases its critical strike chance by 15%.",
-   "iconFile": "ability_priest_clarityofpurpose",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_clarityofpurpose.jpg?v=54677b2d",
    "requiredLevel": 15
   },
   {
    "key": "psychic_influence",
    "name": "Psychic Influence",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Requires Mind Flay\nYour Mind Flay penetrates your enemies' souls, causing them to take 20% increased damage from Shadow Word: Pain and Vampiric Touch while channeled. \n\nYour Mind Sear causes the main target to suffer an additional 15% damage for every other enemy hit by Mind Sear.",
-   "iconFile": "spell_argus_psychic_scarring",
+   "icon": "assets/game/priest/mystic-enchants/spell_argus_psychic_scarring.jpg?v=901092b9",
    "requiredLevel": 20,
    "requires": [
     {
@@ -1990,27 +2054,33 @@
    "key": "psychic_infusion",
    "name": "Psychic Infusion",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Using Psychic Scream also roots the enemy. \n\nPsychic Scream on enemies affected by your Shadow Word: Pain restores 10% of your mana.",
-   "iconFile": "spell_shadow_mindtwisting",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_mindtwisting.jpg?v=20a4bf9b",
    "requiredLevel": 15
   },
   {
    "key": "purgation_by_light",
    "name": "Purgation by Light",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Holy Fire also deals 30% of its instant damage to up to 3 enemies within 8 yards and applies its damage over time effect to each enemy hit.",
-   "iconFile": "ability_paladin_toweroflight",
+   "icon": "assets/game/priest/mystic-enchants/ability_paladin_toweroflight.jpg?v=87ef9f28",
    "requiredLevel": 20
   },
   {
    "key": "purity_of_light",
    "name": "Purity of Light",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Surge of Light\nSurge of Light no longer prevents a critical strike from Flash Heal or Smite and allows it to be stacked up to 2 times. However, Surge of Light only reduces the mana cost by 60%.",
-   "iconFile": "nhi_holy_beam_border",
+   "icon": "assets/game/priest/mystic-enchants/nhi_holy_beam_border.jpg?v=cbab7811",
    "requiredLevel": 35,
    "requires": [
     {
@@ -2023,18 +2093,23 @@
    "key": "radiant_star",
    "name": "Radiant Star",
    "rarity": "epic",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Increases the effectiveness of Divine Star by 10% and casting Divine Star resets the cooldown of Holy Fire. \n\nWhen your Holy Fire deals periodic damage the cooldown of Divine Star is reduced by 0.5 sec.",
-   "iconFile": "ability_priest_flashoflight",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_flashoflight.jpg?v=415cc1cf",
    "requiredLevel": 35
   },
   {
    "key": "refilling_the_well",
    "name": "Refilling the Well",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Lightwell\nLightwell now heals 5 additional times.\n\nCasting direct Holy healing spells reduce the cooldown of Lightwell by 0 seconds.",
-   "iconFile": "nhi_holyshock_border",
+   "icon": "assets/game/priest/mystic-enchants/nhi_holyshock_border.jpg?v=633572ad",
    "requiredLevel": 40,
    "requires": [
     {
@@ -2047,9 +2122,11 @@
    "key": "renewed_through_absolution",
    "name": "Renewed Through Absolution",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Requires Penance\nPenance consumes your Renew to heal your target and nearby allies for an additional ${213*0.99)+(0*0.7} Holy healing.\n\nConsuming Renew this way also reduces the duration of your active Weakened Soul by 3 sec.",
-   "iconFile": "ability_pvp_innerrenewal",
+   "icon": "assets/game/priest/mystic-enchants/ability_pvp_innerrenewal.jpg?v=94cf26ba",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2062,36 +2139,45 @@
    "key": "shadow_reserves",
    "name": "Shadow Reserves",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Your Spirit Tap effect also increases the damage of Shadow Word: Pain and Devouring Plague by 10%, and reduces their mana costs by 50%.",
-   "iconFile": "inv_elemental_mote_shadow01",
+   "icon": "assets/game/priest/mystic-enchants/inv_elemental_mote_shadow01.jpg?v=5beb8286",
    "requiredLevel": 15
   },
   {
    "key": "shattered_renewal",
    "name": "Shattered Renewal",
    "rarity": "epic",
-   "spec": "Discipline, Holy",
+   "specs": [
+    "Discipline",
+    "Holy"
+   ],
    "tooltip": "When your Power Word: Shield breaks from damage, it restores 5% base mana to you.  This can only occur once per second.\n\nAfter killing an opponent that yields experience or honor your Weakened Soul is removed from you.",
-   "iconFile": "ability_vehicle_shellshieldgenerator",
+   "icon": "assets/game/priest/mystic-enchants/ability_vehicle_shellshieldgenerator.jpg?v=d8bf2253",
    "requiredLevel": 15
   },
   {
    "key": "soul_restoration",
    "name": "Soul Restoration",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Casting Flash Heal or Greater Heal on an ally with Weakened Soul reduces its duration by 2 sec.",
-   "iconFile": "spell_holy_ashestoashes",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_ashestoashes.jpg?v=fc7c3d43",
    "requiredLevel": 20
   },
   {
    "key": "spirited_penance",
    "name": "Spirited Penance",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Requires Penance\nPenance channel time now lasts long enough to fire an extra bolt.",
-   "iconFile": "ability_priest_wordsofmeaning",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_wordsofmeaning.jpg?v=c9dcbd07",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2104,9 +2190,11 @@
    "key": "vampiric_death",
    "name": "Vampiric Death",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Requires Vampiric Touch\nShadow Word: Death consumes your Vampiric Touch on the target to deal damage based on 60% of the total damage of your Vampiric Touch. In addition, the damage you take from your Shadow Word: Death is reduced by 40%.",
-   "iconFile": "spell_shadow_demonicfortitude",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_demonicfortitude.jpg?v=88d769d3",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2119,18 +2207,22 @@
    "key": "void_herald_grasp_of_darkness",
    "name": "Void Herald: Grasp of Darkness",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Teaches you: Grasp of Darkness. \nGrasp of Darkness: Channel dark energy, dealing 716.87 Shadow damage over 3 sec. Each time it deals damage, the cooldown of Shadowfiend is reduced by 10 sec.\n\nEach Tentacle of the Old Gods under your control will empower its damage dealt by 15% and its the critical strike chance by 10%.",
-   "iconFile": "ability_demonhunter_darkness",
+   "icon": "assets/game/priest/mystic-enchants/ability_demonhunter_darkness.jpg?v=18f357fc",
    "requiredLevel": 30
   },
   {
    "key": "void_herald_madness_of_the_old_gods",
    "name": "Void Herald: Madness of the Old Gods",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Requires Void Herald: Whispers of the Old Gods\nUsing Shadowfiend summons 3 Tentacle of the Old Gods near the targeted enemy.\n\nSummoning a Tentacle of the Old Gods increases your damage by 5% for 10 sec.",
-   "iconFile": "achievement_boss_cthun",
+   "icon": "assets/game/priest/mystic-enchants/achievement_boss_cthun.jpg?v=b2801b99",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2142,27 +2234,32 @@
    "key": "wanding",
    "name": "Wanding",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "Wand attacks grant you stacks that increase the cast speed of your next spell by 5%, stacks up to 5 times and lasts 6 sec.",
-   "iconFile": "ability_shootwand",
+   "icon": "assets/game/priest/mystic-enchants/ability_shootwand.jpg?v=5b9d767d",
    "requiredLevel": 15
   },
   {
    "key": "words_of_healing",
    "name": "Words of Healing",
    "rarity": "epic",
-   "spec": "Discipline, Holy",
+   "specs": [
+    "Discipline",
+    "Holy"
+   ],
    "tooltip": "While Borrowed Time is active, your critical strike chance with Flash Heal and Penance is increased by 10%.\n\nCasting Flash Heal reduces the cooldown of Penance by 1 second.",
-   "iconFile": "spell_holy_healingfocus",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_healingfocus.jpg?v=6724b1cd",
    "requiredLevel": 50
   },
   {
    "key": "words_of_time",
    "name": "Words of Time",
    "rarity": "epic",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Requires Borrowed Time\nThe duration of your Borrowed Time is increased by 2 seconds and its charges can be stored up to 3 times.\n\nBorrowed Time now also increases your healing power by 10% of your Intellect.",
-   "iconFile": "custom_t_nhance_rpg_icons_holywatch_border",
+   "icon": "assets/game/priest/mystic-enchants/custom_t_nhance_rpg_icons_holywatch_border.jpg?v=b7158675",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2175,9 +2272,11 @@
    "key": "wraithweaver_echoing_shadows",
    "name": "Wraithweaver: Echoing Shadows",
    "rarity": "epic",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Requires Wraithweaver: Shadow Orbs\nCasting Mind Blast while you have 3 Shadow Orbs active resets its cooldown. In addition, casting Shadow Word: Pain, Devouring Plague or Vampiric Touch grants you 1 Shadow Orb.",
-   "iconFile": "spell_shadow_mindtwisting",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_mindtwisting.jpg?v=20a4bf9b",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2189,423 +2288,523 @@
    "key": "armor_of_faith",
    "name": "Armor of Faith",
    "rarity": "legendary",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "When you cast Heal, Greater Heal, Flash Heal or Penance on an ally with Weakened Soul, they receive Armor of Faith, which heals them and up to 4 nearby allies for 15% of the heal that granted it after its duration is over or when they take damage.",
-   "iconFile": "spell_holy_improvedresistanceauras",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_improvedresistanceauras.jpg?v=b7187e4f",
    "requiredLevel": 30
   },
   {
    "key": "atonement",
    "name": "Atonement",
    "rarity": "legendary",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Dealing damage with Smite or Holy Fire heals a nearby ally for 281.42. Dealing damage with Penance heals three nearby allies for 141.2. Casting any of these spells grants Atonement.\n\nWhen healing yourself with Atonement it is 30% less effective.\nAtonement: Increases the critical chance and reduces the mana cost of your next Flash Heal or Prayer of Healing by 20%. You can store up to 3 charges.\n@ext:Heals from Atonement benefits from healing modifiers and can trigger procs.:ext@",
-   "iconFile": "ability_paladin_beaconsoflight",
+   "icon": "assets/game/priest/mystic-enchants/ability_paladin_beaconsoflight.jpg?v=2453c67a",
    "requiredLevel": 30
   },
   {
    "key": "discipline_mastery",
    "name": "Discipline Mastery",
    "rarity": "legendary",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Increases the amount absorbed from Divine Aegis by 5% and the mana cost of Power Word: Shield, Flash Heal and Penance is reduced by 5%.",
-   "iconFile": "spell_holy_powerwordshield",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_powerwordshield.jpg?v=3da2a601",
    "requiredLevel": 50
   },
   {
    "key": "divine_star",
    "name": "Divine Star",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Divine Star. \nDivine Star: Fires a Divine Star forward, traveling 30 yards, causing Holy damage to all enemies and healing allies within 5 yards of its path. Upon reaching its destination, it returns, also dealing damage and healing on its way back.",
-   "iconFile": "spell_priest_divinestar",
+   "icon": "assets/game/priest/mystic-enchants/spell_priest_divinestar.jpg?v=38296ca6",
    "requiredLevel": 28
   },
   {
    "key": "halo",
    "name": "Halo",
    "rarity": "legendary",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Teaches you: Halo. \nHalo: Creates a ring of Holy energy around you that quickly expands and grows in power, healing raid and party members up to 30 yds away. Heals with greater effect the further away the ally is. Also increases the Holy healing taken from the caster by 8%.",
-   "iconFile": "ability_priest_halo",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_halo.jpg?v=c8791fcd",
    "requiredLevel": 30
   },
   {
    "key": "holy_ascension",
    "name": "Holy Ascension",
    "rarity": "legendary",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Increases the critical strike chance of your Holy Fire and Smite by 20%. Casting Holy Fire Increases the damage of your next two Smite casts by 20%.\n\nWhen casting Guardian Spirit you gain Holy Ascension.\nHoly Ascension: Reduces the cooldown of Holy Fire by 50%. \n\nYour Smite and Holy Fire is guaranteed to critically strike and trigger a holy explosion around the target when dealing damage. Lasts 10 sec.",
-   "iconFile": "spell_holy_spiritualguidence",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_spiritualguidence.jpg?v=7c0c34f0",
    "requiredLevel": 30
   },
   {
    "key": "holy_mastery",
    "name": "Holy Mastery",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the amount healed from your Flash Heal, Greater Heal, Prayer of Healing by 5% and reduces the mana cost of those spells by 5%.",
-   "iconFile": "classicon_priest",
+   "icon": "assets/game/priest/mystic-enchants/classicon_priest.jpg?v=3d17e541",
    "requiredLevel": 30
   },
   {
    "key": "holy_radiance",
    "name": "Holy Radiance",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Healing an ally with Heal, Greater Heal or Flash Heal also heals all allies affected by your Renew for 30% of the amount.",
-   "iconFile": "spell_holy_divineprovidence",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_divineprovidence.jpg?v=2780e7ab",
    "requiredLevel": 30
   },
   {
    "key": "shadow_mastery",
    "name": "Shadow Mastery",
    "rarity": "legendary",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Increases Shadow damage done by 3% and the critical strike chance of your Mind Flay by 5%.",
-   "iconFile": "spell_shadow_shadowform",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowform.jpg?v=dade7d7a",
    "requiredLevel": 30
   },
   {
    "key": "shadow_visions",
    "name": "Shadow Visions",
    "rarity": "legendary",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "@req:1115407req@\nDealing damage with Mind Flay grants you a Soul Fragment. After accumulating 6 fragments you gain Shadow Visions.\n\nShadow Visions: Empowers your next ability:\n\n- Devouring Plague: Duration increased by 12 seconds.\n\n- Mind Blast: Damage increased by 50%, and makes your next Mind Flay deal 30% increased damage with 30% increased critical strike chance.\n\n- Vampiric Touch: Marks a target to take 20% increased periodic damage from you for 30 sec.",
-   "iconFile": "spell_shadow_charm",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_charm.jpg?v=80b37ddd",
    "requiredLevel": 30
   },
   {
    "key": "twilight_paragon",
    "name": "Twilight Paragon",
    "rarity": "legendary",
-   "spec": "Holy, Discipline",
+   "specs": [
+    "Holy",
+    "Discipline"
+   ],
    "tooltip": "Dealing direct damage with Smite and Holy Fire grants you Paragon of Light.\n\nParagon of Light: Increases the damage of Smite by 1% and reduces the damage taken from your Shadow Word: Death by 10%. Stacks up to 8 times. \n\nShadow Word: Death consumes these stacks, dealing Twilight damage and granting Paragon of Darkness.\nParagon of Darkness: Your Mind Flay, Mind Sear and Shadow Word: Pain deal additional Twilight damage and extend Shadow Word: Pain by 3 sec. Mind Flay and Mind Sear are impervious to pushback and gain an extra tick.",
-   "iconFile": "ability_priest_rayofhope",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_rayofhope.jpg?v=3771ec19",
    "requiredLevel": 46
   },
   {
    "key": "void_eruption",
    "name": "Void Eruption",
    "rarity": "legendary",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Teaches you: Void Eruption. \nVoid Eruption: Releases an explosive blast of pure void energy, causing Shadow damage and slowing all enemies hit by 50% for 5 seconds.\n\nApplies Shadow Word: Pain to up to 10 enemies within 10 yards of your target. The power drawn from the Void increases your periodic Shadow damage by 25% for 10 sec.",
-   "iconFile": "spell_priest_void_blast",
+   "icon": "assets/game/priest/mystic-enchants/spell_priest_void_blast.jpg?v=f98200ee",
    "requiredLevel": 28
   },
   {
    "key": "void_herald_whispers_of_the_old_gods",
    "name": "Void Herald: Whispers of the Old Gods",
    "rarity": "legendary",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Dealing damage with Shadow Word: Pain has a 33% chance to summon a Tentacle of the Old Gods to wreak havoc on your enemies. \n\nThis can only trigger once every 3 seconds.",
-   "iconFile": "achievement_boss_yoggsaron_01",
+   "icon": "assets/game/priest/mystic-enchants/achievement_boss_yoggsaron_01.jpg?v=8234cc1c",
    "requiredLevel": 30
   },
   {
    "key": "wraithweaver_shadow_orbs",
    "name": "Wraithweaver: Shadow Orbs",
    "rarity": "legendary",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "When Shadow Word: Pain, Devouring Plague or Vampiric Touch deals damage, you have a 20% chance to gain a Shadow Orb.\n\nShadow Orbs increases the damage of Mind Blast by 10% per orb. You can store up to 3 orbs at a time.\n\nWhen fully stacked, Mind Blast consumes your Shadow Orbs to send a Shadowy Apparition towards the target dealing ${320*0.99)+(0*0.32} Shadow damage to all enemies within 5 yds when it reaches the target.",
-   "iconFile": "spell_priest_shadoworbs",
+   "icon": "assets/game/priest/mystic-enchants/spell_priest_shadoworbs.jpg?v=badefdf6",
    "requiredLevel": 30
   },
   {
    "key": "zany_zealot",
    "name": "Zany Zealot",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your damaging Priest spell casts have a 15% chance to cast an additional random Priest spell for free.",
-   "iconFile": "ability_priest_ascension",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_ascension.jpg?v=24561f9a",
    "requiredLevel": 30
   },
   {
    "key": "absolution",
    "name": "Absolution",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of your Dispel Magic, Cure Disease, Abolish Disease and Mass Dispel spells by 15%.\n\nThis Mystic Enchant does not stack with the Absolution Talent.",
-   "iconFile": "spell_holy_absolution",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_absolution.jpg?v=02e402eb",
    "requiredLevel": 45
   },
   {
    "key": "afterkindling",
    "name": "Afterkindling",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases your damage done by 5% to targets affected by your Holy Fire and reduces the mana cost of Smite and Holy Fire by 20%.\n\nThis Mystic Enchant does not stack with the Afterkindling Talent.",
-   "iconFile": "ability_priest_clarityofpurpose",
+   "icon": "assets/game/priest/mystic-enchants/ability_priest_clarityofpurpose.jpg?v=54677b2d",
    "requiredLevel": 45
   },
   {
    "key": "blessed_recovery",
    "name": "Blessed Recovery",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nAfter being struck by a melee or ranged critical hit, Blessed Recovery heals you for 15% of the damage taken over 6 sec.  Additional critical hits taken during the effect increase the healing received.\n\nThis Mystic Enchant does not stack with the Blessed Recovery Talent.",
-   "iconFile": "spell_holy_blessedrecovery",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_blessedrecovery.jpg?v=0acaac3a",
    "requiredLevel": 45
   },
   {
    "key": "blessed_vengeance",
    "name": "Blessed Vengeance",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike damage of your Holy Fire, Holy Nova, Penance and Smite by 100%.\n\n@ext:This Mystic Enchant does not stack with the Blessed Vengeance Talent.:ext@",
-   "iconFile": "spell_holy_holysmite",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_holysmite.jpg?v=f7735432",
    "requiredLevel": 45
   },
   {
    "key": "dark_power_well",
    "name": "Dark Power Well",
    "rarity": "rare",
-   "spec": "Shadow, Holy",
+   "specs": [
+    "Shadow",
+    "Holy"
+   ],
    "tooltip": "Casting damaging Shadow spells has a 15% chance to make your next non-Shadow spell have no cost.",
-   "iconFile": "spell_shadow_shadesofdarkness",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadesofdarkness.jpg?v=019640d0",
    "requiredLevel": 45
   },
   {
    "key": "darkness",
    "name": "Darkness",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Shadow spell damage by 10%.\n\nThis Mystic Enchant does not stack with the Darkness Talent.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_twilight.jpg?v=4d2eabad",
    "requiredLevel": 45
   },
   {
    "key": "divine_fury",
    "name": "Divine Fury",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.5 sec.\n\nThis Mystic Enchant does not stack with the Divine Fury Talent.",
-   "iconFile": "spell_holy_sealofwrath",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_sealofwrath.jpg?v=6198edc2",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_circle_of_healing",
    "name": "Glyph of Circle of Healing",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Circle of Healing spell heals 1 additional target.",
-   "iconFile": "spell_holy_circleofrenewal",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_circleofrenewal.jpg?v=745aae31",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_dispel_magic",
    "name": "Glyph of Dispel Magic",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Dispel Magic spell also heals your target for 3% of maximum health.",
-   "iconFile": "spell_holy_dispelmagic",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_dispelmagic.jpg?v=d10d1744",
    "requiredLevel": 18
   },
   {
    "key": "glyph_of_dispersion",
    "name": "Glyph of Dispersion",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Reduces the cooldown on Dispersion by -45 sec.",
-   "iconFile": "spell_shadow_dispersion",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_dispersion.jpg?v=e847ea56",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_fade",
    "name": "Glyph of Fade",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Reduces the cooldown of your Fade spell by -9 sec.",
-   "iconFile": "spell_magic_lesserinvisibilty",
+   "icon": "assets/game/priest/mystic-enchants/spell_magic_lesserinvisibilty.jpg?v=0da63e08",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_fear_ward",
    "name": "Glyph of Fear Ward",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces cooldown and duration of Fear Ward by -60 sec.",
-   "iconFile": "spell_holy_excorcism",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_excorcism.jpg?v=1f8aa857",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_flash_heal",
    "name": "Glyph of Flash Heal",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the mana cost of your Flash Heal by 10%.",
-   "iconFile": "spell_holy_flashheal",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_flashheal.jpg?v=fe050e5d",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_guardian_spirit",
    "name": "Glyph of Guardian Spirit",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "If your Guardian Spirit lasts its entire duration without being triggered, the cooldown is reset to 1 min.",
-   "iconFile": "spell_holy_guardianspirit",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_guardianspirit.jpg?v=11b44338",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_holy_fire",
    "name": "Glyph of Holy Fire",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Holy Fire is guaranteed to critically strike on targets who have 80% health or higher. Additionally, the Holy Fire Periodic effect can now critically strike.",
-   "iconFile": "spell_holy_searinglight",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_searinglight.jpg?v=0249f8ad",
    "requiredLevel": 0
   },
   {
    "key": "glyph_of_holy_nova",
    "name": "Glyph of Holy Nova",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the damage and healing of your Holy Nova spell by an additional 25%.",
-   "iconFile": "spell_holy_holynova",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_holynova.jpg?v=70e86665",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_hymn_of_hope",
    "name": "Glyph of Hymn of Hope",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Hymn of Hope lasts an additional 2 sec.",
-   "iconFile": "spell_holy_symbolofhope",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_symbolofhope.jpg?v=9a84b011",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_inner_fire",
    "name": "Glyph of Inner Fire",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Increases the armor and spell power gained from your Inner Fire spell by 50%.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "requiredLevel": 12
   },
   {
    "key": "glyph_of_lightwell",
    "name": "Glyph of Lightwell",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the amount healed by your Lightwell by 20% and your Lightwell can now heal 3 additional times before expiring.",
-   "iconFile": "spell_holy_summonlightwell",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_summonlightwell.jpg?v=23b61bf7",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_long_renewal",
    "name": "Glyph of Long Renewal",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Renew now lasts for 6 additional seconds but heals for 20% less per tick.",
-   "iconFile": "spell_holy_serendipity",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_serendipity.jpg?v=12114aec",
    "requiredLevel": 0
   },
   {
    "key": "glyph_of_mass_dispel",
    "name": "Glyph of Mass Dispel",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Reduces the mana cost of Mass Dispel by 35%.",
-   "iconFile": "spell_arcane_massdispel",
+   "icon": "assets/game/priest/mystic-enchants/spell_arcane_massdispel.jpg?v=2b6821b9",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_mind_control",
    "name": "Glyph of Mind Control",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Reduces the chance targets will resist or break your Mind Control spell by an additional 17%.",
-   "iconFile": "spell_shadow_shadowworddominate",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowworddominate.jpg?v=10f6799e",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_mind_flay",
    "name": "Glyph of Mind Flay",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Increases the damage done by your Mind Flay spell by 10% when your target is afflicted with Shadow Word: Pain.",
-   "iconFile": "spell_shadow_siphonmana",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_siphonmana.jpg?v=2f0053ef",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_mind_sear",
    "name": "Glyph of Mind Sear",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Increases the radius of effect on Mind Sear by 5 yards.",
-   "iconFile": "spell_shadow_mindshear",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_mindshear.jpg?v=17cda715",
    "requiredLevel": 38
   },
   {
    "key": "glyph_of_pain_suppression",
    "name": "Glyph of Pain Suppression",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Allows Pain Suppression to be cast while stunned.",
-   "iconFile": "spell_holy_painsupression",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_painsupression.jpg?v=e81432c0",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_penance",
    "name": "Glyph of Penance",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Reduces the cooldown of Penance by -2 sec.",
-   "iconFile": "spell_holy_penance",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_penance.jpg?v=fdccb7e2",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_power_word_shield",
    "name": "Glyph of Power Word: Shield",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Your Power Word: Shield also heals the target for 20% of the absorption amount.",
-   "iconFile": "spell_holy_powerwordshield",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_powerwordshield.jpg?v=3da2a601",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_prayer_of_healing",
    "name": "Glyph of Prayer of Healing",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Prayer of Healing spell also heals an additional 25% of its initial heal over 6 sec.",
-   "iconFile": "spell_holy_prayerofhealing02",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_prayerofhealing02.jpg?v=10f417fd",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_psychic_scream",
    "name": "Glyph of Psychic Scream",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Increases the duration of your Psychic Scream by 2 sec. and increases its cooldown by 8 sec.",
-   "iconFile": "spell_shadow_psychicscream",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_psychicscream.jpg?v=5d90952e",
    "requiredLevel": 14
   },
   {
    "key": "glyph_of_renew",
    "name": "Glyph of Renew",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the duration of your Renew by -3 sec. but increases the amount healed each tick by 35%.",
-   "iconFile": "spell_holy_renew",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_renew.jpg?v=977a1c8b",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_scourge_imprisonment",
    "name": "Glyph of Scourge Imprisonment",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the cast time of your Shackle Undead by -1.0 sec.",
-   "iconFile": "spell_nature_slow",
+   "icon": "assets/game/priest/mystic-enchants/spell_nature_slow.jpg?v=85f9fa47",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_shadow",
    "name": "Glyph of Shadow",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Requires Shadowform\nWhile in Shadowform, your non-periodic spell critical strikes increase your spell power by 30% of your Spirit for 10 sec.",
-   "iconFile": "spell_shadow_shadowform",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowform.jpg?v=dade7d7a",
    "requiredLevel": 40,
    "requires": [
     {
@@ -2618,306 +2817,374 @@
    "key": "glyph_of_shadow_word_death",
    "name": "Glyph of Shadow Word: Death",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Reduces the damage you take from Shadow Word: Death by 25% and targets below 35% health take an additional 1% damage for every 1% health they are under 35%.",
-   "iconFile": "spell_shadow_demonicfortitude",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_demonicfortitude.jpg?v=88d769d3",
    "requiredLevel": 46
   },
   {
    "key": "glyph_of_shadow_word_pain",
    "name": "Glyph of Shadow Word: Pain",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "The periodic damage ticks of your Shadow Word: Pain spell restore 1% of your base mana.",
-   "iconFile": "spell_shadow_shadowwordpain",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowwordpain.jpg?v=b37fcc7d",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_smite",
    "name": "Glyph of Smite",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Smite spell inflicts an additional 20% damage against targets afflicted by Holy Fire.",
-   "iconFile": "spell_holy_holysmite",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_holysmite.jpg?v=f7735432",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_spirit_of_redemption",
    "name": "Glyph of Spirit of Redemption",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the duration of Spirit of Redemption by 6 sec.\n\nWhile Spirit of Redemption is active, your healing done is increased by 15%.",
-   "iconFile": "spell_holy_greaterheal",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_greaterheal.jpg?v=3ca40f3b",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_surge_of_light",
    "name": "Glyph of Surge of Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the effectiveness of Smite and Flash heal by 30% when under the effects of Surge of Light.",
-   "iconFile": "spell_holy_surgeoflight",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_surgeoflight.jpg?v=f3a2291c",
    "requiredLevel": 35
   },
   {
    "key": "healing_focus",
    "name": "Healing Focus",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks  while casting any holy healing and damaging spell by 70%.\n\nThis Mystic Enchant does not stack with the Healing Focus Talent.",
-   "iconFile": "spell_holy_healingfocus",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_healingfocus.jpg?v=6724b1cd",
    "requiredLevel": 45
   },
   {
    "key": "holy_power_well",
    "name": "Holy Power Well",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Casting damaging Holy spells has a 15% chance to make your next non-Holy spell have no cost.",
-   "iconFile": "spell_holy_crusade",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_crusade.jpg?v=4113de54",
    "requiredLevel": 45
   },
   {
    "key": "holy_reach",
    "name": "Holy Reach",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing, Holy Nova, Divine Hymn and Circle of Healing spells by 20%.\n\nThis Mystic Enchant does not stack with the Holy Reach Talent.",
-   "iconFile": "spell_holy_purify",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_purify.jpg?v=7972b511",
    "requiredLevel": 45
   },
   {
    "key": "holy_specialization",
    "name": "Holy Specialization",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical effect chance of your Holy spells by 5%.\n\nThis Mystic Enchant does not stack with the Holy Specialization Talent.",
-   "iconFile": "spell_holy_sealofsalvation",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_sealofsalvation.jpg?v=6b716fd7",
    "requiredLevel": 45
   },
   {
    "key": "improved_healing",
    "name": "Improved Healing",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of your Lesser Heal, Heal, Greater Heal, Divine Hymn and Penance spells by 15%.\n\nThis Mystic Enchant does not stack with the Improved Healing Talent.",
-   "iconFile": "spell_holy_heal02",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_heal02.jpg?v=6260789e",
    "requiredLevel": 45
   },
   {
    "key": "improved_inner_fire",
    "name": "Improved Inner Fire",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Inner Fire spell by 45%, and increases the total number of charges by 12.\n\nThis Mystic Enchant does not stack with the Improved Inner Fire Talent.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "requiredLevel": 45
   },
   {
    "key": "improved_mana_burn",
    "name": "Improved Mana Burn",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nReduces the casting time of your Mana Burn spell by 1 sec.\n\nThis Mystic Enchant does not stack with the Improved Mana Burn Talent.",
-   "iconFile": "spell_shadow_manaburn",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_manaburn.jpg?v=94096be0",
    "requiredLevel": 45
   },
   {
    "key": "improved_mind_blast",
    "name": "Improved Mind Blast",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Mind Blast spell by 2.5 sec., and while in Shadowform your Mind Blast also has a 100% chance to reduce all healing done to the target by 20% for 10 sec.\n\nThis Mystic Enchant does not stack with the Improved Mind Blast Talent.",
-   "iconFile": "spell_shadow_unholyfrenzy",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_unholyfrenzy.jpg?v=cd4c3920",
    "requiredLevel": 45
   },
   {
    "key": "improved_power_word_fortitude",
    "name": "Improved Power Word: Fortitude",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by 30%, and increases your total Stamina by 4%.\n\nThis Mystic Enchant does not stack with the Improved Power Word: Fortitude Talent.",
-   "iconFile": "spell_holy_wordfortitude",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_wordfortitude.jpg?v=eb27e947",
    "requiredLevel": 45
   },
   {
    "key": "improved_power_word_shield",
    "name": "Improved Power Word: Shield",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage absorbed by your Power Word: Shield by 15%.\n\nThis Mystic Enchant does not stack with the Improved Power Word: Shield Talent.",
-   "iconFile": "spell_holy_powerwordshield",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_powerwordshield.jpg?v=3da2a601",
    "requiredLevel": 45
   },
   {
    "key": "improved_psychic_scream",
    "name": "Improved Psychic Scream",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Psychic Scream spell by 4 sec.\n\nThis Mystic Enchant does not stack with the Improved Psychic Scream Talent.",
-   "iconFile": "spell_shadow_psychicscream",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_psychicscream.jpg?v=5d90952e",
    "requiredLevel": 45
   },
   {
    "key": "improved_renew",
    "name": "Improved Renew",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount healed by your Renew spell by 15%.\n\nThis Mystic Enchant does not stack with the Improved Renew Talent.",
-   "iconFile": "spell_holy_renew",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_renew.jpg?v=977a1c8b",
    "requiredLevel": 45
   },
   {
    "key": "improved_shadow_word_pain",
    "name": "Improved Shadow Word: Pain",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage of your Shadow Word: Pain spell by 12%.\n\nThis Mystic Enchant does not stack with the Improved Shadow Word: Pain Talent.",
-   "iconFile": "spell_shadow_shadowwordpain",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowwordpain.jpg?v=b37fcc7d",
    "requiredLevel": 45
   },
   {
    "key": "improved_spirit_tap",
    "name": "Improved Spirit Tap",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nYour Mind Blast and Shadow Word: Death critical strikes have a 100% chance and your Mind Flay critical strikes have a 50% chance to increase your total Spirit by 30%. For the duration, your mana will regenerate at a 50% rate while casting. Lasts 10 sec.\n\nThis Mystic Enchant does not stack with the Improved Spirit Tap Talent.",
-   "iconFile": "spell_shadow_requiem",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_requiem.jpg?v=564ea500",
    "requiredLevel": 45
   },
   {
    "key": "inner_focus",
    "name": "Inner Focus",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Teaches you: Inner Focus\n\n@ext:Can not be used if the Inner Focus talent is learned.:ext@ \n@s:1464751:0:0:0:-32@",
-   "iconFile": "spell_frost_windwalkon",
+   "icon": "assets/game/priest/mystic-enchants/spell_frost_windwalkon.jpg?v=3786c3f2",
    "requiredLevel": 45
   },
   {
    "key": "inspiration",
    "name": "Inspiration",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces your target's physical damage taken by 10% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, Binding Heal, Penance, Prayer of Mending, Prayer of Healing, or Circle of Healing spell.\n\nThis Mystic Enchant does not stack with the Inspiration Talent.",
-   "iconFile": "spell_holy_layonhands",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_layonhands.jpg?v=e3bc35ab",
    "requiredLevel": 45
   },
   {
    "key": "martyrdom",
    "name": "Martyrdom",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nGives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect reduces the pushback suffered from damaging attacks while casting Priest spells and decreases the duration of Interrupt effects by 20%.\n\nThis Mystic Enchant does not stack with the Martyrdom Talent.",
-   "iconFile": "spell_nature_tranquility",
+   "icon": "assets/game/priest/mystic-enchants/spell_nature_tranquility.jpg?v=b66dfe7e",
    "requiredLevel": 45
   },
   {
    "key": "meditation",
    "name": "Meditation",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nAllows 50% of your mana regeneration to continue while casting.\n\nThis Mystic Enchant does not stack with the Meditation Talent.",
-   "iconFile": "spell_nature_sleep",
+   "icon": "assets/game/priest/mystic-enchants/spell_nature_sleep.jpg?v=3fdd4589",
    "requiredLevel": 45
   },
   {
    "key": "mental_agility",
    "name": "Mental Agility",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of your instant cast spells by 10%.\n\nThis Mystic Enchant does not stack with the Mental Agility Talent.",
-   "iconFile": "ability_hibernation",
+   "icon": "assets/game/priest/mystic-enchants/ability_hibernation.jpg?v=0f7e1aff",
    "requiredLevel": 45
   },
   {
    "key": "searing_light",
    "name": "Searing Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage of your Smite, Holy Fire, Holy Nova and Penance spells by 15%.\n\nThis Mystic Enchant does not stack with the Searing Light Talent.",
-   "iconFile": "spell_holy_searinglightpriest",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_searinglightpriest.jpg?v=c41d1bd3",
    "requiredLevel": 45
   },
   {
    "key": "shadow_affinity",
    "name": "Shadow Affinity",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nReduces the threat generated by your Shadow spells by 25%, and you receive 15% of your base mana when your Shadow Word: Pain or Vampiric Touch spells are dispelled.\n\nThis Mystic Enchant does not stack with the Shadow Affinity Talent.",
-   "iconFile": "spell_shadow_shadowward",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_shadowward.jpg?v=d6f3ab10",
    "requiredLevel": 45
   },
   {
    "key": "shadow_focus",
    "name": "Shadow Focus",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to hit with your Shadow spells by 3%, and reduces the mana cost of your Shadow spells by 6%.\n\nThis Mystic Enchant does not stack with the Shadow Focus Talent.",
-   "iconFile": "spell_shadow_burningspirit",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_burningspirit.jpg?v=f86d8a40",
    "requiredLevel": 45
   },
   {
    "key": "shadow_reach",
    "name": "Shadow Reach",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your offensive Shadow spells by 20%.\n\nThis Mystic Enchant does not stack with the Shadow Reach Talent.",
-   "iconFile": "spell_shadow_chilltouch",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_chilltouch.jpg?v=bf6768d5",
    "requiredLevel": 45
   },
   {
    "key": "shadow_weaving",
    "name": "Shadow Weaving",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nYour Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec.  Stacks up to 5 times.\n\nThis Mystic Enchant does not stack with the Shadow Weaving Talent.",
-   "iconFile": "spell_shadow_blackplague",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_blackplague.jpg?v=0737a7b6",
    "requiredLevel": 45
   },
   {
    "key": "silent_resolve",
    "name": "Silent Resolve",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nReduces the threat generated by your Holy and Discipline spells by 20% and reduces the chance your helpful spells and damage over time effects will be dispelled by 30%.\n\nThis Mystic Enchant does not stack with the Silent Resolve Talent.",
-   "iconFile": "spell_nature_manaregentotem",
+   "icon": "assets/game/priest/mystic-enchants/spell_nature_manaregentotem.jpg?v=0dd2f3fa",
    "requiredLevel": 45
   },
   {
    "key": "spell_warding",
    "name": "Spell Warding",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces all spell damage taken by 10%.\n\nThis Mystic Enchant does not stack with the Spell Warding Talent.",
-   "iconFile": "spell_holy_spellwarding",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_spellwarding.jpg?v=f2a1fcfe",
    "requiredLevel": 45
   },
   {
    "key": "spirit_tap",
    "name": "Spirit Tap",
    "rarity": "rare",
-   "spec": "Shadow",
+   "specs": [
+    "Shadow"
+   ],
    "tooltip": "Crossover Talent\nGives you a 100% chance to gain a 100% bonus to your Spirit after killing a target that yields experience or honor.  For the duration, your mana will regenerate at a 100% rate while casting.  Lasts 15 sec.\n\nThis Mystic Enchant does not stack with the Spirit Tap Talent.",
-   "iconFile": "spell_shadow_requiem",
+   "icon": "assets/game/priest/mystic-enchants/spell_shadow_requiem.jpg?v=564ea500",
    "requiredLevel": 45
   },
   {
    "key": "twin_disciplines",
    "name": "Twin Disciplines",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage and healing done by your instant spells by 5%.\n\nThis Mystic Enchant does not stack with the Twin Disciplines Talent.",
-   "iconFile": "spell_holy_sealofvengeance",
+   "icon": "assets/game/priest/mystic-enchants/spell_holy_sealofvengeance.jpg?v=2988cc06",
    "requiredLevel": 45
   },
   {
    "key": "unbreakable_will",
    "name": "Unbreakable Will",
    "rarity": "rare",
-   "spec": "Discipline",
+   "specs": [
+    "Discipline"
+   ],
    "tooltip": "Crossover Talent\nReduces the duration of Stun, Fear, and Silence effects done to you by an additional 30%.\n\nThis Mystic Enchant does not stack with the Unbreakable Will Talent.",
-   "iconFile": "spell_magic_magearmor",
+   "icon": "assets/game/priest/mystic-enchants/spell_magic_magearmor.jpg?v=a0653142",
    "requiredLevel": 45
   }
  ],
@@ -2932,7 +3199,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Dispels magic on the target, removing 2 harmful spells from a friend or 2 beneficial spells from an enemy.",
-   "iconFile": "spell_holy_dispelmagic",
+   "icon": "assets/game/priest/abilities/spell_holy_dispelmagic.jpg?v=d10d1744",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2948,7 +3215,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Holy power infuses the target, increasing their Spirit by 40 for 30 min.",
-   "iconFile": "spell_holy_divinespirit",
+   "icon": "assets/game/priest/abilities/spell_holy_divinespirit.jpg?v=26ae9418",
    "costValue": "0.26",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2965,7 +3232,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Wards the friendly target against Fear.  The next Fear effect used against the target will fail, using up the ward.  Lasts 3 min.",
-   "iconFile": "spell_holy_excorcism",
+   "icon": "assets/game/priest/abilities/spell_holy_excorcism.jpg?v=1f8aa857",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2983,7 +3250,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "A burst of Holy energy fills the caster, increasing armor by 1395 and spell power by 42.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts 30 min or until 20 charges are used.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/priest/abilities/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2999,7 +3266,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Allows the friendly party or raid target to levitate, floating a few feet above the ground.  While levitating, the target will fall at a reduced speed and travel over water.  Any damage will cancel the effect.  Lasts 2 min.",
-   "iconFile": "spell_holy_layonhands",
+   "icon": "assets/game/priest/abilities/spell_holy_layonhands.jpg?v=e3bc35ab",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3016,7 +3283,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Destroy 10% of the target's mana (up to a maximum of 20% of your own maximum mana). For each mana destroyed in this way, the target takes 0.5 Shadow damage.",
-   "iconFile": "spell_shadow_manaburn",
+   "icon": "assets/game/priest/abilities/spell_shadow_manaburn.jpg?v=94096be0",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3032,7 +3299,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Dispels magic in a 15 yard radius, removing 1 harmful spell from each friendly target and 1 beneficial spell from each enemy target.  Affects a maximum of 10 friendly targets and 10 enemy targets.  This dispel is potent enough to remove Magic effects that are normally undispellable.",
-   "iconFile": "spell_arcane_massdispel",
+   "icon": "assets/game/priest/abilities/spell_arcane_massdispel.jpg?v=2b6821b9",
    "costValue": "0.33",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3048,7 +3315,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Instantly reduces a friendly target's threat by 5%, reduces all damage taken by 40% and increases resistance to Dispel mechanics by 65% for 8 sec.",
-   "iconFile": "spell_holy_painsupression"
+   "icon": "assets/game/priest/abilities/spell_holy_painsupression.jpg?v=e81432c0"
   },
   {
    "key": "penance",
@@ -3060,7 +3327,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Launches a volley of holy light at the target, causing 205 Holy damage to an enemy, or 570 to 643 healing to an ally instantly and every 0.95 sec for 2 sec.",
-   "iconFile": "spell_holy_penance"
+   "icon": "assets/game/priest/abilities/spell_holy_penance.jpg?v=fdccb7e2"
   },
   {
    "key": "power_word_fortitude",
@@ -3072,7 +3339,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Power infuses the target, increasing their Stamina by 54 for 30 min.",
-   "iconFile": "spell_holy_wordfortitude",
+   "icon": "assets/game/priest/abilities/spell_holy_wordfortitude.jpg?v=eb27e947",
    "costValue": "0.27",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3089,7 +3356,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Draws on the soul of the friendly target to shield them, absorbing 679 damage.  Lasts 30 sec.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for 15 sec.",
-   "iconFile": "spell_holy_powerwordshield",
+   "icon": "assets/game/priest/abilities/spell_holy_powerwordshield.jpg?v=3da2a601",
    "costValue": "0.23",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3107,7 +3374,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Shackles the target undead enemy for up to 50 sec.  The shackled unit is unable to move, attack or cast spells.  Any damage caused will release the target.  Only one target can be shackled at a time.",
-   "iconFile": "spell_nature_slow",
+   "icon": "assets/game/priest/abilities/spell_nature_slow.jpg?v=85f9fa47",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3124,7 +3391,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Attempts to cure 1 disease effect on the target, and 1 more disease effect every 3 seconds for 12 sec.",
-   "iconFile": "spell_nature_nullifydisease",
+   "icon": "assets/game/priest/abilities/spell_nature_nullifydisease.jpg?v=875567ea",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3141,7 +3408,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target and the caster for 541.  Low threat.",
-   "iconFile": "spell_holy_blindingheal",
+   "icon": "assets/game/priest/abilities/spell_holy_blindingheal.jpg?v=b45b8306",
    "costValue": "0.27",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3163,7 +3430,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Heals up to 5 friendly party or raid members within 15 yards of the target for 347.",
-   "iconFile": "spell_holy_circleofrenewal",
+   "icon": "assets/game/priest/abilities/spell_holy_circleofrenewal.jpg?v=745aae31",
    "scaling": [
     {
      "stat": "BH",
@@ -3181,7 +3448,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Removes 1 disease from the friendly target.",
-   "iconFile": "spell_holy_nullifydisease",
+   "icon": "assets/game/priest/abilities/spell_holy_nullifydisease.jpg?v=03c1624a",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3197,7 +3464,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Instantly heals the caster for 333.",
-   "iconFile": "spell_holy_restoration",
+   "icon": "assets/game/priest/abilities/spell_holy_restoration.jpg?v=202162e8",
    "scaling": [
     {
      "stat": "BH",
@@ -3215,7 +3482,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals 3 nearby lowest health friendly party or raid targets within 40 yards for 1101 to 1240 every 2 sec for 8 sec, and increases healing done to them by 10% for 8 sec. Maximum of 12 heals. The Priest must channel to maintain the spell.",
-   "iconFile": "spell_holy_divinehymn",
+   "icon": "assets/game/priest/abilities/spell_holy_divinehymn.jpg?v=923ccf96",
    "costValue": "0.63",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3233,7 +3500,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 596.",
-   "iconFile": "spell_holy_flashheal",
+   "icon": "assets/game/priest/abilities/spell_holy_flashheal.jpg?v=fe050e5d",
    "costValue": "0.18",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3255,7 +3522,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "A slow casting spell that heals a single target for 1416.",
-   "iconFile": "spell_holy_greaterheal",
+   "icon": "assets/game/priest/abilities/spell_holy_greaterheal.jpg?v=3ca40f3b",
    "costValue": "0.29",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3277,7 +3544,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Calls upon a guardian spirit to watch over the friendly target. The spirit increases the healing received by the target by 40%, and also prevents the target from dying by sacrificing itself.  This sacrifice terminates the effect but heals the target of 50% of their maximum health. Lasts 10 sec.",
-   "iconFile": "spell_holy_guardianspirit"
+   "icon": "assets/game/priest/abilities/spell_holy_guardianspirit.jpg?v=11b44338"
   },
   {
    "key": "holy_fire",
@@ -3289,7 +3556,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Consumes the enemy in Holy flames that cause 797 to 979 Holy damage and an additional 203 Holy damage over 7 sec.",
-   "iconFile": "spell_holy_searinglight",
+   "icon": "assets/game/priest/abilities/spell_holy_searinglight.jpg?v=0249f8ad",
    "costValue": "0.11",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3307,7 +3574,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes an explosion of holy light around the caster, causing 181 to 209 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 218 to 252.  These effects cause no threat.",
-   "iconFile": "spell_holy_holynova",
+   "icon": "assets/game/priest/abilities/spell_holy_holynova.jpg?v=70e86665",
    "costValue": "0.2",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3322,7 +3589,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Restores 3% mana to 3 nearby low mana friendly party or raid targets every 1 sec for 8 sec, and increases their total maximum mana by 20% for 8 sec. Maximum of 12 mana restores. The Priest must channel to maintain the spell.",
-   "iconFile": "spell_holy_symbolofhope",
+   "icon": "assets/game/priest/abilities/spell_holy_symbolofhope.jpg?v=9a84b011",
    "cooldown": "6 min",
    "duration": "8 sec",
    "range": 40
@@ -3337,7 +3604,7 @@
    "castTime": 2.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heal your target for 162.",
-   "iconFile": "spell_holy_lesserheal",
+   "icon": "assets/game/priest/abilities/spell_holy_lesserheal.jpg?v=dd909e04",
    "costValue": "0.27",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3359,7 +3626,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Creates a Holy Lightwell. \n\nLightwell will attempt to heal a nearby party or raid member within 20 yards every second if they have less than 50% health for 876.68. \n\nLightwell lasts for 30 seconds or until it heals 10 times.",
-   "iconFile": "spell_holy_summonlightwell"
+   "icon": "assets/game/priest/abilities/spell_holy_summonlightwell.jpg?v=23b61bf7"
   },
   {
    "key": "prayer_of_healing",
@@ -3371,7 +3638,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "A powerful prayer heals the friendly target's party members within 30 yards for 718.",
-   "iconFile": "spell_holy_prayerofhealing02",
+   "icon": "assets/game/priest/abilities/spell_holy_prayerofhealing02.jpg?v=10f417fd",
    "costValue": "0.48",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3393,7 +3660,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Places a spell on the target that heals them for 372 the next time they take damage.  When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards.  Jumps up to 5 times and lasts 30 sec after each jump.  This spell can only be placed on one target at a time.",
-   "iconFile": "spell_holy_prayerofmendingtga",
+   "icon": "assets/game/priest/abilities/spell_holy_prayerofmendingtga.jpg?v=3bacbb84",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3410,7 +3677,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals the target for 700 over 15 sec.",
-   "iconFile": "spell_holy_renew",
+   "icon": "assets/game/priest/abilities/spell_holy_renew.jpg?v=977a1c8b",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3427,7 +3694,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Brings a dead player back to life with 750 health and 1000 mana.  Cannot be cast when in combat.",
-   "iconFile": "spell_holy_resurrection",
+   "icon": "assets/game/priest/abilities/spell_holy_resurrection.jpg?v=8a8a9284",
    "costValue": "0.6",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3443,7 +3710,7 @@
    "castTime": 2.5,
    "gcd": 1.5,
    "tooltipTemplate": "Smite an enemy for 384 to 428 Holy damage.",
-   "iconFile": "spell_holy_holysmite",
+   "icon": "assets/game/priest/abilities/spell_holy_holysmite.jpg?v=f7735432",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3459,7 +3726,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Afflicts the target with a disease that causes 976 Shadow damage over 24 sec. 15% of damage caused by the Devouring Plague heals the caster. This spell can only affect one target at a time.",
-   "iconFile": "spell_shadow_devouringplague",
+   "icon": "assets/game/priest/abilities/spell_shadow_devouringplague.jpg?v=841bfbc7",
    "costValue": "0.25",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3476,7 +3743,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You disperse into pure Shadow energy, reducing all damage taken by 90%.  You are unable to attack or cast spells, but you regenerate 6% mana every 1 sec for 6 sec. Dispersion can be cast while stunned, feared or silenced and clears all snare and movement impairing effects when cast, and makes you immune to them while dispersed.",
-   "iconFile": "spell_shadow_dispersion"
+   "icon": "assets/game/priest/abilities/spell_shadow_dispersion.jpg?v=e847ea56"
   },
   {
    "key": "fade",
@@ -3488,7 +3755,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fade out, temporarily reducing all your threat for 10 sec.",
-   "iconFile": "spell_magic_lesserinvisibilty",
+   "icon": "assets/game/priest/abilities/spell_magic_lesserinvisibilty.jpg?v=0da63e08",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3505,7 +3772,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Blasts the target for 508 to 536 Shadow damage.",
-   "iconFile": "spell_shadow_unholyfrenzy",
+   "icon": "assets/game/priest/abilities/spell_shadow_unholyfrenzy.jpg?v=cd4c3920",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3522,7 +3789,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Controls a humanoid mind up to level 62, but increases the time between its attacks by 25%.  Lasts up to 10 sec.\n\nThis spell only works versus players.",
-   "iconFile": "spell_shadow_shadowworddominate",
+   "icon": "assets/game/priest/abilities/spell_shadow_shadowworddominate.jpg?v=10f6799e",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3539,7 +3806,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Assault the target's mind with Shadow energy, causing 363 Shadow damage over 3 sec and slowing their movement speed by 50%.",
-   "iconFile": "spell_shadow_siphonmana",
+   "icon": "assets/game/priest/abilities/spell_shadow_siphonmana.jpg?v=2f0053ef",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3556,7 +3823,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes an explosion of shadow magic around the enemy target, causing 101 to 108 Shadow damage every 1 sec for 5 sec to all enemies within 10 yards around the target.",
-   "iconFile": "spell_shadow_mindshear",
+   "icon": "assets/game/priest/abilities/spell_shadow_mindshear.jpg?v=17cda715",
    "costValue": "0.28",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3573,7 +3840,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Soothes the target, reducing the range at which it will attack you by 10 yards.  Only affects Humanoid targets.  Lasts 15 sec.",
-   "iconFile": "spell_holy_mindsooth",
+   "icon": "assets/game/priest/abilities/spell_holy_mindsooth.jpg?v=ecba50fb",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3590,7 +3857,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Allows the caster to see through the target's eyes for 1 min.  Will not work if the target is in another instance or on another continent.",
-   "iconFile": "spell_holy_mindvision",
+   "icon": "assets/game/priest/abilities/spell_holy_mindvision.jpg?v=e483f02a",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3607,7 +3874,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You terrify the target, causing them to tremble in horror for 3 sec and drop their main hand and ranged weapons for 10 sec.",
-   "iconFile": "spell_shadow_psychichorrors"
+   "icon": "assets/game/priest/abilities/spell_shadow_psychichorrors.jpg?v=a7a1a406"
   },
   {
    "key": "psychic_scream",
@@ -3619,7 +3886,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "The caster lets out a psychic scream, causing 5 enemies within 8 yards to flee for 8 sec.  Damage caused may interrupt the effect.",
-   "iconFile": "spell_shadow_psychicscream",
+   "icon": "assets/game/priest/abilities/spell_shadow_psychicscream.jpg?v=5d90952e",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3636,7 +3903,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increases the target's resistance to Shadow spells by 60 for 30 min.",
-   "iconFile": "spell_shadow_antishadow",
+   "icon": "assets/game/priest/abilities/spell_shadow_antishadow.jpg?v=e2b0b420",
    "costValue": "0.31",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3653,7 +3920,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "A word of dark binding that inflicts 585 to 679 Shadow damage to the target.  If the target is not killed by Shadow Word: Death, the caster takes damage equal to the damage inflicted upon the target.",
-   "iconFile": "spell_shadow_demonicfortitude",
+   "icon": "assets/game/priest/abilities/spell_shadow_demonicfortitude.jpg?v=88d769d3",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3670,7 +3937,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "A word of darkness that causes 798 Shadow damage over 18 sec.",
-   "iconFile": "spell_shadow_shadowwordpain",
+   "icon": "assets/game/priest/abilities/spell_shadow_shadowwordpain.jpg?v=b37fcc7d",
    "costValue": "0.22",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3687,7 +3954,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Creates a shadowy fiend to attack the target.  Caster receives 5% mana when the Shadowfiend attacks. Damage taken by area of effect attacks is reduced. Lasts 15 sec.",
-   "iconFile": "spell_shadow_shadowfiend",
+   "icon": "assets/game/priest/abilities/spell_shadow_shadowfiend.jpg?v=c40d14ae",
    "cooldown": "5 min",
    "duration": "15 sec",
    "range": 30
@@ -3702,7 +3969,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Causes 505 Shadow damage over 15 sec to your target and causes up to 10 party or raid members to gain 1% of their maximum mana per 5 sec when you deal damage from Mind Blast. In addition, if the Vampiric Touch is dispelled it will cause 808 damage to the afflicted target.",
-   "iconFile": "spell_holy_stoicism"
+   "icon": "assets/game/priest/abilities/spell_holy_stoicism.jpg?v=100e595c"
   }
  ]
 }

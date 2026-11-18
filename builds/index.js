@@ -1,0 +1,46 @@
+window.ASC_BUILDS = [
+ {
+  "file": "warlock-affliction-sample.json",
+  "name": "Affliction 51 (sample)",
+  "class": "warlock",
+  "focus": "PvE — sample allocation to demo the build pipeline",
+  "total": 51,
+  "notes": "Replace with real theorycraft-session builds. Produced to verify builds/ loading end to end.",
+  "points": {
+   "improved_curse_of_agony": 2,
+   "suppression": 3,
+   "improved_corruption": 5,
+   "improved_drain_soul": 2,
+   "improved_life_tap": 2,
+   "soul_siphon": 2,
+   "fel_concentration": 3,
+   "amplify_curse": 1,
+   "nightfall": 2,
+   "empowered_corruption": 3,
+   "shadow_embrace": 4,
+   "siphon_life": 1,
+   "shadow_mastery": 5,
+   "contagion": 3,
+   "dark_pact": 1,
+   "malediction": 3,
+   "deaths_embrace": 3,
+   "unstable_affliction": 1,
+   "pandemic": 1,
+   "everlasting_affliction": 3,
+   "haunt": 1
+  },
+  "enchants": [
+   "affliction_mastery",
+   "eternal_torment",
+   "agonizing_coil",
+   "dark_harvest",
+   "blood_horror",
+   "glyph_of_haunt",
+   "glyph_of_corruption",
+   "glyph_of_unstable_affliction",
+   "glyph_of_curse_of_agony",
+   "glyph_of_quick_decay",
+   "glyph_of_life_tap"
+  ]
+ }
+];

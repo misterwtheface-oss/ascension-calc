@@ -8,17 +8,17 @@
   {
    "name": "Balance",
    "accent": "#8060A8",
-   "background": "assets/game/druid/backgrounds/druidbalance.jpg"
+   "background": "assets/game/druid/backgrounds/druidbalance.jpg?v=e15ec0fa"
   },
   {
    "name": "Feral",
    "accent": "#B86820",
-   "background": "assets/game/druid/backgrounds/druidferalcombat.jpg"
+   "background": "assets/game/druid/backgrounds/druidferalcombat.jpg?v=d7974bcf"
   },
   {
    "name": "Restoration",
    "accent": "#408840",
-   "background": "assets/game/druid/backgrounds/druidrestoration.jpg"
+   "background": "assets/game/druid/backgrounds/druidrestoration.jpg?v=c8e7c040"
   }
  ],
  "talents": {
@@ -37,7 +37,7 @@
      2
     ]
    ],
-   "iconFile": "spell_nature_regeneration"
+   "icon": "assets/game/druid/talents/spell_nature_regeneration.jpg?v=2376ec2f"
   },
   "natures_focus": {
    "name": "Nature's Focus",
@@ -55,7 +55,7 @@
      70
     ]
    ],
-   "iconFile": "spell_nature_healingwavegreater"
+   "icon": "assets/game/druid/talents/spell_nature_healingwavegreater.jpg?v=3b1060ad"
   },
   "furor": {
    "name": "Furor",
@@ -89,7 +89,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_blessingofstamina"
+   "icon": "assets/game/druid/talents/spell_holy_blessingofstamina.jpg?v=16c23fb3"
   },
   "naturalist": {
    "name": "Naturalist",
@@ -118,7 +118,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_healingtouch"
+   "icon": "assets/game/druid/talents/spell_nature_healingtouch.jpg?v=c844fae8"
   },
   "subtlety": {
    "name": "Subtlety",
@@ -139,7 +139,7 @@
      30
     ]
    ],
-   "iconFile": "ability_eyeoftheowl"
+   "icon": "assets/game/druid/talents/ability_eyeoftheowl.jpg?v=dec37540"
   },
   "natural_shapeshifter": {
    "name": "Natural Shapeshifter",
@@ -157,7 +157,7 @@
      30
     ]
    ],
-   "iconFile": "spell_nature_wispsplode"
+   "icon": "assets/game/druid/talents/spell_nature_wispsplode.jpg?v=76f130c3"
   },
   "intensity": {
    "name": "Intensity",
@@ -178,14 +178,14 @@
      15
     ]
    ],
-   "iconFile": "spell_frost_windwalkon"
+   "icon": "assets/game/druid/talents/spell_frost_windwalkon.jpg?v=3786c3f2"
   },
   "omen_of_clarity": {
    "name": "Omen of Clarity",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Each of the Druid's damage, healing spells and auto attacks has a chance of causing the caster to enter a Clearcasting state. The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by 100%.",
-   "iconFile": "spell_nature_crystalball"
+   "icon": "assets/game/druid/talents/spell_nature_crystalball.jpg?v=9c69288b"
   },
   "master_shapeshifter": {
    "name": "Master Shapeshifter",
@@ -206,7 +206,7 @@
      4
     ]
    ],
-   "iconFile": "ability_druid_mastershapeshifter"
+   "icon": "assets/game/druid/talents/ability_druid_mastershapeshifter.jpg?v=5d4e6268"
   },
   "tranquil_spirit": {
    "name": "Tranquil Spirit",
@@ -230,7 +230,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_elunesgrace"
+   "icon": "assets/game/druid/talents/spell_holy_elunesgrace.jpg?v=cd097d42"
   },
   "improved_rejuvenation": {
    "name": "Improved Rejuvenation",
@@ -248,14 +248,14 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_rejuvenation"
+   "icon": "assets/game/druid/talents/spell_nature_rejuvenation.jpg?v=ae70ca4d"
   },
   "natures_swiftness": {
    "name": "Nature's Swiftness",
    "maxPts": 1,
    "prereq": "intensity",
    "tooltipTemplate": "When activated, your next Nature spell with a base casting time less than 10 sec. becomes an instant cast spell.",
-   "iconFile": "spell_nature_ravenform"
+   "icon": "assets/game/druid/talents/spell_nature_ravenform.jpg?v=46ef69f1"
   },
   "gift_of_nature": {
    "name": "Gift of Nature",
@@ -279,7 +279,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_protectionformnature"
+   "icon": "assets/game/druid/talents/spell_nature_protectionformnature.jpg?v=ebef1261"
   },
   "improved_tranquility": {
    "name": "Improved Tranquility",
@@ -296,7 +296,7 @@
      60
     ]
    ],
-   "iconFile": "spell_nature_tranquility"
+   "icon": "assets/game/druid/talents/spell_nature_tranquility.jpg?v=b66dfe7e"
   },
   "empowered_touch": {
    "name": "Empowered Touch",
@@ -313,7 +313,7 @@
      20
     ]
    ],
-   "iconFile": "ability_druid_empoweredtouch"
+   "icon": "assets/game/druid/talents/ability_druid_empoweredtouch.jpg?v=b5f960a8"
   },
   "natures_bounty": {
    "name": "Nature's Bounty",
@@ -337,7 +337,7 @@
      25
     ]
    ],
-   "iconFile": "spell_nature_resistnature"
+   "icon": "assets/game/druid/talents/spell_nature_resistnature.jpg?v=7a6a6b45"
   },
   "living_spirit": {
    "name": "Living Spirit",
@@ -355,14 +355,14 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_giftofthewaterspirit"
+   "icon": "assets/game/druid/talents/spell_nature_giftofthewaterspirit.jpg?v=3ddbf0b6"
   },
   "swiftmend": {
    "name": "Swiftmend",
    "maxPts": 1,
    "prereq": "gift_of_nature",
    "tooltipTemplate": "Instantly heals a friendly target affected by your Rejuvenation or Regrowth for an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.",
-   "iconFile": "inv_relics_idolofrejuvenation"
+   "icon": "assets/game/druid/talents/inv_relics_idolofrejuvenation.jpg?v=34eee839"
   },
   "natural_perfection": {
    "name": "Natural Perfection",
@@ -383,7 +383,7 @@
      4
     ]
    ],
-   "iconFile": "ability_druid_naturalperfection"
+   "icon": "assets/game/druid/talents/ability_druid_naturalperfection.jpg?v=ae67e974"
   },
   "empowered_rejuvenation": {
    "name": "Empowered Rejuvenation",
@@ -401,7 +401,7 @@
      20
     ]
    ],
-   "iconFile": "ability_druid_empoweredrejuvination"
+   "icon": "assets/game/druid/talents/ability_druid_empoweredrejuvination.jpg?v=db35a367"
   },
   "living_seed": {
    "name": "Living Seed",
@@ -419,7 +419,7 @@
      100
     ]
    ],
-   "iconFile": "ability_druid_giftoftheearthmother"
+   "icon": "assets/game/druid/talents/ability_druid_giftoftheearthmother.jpg?v=9dd01838"
   },
   "revitalize": {
    "name": "Revitalize",
@@ -437,14 +437,14 @@
      15
     ]
    ],
-   "iconFile": "ability_druid_replenish"
+   "icon": "assets/game/druid/talents/ability_druid_replenish.jpg?v=0f45c887"
   },
   "tree_of_life": {
    "name": "Tree of Life",
    "maxPts": 1,
    "prereq": "empowered_rejuvenation",
    "tooltipTemplate": "Grants the ability to shapeshift into the Tree of Life. While in this form you increase healing received by 6% for all party and raid members within 100 yards, reduces the mana cost of your healing over time spells by 20% and you can only cast Restoration spells in addition to Innervate, Barkskin, Nature's Grasp and Thorns spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_treeoflife",
+   "icon": "assets/game/druid/talents/ability_druid_treeoflife.jpg?v=9435dadb",
    "active": true
   },
   "improved_tree_of_life": {
@@ -466,7 +466,7 @@
      15
     ]
    ],
-   "iconFile": "ability_druid_improvedtreeform"
+   "icon": "assets/game/druid/talents/ability_druid_improvedtreeform.jpg?v=bda1b443"
   },
   "improved_barkskin": {
    "name": "Improved Barkskin",
@@ -485,7 +485,7 @@
      70
     ]
    ],
-   "iconFile": "spell_nature_stoneclawtotem"
+   "icon": "assets/game/druid/talents/spell_nature_stoneclawtotem.jpg?v=9c914645"
   },
   "gift_of_the_earthmother": {
    "name": "Gift of the Earthmother",
@@ -506,14 +506,14 @@
      -10
     ]
    ],
-   "iconFile": "ability_druid_manatree"
+   "icon": "assets/game/druid/talents/ability_druid_manatree.jpg?v=695b3681"
   },
   "wild_growth": {
    "name": "Wild Growth",
    "maxPts": 1,
    "prereq": "tree_of_life",
    "tooltipTemplate": "Heals up to 5 friendly party or raid members within 15 yards of the target for 686 over 7 sec. The amount healed is applied quickly at first, and slows down as the Wild Growth reaches its full duration.",
-   "iconFile": "ability_druid_flourish",
+   "icon": "assets/game/druid/talents/ability_druid_flourish.jpg?v=f07f88e9",
    "active": true
   },
   "ferocity": {
@@ -538,7 +538,7 @@
      5
     ]
    ],
-   "iconFile": "ability_hunter_pet_hyena"
+   "icon": "assets/game/druid/talents/ability_hunter_pet_hyena.jpg?v=4776f770"
   },
   "feral_aggression": {
    "name": "Feral Aggression",
@@ -567,7 +567,7 @@
      15
     ]
    ],
-   "iconFile": "ability_druid_demoralizingroar"
+   "icon": "assets/game/druid/talents/ability_druid_demoralizingroar.jpg?v=fc636197"
   },
   "feral_instinct": {
    "name": "Feral Instinct",
@@ -585,7 +585,7 @@
      30
     ]
    ],
-   "iconFile": "ability_ambush"
+   "icon": "assets/game/druid/talents/ability_ambush.jpg?v=82ac5e06"
   },
   "savage_fury": {
    "name": "Savage Fury",
@@ -600,7 +600,7 @@
      20
     ]
    ],
-   "iconFile": "ability_druid_ravage"
+   "icon": "assets/game/druid/talents/ability_druid_ravage.jpg?v=1f3fb404"
   },
   "thick_hide": {
    "name": "Thick Hide",
@@ -618,7 +618,7 @@
      10
     ]
    ],
-   "iconFile": "inv_misc_pelt_bear_03"
+   "icon": "assets/game/druid/talents/inv_misc_pelt_bear_03.jpg?v=8ab3f9a9"
   },
   "feral_swiftness": {
    "name": "Feral Swiftness",
@@ -635,14 +635,14 @@
      4
     ]
    ],
-   "iconFile": "spell_nature_spiritwolf"
+   "icon": "assets/game/druid/talents/spell_nature_spiritwolf.jpg?v=c303f435"
   },
   "survival_instincts": {
    "name": "Survival Instincts",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec while in Bear Form, Cat Form, or Dire Bear Form.  After the effect expires, the health is lost.",
-   "iconFile": "ability_druid_tigersroar",
+   "icon": "assets/game/druid/talents/ability_druid_tigersroar.jpg?v=ee53e40f",
    "active": true
   },
   "sharpened_claws": {
@@ -661,7 +661,7 @@
      9
     ]
    ],
-   "iconFile": "inv_misc_monsterclaw_04"
+   "icon": "assets/game/druid/talents/inv_misc_monsterclaw_04.jpg?v=dc4d9dd1"
   },
   "shredding_attacks": {
    "name": "Shredding Attacks",
@@ -678,7 +678,7 @@
      2
     ]
    ],
-   "iconFile": "spell_shadow_vampiricaura"
+   "icon": "assets/game/druid/talents/spell_shadow_vampiricaura.jpg?v=b9dead30"
   },
   "predatory_strikes": {
    "name": "Predatory Strikes",
@@ -702,14 +702,14 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_pet_cat"
+   "icon": "assets/game/druid/talents/ability_hunter_pet_cat.jpg?v=8abb8f86"
   },
   "primal_fury": {
    "name": "Primal Fury",
    "maxPts": 2,
    "prereq": "sharpened_claws",
    "tooltipTemplate": "Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point.",
-   "iconFile": "ability_racial_cannibalize"
+   "icon": "assets/game/druid/talents/ability_racial_cannibalize.jpg?v=59ea1460"
   },
   "primal_precision": {
    "name": "Primal Precision",
@@ -726,7 +726,7 @@
      80
     ]
    ],
-   "iconFile": "ability_druid_primalprecision"
+   "icon": "assets/game/druid/talents/ability_druid_primalprecision.jpg?v=2c45e997"
   },
   "brutal_impact": {
    "name": "Brutal Impact",
@@ -743,14 +743,14 @@
      30
     ]
    ],
-   "iconFile": "ability_druid_bash"
+   "icon": "assets/game/druid/talents/ability_druid_bash.jpg?v=e5d07875"
   },
   "feral_charge": {
    "name": "Feral Charge",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Teaches Feral Charge (Bear) and Feral Charge (Cat).\n\nFeral Charge (Bear) - Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. This ability can be used in Bear Form and Dire Bear Form. 15 second cooldown.\n\nFeral Charge (Cat) - Causes you to leap behind an enemy, dazing them for 3 sec. 30 second cooldown.",
-   "iconFile": "ability_hunter_pet_bear",
+   "icon": "assets/game/druid/talents/ability_hunter_pet_bear.jpg?v=a23cbeaf",
    "active": true
   },
   "nurturing_instinct": {
@@ -768,7 +768,7 @@
      20
     ]
    ],
-   "iconFile": "ability_druid_healinginstincts"
+   "icon": "assets/game/druid/talents/ability_druid_healinginstincts.jpg?v=c47e0ea8"
   },
   "natural_reaction": {
    "name": "Natural Reaction",
@@ -789,7 +789,7 @@
      3
     ]
    ],
-   "iconFile": "ability_bullrush"
+   "icon": "assets/game/druid/talents/ability_bullrush.jpg?v=cdc5bf42"
   },
   "heart_of_the_wild": {
    "name": "Heart of the Wild",
@@ -823,7 +823,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_blessingofagility"
+   "icon": "assets/game/druid/talents/spell_holy_blessingofagility.jpg?v=8af5089b"
   },
   "survival_of_the_fittest": {
    "name": "Survival of the Fittest",
@@ -847,14 +847,14 @@
      33
     ]
    ],
-   "iconFile": "ability_druid_enrage"
+   "icon": "assets/game/druid/talents/ability_druid_enrage.jpg?v=deb8d00a"
   },
   "leader_of_the_pack": {
    "name": "Leader of the Pack",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party and raid members within 100 yards by 5%.",
-   "iconFile": "spell_nature_unyeildingstamina"
+   "icon": "assets/game/druid/talents/spell_nature_unyeildingstamina.jpg?v=44e7a298"
   },
   "improved_leader_of_the_pack": {
    "name": "Improved Leader of the Pack",
@@ -871,7 +871,7 @@
      8
     ]
    ],
-   "iconFile": "spell_nature_unyeildingstamina"
+   "icon": "assets/game/druid/talents/spell_nature_unyeildingstamina.jpg?v=44e7a298"
   },
   "primal_tenacity": {
    "name": "Primal Tenacity",
@@ -892,7 +892,7 @@
      30
     ]
    ],
-   "iconFile": "ability_druid_primaltenacity"
+   "icon": "assets/game/druid/talents/ability_druid_primaltenacity.jpg?v=afab87e5"
   },
   "protector_of_the_pack": {
    "name": "Protector of the Pack",
@@ -913,7 +913,7 @@
      12
     ]
    ],
-   "iconFile": "ability_druid_challangingroar"
+   "icon": "assets/game/druid/talents/ability_druid_challangingroar.jpg?v=e7a259b6"
   },
   "predatory_instincts": {
    "name": "Predatory Instincts",
@@ -934,7 +934,7 @@
      30
     ]
    ],
-   "iconFile": "ability_druid_predatoryinstincts"
+   "icon": "assets/game/druid/talents/ability_druid_predatoryinstincts.jpg?v=68125e85"
   },
   "infected_wounds": {
    "name": "Infected Wounds",
@@ -955,7 +955,7 @@
      20
     ]
    ],
-   "iconFile": "ability_druid_infectedwound"
+   "icon": "assets/game/druid/talents/ability_druid_infectedwound.jpg?v=1c38b1eb"
   },
   "king_of_the_jungle": {
    "name": "King of the Jungle",
@@ -979,14 +979,14 @@
      60
     ]
    ],
-   "iconFile": "ability_druid_kingofthejungle"
+   "icon": "assets/game/druid/talents/ability_druid_kingofthejungle.jpg?v=770b68c7"
   },
   "mangle": {
    "name": "Mangle",
    "maxPts": 1,
    "prereq": "leader_of_the_pack",
    "tooltipTemplate": "Mangle the target, inflicting damage and causing the target to take additional damage from bleed effects for 1 min.  This ability can be used in Cat Form or Dire Bear Form.",
-   "iconFile": "ability_druid_mangle2",
+   "icon": "assets/game/druid/talents/ability_druid_mangle2.jpg?v=b3992726",
    "active": true
   },
   "improved_mangle": {
@@ -1004,7 +1004,7 @@
      6
     ]
    ],
-   "iconFile": "ability_druid_mangle2"
+   "icon": "assets/game/druid/talents/ability_druid_mangle2.jpg?v=b3992726"
   },
   "rend_and_tear": {
    "name": "Rend and Tear",
@@ -1025,21 +1025,21 @@
      25
     ]
    ],
-   "iconFile": "ability_druid_primalagression"
+   "icon": "assets/game/druid/talents/ability_druid_primalagression.jpg?v=d1d5af46"
   },
   "primal_gore": {
    "name": "Primal Gore",
    "maxPts": 1,
    "prereq": "rend_and_tear",
    "tooltipTemplate": "Grants the periodic damage from your Lacerate, Thrash, Rake and Rip abilities the ability to critically hit.",
-   "iconFile": "ability_druid_rake"
+   "icon": "assets/game/druid/talents/ability_druid_rake.jpg?v=6f7f2131"
   },
   "berserk": {
    "name": "Berserk",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%.  Lasts 15 sec.  You cannot use Tiger's Fury while Berserk is active.\n\nClears the effect of Fear and makes you immune to Fear for the duration.",
-   "iconFile": "ability_druid_berserk",
+   "icon": "assets/game/druid/talents/ability_druid_berserk.jpg?v=1e6e261e",
    "active": true
   },
   "starlight_wrath": {
@@ -1064,7 +1064,7 @@
      0.5
     ]
    ],
-   "iconFile": "spell_nature_abolishmagic"
+   "icon": "assets/game/druid/talents/spell_nature_abolishmagic.jpg?v=bacec6cf"
   },
   "genesis": {
    "name": "Genesis",
@@ -1088,7 +1088,7 @@
      5
     ]
    ],
-   "iconFile": "spell_arcane_arcane03"
+   "icon": "assets/game/druid/talents/spell_arcane_arcane03.jpg?v=e583af56"
   },
   "moonglow": {
    "name": "Moonglow",
@@ -1106,7 +1106,7 @@
      12
     ]
    ],
-   "iconFile": "spell_nature_sentinal"
+   "icon": "assets/game/druid/talents/spell_nature_sentinal.jpg?v=ef8ffd15"
   },
   "natures_majesty": {
    "name": "Nature's Majesty",
@@ -1121,7 +1121,7 @@
      4
     ]
    ],
-   "iconFile": "inv_staff_01"
+   "icon": "assets/game/druid/talents/inv_staff_01.jpg?v=61be5ead"
   },
   "improved_moonfire": {
    "name": "Improved Moonfire",
@@ -1136,7 +1136,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_starfall"
+   "icon": "assets/game/druid/talents/spell_nature_starfall.jpg?v=a896bdb9"
   },
   "brambles": {
    "name": "Brambles",
@@ -1160,7 +1160,7 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_thorns"
+   "icon": "assets/game/druid/talents/spell_nature_thorns.jpg?v=2a81d45c"
   },
   "natures_grace": {
    "name": "Nature's Grace",
@@ -1178,14 +1178,14 @@
      100
     ]
    ],
-   "iconFile": "spell_nature_naturesblessing"
+   "icon": "assets/game/druid/talents/spell_nature_naturesblessing.jpg?v=3e9b93c0"
   },
   "natures_splendor": {
    "name": "Nature's Splendor",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm and Lifebloom spells by 2 sec.",
-   "iconFile": "spell_nature_natureguardian"
+   "icon": "assets/game/druid/talents/spell_nature_natureguardian.jpg?v=9fcdb929"
   },
   "natures_reach": {
    "name": "Nature's Reach",
@@ -1202,7 +1202,7 @@
      30
     ]
    ],
-   "iconFile": "spell_nature_naturetouchgrow"
+   "icon": "assets/game/druid/talents/spell_nature_naturetouchgrow.jpg?v=5c77bde8"
   },
   "vengeance": {
    "name": "Vengeance",
@@ -1220,7 +1220,7 @@
      100
     ]
    ],
-   "iconFile": "spell_nature_purge"
+   "icon": "assets/game/druid/talents/spell_nature_purge.jpg?v=87e3c89a"
   },
   "celestial_focus": {
    "name": "Celestial Focus",
@@ -1241,7 +1241,7 @@
      3
     ]
    ],
-   "iconFile": "spell_arcane_starfire"
+   "icon": "assets/game/druid/talents/spell_arcane_starfire.jpg?v=02186e53"
   },
   "lunar_guidance": {
    "name": "Lunar Guidance",
@@ -1259,14 +1259,14 @@
      12
     ]
    ],
-   "iconFile": "ability_druid_lunarguidance"
+   "icon": "assets/game/druid/talents/ability_druid_lunarguidance.jpg?v=09e61d21"
   },
   "insect_swarm": {
    "name": "Insect Swarm",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "The enemy target is swarmed by insects, decreasing their chance to hit by 3% and causing 210 Nature damage over 14 sec.",
-   "iconFile": "spell_nature_insectswarm",
+   "icon": "assets/game/druid/talents/spell_nature_insectswarm.jpg?v=856ae0b9",
    "active": true
   },
   "improved_insect_swarm": {
@@ -1288,7 +1288,7 @@
      3
     ]
    ],
-   "iconFile": "spell_nature_insectswarm"
+   "icon": "assets/game/druid/talents/spell_nature_insectswarm.jpg?v=856ae0b9"
   },
   "dreamstate": {
    "name": "Dreamstate",
@@ -1306,7 +1306,7 @@
      25
     ]
    ],
-   "iconFile": "ability_druid_dreamstate"
+   "icon": "assets/game/druid/talents/ability_druid_dreamstate.jpg?v=1199b6b0"
   },
   "moonfury": {
    "name": "Moonfury",
@@ -1324,7 +1324,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_moonglow"
+   "icon": "assets/game/druid/talents/spell_nature_moonglow.jpg?v=79775dac"
   },
   "balance_of_power": {
    "name": "Balance of Power",
@@ -1341,14 +1341,14 @@
      6
     ]
    ],
-   "iconFile": "ability_druid_balanceofpower"
+   "icon": "assets/game/druid/talents/ability_druid_balanceofpower.jpg?v=904f975e"
   },
   "moonkin_form": {
    "name": "Moonkin Form",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Shapeshift into Moonkin Form.  While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Any single target spell critical strikes in this form have a chance to instantly regenerate 3% of your total mana.  The Moonkin can not cast healing or resurrection spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "spell_nature_forceofnature"
+   "icon": "assets/game/druid/talents/spell_nature_forceofnature.jpg?v=d4c3f3b5"
   },
   "improved_moonkin_form": {
    "name": "Improved Moonkin Form",
@@ -1369,7 +1369,7 @@
      50
     ]
    ],
-   "iconFile": "ability_druid_improvedmoonkinform"
+   "icon": "assets/game/druid/talents/ability_druid_improvedmoonkinform.jpg?v=40dfa1f2"
   },
   "improved_faerie_fire": {
    "name": "Improved Faerie Fire",
@@ -1390,7 +1390,7 @@
      3
     ]
    ],
-   "iconFile": "spell_nature_faeriefire"
+   "icon": "assets/game/druid/talents/spell_nature_faeriefire.jpg?v=e9420830"
   },
   "owlkin_frenzy": {
    "name": "Owlkin Frenzy",
@@ -1408,7 +1408,7 @@
      15
     ]
    ],
-   "iconFile": "ability_druid_owlkinfrenzy"
+   "icon": "assets/game/druid/talents/ability_druid_owlkinfrenzy.jpg?v=6e97cbb1"
   },
   "wrath_of_cenarius": {
    "name": "Wrath of Cenarius",
@@ -1429,7 +1429,7 @@
      15
     ]
    ],
-   "iconFile": "ability_druid_twilightswrath"
+   "icon": "assets/game/druid/talents/ability_druid_twilightswrath.jpg?v=19513aae"
   },
   "eclipse": {
    "name": "Eclipse",
@@ -1450,14 +1450,14 @@
      100
     ]
    ],
-   "iconFile": "ability_druid_eclipse"
+   "icon": "assets/game/druid/talents/ability_druid_eclipse.jpg?v=a6cfd655"
   },
   "typhoon": {
    "name": "Typhoon",
    "maxPts": 1,
    "prereq": "moonkin_form",
    "tooltipTemplate": "You summon a violent Typhoon that does 400 Nature damage when in contact with hostile targets, knocking them back and dazing them for 6 sec.",
-   "iconFile": "ability_druid_typhoon",
+   "icon": "assets/game/druid/talents/ability_druid_typhoon.jpg?v=7ef30b21",
    "active": true
   },
   "force_of_nature": {
@@ -1465,7 +1465,7 @@
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Summons 3 treants to attack enemy targets for 30 sec.",
-   "iconFile": "ability_druid_forceofnature",
+   "icon": "assets/game/druid/talents/ability_druid_forceofnature.jpg?v=4b9faf61",
    "active": true
   },
   "gale_winds": {
@@ -1483,7 +1483,7 @@
      4
     ]
    ],
-   "iconFile": "ability_druid_galewinds"
+   "icon": "assets/game/druid/talents/ability_druid_galewinds.jpg?v=5317bbce"
   },
   "earth_and_moon": {
    "name": "Earth and Moon",
@@ -1507,14 +1507,14 @@
      75
     ]
    ],
-   "iconFile": "ability_druid_earthandsky"
+   "icon": "assets/game/druid/talents/ability_druid_earthandsky.jpg?v=9a0e1d5d"
   },
   "starfall": {
    "name": "Starfall",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You summon a flurry of stars from the sky on all targets within 30 yards of the caster, each dealing 145 to 167 Arcane damage. Also causes 26 Arcane damage to all other enemies within 5 yards of the enemy target. Maximum 20 stars. Lasts 10 sec.  Shapeshifting into an animal form or mounting cancels the effect. Any effect which causes you to lose control of your character will suppress the starfall effect.",
-   "iconFile": "ability_druid_starfall",
+   "icon": "assets/game/druid/talents/ability_druid_starfall.jpg?v=c96a4873",
    "active": true
   }
  },
@@ -1729,153 +1729,185 @@
    "key": "mass_entanglement",
    "name": "Mass Entanglement",
    "rarity": "artifact",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Teaches you: Mass Entanglement. \nMass Entanglement: Roots the target and all enemies within 8 yards in place for 8 sec. Damage may interrupt the effect. \n\nUsable while shapeshifted.",
-   "iconFile": "spell_nature_stranglevines",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_stranglevines.jpg?v=733864ac",
    "requiredLevel": 35
   },
   {
    "key": "solar_beam",
    "name": "Solar Beam",
    "rarity": "artifact",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Teaches you: Solar Beam. \nSolar Beam: You summon a beam of solar light, silencing all enemies under the beam while it is active. Solar Beam lasts for 6 sec.",
-   "iconFile": "ability_vehicle_sonicshockwave",
+   "icon": "assets/game/druid/mystic-enchants/ability_vehicle_sonicshockwave.jpg?v=c8d374fb",
    "requiredLevel": 35
   },
   {
    "key": "stampeding_roar",
    "name": "Stampeding Roar",
    "rarity": "artifact",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Stampeding Roar. \nStampeding Roar: You roar, increasing the movement speed of all party members within 20 yards by 60% for 6 sec. Does not break prowling.",
-   "iconFile": "spell_druid_stampedingroar_cat",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_stampedingroar_cat.jpg?v=c0c6250a",
    "requiredLevel": 35
   },
   {
    "key": "stonebark",
    "name": "Stonebark",
    "rarity": "artifact",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Teaches you: Stonebark \nStonebark: Reduces all damage taken by 20%, increases resistance to Dispel mechanics by 50% and increases healing taken from Healing over Time effects by 40% from the caster for 8 sec.",
-   "iconFile": "spell_druid_ironbark",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_ironbark.jpg?v=365e5cc0",
    "requiredLevel": 35
   },
   {
    "key": "ursols_vortex",
    "name": "Ursol's Vortex",
    "rarity": "artifact",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Ursol's Vortex. \nUrsol's Vortex: Conjures a vortex of wind for 8 sec around yourself, reducing the movement speed of all enemies within 5 yards by 30%. When an enemy leaves the vortex, winds will pull that enemy back to its center. Enemies can only get pulled from any vortex once every 8 seconds.\n\nThis ability is usable while shapeshifted.",
-   "iconFile": "spell_druid_ursolsvortex",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_ursolsvortex.jpg?v=24fbdd15",
    "requiredLevel": 35
   },
   {
    "key": "ambush_predator",
    "name": "Ambush Predator",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Dealing damage with Rake or Rip has a 10% chance and Shred has a 20% chance to grant you Ambush Predator.\nAmbush Predator: Your next Ravage can be cast outside of Prowl, has no positional requirement, costs 20 less energy and grants an additional combo point. Lasts 12 sec.\n\nAdditionally, Ravage will trigger your Mangle debuff.",
-   "iconFile": "ability_druid_predatoryinstincts",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_predatoryinstincts.jpg?v=68125e85",
    "requiredLevel": 32
   },
   {
    "key": "astral_alignment",
    "name": "Astral Alignment",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Casting Moonfire, Starfire or Starsurge on an enemy increases the damage they take from your Wrath by 10% for 10 sec. Casting Wrath on an affected target restores 5% base mana.",
-   "iconFile": "ability_druid_twilightswrath",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_twilightswrath.jpg?v=19513aae",
    "requiredLevel": 15
   },
   {
    "key": "astral_winds",
    "name": "Astral Winds",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Targets released from your Cyclone or hit by your Typhoon take 50% reduced healing, fading over 8 sec seconds. In addition, the cast time of Cyclone is reduced by 0.3 seconds.",
-   "iconFile": "ability_druid_galewinds",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_galewinds.jpg?v=5317bbce",
    "requiredLevel": 50
   },
   {
    "key": "bash_and_thrash",
    "name": "Bash and Thrash",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the threat generated by Bash significantly.\n\nUsing Bash grants you Enrage, empowers Mangle (Bear) to hit 2 additional nearby targets and causes you to generate extra threat on the target, scaling with your attack power for 8 sec.",
-   "iconFile": "spell_druid_primaltenacity",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_primaltenacity.jpg?v=32f5a758",
    "requiredLevel": 50
   },
   {
    "key": "blooming_power",
    "name": "Blooming Power",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Casting Swiftmend grants you Nature's Grace (if known) and increases the chance to critically heal with your next Healing Touch, Regrowth or Nourish by 50%.",
-   "iconFile": "spell_nature_wispsplodegreen",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_wispsplodegreen.jpg?v=eb278ffd",
    "requiredLevel": 40
   },
   {
    "key": "celestial_replenishment",
    "name": "Celestial Replenishment",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Triggering an Eclipse now restores 24% of your missing mana.",
-   "iconFile": "inv_misc_ancient_mana",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_ancient_mana.jpg?v=08e620b5",
    "requiredLevel": 50
   },
   {
    "key": "clarity_of_the_mind",
    "name": "Clarity of the Mind",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Omen of Clarity talent has an additional 5% chance to trigger.",
-   "iconFile": "spell_arcane_mindmastery",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_mindmastery.jpg?v=afdf12a2",
    "requiredLevel": 20
   },
   {
    "key": "counterpoise",
    "name": "Counterpoise",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "While above 50% rage, you gain 5% melee haste. While below 50% rage, you gain 3% melee critical strike chance.",
-   "iconFile": "ability_warrior_weaponmastery",
+   "icon": "assets/game/druid/mystic-enchants/ability_warrior_weaponmastery.jpg?v=94197a1e",
    "requiredLevel": 15
   },
   {
    "key": "critical_cycles",
    "name": "Critical Cycles",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Casting Wrath or Starfire empowered by Eclipse increases the damage of your next Insect Swarm or Moonfire by 10% (5% against players), stacking up to 5 times. Casting Wrath or Starfire not empowered by Eclipse increases the duration of your Insect Swarm and Moonfire on the target by 8 seconds.",
-   "iconFile": "spell_azerite_essence06",
+   "icon": "assets/game/druid/mystic-enchants/spell_azerite_essence06.jpg?v=70074a6e",
    "requiredLevel": 50
   },
   {
    "key": "cycles_of_growth",
    "name": "Cycles of Growth",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the periodic healing of Lifebloom by 50%, but reduces the healing of the Bloom by 50%.\n\nYour Regrowth refreshes the duration of your Lifebloom on the target. This does not work if the target is already affected or recently affected by your Regrowth.",
-   "iconFile": "inv_misc_plant_02",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_plant_02.jpg?v=e5363626",
    "requiredLevel": 50
   },
   {
    "key": "elunes_fury",
    "name": "Elune's Fury",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Periodic damage from your Moonfire and Insect Swarm can now critically hit dealing 100% bonus damage. In addition, dealing damage with Starfall increases your critical strike chance by 15%, lasting for 1 second per target hit.",
-   "iconFile": "talentspec_druid_balance",
+   "icon": "assets/game/druid/mystic-enchants/talentspec_druid_balance.jpg?v=28a5d2b1",
    "requiredLevel": 15
   },
   {
    "key": "everliving",
    "name": "Everliving",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Requires Swiftmend\nWhile your Swiftmend is not on cooldown, healing with any direct or periodic spell reduces the cooldown of your next Swiftmend by -1.5 sec, stacking up to 10 times.\n\nThis effect can only occur once every 1 sec.",
-   "iconFile": "nhi_nature_heal_border",
+   "icon": "assets/game/druid/mystic-enchants/nhi_nature_heal_border.jpg?v=04aed4aa",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1888,54 +1920,66 @@
    "key": "faeries_favor",
    "name": "Faerie's Favor",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Faerie Fire (Feral) generates 20 energy and rage.",
-   "iconFile": "ability_druid_empoweredtouch",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_empoweredtouch.jpg?v=b5f960a8",
    "requiredLevel": 15
   },
   {
    "key": "ferocious_clarity",
    "name": "Ferocious Clarity",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the damage of Maul by 10%. In addition, increases the damage of Claw and Mangle (Cat) by 10% on targets affected by your Rake.\n\nAfter killing an opponent that yields experience or honor you trigger Omen of Clarity.",
-   "iconFile": "spell_druid_tirelesspursuit",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_tirelesspursuit.jpg?v=ffdd6752",
    "requiredLevel": 15
   },
   {
    "key": "flourishing_nature",
    "name": "Flourishing Nature",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "When Rejuvenation triggers your Revitalize talent, the target has a chance to flourish. Casting Regrowth on a flourishing target will refresh your Druid heal over time effects on them and apply Rejuvenation to two additional allies within 30 yards.",
-   "iconFile": "spell_druid_wildburst",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_wildburst.jpg?v=70b0f11b",
    "requiredLevel": 15
   },
   {
    "key": "frenzied_growth",
    "name": "Frenzied Growth",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Wild Growth healing is increased by 100% but its duration is reduced by 3 sec and it heals 2 less targets.",
-   "iconFile": "nhi_natureroots_border",
+   "icon": "assets/game/druid/mystic-enchants/nhi_natureroots_border.jpg?v=3048cbb9",
    "requiredLevel": 60
   },
   {
    "key": "frenzied_slashing",
    "name": "Frenzied Slashing",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Swipe (Bear) or Thrash increases your attack speed by 20% for 12 sec. This effect can only occur once every 10 seconds.",
-   "iconFile": "spell_druid_bearhug",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_bearhug.jpg?v=e3114ec2",
    "requiredLevel": 15
   },
   {
    "key": "graceful_resurgence",
    "name": "Graceful Resurgence",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Nature's Grace\nIncreases the damage of Wrath, Starfire and Starsurge on targets below 35% health by 25%.\n\nKilling an opponent that yields experience or honor grants you Nature's Grace, increasing your cast speed by 20% for 6 seconds.",
-   "iconFile": "spell_nature_naturesblessing",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_naturesblessing.jpg?v=3e9b93c0",
    "requiredLevel": 20,
    "requires": [
     {
@@ -1948,63 +1992,77 @@
    "key": "languish",
    "name": "Languish",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Your Starfire, Wrath and Starsurge critical strikes causes the target to take an additional 8% of your spell's damage over 4 sec.",
-   "iconFile": "spell_nature_naturetouchdecay",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_naturetouchdecay.jpg?v=003e1b7a",
    "requiredLevel": 15
   },
   {
    "key": "localized_storm",
    "name": "Localized Storm",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Teaches you: Localized Storm. \nLocalized Storm: Summon a violent storm in the target area for 6 sec, dealing 65.06 Nature damage to enemies every second, reducing the attack speed of enemies by 20%.\n\n@ext:This uses Hurricane modifiers.:ext@",
-   "iconFile": "spell_nature_cyclone",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_cyclone.jpg?v=ee199085",
    "requiredLevel": 40
   },
   {
    "key": "moons_wrath",
    "name": "Moon's Wrath",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Your Wrath and Starsurge have a 8% increased critical strike chance on targets affected by your Moonfire.",
-   "iconFile": "spell_nature_moonglow",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_moonglow.jpg?v=79775dac",
    "requiredLevel": 15
   },
   {
    "key": "natures_abundance",
    "name": "Nature's Abundance",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Reduces the mana cost of your Healing Touch by 12%.\n\nYour effective periodic heals with Rejuvenation or Regrowth restore 2% of your base mana. This effect can only occur once every second.",
-   "iconFile": "spell_nature_slowingtotem",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_slowingtotem.jpg?v=1a92dfa2",
    "requiredLevel": 15
   },
   {
    "key": "natures_synthesis",
    "name": "Nature's Synthesis",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the healing done of Healing Touch and Nourish by 7% for each healing over time effect you have active on the target.",
-   "iconFile": "spell_nature_regenerate",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_regenerate.jpg?v=a9abd128",
    "requiredLevel": 15
   },
   {
    "key": "omen_of_doom",
    "name": "Omen of Doom",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Gaining Omen of Clarity increases your Arcane and Nature damage done by 10% for 6 seconds.",
-   "iconFile": "spell_druid_momentofclarity",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_momentofclarity.jpg?v=bc97ed35",
    "requiredLevel": 20
   },
   {
    "key": "omen_of_fatality",
    "name": "Omen of Fatality",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Requires Omen of Clarity\nFeral Bleed effects have a 35% chance of triggering Omen of Clarity and makes consuming Omen of Clarity increase your attack speed by 25% for 6 sec. \n\nWhile this buff is active, Omen of Clarity cannot trigger again.",
-   "iconFile": "sha_ability_rogue_sturdyrecuperate_nightmare",
+   "icon": "assets/game/druid/mystic-enchants/sha_ability_rogue_sturdyrecuperate_nightmare.jpg?v=5e2574f6",
    "requiredLevel": 20,
    "requires": [
     {
@@ -2017,117 +2075,141 @@
    "key": "one_with_the_forest",
    "name": "One with the Forest",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your critical strikes while in Bear Form extends the duration of Barkskin by 1 second.\n\nThis effect can only occur once every second.",
-   "iconFile": "inv_misc_monsterclaw_04",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_monsterclaw_04.jpg?v=dc4d9dd1",
    "requiredLevel": 44
   },
   {
    "key": "pendulum",
    "name": "Pendulum",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "Receive 3% spell haste while above 50% mana and 3% spell critical strike chance while below 50% mana.",
-   "iconFile": "inv_elemental_mote_mana",
+   "icon": "assets/game/druid/mystic-enchants/inv_elemental_mote_mana.jpg?v=715abc19",
    "requiredLevel": 15
   },
   {
    "key": "predators_wrath_combo",
    "name": "Predator's Wrath: Combo",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Casting Wrath awards 2 combo points and increases the critical strike chance of your next direct damage Cat Form ability to by 25%.",
-   "iconFile": "nhi_natureempower_border",
+   "icon": "assets/game/druid/mystic-enchants/nhi_natureempower_border.jpg?v=74f2da33",
    "requiredLevel": 15
   },
   {
    "key": "predators_wrath_focus",
    "name": "Predator's Wrath: Focus",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Casting Wrath restores 20 energy. Wrath is unable to miss and costs no mana.",
-   "iconFile": "ability_felarakkoa_focusedblast",
+   "icon": "assets/game/druid/mystic-enchants/ability_felarakkoa_focusedblast.jpg?v=f348efe5",
    "requiredLevel": 15
   },
   {
    "key": "primal_frenzy",
    "name": "Primal Frenzy",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "The damage of your Rake and Rip is increased by 1% for every 2% armor penetration you have. Dealing damage with Rip and Rake has a 15% chance to empower you, increasing armor penetration by 20% for 8 sec.",
-   "iconFile": "ability_druid_primaltenacity",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_primaltenacity.jpg?v=afab87e5",
    "requiredLevel": 20
   },
   {
    "key": "razor_sweep",
    "name": "Razor Sweep",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Rake causes your next Claw or Mangle (Cat) to hit two additional nearby enemies and restore 10 energy per target.",
-   "iconFile": "artifactability_guardiandruid_goryfur",
+   "icon": "assets/game/druid/mystic-enchants/artifactability_guardiandruid_goryfur.jpg?v=0715a346",
    "requiredLevel": 24
   },
   {
    "key": "razor_sharp_claws",
    "name": "Razor-sharp Claws",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Maul ability refreshes the duration of Rake on your target.",
-   "iconFile": "ability_druid_disembowel",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_disembowel.jpg?v=72970d31",
    "requiredLevel": 24
   },
   {
    "key": "relentless_laceration",
    "name": "Relentless Laceration",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Lacerate causes you to ignore 2% of the target's armor and increases your chance to critically hit the target with melee attacks by 3%. Stacks up to 5 times and lasts for 15 sec,",
-   "iconFile": "artifactability_feraldruid_openwounds",
+   "icon": "assets/game/druid/mystic-enchants/artifactability_feraldruid_openwounds.jpg?v=c97d4340",
    "requiredLevel": 30
   },
   {
    "key": "savage_barricade",
    "name": "Savage Barricade",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Savage Defense can now store up to 2 charges.",
-   "iconFile": "ability_racial_cannibalize",
+   "icon": "assets/game/druid/mystic-enchants/ability_racial_cannibalize.jpg?v=59ea1460",
    "requiredLevel": 40
   },
   {
    "key": "savage_frenzy",
    "name": "Savage Frenzy",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Each stack of your Feral Frenzy bleed increases the damage done of your abilities versus the target by 2%.\n\nEvery time you hit with Feral Frenzy the duration of your Savage Roar is increased by 6 sec.",
-   "iconFile": "spell_druid_feralchargecat",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_feralchargecat.jpg?v=e41738d7",
    "requiredLevel": 30
   },
   {
    "key": "shifting_bark",
    "name": "Shifting Bark",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Barkskin reduces damage taken by an additional 10% and grants a 50% reduction to Silence and Interrupt effects while active.",
-   "iconFile": "spell_nature_naturetouchgrow",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_naturetouchgrow.jpg?v=5c77bde8",
    "requiredLevel": 44
   },
   {
    "key": "starcallers_momentum",
    "name": "Starcaller's Momentum",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Casting Wrath or Starfire 3 times in a row causes your next Starsurge to be instant cast. This effect can be stored up to 3 times. In addition, the cooldown of Starsurge is reduced by 2 sec.",
-   "iconFile": "spell_arcane_arcane03",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_arcane03.jpg?v=e583af56",
    "requiredLevel": 32
   },
   {
    "key": "stellar_convergence",
    "name": "Stellar Convergence",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Nature's Grace \nDealing damage with Starsurge reduces the cooldown of your Starfall, Chosen of Elune and Touch of Elune by 0 sec and grants Nature's Grace.",
-   "iconFile": "sha_ability_mage_firestarter",
+   "icon": "assets/game/druid/mystic-enchants/sha_ability_mage_firestarter.jpg?v=299cc895",
    "requiredLevel": 32,
    "requires": [
     {
@@ -2140,9 +2222,11 @@
    "key": "surging_eclipse",
    "name": "Surging Eclipse",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Eclipse\nCasting Starsurge while in an Eclipse phase will increase the damage of your next Wrath or Starfire by 30%, depending on the phase.\n\nEmpowered Wraths or Starfires have a 30% chance to reset the cooldown of Starsurge.",
-   "iconFile": "nhi_void_stars_border",
+   "icon": "assets/game/druid/mystic-enchants/nhi_void_stars_border.jpg?v=01ec938c",
    "requiredLevel": 32,
    "requires": [
     {
@@ -2155,18 +2239,22 @@
    "key": "symbiotic_nature",
    "name": "Symbiotic Nature",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "The healing of Regrowth is increased by 20% on targets affected by your Rejuvenation and the healing of Rejuvenation is increased by 20% on targets affected by your Regrowth.",
-   "iconFile": "spell_druid_germination",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_germination.jpg?v=86b5cf5d",
    "requiredLevel": 15
   },
   {
    "key": "timberrr",
    "name": "TIMBERRR",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Force of Nature\nIncreases the duration of your Treants summoned from Force of Nature by 100%.",
-   "iconFile": "ability_druid_forceofnature",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_forceofnature.jpg?v=4b9faf61",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2179,45 +2267,55 @@
    "key": "tigers_instinct",
    "name": "Tiger's Instinct",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Claw, Mangle (Cat), or Swipe (Cat) reduces the cooldown of Tiger's Fury by 2 sec.",
-   "iconFile": "ability_mount_jungletiger",
+   "icon": "assets/game/druid/mystic-enchants/ability_mount_jungletiger.jpg?v=32a1ed0f",
    "requiredLevel": 24
   },
   {
    "key": "touch_of_elune",
    "name": "Touch of Elune",
    "rarity": "epic",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Teaches you: Touch of Elune. \nTouch of Elune: Place the Touch of Elune on an enemy. All damage dealt by your Wrath, Starfire and Starsurge spells to other targets will damage the enemy marked by your Touch of Elune. Lasts for 15 sec.\n\nWhile Touch of Elune is active on any enemy, all damage you deal to any target is increased by 10%.",
-   "iconFile": "spell_holy_elunesgrace",
+   "icon": "assets/game/druid/mystic-enchants/spell_holy_elunesgrace.jpg?v=cd097d42",
    "requiredLevel": 30
   },
   {
    "key": "ursocs_rage",
    "name": "Ursoc's Rage",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Using Maul, Swipe (Bear), Mangle (Bear) or Lacerate reduces the cooldown of Enrage by 1.5 seconds. Enrage also increases your melee critical strike chance by 10%.",
-   "iconFile": "achievement_emeraldnightmare_ursoc",
+   "icon": "assets/game/druid/mystic-enchants/achievement_emeraldnightmare_ursoc.jpg?v=44d4f88f",
    "requiredLevel": 15
   },
   {
    "key": "verdant_insight",
    "name": "Verdant Insight",
    "rarity": "epic",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the healing of Lifebloom by 15%.\n\nPeriodic healing from Lifebloom has a 3% chance per stack to trigger Omen of Clarity.",
-   "iconFile": "spell_druid_germination_rejuvenation",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_germination_rejuvenation.jpg?v=32bb5f61",
    "requiredLevel": 50
   },
   {
    "key": "viscera",
    "name": "Viscera",
    "rarity": "epic",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Requires Mangle\nYour Lacerate, Thrash and auto attacks have a 20% chance of resetting the cooldown of Mangle.\n\nIncrease the critical strike chance of your Mangle (Bear) by 25%.",
-   "iconFile": "nhi_bloodbite_border",
+   "icon": "assets/game/druid/mystic-enchants/nhi_bloodbite_border.jpg?v=634aea59",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2230,36 +2328,44 @@
    "key": "balance_mastery",
    "name": "Balance Mastery",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Eclipse (Lunar) now increases your damage done with all spells by 5%.\n\nEclipse (Solar) now increases your critical strike chance with all spells by 5%.",
-   "iconFile": "ability_druid_eclipse",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_eclipse.jpg?v=a6cfd655",
    "requiredLevel": 30
   },
   {
    "key": "carnage_incarnate",
    "name": "Carnage Incarnate",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Carnage Incarnate. \nCarnage Incarnate: Encase yourself in blood and bones, reducing physical damage taken by 10% and dealing ${103*0.99)+(0*0.09} physical damage to nearby enemies and healing you for ${82*0.99)+(0*0.045} every second. Lasts for 8 sec.",
-   "iconFile": "spell_druid_bearhug",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_bearhug.jpg?v=e3114ec2",
    "requiredLevel": 30
   },
   {
    "key": "celestial_power",
    "name": "Celestial Power",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Your Starfire applies Star's Fury on targets not affected by your Moonfire. This effect does not stack with Moonfire.\n\nYour Wrath applies Nature's Wrath on targets not affected by your Insect Swarm. This effect does not stack with Insect Swarm.\nStar's Fury: Increases the damage the target takes from your Starfire and Starsurge by 5%, stacking up to 3 times. Lasts 20 sec.\nNature's Wrath: Increases the damage the target takes from your Wrath and Starsurge by 5%, stacking up to 3 times. Lasts 20 sec.",
-   "iconFile": "ability_druid_cresentburn",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_cresentburn.jpg?v=2e078a21",
    "requiredLevel": 30
   },
   {
    "key": "chosen_of_elune",
    "name": "Chosen of Elune",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Eclipse\nEclipse (Solar) increase your critical strike rating by 15% of your Spirit, and your Eclipse (Lunar) increase your haste rating by 15% of your Spirit. \n\nTeaches you: Chosen of Elune. \nChosen of Elune: Resets the cooldown of Starsurge and reduces its cooldown by 50% for 15 sec. Also activates both Lunar Eclipse and Solar Eclipse. This does not incur a cooldown on the Eclipse effects.",
-   "iconFile": "spell_druid_incarnation",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_incarnation.jpg?v=7af43cb5",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2272,27 +2378,33 @@
    "key": "deranged_druid",
    "name": "Deranged Druid",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Your damaging Druid spell casts and Feral abilities have a 15% chance to cast an additional random Druid spell for free.",
-   "iconFile": "ability_druid_lunarguidance",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_lunarguidance.jpg?v=09e61d21",
    "requiredLevel": 30
   },
   {
    "key": "efflorescence",
    "name": "Efflorescence",
    "rarity": "legendary",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Teaches you: Efflorescence\nEfflorescence: Grows a healing blossom at the target location, increasing healing taken by 15% and restoring 106.64 health to allies within 10 yards every 2 sec for 10 sec. Also applies Rejuvenation to up to 5 targets.",
-   "iconFile": "inv_misc_herb_talandrasrose",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_herb_talandrasrose.jpg?v=5a898f07",
    "requiredLevel": 30
   },
   {
    "key": "feral_frenzy",
    "name": "Feral Frenzy",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Feral Frenzy. \nFeral Frenzy: Requires Cat Form\n\nUnleash a furious frenzy, clawing your target 5 times over 1.5 seconds for 50% weapon damage and applying a bleed which stacks up to 5 times and lasts for 10 sec. Awards 1 combo point.",
-   "iconFile": "artifactability_feraldruid_ashamanesbite",
+   "icon": "assets/game/druid/mystic-enchants/artifactability_feraldruid_ashamanesbite.jpg?v=634498d4",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2304,18 +2416,22 @@
    "key": "feral_mastery",
    "name": "Feral Mastery",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the damage of your Rake, Rip and Ferocious Bite by 6% and their critical strike damage by an additional 6%.",
-   "iconFile": "ability_druid_catform",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_catform.jpg?v=55411537",
    "requiredLevel": 30
   },
   {
    "key": "flow_of_life",
    "name": "Flow of Life",
    "rarity": "legendary",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Requires Tranquility\nTransforms Tranquility into Flow of Life.\n\nThis ability scales from your Tranqulity modifiers.\nFlow of Life: Heals the 5 lowest health nearby party or raid members for ${(146+0.88)+(0*0.0.085085)} Every 1 seconds for 8 sec seconds and restores 1 seconds of your active heal over Time effects on allies healed.",
-   "iconFile": "spell_nature_rune",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_rune.jpg?v=e803dc21",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2327,27 +2443,33 @@
    "key": "fury_unleashed",
    "name": "Fury Unleashed",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Mangle has 20% increased critical strike chance and extends the duration of Rip on your target by 1 second. \n\nUsing Tiger’s Fury unleashes a ferocious swipe on up to 5 enemies in front of you. Each enemy hit reduces the cooldown of Tiger’s Fury by 2 seconds.",
-   "iconFile": "ability_druid_tigersroar",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_tigersroar.jpg?v=ee53e40f",
    "requiredLevel": 30
   },
   {
    "key": "guardian_mastery",
    "name": "Guardian Mastery",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases your maximum health by 4% and your chance to critically strike by 4%.",
-   "iconFile": "ability_racial_bearform",
+   "icon": "assets/game/druid/mystic-enchants/ability_racial_bearform.jpg?v=7103129d",
    "requiredLevel": 30
   },
   {
    "key": "guardians_of_the_grove",
    "name": "Guardians of the Grove",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Requires Force of Nature\nYour Treants now heal allies below 90% health using Rejuvenation and Regrowth, but no longer deals damage and their health is reduced by 50%.",
-   "iconFile": "ability_druid_forceofnature",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_forceofnature.jpg?v=4b9faf61",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2360,27 +2482,33 @@
    "key": "incarnation_king_of_the_jungle",
    "name": "Incarnation: King of the Jungle",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Incarnation: King of the Jungle. \nIncarnation: King of the Jungle: Your Cat Form is empowered for 15 sec.\n\nMangle (Cat) and Shred causes an additional swiping attack, dealing damage to enemies within 5 yards.\n\nFerocious Bite extends Rip to its full duration.",
-   "iconFile": "spell_druid_incarnation",
+   "icon": "assets/game/druid/mystic-enchants/spell_druid_incarnation.jpg?v=7af43cb5",
    "requiredLevel": 30
   },
   {
    "key": "ironfur",
    "name": "Ironfur",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Teaches you: Ironfur. \nIronfur: 3 Charges\n10 sec recharge\nGrants 10 Rage and reduces damage taken by 4% plus an additional 4% per stack. Lasts 6 seconds. Stacks up to 3.",
-   "iconFile": "ability_druid_ironfur",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_ironfur.jpg?v=145fe308",
    "requiredLevel": 30
   },
   {
    "key": "natures_fervor",
    "name": "Nature's Fervor",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Requires Infected Wounds\nYour Thrash ability now has a 9 second cooldown grants Nature's Fervor.\nNature's Fervor: Faerie Fire grants 8% increased agility for 10 seconds. \n\nSwipe generates double threat and procs the last rank of Infected Wounds (if known). \n\nGrowl generates significant threat, applies Demoralizing Roar and only triggers a 1 second cooldown.",
-   "iconFile": "inv_misc_summerfest_braziergreen",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_summerfest_braziergreen.jpg?v=7fca13b0",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2393,18 +2521,22 @@
    "key": "overflow",
    "name": "Overflow",
    "rarity": "legendary",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Casting Nourish or Regrowth makes your next Healing Touch guaranteed to trigger Living Seed and reduces its cast time and mana cost by 20%, stacking up to 3. \n\nEach stack also makes Healing Touch heal an extra ally for 30% of the amount healed.",
-   "iconFile": "ability_mount_pandarenkitemount_green",
+   "icon": "assets/game/druid/mystic-enchants/ability_mount_pandarenkitemount_green.jpg?v=7e05798e",
    "requiredLevel": 30
   },
   {
    "key": "predators_wrath_wrathful_strikes",
    "name": "Predator's Wrath: Wrathful Strikes",
    "rarity": "legendary",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Requires Predatory Strikes\nPredator’s Swiftness now allows you to cast Wrath while in Cat Form, dealing additional damage equal to 30% of your Attack Power.\n\nCasting Wrath in this way causes your direct physical damaging abilities to trigger additional damage. This bonus damage is increased by 5% per stack, stacks 10 times, lasts 15 seconds.",
-   "iconFile": "spell_mage_nethertempest",
+   "icon": "assets/game/druid/mystic-enchants/spell_mage_nethertempest.jpg?v=04161512",
    "requiredLevel": 30,
    "requires": [
     {
@@ -2417,621 +2549,759 @@
    "key": "restoration_mastery",
    "name": "Restoration Mastery",
    "rarity": "legendary",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the effectiveness of your heal over time effects by 4% and reduces the mana cost of Regrowth, Healing Touch and Nourish by 8%.",
-   "iconFile": "ability_druid_treeoflife",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_treeoflife.jpg?v=9435dadb",
    "requiredLevel": 30
   },
   {
    "key": "spirit_of_the_forest",
    "name": "Spirit of the Forest",
    "rarity": "legendary",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Teaches you: Spirit of the Forest. \nSpirit of the Forest: Imbues you with the Spirit of the Forest for 20 sec, reducing the cooldown of Wild Growth by 50%, the mana cost of Lifebloom by 50%, increasing Rejuvenation duration by 9 sec, and causing your Rejuvenation to also instantly heal your ally for ${152*0.99)+(0*0.585)}.",
-   "iconFile": "ability_druid_replenish",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_replenish.jpg?v=0f45c887",
    "requiredLevel": 60
   },
   {
    "key": "sunfire",
    "name": "Sunfire",
    "rarity": "legendary",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Teaches you: Sunfire. \n\nThe periodic damage from Sunfire can critically strike and benefits from spell haste.\n\nSunfire: Burns your target and 4 additional targets within 8 yards, dealing 171 to 205 Firestorm damage and 370 additional damage over 18 sec.\n\nSunfire increases the periodic damage from Moonfire and Insect Swarm by 20% plus 10% per target hit for its duration.",
-   "iconFile": "ability_mage_firestarter",
+   "icon": "assets/game/druid/mystic-enchants/ability_mage_firestarter.jpg?v=f0c7ed38",
    "requiredLevel": 30
   },
   {
    "key": "brambles",
    "name": "Brambles",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nDamage from your Thorns and Entangling Roots increased by 75% and damage done by your Treants increased by 15%. In addition, damage from your Treants and attacks done to you while you have Barkskin active have a 15% chance to daze the target for 3 sec.\n\nThis Mystic Enchant does not stack with the Brambles Talent.",
-   "iconFile": "spell_nature_thorns",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_thorns.jpg?v=2a81d45c",
    "requiredLevel": 45
   },
   {
    "key": "celestial_focus",
    "name": "Celestial Focus",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks while casting Starfire, Starsurge, Hibernate and Hurricane by 70% and increases your total spell haste by 3%.\n\nThis Mystic Enchant does not stack with the Celestial Focus Talent.",
-   "iconFile": "spell_arcane_starfire",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_starfire.jpg?v=02186e53",
    "requiredLevel": 45
   },
   {
    "key": "earthen_power_well",
    "name": "Earthen Power Well",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Casting damaging Nature spells has a 15% chance to make your next non-Nature spell have no cost.",
-   "iconFile": "ability_hunter_camouflage",
+   "icon": "assets/game/druid/mystic-enchants/ability_hunter_camouflage.jpg?v=04cdc153",
    "requiredLevel": 45
   },
   {
    "key": "feral_aggression",
    "name": "Feral Aggression",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases the attack power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%.\n\nThis Mystic Enchant does not stack with the Feral Aggression Talent.",
-   "iconFile": "ability_druid_demoralizingroar",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_demoralizingroar.jpg?v=fc636197",
    "requiredLevel": 45
   },
   {
    "key": "feral_charge",
    "name": "Feral Charge",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nTeaches you: Feral Charge\n\n@s:1316979:0:0:0:-32@\n@s:1349376:0:0:0:-32@\n\nThis Mystic Enchant does not stack with the Feral Charge Talent.",
-   "iconFile": "ability_hunter_pet_bear",
+   "icon": "assets/game/druid/mystic-enchants/ability_hunter_pet_bear.jpg?v=a23cbeaf",
    "requiredLevel": 45
   },
   {
    "key": "feral_instinct",
    "name": "Feral Instinct",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Swipe ability by 30% and reduces the chance enemies have to detect you while Prowling.\n\nThis Mystic Enchant does not stack with the Feral Instinct Talent.",
-   "iconFile": "ability_ambush",
+   "icon": "assets/game/druid/mystic-enchants/ability_ambush.jpg?v=82ac5e06",
    "requiredLevel": 45
   },
   {
    "key": "feral_swiftness",
    "name": "Feral Swiftness",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases your movement speed by 30% in Cat Form and increases your chance to dodge while in Cat Form, Bear Form and Dire Bear Form by 4%.\n\nThis Mystic Enchant does not stack with the Feral Swiftness Talent.",
-   "iconFile": "spell_nature_spiritwolf",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_spiritwolf.jpg?v=c303f435",
    "requiredLevel": 45
   },
   {
    "key": "ferocity",
    "name": "Ferocity",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nReduces the cost of your Maul, Swipe, Claw, Rake and Mangle abilities by 5 Rage or Energy.\n\nThis Mystic Enchant does not stack with the Ferocity Talent.",
-   "iconFile": "ability_hunter_pet_hyena",
+   "icon": "assets/game/druid/mystic-enchants/ability_hunter_pet_hyena.jpg?v=4776f770",
    "requiredLevel": 45
   },
   {
    "key": "furor",
    "name": "Furor",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nGives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form, and you keep up to 100 of your Energy when you shapeshift into Cat Form, and increases your total Intellect while in Moonkin form by 10%.\n\nThis Mystic Enchant does not stack with the Furor Talent.",
-   "iconFile": "spell_holy_blessingofstamina",
+   "icon": "assets/game/druid/mystic-enchants/spell_holy_blessingofstamina.jpg?v=16c23fb3",
    "requiredLevel": 45
   },
   {
    "key": "genesis",
    "name": "Genesis",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage and healing done by your periodic spell damage and healing effects by 5%.\n\nThis Mystic Enchant does not stack with the Genesis Talent.",
-   "iconFile": "spell_arcane_arcane03",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_arcane03.jpg?v=e583af56",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_barkskin",
    "name": "Glyph of Barkskin",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Reduces the chance you'll be critically hit by melee attacks by 25% while Barkskin is active.",
-   "iconFile": "spell_nature_stoneclawtotem",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_stoneclawtotem.jpg?v=9c914645",
    "requiredLevel": 44
   },
   {
    "key": "glyph_of_berserk",
    "name": "Glyph of Berserk",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the duration of Berserk by 5 sec.",
-   "iconFile": "ability_druid_berserk",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_berserk.jpg?v=1e6e261e",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_claw",
    "name": "Glyph of Claw",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Reduces the energy cost of your Claw ability by 5.",
-   "iconFile": "ability_druid_rake",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_rake.jpg?v=6f7f2131",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_entangling_roots",
    "name": "Glyph of Entangling Roots",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the damage your Entangling Roots victims can take before the Entangling Roots automatically breaks by 20%.",
-   "iconFile": "spell_nature_stranglevines",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_stranglevines.jpg?v=733864ac",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_focus",
    "name": "Glyph of Focus",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the damage done by Starfall by 10%, decreases its radius by 30%, and increases its duration by 2 sec.",
-   "iconFile": "spell_arcane_focusedpower",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_focusedpower.jpg?v=bbea2b89",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_frenzied_regeneration",
    "name": "Glyph of Frenzied Regeneration",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "While Frenzied Regeneration is active, healing effects on you are 20% more powerful.",
-   "iconFile": "ability_bullrush",
+   "icon": "assets/game/druid/mystic-enchants/ability_bullrush.jpg?v=cdc5bf42",
    "requiredLevel": 36
   },
   {
    "key": "glyph_of_healing_touch",
    "name": "Glyph of Healing Touch",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Decreases the cast time of Healing Touch by -1.25 sec, the mana cost by 20%, and the amount healed by 50%.",
-   "iconFile": "spell_nature_healingtouch",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_healingtouch.jpg?v=c844fae8",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_hurricane",
    "name": "Glyph of Hurricane",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Your Hurricane ability also slows the movement speed of its victims by 20%.",
-   "iconFile": "spell_nature_cyclone",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_cyclone.jpg?v=ee199085",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_innervate",
    "name": "Glyph of Innervate",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Innervate now grants the caster 45% of his base mana pool over 10 sec in addition to the normal effects of Innervate.",
-   "iconFile": "spell_nature_lightning",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_lightning.jpg?v=b5ede565",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_insect_swarm",
    "name": "Glyph of Insect Swarm",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the damage of your Insect Swarm ability by 30%, but it no longer affects your victim's chance to hit.",
-   "iconFile": "spell_nature_insectswarm",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_insectswarm.jpg?v=856ae0b9",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_lifebloom",
    "name": "Glyph of Lifebloom",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the duration of Lifebloom by 1 sec.",
-   "iconFile": "inv_misc_herb_felblossom",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_herb_felblossom.jpg?v=7590c43b",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_mangle",
    "name": "Glyph of Mangle",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the damage done by Mangle by 10%.",
-   "iconFile": "ability_druid_mangle2",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_mangle2.jpg?v=b3992726",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_maul",
    "name": "Glyph of Maul",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Maul ability hits 1 additional target.",
-   "iconFile": "ability_druid_maul",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_maul.jpg?v=cd52f9e3",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_monsoon",
    "name": "Glyph of Monsoon",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Reduces the cooldown of your Typhoon spell by -3 sec.",
-   "iconFile": "ability_druid_typhoon",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_typhoon.jpg?v=7ef30b21",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_moonfire",
    "name": "Glyph of Moonfire",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the periodic damage of your Moonfire ability by 75%, but initial damage is decreased by 90%.",
-   "iconFile": "spell_nature_starfall",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_starfall.jpg?v=a896bdb9",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_nourish",
    "name": "Glyph of Nourish",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Your Nourish heals an additional 6% for each of your heal over time effects present on the target.",
-   "iconFile": "ability_druid_nourish",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_nourish.jpg?v=f9d08c7e",
    "requiredLevel": 58
   },
   {
    "key": "glyph_of_rake",
    "name": "Glyph of Rake",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Rake deals 20% more damage and prevents targets from fleeing.",
-   "iconFile": "ability_druid_disembowel",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_disembowel.jpg?v=72970d31",
    "requiredLevel": 24
   },
   {
    "key": "glyph_of_rapid_rejuvenation",
    "name": "Glyph of Rapid Rejuvenation",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Your haste now reduces the time between the periodic healing ticks of your Rejuvenation spell.",
-   "iconFile": "spell_nature_rejuvenation",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_rejuvenation.jpg?v=ae70ca4d",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_rebirth",
    "name": "Glyph of Rebirth",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Players resurrected by Rebirth are returned to life with 100% health.",
-   "iconFile": "spell_nature_reincarnation",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_reincarnation.jpg?v=c2cd2a93",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_regrowth",
    "name": "Glyph of Regrowth",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Increases the healing and critical strike chance of your Regrowth spell by 20% if your Regrowth effect is still active on the target.",
-   "iconFile": "spell_nature_resistnature",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_resistnature.jpg?v=7a6a6b45",
    "requiredLevel": 12
   },
   {
    "key": "glyph_of_rejuvenation",
    "name": "Glyph of Rejuvenation",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "While your Rejuvenation targets are below 50% health, you will heal them for an additional 50% health.",
-   "iconFile": "spell_nature_rejuvenation",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_rejuvenation.jpg?v=ae70ca4d",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_rip",
    "name": "Glyph of Rip",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Increases the duration of your Rip ability by 4 sec.",
-   "iconFile": "ability_ghoulfrenzy",
+   "icon": "assets/game/druid/mystic-enchants/ability_ghoulfrenzy.jpg?v=623ad06c",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_savage_roar",
    "name": "Glyph of Savage Roar",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Savage Roar ability grants an additional 6% bonus damage done.",
-   "iconFile": "ability_druid_skinteeth",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_skinteeth.jpg?v=f5ac9c32",
    "requiredLevel": 54
   },
   {
    "key": "glyph_of_shred",
    "name": "Glyph of Shred",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Each time you Shred, the duration of your Rip on the target is extended 2 sec, up to a maximum of 6 sec.",
-   "iconFile": "spell_shadow_vampiricaura",
+   "icon": "assets/game/druid/mystic-enchants/spell_shadow_vampiricaura.jpg?v=b9dead30",
    "requiredLevel": 22
   },
   {
    "key": "glyph_of_starfall",
    "name": "Glyph of Starfall",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Reduces the cooldown of Starfall by -30 sec and causes it to only hit enemies in combat.",
-   "iconFile": "ability_druid_starfall",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_starfall.jpg?v=c96a4873",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_starfire",
    "name": "Glyph of Starfire",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the critical strike damage bonus of your Starfire by 25%.",
-   "iconFile": "spell_arcane_starfire",
+   "icon": "assets/game/druid/mystic-enchants/spell_arcane_starfire.jpg?v=02186e53",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_survival_instincts",
    "name": "Glyph of Survival Instincts",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Your Survival Instincts ability grants an additional 15% of your maximum health.",
-   "iconFile": "ability_druid_tigersroar",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_tigersroar.jpg?v=ee53e40f",
    "requiredLevel": 15
   },
   {
    "key": "glyph_of_swiftmend",
    "name": "Glyph of Swiftmend",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Swiftmend refreshes the duration of your Rejuvenation and Regrowth on the target.",
-   "iconFile": "inv_relics_idolofrejuvenation",
+   "icon": "assets/game/druid/mystic-enchants/inv_relics_idolofrejuvenation.jpg?v=34eee839",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_typhoon",
    "name": "Glyph of Typhoon",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Reduces the cost of your Typhoon spell by 8% and increases its radius by 10 yards, but it no longer knocks enemies back.",
-   "iconFile": "ability_druid_typhoon",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_typhoon.jpg?v=7ef30b21",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_wild_growth",
    "name": "Glyph of Wild Growth",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Wild Growth can affect 1 additional target.",
-   "iconFile": "ability_druid_flourish",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_flourish.jpg?v=f07f88e9",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_wrath",
    "name": "Glyph of Wrath",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Increases the critical strike chance of Wrath by 15%, but increases its cast time by 0.15 sec.",
-   "iconFile": "spell_nature_abolishmagic",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_abolishmagic.jpg?v=bacec6cf",
    "requiredLevel": 10
   },
   {
    "key": "improved_mark_of_the_wild",
    "name": "Improved Mark of the Wild",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effects of your Mark of the Wild and Gift of the Wild spells by 40%, and increases all of your total attributes by 2%.\n\nThis Mystic Enchant does not stack with the Improved Mark of the Wild Talent.",
-   "iconFile": "spell_nature_regeneration",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_regeneration.jpg?v=2376ec2f",
    "requiredLevel": 45
   },
   {
    "key": "improved_moonfire",
    "name": "Improved Moonfire",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage and critical strike chance of your Moonfire spell by 10%.\n\nThis Mystic Enchant does not stack with the Improved Moonfire Talent.",
-   "iconFile": "spell_nature_starfall",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_starfall.jpg?v=a896bdb9",
    "requiredLevel": 45
   },
   {
    "key": "improved_rejuvenation",
    "name": "Improved Rejuvenation",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Rejuvenation spell by 15%.\n\nThis Mystic Enchant does not stack with the Improved Rejuvenation Talent.",
-   "iconFile": "spell_nature_rejuvenation",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_rejuvenation.jpg?v=ae70ca4d",
    "requiredLevel": 45
   },
   {
    "key": "intensity",
    "name": "Intensity",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nAllows 40% of your Mana regeneration to continue while casting and causes your Enrage ability to instantly generate 15 rage.\n\nThis Mystic Enchant does not stack with the Intensity Talent.",
-   "iconFile": "spell_frost_windwalkon",
+   "icon": "assets/game/druid/mystic-enchants/spell_frost_windwalkon.jpg?v=3786c3f2",
    "requiredLevel": 45
   },
   {
    "key": "master_shapeshifter",
    "name": "Master Shapeshifter",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nGrants an effect which lasts while the Druid is within the respective shapeshift form.\n\nBear Form - Increases physical damage by 4%.\n\nCat Form - Increases critical strike chance by 4%.\n\nMoonkin Form - Increases spell damage by 4%.\n\nTree of Life Form - Increases healing by 4%.\n\nThis Mystic Enchant does not stack with the Master Shapeshifter Talent.",
-   "iconFile": "ability_druid_mastershapeshifter",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_mastershapeshifter.jpg?v=5d4e6268",
    "requiredLevel": 45
   },
   {
    "key": "moonglow",
    "name": "Moonglow",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nReduces the Mana cost of your Moonfire, Starfire, Starfall, Wrath, Healing Touch, Nourish, Regrowth and Rejuvenation spells by 12%.\n\nThis Mystic Enchant does not stack with the Moonglow Talent.",
-   "iconFile": "spell_nature_sentinal",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_sentinal.jpg?v=ef8ffd15",
    "requiredLevel": 45
   },
   {
    "key": "natural_shapeshifter",
    "name": "Natural Shapeshifter",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of all shapeshifting by 30%.\n\nThis Mystic Enchant does not stack with the Natural Shapeshifter Talent.",
-   "iconFile": "spell_nature_wispsplode",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_wispsplode.jpg?v=76f130c3",
    "requiredLevel": 45
   },
   {
    "key": "naturalist",
    "name": "Naturalist",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nReduces the cast time of your Healing Touch spell by 0.5 sec and increases the damage you deal with physical attacks in all forms by 10%.\n\nThis Mystic Enchant does not stack with the Naturalist Talent.",
-   "iconFile": "spell_nature_healingtouch",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_healingtouch.jpg?v=c844fae8",
    "requiredLevel": 45
   },
   {
    "key": "natures_focus",
    "name": "Nature's Focus",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks  while casting Healing Touch, Wrath, Entangling Roots, Cyclone, Nourish, Regrowth and Tranquility by 70%.\n\nThis Mystic Enchant does not stack with the Nature's Focus Talent.",
-   "iconFile": "spell_nature_healingwavegreater",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_healingwavegreater.jpg?v=3b1060ad",
    "requiredLevel": 45
   },
   {
    "key": "natures_grace",
    "name": "Nature's Grace",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nAll non-periodic spell criticals have a 100% chance to grace you with a blessing of nature, increasing your spell casting speed by 20% for 3 sec.\n\nThis Mystic Enchant does not stack with the Nature's Grace Talent.",
-   "iconFile": "spell_nature_naturesblessing",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_naturesblessing.jpg?v=3e9b93c0",
    "requiredLevel": 45
   },
   {
    "key": "natures_majesty",
    "name": "Nature's Majesty",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Wrath, Starfire, Starfall, Nourish and Healing Touch spells by 4%.\n\nThis Mystic Enchant does not stack with the Nature's Majesty Talent.",
-   "iconFile": "inv_staff_01",
+   "icon": "assets/game/druid/mystic-enchants/inv_staff_01.jpg?v=61be5ead",
    "requiredLevel": 45
   },
   {
    "key": "natures_reach",
    "name": "Nature's Reach",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your Balance spells and Faerie Fire (Feral) ability by 20%, and reduces the threat generated by your Balance spells by 30%.\n\nThis Mystic Enchant does not stack with the Nature's Reach Talent.",
-   "iconFile": "spell_nature_naturetouchgrow",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_naturetouchgrow.jpg?v=5c77bde8",
    "requiredLevel": 45
   },
   {
    "key": "natures_splendor",
    "name": "Nature's Splendor",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm and Lifebloom spells by 2 sec.\n\nThis Mystic Enchant does not stack with the Nature's Splendor Talent.",
-   "iconFile": "spell_nature_natureguardian",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_natureguardian.jpg?v=9fcdb929",
    "requiredLevel": 45
   },
   {
    "key": "omen_of_clarity",
    "name": "Omen of Clarity",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nEach of the Druid's damage, healing spells and auto attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage, healing spell or offensive ability by 100%.\n\nThis Mystic Enchant does not stack with the Omen of Clarity Talent.",
-   "iconFile": "spell_nature_crystalball",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_crystalball.jpg?v=9c69288b",
    "requiredLevel": 45
   },
   {
    "key": "predatory_strikes",
    "name": "Predatory Strikes",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases your melee attack power in Cat, Bear and Dire Bear Forms by 150% of your level and 20% of any attack power on your equipped weapon.  In addition, your finishing moves have a 20% chance per combo point to make your next Nature spell with a base casting time less than 10 sec. become an instant cast spell.\n\nThis Mystic Enchant does not stack with the Predatory Strikes Talent.",
-   "iconFile": "ability_hunter_pet_cat",
+   "icon": "assets/game/druid/mystic-enchants/ability_hunter_pet_cat.jpg?v=8abb8f86",
    "requiredLevel": 45
   },
   {
    "key": "primal_fury",
    "name": "Primal Fury",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nGives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point.\n\nThis Mystic Enchant does not stack with the Primal Fury Talent.",
-   "iconFile": "ability_racial_cannibalize",
+   "icon": "assets/game/druid/mystic-enchants/ability_racial_cannibalize.jpg?v=59ea1460",
    "requiredLevel": 45
   },
   {
    "key": "primal_precision",
    "name": "Primal Precision",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Expertise by 10 and you are refunded 80% of the energy cost of a finishing move if it fails to land.\n\nThis Mystic Enchant does not stack with the Primal Precision Talent.",
-   "iconFile": "ability_druid_primalprecision",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_primalprecision.jpg?v=2c45e997",
    "requiredLevel": 45
   },
   {
    "key": "savage_fury",
    "name": "Savage Fury",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage caused by your Claw, Rake, Mangle (Cat), Mangle (Bear), and Maul abilities by 20%.\n\nThis Mystic Enchant does not stack with the Savage Fury Talent.",
-   "iconFile": "ability_druid_ravage",
+   "icon": "assets/game/druid/mystic-enchants/ability_druid_ravage.jpg?v=1f3fb404",
    "requiredLevel": 45
   },
   {
    "key": "sharpened_claws",
    "name": "Sharpened Claws",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases your critical strike chance while in Bear, Dire Bear or Cat Form by 9%.\n\nThis Mystic Enchant does not stack with the Sharpened Claws Talent.",
-   "iconFile": "inv_misc_monsterclaw_04",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_monsterclaw_04.jpg?v=dc4d9dd1",
    "requiredLevel": 45
   },
   {
    "key": "shredding_attacks",
    "name": "Shredding Attacks",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nReduces the energy cost of your Shred ability by 18 and the rage cost of your Lacerate ability by 2.\n\nThis Mystic Enchant does not stack with the Shredding Attacks Talent.",
-   "iconFile": "spell_shadow_vampiricaura",
+   "icon": "assets/game/druid/mystic-enchants/spell_shadow_vampiricaura.jpg?v=b9dead30",
    "requiredLevel": 45
   },
   {
    "key": "starlight_wrath",
    "name": "Starlight Wrath",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nReduces the cast time of your Wrath, Starfire and Starsurge spells by 0.5 sec.\n\nThis Mystic Enchant does not stack with the Starlight Wrath Talent.",
-   "iconFile": "spell_nature_abolishmagic",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_abolishmagic.jpg?v=bacec6cf",
    "requiredLevel": 45
   },
   {
    "key": "subtlety",
    "name": "Subtlety",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nReduces the threat generated by your restoration spells by 30% and reduces the chance your helpful spells, Moonfire, and Insect Swarm will be dispelled by 30%.\n\nThis Mystic Enchant does not stack with the Subtlety Talent.",
-   "iconFile": "ability_eyeoftheowl",
+   "icon": "assets/game/druid/mystic-enchants/ability_eyeoftheowl.jpg?v=dec37540",
    "requiredLevel": 45
   },
   {
    "key": "thick_hide",
    "name": "Thick Hide",
    "rarity": "rare",
-   "spec": "Feral",
+   "specs": [
+    "Feral"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Armor contribution from cloth and leather items by 10%.\n\nThis Mystic Enchant does not stack with the Thick Hide Talent.",
-   "iconFile": "inv_misc_pelt_bear_03",
+   "icon": "assets/game/druid/mystic-enchants/inv_misc_pelt_bear_03.jpg?v=8ab3f9a9",
    "requiredLevel": 45
   },
   {
    "key": "tranquil_spirit",
    "name": "Tranquil Spirit",
    "rarity": "rare",
-   "spec": "Restoration",
+   "specs": [
+    "Restoration"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of your Healing Touch, Nourish and Tranquility spells by 10%.\n\nThis Mystic Enchant does not stack with the Tranquil Spirit Talent.",
-   "iconFile": "spell_holy_elunesgrace",
+   "icon": "assets/game/druid/mystic-enchants/spell_holy_elunesgrace.jpg?v=cd097d42",
    "requiredLevel": 45
   },
   {
    "key": "vengeance",
    "name": "Vengeance",
    "rarity": "rare",
-   "spec": "Balance",
+   "specs": [
+    "Balance"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of your Starfire, Starfall, Starsurge, Moonfire, and Wrath spells by 100%.\n\nThis Mystic Enchant does not stack with the Vengeance Talent.",
-   "iconFile": "spell_nature_purge",
+   "icon": "assets/game/druid/mystic-enchants/spell_nature_purge.jpg?v=87e3c89a",
    "requiredLevel": 45
   }
  ],
@@ -3046,7 +3316,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The druid's skin becomes as tough as bark.  All damage taken is reduced by 20%.  While protected, damaging attacks will not cause spellcasting delays.  This spell is usable while stunned, frozen, incapacitated, feared or asleep.  Usable in all forms.  Lasts 12 sec.",
-   "iconFile": "spell_nature_stoneclawtotem",
+   "icon": "assets/game/druid/abilities/spell_nature_stoneclawtotem.jpg?v=9c914645",
    "cooldown": "1 min",
    "duration": "12 sec"
   },
@@ -3060,7 +3330,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Tosses the enemy target into the air, preventing all action but making them invulnerable for up to 6 sec.  Only one target can be affected by your Cyclone at a time.",
-   "iconFile": "spell_nature_earthbind",
+   "icon": "assets/game/druid/abilities/spell_nature_earthbind.jpg?v=5eeb91dd",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3077,7 +3347,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Roots the target in place and causes 270 Nature damage over 27 sec.  Damage caused may interrupt the effect.",
-   "iconFile": "spell_nature_stranglevines",
+   "icon": "assets/game/druid/abilities/spell_nature_stranglevines.jpg?v=733864ac",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3094,7 +3364,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Decrease the armor of the target by 5% for 5 min.  While affected, the target cannot stealth or turn invisible.",
-   "iconFile": "spell_nature_faeriefire",
+   "icon": "assets/game/druid/abilities/spell_nature_faeriefire.jpg?v=e9420830",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3111,7 +3381,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Summons 3 treants to attack enemy targets for 30 sec.",
-   "iconFile": "ability_druid_forceofnature"
+   "icon": "assets/game/druid/abilities/ability_druid_forceofnature.jpg?v=4b9faf61"
   },
   {
    "key": "hibernate",
@@ -3123,7 +3393,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Forces the enemy target to sleep for up to 40 sec.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.",
-   "iconFile": "spell_nature_sleep",
+   "icon": "assets/game/druid/abilities/spell_nature_sleep.jpg?v=3fdd4589",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3140,7 +3410,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Creates a violent storm in the target area causing 190 Nature damage to enemies every 1 sec, and increasing the time between attacks by 20%.  Lasts 10 sec.  Druid must channel to maintain the spell.",
-   "iconFile": "spell_nature_cyclone",
+   "icon": "assets/game/druid/abilities/spell_nature_cyclone.jpg?v=ee199085",
    "costValue": "0.81",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3157,7 +3427,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes the target to regenerate mana equal to 225% of the casting Druid's base mana pool over 10 sec.",
-   "iconFile": "spell_nature_lightning",
+   "icon": "assets/game/druid/abilities/spell_nature_lightning.jpg?v=b5ede565",
    "cooldown": "3 min",
    "duration": "10 sec",
    "range": 30
@@ -3172,7 +3442,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The enemy target is swarmed by insects, decreasing their chance to hit by 3% and causing 210 Nature damage over 14 sec.",
-   "iconFile": "spell_nature_insectswarm"
+   "icon": "assets/game/druid/abilities/spell_nature_insectswarm.jpg?v=856ae0b9"
   },
   {
    "key": "moonfire",
@@ -3184,7 +3454,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Burns the enemy for 256 to 291 Arcane damage and then an additional 508 Arcane damage over 12 sec.",
-   "iconFile": "spell_nature_starfall",
+   "icon": "assets/game/druid/abilities/spell_nature_starfall.jpg?v=a896bdb9",
    "costValue": "0.21",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3201,7 +3471,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "While active, any time an enemy strikes the caster they have a 100% chance to become afflicted by Entangling Roots (Rank 6).  3 charges.  Lasts 45 sec.",
-   "iconFile": "spell_nature_natureswrath",
+   "icon": "assets/game/druid/abilities/spell_nature_natureswrath.jpg?v=6e3d6d15",
    "cooldown": "1 min",
    "duration": "45 sec"
   },
@@ -3215,7 +3485,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Deals 460 Nature damage and applies Catalyst to 10 nearby enemies every 1 seconds for 4 sec while channeled.\n\nCatalyst: Increases the damage of the casters Instant Poison and Deadly Poison by 4%. Stacks 4 times. Lasts for 12 seconds.",
-   "iconFile": "ability_creature_poison_06",
+   "icon": "assets/game/druid/abilities/ability_creature_poison_06.jpg?v=104a2973",
    "costValue": "0.7",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3242,7 +3512,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Soothes the target beast, reducing the range at which it will attack you by 10 yards.  Only affects Beast and Dragonkin targets level 70 or lower.  Lasts 15 sec.",
-   "iconFile": "ability_hunter_beastsoothe",
+   "icon": "assets/game/druid/abilities/ability_hunter_beastsoothe.jpg?v=e3147b49",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3259,7 +3529,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You summon a flurry of stars from the sky on all targets within 30 yards of the caster, each dealing 145 to 167 Arcane damage. Also causes 26 Arcane damage to all other enemies within 5 yards of the enemy target. Maximum 20 stars. Lasts 10 sec.  Shapeshifting into an animal form or mounting cancels the effect. Any effect which causes you to lose control of your character will suppress the starfall effect.",
-   "iconFile": "ability_druid_starfall"
+   "icon": "assets/game/druid/abilities/ability_druid_starfall.jpg?v=c96a4873"
   },
   {
    "key": "starfire",
@@ -3271,7 +3541,7 @@
    "castTime": 3.5,
    "gcd": 1.5,
    "tooltipTemplate": "Causes 693 to 817 Arcane damage to the target.",
-   "iconFile": "spell_arcane_starfire",
+   "icon": "assets/game/druid/abilities/spell_arcane_starfire.jpg?v=02186e53",
    "costValue": "0.16",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3287,7 +3557,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Deals 707 to 866 Astral damage to the target.",
-   "iconFile": "spell_arcane_arcane03",
+   "icon": "assets/game/druid/abilities/spell_arcane_arcane03.jpg?v=e583af56",
    "costValue": "0.23",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3304,7 +3574,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Teleports the caster to the Moonglade.",
-   "iconFile": "spell_arcane_teleportmoonglade",
+   "icon": "assets/game/druid/abilities/spell_arcane_teleportmoonglade.jpg?v=baca0088",
    "costValue": "120",
    "costUnit": "flat",
    "costPower": "mana"
@@ -3319,7 +3589,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Thorns sprout from the friendly target causing 18 Nature damage to attackers when hit.  Lasts 30 min.",
-   "iconFile": "spell_nature_thorns",
+   "icon": "assets/game/druid/abilities/spell_nature_thorns.jpg?v=2a81d45c",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3336,7 +3606,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You summon a violent Typhoon that does 400 Nature damage when in contact with hostile targets, knocking them back and dazing them for 6 sec.",
-   "iconFile": "ability_druid_typhoon"
+   "icon": "assets/game/druid/abilities/ability_druid_typhoon.jpg?v=7ef30b21"
   },
   {
    "key": "wrath",
@@ -3348,7 +3618,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Causes 318 to 356 Nature damage to the target.",
-   "iconFile": "spell_nature_abolishmagic",
+   "icon": "assets/game/druid/abilities/spell_nature_abolishmagic.jpg?v=bacec6cf",
    "costValue": "0.11",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3364,7 +3634,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Shapeshift into aquatic form, increasing swim speed by 50% and allowing the druid to breathe underwater.  Also protects the caster from Polymorph effects.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_aquaticform",
+   "icon": "assets/game/druid/abilities/ability_druid_aquaticform.jpg?v=9437bea5",
    "costValue": "0.13",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3379,7 +3649,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Stuns the target for 4 sec and interrupts non-player spellcasting for 3 sec.",
-   "iconFile": "ability_druid_bash",
+   "icon": "assets/game/druid/abilities/ability_druid_bash.jpg?v=e5d07875",
    "costValue": "100",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3397,7 +3667,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Shapeshift into dire bear form, increasing melee attack power by 200, armor contribution from cloth and leather items by 370%, and Stamina by 25%.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_racial_bearform",
+   "icon": "assets/game/druid/abilities/ability_racial_bearform.jpg?v=7103129d",
    "costValue": "0.35",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3412,7 +3682,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "When activated, this ability causes your Mangle (Bear) ability to hit up to 3 targets and have no cooldown, and reduces the energy cost of all your Cat Form abilities by 50%.  Lasts 15 sec.  You cannot use Tiger's Fury while Berserk is active.\n\nClears the effect of Fear and makes you immune to Fear for the duration.",
-   "iconFile": "ability_druid_berserk"
+   "icon": "assets/game/druid/abilities/ability_druid_berserk.jpg?v=1e6e261e"
   },
   {
    "key": "cat_form",
@@ -3424,7 +3694,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Shapeshift into cat form, increasing melee attack power by 120 plus Agility.  Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_catform",
+   "icon": "assets/game/druid/abilities/ability_druid_catform.jpg?v=55411537",
    "costValue": "0.35",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3439,7 +3709,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Forces all nearby enemies within 10 yards to focus attacks on you for 6 sec.(This spell cannot miss)",
-   "iconFile": "ability_druid_challangingroar",
+   "icon": "assets/game/druid/abilities/ability_druid_challangingroar.jpg?v=e7a259b6",
    "costValue": "150",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3456,7 +3726,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Claw the enemy, causing 138 additional damage.  Awards 1 combo point.",
-   "iconFile": "ability_druid_rake",
+   "icon": "assets/game/druid/abilities/ability_druid_rake.jpg?v=6f7f2131",
    "costValue": "45",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3472,7 +3742,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.",
-   "iconFile": "ability_druid_cower",
+   "icon": "assets/game/druid/abilities/ability_druid_cower.jpg?v=592c044b",
    "costValue": "20",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3489,7 +3759,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases movement speed by 60% while in Cat Form for 15 sec.  Does not break prowling.",
-   "iconFile": "ability_druid_dash",
+   "icon": "assets/game/druid/abilities/ability_druid_dash.jpg?v=b13bb793",
    "cooldown": "3 min",
    "duration": "15 sec"
   },
@@ -3503,7 +3773,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "The druid roars, decreasing nearby enemies' melee attack power by 146.  Lasts 30 sec.",
-   "iconFile": "ability_druid_demoralizingroar",
+   "icon": "assets/game/druid/abilities/ability_druid_demoralizingroar.jpg?v=fc636197",
    "costValue": "100",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3519,7 +3789,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Generates 20 rage, and then generates an additional 10 rage over 10 sec, but reduces base armor by 27% in Bear Form and 16% in Dire Bear Form.",
-   "iconFile": "ability_druid_enrage",
+   "icon": "assets/game/druid/abilities/ability_druid_enrage.jpg?v=deb8d00a",
    "cooldown": "1 min",
    "duration": "10 sec"
   },
@@ -3533,7 +3803,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Decrease the armor of the target by 5% for 5 min.  While affected, the target cannot stealth or turn invisible.  Deals 1 damage and additional threat when used in Bear Form or Dire Bear Form.",
-   "iconFile": "spell_nature_faeriefire",
+   "icon": "assets/game/druid/abilities/spell_nature_faeriefire.jpg?v=e9420830",
    "cooldown": "6 sec",
    "duration": "5 min",
    "range": 30,
@@ -3554,7 +3824,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Teaches Feral Charge (Bear) and Feral Charge (Cat).\n\nFeral Charge (Bear) - Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec. This ability can be used in Bear Form and Dire Bear Form. 15 second cooldown.\n\nFeral Charge (Cat) - Causes you to leap behind an enemy, dazing them for 3 sec. 30 second cooldown.",
-   "iconFile": "ability_hunter_pet_bear"
+   "icon": "assets/game/druid/abilities/ability_hunter_pet_bear.jpg?v=a23cbeaf"
   },
   {
    "key": "ferocious_bite",
@@ -3566,7 +3836,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage per combo point and converts each extra point of energy (up to a maximum of 30 extra energy) into 2.1 additional damage.  Damage is increased by your attack power.\n   1 point  : 218.7-278.7 damage\n   2 points: 380.4-440.4 damage\n   3 points: 542.1-602.1 damage\n   4 points: 703.8-763.8 damage\n   5 points: 865.5-925.5 damage",
-   "iconFile": "ability_druid_ferociousbite",
+   "icon": "assets/game/druid/abilities/ability_druid_ferociousbite.jpg?v=4d03721c",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3628,7 +3898,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Shapeshift into flight form, increasing movement speed by $1133948s2% and allowing you to fly.  Cannot use in combat.  Can only use this form in Outland or Northrend.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_flightform",
+   "icon": "assets/game/druid/abilities/ability_druid_flightform.jpg?v=da3ddcee",
    "costValue": "0.13",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3643,7 +3913,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Converts up to 10 rage per second into health for 10 sec.  Each point of rage is converted into 0.3% of max health.",
-   "iconFile": "ability_bullrush",
+   "icon": "assets/game/druid/abilities/ability_bullrush.jpg?v=cdc5bf42",
    "cooldown": "3 min",
    "duration": "10 sec"
   },
@@ -3657,7 +3927,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Swipe at your target and nearby enemies for 300% weapon damage.\n\nThis sends your tamed beast into a frenzy, causing its auto attacks to strike up to 5 nearby enemies for 8 sec.",
-   "iconFile": "inv_misc_monsterclaw_05",
+   "icon": "assets/game/druid/abilities/inv_misc_monsterclaw_05.jpg?v=1f6d5a61",
    "costValue": "60",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3674,7 +3944,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Taunts the target to attack you, but has no effect if the target is already attacking you.\n\nThis spell can not miss.",
-   "iconFile": "ability_physical_taunt",
+   "icon": "assets/game/druid/abilities/ability_physical_taunt.jpg?v=2f55b5a4",
    "cooldown": "8 sec",
    "duration": "3 sec",
    "range": 30
@@ -3689,7 +3959,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Lacerates the enemy target, dealing 50 damage and making them bleed for 180 damage over 15 sec and causing a high amount of threat.  Damage increased by attack power.  This effect stacks up to 3 times on the same target.",
-   "iconFile": "ability_druid_lacerate",
+   "icon": "assets/game/druid/abilities/ability_druid_lacerate.jpg?v=9ff0b809",
    "costValue": "150",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3706,7 +3976,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage and stuns the target.  Non-player victim spellcasting is also interrupted for 3 sec.  Causes more damage and lasts longer per combo point:\n   1 point  : 129-129 damage, 1 sec\n   2 points: 213-213 damage, 2 sec\n   3 points: 297-297 damage, 3 sec\n   4 points: 381-381 damage, 4 sec\n   5 points: 465-465 damage, 5 sec",
-   "iconFile": "ability_druid_mangle.tga",
+   "icon": "assets/game/druid/abilities/ability_druid_mangle.tga.jpg?v=365c04bf",
    "costValue": "35",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3765,7 +4035,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Mangle the target, inflicting damage and causing the target to take additional damage from bleed effects for 1 min.  This ability can be used in Cat Form or Dire Bear Form.",
-   "iconFile": "ability_druid_mangle2"
+   "icon": "assets/game/druid/abilities/ability_druid_mangle2.jpg?v=b3992726"
   },
   {
    "key": "mangle_bear",
@@ -3777,7 +4047,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Mangle the target for 124% normal damage plus 140.12 and causes the target to take 30% additional damage from bleed effects for 1 min.",
-   "iconFile": "ability_druid_mangle2",
+   "icon": "assets/game/druid/abilities/ability_druid_mangle2.jpg?v=b3992726",
    "costValue": "200",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3795,7 +4065,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Mangle the target for 200% normal damage plus 256 and causes the target to take 30% additional damage from bleed effects for 1 min.  Awards 1 combo point.",
-   "iconFile": "ability_druid_mangle2",
+   "icon": "assets/game/druid/abilities/ability_druid_mangle2.jpg?v=b3992726",
    "costValue": "45",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3812,7 +4082,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A strong attack that increases melee damage by 186 and causes a high amount of threat.  Effects which increase Bleed damage also increase Maul damage.",
-   "iconFile": "ability_druid_maul",
+   "icon": "assets/game/druid/abilities/ability_druid_maul.jpg?v=cd52f9e3",
    "costValue": "150",
    "costUnit": "flat",
    "costPower": "rage",
@@ -3828,7 +4098,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Pounce, stunning the target for 3 sec and causing 450 damage over 18 sec.  Must be prowling.  Awards 1 combo point.",
-   "iconFile": "ability_druid_supriseattack",
+   "icon": "assets/game/druid/abilities/ability_druid_supriseattack.jpg?v=c8850e0c",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3845,7 +4115,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Allows the Druid to prowl around, but reduces your movement speed by 30%.  Lasts until cancelled.",
-   "iconFile": "ability_ambush",
+   "icon": "assets/game/druid/abilities/ability_ambush.jpg?v=82ac5e06",
    "cooldown": "10 sec"
   },
   {
@@ -3858,7 +4128,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Rake the target for 73 bleed damage and an additional 342 damage over 9 sec.  Awards 1 combo point.",
-   "iconFile": "ability_druid_disembowel",
+   "icon": "assets/game/druid/abilities/ability_druid_disembowel.jpg?v=72970d31",
    "costValue": "40",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3885,7 +4155,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Ravage the target, causing 500% damage plus 635 to the target.  Must be prowling and behind the target.  Awards 1 combo point.",
-   "iconFile": "ability_druid_ravage",
+   "icon": "assets/game/druid/abilities/ability_druid_ravage.jpg?v=1f3fb404",
    "costValue": "60",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3901,7 +4171,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that causes damage over time.  Damage increases per combo point and by your attack power:\n   1 point: 300 damage over 12 sec.\n   2 points: 486 damage over 12 sec.\n   3 points: 672 damage over 12 sec.\n   4 points: 858 damage over 12 sec.\n   5 points: 1044 damage over 12 sec.",
-   "iconFile": "ability_ghoulfrenzy",
+   "icon": "assets/game/druid/abilities/ability_ghoulfrenzy.jpg?v=623ad06c",
    "costValue": "30",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3940,7 +4210,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Finishing move that increases physical damage done by 30%.  Only useable while in Cat Form.  Lasts longer per combo point:\n   1 point  : 14 seconds\n   2 points: 19 seconds\n   3 points: 24 seconds\n   4 points: 29 seconds\n   5 points: 34 seconds",
-   "iconFile": "ability_druid_skinteeth",
+   "icon": "assets/game/druid/abilities/ability_druid_skinteeth.jpg?v=f5ac9c32",
    "costValue": "25",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3957,7 +4227,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Shred the target, causing 225% damage plus 180 to the target.  Must be behind the target.  Awards 1 combo point.  Effects which increase Bleed damage also increase Shred damage.",
-   "iconFile": "spell_shadow_vampiricaura",
+   "icon": "assets/game/druid/abilities/spell_shadow_vampiricaura.jpg?v=b9dead30",
    "costValue": "60",
    "costUnit": "flat",
    "costPower": "energy",
@@ -3973,7 +4243,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec while in Bear Form, Cat Form, or Dire Bear Form.  After the effect expires, the health is lost.",
-   "iconFile": "ability_druid_tigersroar"
+   "icon": "assets/game/druid/abilities/ability_druid_tigersroar.jpg?v=ee53e40f"
   },
   {
    "key": "swipe_bear",
@@ -3985,7 +4255,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Swipe nearby enemies, inflicting 62 damage.  Damage increased by attack power.",
-   "iconFile": "inv_misc_monsterclaw_03",
+   "icon": "assets/game/druid/abilities/inv_misc_monsterclaw_03.jpg?v=889569af",
    "costValue": "200",
    "costUnit": "flat",
    "costPower": "rage",
@@ -4001,7 +4271,7 @@
    "castTime": 0,
    "gcd": 1,
    "tooltipTemplate": "Swipe nearby enemies, inflicting 250% weapon damage.",
-   "iconFile": "inv_misc_monsterclaw_03",
+   "icon": "assets/game/druid/abilities/inv_misc_monsterclaw_03.jpg?v=889569af",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "energy",
@@ -4017,7 +4287,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Deals 67 damage, and causes all targets within 8 yards to bleed for 15 damage over 8 sec. Effects which increase Bleed damage also increase Thrash damage.",
-   "iconFile": "spell_druid_thrash",
+   "icon": "assets/game/druid/abilities/spell_druid_thrash.jpg?v=9a15914c",
    "costValue": "250",
    "costUnit": "flat",
    "costPower": "rage",
@@ -4045,7 +4315,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases damage done by 40 for 6 sec.",
-   "iconFile": "ability_mount_jungletiger",
+   "icon": "assets/game/druid/abilities/ability_mount_jungletiger.jpg?v=32a1ed0f",
    "cooldown": "30 sec",
    "duration": "6 sec"
   },
@@ -4059,7 +4329,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "ability_tracking",
+   "icon": "assets/game/druid/abilities/ability_tracking.jpg?v=865bf193",
    "cooldown": "1.5 sec"
   },
   {
@@ -4072,7 +4342,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Shapeshift into travel form, increasing movement speed by 40%.  Also protects the caster from Polymorph effects.  Only useable outdoors.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_travelform",
+   "icon": "assets/game/druid/abilities/ability_druid_travelform.jpg?v=df746f67",
    "costValue": "0.13",
    "costUnit": "percent",
    "costPower": "mana"
@@ -4087,7 +4357,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Attempts to cure 1 poison effect on the target, and 1 more poison effect every 3 seconds for 12 sec.",
-   "iconFile": "spell_nature_nullifypoison_02",
+   "icon": "assets/game/druid/abilities/spell_nature_nullifypoison_02.jpg?v=83dde2ee",
    "costValue": "0.13",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4104,7 +4374,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Cures 1 poison effect on the target.",
-   "iconFile": "spell_nature_nullifypoison",
+   "icon": "assets/game/druid/abilities/spell_nature_nullifypoison.jpg?v=0f3a858c",
    "costValue": "0.13",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4120,7 +4390,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals the 5 lowest health nearby party or raid members for ${(439+1.48)+(0*0.0.085085)} Every 1 seconds for 8 sec seconds and restores 1 seconds of your active heal over Time effects on allies healed.",
-   "iconFile": "custom_t_nhance_rpg_icons_tranquilityorb_border",
+   "icon": "assets/game/druid/abilities/custom_t_nhance_rpg_icons_tranquilityorb_border.jpg?v=a99788fd",
    "costValue": "0.7",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4143,7 +4413,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 1400.",
-   "iconFile": "spell_nature_healingtouch",
+   "icon": "assets/game/druid/abilities/spell_nature_healingtouch.jpg?v=c844fae8",
    "costValue": "0.33",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4165,7 +4435,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals the target for 175 over 7 sec.  When Lifebloom completes its duration or is dispelled, the target instantly heals themself for 367 and the Druid regains half the cost of the spell.  This effect can stack up to 3 times on the same target.",
-   "iconFile": "inv_misc_herb_felblossom",
+   "icon": "assets/game/druid/abilities/inv_misc_herb_felblossom.jpg?v=7590c43b",
    "costValue": "0.25",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4182,7 +4452,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increases the friendly target's armor by 285, all attributes by 12 and all resistances by 20 for 30 min.",
-   "iconFile": "spell_nature_regeneration",
+   "icon": "assets/game/druid/abilities/spell_nature_regeneration.jpg?v=2376ec2f",
    "costValue": "0.24",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4199,7 +4469,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 573. Heals for an additional 30% if you have a Rejuvenation, Regrowth, Lifebloom, or Wild Growth effect active on the target.",
-   "iconFile": "ability_druid_nourish",
+   "icon": "assets/game/druid/abilities/ability_druid_nourish.jpg?v=f9d08c7e",
    "costValue": "0.18",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4221,7 +4491,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Returns the spirit to the body, restoring a dead target to life with 2200 health and 2800 mana.",
-   "iconFile": "spell_nature_reincarnation",
+   "icon": "assets/game/druid/abilities/spell_nature_reincarnation.jpg?v=c2cd2a93",
    "costValue": "0.68",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4238,7 +4508,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 723 and another 770 over 21 sec.",
-   "iconFile": "spell_nature_resistnature",
+   "icon": "assets/game/druid/abilities/spell_nature_resistnature.jpg?v=7a6a6b45",
    "costValue": "0.29",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4261,7 +4531,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals the target for 760 over 15 sec.",
-   "iconFile": "spell_nature_rejuvenation",
+   "icon": "assets/game/druid/abilities/spell_nature_rejuvenation.jpg?v=ae70ca4d",
    "costValue": "0.18",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4278,7 +4548,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Dispels 1 Curse from a friendly target.",
-   "iconFile": "spell_holy_removecurse",
+   "icon": "assets/game/druid/abilities/spell_holy_removecurse.jpg?v=2a0f3efb",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4294,7 +4564,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Returns the spirit to the body, restoring a dead target to life with 600 health and 800 mana.  Cannot be cast when in combat.",
-   "iconFile": "ability_druid_lunarguidance",
+   "icon": "assets/game/druid/abilities/ability_druid_lunarguidance.jpg?v=09e61d21",
    "costValue": "0.72",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4310,7 +4580,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Imbues you with the Spirit of the Forest for 20 sec, reducing the cooldown of Wild Growth by 50%, the mana cost of Lifebloom by 50%, increasing Rejuvenation duration by 9 sec, and causing your Rejuvenation to also instantly heal your ally for ${152*0.99)+(0*0.585)}.",
-   "iconFile": "ability_druid_replenish",
+   "icon": "assets/game/druid/abilities/ability_druid_replenish.jpg?v=0f45c887",
    "cooldown": "1 min",
    "duration": "20 sec",
    "scaling": [
@@ -4330,7 +4600,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals all nearby group members for 1097 every 2 seconds for 8 sec.  Druid must channel to maintain the spell.",
-   "iconFile": "spell_nature_tranquility",
+   "icon": "assets/game/druid/abilities/spell_nature_tranquility.jpg?v=b66dfe7e",
    "costValue": "0.7",
    "costUnit": "percent",
    "costPower": "mana",
@@ -4347,7 +4617,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Grants the ability to shapeshift into the Tree of Life. While in this form you increase healing received by 6% for all party and raid members within 100 yards, reduces the mana cost of your healing over time spells by 20% and you can only cast Restoration spells in addition to Innervate, Barkskin, Nature's Grasp and Thorns spells.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-   "iconFile": "ability_druid_treeoflife"
+   "icon": "assets/game/druid/abilities/ability_druid_treeoflife.jpg?v=9435dadb"
   },
   {
    "key": "wild_growth",
@@ -4359,7 +4629,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Heals up to 5 friendly party or raid members within 15 yards of the target for 686 over 7 sec. The amount healed is applied quickly at first, and slows down as the Wild Growth reaches its full duration.",
-   "iconFile": "ability_druid_flourish"
+   "icon": "assets/game/druid/abilities/ability_druid_flourish.jpg?v=f07f88e9"
   }
  ]
 }

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Cache-bust stamp (rule A-cache-bust): re-stamp index.html ?v= tokens from the current app.js / styles.css /
+# data/classes.js / builds/index.js content and re-stage it, so a deploy never serves a stale cached file. Shared stamper:
+# ../tools/app/stamp_cache.py (workspace kit). Fails the commit if it cannot run: never commit with --no-verify.
+S="$(git rev-parse --show-toplevel)/../tools/app/stamp_cache.py"
+[ -f "$S" ] || { echo "pre-commit: $S not found (A-cache-bust)"; exit 1; }
+python "$S" . || { echo "pre-commit: stamp_cache failed"; exit 1; }
+git add index.html
+[ -f sw.js ] && git add sw.js
+exit 0

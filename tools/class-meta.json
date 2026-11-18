@@ -1,74 +1,83 @@
 {
   "warrior": {
     "name": "Warrior",
+    "accent": "#C69B3A",
     "trees": {
-      "Arms":       "#B83A28",
-      "Fury":       "#C87030",
+      "Arms": "#B83A28",
+      "Fury": "#C87030",
       "Protection": "#5880A8"
     }
   },
   "paladin": {
     "name": "Paladin",
+    "accent": "#F48CBA",
     "trees": {
-      "Holy":       "#D4B848",
+      "Holy": "#D4B848",
       "Protection": "#5880A8",
-      "Retribution":"#C85828"
+      "Retribution": "#C85828"
     }
   },
   "hunter": {
     "name": "Hunter",
+    "accent": "#AAD372",
     "trees": {
       "Beast Mastery": "#80A848",
-      "Marksmanship":  "#6898B8",
-      "Survival":      "#A86830"
+      "Marksmanship": "#6898B8",
+      "Survival": "#A86830"
     }
   },
   "rogue": {
     "name": "Rogue",
+    "accent": "#FFF468",
     "trees": {
       "Assassination": "#8050A0",
-      "Combat":        "#B07020",
-      "Subtlety":      "#406070"
+      "Combat": "#B07020",
+      "Subtlety": "#406070"
     }
   },
   "priest": {
     "name": "Priest",
+    "accent": "#CDCDCD",
     "trees": {
       "Discipline": "#6878A8",
-      "Holy":       "#C8B858",
-      "Shadow":     "#6050A0"
+      "Holy": "#C8B858",
+      "Shadow": "#6050A0"
     }
   },
   "shaman": {
     "name": "Shaman",
+    "accent": "#0070DD",
     "trees": {
-      "Elemental":   "#3888C8",
+      "Elemental": "#3888C8",
       "Enhancement": "#B07830",
       "Restoration": "#389870"
     }
   },
   "mage": {
     "name": "Mage",
+    "accent": "#3FC7EB",
     "trees": {
       "Arcane": "#8050C0",
-      "Fire":   "#C04820",
-      "Frost":  "#4898C8"
+      "Fire": "#C04820",
+      "Frost": "#4898C8"
     }
   },
   "warlock": {
     "name": "Warlock",
+    "accent": "#8788EE",
     "trees": {
-      "Affliction":  "#7a5fa8",
-      "Demonology":  "#3d9e5c",
+      "Affliction": "#7a5fa8",
+      "Demonology": "#3d9e5c",
       "Destruction": "#c04428"
     }
   },
   "druid": {
     "name": "Druid",
+    "accent": "#FF7C0A",
     "trees": {
-      "Balance":      "#8060A8",
-      "Feral":        "#B86820",
-      "Restoration":  "#408840"
+      "Balance": "#8060A8",
+      "Feral": "#B86820",
+      "Restoration": "#408840"
     }
   }
 }

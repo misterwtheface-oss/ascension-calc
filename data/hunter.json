@@ -8,17 +8,17 @@
   {
    "name": "Beast Mastery",
    "accent": "#80A848",
-   "background": "assets/game/hunter/backgrounds/hunterbeastmastery.jpg"
+   "background": "assets/game/hunter/backgrounds/hunterbeastmastery.jpg?v=9e28c563"
   },
   {
    "name": "Marksmanship",
    "accent": "#6898B8",
-   "background": "assets/game/hunter/backgrounds/huntermarksmanship.jpg"
+   "background": "assets/game/hunter/backgrounds/huntermarksmanship.jpg?v=91607f33"
   },
   {
    "name": "Survival",
    "accent": "#A86830",
-   "background": "assets/game/hunter/backgrounds/huntersurvival.jpg"
+   "background": "assets/game/hunter/backgrounds/huntersurvival.jpg?v=470fb89f"
   }
  ],
  "talents": {
@@ -44,7 +44,7 @@
      5
     ]
    ],
-   "iconFile": "ability_hunter_improvedtracking"
+   "icon": "assets/game/hunter/talents/ability_hunter_improvedtracking.jpg?v=0e7f7ac8"
   },
   "hawk_eye": {
    "name": "Hawk Eye",
@@ -62,7 +62,7 @@
      6
     ]
    ],
-   "iconFile": "ability_townwatch"
+   "icon": "assets/game/hunter/talents/ability_townwatch.jpg?v=5ef433b9"
   },
   "savage_strikes": {
    "name": "Savage Strikes",
@@ -80,7 +80,7 @@
      24
     ]
    ],
-   "iconFile": "ability_racial_bloodrage"
+   "icon": "assets/game/hunter/talents/ability_racial_bloodrage.jpg?v=ca10903b"
   },
   "surefooted": {
    "name": "Surefooted",
@@ -98,7 +98,7 @@
      30
     ]
    ],
-   "iconFile": "ability_kick"
+   "icon": "assets/game/hunter/talents/ability_kick.jpg?v=f2598161"
   },
   "entrapment": {
    "name": "Entrapment",
@@ -116,7 +116,7 @@
      4
     ]
    ],
-   "iconFile": "spell_nature_stranglevines"
+   "icon": "assets/game/hunter/talents/spell_nature_stranglevines.jpg?v=733864ac"
   },
   "trap_mastery": {
    "name": "Trap Mastery",
@@ -140,7 +140,7 @@
      6
     ]
    ],
-   "iconFile": "ability_ensnare"
+   "icon": "assets/game/hunter/talents/ability_ensnare.jpg?v=8a098c49"
   },
   "survival_instincts": {
    "name": "Survival Instincts",
@@ -157,7 +157,7 @@
      4
     ]
    ],
-   "iconFile": "ability_hunter_survivalinstincts"
+   "icon": "assets/game/hunter/talents/ability_hunter_survivalinstincts.jpg?v=8e0fbe21"
   },
   "survivalist": {
    "name": "Survivalist",
@@ -181,14 +181,14 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_twilight"
+   "icon": "assets/game/hunter/talents/spell_shadow_twilight.jpg?v=4d2eabad"
   },
   "scatter_shot": {
    "name": "Scatter Shot",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used.",
-   "iconFile": "ability_golemstormbolt"
+   "icon": "assets/game/hunter/talents/ability_golemstormbolt.jpg?v=2c4fd9a0"
   },
   "deflection": {
    "name": "Deflection",
@@ -209,7 +209,7 @@
      50
     ]
    ],
-   "iconFile": "ability_parry"
+   "icon": "assets/game/hunter/talents/ability_parry.jpg?v=fbdd48d9"
   },
   "survival_tactics": {
    "name": "Survival Tactics",
@@ -226,7 +226,7 @@
      4
     ]
    ],
-   "iconFile": "ability_rogue_feigndeath"
+   "icon": "assets/game/hunter/talents/ability_rogue_feigndeath.jpg?v=9f1d281e"
   },
   "t_n_t": {
    "name": "T.N.T.",
@@ -244,14 +244,14 @@
      6
     ]
    ],
-   "iconFile": "inv_misc_bomb_05"
+   "icon": "assets/game/hunter/talents/inv_misc_bomb_05.jpg?v=2cfc1a8c"
   },
   "deadly_focus": {
    "name": "Deadly Focus",
    "maxPts": 5,
    "prereq": null,
    "tooltipTemplate": "Decreases the cooldown of Mongoose Bite by 0.5 sec.\n\nYour Mongoose Bite has a 100% chance to enable the use of Counterattack. When used this way Counterattack does not immobilize the target.",
-   "iconFile": "ability_hunter_swiftstrike"
+   "icon": "assets/game/hunter/talents/ability_hunter_swiftstrike.jpg?v=f32c3262"
   },
   "lock_and_load": {
    "name": "Lock and Load",
@@ -272,7 +272,7 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_lockandload"
+   "icon": "assets/game/hunter/talents/ability_hunter_lockandload.jpg?v=d056cbfc"
   },
   "hunter_vs_wild": {
    "name": "Hunter vs. Wild",
@@ -290,7 +290,7 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_huntervswild"
+   "icon": "assets/game/hunter/talents/ability_hunter_huntervswild.jpg?v=a0252aa6"
   },
   "killer_instinct": {
    "name": "Killer Instinct",
@@ -308,14 +308,14 @@
      3
     ]
    ],
-   "iconFile": "spell_holy_blessingofstamina"
+   "icon": "assets/game/hunter/talents/spell_holy_blessingofstamina.jpg?v=16c23fb3"
   },
   "counterattack": {
    "name": "Counterattack",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "A strike that becomes active after parrying an opponent's attack. This attack deals 48 damage and immobilizes the target for 5 sec when triggered from parrying an attack. It cannot be blocked, dodged, or parried.",
-   "iconFile": "ability_warrior_challange",
+   "icon": "assets/game/hunter/talents/ability_warrior_challange.jpg?v=d7a3970f",
    "active": true
   },
   "lightning_reflexes": {
@@ -340,7 +340,7 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_invisibilty"
+   "icon": "assets/game/hunter/talents/spell_nature_invisibilty.jpg?v=0445197d"
   },
   "resourcefulness": {
    "name": "Resourcefulness",
@@ -361,7 +361,7 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_resourcefulness"
+   "icon": "assets/game/hunter/talents/ability_hunter_resourcefulness.jpg?v=faa46cbb"
   },
   "relentless": {
    "name": "Relentless",
@@ -382,21 +382,21 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_mongoosebite"
+   "icon": "assets/game/hunter/talents/ability_hunter_mongoosebite.jpg?v=276d0d31"
   },
   "expose_weakness": {
    "name": "Expose Weakness",
    "maxPts": 3,
    "prereq": "lightning_reflexes",
    "tooltipTemplate": "Critical strikes grant you Expose Weakness. Expose Weakness increases your attack power by 25% of your Agility for 7 sec.",
-   "iconFile": "ability_rogue_findweakness"
+   "icon": "assets/game/hunter/talents/ability_rogue_findweakness.jpg?v=39a79459"
   },
   "wyvern_sting": {
    "name": "Wyvern Sting",
    "maxPts": 1,
    "prereq": "killer_instinct",
    "tooltipTemplate": "A stinging shot that puts the target to sleep for 30 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 6 sec.  Only one Sting per Hunter can be active on the target at a time.",
-   "iconFile": "inv_spear_02",
+   "icon": "assets/game/hunter/talents/inv_spear_02.jpg?v=df855121",
    "active": true
   },
   "thrill_of_the_hunt": {
@@ -412,7 +412,7 @@
      100
     ]
    ],
-   "iconFile": "ability_hunter_thrillofthehunt"
+   "icon": "assets/game/hunter/talents/ability_hunter_thrillofthehunt.jpg?v=84688962"
   },
   "master_tactician": {
    "name": "Master Tactician",
@@ -433,7 +433,7 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_mastertactitian"
+   "icon": "assets/game/hunter/talents/ability_hunter_mastertactitian.jpg?v=8e84d879"
   },
   "noxious_stings": {
    "name": "Noxious Stings",
@@ -454,7 +454,7 @@
      3
     ]
    ],
-   "iconFile": "ability_hunter_potentvenom"
+   "icon": "assets/game/hunter/talents/ability_hunter_potentvenom.jpg?v=62e8fd73"
   },
   "hunting_for_sport": {
    "name": "Hunting for Sport",
@@ -475,7 +475,7 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_laceration"
+   "icon": "assets/game/hunter/talents/ability_hunter_laceration.jpg?v=741a17de"
   },
   "point_of_no_escape": {
    "name": "Point of No Escape",
@@ -490,14 +490,14 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_pointofnoescape"
+   "icon": "assets/game/hunter/talents/ability_hunter_pointofnoescape.jpg?v=a2ced83b"
   },
   "black_arrow": {
    "name": "Black Arrow",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Fires a Black Arrow at the target, increasing all damage done by you to the target by 6% and dealing 785 Shadow damage over 15 sec.",
-   "iconFile": "spell_shadow_painspike",
+   "icon": "assets/game/hunter/talents/spell_shadow_painspike.jpg?v=40ab3e7e",
    "active": true
   },
   "sniper_training": {
@@ -519,7 +519,7 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_longshots"
+   "icon": "assets/game/hunter/talents/ability_hunter_longshots.jpg?v=cd438a6d"
   },
   "hunting_party": {
    "name": "Hunting Party",
@@ -540,14 +540,14 @@
      100
     ]
    ],
-   "iconFile": "ability_hunter_huntingparty"
+   "icon": "assets/game/hunter/talents/ability_hunter_huntingparty.jpg?v=cc580b76"
   },
   "explosive_shot": {
    "name": "Explosive Shot",
    "maxPts": 1,
    "prereq": "black_arrow",
    "tooltipTemplate": "You fire an explosive charge into the enemy target, dealing 158-189 Fire damage. The charge will blast the target every second for an additional 2 sec.",
-   "iconFile": "ability_hunter_explosiveshot",
+   "icon": "assets/game/hunter/talents/ability_hunter_explosiveshot.jpg?v=557fbb1b",
    "active": true
   },
   "carve": {
@@ -555,7 +555,7 @@
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "A sweeping attack that strikes up to 5 targets in front of you for 240% weapon damage plus 268.\n\nIncreases the damage dealt by your Raptor Strike, Mongoose Bite and Counterattack by 10% per target hit. Lasts for 9 sec or until you carve another target.",
-   "iconFile": "warrior_talent_icon_mastercleaver",
+   "icon": "assets/game/hunter/talents/warrior_talent_icon_mastercleaver.jpg?v=00f00b8f",
    "active": true
   },
   "improved_concussive_shot": {
@@ -571,7 +571,7 @@
      2
     ]
    ],
-   "iconFile": "spell_frost_stun"
+   "icon": "assets/game/hunter/talents/spell_frost_stun.jpg?v=aeb0b45b"
   },
   "focused_aim": {
    "name": "Focused Aim",
@@ -592,7 +592,7 @@
      3
     ]
    ],
-   "iconFile": "ability_hunter_focusedaim"
+   "icon": "assets/game/hunter/talents/ability_hunter_focusedaim.jpg?v=c5a69d66"
   },
   "lethal_shots": {
    "name": "Lethal Shots",
@@ -616,7 +616,7 @@
      5
     ]
    ],
-   "iconFile": "ability_searingarrow"
+   "icon": "assets/game/hunter/talents/ability_searingarrow.jpg?v=a505157c"
   },
   "careful_aim": {
    "name": "Careful Aim",
@@ -634,7 +634,7 @@
      100
     ]
    ],
-   "iconFile": "ability_hunter_zenarchery"
+   "icon": "assets/game/hunter/talents/ability_hunter_zenarchery.jpg?v=48ba0213"
   },
   "improved_hunters_mark": {
    "name": "Improved Hunter's Mark",
@@ -655,7 +655,7 @@
      100
     ]
    ],
-   "iconFile": "ability_hunter_snipershot"
+   "icon": "assets/game/hunter/talents/ability_hunter_snipershot.jpg?v=343673a0"
   },
   "mortal_shots": {
    "name": "Mortal Shots",
@@ -679,7 +679,7 @@
      30
     ]
    ],
-   "iconFile": "ability_piercedamage"
+   "icon": "assets/game/hunter/talents/ability_piercedamage.jpg?v=32097bde"
   },
   "go_for_the_throat": {
    "name": "Go for the Throat",
@@ -694,7 +694,7 @@
      50
     ]
    ],
-   "iconFile": "ability_hunter_goforthethroat"
+   "icon": "assets/game/hunter/talents/ability_hunter_goforthethroat.jpg?v=a01d26fc"
   },
   "improved_arcane_shot": {
    "name": "Improved Arcane Shot",
@@ -712,14 +712,14 @@
      15
     ]
    ],
-   "iconFile": "ability_impalingbolt"
+   "icon": "assets/game/hunter/talents/ability_impalingbolt.jpg?v=91d4a950"
   },
   "aimed_shot": {
    "name": "Aimed Shot",
    "maxPts": 1,
    "prereq": "mortal_shots",
    "tooltipTemplate": "An aimed shot that deals 145% ranged weapon damage plus 5 and reduces healing done to that target by 50%.  Lasts 10 sec.\n\nThis ability shares a cooldown with Multi-Shot.",
-   "iconFile": "inv_spear_07",
+   "icon": "assets/game/hunter/talents/inv_spear_07.jpg?v=584fd27e",
    "active": true
   },
   "rapid_killing": {
@@ -737,7 +737,7 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_rapidkilling"
+   "icon": "assets/game/hunter/talents/ability_hunter_rapidkilling.jpg?v=e75c6452"
   },
   "improved_stings": {
    "name": "Improved Stings",
@@ -761,7 +761,7 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_quickshot"
+   "icon": "assets/game/hunter/talents/ability_hunter_quickshot.jpg?v=e32b2ef2"
   },
   "efficiency": {
    "name": "Efficiency",
@@ -785,7 +785,7 @@
      20
     ]
    ],
-   "iconFile": "spell_frost_wizardmark"
+   "icon": "assets/game/hunter/talents/spell_frost_wizardmark.jpg?v=a5faa7bb"
   },
   "concussive_barrage": {
    "name": "Concussive Barrage",
@@ -800,14 +800,14 @@
      100
     ]
    ],
-   "iconFile": "spell_arcane_starfire"
+   "icon": "assets/game/hunter/talents/spell_arcane_starfire.jpg?v=02186e53"
   },
   "readiness": {
    "name": "Readiness",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When activated, this ability immediately finishes the cooldown on your other Hunter abilities except Bestial Wrath.",
-   "iconFile": "ability_hunter_readiness"
+   "icon": "assets/game/hunter/talents/ability_hunter_readiness.jpg?v=d13b587c"
   },
   "barrage": {
    "name": "Barrage",
@@ -825,7 +825,7 @@
      12
     ]
    ],
-   "iconFile": "ability_upgrademoonglaive"
+   "icon": "assets/game/hunter/talents/ability_upgrademoonglaive.jpg?v=254781cb"
   },
   "combat_experience": {
    "name": "Combat Experience",
@@ -840,7 +840,7 @@
      4
     ]
    ],
-   "iconFile": "ability_hunter_combatexperience"
+   "icon": "assets/game/hunter/talents/ability_hunter_combatexperience.jpg?v=a55f9b47"
   },
   "ranged_weapon_specialization": {
    "name": "Ranged Weapon Specialization",
@@ -858,7 +858,7 @@
      6
     ]
    ],
-   "iconFile": "inv_weapon_rifle_06"
+   "icon": "assets/game/hunter/talents/inv_weapon_rifle_06.jpg?v=4e55e776"
   },
   "piercing_shots": {
    "name": "Piercing Shots",
@@ -876,14 +876,14 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_piercingshots"
+   "icon": "assets/game/hunter/talents/ability_hunter_piercingshots.jpg?v=3713c903"
   },
   "trueshot_aura": {
    "name": "Trueshot Aura",
    "maxPts": 1,
    "prereq": "readiness",
    "tooltipTemplate": "Increases the attack power of party and raid members within 100 yards by 10%.  Lasts until cancelled.",
-   "iconFile": "ability_trueshot"
+   "icon": "assets/game/hunter/talents/ability_trueshot.jpg?v=5ca4da25"
   },
   "improved_barrage": {
    "name": "Improved Barrage",
@@ -904,7 +904,7 @@
      100
     ]
    ],
-   "iconFile": "ability_upgrademoonglaive"
+   "icon": "assets/game/hunter/talents/ability_upgrademoonglaive.jpg?v=254781cb"
   },
   "master_marksman": {
    "name": "Master Marksman",
@@ -925,7 +925,7 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_mastermarksman"
+   "icon": "assets/game/hunter/talents/ability_hunter_mastermarksman.jpg?v=9fe9601d"
   },
   "rapid_recuperation": {
    "name": "Rapid Recuperation",
@@ -942,7 +942,7 @@
      2
     ]
    ],
-   "iconFile": "ability_hunter_rapidregeneration"
+   "icon": "assets/game/hunter/talents/ability_hunter_rapidregeneration.jpg?v=6786c320"
   },
   "wild_quiver": {
    "name": "Wild Quiver",
@@ -960,14 +960,14 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_wildquiver"
+   "icon": "assets/game/hunter/talents/ability_hunter_wildquiver.jpg?v=8f5d2597"
   },
   "silencing_shot": {
    "name": "Silencing Shot",
    "maxPts": 1,
    "prereq": "master_marksman",
    "tooltipTemplate": "A shot that deals 50% weapon damage and Silences the target for 3 sec.  Non-player victim spellcasting is also interrupted for 3 sec.",
-   "iconFile": "ability_theblackarrow",
+   "icon": "assets/game/hunter/talents/ability_theblackarrow.jpg?v=342f6670",
    "active": true
   },
   "improved_steady_shot": {
@@ -986,7 +986,7 @@
      15
     ]
    ],
-   "iconFile": "ability_hunter_improvedsteadyshot"
+   "icon": "assets/game/hunter/talents/ability_hunter_improvedsteadyshot.jpg?v=7d1d290d"
   },
   "marked_for_death": {
    "name": "Marked for Death",
@@ -1007,14 +1007,14 @@
      10
     ]
    ],
-   "iconFile": "ability_hunter_assassinate"
+   "icon": "assets/game/hunter/talents/ability_hunter_assassinate.jpg?v=b388ab98"
   },
   "chimera_shot": {
    "name": "Chimera Shot",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You deal 125% weapon damage, refreshing the current Sting on your target and triggering an effect:\n\nSerpent Sting - Instantly deals 40% of the damage done by your Serpent Sting.\n\nViper Sting - Instantly restores mana to you equal to 60% of the total amount drained by your Viper Sting.\n\nScorpid Sting - Attempts to Disarm the target for 10 sec. This effect cannot occur more than once per 1 minute.",
-   "iconFile": "ability_hunter_chimerashot2",
+   "icon": "assets/game/hunter/talents/ability_hunter_chimerashot2.jpg?v=f19a51a8",
    "active": true
   },
   "improved_aspect_of_the_hawk": {
@@ -1039,7 +1039,7 @@
      15
     ]
    ],
-   "iconFile": "spell_nature_ravenform"
+   "icon": "assets/game/hunter/talents/spell_nature_ravenform.jpg?v=46ef69f1"
   },
   "endurance_training": {
    "name": "Endurance Training",
@@ -1068,7 +1068,7 @@
      5
     ]
    ],
-   "iconFile": "spell_nature_reincarnation"
+   "icon": "assets/game/hunter/talents/spell_nature_reincarnation.jpg?v=c2cd2a93"
   },
   "focused_fire": {
    "name": "Focused Fire",
@@ -1085,7 +1085,7 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_silenthunter"
+   "icon": "assets/game/hunter/talents/ability_hunter_silenthunter.jpg?v=39425042"
   },
   "improved_aspect_of_the_monkey": {
    "name": "Improved Aspect of the Monkey",
@@ -1103,7 +1103,7 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_aspectofthemonkey"
+   "icon": "assets/game/hunter/talents/ability_hunter_aspectofthemonkey.jpg?v=9d5f0075"
   },
   "thick_hide": {
    "name": "Thick Hide",
@@ -1124,7 +1124,7 @@
      10
     ]
    ],
-   "iconFile": "inv_misc_pelt_bear_03"
+   "icon": "assets/game/hunter/talents/inv_misc_pelt_bear_03.jpg?v=8ab3f9a9"
   },
   "improved_revive_pet": {
    "name": "Improved Revive Pet",
@@ -1143,7 +1143,7 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_beastsoothe"
+   "icon": "assets/game/hunter/talents/ability_hunter_beastsoothe.jpg?v=e3147b49"
   },
   "pathfinding": {
    "name": "Pathfinding",
@@ -1160,14 +1160,14 @@
      10
     ]
    ],
-   "iconFile": "ability_mount_jungletiger"
+   "icon": "assets/game/hunter/talents/ability_mount_jungletiger.jpg?v=32a1ed0f"
   },
   "aspect_mastery": {
    "name": "Aspect Mastery",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Aspect of the Viper - Reduces the damage penalty by 10%.\n\nAspect of the Monkey - Reduces the damage done to you while active by 5%.\n\nAspect of the Hawk - Increases the attack power bonus by 30%.\n\nAspect of the Dragonhawk - Combines the bonuses from Aspect of the Monkey and Hawk.",
-   "iconFile": "ability_hunter_aspectmastery"
+   "icon": "assets/game/hunter/talents/ability_hunter_aspectmastery.jpg?v=e708cdf5"
   },
   "unleashed_fury": {
    "name": "Unleashed Fury",
@@ -1191,7 +1191,7 @@
      15
     ]
    ],
-   "iconFile": "ability_bullrush"
+   "icon": "assets/game/hunter/talents/ability_bullrush.jpg?v=cdc5bf42"
   },
   "improved_mend_pet": {
    "name": "Improved Mend Pet",
@@ -1208,7 +1208,7 @@
      50
     ]
    ],
-   "iconFile": "ability_hunter_mendpet"
+   "icon": "assets/game/hunter/talents/ability_hunter_mendpet.jpg?v=2b89e411"
   },
   "ferocity": {
    "name": "Ferocity",
@@ -1232,7 +1232,7 @@
      10
     ]
    ],
-   "iconFile": "inv_misc_monsterclaw_04"
+   "icon": "assets/game/hunter/talents/inv_misc_monsterclaw_04.jpg?v=dc4d9dd1"
   },
   "spirit_bond": {
    "name": "Spirit Bond",
@@ -1249,14 +1249,14 @@
      10
     ]
    ],
-   "iconFile": "ability_druid_demoralizingroar"
+   "icon": "assets/game/hunter/talents/ability_druid_demoralizingroar.jpg?v=fc636197"
   },
   "intimidation": {
    "name": "Intimidation",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Command your pet to intimidate the target, causing a high amount of threat and stunning the target for 3 sec. Lasts 15 sec.",
-   "iconFile": "ability_devour"
+   "icon": "assets/game/hunter/talents/ability_devour.jpg?v=4642a88f"
   },
   "bestial_discipline": {
    "name": "Bestial Discipline",
@@ -1271,7 +1271,7 @@
      100
     ]
    ],
-   "iconFile": "spell_nature_abolishmagic"
+   "icon": "assets/game/hunter/talents/spell_nature_abolishmagic.jpg?v=bacec6cf"
   },
   "animal_handler": {
    "name": "Animal Handler",
@@ -1288,7 +1288,7 @@
      6
     ]
    ],
-   "iconFile": "ability_hunter_animalhandler"
+   "icon": "assets/game/hunter/talents/ability_hunter_animalhandler.jpg?v=71ab9217"
   },
   "frenzy": {
    "name": "Frenzy",
@@ -1312,7 +1312,7 @@
      100
     ]
    ],
-   "iconFile": "inv_misc_monsterclaw_03"
+   "icon": "assets/game/hunter/talents/inv_misc_monsterclaw_03.jpg?v=889569af"
   },
   "ferocious_inspiration": {
    "name": "Ferocious Inspiration",
@@ -1333,14 +1333,14 @@
      9
     ]
    ],
-   "iconFile": "ability_hunter_ferociousinspiration"
+   "icon": "assets/game/hunter/talents/ability_hunter_ferociousinspiration.jpg?v=04f24bef"
   },
   "bestial_wrath": {
    "name": "Bestial Wrath",
    "maxPts": 1,
    "prereq": "intimidation",
    "tooltipTemplate": "Send your pet into a rage causing 50% additional damage for 10 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.",
-   "iconFile": "ability_druid_ferociousbite"
+   "icon": "assets/game/hunter/talents/ability_druid_ferociousbite.jpg?v=4d03721c"
   },
   "catlike_reflexes": {
    "name": "Catlike Reflexes",
@@ -1364,7 +1364,7 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_catlikereflexes"
+   "icon": "assets/game/hunter/talents/ability_hunter_catlikereflexes.jpg?v=15e76311"
   },
   "invigoration": {
    "name": "Invigoration",
@@ -1379,7 +1379,7 @@
      100
     ]
    ],
-   "iconFile": "ability_hunter_invigeration"
+   "icon": "assets/game/hunter/talents/ability_hunter_invigeration.jpg?v=b91bbdb8"
   },
   "serpents_swiftness": {
    "name": "Serpent's Swiftness",
@@ -1400,7 +1400,7 @@
      20
     ]
    ],
-   "iconFile": "ability_hunter_serpentswiftness"
+   "icon": "assets/game/hunter/talents/ability_hunter_serpentswiftness.jpg?v=dbe5c568"
   },
   "longevity": {
    "name": "Longevity",
@@ -1418,14 +1418,14 @@
      30
     ]
    ],
-   "iconFile": "ability_hunter_longevity"
+   "icon": "assets/game/hunter/talents/ability_hunter_longevity.jpg?v=f6d24597"
   },
   "the_beast_within": {
    "name": "The Beast Within",
    "maxPts": 1,
    "prereq": "bestial_wrath",
    "tooltipTemplate": "Increases all damage you deal by 10% and while your pet is under the effects of Bestial Wrath, you also go into a rage causing 10% additional damage and reducing mana costs of all spells by 50% for 10 sec.  While enraged, you do not feel pity or remorse or fear and you cannot be stopped unless killed.",
-   "iconFile": "ability_hunter_beastwithin"
+   "icon": "assets/game/hunter/talents/ability_hunter_beastwithin.jpg?v=b6a897a8"
   },
   "cobra_strikes": {
    "name": "Cobra Strikes",
@@ -1443,7 +1443,7 @@
      60
     ]
    ],
-   "iconFile": "ability_hunter_cobrastrikes"
+   "icon": "assets/game/hunter/talents/ability_hunter_cobrastrikes.jpg?v=3745c065"
   },
   "kindred_spirits": {
    "name": "Kindred Spirits",
@@ -1464,14 +1464,14 @@
      10
     ]
    ],
-   "iconFile": "ability_hunter_separationanxiety"
+   "icon": "assets/game/hunter/talents/ability_hunter_separationanxiety.jpg?v=b1e7169a"
   },
   "beast_mastery": {
    "name": "Beast Mastery",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You master the art of Beast training, teaching you the ability to tame Exotic pets and increasing your total amount of Pet Skill Points by 4.",
-   "iconFile": "ability_hunter_beastmastery",
+   "icon": "assets/game/hunter/talents/ability_hunter_beastmastery.jpg?v=afacba23",
    "active": true
   }
  },
@@ -1686,54 +1686,66 @@
    "key": "binding_shot",
    "name": "Binding Shot",
    "rarity": "artifact",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Binding Shot. \nBinding Shot: Fires a magical projectile, tethering the enemy and any other enemies within 5 yards for 5 sec, stunning them for 3 sec if they move more than 5 yards from the arrow.",
-   "iconFile": "spell_shaman_bindelemental",
+   "icon": "assets/game/hunter/mystic-enchants/spell_shaman_bindelemental.jpg?v=5f0e9402",
    "requiredLevel": 35
   },
   {
    "key": "defense_of_the_turtle",
    "name": "Defense of the Turtle",
    "rarity": "artifact",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Teaches you: Defense of the Turtle. \nDefense of the Turtle: Reduces damage taken by 50%. Your movement speed cannot exceed 80% of normal speed. Lasts 8 sec.",
-   "iconFile": "ability_hunter_pet_turtle",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_pet_turtle.jpg?v=84a668f8",
    "requiredLevel": 35
   },
   {
    "key": "flanking_strike",
    "name": "Flanking Strike",
    "rarity": "artifact",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Teaches you: Flanking Strike. \nFlanking Strike: You and your pet charge to the target and strike it as one, dealing Physical damage.",
-   "iconFile": "ability_hunter_invigeration",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_invigeration.jpg?v=b91bbdb8",
    "requiredLevel": 35
   },
   {
    "key": "posthaste",
    "name": "Posthaste",
    "rarity": "artifact",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Using Disengage increases your movement speed by 40% for 6 sec.",
-   "iconFile": "ability_hunter_posthaste",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_posthaste.jpg?v=c95c639b",
    "requiredLevel": 35
   },
   {
    "key": "trap_launcher",
    "name": "Trap Launcher",
    "rarity": "artifact",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Grants the ability to launch your Explosive Trap and Immolation Trap up to 30 yards away.\n\nTrap Launcher: Immolation Trap: Launches your Immolation Trap at the target location.\nTrap Launcher: Explosive Trap: Launches your Explosive Trap at the target location.",
-   "iconFile": "ability_rogue_cannonballbarrage",
+   "icon": "assets/game/hunter/mystic-enchants/ability_rogue_cannonballbarrage.jpg?v=017a1aa2",
    "requiredLevel": 35
   },
   {
    "key": "apex_predator",
    "name": "Apex Predator",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Carve\nIncreases the Critical Strike Damage Bonus of Raptor Strike and Carve by 20%.\n\nCarve causes your next three Raptor Strikes cast within 8 sec to incur no cooldown.",
-   "iconFile": "ability_demonhunter_bladedance",
+   "icon": "assets/game/hunter/mystic-enchants/ability_demonhunter_bladedance.jpg?v=949bf361",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1746,18 +1758,22 @@
    "key": "beastmasters_gambit",
    "name": "Beastmaster's Gambit",
    "rarity": "epic",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Dealing damage with Arcane Shot on a target affected by your Barbed Shot has a 20% chance per stack of Barbed Shot to tear open the wound, increasing your pet's damage against the target by 20% for 3 sec.",
-   "iconFile": "ability_hunter_invigeration",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_invigeration.jpg?v=b91bbdb8",
    "requiredLevel": 35
   },
   {
    "key": "black_widow_strike",
    "name": "Black Widow Strike",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Black Arrow\nTransforms your Black Arrow into Black Widow Strike.\n\nThis ability scales from your Black Arrow modifiers.\nBlack Widow Strike: A poisonous strike, increasing all damage done by you to the target by 8% and dealing 268 Physical damage and an additional 142 Nature damage every 0 seconds for 15 sec.",
-   "iconFile": "epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border",
+   "icon": "assets/game/hunter/mystic-enchants/epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border.jpg?v=e2e9787b",
    "requiredLevel": 50,
    "requires": [
     {
@@ -1770,27 +1786,35 @@
    "key": "blood_tracker_chaining_glaives",
    "name": "Blood Tracker: Chaining Glaives",
    "rarity": "epic",
-   "spec": "Survival, Marksmanship",
+   "specs": [
+    "Survival",
+    "Marksmanship"
+   ],
    "tooltip": "Your Glaive Toss chains to an additional 2 targets and your Deadly Bite increases the damage of Glaive Toss by 20% per stack. \n\nIn addition, using Glaive Toss on an enemy affected by your Deadly Bite slows the target by 30% for 3 sec.",
-   "iconFile": "custom_19_gutting_border",
+   "icon": "assets/game/hunter/mystic-enchants/custom_19_gutting_border.jpg?v=0ebd4141",
    "requiredLevel": 30
   },
   {
    "key": "blood_tracker_glaive_toss",
    "name": "Blood Tracker: Glaive Toss",
    "rarity": "epic",
-   "spec": "Survival, Marksmanship",
+   "specs": [
+    "Survival",
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Glaive Toss. \nGlaive Toss: You hurl two glaives toward the target, each dealing 60% weapon damage.",
-   "iconFile": "ability_glaivetoss",
+   "icon": "assets/game/hunter/mystic-enchants/ability_glaivetoss.jpg?v=31f69d98",
    "requiredLevel": 30
   },
   {
    "key": "charged_up",
    "name": "Charged Up",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Explosive Shot\nTransforms Explosive Shot into Explosive Shot (Charged Up).\n\nThis ability scales from your Explosive Shot modifiers.\nExplosive Shot (Charged Up): You fire an explosive charge into the enemy target, dealing 144-172 Fire damage. The charge will blast the target every second for an additional 2 sec when active on a target it makes your attacks bypass 10% armor.\n\nUseable whilst in melee range.",
-   "iconFile": "ability_hunter_burstingshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_burstingshot.jpg?v=da0a91df",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1803,126 +1827,154 @@
    "key": "combat_rhythm",
    "name": "Combat Rhythm",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Using Mongoose Bite or Counterattack increases the damage done by your next Arcane Shot, Explosive Shot, or Quick Shot by 10% and reduces their mana costs by 50%.",
-   "iconFile": "ability_hunter_zenarchery",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_zenarchery.jpg?v=48ba0213",
    "requiredLevel": 15
   },
   {
    "key": "concussive_trauma",
    "name": "Concussive Trauma",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your Concussive Shot costs no mana and causes the target to take 12% increased damage from your ranged and melee abilities.\n\nUsing Concussive Shot on a target within 15 yards will reduce their movement speed by 70% and half its cooldown refunded.",
-   "iconFile": "spell_frost_stun",
+   "icon": "assets/game/hunter/mystic-enchants/spell_frost_stun.jpg?v=aeb0b45b",
    "requiredLevel": 15
   },
   {
    "key": "deadly_aim",
    "name": "Deadly Aim",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your auto shots have a 15% chance to reset the cooldown of Aimed Shot and Multi-Shot and increase the damage of your next Aimed Shot or Multi-Shot by 30%.",
-   "iconFile": "ability_hunter_snipertraining",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_snipertraining.jpg?v=57fd4395",
    "requiredLevel": 20
   },
   {
    "key": "deadly_instinct",
    "name": "Deadly Instinct",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Using Flanking Strike causes your next 3 Mongoose Bite, Counterattack or Carve abilities to deal 15% more damage.",
-   "iconFile": "custom_fishbite_border",
+   "icon": "assets/game/hunter/mystic-enchants/custom_fishbite_border.jpg?v=d4701ca0",
    "requiredLevel": 35
   },
   {
    "key": "fetch_me_their_bones",
    "name": "Fetch Me Their Bones!",
    "rarity": "epic",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Your damaging Hunter abilities reduce the cooldown of Kill Command by 2 second.\n\nUsing Kill Command makes your pet Charge to your current target if within 20 yards of it and deal 300% of its attack damage to it. This damage deals 180% increased damage to targets afflicted by Beastmaster's Gambit.",
-   "iconFile": "inv_misc_bone_03",
+   "icon": "assets/game/hunter/mystic-enchants/inv_misc_bone_03.jpg?v=f8e69d24",
    "requiredLevel": 34
   },
   {
    "key": "fire_watch",
    "name": "Fire Watch",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "When your Immolation Trap or Explosive Trap triggers, your Mongoose Bite, Raptor Strike, Carve and Counterattack deals an additional 10% damage as Fire damage for 12 sec.\n\nIn addition, after killing an opponent that yields experience or honor the cooldown of your Immolation Trap and Explosive Trap is reset.",
-   "iconFile": "custom_t_nhance_rpg_icons_chaoticvision_border",
+   "icon": "assets/game/hunter/mystic-enchants/custom_t_nhance_rpg_icons_chaoticvision_border.jpg?v=e874eef5",
    "requiredLevel": 15
   },
   {
    "key": "hunting_frenzy",
    "name": "Hunting Frenzy",
    "rarity": "epic",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the damage of your pet's special abilities by 10% while your Hunter's Mark is on the target.\n\nCasting Kill Command or killing an opponent that yields experience or honor causes your pet's next 2 special abilities to gain 100% critical strike chance and cost no Focus.",
-   "iconFile": "ability_druid_primaltenacity",
+   "icon": "assets/game/hunter/mystic-enchants/ability_druid_primaltenacity.jpg?v=afab87e5",
    "requiredLevel": 15
   },
   {
    "key": "hydras_sting",
    "name": "Hydra's Sting",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your Serpent Sting hits up to 3 targets and dealing damage with Serpent Sting reduces the cooldown on Rapid Fire by 2 sec.",
-   "iconFile": "nhi_naturearrows_border",
+   "icon": "assets/game/hunter/mystic-enchants/nhi_naturearrows_border.jpg?v=4d6d896f",
    "requiredLevel": 15
   },
   {
    "key": "joint_onslaught",
    "name": "Joint Onslaught",
    "rarity": "epic",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Your Multi-Shot grants your pet Frenzied Cleave and your Aimed Shot grants your pet Frenzied Bite.\nFrenzied Cleave: Auto attacks also strike 5 other nearby enemy targets for 20% of the damage for 5 sec.\nFrenzied Bite: Auto attacks deals additional damage for 40% of the damage for 5 sec.",
-   "iconFile": "ability_hunter_sickem",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_sickem.jpg?v=0c4c52b4",
    "requiredLevel": 20
   },
   {
    "key": "kindle_for_the_fire",
    "name": "Kindle for the Fire",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Dealing direct Physical with a ranged or melee ability increases your Fire damage done by 2% for 8 sec, stacking up to 4 times.",
-   "iconFile": "spell_holy_redemption",
+   "icon": "assets/game/hunter/mystic-enchants/spell_holy_redemption.jpg?v=9149c73f",
    "requiredLevel": 15
   },
   {
    "key": "laceration",
    "name": "Laceration",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Carve now causes the target to bleed for 40% of the damage dealt over 6 seconds and reduces the target's armor by 20% for 20 sec.\n\n@ext:This armor reduction does not stack with similar effects.:ext@",
-   "iconFile": "ability_revendreth_warrior",
+   "icon": "assets/game/hunter/mystic-enchants/ability_revendreth_warrior.jpg?v=4160913a",
    "requiredLevel": 60
   },
   {
    "key": "lone_wolf",
    "name": "Lone Wolf",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Your damage and armor penetration is increased by 10% while you do not have a pet active. Each nearby enemy surrounding you brings out your survival instinct which increases your damage and attack speed by an additional 3%, stacking 5 times.",
-   "iconFile": "ability_hunter_improvedtracking",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_improvedtracking.jpg?v=0e7f7ac8",
    "requiredLevel": 15
   },
   {
    "key": "marked_detonation",
    "name": "Marked Detonation",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "The first time you apply Hunter's Mark to a target above 75% health, your next ranged ability on the target will critically hit and restore 15% base mana.",
-   "iconFile": "_arcaneshot_blue",
+   "icon": "assets/game/hunter/mystic-enchants/_arcaneshot_blue.jpg?v=5f748119",
    "requiredLevel": 15
   },
   {
    "key": "molten_ammo",
    "name": "Molten Ammo",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Explosive Shot\nExplosive Shot makes your next 2 Steady Shots deal an additional 80% as Fire damage.",
-   "iconFile": "spell_hunter_exoticmunitions_incendiary",
+   "icon": "assets/game/hunter/mystic-enchants/spell_hunter_exoticmunitions_incendiary.jpg?v=dd7fec4d",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1935,18 +1987,22 @@
    "key": "power_through",
    "name": "Power Through",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your Aimed Shot, Quick Shot, Steady Shot, Multi-Shot hits reduce the cooldown of Powershot by 2 sec and grants a stack of Power Through increasing the damage and critical strike chance of your next Powershot by 5%, stacks up to 12 times.\n\nPowershot no longer knocks monsters back.",
-   "iconFile": "ability_hunter_disarmingshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_disarmingshot.jpg?v=e4e37cac",
    "requiredLevel": 30
   },
   {
    "key": "quickfire_tactics",
    "name": "Quickfire Tactics",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Lock and Load\nReduces the cooldown of Lock and Load to 29 seconds. Your Steady Shots and Auto Shots reduce the cooldown of Flare Strike by 0 sec.",
-   "iconFile": "_d3strafe",
+   "icon": "assets/game/hunter/mystic-enchants/_d3strafe.jpg?v=023c63db",
    "requiredLevel": 25,
    "requires": [
     {
@@ -1959,54 +2015,66 @@
    "key": "rain_of_arrows",
    "name": "Rain of Arrows",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Rain of Arrows. \nRain of Arrows: Continuously fires a volley of ammo at the target area, causing 34 Arcane damage to enemy targets within 8 yards every second for 6 sec.\n\n@ext:Scales with Volley modifiers.:ext@",
-   "iconFile": "ability_marksmanship",
+   "icon": "assets/game/hunter/mystic-enchants/ability_marksmanship.jpg?v=2af51777",
    "requiredLevel": 40
   },
   {
    "key": "savage_momentum",
    "name": "Savage Momentum",
    "rarity": "epic",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Your pet special attack criticals reduce the cooldown of your Quick Shot, Arcane Shot, Aimed Shot and Multi-Shot by 2 seconds and extend your Stampede debuff on the target by 2 seconds.",
-   "iconFile": "ability_hunter_longevity",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_longevity.jpg?v=f6d24597",
    "requiredLevel": 20
   },
   {
    "key": "savagery",
    "name": "Savagery",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Your Wing Clip deals 0 damage and reduces the cooldown of your Raptor Strike by 1 sec.",
-   "iconFile": "ability_hunter_raptorstrike",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_raptorstrike.jpg?v=c8642b26",
    "requiredLevel": 15
   },
   {
    "key": "spot_weakness",
    "name": "Spot Weakness",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your ranged attacks have a 25% chance on targets above 20% health to grant you Spot Weakness. This effect can only trigger once every 15 seconds.\n\nSpot Weakness: Allows the usage of your next Kill Shot regardless of the target's health state but deals 30% reduced damage if used on target's above 20% health.",
-   "iconFile": "5_archerskill47_border",
+   "icon": "assets/game/hunter/mystic-enchants/5_archerskill47_border.jpg?v=37f72146",
    "requiredLevel": 36
   },
   {
    "key": "stalkers_mark",
    "name": "Stalker's Mark",
    "rarity": "epic",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Your Mongoose Bite, Counterattack and Carve deal 15% increased damage on targets affected by Hunter's Mark.",
-   "iconFile": "ability_hunter_markedfordeath",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_markedfordeath.jpg?v=651a1625",
    "requiredLevel": 15
   },
   {
    "key": "steady_pace",
    "name": "Steady Pace",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Requires Improved Steady Shot\nYour Improved Steady Shot has a 100% chance to trigger and can also be triggered by Quick Shot.",
-   "iconFile": "artifactability_marksmanhunter_legacyofthewindrunners",
+   "icon": "assets/game/hunter/mystic-enchants/artifactability_marksmanhunter_legacyofthewindrunners.jpg?v=7e3b4b11",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2019,72 +2087,88 @@
    "key": "steady_shooting",
    "name": "Steady Shooting",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Using Steady Shot right after another Steady Shot reduces its cast time by 30% and its mana cost by 100%.",
-   "iconFile": "inv_firearm_2h_rifle_bwdraid_d_01",
+   "icon": "assets/game/hunter/mystic-enchants/inv_firearm_2h_rifle_bwdraid_d_01.jpg?v=9068be25",
    "requiredLevel": 30
   },
   {
    "key": "sting_specialist",
    "name": "Sting Specialist",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "You can apply an additional sting to the same target. \n\nYour Aimed Shot deals 10% increased damage per sting applied.",
-   "iconFile": "epic_rpg_icon_pack_poison_icon_0000s_0000_sting_border",
+   "icon": "assets/game/hunter/mystic-enchants/epic_rpg_icon_pack_poison_icon_0000s_0000_sting_border.jpg?v=a3537fcb",
    "requiredLevel": 15
   },
   {
    "key": "trick_shots",
    "name": "Trick Shots",
    "rarity": "epic",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Multi-Shot grants you Trick Shot, which causes your next Arcane Shot or Quick Shot to ricochet to 4 additional targets and are guaranteed to critically strike. Lasts 8 seconds.",
-   "iconFile": "epic_rpg_icon_pack_brutal_icon_0011s_0000_arrows_border",
+   "icon": "assets/game/hunter/mystic-enchants/epic_rpg_icon_pack_brutal_icon_0011s_0000_arrows_border.jpg?v=64b46e96",
    "requiredLevel": 18
   },
   {
    "key": "aspect_of_the_fox",
    "name": "Aspect of the Fox",
    "rarity": "legendary",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Aspect of the Fox. \nAspect of the Fox: Auto Shot and Steady Shot is usable while moving.",
-   "iconFile": "ability_hunter_aspectofthefox",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_aspectofthefox.jpg?v=fc532e0d",
    "requiredLevel": 30
   },
   {
    "key": "barbed_shot",
    "name": "Barbed Shot",
    "rarity": "legendary",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Teaches you: Barbed Shot. \nBarbed Shot: Fires a shot that tears through your enemy, causing them to take bleed damage over 15 sec and making your pet's attacks bypass 8% of their armor per stack. Stacks up to 5 times.",
-   "iconFile": "ability_hunter_barbedshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_barbedshot.jpg?v=86ef7ffa",
    "requiredLevel": 30
   },
   {
    "key": "beast_mastery",
    "name": "Beast Mastery",
    "rarity": "legendary",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the damage done of your pet by 8% and its critical strike chance by 5%.",
-   "iconFile": "ability_hunter_pet_hyena",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_pet_hyena.jpg?v=4776f770",
    "requiredLevel": 30
   },
   {
    "key": "blood_tracker_deadly_bite",
    "name": "Blood Tracker: Deadly Bite",
    "rarity": "legendary",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Dealing damage with Mongoose Bite or Counterattack applies Deadly Bite.\n\nDeadly Bite: Bleeding for 118.49 damage over 12 sec and increases the damage taken of Raptor Strike by 10% per stack. Stacks up to 5 times.",
-   "iconFile": "ability_warrior_bloodbath",
+   "icon": "assets/game/hunter/mystic-enchants/ability_warrior_bloodbath.jpg?v=e303d1d7",
    "requiredLevel": 30
   },
   {
    "key": "explosive_charge",
    "name": "Explosive Charge",
    "rarity": "legendary",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Requires Explosive Shot\nYour Explosive Shot deals 25% of its damage to other enemies within 5 yards.",
-   "iconFile": "6bf_explosive_shard",
+   "icon": "assets/game/hunter/mystic-enchants/6bf_explosive_shard.jpg?v=bd145f43",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2097,9 +2181,11 @@
    "key": "expunge",
    "name": "Expunge",
    "rarity": "legendary",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Requires Chimera Shot\nReduces the cooldown of Chimera Shot by -2 sec.\n\nYour Chimera Shot applies Cobra Venom. \n\nWhen Expunge deals damage, the cooldown of Chimera Shot is reset and 20% base mana is restored.\n\nCobra Venom: Deals 276.48 Nature damage over 15 sec, stacking up to 3 times.\n\nWhen reaching 3 stacks or the target dies, the Cobra Venom is expunged, dealing 296.23 Nature damage to enemies within 10 yards.",
-   "iconFile": "ability_rogue_deviouspoisons",
+   "icon": "assets/game/hunter/mystic-enchants/ability_rogue_deviouspoisons.jpg?v=fef1d6a8",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2112,612 +2198,749 @@
    "key": "flare_strike",
    "name": "Flare Strike",
    "rarity": "legendary",
-   "spec": "Marksmanship, Survival",
+   "specs": [
+    "Marksmanship",
+    "Survival"
+   ],
    "tooltip": "Teaches you: Flare Strike. \nFlare Strike: Fire a flare that exposes any hidden and invisible enemies within 10 yards for 2 sec. When it expires, a rain of arrows is called down, dealing 0.99 Fire damage. Enemies hit are slowed by 30% and take 10% more damage from you for 15 sec.\n\nThe damage is increased by 25% on the target of your Hunter's Mark.",
-   "iconFile": "_diablo3_arrowrain_rogue",
+   "icon": "assets/game/hunter/mystic-enchants/_diablo3_arrowrain_rogue.jpg?v=bfb77ff3",
    "requiredLevel": 30
   },
   {
    "key": "marksmanship_mastery",
    "name": "Marksmanship Mastery",
    "rarity": "legendary",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your attacks penetrate through 12% of the target's armor.",
-   "iconFile": "ability_hunter_chimerashot2",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_chimerashot2.jpg?v=f19a51a8",
    "requiredLevel": 30
   },
   {
    "key": "powershot",
    "name": "Powershot",
    "rarity": "legendary",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Powershot. \nPowershot: You wind up a powerful shot, which deals 250% weapon damage to the target and all enemies in between you and the target. Your attacks bypass 30% armor for 10 sec on enemies and they are also knocked back.\n\n@ext:Powershot can benefit from Piercing Shots, Improved Steady Shot, Barrage and Improved Barrage talents.:ext@",
-   "iconFile": "ability_hunter_resistanceisfutile",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_resistanceisfutile.jpg?v=23bba869",
    "requiredLevel": 30
   },
   {
    "key": "stampede",
    "name": "Stampede",
    "rarity": "legendary",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Teaches you: Stampede. \nStampede: Summon a herd of stampeding animals from the wilds that deals 1184.92 Physical damage to your enemies over 6 sec. The animals run up to 30 yards in front of you.\n\nEnemies struck by the stampede take increased damage from you and your pet by 5% for 20 sec, stacking to 4. Enemies movement speed are also reduced by 50% for 3 sec.\n\n@ext:Damage is increased by 50% if Bestial Wrath is active on your pet.:ext@\n\n@ext:The cooldown of Stampede is reduced by the Longevity talent.:ext@",
-   "iconFile": "ability_hunter_bestialdiscipline",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_bestialdiscipline.jpg?v=8cd41890",
    "requiredLevel": 30
   },
   {
    "key": "survival_mastery",
    "name": "Survival Mastery",
    "rarity": "legendary",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "The critical strike damage and critical strike chance of your Carve, Explosive Shot, Explosive Trap and Immolation Trap is increased by 6%.",
-   "iconFile": "ability_hunter_explosiveshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_explosiveshot.jpg?v=557fbb1b",
    "requiredLevel": 34
   },
   {
    "key": "aimed_shot",
    "name": "Aimed Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Teaches you: Aimed Shot.\n\n@ext:Can not be used if the Aimed Shot talent is learned.:ext@\n@s:1469434:0:0:0:-48@",
-   "iconFile": "inv_spear_07",
+   "icon": "assets/game/hunter/mystic-enchants/inv_spear_07.jpg?v=584fd27e",
    "requiredLevel": 20
   },
   {
    "key": "aspect_mastery",
    "name": "Aspect Mastery",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nAspect of the Viper - Reduces the damage penalty by 10%. Aspect of the Monkey - Reduces the damage done to you while active by 5%. Aspect of the Hawk - Increases the attack power bonus by 30%. Aspect of the Dragonhawk - Combines the bonuses from Aspect of the Monkey and Hawk.\n\nThis Mystic Enchant does not stack with the Aspect Mastery Talent.",
-   "iconFile": "ability_hunter_aspectmastery",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_aspectmastery.jpg?v=e708cdf5",
    "requiredLevel": 45
   },
   {
    "key": "careful_aim",
    "name": "Careful Aim",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases your ranged attack power by an amount equal to 100% of your total Intellect.\n\nThis Mystic Enchant does not stack with the Careful Aim Talent.",
-   "iconFile": "ability_hunter_zenarchery",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_zenarchery.jpg?v=48ba0213",
    "requiredLevel": 45
   },
   {
    "key": "deflection",
    "name": "Deflection",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to parry by 3%, and reduces the duration of all Disarm effects used against you by 50%.  This does not stack with other Disarm duration reducing effects.\n\nThis Mystic Enchant does not stack with the Deflection Talent.",
-   "iconFile": "ability_parry",
+   "icon": "assets/game/hunter/mystic-enchants/ability_parry.jpg?v=fbdd48d9",
    "requiredLevel": 45
   },
   {
    "key": "efficiency",
    "name": "Efficiency",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nReduces the Mana cost of your Shots and Stings by 20%.\n\nThis Mystic Enchant does not stack with the Efficiency Talent.",
-   "iconFile": "spell_frost_wizardmark",
+   "icon": "assets/game/hunter/mystic-enchants/spell_frost_wizardmark.jpg?v=a5faa7bb",
    "requiredLevel": 45
   },
   {
    "key": "endurance_training",
    "name": "Endurance Training",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the health of your pet by 10% and your total health by 5%.\n\nThis Mystic Enchant does not stack with the Endurance Training Talent.",
-   "iconFile": "spell_nature_reincarnation",
+   "icon": "assets/game/hunter/mystic-enchants/spell_nature_reincarnation.jpg?v=c2cd2a93",
    "requiredLevel": 45
   },
   {
    "key": "entrapment",
    "name": "Entrapment",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nWhen your Frost Trap or Snake Trap are triggered you entrap all afflicted targets, preventing them from moving for 4 sec.\n\nThis Mystic Enchant does not stack with the Entrapment Talent.",
-   "iconFile": "spell_nature_stranglevines",
+   "icon": "assets/game/hunter/mystic-enchants/spell_nature_stranglevines.jpg?v=733864ac",
    "requiredLevel": 45
   },
   {
    "key": "ferocity",
    "name": "Ferocity",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of your pet by 10%.\n\nThis Mystic Enchant does not stack with the Ferocity Talent.",
-   "iconFile": "inv_misc_monsterclaw_04",
+   "icon": "assets/game/hunter/mystic-enchants/inv_misc_monsterclaw_04.jpg?v=dc4d9dd1",
    "requiredLevel": 45
   },
   {
    "key": "focused_aim",
    "name": "Focused Aim",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks while casting Steady Shot by 70%, and increases your chance to hit by 3%.\n\nThis Mystic Enchant does not stack with the Focused Aim Talent.",
-   "iconFile": "ability_hunter_focusedaim",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_focusedaim.jpg?v=c5a69d66",
    "requiredLevel": 45
   },
   {
    "key": "focused_fire",
    "name": "Focused Fire",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nAll damage caused by you is increased by 2% while your pet is active and the critical strike chance of your pet's special abilities is increased by 20% while Kill Command is active.\n\nThis Mystic Enchant does not stack with the Focused Fire Talent.",
-   "iconFile": "ability_hunter_silenthunter",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_silenthunter.jpg?v=39425042",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_aimed_shot",
    "name": "Glyph of Aimed Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Reduces the cooldown of your Aimed Shot ability by -2 sec.",
-   "iconFile": "inv_spear_07",
+   "icon": "assets/game/hunter/mystic-enchants/inv_spear_07.jpg?v=584fd27e",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_arcane_shot",
    "name": "Glyph of Arcane Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Your Arcane Shot has an 8% increased chance to critically strike and will refund 50% of its mana cost if the target has one of your Stings active on it.",
-   "iconFile": "ability_impalingbolt",
+   "icon": "assets/game/hunter/mystic-enchants/ability_impalingbolt.jpg?v=91d4a950",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_aspect_of_the_viper",
    "name": "Glyph of Aspect of the Viper",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the amount of mana gained from attacks while Aspect of the Viper is active by 10%.",
-   "iconFile": "ability_hunter_aspectoftheviper",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_aspectoftheviper.jpg?v=ac3ecded",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_bestial_wrath",
    "name": "Glyph of Bestial Wrath",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Decreases the cooldown of Bestial Wrath by -20 sec.",
-   "iconFile": "ability_druid_ferociousbite",
+   "icon": "assets/game/hunter/mystic-enchants/ability_druid_ferociousbite.jpg?v=4d03721c",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_carve",
    "name": "Glyph of Carve",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Allows your carve to hit an additional target and reduces the mana cost of carve by 50%.",
-   "iconFile": "warrior_talent_icon_mastercleaver",
+   "icon": "assets/game/hunter/mystic-enchants/warrior_talent_icon_mastercleaver.jpg?v=00f00b8f",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_chimera_shot",
    "name": "Glyph of Chimera Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Reduces the cooldown of Chimera Shot by -2 sec.",
-   "iconFile": "ability_hunter_chimerashot2",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_chimerashot2.jpg?v=f19a51a8",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_deterrence",
    "name": "Glyph of Deterrence",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Decreases the cooldown of Deterrence by -10 sec.",
-   "iconFile": "ability_whirlwind",
+   "icon": "assets/game/hunter/mystic-enchants/ability_whirlwind.jpg?v=ee741762",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_explosive_shot",
    "name": "Glyph of Explosive Shot",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Increases the critical strike chance of Explosive Shot by 8%.",
-   "iconFile": "ability_hunter_explosiveshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_explosiveshot.jpg?v=557fbb1b",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_fire_traps",
    "name": "Glyph of Fire Traps",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "The periodic damage from your Explosive Trap and Immolation Trap can now be critical strikes.",
-   "iconFile": "spell_fire_selfdestruct",
+   "icon": "assets/game/hunter/mystic-enchants/spell_fire_selfdestruct.jpg?v=c880d0dc",
    "requiredLevel": 34
   },
   {
    "key": "glyph_of_freezing_trap",
    "name": "Glyph of Freezing Trap",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "When your Freezing Trap breaks, the victim's movement speed is reduced by 30% for 4 sec.",
-   "iconFile": "spell_frost_chainsofice",
+   "icon": "assets/game/hunter/mystic-enchants/spell_frost_chainsofice.jpg?v=b2f0bbbf",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_frost_trap",
    "name": "Glyph of Frost Trap",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Increases the radius of the effect from your Frost Trap by 2 yards.",
-   "iconFile": "spell_frost_freezingbreath",
+   "icon": "assets/game/hunter/mystic-enchants/spell_frost_freezingbreath.jpg?v=8f8784ac",
    "requiredLevel": 28
   },
   {
    "key": "glyph_of_hunters_mark",
    "name": "Glyph of Hunter's Mark",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Increases the attack power bonus of your Hunter's Mark by 20%.",
-   "iconFile": "ability_hunter_snipershot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_snipershot.jpg?v=343673a0",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_immolation_trap",
    "name": "Glyph of Immolation Trap",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Your Immolation Trap effect causes your auto-shot to deal an additional 30% damage as Fire.",
-   "iconFile": "spell_fire_flameshock",
+   "icon": "assets/game/hunter/mystic-enchants/spell_fire_flameshock.jpg?v=c99d7ca9",
    "requiredLevel": 14
   },
   {
    "key": "glyph_of_kill_shot",
    "name": "Glyph of Kill Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Reduces the cooldown of Kill Shot by -6 sec.",
-   "iconFile": "ability_hunter_assassinate2",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_assassinate2.jpg?v=76c08983",
    "requiredLevel": 36
   },
   {
    "key": "glyph_of_mending",
    "name": "Glyph of Mending",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the healing done by your Mend Pet ability by 40%.",
-   "iconFile": "spell_holy_layonhands",
+   "icon": "assets/game/hunter/mystic-enchants/spell_holy_layonhands.jpg?v=e3bc35ab",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_multi_shot",
    "name": "Glyph of Multi-Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Decreases the cooldown of Multi-Shot by -1 sec and increases its critical strike chance by 10%.",
-   "iconFile": "ability_upgrademoonglaive",
+   "icon": "assets/game/hunter/mystic-enchants/ability_upgrademoonglaive.jpg?v=254781cb",
    "requiredLevel": 18
   },
   {
    "key": "glyph_of_quick_shot",
    "name": "Glyph of Quick Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Increases the critical strike chance of Quick Shot by 3%. This chance is doubled on bleeding targets. Additionally, the Global Cooldown of Quick Shot is decreased by 0.5 sec.",
-   "iconFile": "ability_searingarrow",
+   "icon": "assets/game/hunter/mystic-enchants/ability_searingarrow.jpg?v=a505157c",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_rapid_fire",
    "name": "Glyph of Rapid Fire",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Increases the haste from Rapid Fire by an additional 8%.",
-   "iconFile": "ability_hunter_runningshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_runningshot.jpg?v=8f433145",
    "requiredLevel": 26
   },
   {
    "key": "glyph_of_raptor_strike",
    "name": "Glyph of Raptor Strike",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Reduces damage taken by 20% for 3 sec after using Raptor Strike.",
-   "iconFile": "ability_meleedamage",
+   "icon": "assets/game/hunter/mystic-enchants/ability_meleedamage.jpg?v=3d1a41f9",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_scatter_shot",
    "name": "Glyph of Scatter Shot",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Increases the range of Scatter Shot by 3 yards.",
-   "iconFile": "ability_golemstormbolt",
+   "icon": "assets/game/hunter/mystic-enchants/ability_golemstormbolt.jpg?v=2c4fd9a0",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_serpent_sting",
    "name": "Glyph of Serpent Sting",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Increases the damage done by your Serpent Sting by 20% and increases the duration of your Serpent Sting by 6 sec.",
-   "iconFile": "ability_hunter_quickshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_quickshot.jpg?v=e32b2ef2",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_steady_shot",
    "name": "Glyph of Steady Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Increases the damage dealt by Steady Shot by 15% when your target is afflicted with your Serpent Sting.",
-   "iconFile": "ability_hunter_steadyshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_steadyshot.jpg?v=3ee9472f",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_trueshot_aura",
    "name": "Glyph of Trueshot Aura",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "While you have Trueshot Aura learned, you have 10% increased critical strike chance on your Aimed Shot.",
-   "iconFile": "ability_trueshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_trueshot.jpg?v=5ca4da25",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_volley",
    "name": "Glyph of Volley",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Decreases the mana cost of Volley by 20%.",
-   "iconFile": "ability_marksmanship",
+   "icon": "assets/game/hunter/mystic-enchants/ability_marksmanship.jpg?v=2af51777",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_wyvern_sting",
    "name": "Glyph of Wyvern Sting",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Decreases the cooldown of your Wyvern Sting by -6 sec.",
-   "iconFile": "inv_spear_02",
+   "icon": "assets/game/hunter/mystic-enchants/inv_spear_02.jpg?v=df855121",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_the_beast",
    "name": "Glyph of the Beast",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the attack power bonus of Aspect of the Beast for you and your pet by an additional 2%.",
-   "iconFile": "ability_mount_pinktiger",
+   "icon": "assets/game/hunter/mystic-enchants/ability_mount_pinktiger.jpg?v=17599c75",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_the_hawk",
    "name": "Glyph of the Hawk",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Increases the haste bonus of the Improved Aspect of the Hawk effect by an additional 6%.",
-   "iconFile": "spell_nature_ravenform",
+   "icon": "assets/game/hunter/mystic-enchants/spell_nature_ravenform.jpg?v=46ef69f1",
    "requiredLevel": 40
   },
   {
    "key": "go_for_the_throat",
    "name": "Go for the Throat",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nYour ranged critical hits cause your pet to generate 50 Focus.\n\nThis Mystic Enchant does not stack with the Go for the Throat Talent.",
-   "iconFile": "ability_hunter_goforthethroat",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_goforthethroat.jpg?v=a01d26fc",
    "requiredLevel": 45
   },
   {
    "key": "hawk_eye",
    "name": "Hawk Eye",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your ranged weapons by 6 yards.\n\nThis Mystic Enchant does not stack with the Hawk Eye Talent.",
-   "iconFile": "ability_townwatch",
+   "icon": "assets/game/hunter/mystic-enchants/ability_townwatch.jpg?v=5ef433b9",
    "requiredLevel": 45
   },
   {
    "key": "improved_arcane_shot",
    "name": "Improved Arcane Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Arcane Shot by 15%.\n\nThis Mystic Enchant does not stack with the Improved Arcane Shot Talent.",
-   "iconFile": "ability_impalingbolt",
+   "icon": "assets/game/hunter/mystic-enchants/ability_impalingbolt.jpg?v=91d4a950",
    "requiredLevel": 45
   },
   {
    "key": "improved_aspect_of_the_hawk",
    "name": "Improved Aspect of the Hawk",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nWhile Aspect of the Hawk or Dragonhawk is active, all ranged auto-attacks have a 10% chance of increasing ranged attack speed by 15% for 12 sec.\n\nThis Mystic Enchant does not stack with the Improved Aspect of the Hawk Talent.",
-   "iconFile": "spell_nature_ravenform",
+   "icon": "assets/game/hunter/mystic-enchants/spell_nature_ravenform.jpg?v=46ef69f1",
    "requiredLevel": 45
   },
   {
    "key": "improved_aspect_of_the_monkey",
    "name": "Improved Aspect of the Monkey",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the Dodge bonus of your Aspect of the Monkey and Aspect of the Dragonhawk by 6%.\n\nThis Mystic Enchant does not stack with the Improved Aspect of the Monkey Talent.",
-   "iconFile": "ability_hunter_aspectofthemonkey",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_aspectofthemonkey.jpg?v=9d5f0075",
    "requiredLevel": 45
   },
   {
    "key": "improved_concussive_shot",
    "name": "Improved Concussive Shot",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases the duration of your Concussive Shot's daze effect by 2 sec.\n\nThis Mystic Enchant does not stack with the Improved Concussive Shot Talent.",
-   "iconFile": "spell_frost_stun",
+   "icon": "assets/game/hunter/mystic-enchants/spell_frost_stun.jpg?v=aeb0b45b",
    "requiredLevel": 45
   },
   {
    "key": "improved_hunters_mark",
    "name": "Improved Hunter's Mark",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases the bonus attack power granted by your Hunter's Mark ability by 30%, and reduces the mana cost of your Hunter's Mark ability by 100%.\n\nThis Mystic Enchant does not stack with the Improved Hunter's Mark Talent.",
-   "iconFile": "ability_hunter_snipershot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_snipershot.jpg?v=343673a0",
    "requiredLevel": 45
   },
   {
    "key": "improved_mend_pet",
    "name": "Improved Mend Pet",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of your Mend Pet spell by 20% and gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick.\n\nThis Mystic Enchant does not stack with the Improved Mend Pet Talent.",
-   "iconFile": "ability_hunter_mendpet",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_mendpet.jpg?v=2b89e411",
    "requiredLevel": 45
   },
   {
    "key": "improved_revive_pet",
    "name": "Improved Revive Pet",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nRevive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%.\n\nThis Mystic Enchant does not stack with the Improved Revive Pet Talent.",
-   "iconFile": "ability_hunter_beastsoothe",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_beastsoothe.jpg?v=e3147b49",
    "requiredLevel": 45
   },
   {
    "key": "improved_stings",
    "name": "Improved Stings",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Serpent Sting and Wyvern Sting by 30% and the mana drained by your Viper Sting by 30%.  In addition, reduces the chance your Sting damage over time effects will be dispelled by 30%.\n\nThis Mystic Enchant does not stack with the Improved Stings Talent.",
-   "iconFile": "ability_hunter_quickshot",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_quickshot.jpg?v=e32b2ef2",
    "requiredLevel": 45
   },
   {
    "key": "improved_tracking",
    "name": "Improved Tracking",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nWhile tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids and Undead, all damage done to those types by the Hunter is increased by 5%.\n\nThis Mystic Enchant does not stack with the Improved Tracking Talent.",
-   "iconFile": "ability_hunter_improvedtracking",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_improvedtracking.jpg?v=0e7f7ac8",
    "requiredLevel": 45
   },
   {
    "key": "lethal_shots",
    "name": "Lethal Shots",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases your critical strike chance with ranged weapons by 5%.\n\nThis Mystic Enchant does not stack with the Lethal Shots Talent.",
-   "iconFile": "ability_searingarrow",
+   "icon": "assets/game/hunter/mystic-enchants/ability_searingarrow.jpg?v=a505157c",
    "requiredLevel": 45
   },
   {
    "key": "lock_and_load",
    "name": "Lock and Load",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nYou have a 100% chance when you trap a target with Freezing Trap, Freezing Arrow or Frost Trap and a 6% chance when you deal periodic damage with your Immolation Trap, Explosive Trap or Black Arrow to cause your next 2 Arcane Shot or Explosive Shot spells to trigger no cooldown, cost no mana and consume no ammo. This effect has a 22 sec cooldown.\n\nThis Mystic Enchant does not stack with the Lock and Load Talent.",
-   "iconFile": "ability_hunter_lockandload",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_lockandload.jpg?v=d056cbfc",
    "requiredLevel": 45
   },
   {
    "key": "mortal_shots",
    "name": "Mortal Shots",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of your ranged abilities by 30%.\n\nThis Mystic Enchant does not stack with the Mortal Shots Talent.",
-   "iconFile": "ability_piercedamage",
+   "icon": "assets/game/hunter/mystic-enchants/ability_piercedamage.jpg?v=32097bde",
    "requiredLevel": 45
   },
   {
    "key": "pathfinding",
    "name": "Pathfinding",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 8%, and increases your speed while mounted by 10%. The mounted movement speed increase does not stack with other effects.\n\nThis Mystic Enchant does not stack with the Pathfinding Talent.",
-   "iconFile": "ability_mount_jungletiger",
+   "icon": "assets/game/hunter/mystic-enchants/ability_mount_jungletiger.jpg?v=32a1ed0f",
    "requiredLevel": 45
   },
   {
    "key": "rapid_killing",
    "name": "Rapid Killing",
    "rarity": "rare",
-   "spec": "Marksmanship",
+   "specs": [
+    "Marksmanship"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Rapid Fire ability by 60 sec.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Chimera Shot causes 20% additional damage.  Lasts 20 sec.\n\nThis Mystic Enchant does not stack with the Rapid Killing Talent.",
-   "iconFile": "ability_hunter_rapidkilling",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_rapidkilling.jpg?v=e75c6452",
    "requiredLevel": 45
   },
   {
    "key": "savage_strikes",
    "name": "Savage Strikes",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of Raptor Strike, Mongoose Bite, Counterattack and Carve by 24%.\n\nThis Mystic Enchant does not stack with the Savage Strikes Talent.",
-   "iconFile": "ability_racial_bloodrage",
+   "icon": "assets/game/hunter/mystic-enchants/ability_racial_bloodrage.jpg?v=ca10903b",
    "requiredLevel": 45
   },
   {
    "key": "scatter_shot",
    "name": "Scatter Shot",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Teaches you: Scatter Shot\n\n@ext:Can not be used if the Scatter Shot talent is learned.:ext@ \n@s:1469503:0:0:0:-48@",
-   "iconFile": "ability_golemstormbolt",
+   "icon": "assets/game/hunter/mystic-enchants/ability_golemstormbolt.jpg?v=2c4fd9a0",
    "requiredLevel": 45
   },
   {
    "key": "surefooted",
    "name": "Surefooted",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nReduces the duration of movement impairing effects by 30%.\n\nThis Mystic Enchant does not stack with the Surefooted Talent.",
-   "iconFile": "ability_kick",
+   "icon": "assets/game/hunter/mystic-enchants/ability_kick.jpg?v=f2598161",
    "requiredLevel": 45
   },
   {
    "key": "survival_instincts",
    "name": "Survival Instincts",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nReduces all damage taken by 4% and increases the critical strike chance of your Arcane Shot, Steady Shot, and Explosive Shot by 4%.\n\nThis Mystic Enchant does not stack with the Survival Instincts Talent.",
-   "iconFile": "ability_hunter_survivalinstincts",
+   "icon": "assets/game/hunter/mystic-enchants/ability_hunter_survivalinstincts.jpg?v=8e0fbe21",
    "requiredLevel": 45
   },
   {
    "key": "survival_tactics",
    "name": "Survival Tactics",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nReduces the chance your Feign Death ability and all trap spells will be resisted by 4%, and reduces the cooldown of your Disengage ability by 4 sec.\n\nThis Mystic Enchant does not stack with the Survival Tactics Talent.",
-   "iconFile": "ability_rogue_feigndeath",
+   "icon": "assets/game/hunter/mystic-enchants/ability_rogue_feigndeath.jpg?v=9f1d281e",
    "requiredLevel": 45
   },
   {
    "key": "survivalist",
    "name": "Survivalist",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Stamina by 10%.\n\nThis Mystic Enchant does not stack with the Survivalist Talent.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/hunter/mystic-enchants/spell_shadow_twilight.jpg?v=4d2eabad",
    "requiredLevel": 45
   },
   {
    "key": "t_n_t",
    "name": "T.N.T.",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Explosive Shot,  Explosive Trap, Black Arrow and Immolation Trap by 6%.\n\nThis Mystic Enchant does not stack with the T.N.T. Talent.",
-   "iconFile": "inv_misc_bomb_05",
+   "icon": "assets/game/hunter/mystic-enchants/inv_misc_bomb_05.jpg?v=2cfc1a8c",
    "requiredLevel": 45
   },
   {
    "key": "thick_hide",
    "name": "Thick Hide",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the armor rating of your pets by 20% and your armor contribution from items by 10%.\n\nThis Mystic Enchant does not stack with the Thick Hide Talent.",
-   "iconFile": "inv_misc_pelt_bear_03",
+   "icon": "assets/game/hunter/mystic-enchants/inv_misc_pelt_bear_03.jpg?v=8ab3f9a9",
    "requiredLevel": 45
   },
   {
    "key": "trap_mastery",
    "name": "Trap Mastery",
    "rarity": "rare",
-   "spec": "Survival",
+   "specs": [
+    "Survival"
+   ],
    "tooltip": "Crossover Talent\nFrost Trap and Freezing Trap - Increases the duration by 30%.Immolation Trap, Explosive Trap and Black Arrow - Increases the periodic damage done by 30%.Snake Trap - Increases the number of snakes summoned by 6.\n\nThis Mystic Enchant does not stack with the Trap Mastery Talent.",
-   "iconFile": "ability_ensnare",
+   "icon": "assets/game/hunter/mystic-enchants/ability_ensnare.jpg?v=8a098c49",
    "requiredLevel": 45
   },
   {
    "key": "unleashed_fury",
    "name": "Unleashed Fury",
    "rarity": "rare",
-   "spec": "Beast Mastery",
+   "specs": [
+    "Beast Mastery"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your pets by 15%.\n\nThis Mystic Enchant does not stack with the Unleashed Fury Talent.",
-   "iconFile": "ability_bullrush",
+   "icon": "assets/game/hunter/mystic-enchants/ability_bullrush.jpg?v=cdc5bf42",
    "requiredLevel": 45
   }
  ],
@@ -2732,7 +2955,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspects of a beast, becoming untrackable and increasing melee attack power of the hunter and the hunter's pet by 10%.  Only one Aspect can be active at a time.",
-   "iconFile": "ability_mount_pinktiger",
+   "icon": "assets/game/hunter/abilities/ability_mount_pinktiger.jpg?v=17599c75",
    "cooldown": "1 sec"
   },
   {
@@ -2745,7 +2968,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspects of a cheetah, increasing movement speed by 30%.  If the hunter is struck, he will be dazed for 4 sec.  Only one Aspect can be active at a time.",
-   "iconFile": "ability_mount_jungletiger",
+   "icon": "assets/game/hunter/abilities/ability_mount_jungletiger.jpg?v=32a1ed0f",
    "cooldown": "1 sec"
   },
   {
@@ -2758,7 +2981,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspects of a dragonhawk, increasing ranged attack power by 230 and chance to dodge by 18%.  Only one Aspect can be active at a time.",
-   "iconFile": "ability_hunter_pet_dragonhawk",
+   "icon": "assets/game/hunter/abilities/ability_hunter_pet_dragonhawk.jpg?v=f851bc00",
    "cooldown": "1 sec"
   },
   {
@@ -2771,7 +2994,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspects of a hawk, increasing ranged attack power by 120.  Only one Aspect can be active at a time.",
-   "iconFile": "spell_nature_ravenform",
+   "icon": "assets/game/hunter/abilities/spell_nature_ravenform.jpg?v=46ef69f1",
    "cooldown": "1 sec"
   },
   {
@@ -2784,7 +3007,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspects of a monkey, increasing chance to dodge by 18%.  Only one Aspect can be active at a time.",
-   "iconFile": "ability_hunter_aspectofthemonkey",
+   "icon": "assets/game/hunter/abilities/ability_hunter_aspectofthemonkey.jpg?v=9d5f0075",
    "cooldown": "1 sec"
   },
   {
@@ -2797,7 +3020,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter and raid members within 40 yards take on the aspects of a pack of cheetahs, increasing movement speed by 30%.  If you are struck under the effect of this aspect, you will be dazed for 4 sec.  Only one Aspect can be active at a time.",
-   "iconFile": "ability_mount_whitetiger",
+   "icon": "assets/game/hunter/abilities/ability_mount_whitetiger.jpg?v=5fe236ff",
    "cooldown": "1 sec"
   },
   {
@@ -2810,7 +3033,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter takes on the aspect of the viper, causing ranged and melee attacks to regenerate mana but reducing your total damage done by 50%.  In addition, you gain 4% of maximum mana every 3 sec.  Mana gained is based on the speed of your ranged weapon. Requires a ranged weapon. Only one Aspect can be active at a time.",
-   "iconFile": "ability_hunter_aspectoftheviper",
+   "icon": "assets/game/hunter/abilities/ability_hunter_aspectoftheviper.jpg?v=ac3ecded",
    "cooldown": "1 sec"
   },
   {
@@ -2823,7 +3046,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The hunter, group and raid members within 30 yards take on the aspect of the wild, increasing Nature resistance by 60.  Only one Aspect can be active at a time.",
-   "iconFile": "spell_nature_protectionformnature",
+   "icon": "assets/game/hunter/abilities/spell_nature_protectionformnature.jpg?v=ebef1261",
    "cooldown": "1 sec"
   },
   {
@@ -2836,7 +3059,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gather information about the target beast.  The tooltip will display damage, health, armor, any special resistances, and diet.  In addition, Beast Lore will reveal whether or not the creature is tameable and what abilities the tamed creature has.",
-   "iconFile": "ability_physical_taunt",
+   "icon": "assets/game/hunter/abilities/ability_physical_taunt.jpg?v=2f55b5a4",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2853,7 +3076,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You master the art of Beast training, teaching you the ability to tame Exotic pets and increasing your total amount of Pet Skill Points by 4.",
-   "iconFile": "ability_hunter_beastmastery"
+   "icon": "assets/game/hunter/abilities/ability_hunter_beastmastery.jpg?v=afacba23"
   },
   {
    "key": "call_pet",
@@ -2865,7 +3088,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Summons your pet to you.",
-   "iconFile": "ability_hunter_beastcall"
+   "icon": "assets/game/hunter/abilities/ability_hunter_beastcall.jpg?v=b3dacf75"
   },
   {
    "key": "call_stabled_pet",
@@ -2877,7 +3100,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Choose one of your stabled pets to replace your current pet.  The selected pet busts out of its stable to join you no matter where you are.  Cannot be used in combat.",
-   "iconFile": "inv_box_petcarrier_01",
+   "icon": "assets/game/hunter/abilities/inv_box_petcarrier_01.jpg?v=c25fce8a",
    "cooldown": "5 min",
    "duration": "2 min"
   },
@@ -2891,7 +3114,7 @@
    "castTime": 5,
    "gcd": 1.5,
    "tooltipTemplate": "Dismiss your pet.",
-   "iconFile": "spell_nature_spiritwolf",
+   "icon": "assets/game/hunter/abilities/spell_nature_spiritwolf.jpg?v=c303f435",
    "range": 50000
   },
   {
@@ -2904,7 +3127,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Zooms in the hunter's vision. Only usable outdoors. Lasts 1 min.",
-   "iconFile": "ability_hunter_eagleeye",
+   "icon": "assets/game/hunter/abilities/ability_hunter_eagleeye.jpg?v=e61177fe",
    "costValue": "0.01",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2921,7 +3144,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Take direct control of your pet and see through its eyes for 1 min.",
-   "iconFile": "ability_eyeoftheowl",
+   "icon": "assets/game/hunter/abilities/ability_eyeoftheowl.jpg?v=dec37540",
    "costValue": "0.01",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2938,7 +3161,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Give the command to kill, increasing your pet's damage done from special attacks by 60% for 30 sec.  Each special attack done by the pet reduces the damage bonus by 20%.",
-   "iconFile": "ability_hunter_killcommand",
+   "icon": "assets/game/hunter/abilities/ability_hunter_killcommand.jpg?v=5def21f2",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2956,7 +3179,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Your pet attempts to remove all root and movement impairing effects from itself and its target, and causes your pet and its target to be immune to all such effects for 4 sec.",
-   "iconFile": "ability_hunter_masterscall",
+   "icon": "assets/game/hunter/abilities/ability_hunter_masterscall.jpg?v=19b77439",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2973,7 +3196,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals your pet for 1825 health over 15 sec.",
-   "iconFile": "ability_hunter_mendpet",
+   "icon": "assets/game/hunter/abilities/ability_hunter_mendpet.jpg?v=2b89e411",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2990,7 +3213,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Revive your pet, returning it to life with 15% of its base health.",
-   "iconFile": "ability_hunter_beastsoothe",
+   "icon": "assets/game/hunter/abilities/ability_hunter_beastsoothe.jpg?v=e3147b49",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3006,7 +3229,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Scares a beast, causing it to run in fear for up to 20 sec.  Damage caused may interrupt the effect.  Only one beast can be feared at a time.",
-   "iconFile": "ability_druid_cower",
+   "icon": "assets/game/hunter/abilities/ability_druid_cower.jpg?v=592c044b",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3024,7 +3247,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Begins taming a beast to be your companion.",
-   "iconFile": "ability_hunter_beasttaming",
+   "icon": "assets/game/hunter/abilities/ability_hunter_beasttaming.jpg?v=d3467fdf",
    "costValue": "0.48",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3041,7 +3264,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "An aimed shot that deals 145% ranged weapon damage plus 5 and reduces healing done to that target by 50%.  Lasts 10 sec.\n\nThis ability shares a cooldown with Multi-Shot.",
-   "iconFile": "inv_spear_07"
+   "icon": "assets/game/hunter/abilities/inv_spear_07.jpg?v=584fd27e"
   },
   {
    "key": "arcane_shot",
@@ -3053,7 +3276,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "An instant shot that causes 230 Arcane damage.",
-   "iconFile": "ability_impalingbolt",
+   "icon": "assets/game/hunter/abilities/ability_impalingbolt.jpg?v=91d4a950",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3076,7 +3299,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Automatically shoots the target until cancelled. Increases your ranged Attack Speed by 33% and scales with Ranged Attack Power.",
-   "iconFile": "inv_weapon_bow_02",
+   "icon": "assets/game/hunter/abilities/inv_weapon_bow_02.jpg?v=6e324e99",
    "range": 35
   },
   {
@@ -3089,7 +3312,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You deal 125% weapon damage, refreshing the current Sting on your target and triggering an effect:\n\nSerpent Sting - Instantly deals 40% of the damage done by your Serpent Sting.\n\nViper Sting - Instantly restores mana to you equal to 60% of the total amount drained by your Viper Sting.\n\nScorpid Sting - Attempts to Disarm the target for 10 sec. This effect cannot occur more than once per 1 minute.",
-   "iconFile": "ability_hunter_chimerashot2"
+   "icon": "assets/game/hunter/abilities/ability_hunter_chimerashot2.jpg?v=f19a51a8"
   },
   {
    "key": "concussive_shot",
@@ -3101,7 +3324,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Dazes the target, slowing movement speed by 50% for 4 sec.",
-   "iconFile": "spell_frost_stun",
+   "icon": "assets/game/hunter/abilities/spell_frost_stun.jpg?v=aeb0b45b",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3119,7 +3342,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Distracts the target to attack you, but has no effect if the target is already attacking you. Lasts 6 sec.",
-   "iconFile": "spell_arcane_blink",
+   "icon": "assets/game/hunter/abilities/spell_arcane_blink.jpg?v=28f34f26",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3137,7 +3360,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Exposes all hidden and invisible enemies within 10 yards of the targeted area for 20 sec.",
-   "iconFile": "spell_fire_flare",
+   "icon": "assets/game/hunter/abilities/spell_fire_flare.jpg?v=2f7d153c",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3155,7 +3378,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by 110.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for 5 min.",
-   "iconFile": "ability_hunter_snipershot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_snipershot.jpg?v=343673a0",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3172,7 +3395,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "You attempt to finish the wounded target off, firing a long range attack dealing 285% weapon damage plus 114. Kill Shot can only be used on enemies that have 20% or less health.",
-   "iconFile": "ability_hunter_assassinate2",
+   "icon": "assets/game/hunter/abilities/ability_hunter_assassinate2.jpg?v=76c08983",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3195,7 +3418,7 @@
    "castTime": 0.5,
    "gcd": 1.5,
    "tooltipTemplate": "Fires several missiles, hitting 3 targets for an additional 150 damage.\n\nThis ability shares a cooldown with Aimed Shot.",
-   "iconFile": "ability_upgrademoonglaive",
+   "icon": "assets/game/hunter/abilities/ability_upgrademoonglaive.jpg?v=254781cb",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3212,7 +3435,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "An instant shot dealing 299 Physical damage.",
-   "iconFile": "ability_searingarrow",
+   "icon": "assets/game/hunter/abilities/ability_searingarrow.jpg?v=a505157c",
    "costValue": "0.04",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3235,7 +3458,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases ranged attack speed by 40% for 15 sec.",
-   "iconFile": "ability_hunter_runningshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_runningshot.jpg?v=8f433145",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3252,7 +3475,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Stings the target, reducing chance to hit with melee and ranged attacks by 3% and reduces the resistances of the target by 75 for 5 min.  Only one Sting per Hunter can be active on any one target.",
-   "iconFile": "ability_hunter_criticalshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_criticalshot.jpg?v=e5975579",
    "costValue": "0.11",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3269,7 +3492,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Stings the target, causing 555 Nature damage over 15 sec.  Only one Sting per Hunter can be active on any one target.",
-   "iconFile": "ability_hunter_quickshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_quickshot.jpg?v=e32b2ef2",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3292,7 +3515,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A shot that deals 50% weapon damage and Silences the target for 3 sec.  Non-player victim spellcasting is also interrupted for 3 sec.",
-   "iconFile": "ability_theblackarrow"
+   "icon": "assets/game/hunter/abilities/ability_theblackarrow.jpg?v=342f6670"
   },
   {
    "key": "steady_shot",
@@ -3304,7 +3527,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "A steady shot that causes 80% weapon damage plus 104. Causes an additional 175 damage against Dazed targets.",
-   "iconFile": "ability_hunter_steadyshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_steadyshot.jpg?v=3ee9472f",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3320,7 +3543,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Attempts to remove 1 Enrage and 1 Magic effect from an enemy target.",
-   "iconFile": "spell_nature_drowsy",
+   "icon": "assets/game/hunter/abilities/spell_nature_drowsy.jpg?v=dfed29bc",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3337,7 +3560,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Stings the target, draining 4% mana over 8 sec (up to a maximum of 8% of the caster's maximum mana), and energizing the Hunter equal to 300% of the amount drained.  Only one Sting per Hunter can be active on any one target.",
-   "iconFile": "ability_hunter_aimedshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_aimedshot.jpg?v=848137de",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3355,7 +3578,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Continuously fires a volley of ammo at the target area, causing 105 Arcane damage to enemy targets within 8 yards every 1.00 seconds for 6 sec.",
-   "iconFile": "ability_marksmanship",
+   "icon": "assets/game/hunter/abilities/ability_marksmanship.jpg?v=2af51777",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3378,7 +3601,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Fires a Black Arrow at the target, increasing all damage done by you to the target by 6% and dealing 785 Shadow damage over 15 sec.",
-   "iconFile": "spell_shadow_painspike",
+   "icon": "assets/game/hunter/abilities/spell_shadow_painspike.jpg?v=40ab3e7e",
    "scaling": [
     {
      "stat": "RAP",
@@ -3396,7 +3619,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "A poisonous strike, increasing all damage done by you to the target by 8% and dealing 268 Physical damage and an additional 142 Nature damage every 0 seconds for 15 sec.",
-   "iconFile": "epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border",
+   "icon": "assets/game/hunter/abilities/epic_rpg_icon_pack_poison_icon_0001s_0000_spider_border.jpg?v=e2e9787b",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3424,7 +3647,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A sweeping attack that strikes up to 5 targets in front of you for 240% weapon damage plus 268.\n\nIncreases the damage dealt by your Raptor Strike, Mongoose Bite and Counterattack by 10% per target hit. Lasts for 9 sec or until you carve another target.",
-   "iconFile": "warrior_talent_icon_mastercleaver"
+   "icon": "assets/game/hunter/abilities/warrior_talent_icon_mastercleaver.jpg?v=00f00b8f"
   },
   {
    "key": "counterattack",
@@ -3436,7 +3659,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A strike that becomes active after parrying an opponent's attack. This attack deals 48 damage and immobilizes the target for 5 sec when triggered from parrying an attack. It cannot be blocked, dodged, or parried.",
-   "iconFile": "ability_warrior_challange",
+   "icon": "assets/game/hunter/abilities/ability_warrior_challange.jpg?v=d7a3970f",
    "scaling": [
     {
      "stat": "AP",
@@ -3454,7 +3677,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "When activated, increases parry chance by 100%, reduces the chance ranged attacks will hit you by 100% and grants a 100% chance to deflect spells.  While Deterrence is active, you cannot attack.  Lasts 5 sec.",
-   "iconFile": "ability_whirlwind",
+   "icon": "assets/game/hunter/abilities/ability_whirlwind.jpg?v=ee741762",
    "cooldown": "1.5 min",
    "duration": "5 sec"
   },
@@ -3468,7 +3691,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You attempt to disengage from combat, leaping backwards.",
-   "iconFile": "ability_rogue_feint",
+   "icon": "assets/game/hunter/abilities/ability_rogue_feint.jpg?v=96884e0d",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3485,7 +3708,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You fire an explosive charge into the enemy target, dealing 158-189 Fire damage. The charge will blast the target every second for an additional 2 sec.",
-   "iconFile": "ability_hunter_explosiveshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_explosiveshot.jpg?v=557fbb1b",
    "scaling": [
     {
      "stat": "RAP",
@@ -3507,7 +3730,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "You fire an explosive charge into the enemy target, dealing 144-172 Fire damage. The charge will blast the target every second for an additional 2 sec when active on a target it makes your attacks bypass 10% armor.\n\nUseable whilst in melee range.",
-   "iconFile": "ability_hunter_burstingshot",
+   "icon": "assets/game/hunter/abilities/ability_hunter_burstingshot.jpg?v=da0a91df",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3535,7 +3758,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Place a fire trap that explodes when an enemy approaches, causing 156 to 198 Fire damage and burning all enemies for 250 additional Fire damage over 20 sec to all within 10 yards.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "spell_fire_selfdestruct",
+   "icon": "assets/game/hunter/abilities/spell_fire_selfdestruct.jpg?v=c880d0dc",
    "costValue": "0.19",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3566,7 +3789,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Feign death which may trick enemies into ignoring you.  Lasts up to 6 min.",
-   "iconFile": "ability_rogue_feigndeath",
+   "icon": "assets/game/hunter/abilities/ability_rogue_feigndeath.jpg?v=9f1d281e",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3583,7 +3806,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fire a freezing arrow that places a Freezing Trap at the target location, freezing the first enemy that approaches, preventing all action for up to 20 sec.  Any damage caused will break the ice.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "spell_frost_chillingbolt",
+   "icon": "assets/game/hunter/abilities/spell_frost_chillingbolt.jpg?v=c4b380fc",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3600,7 +3823,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Place a frost trap that freezes the first enemy that approaches, preventing all action for up to 20 sec.  Any damage caused will break the ice.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "spell_frost_chainsofice",
+   "icon": "assets/game/hunter/abilities/spell_frost_chainsofice.jpg?v=b2f0bbbf",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3617,7 +3840,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Place a frost trap that creates an ice slick around itself for 30 sec when the first enemy approaches it.  All enemies within 10 yards will be slowed by 50% while in the area of effect.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "spell_frost_freezingbreath",
+   "icon": "assets/game/hunter/abilities/spell_frost_freezingbreath.jpg?v=8f8784ac",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3634,7 +3857,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Place a fire trap that will burn the first enemy to approach for 1375 Fire damage over 15 sec.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "spell_fire_flameshock",
+   "icon": "assets/game/hunter/abilities/spell_fire_flameshock.jpg?v=c99d7ca9",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3657,7 +3880,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Launches your Explosive Trap at the target location instead of placing it on the ground. Trap will explode upon impact.",
-   "iconFile": "spell_fire_selfdestruct",
+   "icon": "assets/game/hunter/abilities/spell_fire_selfdestruct.jpg?v=c880d0dc",
    "costValue": "0.4",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3674,7 +3897,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Launches your Immolation Trap at the target instead of placing it on the ground. Trap will explode upon impact.",
-   "iconFile": "spell_fire_flameshock",
+   "icon": "assets/game/hunter/abilities/spell_fire_flameshock.jpg?v=c99d7ca9",
    "costValue": "0.2",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3691,7 +3914,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "The current party or raid member targeted will receive the threat caused by your next damaging attack and all actions taken for 4 sec afterwards.",
-   "iconFile": "ability_hunter_misdirection",
+   "icon": "assets/game/hunter/abilities/ability_hunter_misdirection.jpg?v=ad039555",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3709,7 +3932,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Attack the enemy for 115 damage.",
-   "iconFile": "ability_hunter_swiftstrike",
+   "icon": "assets/game/hunter/abilities/ability_hunter_swiftstrike.jpg?v=f32c3262",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3732,7 +3955,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A strong attack that deals 120% weapon damage plus 140.",
-   "iconFile": "ability_meleedamage",
+   "icon": "assets/game/hunter/abilities/ability_meleedamage.jpg?v=3d1a41f9",
    "costValue": "0.04",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3749,7 +3972,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Launch Shadow Artillery at the target's location, dealing 426 Shadow damage and an additional 161 Shadow damage every second to nearby enemies for 3 sec. Restores 35% of your base mana upon casting.\n\nMax 1 charges. 45 second recharge timer. Consumes 3 Shadow Shells instead of charges.\n\n@ext:Benefits from the Molten Core talent. Damage is split when hitting more than 5 targets.:ext@",
-   "iconFile": "custom_t_nhance_rpg_icons_shadowwhirl_border",
+   "icon": "assets/game/hunter/abilities/custom_t_nhance_rpg_icons_shadowwhirl_border.jpg?v=38a3d3c6",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3780,7 +4003,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Place a trap that will release several venomous snakes to attack the first enemy to approach.  The snakes will die after 15 sec.  Trap will exist for 30 sec.  Only one trap can be active at a time.",
-   "iconFile": "ability_hunter_snaketrap",
+   "icon": "assets/game/hunter/abilities/ability_hunter_snaketrap.jpg?v=06cec70a",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3797,7 +4020,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby beasts on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "ability_tracking",
+   "icon": "assets/game/hunter/abilities/ability_tracking.jpg?v=865bf193",
    "cooldown": "1.5 sec"
   },
   {
@@ -3810,7 +4033,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "spell_shadow_summonfelhunter",
+   "icon": "assets/game/hunter/abilities/spell_shadow_summonfelhunter.jpg?v=46076ddf",
    "cooldown": "1.5 sec"
   },
   {
@@ -3823,7 +4046,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "inv_misc_head_dragon_01",
+   "icon": "assets/game/hunter/abilities/inv_misc_head_dragon_01.jpg?v=cf056ef0",
    "cooldown": "1.5 sec"
   },
   {
@@ -3836,7 +4059,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "spell_frost_summonwaterelemental",
+   "icon": "assets/game/hunter/abilities/spell_frost_summonwaterelemental.jpg?v=bdf146b7",
    "cooldown": "1.5 sec"
   },
   {
@@ -3849,7 +4072,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "ability_racial_avatar",
+   "icon": "assets/game/hunter/abilities/ability_racial_avatar.jpg?v=ddb48eb0",
    "cooldown": "1.5 sec"
   },
   {
@@ -3862,7 +4085,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Greatly increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "ability_stealth",
+   "icon": "assets/game/hunter/abilities/ability_stealth.jpg?v=9ee5053c",
    "cooldown": "1.5 sec"
   },
   {
@@ -3875,7 +4098,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "spell_holy_prayerofhealing",
+   "icon": "assets/game/hunter/abilities/spell_holy_prayerofhealing.jpg?v=22ccd30c",
    "cooldown": "1.5 sec"
   },
   {
@@ -3888,7 +4111,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shows the location of all nearby undead on the minimap.  Only one form of tracking can be active at a time.",
-   "iconFile": "spell_shadow_darksummoning",
+   "icon": "assets/game/hunter/abilities/spell_shadow_darksummoning.jpg?v=321768d8",
    "cooldown": "1.5 sec"
   },
   {
@@ -3901,7 +4124,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Launches your Explosive Trap at the target location.",
-   "iconFile": "spell_fire_selfdestruct",
+   "icon": "assets/game/hunter/abilities/spell_fire_selfdestruct.jpg?v=c880d0dc",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3918,7 +4141,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Launches your Immolation Trap at the target location.",
-   "iconFile": "spell_fire_flameshock",
+   "icon": "assets/game/hunter/abilities/spell_fire_flameshock.jpg?v=c99d7ca9",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3935,7 +4158,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Maims the enemy, reducing the target's movement speed by 50% for 10 sec.",
-   "iconFile": "ability_rogue_trip",
+   "icon": "assets/game/hunter/abilities/ability_rogue_trip.jpg?v=30ecfb3a",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3952,7 +4175,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "A stinging shot that puts the target to sleep for 30 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 6 sec.  Only one Sting per Hunter can be active on the target at a time.",
-   "iconFile": "inv_spear_02"
+   "icon": "assets/game/hunter/abilities/inv_spear_02.jpg?v=df855121"
   }
  ]
 }

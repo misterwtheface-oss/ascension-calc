@@ -1,9 +1,0 @@
-[
- {
-  "file": "warlock-affliction-sample.json",
-  "name": "Affliction 51 (sample)",
-  "class": "warlock",
-  "focus": "PvE — sample allocation to demo the build pipeline",
-  "points": 51
- }
-]

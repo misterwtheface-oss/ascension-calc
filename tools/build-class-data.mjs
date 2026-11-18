@@ -8,12 +8,16 @@
 //         <extract>/labels.json                    (every display name; no raw game key reaches the page)
 //         <extract>/assets/icons/*.jpg, <extract>/assets/talent-bg/*.jpg, <extract>/assets/provenance.json
 //         tools/class-meta.json                    (tree accent colours: site styling, not game data)
-// Writes: data/<class>.json, data/classes.json, assets/game/<class>/{talents,abilities,mystic-enchants,backgrounds}/
+// Writes: data/<class>.json, data/classes.js (window.ASC_CLASSES, each class with the ?v= hash of its data file),
+//         assets/game/<class>/{talents,abilities,mystic-enchants,backgrounds}/
+// Every image path in the data carries ?v=<content hash>, and index.html is re-stamped at the end (rule A-cache-bust).
 //
 // The extract is local-only (decompiled game data never ships); only these runtime files land in the repo.
 // Exits non-zero on any missing icon, label or broken reference (no silent fallbacks).
 
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, rmSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,6 +29,8 @@ const BB = join(EXTRACT, 'data', 'bronzebeard');
 if (!args.length) { console.error('usage: node tools/build-class-data.mjs <class>|--all [--extract <dir>]'); process.exit(1); }
 
 const readJSON = p => JSON.parse(readFileSync(p, 'utf8'));
+const hash8 = p => createHash('md5').update(readFileSync(p)).digest('hex').slice(0, 8);
+const ver = rel => `${rel}?v=${hash8(join(ROOT, rel))}`;   // site-relative path + content hash
 const LABELS = readJSON(join(EXTRACT, 'labels.json'));
 const INDEX = readJSON(join(BB, 'classes.json'));
 const PROV = readJSON(join(EXTRACT, 'assets', 'provenance.json'));
@@ -58,12 +64,14 @@ function templateOf(texts) {
   return { tooltipTemplate: tpl, rankValues: texts.map((_, r) => cols.map(c => c[r])) };
 }
 
+// Copies one icon and returns its versioned site path; null (and an error) when the extract lacks it.
 function copyIcon(stem, slug, kind, errors) {
   const src = join(EXTRACT, 'assets', 'icons', `${stem}.jpg`);
-  if (!stem || !existsSync(src) || !PROV.icons[stem]) { errors.push(`icon ${stem} (${kind}) missing from extract`); return; }
+  if (!stem || !existsSync(src) || !PROV.icons[stem]) { errors.push(`icon ${stem} (${kind}) missing from extract`); return null; }
   const dir = join(ROOT, 'assets', 'game', slug, kind);
   mkdirSync(dir, { recursive: true });
   copyFileSync(src, join(dir, `${stem}.jpg`));
+  return ver(`assets/game/${slug}/${kind}/${stem}.jpg`);
 }
 
 const fmtSec = ms => {
@@ -87,12 +95,14 @@ function build(slug) {
     if (!meta.trees[name]) errors.push(`class-meta.json: no accent for ${slug} tree ${name}`);
     const bg = t.background && t.background.toLowerCase();
     const bgSrc = bg && join(EXTRACT, 'assets', 'talent-bg', `${bg}.jpg`);
+    let background = null;
     if (!bg || !existsSync(bgSrc)) errors.push(`tree background for ${name} missing`);
     else {
       mkdirSync(join(outDir, 'backgrounds'), { recursive: true });
       copyFileSync(bgSrc, join(outDir, 'backgrounds', `${bg}.jpg`));
+      background = ver(`assets/game/${slug}/backgrounds/${bg}.jpg`);
     }
-    return { name, accent: meta.trees[name], background: `assets/game/${slug}/backgrounds/${bg}.jpg` };
+    return { name, accent: meta.trees[name], background };
   });
 
   // talents + layout (grid columns normalised so the left-most used column is 1)
@@ -109,14 +119,13 @@ function build(slug) {
   for (const t of src.talents) {
     const key = keyByCa[t.caId];
     const tip = templateOf(t.ranks.map(r => r.text));
-    const out = { name: t.name, maxPts: t.ranks.length, prereq: null, ...tip, iconFile: t.icon };
+    const out = { name: t.name, maxPts: t.ranks.length, prereq: null, ...tip, icon: copyIcon(t.icon, slug, 'talents', errors) };
     // prerequisite arrows: Talent.dbc link that the game's own CA flag (0x200000) confirms; others stay in the
     // extract's report.json as open questions
     const p = t.prereq;
     if (p && p.caId && p.caFlag && (p.geometry === 'vertical' || p.geometry === 'horizontal')) out.prereq = keyByCa[p.caId];
     if (t.type === 'TalentAbility') out.active = true;
     talents[key] = out;
-    copyIcon(t.icon, slug, 'talents', errors);
     const grid = layout[treeName(t.tabType)];
     const col = t.col - minCol[t.tabType];
     while (grid.length <= t.row) grid.push([null, null, null, null]);
@@ -133,7 +142,7 @@ function build(slug) {
     if (!r) return;
     const a = { key: keyOf(name), name, spec: treeName(tabType), source, rank: r.rank ?? 1,
                 school: (r.schools || []).join('/') || null, castTime: r.castMs ? +(r.castMs / 1000).toFixed(2) : 0,
-                gcd: r.gcdMs ? r.gcdMs / 1000 : 0, tooltipTemplate: r.text, iconFile: icon };
+                gcd: r.gcdMs ? r.gcdMs / 1000 : 0, tooltipTemplate: r.text, icon: copyIcon(icon, slug, 'abilities', errors) };
     if (r.costPctBase) Object.assign(a, { costValue: String(r.costPctBase / 100), costUnit: 'percent', costPower: r.power });
     else if (r.cost) Object.assign(a, { costValue: String(r.cost), costUnit: 'flat', costPower: r.power });
     if (r.cooldownMs) a.cooldown = fmtSec(r.cooldownMs);
@@ -141,7 +150,6 @@ function build(slug) {
     if (r.rangeYd) a.range = r.rangeYd;
     if (r.scaling?.length) a.scaling = r.scaling;
     abilities.push(a);
-    copyIcon(icon, slug, 'abilities', errors);
   };
   for (const ab of src.abilities) if (ab.ranks.some(r => !r.passive)) addAbility(ab.name, ab.tabType, ab.icon, ab.ranks, 'Core');
   for (const t of src.talents) if (t.type === 'TalentAbility') {
@@ -156,11 +164,11 @@ function build(slug) {
     const q = LABELS.enchantQuality[e.quality];
     if (!q) { errors.push(`labels.json has no enchantQuality.${e.quality}`); return null; }
     const out = { key: keyOf(e.name || `enchant_${e.id}`), name: e.name, rarity: q.rarity,
-                  spec: e.specs.map(s => label('enchantSpec', s)).join(', '), tooltip: e.text, iconFile: e.icon,
+                  specs: e.specs.map(s => label('enchantSpec', s)).filter(Boolean), tooltip: e.text,
+                  icon: copyIcon(e.icon, slug, 'mystic-enchants', errors),
                   requiredLevel: e.requiredLevel };
     const req = (e.requires || []).map(sid => keyBySpell[sid] || { name: e.text.match(/Requires ([^\n]+)/)?.[1] || `spell ${sid}` });
     if (req.length) out.requires = req;
-    copyIcon(e.icon, slug, 'mystic-enchants', errors);
     return out;
   }).filter(Boolean);
   const ekeys = new Set();
@@ -182,12 +190,11 @@ const slugs = args[0] === '--all' ? INDEX.classes.map(c => c.slug).filter(s => M
 mkdirSync(join(ROOT, 'data'), { recursive: true });
 const built = slugs.map(s => [s, build(s)]);
 
-// class picker list: every class in class-meta.json, available when its data built
-let prevList = [];
-try { prevList = readJSON(join(ROOT, 'data', 'classes.json')); } catch {}
-const classList = Object.entries(META).map(([slug, m]) => ({
-  slug, name: m.name, accent: prevList.find(c => c.slug === slug)?.accent || Object.values(m.trees)[0],
-  available: existsSync(join(ROOT, 'data', `${slug}.json`)),
-}));
-writeFileSync(join(ROOT, 'data', 'classes.json'), JSON.stringify(classList, null, 1) + '\n');
+// class picker list: every class in class-meta.json that has data, with its data file's ?v= hash
+const classList = Object.entries(META).filter(([slug]) => existsSync(join(ROOT, 'data', `${slug}.json`)))
+  .map(([slug, m]) => ({ slug, name: m.name, accent: m.accent, v: hash8(join(ROOT, 'data', `${slug}.json`)) }));
+writeFileSync(join(ROOT, 'data', 'classes.js'), `window.ASC_CLASSES = ${JSON.stringify(classList, null, 1)};\n`);
+rmSync(join(ROOT, 'data', 'classes.json'), { force: true });
+const st = spawnSync('python', [join(ROOT, '..', 'tools', 'app', 'stamp_cache.py'), ROOT], { stdio: 'inherit' });
+if (st.status !== 0) { console.error('stamp_cache failed (A-cache-bust)'); process.exit(1); }
 if (built.some(([, o]) => !o)) process.exit(1);

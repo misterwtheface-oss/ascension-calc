@@ -1,56 +1,56 @@
-[
+window.ASC_CLASSES = [
  {
   "slug": "warrior",
   "name": "Warrior",
   "accent": "#C69B3A",
-  "available": true
+  "v": "c2680df7"
  },
  {
   "slug": "paladin",
   "name": "Paladin",
   "accent": "#F48CBA",
-  "available": true
+  "v": "7d810ba9"
  },
  {
   "slug": "hunter",
   "name": "Hunter",
   "accent": "#AAD372",
-  "available": true
+  "v": "11a0e585"
  },
  {
   "slug": "rogue",
   "name": "Rogue",
   "accent": "#FFF468",
-  "available": true
+  "v": "19846dd0"
  },
  {
   "slug": "priest",
   "name": "Priest",
   "accent": "#CDCDCD",
-  "available": true
+  "v": "d9b6eb43"
  },
  {
   "slug": "shaman",
   "name": "Shaman",
   "accent": "#0070DD",
-  "available": true
+  "v": "8d8e0b47"
  },
  {
   "slug": "mage",
   "name": "Mage",
   "accent": "#3FC7EB",
-  "available": true
+  "v": "1ed20aac"
  },
  {
   "slug": "warlock",
   "name": "Warlock",
   "accent": "#8788EE",
-  "available": true
+  "v": "4a2d164b"
  },
  {
   "slug": "druid",
   "name": "Druid",
   "accent": "#FF7C0A",
-  "available": true
+  "v": "6e642575"
  }
-]
+];

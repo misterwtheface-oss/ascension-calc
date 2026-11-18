@@ -8,17 +8,17 @@
   {
    "name": "Holy",
    "accent": "#D4B848",
-   "background": "assets/game/paladin/backgrounds/paladinholy.jpg"
+   "background": "assets/game/paladin/backgrounds/paladinholy.jpg?v=6fabe52a"
   },
   {
    "name": "Protection",
    "accent": "#5880A8",
-   "background": "assets/game/paladin/backgrounds/paladinprotection.jpg"
+   "background": "assets/game/paladin/backgrounds/paladinprotection.jpg?v=c870cfa7"
   },
   {
    "name": "Retribution",
    "accent": "#C85828",
-   "background": "assets/game/paladin/backgrounds/paladincombat.jpg"
+   "background": "assets/game/paladin/backgrounds/paladincombat.jpg?v=a5e36e5e"
   }
  ],
  "talents": {
@@ -44,7 +44,7 @@
      5
     ]
    ],
-   "iconFile": "spell_holy_blindingheal"
+   "icon": "assets/game/paladin/talents/spell_holy_blindingheal.jpg?v=b45b8306"
   },
   "divine_strength": {
    "name": "Divine Strength",
@@ -68,7 +68,7 @@
      15
     ]
    ],
-   "iconFile": "ability_golemthunderclap"
+   "icon": "assets/game/paladin/talents/ability_golemthunderclap.jpg?v=162d9384"
   },
   "stoicism": {
    "name": "Stoicism",
@@ -89,14 +89,14 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_stoicism"
+   "icon": "assets/game/paladin/talents/spell_holy_stoicism.jpg?v=100e595c"
   },
   "guardians_favor": {
    "name": "Guardian's Favor",
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "Reduces the cooldown of your Hand of Protection by 2 min and increases the duration of your Hand of Freedom by 4 sec.",
-   "iconFile": "spell_holy_sealofprotection"
+   "icon": "assets/game/paladin/talents/spell_holy_sealofprotection.jpg?v=965629ef"
   },
   "anticipation": {
    "name": "Anticipation",
@@ -120,14 +120,14 @@
      5
     ]
    ],
-   "iconFile": "spell_magic_lesserinvisibilty"
+   "icon": "assets/game/paladin/talents/spell_magic_lesserinvisibilty.jpg?v=0da63e08"
   },
   "divine_sacrifice": {
    "name": "Divine Sacrifice",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "30% of all damage taken by party members within 30 yards is redirected to the Paladin (up to a maximum of 40% of the Paladin's health times the number of party members).  Damage which reduces the Paladin below 20% health will break the effect.  Lasts 10 sec.",
-   "iconFile": "spell_holy_powerwordbarrier",
+   "icon": "assets/game/paladin/talents/spell_holy_powerwordbarrier.jpg?v=22a4effb",
    "active": true
   },
   "improved_righteous_fury": {
@@ -146,7 +146,7 @@
      9
     ]
    ],
-   "iconFile": "spell_holy_sealoffury"
+   "icon": "assets/game/paladin/talents/spell_holy_sealoffury.jpg?v=0bca25da"
   },
   "toughness": {
    "name": "Toughness",
@@ -175,7 +175,7 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_devotion"
+   "icon": "assets/game/paladin/talents/spell_holy_devotion.jpg?v=2df06641"
   },
   "divine_guardian": {
    "name": "Divine Guardian",
@@ -194,7 +194,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_powerwordbarrier"
+   "icon": "assets/game/paladin/talents/spell_holy_powerwordbarrier.jpg?v=22a4effb"
   },
   "improved_hammer_of_justice": {
    "name": "Improved Hammer of Justice",
@@ -209,7 +209,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_sealofmight"
+   "icon": "assets/game/paladin/talents/spell_holy_sealofmight.jpg?v=fca4f7d1"
   },
   "improved_devotion_aura": {
    "name": "Improved Devotion Aura",
@@ -230,14 +230,14 @@
      6
     ]
    ],
-   "iconFile": "spell_holy_devotionaura"
+   "icon": "assets/game/paladin/talents/spell_holy_devotionaura.jpg?v=a3269cc5"
   },
   "blessing_of_sanctuary": {
    "name": "Blessing of Sanctuary",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Places a Blessing on the friendly target, reducing damage taken from all sources by 3% for 30 min and increasing strength and stamina by 10%.  In addition, when the target blocks, parries, or dodges a melee attack the target will gain 2% of maximum displayed mana.  Players may only have one Blessing on them per Paladin at any one time.",
-   "iconFile": "spell_nature_lightningshield",
+   "icon": "assets/game/paladin/talents/spell_nature_lightningshield.jpg?v=3308d68b",
    "active": true
   },
   "reckoning": {
@@ -245,7 +245,7 @@
    "maxPts": 5,
    "prereq": null,
    "tooltipTemplate": "Gives you a 10% chance after blocking or being hit by any damaging attack that the next 4 weapon swings within 8 sec will generate an additional attack.",
-   "iconFile": "spell_holy_blessingofstrength"
+   "icon": "assets/game/paladin/talents/spell_holy_blessingofstrength.jpg?v=d0c23110"
   },
   "sacred_duty": {
    "name": "Sacred Duty",
@@ -264,7 +264,7 @@
      60
     ]
    ],
-   "iconFile": "spell_holy_divineintervention"
+   "icon": "assets/game/paladin/talents/spell_holy_divineintervention.jpg?v=a4f5e16c"
   },
   "one_handed_weapon_specialization": {
    "name": "One-Handed Weapon Specialization",
@@ -282,7 +282,7 @@
      10
     ]
    ],
-   "iconFile": "inv_sword_20"
+   "icon": "assets/game/paladin/talents/inv_sword_20.jpg?v=4878048d"
   },
   "spiritual_attunement": {
    "name": "Spiritual Attunement",
@@ -297,14 +297,14 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_revivechampion"
+   "icon": "assets/game/paladin/talents/spell_holy_revivechampion.jpg?v=91d69974"
   },
   "holy_shield": {
    "name": "Holy Shield",
    "maxPts": 1,
    "prereq": "blessing_of_sanctuary",
    "tooltipTemplate": "Increases chance to block by 30% for 10 sec and deals 79 Holy damage for each attack blocked while active.  Each block expends a charge.  8 charges.",
-   "iconFile": "spell_holy_blessingofprotection",
+   "icon": "assets/game/paladin/talents/spell_holy_blessingofprotection.jpg?v=e0e3d08b",
    "active": true
   },
   "ardent_defender": {
@@ -326,7 +326,7 @@
      50
     ]
    ],
-   "iconFile": "spell_holy_ardentdefender"
+   "icon": "assets/game/paladin/talents/spell_holy_ardentdefender.jpg?v=a0e25275"
   },
   "redoubt": {
    "name": "Redoubt",
@@ -343,7 +343,7 @@
      30
     ]
    ],
-   "iconFile": "ability_defend"
+   "icon": "assets/game/paladin/talents/ability_defend.jpg?v=97d81fd6"
   },
   "combat_expertise": {
    "name": "Combat Expertise",
@@ -364,7 +364,7 @@
      6
     ]
    ],
-   "iconFile": "spell_holy_weaponmastery"
+   "icon": "assets/game/paladin/talents/spell_holy_weaponmastery.jpg?v=9d3bd52f"
   },
   "touched_by_the_light": {
    "name": "Touched by the Light",
@@ -381,14 +381,14 @@
      30
     ]
    ],
-   "iconFile": "ability_paladin_touchedbylight"
+   "icon": "assets/game/paladin/talents/ability_paladin_touchedbylight.jpg?v=09d8e68f"
   },
   "avengers_shield": {
    "name": "Avenger's Shield",
    "maxPts": 1,
    "prereq": "holy_shield",
    "tooltipTemplate": "Hurls a holy shield at the enemy, dealing 440 to 536 Holy damage, Dazing them and then jumping to additional nearby enemies.  Affects 3 total targets.  Lasts 10 sec.",
-   "iconFile": "spell_holy_avengersshield",
+   "icon": "assets/game/paladin/talents/spell_holy_avengersshield.jpg?v=5ff3d0a6",
    "active": true
   },
   "guarded_by_the_light": {
@@ -408,7 +408,7 @@
      100
     ]
    ],
-   "iconFile": "ability_paladin_gaurdedbythelight"
+   "icon": "assets/game/paladin/talents/ability_paladin_gaurdedbythelight.jpg?v=61c1d5f2"
   },
   "shield_of_the_templar": {
    "name": "Shield of the Templar",
@@ -429,7 +429,7 @@
      100
     ]
    ],
-   "iconFile": "ability_paladin_shieldofthetemplar"
+   "icon": "assets/game/paladin/talents/ability_paladin_shieldofthetemplar.jpg?v=06ca7279"
   },
   "judgements_of_the_just": {
    "name": "Judgements of the Just",
@@ -448,14 +448,14 @@
      20
     ]
    ],
-   "iconFile": "ability_paladin_judgementsofthejust"
+   "icon": "assets/game/paladin/talents/ability_paladin_judgementsofthejust.jpg?v=e5ea094e"
   },
   "hammer_of_the_righteous": {
    "name": "Hammer of the Righteous",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Hammer the current target and up to 2 additional nearby targets, causing 4 times your main hand damage per second as Holy damage.\n\nShares cooldown with Crusader Strike.",
-   "iconFile": "ability_paladin_hammeroftherighteous",
+   "icon": "assets/game/paladin/talents/ability_paladin_hammeroftherighteous.jpg?v=3ad3b918",
    "active": true
   },
   "spiritual_focus": {
@@ -480,7 +480,7 @@
      70
     ]
    ],
-   "iconFile": "spell_arcane_blink"
+   "icon": "assets/game/paladin/talents/spell_arcane_blink.jpg?v=28f34f26"
   },
   "seals_of_the_pure": {
    "name": "Seals of the Pure",
@@ -504,7 +504,7 @@
      15
     ]
    ],
-   "iconFile": "ability_thunderbolt"
+   "icon": "assets/game/paladin/talents/ability_thunderbolt.jpg?v=b426b25f"
   },
   "healing_light": {
    "name": "Healing Light",
@@ -522,7 +522,7 @@
      12
     ]
    ],
-   "iconFile": "spell_holy_holybolt"
+   "icon": "assets/game/paladin/talents/spell_holy_holybolt.jpg?v=b4ce25b4"
   },
   "divine_intellect": {
    "name": "Divine Intellect",
@@ -546,7 +546,7 @@
      10
     ]
    ],
-   "iconFile": "spell_nature_sleep"
+   "icon": "assets/game/paladin/talents/spell_nature_sleep.jpg?v=3fdd4589"
   },
   "unyielding_faith": {
    "name": "Unyielding Faith",
@@ -561,14 +561,14 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_unyieldingfaith"
+   "icon": "assets/game/paladin/talents/spell_holy_unyieldingfaith.jpg?v=e70590ce"
   },
   "aura_mastery": {
    "name": "Aura Mastery",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Causes your Concentration Aura to make all affected targets immune to Silence and Interrupt effects and improve the effect of all other auras by 100%.  Lasts 6 sec.",
-   "iconFile": "spell_holy_auramastery",
+   "icon": "assets/game/paladin/talents/spell_holy_auramastery.jpg?v=fb4c743b",
    "active": true
   },
   "illumination": {
@@ -593,7 +593,7 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_greaterheal"
+   "icon": "assets/game/paladin/talents/spell_holy_greaterheal.jpg?v=3ca40f3b"
   },
   "improved_lay_on_hands": {
    "name": "Improved Lay on Hands",
@@ -610,7 +610,7 @@
      -4
     ]
    ],
-   "iconFile": "spell_holy_layonhands"
+   "icon": "assets/game/paladin/talents/spell_holy_layonhands.jpg?v=e3bc35ab"
   },
   "improved_concentration_aura": {
    "name": "Improved Concentration Aura",
@@ -631,7 +631,7 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_mindsooth"
+   "icon": "assets/game/paladin/talents/spell_holy_mindsooth.jpg?v=ecba50fb"
   },
   "improved_blessing_of_wisdom": {
    "name": "Improved Blessing of Wisdom",
@@ -646,7 +646,7 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_sealofwisdom"
+   "icon": "assets/game/paladin/talents/spell_holy_sealofwisdom.jpg?v=45feb0c9"
   },
   "blessed_hands": {
    "name": "Blessed Hands",
@@ -665,7 +665,7 @@
      10
     ]
    ],
-   "iconFile": "ability_paladin_blessedhands"
+   "icon": "assets/game/paladin/talents/ability_paladin_blessedhands.jpg?v=58611e39"
   },
   "pure_of_heart": {
    "name": "Pure of Heart",
@@ -680,14 +680,14 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_pureofheart"
+   "icon": "assets/game/paladin/talents/spell_holy_pureofheart.jpg?v=e54d2347"
   },
   "divine_favor": {
    "name": "Divine Favor",
    "maxPts": 1,
    "prereq": "illumination",
    "tooltipTemplate": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
-   "iconFile": "spell_holy_heal"
+   "icon": "assets/game/paladin/talents/spell_holy_heal.jpg?v=ed107f44"
   },
   "sanctified_light": {
    "name": "Sanctified Light",
@@ -705,7 +705,7 @@
      6
     ]
    ],
-   "iconFile": "spell_holy_healingaura"
+   "icon": "assets/game/paladin/talents/spell_holy_healingaura.jpg?v=f57d8af6"
   },
   "purifying_power": {
    "name": "Purifying Power",
@@ -722,7 +722,7 @@
      33
     ]
    ],
-   "iconFile": "spell_holy_purifyingpower"
+   "icon": "assets/game/paladin/talents/spell_holy_purifyingpower.jpg?v=f08d5cbf"
   },
   "holy_power": {
    "name": "Holy Power",
@@ -746,7 +746,7 @@
      5
     ]
    ],
-   "iconFile": "spell_holy_power"
+   "icon": "assets/game/paladin/talents/spell_holy_power.jpg?v=c3d59c89"
   },
   "lights_grace": {
    "name": "Light's Grace",
@@ -764,14 +764,14 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_lightsgrace"
+   "icon": "assets/game/paladin/talents/spell_holy_lightsgrace.jpg?v=56d79ded"
   },
   "holy_shock": {
    "name": "Holy Shock",
    "maxPts": 1,
    "prereq": "divine_favor",
    "tooltipTemplate": "Blasts the target with Holy energy, causing 314 to 340 Holy damage to an enemy, or 433 to 467 healing to an ally.",
-   "iconFile": "spell_holy_searinglight",
+   "icon": "assets/game/paladin/talents/spell_holy_searinglight.jpg?v=0249f8ad",
    "active": true
   },
   "blessed_life": {
@@ -790,7 +790,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_blessedlife"
+   "icon": "assets/game/paladin/talents/spell_holy_blessedlife.jpg?v=db3d140e"
   },
   "sacred_cleansing": {
    "name": "Sacred Cleansing",
@@ -808,7 +808,7 @@
      30
     ]
    ],
-   "iconFile": "ability_paladin_sacredcleansing"
+   "icon": "assets/game/paladin/talents/ability_paladin_sacredcleansing.jpg?v=97bf058c"
   },
   "holy_guidance": {
    "name": "Holy Guidance",
@@ -826,14 +826,14 @@
      20
     ]
    ],
-   "iconFile": "spell_holy_holyguidance"
+   "icon": "assets/game/paladin/talents/spell_holy_holyguidance.jpg?v=f3bbc980"
   },
   "divine_illumination": {
    "name": "Divine Illumination",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Reduces the mana cost of all spells by 50% for 15 sec.",
-   "iconFile": "spell_holy_divineillumination",
+   "icon": "assets/game/paladin/talents/spell_holy_divineillumination.jpg?v=196423bd",
    "active": true
   },
   "judgements_of_the_pure": {
@@ -855,7 +855,7 @@
      15
     ]
    ],
-   "iconFile": "ability_paladin_judgementofthepure"
+   "icon": "assets/game/paladin/talents/ability_paladin_judgementofthepure.jpg?v=a4326916"
   },
   "infusion_of_light": {
    "name": "Infusion of Light",
@@ -874,7 +874,7 @@
      100
     ]
    ],
-   "iconFile": "ability_paladin_infusionoflight"
+   "icon": "assets/game/paladin/talents/ability_paladin_infusionoflight.jpg?v=330649c0"
   },
   "enlightened_judgements": {
    "name": "Enlightened Judgements",
@@ -891,14 +891,14 @@
      4
     ]
    ],
-   "iconFile": "ability_paladin_enlightenedjudgements"
+   "icon": "assets/game/paladin/talents/ability_paladin_enlightenedjudgements.jpg?v=5cdc186d"
   },
   "beacon_of_light": {
    "name": "Beacon of Light",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "The target becomes a Beacon of Light to all members of your party or raid within a 60 yard radius.  Any direct heals you cast on party or raid members will also heal the Beacon for 100% of the amount healed.  Only one target can be the Beacon of Light at a time. Lasts 1 min.",
-   "iconFile": "ability_paladin_beaconoflight",
+   "icon": "assets/game/paladin/talents/ability_paladin_beaconoflight.jpg?v=927e5faa",
    "active": true
   },
   "deflection": {
@@ -923,7 +923,7 @@
      5
     ]
    ],
-   "iconFile": "ability_parry"
+   "icon": "assets/game/paladin/talents/ability_parry.jpg?v=fbdd48d9"
   },
   "benediction": {
    "name": "Benediction",
@@ -947,7 +947,7 @@
      10
     ]
    ],
-   "iconFile": "spell_frost_windwalkon"
+   "icon": "assets/game/paladin/talents/spell_frost_windwalkon.jpg?v=3786c3f2"
   },
   "improved_judgements": {
    "name": "Improved Judgements",
@@ -962,7 +962,7 @@
      2
     ]
    ],
-   "iconFile": "spell_holy_righteousfury"
+   "icon": "assets/game/paladin/talents/spell_holy_righteousfury.jpg?v=599bb8a9"
   },
   "heart_of_the_crusader": {
    "name": "Heart of the Crusader",
@@ -980,7 +980,7 @@
      3
     ]
    ],
-   "iconFile": "spell_holy_holysmite"
+   "icon": "assets/game/paladin/talents/spell_holy_holysmite.jpg?v=f7735432"
   },
   "improved_blessing_of_might": {
    "name": "Improved Blessing of Might",
@@ -995,7 +995,7 @@
      25
     ]
    ],
-   "iconFile": "spell_holy_fistofjustice"
+   "icon": "assets/game/paladin/talents/spell_holy_fistofjustice.jpg?v=4d7dd511"
   },
   "vindication": {
    "name": "Vindication",
@@ -1010,7 +1010,7 @@
      166.2
     ]
    ],
-   "iconFile": "spell_holy_vindication"
+   "icon": "assets/game/paladin/talents/spell_holy_vindication.jpg?v=ab2da8e3"
   },
   "conviction": {
    "name": "Conviction",
@@ -1028,14 +1028,14 @@
      6
     ]
    ],
-   "iconFile": "spell_holy_retributionaura"
+   "icon": "assets/game/paladin/talents/spell_holy_retributionaura.jpg?v=7c73d87a"
   },
   "seal_of_command": {
    "name": "Seal of Command",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "All melee attacks deal 0 to 0 additional Holy damage.  When used with attacks or abilities that strike a single target, this additional Holy damage will strike up to 2 additional targets.  Lasts 30 min.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 0 to 0 Holy damage.",
-   "iconFile": "ability_warrior_innerrage",
+   "icon": "assets/game/paladin/talents/ability_warrior_innerrage.jpg?v=6a867344",
    "active": true
   },
   "pursuit_of_justice": {
@@ -1053,7 +1053,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_persuitofjustice"
+   "icon": "assets/game/paladin/talents/spell_holy_persuitofjustice.jpg?v=42cacac0"
   },
   "eye_for_an_eye": {
    "name": "Eye for an Eye",
@@ -1068,7 +1068,7 @@
      10
     ]
    ],
-   "iconFile": "spell_holy_eyeforaneye"
+   "icon": "assets/game/paladin/talents/spell_holy_eyeforaneye.jpg?v=f11de63d"
   },
   "sanctity_of_battle": {
    "name": "Sanctity of Battle",
@@ -1089,7 +1089,7 @@
      15
     ]
    ],
-   "iconFile": "spell_holy_holysmite"
+   "icon": "assets/game/paladin/talents/spell_holy_holysmite.jpg?v=f7735432"
   },
   "crusade": {
    "name": "Crusade",
@@ -1110,7 +1110,7 @@
      3
     ]
    ],
-   "iconFile": "spell_holy_crusade"
+   "icon": "assets/game/paladin/talents/spell_holy_crusade.jpg?v=4113de54"
   },
   "two_handed_weapon_specialization": {
    "name": "Two-Handed Weapon Specialization",
@@ -1128,14 +1128,14 @@
      6
     ]
    ],
-   "iconFile": "inv_hammer_04"
+   "icon": "assets/game/paladin/talents/inv_hammer_04.jpg?v=db8c9f6b"
   },
   "sanctified_retribution": {
    "name": "Sanctified Retribution",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases the damage caused by Retribution Aura by 50% and all damage caused by friendly targets affected by any of your Auras is increased by 3%.",
-   "iconFile": "spell_holy_mindvision"
+   "icon": "assets/game/paladin/talents/spell_holy_mindvision.jpg?v=e483f02a"
   },
   "vengeance": {
    "name": "Vengeance",
@@ -1153,7 +1153,7 @@
      3
     ]
    ],
-   "iconFile": "ability_racial_avatar"
+   "icon": "assets/game/paladin/talents/ability_racial_avatar.jpg?v=ddb48eb0"
   },
   "divine_purpose": {
    "name": "Divine Purpose",
@@ -1170,21 +1170,21 @@
      100
     ]
    ],
-   "iconFile": "spell_holy_divinepurpose"
+   "icon": "assets/game/paladin/talents/spell_holy_divinepurpose.jpg?v=d1c7bc94"
   },
   "the_art_of_war": {
    "name": "The Art of War",
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "Increases the damage of your Judgement, Crusader Strike and Divine Storm abilities by 10% and when your melee attacks critically hit your next Flash of Light  or Exorcism spell becomes instant cast.",
-   "iconFile": "ability_paladin_artofwar"
+   "icon": "assets/game/paladin/talents/ability_paladin_artofwar.jpg?v=b4e009f9"
   },
   "repentance": {
    "name": "Repentance",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Puts the enemy target in a state of meditation, incapacitating them for up to 1 min, and removing the effect of Righteous Vengeance.  Any damage caused will awaken the target.  Usable against Demons, Dragonkin, Giants, Humanoids and Undead.",
-   "iconFile": "spell_holy_prayerofhealing"
+   "icon": "assets/game/paladin/talents/spell_holy_prayerofhealing.jpg?v=22ccd30c"
   },
   "judgements_of_the_wise": {
    "name": "Judgements of the Wise",
@@ -1199,7 +1199,7 @@
      100
     ]
    ],
-   "iconFile": "ability_paladin_judgementofthewise"
+   "icon": "assets/game/paladin/talents/ability_paladin_judgementofthewise.jpg?v=e88408e3"
   },
   "fanaticism": {
    "name": "Fanaticism",
@@ -1220,7 +1220,7 @@
      30
     ]
    ],
-   "iconFile": "spell_holy_fanaticism"
+   "icon": "assets/game/paladin/talents/spell_holy_fanaticism.jpg?v=4a12f18b"
   },
   "sanctified_wrath": {
    "name": "Sanctified Wrath",
@@ -1239,7 +1239,7 @@
      50
     ]
    ],
-   "iconFile": "ability_paladin_sanctifiedwrath"
+   "icon": "assets/game/paladin/talents/ability_paladin_sanctifiedwrath.jpg?v=4998f543"
   },
   "swift_retribution": {
    "name": "Swift Retribution",
@@ -1257,14 +1257,14 @@
      3
     ]
    ],
-   "iconFile": "ability_paladin_swiftretribution"
+   "icon": "assets/game/paladin/talents/ability_paladin_swiftretribution.jpg?v=912dd127"
   },
   "promise_of_the_crusader": {
    "name": "Promise of the Crusader",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Increases the critical strike chance and the chance to hit with Exorcism by 10%.",
-   "iconFile": "ability_paladin_veneration"
+   "icon": "assets/game/paladin/talents/ability_paladin_veneration.jpg?v=fd4cb258"
   },
   "sheath_of_light": {
    "name": "Sheath of Light",
@@ -1285,7 +1285,7 @@
      60
     ]
    ],
-   "iconFile": "ability_paladin_sheathoflight"
+   "icon": "assets/game/paladin/talents/ability_paladin_sheathoflight.jpg?v=01cb1ab8"
   },
   "righteous_vengeance": {
    "name": "Righteous Vengeance",
@@ -1303,14 +1303,14 @@
      30
     ]
    ],
-   "iconFile": "ability_paladin_righteousvengeance"
+   "icon": "assets/game/paladin/talents/ability_paladin_righteousvengeance.jpg?v=51b23bd5"
   },
   "divine_storm": {
    "name": "Divine Storm",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "An instant weapon attack that causes 110% of weapon damage to up to 4 enemies within 8 yards.  The Divine Storm heals up to 3 party or raid members totaling 25% of the damage caused.",
-   "iconFile": "ability_paladin_divinestorm",
+   "icon": "assets/game/paladin/talents/ability_paladin_divinestorm.jpg?v=205b712e",
    "active": true
   }
  },
@@ -1525,63 +1525,77 @@
    "key": "aegis_of_the_martyr",
    "name": "Aegis of the Martyr",
    "rarity": "artifact",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you Aegis of the Martyr.\nAegis of the Martyr: Sacrifice 30% of your max health to place a powerful aegis on your target, absorbing up to ${2326*0.99)+(0*1.5} damage for 10 sec and heals them for 2196. If you have below 30% health you will be left with 1 health.",
-   "iconFile": "ability_paladin_lightofthemartyr",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_lightofthemartyr.jpg?v=952898b7",
    "requiredLevel": 35
   },
   {
    "key": "blinding_light",
    "name": "Blinding Light",
    "rarity": "artifact",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Blinding Light. \nBlinding Light: Emits dazzling light in all directions, blinding enemies within 10 yards, causing them to wander disoriented for 6 sec.",
-   "iconFile": "ability_paladin_blindinglight",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_blindinglight.jpg?v=f98c0b66",
    "requiredLevel": 35
   },
   {
    "key": "divine_steed",
    "name": "Divine Steed",
    "rarity": "artifact",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Teaches you: Divine Steed. \nDivine Steed: Leap atop your Charger for 3 sec, increasing movement speed by 70%. Usable while indoors and in combat.",
-   "iconFile": "ability_paladin_divinesteed",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_divinesteed.jpg?v=798a3cfb",
    "requiredLevel": 35
   },
   {
    "key": "lights_hammer",
    "name": "Light's Hammer",
    "rarity": "artifact",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Teaches you: Light's Hammer. \nLight's Hammer: Hurl a Light-infused hammer into the ground, where it will blast a 10 yard area with Arcing Light for 10 sec.\n\nDeals Holy damage to enemies and reduces their movement speed by 50% for 3 sec. Also heals up to 5 allies every 2.5 sec.",
-   "iconFile": "spell_paladin_lightshammer",
+   "icon": "assets/game/paladin/mystic-enchants/spell_paladin_lightshammer.jpg?v=6871826f",
    "requiredLevel": 35
   },
   {
    "key": "a_new_dawn",
    "name": "A New Dawn",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Healing an ally with Light of Dawn or the direct part of Word of Glory makes your next Flash of Light, Holy Light or Holy Shock on them heal for 20% more.\n\nIn addition, casting Holy Light now generates one Holy Power.",
-   "iconFile": "nhi_holyshock_border",
+   "icon": "assets/game/paladin/mystic-enchants/nhi_holyshock_border.jpg?v=633572ad",
    "requiredLevel": 35
   },
   {
    "key": "armor_of_wrath",
    "name": "Armor of Wrath",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "The cooldown of Holy Wrath is reduced by 10 seconds. Casting Hammer of Wrath or Holy Wrath reduces all damage taken by 5% for 6 sec.",
-   "iconFile": "spell_paladin_hammerofwrath",
+   "icon": "assets/game/paladin/mystic-enchants/spell_paladin_hammerofwrath.jpg?v=ba050856",
    "requiredLevel": 44
   },
   {
    "key": "baleful_hammer",
    "name": "Baleful Hammer",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Requires Holy Shield\nIncreases your armor by 15% while Holy Shield is active. Using Hammer of the Righteous increases the charges of your active Holy Shield by 4.",
-   "iconFile": "nhi_hammeroflight_border",
+   "icon": "assets/game/paladin/mystic-enchants/nhi_hammeroflight_border.jpg?v=a130399f",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1594,9 +1608,11 @@
    "key": "blessed_hammer",
    "name": "Blessed Hammer",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Requires Hammer of the Righteous\nYour Hammer of the Righteous deals 10% increased damage and increases your Holy damage done on enemies hit by 3% for 15 sec, stacking up to 3 times.",
-   "iconFile": "spell_holy_holyguidance",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_holyguidance.jpg?v=f3bbc980",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1609,54 +1625,67 @@
    "key": "branding_zeal",
    "name": "Branding Zeal",
    "rarity": "epic",
-   "spec": "Retribution, Protection",
+   "specs": [
+    "Retribution",
+    "Protection"
+   ],
    "tooltip": "Increases the damage of your Seal and Judgement of Righteousness by 15%. \n\nUsing a Judgement empowers Exorcism, Holy Shock, Hammer of Wrath and Holy Wrath, allowing them to trigger your Seal of Righteousness for 10 sec.",
-   "iconFile": "spell_holy_divineillumination",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_divineillumination.jpg?v=196423bd",
    "requiredLevel": 15
   },
   {
    "key": "consecrated_weapon",
    "name": "Consecrated Weapon",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Your Consecration empowers your weapon for 10 sec, increasing your melee critical chance by 6% and giving attacks a chance to restore 5% base mana.",
-   "iconFile": "ability_paladin_righteousvengeance",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_righteousvengeance.jpg?v=51b23bd5",
    "requiredLevel": 15
   },
   {
    "key": "consecrated_zeal",
    "name": "Consecrated Zeal",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Standing in your Consecration grants you Consecrated Zeal.\nConsecrated Zeal: Increases Holy damage done by 8% and reduces physical damage taken by 4%, lasting for 8 sec.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "requiredLevel": 15
   },
   {
    "key": "crusader_of_the_light",
    "name": "Crusader of the Light",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "After 12 auto attacks or melee abilities your next auto attack hits twice and reduces the cooldown of Avenging Wrath by 10 seconds.\n\nWhile Avenging Wrath is active you gain 2 stacks.",
-   "iconFile": "ability_paladin_empoweredsealstruth",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_empoweredsealstruth.jpg?v=b3d2b3c1",
    "requiredLevel": 15
   },
   {
    "key": "crusaders_judgement",
    "name": "Crusader's Judgement",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Your Crusader Strike deals 30% additional damage on targets affected by a Judgement effect.",
-   "iconFile": "spell_holy_crusaderstrike",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_crusaderstrike.jpg?v=891b9801",
    "requiredLevel": 15
   },
   {
    "key": "divine_order",
    "name": "Divine Order",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Divine Illumination\nDivine Illumination also increases your critical strike chance with all spells by 20% for its duration. In addition, the mana gained from your Illumination talent is increased by an additional 10%.",
-   "iconFile": "misc_legionfall_paladin",
+   "icon": "assets/game/paladin/mystic-enchants/misc_legionfall_paladin.jpg?v=742b2b95",
    "requiredLevel": 50,
    "requires": [
     {
@@ -1669,36 +1698,44 @@
    "key": "divine_reprieve",
    "name": "Divine Reprieve",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Divine Plea only reduces your healing done with Holy Light, Flash of Light and Holy Shock by 20% and additionally increases your chance to critically heal with those spells by 10%.",
-   "iconFile": "spell_holy_fanaticism",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_fanaticism.jpg?v=4a12f18b",
    "requiredLevel": 16
   },
   {
    "key": "divine_resurgence",
    "name": "Divine Resurgence",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Divine Storm and Judgement have 15% increased critical strike chance and have a 20% chance not to trigger any cooldown.",
-   "iconFile": "inv_mace_1h_draenorraid_d_04yellow",
+   "icon": "assets/game/paladin/mystic-enchants/inv_mace_1h_draenorraid_d_04yellow.jpg?v=49c23815",
    "requiredLevel": 60
   },
   {
    "key": "divine_sacrifice",
    "name": "Divine Sacrifice",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Teaches you: Divine Sacrifice\n\n@ext:Can not be used if the Divine Sacrifice talent is learned.:ext@ \n@s:1514205:0:0:0:-32@",
-   "iconFile": "spell_holy_powerwordbarrier",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_powerwordbarrier.jpg?v=22a4effb",
    "requiredLevel": 45
   },
   {
    "key": "execution_verdict",
    "name": "Execution Verdict",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Requires Holy Templar\nUsing Hammer of Wrath or Exorcism grants you a charge of Holy Power.\n\nTemplar's Verdict now grants a Holy Power and gains 25% increased critical strike chance and damage when used on targets below 35% health.",
-   "iconFile": "ability_paladin_swiftretribution",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_swiftretribution.jpg?v=912dd127",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1710,9 +1747,11 @@
    "key": "fierce_vengeance",
    "name": "Fierce Vengeance",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Requires Vengeance\nYour Vengeance talent can stack up an additional time.\n@ext:Vengeance: Gives you a 3% bonus to Physical and Holy damage you deal for 30 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 3 times.:ext@",
-   "iconFile": "spell_holy_rebuke",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_rebuke.jpg?v=f2ab4264",
    "requiredLevel": 35,
    "requires": [
     {
@@ -1725,9 +1764,11 @@
    "key": "light_of_dawn",
    "name": "Light of Dawn",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Holy Templar\nTeaches you: Light of Dawn. \nLight of Dawn: Consumes 3 Holy Power, releasing a cone of Holy energy, healing up to 10 injured allies within a 30 yd frontal cone for 193.",
-   "iconFile": "spell_paladin_lightofdawn",
+   "icon": "assets/game/paladin/mystic-enchants/spell_paladin_lightofdawn.jpg?v=2546291f",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1739,54 +1780,66 @@
    "key": "long_arm_of_the_law",
    "name": "Long Arm of the Law",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Dealing damage with Hand of Reckoning increases your movement speed by 50% for 3 sec.\n\nWhile active, dealing damage with a Judgement effect extends the duration by 2 sec.",
-   "iconFile": "ability_paladin_longarmofthelaw",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_longarmofthelaw.jpg?v=3e66d033",
    "requiredLevel": 15
   },
   {
    "key": "pious_strikes",
    "name": "Pious Strikes",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Your Crusader Strike and Avenger's Shield deal 10% of its damage to nearby enemies as Holy damage and restores 5% base mana. This effect generates high threat.",
-   "iconFile": "spell_holy_weaponmastery",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_weaponmastery.jpg?v=9d3bd52f",
    "requiredLevel": 15
   },
   {
    "key": "righteous_light",
    "name": "Righteous Light",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Increases the damage and threat of Shield of Righteousness by 20%.\n \nUsing Shield of Righteousness causes your next Hand of Reckoning to heal you for 5% of your missing health, stacking up to 5 times.",
-   "iconFile": "spell_holy_surgeoflight",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_surgeoflight.jpg?v=f3a2291c",
    "requiredLevel": 40
   },
   {
    "key": "righteous_verdict",
    "name": "Righteous Verdict",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Using a Judgement reduces the mana cost of your next Holy Light by 30% and increases its critical strike chance by 25%.",
-   "iconFile": "ability_paladin_blessedhands",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_blessedhands.jpg?v=58611e39",
    "requiredLevel": 15
   },
   {
    "key": "sacred_light",
    "name": "Sacred Light",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Sacred Shield now applies an empowered absorb shield when applied but has a 30 second cooldown. In addition, the target of your Sacred Shield takes 10% increased healing from you.",
-   "iconFile": "nhi_holy_shield_border",
+   "icon": "assets/game/paladin/mystic-enchants/nhi_holy_shield_border.jpg?v=e3ce6632",
    "requiredLevel": 55
   },
   {
    "key": "sacred_unity",
    "name": "Sacred Unity",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Beacon of Light\nCasting Holy Light on the target of your Beacon of Light extends the duration of Beacon of Light by 10 seconds and forms a bond that transfers 5% of damage they take to you for 10 sec.\n\n@ext:You can only form bonds with players. The shared damage can not break crowd control effects.:ext@",
-   "iconFile": "ability_paladin_blessedhands",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_blessedhands.jpg?v=58611e39",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1799,9 +1852,11 @@
    "key": "shield_of_wrath",
    "name": "Shield of Wrath",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Requires Avenger's Shield\nThe cooldown of your Avenger's Shield is reduced by 20% but it no longer slows any targets hit.\n\nCasting Avenger's Shield grants you Holy Shield.",
-   "iconFile": "spell_holy_avengersshield",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_avengersshield.jpg?v=5ff3d0a6",
    "requiredLevel": 50,
    "requires": [
     {
@@ -1814,18 +1869,22 @@
    "key": "spark_of_hope",
    "name": "Spark of Hope",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Holy Light, Flash of Light and Holy Shock has an additional 12% critical strike chance when healing an ally below 50% health.",
-   "iconFile": "spell_holy_persecution",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_persecution.jpg?v=6bc4e598",
    "requiredLevel": 15
   },
   {
    "key": "swift_avenger",
    "name": "Swift Avenger",
    "rarity": "epic",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Requires Avenger's Shield\nYour Avenger's Shield hits up to 3 additional targets. For each target hit, you gain 10% increased movement speed. Stacks up to 5 times and lasts 4 sec.",
-   "iconFile": "spell_holy_divineshield",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_divineshield.jpg?v=518924d4",
    "requiredLevel": 50,
    "requires": [
     {
@@ -1838,18 +1897,22 @@
    "key": "swift_execution",
    "name": "Swift Execution",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Activating Avenging Wrath resets the cooldown of Execution Sentence. In addition, your Judgement of Righteousness deals 25% increased damage (5% against players) tripled while Avenging Wrath is active.",
-   "iconFile": "spell_paladin_executionsentence",
+   "icon": "assets/game/paladin/mystic-enchants/spell_paladin_executionsentence.jpg?v=bda0eb78",
    "requiredLevel": 30
   },
   {
    "key": "swift_favor",
    "name": "Swift Favor",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Divine Favor\nYour Divine Favor also increases the effectiveness of your next Flash of Light, Holy Light or Holy Shock by 30%.\n\nHealing with Flash of Light, Holy Light and Holy Shock reduces the cooldown of Divine Favor by 2 sec.",
-   "iconFile": "spell_holy_unyieldingfaith",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_unyieldingfaith.jpg?v=e70590ce",
    "requiredLevel": 30,
    "requires": [
     {
@@ -1862,63 +1925,77 @@
    "key": "sword_of_vengeance",
    "name": "Sword of Vengeance",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "When using a Judgement on a target with 5 stacks of your Seal of Vengeance or Seal of Corruption, you deal 0 additional Holy damage to the target and other enemies within 5 yards.",
-   "iconFile": "inv_plate_paladinclass_d_01buckle",
+   "icon": "assets/game/paladin/mystic-enchants/inv_plate_paladinclass_d_01buckle.jpg?v=b7d3ea8a",
    "requiredLevel": 40
   },
   {
    "key": "synergistic_light",
    "name": "Synergistic Light",
    "rarity": "epic",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Casting Flash of Light increases the critical strike chance of your next Holy Light by 15% and reduces its mana cost by 15%. This can stack twice.\n\nCasting Holy Light reduces the cooldown of Holy Shock by 1 sec.",
-   "iconFile": "paladin_holy",
+   "icon": "assets/game/paladin/mystic-enchants/paladin_holy.jpg?v=536b05b9",
    "requiredLevel": 20
   },
   {
    "key": "wrathful_exorcism",
    "name": "Wrathful Exorcism",
    "rarity": "epic",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Using Exorcism allows your next Hammer of Wrath to be used regardless of the targets health.",
-   "iconFile": "ability_paladin_sanctifiedwrath",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_sanctifiedwrath.jpg?v=4998f543",
    "requiredLevel": 44
   },
   {
    "key": "blessing_of_the_divines",
    "name": "Blessing of the Divines",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Paladin heals have a 33% chance to trigger a random blessing. This can only occur once every 5 seconds.\n\nBlessing of the Divines: Increases healing taken by 5% and reduces damage taken by 5%.\nBlessing of Radiance: Heals 3 party or raid members within 30 yards of you for ${291*0.99)+(0*0.12)}.\nBlessing of Mending: Heals 3 party or raid members within 30 yards of you every 3 seconds for ${143*0.99)+(0*0.036)}. Lasts 15 sec.",
-   "iconFile": "spell_holy_impholyconcentration",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_impholyconcentration.jpg?v=1d056443",
    "requiredLevel": 30
   },
   {
    "key": "crimson_defense",
    "name": "Crimson Defense",
    "rarity": "legendary",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Blocking attacks grants you Crimson Defender.\n\nIncreases your chance to Block by 10%.\n\nCrimson Defender: Consume 3 stacks to empower your next ability. Stacks up to 6 times and lasts for 15 sec.\n\n- Shield of Righteousness: Deals an additional ${100*0.99)+(0*0.2)+(0*0.15)} Holy damage to 5 nearby enemies.\n\n- Avenger's Shield: Increases your block value by 15% and threat by 15% for 20 sec.",
-   "iconFile": "spell_holy_blessingofprotection_red",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_blessingofprotection_red.jpg?v=ec78960d",
    "requiredLevel": 40
   },
   {
    "key": "execution_sentence",
    "name": "Execution Sentence",
    "rarity": "legendary",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Teaches you: Execution Sentence. \nExecution Sentence: A hammer slowly falls from the sky, causing Holy damage over 10 sec. This culminates in a final burst of damage, dealing damage to enemies within 5 yards. Dispelling the effect triggers the final burst.\n\nUsing Judgement on a target affected by your Execution Sentence only triggers half its cooldown.\n\nExecution Sentence stores 20% of your damage dealt to the target while the debuff is active and releases it when the debuff ends.",
-   "iconFile": "spell_paladin_executionsentence",
+   "icon": "assets/game/paladin/mystic-enchants/spell_paladin_executionsentence.jpg?v=bda0eb78",
    "requiredLevel": 30
   },
   {
    "key": "gift_of_light",
    "name": "Gift of Light",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Requires Light's Grace\nLight's Grace gains an additional -0.25 cast speed reduction.\n\nYour Light's Grace is automatically renewed every 15 seconds. When renewed, you gain a stack of Gift of Light, empowering your Divine Favor to not trigger a cooldown, stacking up to 3 times. You cannot use Divine Favor again until you gain the next Gift of Light.",
-   "iconFile": "custom_t_nhance_rpg_icons_holyarrow_border",
+   "icon": "assets/game/paladin/mystic-enchants/custom_t_nhance_rpg_icons_holyarrow_border.jpg?v=a9989936",
    "requiredLevel": 42,
    "requires": [
     {
@@ -1931,630 +2008,772 @@
    "key": "glimmer_of_light",
    "name": "Glimmer of Light",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Flash of Light leaves a Glimmer of Light on any friendly target healed, lasting for 15 sec.\n\nGlimmer of Light: Increases the critical strike chance of the Paladins Holy Light and Flash of Light by 15%.\n\nHealing any ally with Holy Shock also heals allies with your Glimmer of Light for 70% of the healing done.",
-   "iconFile": "ability_paladin_toweroflight",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_toweroflight.jpg?v=87ef9f28",
    "requiredLevel": 40
   },
   {
    "key": "guardian_of_ancient_kings",
    "name": "Guardian of Ancient Kings",
    "rarity": "legendary",
-   "spec": "Protection, Retribution",
+   "specs": [
+    "Protection",
+    "Retribution"
+   ],
    "tooltip": "Teaches you: Guardian of Ancient Kings. \nGuardian of Ancient Kings: Transform into a Guardian of Ancient Kings, resetting the cooldown of Hammer of the Righteous and Divine Storm. While active their cooldowns are reduced by 50%. Also increases your damage done by 15% and reduces damage taken by 10%. Lasts 10 sec.\n\n@ext:Can not be active at the same time as Avenging Wrath.:ext@",
-   "iconFile": "spell_holy_heroism",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_heroism.jpg?v=5e3d1a5c",
    "requiredLevel": 60
   },
   {
    "key": "hammerstorm",
    "name": "Hammerstorm",
    "rarity": "legendary",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Teaches you: Hammerstorm. \nHammerstorm: Holy hammers surround you for 6 sec, increasing your armor by 30% and dealing 47.8 Holy damage every second to nearby enemies and reduces their attack speed by 20% for 15 sec.",
-   "iconFile": "custom_t_hammerofjustice_border",
+   "icon": "assets/game/paladin/mystic-enchants/custom_t_hammerofjustice_border.jpg?v=8791e9b5",
    "requiredLevel": 30
   },
   {
    "key": "holy_mastery",
    "name": "Holy Mastery",
    "rarity": "legendary",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the critical strike chance of your spells by 4% and reduces their mana cost by 4%.",
-   "iconFile": "ability_paladin_judgementofthepure",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_judgementofthepure.jpg?v=a4326916",
    "requiredLevel": 30
   },
   {
    "key": "holy_templar",
    "name": "Holy Templar",
    "rarity": "legendary",
-   "spec": "Retribution, Holy",
+   "specs": [
+    "Retribution",
+    "Holy"
+   ],
    "tooltip": "Crusader Strike, Divine Storm and Holy Shock grant you Holy Power, which stacks up to 5 times.\n\nYou can consume 3 Holy Power to use Templar's Verdict or Word of Glory.\n\n@s:1554911:0:0:0:-48@\n@s:1554912:0:0:0:-48@",
-   "iconFile": "spell_holy_rune",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_rune.jpg?v=75ae3981",
    "requiredLevel": 30
   },
   {
    "key": "light_of_the_guardian",
    "name": "Light of the Guardian",
    "rarity": "legendary",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Teaches you: Light of the Guardian. \nLight of the Guardian: Absorbs 434.47 damage and deals 493.72 high-threat Holy damage to enemies within 8 yards of the Paladin. \n\nReduces damage taken from creatures by 20% and increases healing received by 30% for 8 sec.",
-   "iconFile": "spell_holy_pureofheart",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_pureofheart.jpg?v=e54d2347",
    "requiredLevel": 30
   },
   {
    "key": "one_with_the_light",
    "name": "One With The Light",
    "rarity": "legendary",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Increases your Holy damage by 10% and Healing taken by 10% but reduces your Physical damage dealt by 10%.\n\nYour Crusader Strike, Divine Storm and Hammer of the Righteous deal extra Holy damage, scaling with your spell power.",
-   "iconFile": "ability_paladin_beaconsoflight",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_beaconsoflight.jpg?v=2453c67a",
    "requiredLevel": 30
   },
   {
    "key": "protection_mastery",
    "name": "Protection Mastery",
    "rarity": "legendary",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Reduces all damage taken in Righteous Fury by 3% and increases all threat generated by 12%.",
-   "iconFile": "ability_paladin_judgementsofthejust",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_judgementsofthejust.jpg?v=e5ea094e",
    "requiredLevel": 30
   },
   {
    "key": "retribution_mastery",
    "name": "Retribution Mastery",
    "rarity": "legendary",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Increases your chance to critically strike with attacks by 4% and increases all Holy damage done by 4%.",
-   "iconFile": "ability_paladin_sheathoflight",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_sheathoflight.jpg?v=01cb1ab8",
    "requiredLevel": 30
   },
   {
    "key": "twist_of_faith",
    "name": "Twist of Faith",
    "rarity": "legendary",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Using Seal of Righteousness, Seal of Command, Seal of Vengeance or Seal of Corruption while a different one of these seals is already active grants you the previously active seal for 12 sec. Only one echo can be active at a time.\n\nThese seals have their global cooldown reduced to 1 sec, no longer cost any mana but have a 8 second cooldown.",
-   "iconFile": "ability_paladin_artofwar",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_artofwar.jpg?v=b4e009f9",
    "requiredLevel": 30
   },
   {
    "key": "anticipation",
    "name": "Anticipation",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to dodge by 5%.\n\nThis Mystic Enchant does not stack with the Anticipation Talent.",
-   "iconFile": "spell_magic_lesserinvisibilty",
+   "icon": "assets/game/paladin/mystic-enchants/spell_magic_lesserinvisibilty.jpg?v=0da63e08",
    "requiredLevel": 45
   },
   {
    "key": "aura_mastery",
    "name": "Aura Mastery",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Teaches you: Aura Mastery\n\n@ext:Can not be used if the Aura Mastery talent is learned.:ext@ \n@s:1481821:0:0:0:-32@",
-   "iconFile": "spell_holy_auramastery",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_auramastery.jpg?v=fb4c743b",
    "requiredLevel": 45
   },
   {
    "key": "benediction",
    "name": "Benediction",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of all instant cast spells by 10%.\n\nThis Mystic Enchant does not stack with the Benediction Talent.",
-   "iconFile": "spell_frost_windwalkon",
+   "icon": "assets/game/paladin/mystic-enchants/spell_frost_windwalkon.jpg?v=3786c3f2",
    "requiredLevel": 45
   },
   {
    "key": "blessed_hands",
    "name": "Blessed Hands",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the mana cost of Hand of Freedom, Hand of Sacrifice and Hand of Salvation by 30%, increases the effectiveness of Hand of Salvation by 100% and the effectiveness of Hand of Sacrifice by an additional 10%.\n\nThis Mystic Enchant does not stack with the Blessed Hands Talent.",
-   "iconFile": "ability_paladin_blessedhands",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_blessedhands.jpg?v=58611e39",
    "requiredLevel": 45
   },
   {
    "key": "conviction",
    "name": "Conviction",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to get a critical strike with all spells and attacks by 6%.\n\nThis Mystic Enchant does not stack with the Conviction Talent.",
-   "iconFile": "spell_holy_retributionaura",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_retributionaura.jpg?v=7c73d87a",
    "requiredLevel": 45
   },
   {
    "key": "crusade",
    "name": "Crusade",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIncreases all damage caused by 3% and all damage caused against Humanoids, Demons, Undead and Elementals by an additional 3%.\n\nThis Mystic Enchant does not stack with the Crusade Talent.",
-   "iconFile": "spell_holy_crusade",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_crusade.jpg?v=4113de54",
    "requiredLevel": 45
   },
   {
    "key": "deflection",
    "name": "Deflection",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIncreases your Parry chance by 5%.\n\nThis Mystic Enchant does not stack with the Deflection Talent.",
-   "iconFile": "ability_parry",
+   "icon": "assets/game/paladin/mystic-enchants/ability_parry.jpg?v=fbdd48d9",
    "requiredLevel": 45
   },
   {
    "key": "divine_guardian",
    "name": "Divine Guardian",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nWhen Divine Sacrifice is activated, your party and raid members within 30 yards take 20% reduced damage for 6 sec.  In addition, increases the duration of your Sacred Shield by 100% and the amount absorbed by 20%.\n\nThis Mystic Enchant does not stack with the Divine Guardian Talent.",
-   "iconFile": "spell_holy_powerwordbarrier",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_powerwordbarrier.jpg?v=22a4effb",
    "requiredLevel": 45
   },
   {
    "key": "divine_intellect",
    "name": "Divine Intellect",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases your total Intellect by 10%.\n\nThis Mystic Enchant does not stack with the Divine Intellect Talent.",
-   "iconFile": "spell_nature_sleep",
+   "icon": "assets/game/paladin/mystic-enchants/spell_nature_sleep.jpg?v=3fdd4589",
    "requiredLevel": 45
   },
   {
    "key": "divine_strength",
    "name": "Divine Strength",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nIncreases your total Strength by 15%.\n\nThis Mystic Enchant does not stack with the Divine Strength Talent.",
-   "iconFile": "ability_golemthunderclap",
+   "icon": "assets/game/paladin/mystic-enchants/ability_golemthunderclap.jpg?v=162d9384",
    "requiredLevel": 45
   },
   {
    "key": "divinity",
    "name": "Divinity",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nIncreases all healing done by you and all healing effects on you by 5%.\n\nThis Mystic Enchant does not stack with the Divinity Talent.",
-   "iconFile": "spell_holy_blindingheal",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_blindingheal.jpg?v=b45b8306",
    "requiredLevel": 45
   },
   {
    "key": "eye_for_an_eye",
    "name": "Eye for an Eye",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nAll criticals against you cause 10% of the damage taken to the attacker as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.\n\nThis Mystic Enchant does not stack with the Eye for an Eye Talent.",
-   "iconFile": "spell_holy_eyeforaneye",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_eyeforaneye.jpg?v=f11de63d",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_avengers_shield",
    "name": "Glyph of Avenger's Shield",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Your Avenger's Shield deals 100% more damage but no longer jumps to any additional targets.\n\n@ext:The damage is increased by 50% in PvP combat.:ext@",
-   "iconFile": "spell_holy_avengersshield",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_avengersshield.jpg?v=5ff3d0a6",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_avenging_wrath",
    "name": "Glyph of Avenging Wrath",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Reduces the cooldown of your Hammer of Wrath spell by 50% while Avenging Wrath is active.",
-   "iconFile": "spell_holy_avenginewrath",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_avenginewrath.jpg?v=fb196fa3",
    "requiredLevel": 48
   },
   {
    "key": "glyph_of_beacon_of_light",
    "name": "Glyph of Beacon of Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the duration of Beacon of Light to 10 min but has a 2 second cast time.",
-   "iconFile": "ability_paladin_beaconoflight",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_beaconoflight.jpg?v=927e5faa",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_cleansing",
    "name": "Glyph of Cleansing",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the mana cost of your Cleanse and Purify spells by 20%.",
-   "iconFile": "spell_holy_renew",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_renew.jpg?v=977a1c8b",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_consecration",
    "name": "Glyph of Consecration",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases the duration and cooldown of Consecration by 2 sec and the damage by 20%.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_crusader_strike",
    "name": "Glyph of Crusader Strike",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Increases your critical strike chance of Crusader Strike by 3% and reduces the mana cost by 50%.",
-   "iconFile": "spell_holy_crusaderstrike",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_crusaderstrike.jpg?v=891b9801",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_divine_plea",
    "name": "Glyph of Divine Plea",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "While Divine Plea is active, you take 3% reduced damage from all sources.",
-   "iconFile": "spell_holy_aspiration",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_aspiration.jpg?v=4576f1cb",
    "requiredLevel": 16
   },
   {
    "key": "glyph_of_divine_storm",
    "name": "Glyph of Divine Storm",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Your Divine Storm now heals for an additional 15% of the damage it causes.",
-   "iconFile": "ability_paladin_divinestorm",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_divinestorm.jpg?v=205b712e",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_divinity",
    "name": "Glyph of Divinity",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Your Lay on Hands grants twice as much mana as normal and also grants you as much mana as it grants your target.",
-   "iconFile": "spell_holy_blindingheal",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_blindingheal.jpg?v=b45b8306",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_exorcism",
    "name": "Glyph of Exorcism",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Increases damage done by Exorcism by 20%.",
-   "iconFile": "spell_holy_excorcism_02",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_excorcism_02.jpg?v=1ec717f7",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_flash_of_light",
    "name": "Glyph of Flash of Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Flash of Light has an additional 5% critical strike chance.",
-   "iconFile": "spell_holy_flashheal",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_flashheal.jpg?v=fe050e5d",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_hammer_of_justice",
    "name": "Glyph of Hammer of Justice",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Increases your Hammer of Justice range by 5 yards.",
-   "iconFile": "spell_holy_sealofmight",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofmight.jpg?v=fca4f7d1",
    "requiredLevel": 0
   },
   {
    "key": "glyph_of_hammer_of_wrath",
    "name": "Glyph of Hammer of Wrath",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Reduces the mana cost of Hammer of Wrath by -100% and increases the critical strike damage of Hammer of Wrath by 20%, doubled for targets under 20% health.",
-   "iconFile": "ability_thunderclap",
+   "icon": "assets/game/paladin/mystic-enchants/ability_thunderclap.jpg?v=782a28f9",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_hammer_of_the_righteous",
    "name": "Glyph of Hammer of the Righteous",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Your Hammer of the Righteous hits 1 additional target.",
-   "iconFile": "ability_paladin_hammeroftherighteous",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_hammeroftherighteous.jpg?v=3ad3b918",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_holy_light",
    "name": "Glyph of Holy Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Your Holy Light grants 10% of its heal amount to up to 5 friendly targets within 8 yards of the initial target.",
-   "iconFile": "spell_holy_holybolt",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_holybolt.jpg?v=b4ce25b4",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_holy_shock",
    "name": "Glyph of Holy Shock",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the cooldown of Holy Shock by -1 sec.",
-   "iconFile": "spell_holy_searinglight",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_searinglight.jpg?v=0249f8ad",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_holy_wrath",
    "name": "Glyph of Holy Wrath",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the cooldown of your Holy Wrath spell by -15 sec.",
-   "iconFile": "spell_holy_excorcism",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_excorcism.jpg?v=1f8aa857",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_judgement",
    "name": "Glyph of Judgement",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Your Judgements deal 25% more damage but have a 1 second increased cooldown and are guaranteed to trigger Vindication if known.",
-   "iconFile": "spell_holy_searinglight",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_searinglight.jpg?v=0249f8ad",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_salvation",
    "name": "Glyph of Salvation",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "When you cast Hand of Salvation on yourself, it also reduces damage taken by 20%.",
-   "iconFile": "spell_holy_sealofsalvation",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofsalvation.jpg?v=6b716fd7",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_seal_of_command",
    "name": "Glyph of Seal of Command",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "You gain 8% of your base mana each time you use a Judgement with Seal of Command active.",
-   "iconFile": "ability_warrior_innerrage",
+   "icon": "assets/game/paladin/mystic-enchants/ability_warrior_innerrage.jpg?v=6a867344",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_seal_of_light",
    "name": "Glyph of Seal of Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "While Seal of Light is active, the effect of your healing spells is increased by 5%.",
-   "iconFile": "spell_holy_healingaura",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_healingaura.jpg?v=f57d8af6",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_seal_of_righteousness",
    "name": "Glyph of Seal of Righteousness",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Increases the damage done by Seal of Righteousness by 10%.",
-   "iconFile": "ability_thunderbolt",
+   "icon": "assets/game/paladin/mystic-enchants/ability_thunderbolt.jpg?v=b426b25f",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_seal_of_wisdom",
    "name": "Glyph of Seal of Wisdom",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "While Seal of Wisdom is active, the cost of your healing spells is reduced by 5%.",
-   "iconFile": "spell_holy_righteousnessaura",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_righteousnessaura.jpg?v=32355643",
    "requiredLevel": 38
   },
   {
    "key": "glyph_of_shield_of_righteousness",
    "name": "Glyph of Shield of Righteousness",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Reduces the mana cost by 80% and increases critical strike chance by 20% of Shield of Righteousness.",
-   "iconFile": "ability_paladin_shieldofvengeance",
+   "icon": "assets/game/paladin/mystic-enchants/ability_paladin_shieldofvengeance.jpg?v=bbde702d",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_spiritual_attunement",
    "name": "Glyph of Spiritual Attunement",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Increases the amount of mana gained from your Spiritual Attunement spell by an additional 2%.",
-   "iconFile": "spell_holy_revivechampion",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_revivechampion.jpg?v=91d69974",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_turn_evil",
    "name": "Glyph of Turn Evil",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Reduces the casting time of your Turn Evil spell by 100%, but increases the cooldown by 8 sec.",
-   "iconFile": "spell_holy_turnundead",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_turnundead.jpg?v=5db13b8e",
    "requiredLevel": 24
   },
   {
    "key": "glyph_of_vengeance",
    "name": "Glyph of Vengeance",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Seal of Vengeance and Seal of Corruption increases your expertise by 10.",
-   "iconFile": "spell_holy_sealofvengeance",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofvengeance.jpg?v=2988cc06",
    "requiredLevel": 25
   },
   {
    "key": "guardians_favor",
    "name": "Guardian's Favor",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Hand of Protection by 2 min and increases the duration of your Hand of Freedom by 4 sec.\n\nThis Mystic Enchant does not stack with the Guardian's Favor Talent.",
-   "iconFile": "spell_holy_sealofprotection",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofprotection.jpg?v=965629ef",
    "requiredLevel": 45
   },
   {
    "key": "healing_light",
    "name": "Healing Light",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount healed by your Holy Light, Flash of Light and the effectiveness of Holy Shock spells by 12%.\n\nThis Mystic Enchant does not stack with the Healing Light Talent.",
-   "iconFile": "spell_holy_holybolt",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_holybolt.jpg?v=b4ce25b4",
    "requiredLevel": 45
   },
   {
    "key": "heart_of_the_crusader",
    "name": "Heart of the Crusader",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIn addition to the normal effect, your Judgement spells will also increase the critical strike chance of all attacks made against that target by an additional 3%.\n\nThis Mystic Enchant does not stack with the Heart of the Crusader Talent.",
-   "iconFile": "spell_holy_holysmite",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_holysmite.jpg?v=f7735432",
    "requiredLevel": 45
   },
   {
    "key": "illumination",
    "name": "Illumination",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nAfter getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell you have a 100% chance to gain mana equal to 30% of the base cost of the spell.\n\nThis Mystic Enchant does not stack with the Illumination Talent.",
-   "iconFile": "spell_holy_greaterheal",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_greaterheal.jpg?v=3ca40f3b",
    "requiredLevel": 45
   },
   {
    "key": "improved_blessing_of_might",
    "name": "Improved Blessing of Might",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIncreases the attack power bonus of your Blessing of Might by 25%.\n\nThis Mystic Enchant does not stack with the Improved Blessing of Might Talent.",
-   "iconFile": "spell_holy_fistofjustice",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_fistofjustice.jpg?v=4d7dd511",
    "requiredLevel": 45
   },
   {
    "key": "improved_blessing_of_wisdom",
    "name": "Improved Blessing of Wisdom",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Blessing of Wisdom spell by 20%.\n\nThis Mystic Enchant does not stack with the Improved Blessing of Wisdom Talent.",
-   "iconFile": "spell_holy_sealofwisdom",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofwisdom.jpg?v=45feb0c9",
    "requiredLevel": 45
   },
   {
    "key": "improved_concentration_aura",
    "name": "Improved Concentration Aura",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Concentration Aura by an additional 15% and while any Aura is active reduces the duration of any Silence or Interrupt effect used against an affected group member by 30%.  The duration reduction does not stack with any other effects.\n\nThis Mystic Enchant does not stack with the Improved Concentration Aura Talent.",
-   "iconFile": "spell_holy_mindsooth",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_mindsooth.jpg?v=ecba50fb",
    "requiredLevel": 45
   },
   {
    "key": "improved_devotion_aura",
    "name": "Improved Devotion Aura",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nIncreases the armor bonus of your Devotion Aura by 50% and increases the amount healed on any target affected by any of your Auras by 6%.\n\nThis Mystic Enchant does not stack with the Improved Devotion Aura Talent.",
-   "iconFile": "spell_holy_devotionaura",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_devotionaura.jpg?v=a3269cc5",
    "requiredLevel": 45
   },
   {
    "key": "improved_hammer_of_justice",
    "name": "Improved Hammer of Justice",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nDecreases the cooldown of your Hammer of Justice spell by 20 sec.\n\nThis Mystic Enchant does not stack with the Improved Hammer of Justice Talent.",
-   "iconFile": "spell_holy_sealofmight",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealofmight.jpg?v=fca4f7d1",
    "requiredLevel": 45
   },
   {
    "key": "improved_judgements",
    "name": "Improved Judgements",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nDecreases the cooldown of your Judgement spells by 2 sec.\n\nThis Mystic Enchant does not stack with the Improved Judgements Talent.",
-   "iconFile": "spell_holy_righteousfury",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_righteousfury.jpg?v=599bb8a9",
    "requiredLevel": 45
   },
   {
    "key": "improved_lay_on_hands",
    "name": "Improved Lay on Hands",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nGrants the target of your Lay on Hands spell 20% reduced physical damage taken for 15 sec.  In addition, the cooldown for your Lay on Hands spell is reduced by -4 min.\n\nThis Mystic Enchant does not stack with the Improved Lay on Hands Talent.",
-   "iconFile": "spell_holy_layonhands",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_layonhands.jpg?v=e3bc35ab",
    "requiredLevel": 45
   },
   {
    "key": "improved_righteous_fury",
    "name": "Improved Righteous Fury",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nWhile Righteous Fury is active, damage taken is reduced by 9%.\n\nThis Mystic Enchant does not stack with the Improved Righteous Fury Talent.",
-   "iconFile": "spell_holy_sealoffury",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_sealoffury.jpg?v=0bca25da",
    "requiredLevel": 45
   },
   {
    "key": "pursuit_of_justice",
    "name": "Pursuit of Justice",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nReduces the duration of all Disarm effects by 50% and increases movement and mounted movement speed by 15%.  This does not stack with other movement speed increasing effects.\n\nThis Mystic Enchant does not stack with the Pursuit of Justice Talent.",
-   "iconFile": "spell_holy_persuitofjustice",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_persuitofjustice.jpg?v=42cacac0",
    "requiredLevel": 45
   },
   {
    "key": "sanctity_of_battle",
    "name": "Sanctity of Battle",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to critically hit with all spells and attacks by 3% and increases the damage caused by Exorcism and Crusader Strike by 15%.\n\nThis Mystic Enchant does not stack with the Sanctity of Battle Talent.",
-   "iconFile": "spell_holy_holysmite",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_holysmite.jpg?v=f7735432",
    "requiredLevel": 45
   },
   {
    "key": "seal_of_command",
    "name": "Seal of Command",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Teaches you: Seal of Command\n\n@ext:Can not be used if the Seal of Command talent is learned.:ext@ \n@s:1470375:0:0:0:-32@",
-   "iconFile": "ability_warrior_innerrage",
+   "icon": "assets/game/paladin/mystic-enchants/ability_warrior_innerrage.jpg?v=6a867344",
    "requiredLevel": 20
   },
   {
    "key": "seals_of_the_pure",
    "name": "Seals of the Pure",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Seal of Righteousness, Seal of Vengeance and Seal of Corruption and their Judgement effects by 15%.\n\nThis Mystic Enchant does not stack with the Seals of the Pure Talent.",
-   "iconFile": "ability_thunderbolt",
+   "icon": "assets/game/paladin/mystic-enchants/ability_thunderbolt.jpg?v=b426b25f",
    "requiredLevel": 45
   },
   {
    "key": "spiritual_focus",
    "name": "Spiritual Focus",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks while casting Flash of Light and Holy Light by 70%.\n\nThis Mystic Enchant does not stack with the Spiritual Focus Talent.",
-   "iconFile": "spell_arcane_blink",
+   "icon": "assets/game/paladin/mystic-enchants/spell_arcane_blink.jpg?v=28f34f26",
    "requiredLevel": 45
   },
   {
    "key": "stoicism",
    "name": "Stoicism",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nReduces the duration of all Stun effects by an additional 30% and reduces the chance your helpful spells and damage over time effects will be dispelled by an additional 30%.\n\nThis Mystic Enchant does not stack with the Stoicism Talent.",
-   "iconFile": "spell_holy_stoicism",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_stoicism.jpg?v=100e595c",
    "requiredLevel": 45
   },
   {
    "key": "toughness",
    "name": "Toughness",
    "rarity": "rare",
-   "spec": "Protection",
+   "specs": [
+    "Protection"
+   ],
    "tooltip": "Crossover Talent\nIncreases your armor value from items by 10% and reduces the duration of all movement slowing effects by 30%.\n\nThis Mystic Enchant does not stack with the Toughness Talent.",
-   "iconFile": "spell_holy_devotion",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_devotion.jpg?v=2df06641",
    "requiredLevel": 45
   },
   {
    "key": "unyielding_faith",
    "name": "Unyielding Faith",
    "rarity": "rare",
-   "spec": "Holy",
+   "specs": [
+    "Holy"
+   ],
    "tooltip": "Crossover Talent\nReduces the duration of all Fear and Disorient effects by 30%.\n\nThis Mystic Enchant does not stack with the Unyielding Faith Talent.",
-   "iconFile": "spell_holy_unyieldingfaith",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_unyieldingfaith.jpg?v=e70590ce",
    "requiredLevel": 45
   },
   {
    "key": "vindication",
    "name": "Vindication",
    "rarity": "rare",
-   "spec": "Retribution",
+   "specs": [
+    "Retribution"
+   ],
    "tooltip": "Crossover Talent\nGives the Paladin's damaging attacks a chance to reduce the target's attack power by 166.2 for 12 sec.\n\nThis Mystic Enchant does not stack with the Vindication Talent.",
-   "iconFile": "spell_holy_vindication",
+   "icon": "assets/game/paladin/mystic-enchants/spell_holy_vindication.jpg?v=ab2da8e3",
    "requiredLevel": 45
   }
  ],
@@ -2569,7 +2788,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Causes your Concentration Aura to make all affected targets immune to Silence and Interrupt effects and improve the effect of all other auras by 100%.  Lasts 6 sec.",
-   "iconFile": "spell_holy_auramastery",
+   "icon": "assets/game/paladin/abilities/spell_holy_auramastery.jpg?v=fb4c743b",
    "cooldown": "2 min",
    "duration": "6 sec"
   },
@@ -2583,7 +2802,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "The target becomes a Beacon of Light to all members of your party or raid within a 60 yard radius.  Any direct heals you cast on party or raid members will also heal the Beacon for 100% of the amount healed.  Only one target can be the Beacon of Light at a time. Lasts 1 min.",
-   "iconFile": "ability_paladin_beaconoflight"
+   "icon": "assets/game/paladin/abilities/ability_paladin_beaconoflight.jpg?v=927e5faa"
   },
   {
    "key": "blessing_of_wisdom",
@@ -2595,7 +2814,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Bless all members of the raid or group with a Sanctified Blessing of Wisdom, restoring 33 mana every 5 seconds for 30 min.  Players may only have one Blessing on them per Paladin at any one time.",
-   "iconFile": "spell_holy_sealofwisdom",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofwisdom.jpg?v=45feb0c9",
    "costValue": "0.22",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2612,7 +2831,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Cleanses a friendly target, removing 1 poison effect, 1 disease effect, and 1 magic effect.",
-   "iconFile": "spell_holy_renew",
+   "icon": "assets/game/paladin/abilities/spell_holy_renew.jpg?v=977a1c8b",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2628,7 +2847,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "All party or raid members within 40 yards lose 35% less casting or channeling time when damaged.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_holy_mindsooth"
+   "icon": "assets/game/paladin/abilities/spell_holy_mindsooth.jpg?v=ecba50fb"
   },
   {
    "key": "consecration",
@@ -2640,7 +2859,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Consecrates the land beneath the Paladin, doing 448 Holy damage over 8 sec to enemies who enter the area.",
-   "iconFile": "spell_holy_innerfire",
+   "icon": "assets/game/paladin/abilities/spell_holy_innerfire.jpg?v=7ddf2b8b",
    "costValue": "0.22",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2667,7 +2886,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Reduces the mana cost of all spells by 50% for 15 sec.",
-   "iconFile": "spell_holy_divineillumination"
+   "icon": "assets/game/paladin/abilities/spell_holy_divineillumination.jpg?v=196423bd"
   },
   {
    "key": "divine_plea",
@@ -2679,7 +2898,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "You gain 25% of your total mana over 15 sec, but the amount healed by your Flash of Light, Holy Light, and Holy Shock spells is reduced by 50%.",
-   "iconFile": "spell_holy_aspiration",
+   "icon": "assets/game/paladin/abilities/spell_holy_aspiration.jpg?v=4576f1cb",
    "cooldown": "1 min",
    "duration": "15 sec"
   },
@@ -2693,7 +2912,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Causes 564 to 628 Holy damage to an enemy target.  If the target is Undead or Demon, it will always critically hit.",
-   "iconFile": "spell_holy_excorcism_02",
+   "icon": "assets/game/paladin/abilities/spell_holy_excorcism_02.jpg?v=1ec717f7",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2728,7 +2947,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 324.",
-   "iconFile": "spell_holy_flashheal",
+   "icon": "assets/game/paladin/abilities/spell_holy_flashheal.jpg?v=fe050e5d",
    "costValue": "0.07",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2750,7 +2969,7 @@
    "castTime": 2.5,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for 1464.",
-   "iconFile": "spell_holy_holybolt",
+   "icon": "assets/game/paladin/abilities/spell_holy_holybolt.jpg?v=b4ce25b4",
    "costValue": "0.29",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2772,7 +2991,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Blasts the target with Holy energy, causing 314 to 340 Holy damage to an enemy, or 433 to 467 healing to an ally.",
-   "iconFile": "spell_holy_searinglight"
+   "icon": "assets/game/paladin/abilities/spell_holy_searinglight.jpg?v=0249f8ad"
   },
   {
    "key": "holy_wrath",
@@ -2784,7 +3003,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Sends bolts of holy power in all directions, causing 551 to 649 Holy damage and stunning all Undead and Demon targets within 10 yds for 3 sec.",
-   "iconFile": "spell_holy_excorcism",
+   "icon": "assets/game/paladin/abilities/spell_holy_excorcism.jpg?v=1f8aa857",
    "costValue": "0.2",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2819,7 +3038,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores 550 of their mana.  If used on self, the Paladin cannot be targeted by Divine Shield, Divine Protection, Hand of Protection, or self-targeted Lay on Hands again for 2 min.  Also cannot be used on self within 30 sec of using Avenging Wrath.",
-   "iconFile": "spell_holy_layonhands",
+   "icon": "assets/game/paladin/abilities/spell_holy_layonhands.jpg?v=e3bc35ab",
    "cooldown": "20 min",
    "range": 40
   },
@@ -2833,7 +3052,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Purifies the friendly target, removing 1 disease effect and 1 poison effect.",
-   "iconFile": "spell_holy_purify",
+   "icon": "assets/game/paladin/abilities/spell_holy_purify.jpg?v=7972b511",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2849,7 +3068,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Brings a dead player back to life with 600 health and 800 mana.  Cannot be cast when in combat.",
-   "iconFile": "spell_holy_resurrection",
+   "icon": "assets/game/paladin/abilities/spell_holy_resurrection.jpg?v=8a8a9284",
    "costValue": "0.64",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2865,7 +3084,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Each time the target takes damage they gain a Sacred Shield, absorbing 100 damage and increasing the paladin's chance to critically hit with Flash of Light by 50% for up to 6 sec.  They cannot gain this effect more than once every 6 sec.  Lasts 30 sec.  This spell cannot be on more than one target at any one time.",
-   "iconFile": "ability_paladin_blessedmending",
+   "icon": "assets/game/paladin/abilities/ability_paladin_blessedmending.jpg?v=72b8adbb",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2882,7 +3101,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fills the Paladin with divine light for 30 min, giving each melee attack a chance to heal the Paladin for 0.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will deal 1 Holy damage to an enemy.",
-   "iconFile": "spell_holy_healingaura",
+   "icon": "assets/game/paladin/abilities/spell_holy_healingaura.jpg?v=f57d8af6",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2916,7 +3135,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fills the Paladin with holy spirit for 30 min, granting each melee attack ${0*(0.022*0+0.044*0)} additional Holy damage.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 1 Holy damage to an enemy.",
-   "iconFile": "ability_thunderbolt",
+   "icon": "assets/game/paladin/abilities/ability_thunderbolt.jpg?v=b426b25f",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2954,7 +3173,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fills the Paladin with divine wisdom for 30 min, giving each melee attack a chance to restore 4% of the paladin's maximum mana.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will deal 1 Holy damage to an enemy.",
-   "iconFile": "spell_holy_righteousnessaura",
+   "icon": "assets/game/paladin/abilities/spell_holy_righteousnessaura.jpg?v=32355643",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2980,7 +3199,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "The targeted undead or demon enemy will be compelled to flee for up to 20 sec.  Damage caused may interrupt the effect.  Only one target can be turned at a time.",
-   "iconFile": "spell_holy_turnundead",
+   "icon": "assets/game/paladin/abilities/spell_holy_turnundead.jpg?v=5db13b8e",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2997,7 +3216,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Hurls a holy shield at the enemy, dealing 440 to 536 Holy damage, Dazing them and then jumping to additional nearby enemies.  Affects 3 total targets.  Lasts 10 sec.",
-   "iconFile": "spell_holy_avengersshield",
+   "icon": "assets/game/paladin/abilities/spell_holy_avengersshield.jpg?v=5ff3d0a6",
    "scaling": [
     {
      "stat": "SPH",
@@ -3027,7 +3246,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Bless all members of the raid or group with a Greater Blessing of Kings, increasing total stats by 10% for 30 min.  Players may only have one Blessing on them per Paladin at any one time.",
-   "iconFile": "spell_magic_magearmor",
+   "icon": "assets/game/paladin/abilities/spell_magic_magearmor.jpg?v=a0653142",
    "costValue": "0.24",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3044,7 +3263,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Places a Blessing on the friendly target, reducing damage taken from all sources by 3% for 30 min and increasing strength and stamina by 10%.  In addition, when the target blocks, parries, or dodges a melee attack the target will gain 2% of maximum displayed mana.  Players may only have one Blessing on them per Paladin at any one time.",
-   "iconFile": "spell_nature_lightningshield"
+   "icon": "assets/game/paladin/abilities/spell_nature_lightningshield.jpg?v=3308d68b"
   },
   {
    "key": "crimson_champion",
@@ -3056,7 +3275,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increase your Block chance by 10% and blocking deals 90 Holy damage to the attacker.\n\n@ext:This uses Holy Shield modifiers. This effect can only occur once every second.:ext@",
-   "iconFile": "spell_holy_blessingofprotection_red",
+   "icon": "assets/game/paladin/abilities/spell_holy_blessingofprotection_red.jpg?v=ec78960d",
    "scaling": [
     {
      "stat": "SP",
@@ -3078,7 +3297,7 @@
    "castTime": 2,
    "gcd": 0,
    "tooltipTemplate": "Slams the ground with a holy hammer, stunning all enemies around you for 4 sec.\n\n@ext:This uses Hammer of Justice modifiers.:ext@",
-   "iconFile": "spell_holy_sealofmight",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofmight.jpg?v=fca4f7d1",
    "costValue": "50",
    "costUnit": "flat",
    "costPower": "mana",
@@ -3095,7 +3314,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gives 735 additional armor to party and raid members within 40 yards.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_holy_devotionaura"
+   "icon": "assets/game/paladin/abilities/spell_holy_devotionaura.jpg?v=a3269cc5"
   },
   {
    "key": "divine_intervention",
@@ -3107,7 +3326,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "The paladin sacrifices himself to remove the targeted party member from harm's way.  Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but will not be able to take any action for 3 min.",
-   "iconFile": "spell_nature_timestop",
+   "icon": "assets/game/paladin/abilities/spell_nature_timestop.jpg?v=fade0a2a",
    "cooldown": "10 min",
    "range": 40
   },
@@ -3121,7 +3340,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Reduces all damage taken by 50% for 12 sec.  Once protected, the target cannot be targeted by Divine Shield, Divine Protection, or Hand of Protection again for 2 min.  Cannot be used within 30 sec of using Avenging Wrath.",
-   "iconFile": "spell_holy_restoration",
+   "icon": "assets/game/paladin/abilities/spell_holy_restoration.jpg?v=202162e8",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3138,7 +3357,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "30% of all damage taken by party members within 30 yards is redirected to the Paladin (up to a maximum of 40% of the Paladin's health times the number of party members).  Damage which reduces the Paladin below 20% health will break the effect.  Lasts 10 sec.",
-   "iconFile": "spell_holy_powerwordbarrier"
+   "icon": "assets/game/paladin/abilities/spell_holy_powerwordbarrier.jpg?v=22a4effb"
   },
   {
    "key": "divine_shield",
@@ -3150,7 +3369,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Protects the paladin from all damage and spells for 12 sec, but reduces all damage you deal by 50%.  Once protected, the target cannot be targeted by Divine Shield, Divine Protection, or Hand of Protection again for 2 min.  Cannot be used within 30 sec. of using Avenging Wrath.",
-   "iconFile": "spell_holy_divineintervention",
+   "icon": "assets/game/paladin/abilities/spell_holy_divineintervention.jpg?v=a4f5e16c",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3167,7 +3386,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gives 60 additional Fire resistance to all party and raid members within 40 yards.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_fire_sealoffire"
+   "icon": "assets/game/paladin/abilities/spell_fire_sealoffire.jpg?v=94710aad"
   },
   {
    "key": "frost_resistance_aura",
@@ -3179,7 +3398,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gives 60 additional Frost resistance to all party and raid members within 40 yards.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_frost_wizardmark"
+   "icon": "assets/game/paladin/abilities/spell_frost_wizardmark.jpg?v=a5faa7bb"
   },
   {
    "key": "hammer_of_justice",
@@ -3191,7 +3410,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Stuns the target for 6 sec and interrupts non-player spellcasting for 3 sec.",
-   "iconFile": "spell_holy_sealofmight",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofmight.jpg?v=fca4f7d1",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3209,7 +3428,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Hammer the current target and up to 2 additional nearby targets, causing 4 times your main hand damage per second as Holy damage.\n\nShares cooldown with Crusader Strike.",
-   "iconFile": "ability_paladin_hammeroftherighteous"
+   "icon": "assets/game/paladin/abilities/ability_paladin_hammeroftherighteous.jpg?v=3ad3b918"
   },
   {
    "key": "hand_of_freedom",
@@ -3221,7 +3440,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Places a Hand on the friendly target, granting immunity to movement impairing effects for 6 sec.  Players may only have one Hand on them per Paladin at any one time.",
-   "iconFile": "spell_holy_sealofvalor",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofvalor.jpg?v=f2f6bf46",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3239,7 +3458,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "A targeted party or raid member is protected from all physical attacks for 10 sec, but during that time they cannot attack or use physical abilities.  Players may only have one Hand on them per Paladin at any one time.  Once protected, the target cannot be targeted by Divine Shield, Divine Protection, or Hand of Protection again for 2 min.  Cannot be targeted on players who have used Avenging Wrath within the last 30 sec.",
-   "iconFile": "spell_holy_sealofprotection",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofprotection.jpg?v=965629ef",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3257,7 +3476,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Taunts the target to attack you.  If the target is tauntable and not currently targeting you, causes 1 Holy damage.\n\nThis spell can not miss.",
-   "iconFile": "spell_holy_unyieldingfaith",
+   "icon": "assets/game/paladin/abilities/spell_holy_unyieldingfaith.jpg?v=e70590ce",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3281,7 +3500,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Causes 1 Holy damage. This ability does not trigger a global cooldown.",
-   "iconFile": "spell_holy_unyieldingfaith",
+   "icon": "assets/game/paladin/abilities/spell_holy_unyieldingfaith.jpg?v=e70590ce",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3304,7 +3523,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Places a Hand on the party or raid member, transfering 30% damage taken to the caster.  Lasts 12 sec or until the caster has transfered 100% of their maximum health.  Players may only have one Hand on them per Paladin at any one time.",
-   "iconFile": "spell_holy_sealofsacrifice",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofsacrifice.jpg?v=e4e4ae9b",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3322,7 +3541,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Places a Hand on the party or raid member, reducing their total threat by 2% every 1 sec. for 10 sec.  Players may only have one Hand on them per Paladin at any one time.",
-   "iconFile": "spell_holy_sealofsalvation",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofsalvation.jpg?v=6b716fd7",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3340,7 +3559,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes a high threat explosion of holy light around the caster, causing 23 to 25 Holy damage to all enemy targets and healing all party members for 54 to 62 within 10 yards.\n\nAttack power increases the damage but reduces the healing of this spell.\n\n@ext:This uses Holy Nova modifiers.:ext@",
-   "iconFile": "spell_holy_holynova",
+   "icon": "assets/game/paladin/abilities/spell_holy_holynova.jpg?v=70e86665",
    "costValue": "0.26",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3355,7 +3574,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases chance to block by 30% for 10 sec and deals 79 Holy damage for each attack blocked while active.  Each block expends a charge.  8 charges.",
-   "iconFile": "spell_holy_blessingofprotection"
+   "icon": "assets/game/paladin/abilities/spell_holy_blessingofprotection.jpg?v=e0e3d08b"
   },
   {
    "key": "light_of_justice",
@@ -3367,7 +3586,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Stuns the target for 5 sec, but reduces the damage the target takes by 50%.\n\nSurge of Light makes this instant.\n\n@ext:This uses Hammer of Justice modifiers.:ext@",
-   "iconFile": "spell_paladin_lightofdawn",
+   "icon": "assets/game/paladin/abilities/spell_paladin_lightofdawn.jpg?v=2546291f",
    "costValue": "0.03",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3385,7 +3604,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Come to the defense of a friendly target, commanding up to 3 enemies attacking the target to attack the Paladin instead.\n\nThis spell can not miss.",
-   "iconFile": "inv_shoulder_37",
+   "icon": "assets/game/paladin/abilities/inv_shoulder_37.jpg?v=909e8d02",
    "cooldown": "8 sec",
    "range": 40
   },
@@ -3399,7 +3618,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increases threat generated by 75%. Doubled for holy spells and abilities.",
-   "iconFile": "spell_holy_sealoffury"
+   "icon": "assets/game/paladin/abilities/spell_holy_sealoffury.jpg?v=0bca25da"
   },
   {
    "key": "seal_of_justice",
@@ -3411,7 +3630,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fills the Paladin with the spirit of justice for 30 min, giving each melee attack a chance to stun for 2 sec.  Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will deal 1 Holy damage to an enemy.",
-   "iconFile": "spell_holy_sealofwrath",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofwrath.jpg?v=6198edc2",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3437,7 +3656,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gives 60 additional Shadow resistance to all party and raid members within 40 yards.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_shadow_sealofkings"
+   "icon": "assets/game/paladin/abilities/spell_shadow_sealofkings.jpg?v=8431009f"
   },
   {
    "key": "shield_of_righteousness",
@@ -3449,7 +3668,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Slam the target with your shield, causing Holy damage based on your block value plus an additional 143.",
-   "iconFile": "ability_paladin_shieldofvengeance",
+   "icon": "assets/game/paladin/abilities/ability_paladin_shieldofvengeance.jpg?v=bbde702d",
    "costValue": "0.06",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3466,7 +3685,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Increases all damage and healing caused by 20% for 20 sec.  Cannot be used within 30 sec of being the target of Divine Shield, Divine Protection, or Hand of Protection, or of using Lay on Hands on oneself.",
-   "iconFile": "spell_holy_avenginewrath",
+   "icon": "assets/game/paladin/abilities/spell_holy_avenginewrath.jpg?v=fb196fa3",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3483,7 +3702,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Bless all members of the raid or group with a Sanctified Blessing of Might, increasing attack power by 232 for 30 min.  Players may only have one Blessing on them per Paladin at any one time.",
-   "iconFile": "spell_holy_fistofjustice",
+   "icon": "assets/game/paladin/abilities/spell_holy_fistofjustice.jpg?v=4d7dd511",
    "costValue": "0.2",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3500,7 +3719,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increases the mounted speed by 20% for all party and raid members within 40 yards.  Players may only have one Aura on them per Paladin at any one time.  This does not stack with other movement speed increasing effects.",
-   "iconFile": "spell_holy_crusaderaura"
+   "icon": "assets/game/paladin/abilities/spell_holy_crusaderaura.jpg?v=23664e48"
   },
   {
    "key": "crusader_strike",
@@ -3512,7 +3731,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "An instant strike that causes 75% weapon damage.",
-   "iconFile": "spell_holy_crusaderstrike",
+   "icon": "assets/game/paladin/abilities/spell_holy_crusaderstrike.jpg?v=891b9801",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3530,7 +3749,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "An instant weapon attack that causes 110% of weapon damage to up to 4 enemies within 8 yards.  The Divine Storm heals up to 3 party or raid members totaling 25% of the damage caused.",
-   "iconFile": "ability_paladin_divinestorm"
+   "icon": "assets/game/paladin/abilities/ability_paladin_divinestorm.jpg?v=205b712e"
   },
   {
    "key": "hammer_of_wrath",
@@ -3542,7 +3761,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Hurls a hammer that strikes an enemy for 570 to 628 Holy damage.  Only usable on enemies that have 20% or less health.",
-   "iconFile": "ability_thunderclap",
+   "icon": "assets/game/paladin/abilities/ability_thunderclap.jpg?v=782a28f9",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3577,7 +3796,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, preventing them from fleeing and limiting their movement speed.  Refer to individual Seals for additional Judgement effect.  Only one Judgement per Paladin can be active at any one time.",
-   "iconFile": "ability_paladin_judgementred",
+   "icon": "assets/game/paladin/abilities/ability_paladin_judgementred.jpg?v=1331e8ef",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3594,7 +3813,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, granting attacks made against the judged enemy a chance of healing the attacker for 2% of their maximum health.  Refer to individual Seals for additional Judgement effect.  Only one Judgement per Paladin can be active at any one time.",
-   "iconFile": "spell_holy_righteousfury",
+   "icon": "assets/game/paladin/abilities/spell_holy_righteousfury.jpg?v=599bb8a9",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3611,7 +3830,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Unleashes the energy of a Seal spell to judge an enemy for 20 sec, giving each attack a chance to restore 2% of the attacker's base mana.  Refer to individual Seals for additional Judgement effect.  Only one Judgement per Paladin can be active at any one time.",
-   "iconFile": "ability_paladin_judgementblue",
+   "icon": "assets/game/paladin/abilities/ability_paladin_judgementblue.jpg?v=848f07c0",
    "costValue": "0.05",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3628,7 +3847,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes 48 Holy damage to any enemy that strikes a party or raid member within 40 yards.  Players may only have one Aura on them per Paladin at any one time.",
-   "iconFile": "spell_holy_auraoflight"
+   "icon": "assets/game/paladin/abilities/spell_holy_auraoflight.jpg?v=5d383700"
   },
   {
    "key": "seal_of_command",
@@ -3640,7 +3859,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "All melee attacks deal 0 to 0 additional Holy damage.  When used with attacks or abilities that strike a single target, this additional Holy damage will strike up to 2 additional targets.  Lasts 30 min.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 0 to 0 Holy damage.",
-   "iconFile": "ability_warrior_innerrage",
+   "icon": "assets/game/paladin/abilities/ability_warrior_innerrage.jpg?v=6a867344",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3690,7 +3909,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Fills the Paladin with holy power, causing auto attacks and Hammer of the Righteous to apply Holy Vengeance, which deals 0 additional Holy damage over 15 sec.  Holy Vengeance can stack up to 5 times.  Once stacked to 5 times, each of the Paladin's attacks also deals 33% weapon damage as additional Holy damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 min.\n\nUnleashing this Seal's energy will deal 1 Holy damage to an enemy, increased by 10% for each application of Holy Vengeance on the target.",
-   "iconFile": "spell_holy_sealofvengeance",
+   "icon": "assets/game/paladin/abilities/spell_holy_sealofvengeance.jpg?v=2988cc06",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",

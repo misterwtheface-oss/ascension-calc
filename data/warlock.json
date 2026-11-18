@@ -8,17 +8,17 @@
   {
    "name": "Affliction",
    "accent": "#7a5fa8",
-   "background": "assets/game/warlock/backgrounds/warlockcurses.jpg"
+   "background": "assets/game/warlock/backgrounds/warlockcurses.jpg?v=5c457902"
   },
   {
    "name": "Demonology",
    "accent": "#3d9e5c",
-   "background": "assets/game/warlock/backgrounds/warlocksummoning.jpg"
+   "background": "assets/game/warlock/backgrounds/warlocksummoning.jpg?v=80612eed"
   },
   {
    "name": "Destruction",
    "accent": "#c04428",
-   "background": "assets/game/warlock/backgrounds/warlockdestruction.jpg"
+   "background": "assets/game/warlock/backgrounds/warlockdestruction.jpg?v=21fec587"
   }
  ],
  "talents": {
@@ -35,7 +35,7 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_curseofsargeras"
+   "icon": "assets/game/warlock/talents/spell_shadow_curseofsargeras.jpg?v=d47b184d"
   },
   "suppression": {
    "name": "Suppression",
@@ -56,7 +56,7 @@
      6
     ]
    ],
-   "iconFile": "spell_shadow_unsummonbuilding"
+   "icon": "assets/game/warlock/talents/spell_shadow_unsummonbuilding.jpg?v=ef8abcc7"
   },
   "improved_corruption": {
    "name": "Improved Corruption",
@@ -85,7 +85,7 @@
      5
     ]
    ],
-   "iconFile": "spell_shadow_abominationexplosion"
+   "icon": "assets/game/warlock/talents/spell_shadow_abominationexplosion.jpg?v=31fc3a43"
   },
   "improved_curse_of_weakness": {
    "name": "Improved Curse of Weakness",
@@ -100,7 +100,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_curseofmannoroth"
+   "icon": "assets/game/warlock/talents/spell_shadow_curseofmannoroth.jpg?v=bff90a01"
   },
   "improved_drain_soul": {
    "name": "Improved Drain Soul",
@@ -117,7 +117,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_haunting"
+   "icon": "assets/game/warlock/talents/spell_shadow_haunting.jpg?v=f635188e"
   },
   "improved_life_tap": {
    "name": "Improved Life Tap",
@@ -132,7 +132,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_burningspirit"
+   "icon": "assets/game/warlock/talents/spell_shadow_burningspirit.jpg?v=f86d8a40"
   },
   "soul_siphon": {
    "name": "Soul Siphon",
@@ -149,7 +149,7 @@
      18
     ]
    ],
-   "iconFile": "spell_shadow_lifedrain02"
+   "icon": "assets/game/warlock/talents/spell_shadow_lifedrain02.jpg?v=cfb557da"
   },
   "improved_fear": {
    "name": "Improved Fear",
@@ -164,21 +164,21 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_possession"
+   "icon": "assets/game/warlock/talents/spell_shadow_possession.jpg?v=6ba1c768"
   },
   "fel_concentration": {
    "name": "Fel Concentration",
    "maxPts": 3,
    "prereq": null,
    "tooltipTemplate": "Reduces the pushback suffered from damaging attacks  while casting Drain Life, Drain Mana, Drain Soul,  Unstable Affliction, and Haunt spells by 70%.",
-   "iconFile": "spell_shadow_fingerofdeath"
+   "icon": "assets/game/warlock/talents/spell_shadow_fingerofdeath.jpg?v=8eea1833"
   },
   "amplify_curse": {
    "name": "Amplify Curse",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Reduces the global cooldown of your Curses by -0.5 sec.",
-   "iconFile": "spell_shadow_contagion"
+   "icon": "assets/game/warlock/talents/spell_shadow_contagion.jpg?v=1607e76c"
   },
   "grim_reach": {
    "name": "Grim Reach",
@@ -193,7 +193,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_callofbone"
+   "icon": "assets/game/warlock/talents/spell_shadow_callofbone.jpg?v=2db9e86b"
   },
   "nightfall": {
    "name": "Nightfall",
@@ -210,7 +210,7 @@
      2
     ]
    ],
-   "iconFile": "spell_shadow_twilight"
+   "icon": "assets/game/warlock/talents/spell_shadow_twilight.jpg?v=4d2eabad"
   },
   "empowered_corruption": {
    "name": "Empowered Corruption",
@@ -228,7 +228,7 @@
      36
     ]
    ],
-   "iconFile": "spell_shadow_abominationexplosion"
+   "icon": "assets/game/warlock/talents/spell_shadow_abominationexplosion.jpg?v=31fc3a43"
   },
   "shadow_embrace": {
    "name": "Shadow Embrace",
@@ -257,21 +257,21 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_shadowembrace"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowembrace.jpg?v=05fda093"
   },
   "siphon_life": {
    "name": "Siphon Life",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When you deal damage with your Corruption spell, you are instantly healed for 40% of the damage done. In addition, the damage done by your Corruption, Seed of Corruption and Unstable Affliction damage over time effects is increased by 5%.",
-   "iconFile": "spell_shadow_requiem"
+   "icon": "assets/game/warlock/talents/spell_shadow_requiem.jpg?v=564ea500"
   },
   "curse_of_exhaustion": {
    "name": "Curse of Exhaustion",
    "maxPts": 1,
    "prereq": "amplify_curse",
    "tooltipTemplate": "Reduces the target's movement speed by 30% for 12 sec.  Only one Curse per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_grimward"
+   "icon": "assets/game/warlock/talents/spell_shadow_grimward.jpg?v=fcc37849"
   },
   "improved_felhunter": {
    "name": "Improved Felhunter",
@@ -290,7 +290,7 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_summonfelhunter"
+   "icon": "assets/game/warlock/talents/spell_shadow_summonfelhunter.jpg?v=46076ddf"
   },
   "shadow_mastery": {
    "name": "Shadow Mastery",
@@ -314,7 +314,7 @@
      15
     ]
    ],
-   "iconFile": "spell_shadow_shadetruesight"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadetruesight.jpg?v=0105fa88"
   },
   "eradication": {
    "name": "Eradication",
@@ -332,21 +332,21 @@
      20
     ]
    ],
-   "iconFile": "ability_warlock_eradication"
+   "icon": "assets/game/warlock/talents/ability_warlock_eradication.jpg?v=81eefa79"
   },
   "contagion": {
    "name": "Contagion",
    "maxPts": 3,
    "prereq": null,
    "tooltipTemplate": "Increases the damage of Curse of Agony, Corruption and Seed of Corruption by 6% and reduces the chance your helpful Affliction spells and damage over time effects  will be dispelled by an additional 30%.",
-   "iconFile": "spell_shadow_painfulafflictions"
+   "icon": "assets/game/warlock/talents/spell_shadow_painfulafflictions.jpg?v=62673751"
   },
   "dark_pact": {
    "name": "Dark Pact",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Drains 305 of your summoned demon's Mana, returning 100% to you.",
-   "iconFile": "spell_shadow_darkritual",
+   "icon": "assets/game/warlock/talents/spell_shadow_darkritual.jpg?v=e26c23cd",
    "active": true
   },
   "improved_howl_of_terror": {
@@ -362,7 +362,7 @@
      1.5
     ]
    ],
-   "iconFile": "spell_shadow_deathscream"
+   "icon": "assets/game/warlock/talents/spell_shadow_deathscream.jpg?v=47725f82"
   },
   "malediction": {
    "name": "Malediction",
@@ -386,7 +386,7 @@
      3
     ]
    ],
-   "iconFile": "spell_shadow_curseofachimonde"
+   "icon": "assets/game/warlock/talents/spell_shadow_curseofachimonde.jpg?v=ec9e8494"
   },
   "deaths_embrace": {
    "name": "Death's Embrace",
@@ -407,14 +407,14 @@
      12
     ]
    ],
-   "iconFile": "spell_shadow_deathsembrace"
+   "icon": "assets/game/warlock/talents/spell_shadow_deathsembrace.jpg?v=118cc35e"
   },
   "unstable_affliction": {
    "name": "Unstable Affliction",
    "maxPts": 1,
    "prereq": "contagion",
    "tooltipTemplate": "Shadow energy slowly destroys the target, causing 640 damage over 15 sec.  In addition, if the Unstable Affliction is dispelled it will cause 1440 damage to the dispeller and silence them for 5 sec. Only one Unstable Affliction or Immolate per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_unstableaffliction_3",
+   "icon": "assets/game/warlock/talents/spell_shadow_unstableaffliction_3.jpg?v=4153471b",
    "active": true
   },
   "pandemic": {
@@ -422,7 +422,7 @@
    "maxPts": 1,
    "prereq": "unstable_affliction",
    "tooltipTemplate": "Grants the periodic damage from your Corruption and Unstable Affliction spells the ability to critically hit for 100% increased damage, and increases the critical strike damage bonus of your Haunt spell by 100%.",
-   "iconFile": "spell_shadow_unstableaffliction_2"
+   "icon": "assets/game/warlock/talents/spell_shadow_unstableaffliction_2.jpg?v=9ca00acc"
   },
   "everlasting_affliction": {
    "name": "Everlasting Affliction",
@@ -443,14 +443,14 @@
      100
     ]
    ],
-   "iconFile": "ability_warlock_everlastingaffliction"
+   "icon": "assets/game/warlock/talents/ability_warlock_everlastingaffliction.jpg?v=84f14cf6"
   },
   "haunt": {
    "name": "Haunt",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You send a ghostly soul into the target, dealing 405 to 473 Shadow damage and increasing all damage done by your Shadow damage-over-time effects on the target by 20% for 12 sec. When the Haunt spell ends or is dispelled, the soul returns to you, healing you for 100% of the damage it did to the target.",
-   "iconFile": "ability_warlock_haunt",
+   "icon": "assets/game/warlock/talents/ability_warlock_haunt.jpg?v=04e9dbb9",
    "active": true
   },
   "improved_healthstone": {
@@ -466,7 +466,7 @@
      20
     ]
    ],
-   "iconFile": "inv_stone_04"
+   "icon": "assets/game/warlock/talents/inv_stone_04.jpg?v=5636d120"
   },
   "improved_imp": {
    "name": "Improved Imp",
@@ -484,7 +484,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_summonimp"
+   "icon": "assets/game/warlock/talents/spell_shadow_summonimp.jpg?v=5f57d453"
   },
   "demonic_embrace": {
    "name": "Demonic Embrace",
@@ -502,7 +502,7 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_metamorphosis"
+   "icon": "assets/game/warlock/talents/spell_shadow_metamorphosis.jpg?v=3cfe888b"
   },
   "fel_synergy": {
    "name": "Fel Synergy",
@@ -517,7 +517,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_felmending"
+   "icon": "assets/game/warlock/talents/spell_shadow_felmending.jpg?v=eadd11d3"
   },
   "improved_health_funnel": {
    "name": "Improved Health Funnel",
@@ -536,7 +536,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_lifedrain"
+   "icon": "assets/game/warlock/talents/spell_shadow_lifedrain.jpg?v=92864693"
   },
   "demonic_brutality": {
    "name": "Demonic Brutality",
@@ -557,7 +557,7 @@
      3
     ]
    ],
-   "iconFile": "spell_shadow_summonvoidwalker"
+   "icon": "assets/game/warlock/talents/spell_shadow_summonvoidwalker.jpg?v=7e7553df"
   },
   "fel_vitality": {
    "name": "Fel Vitality",
@@ -578,7 +578,7 @@
      3
     ]
    ],
-   "iconFile": "spell_holy_magicalsentry"
+   "icon": "assets/game/warlock/talents/spell_holy_magicalsentry.jpg?v=cc7907b0"
   },
   "dark_fixation": {
    "name": "Dark Fixation",
@@ -593,7 +593,7 @@
      200
     ]
    ],
-   "iconFile": "spell_warlock_demonbolt"
+   "icon": "assets/game/warlock/talents/spell_warlock_demonbolt.jpg?v=e376711b"
   },
   "improved_succubus": {
    "name": "Improved Succubus",
@@ -614,21 +614,21 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_summonsuccubus"
+   "icon": "assets/game/warlock/talents/spell_shadow_summonsuccubus.jpg?v=f558276c"
   },
   "soul_link": {
    "name": "Soul Link",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When active, 20% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Felhunter, Felguard, or enslaved demon instead.  That damage cannot be prevented. Lasts as long as the demon is active and controlled.",
-   "iconFile": "spell_shadow_gathershadows"
+   "icon": "assets/game/warlock/talents/spell_shadow_gathershadows.jpg?v=c188ef91"
   },
   "fel_domination": {
    "name": "Fel Domination",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Your next Imp, Voidwalker, Succubus, Felhunter or Felguard Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%.",
-   "iconFile": "spell_nature_removecurse"
+   "icon": "assets/game/warlock/talents/spell_nature_removecurse.jpg?v=271ab354"
   },
   "demonic_aegis": {
    "name": "Demonic Aegis",
@@ -646,7 +646,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_ragingscream"
+   "icon": "assets/game/warlock/talents/spell_shadow_ragingscream.jpg?v=ff15acef"
   },
   "unholy_power": {
    "name": "Unholy Power",
@@ -664,7 +664,7 @@
      15
     ]
    ],
-   "iconFile": "spell_shadow_shadowworddominate"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowworddominate.jpg?v=10f6799e"
   },
   "master_summoner": {
    "name": "Master Summoner",
@@ -681,14 +681,14 @@
      40
     ]
    ],
-   "iconFile": "spell_shadow_impphaseshift"
+   "icon": "assets/game/warlock/talents/spell_shadow_impphaseshift.jpg?v=d74acc8d"
   },
   "mana_feed": {
    "name": "Mana Feed",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "When you gain mana from Drain Mana or Life Tap spells, your summoned demon gains 100% of the mana you gain.",
-   "iconFile": "spell_shadow_manafeed"
+   "icon": "assets/game/warlock/talents/spell_shadow_manafeed.jpg?v=23a67f4d"
   },
   "master_conjuror": {
    "name": "Master Conjuror",
@@ -703,7 +703,7 @@
      300
     ]
    ],
-   "iconFile": "inv_ammo_firetar"
+   "icon": "assets/game/warlock/talents/inv_ammo_firetar.jpg?v=c76a5f3d"
   },
   "taste_for_torment": {
    "name": "Taste for Torment",
@@ -720,7 +720,7 @@
      30
     ]
    ],
-   "iconFile": "warlock_pvp_banehavoc"
+   "icon": "assets/game/warlock/talents/warlock_pvp_banehavoc.jpg?v=33b148e6"
   },
   "master_demonologist": {
    "name": "Master Demonologist",
@@ -789,7 +789,7 @@
      5
     ]
    ],
-   "iconFile": "spell_shadow_shadowpact"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowpact.jpg?v=0b0d5ec2"
   },
   "molten_core": {
    "name": "Molten Core",
@@ -822,7 +822,7 @@
      15
     ]
    ],
-   "iconFile": "ability_warlock_moltencore"
+   "icon": "assets/game/warlock/talents/ability_warlock_moltencore.jpg?v=7eb7808c"
   },
   "demonic_resilience": {
    "name": "Demonic Resilience",
@@ -843,14 +843,14 @@
      15
     ]
    ],
-   "iconFile": "spell_shadow_demonicfortitude"
+   "icon": "assets/game/warlock/talents/spell_shadow_demonicfortitude.jpg?v=88d769d3"
   },
   "demonic_empowerment": {
    "name": "Demonic Empowerment",
    "maxPts": 1,
    "prereq": "master_demonologist",
    "tooltipTemplate": "Grants the Warlock's summoned demon Empowerment.\n\nImp - Increases the Imp's spell critical strike chance by 20% for 30 sec.\n\nVoidwalker - Increases the Voidwalker's health by 20%, and its threat generated from spells and attacks by 20% for 20 sec.\n\nSuccubus - Instantly vanishes, causing the Succubus to go into an improved Invisibility state. The vanish effect removes all stuns, snares and movement impairing effects from the Succubus.\n\nFelhunter - Dispels all magical effects from the Felhunter.\n\nFelguard - Increases the Felguard's attack speed by 20% and breaks all stun, snare and movement impairing effects and makes your Felguard immune to them for 15 sec.",
-   "iconFile": "ability_warlock_demonicempowerment",
+   "icon": "assets/game/warlock/talents/ability_warlock_demonicempowerment.jpg?v=b64686ad",
    "active": true
   },
   "demonic_knowledge": {
@@ -869,7 +869,7 @@
      12
     ]
    ],
-   "iconFile": "spell_shadow_improvedvampiricembrace"
+   "icon": "assets/game/warlock/talents/spell_shadow_improvedvampiricembrace.jpg?v=3e3dae74"
   },
   "demonic_tactics": {
    "name": "Demonic Tactics",
@@ -887,14 +887,14 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_demonictactics"
+   "icon": "assets/game/warlock/talents/spell_shadow_demonictactics.jpg?v=fc4087e9"
   },
   "decimation": {
    "name": "Decimation",
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "When you Shadow Bolt, Incinerate or Soul Fire a target that is at or below 35% health, the cast time of your Soul Fire spell is reduced by 40% for 10 sec. Soul Fires cast under the effect of Decimation cost no shard.",
-   "iconFile": "spell_fire_fireball02"
+   "icon": "assets/game/warlock/talents/spell_fire_fireball02.jpg?v=fbe63214"
   },
   "improved_demonic_tactics": {
    "name": "Improved Demonic Tactics",
@@ -915,14 +915,14 @@
      90
     ]
    ],
-   "iconFile": "ability_warlock_improveddemonictactics"
+   "icon": "assets/game/warlock/talents/ability_warlock_improveddemonictactics.jpg?v=f5516d0c"
   },
   "summon_felguard": {
    "name": "Summon Felguard",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Summons a Felguard under the command of the Warlock.",
-   "iconFile": "spell_shadow_summonfelguard"
+   "icon": "assets/game/warlock/talents/spell_shadow_summonfelguard.jpg?v=2a7da1fd"
   },
   "nemesis": {
    "name": "Nemesis",
@@ -940,7 +940,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_demonicempathy"
+   "icon": "assets/game/warlock/talents/spell_shadow_demonicempathy.jpg?v=112c79b2"
   },
   "demonic_pact": {
    "name": "Demonic Pact",
@@ -961,14 +961,14 @@
      10
     ]
    ],
-   "iconFile": "spell_shadow_demonicpact"
+   "icon": "assets/game/warlock/talents/spell_shadow_demonicpact.jpg?v=0aa4680b"
   },
   "metamorphosis": {
    "name": "Metamorphosis",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "You transform into a Demon for 30 sec.  This form increases your armor by 600%, damage by 20%, reduces the chance you'll be critically hit by melee attacks by 6% and reduces the duration of stun and snare effects by 50%.  You gain some unique demon abilities in addition to your normal abilities. 3 minute cooldown.",
-   "iconFile": "spell_shadow_demonform",
+   "icon": "assets/game/warlock/talents/spell_shadow_demonform.jpg?v=5cac5019",
    "active": true
   },
   "reign_of_dread": {
@@ -976,7 +976,7 @@
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Surge into the air and scorch all enemies below with 1590 Shadowflame damage over 2.5 seconds. While airborne melee attacks against you have 60% increased chance to miss.",
-   "iconFile": "ability_warlock_inferno",
+   "icon": "assets/game/warlock/talents/ability_warlock_inferno.jpg?v=ce3ff5a4",
    "active": true
   },
   "improved_shadow_bolt": {
@@ -1006,7 +1006,7 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_shadowbolt"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowbolt.jpg?v=ee1f8ee5"
   },
   "bane": {
    "name": "Bane",
@@ -1035,7 +1035,7 @@
      2
     ]
    ],
-   "iconFile": "spell_shadow_deathpact"
+   "icon": "assets/game/warlock/talents/spell_shadow_deathpact.jpg?v=b447fb8b"
   },
   "aftermath": {
    "name": "Aftermath",
@@ -1052,7 +1052,7 @@
      100
     ]
    ],
-   "iconFile": "spell_fire_fire"
+   "icon": "assets/game/warlock/talents/spell_fire_fire.jpg?v=fc2a4a48"
   },
   "molten_skin": {
    "name": "Molten Skin",
@@ -1070,7 +1070,7 @@
      6
     ]
    ],
-   "iconFile": "ability_mage_moltenarmor"
+   "icon": "assets/game/warlock/talents/ability_mage_moltenarmor.jpg?v=bab7eacc"
   },
   "cataclysm": {
    "name": "Cataclysm",
@@ -1088,7 +1088,7 @@
      10
     ]
    ],
-   "iconFile": "spell_fire_windsofwoe"
+   "icon": "assets/game/warlock/talents/spell_fire_windsofwoe.jpg?v=38c6bec8"
   },
   "demonic_power": {
    "name": "Demonic Power",
@@ -1105,14 +1105,14 @@
      -0.5
     ]
    ],
-   "iconFile": "spell_fire_firebolt"
+   "icon": "assets/game/warlock/talents/spell_fire_firebolt.jpg?v=f30c06df"
   },
   "shadowburn": {
    "name": "Shadowburn",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Instantly blasts the target for 118 to 130 Shadowflame damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.",
-   "iconFile": "spell_shadow_scourgebuild",
+   "icon": "assets/game/warlock/talents/spell_shadow_scourgebuild.jpg?v=05efd9a0",
    "active": true
   },
   "ruin": {
@@ -1137,14 +1137,14 @@
      100
     ]
    ],
-   "iconFile": "spell_shadow_shadowwordpain"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowwordpain.jpg?v=b37fcc7d"
   },
   "intensity": {
    "name": "Intensity",
    "maxPts": 2,
    "prereq": null,
    "tooltipTemplate": "Reduces the pushback suffered from damaging attacks  while casting or channeling any Destruction spell by 70%.",
-   "iconFile": "spell_fire_lavaspawn"
+   "icon": "assets/game/warlock/talents/spell_fire_lavaspawn.jpg?v=137598c9"
   },
   "destructive_reach": {
    "name": "Destructive Reach",
@@ -1161,7 +1161,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_corpseexplode"
+   "icon": "assets/game/warlock/talents/spell_shadow_corpseexplode.jpg?v=b8e8bc50"
   },
   "improved_searing_pain": {
    "name": "Improved Searing Pain",
@@ -1179,7 +1179,7 @@
      10
     ]
    ],
-   "iconFile": "spell_fire_soulburn"
+   "icon": "assets/game/warlock/talents/spell_fire_soulburn.jpg?v=35eacfa0"
   },
   "backlash": {
    "name": "Backlash",
@@ -1200,7 +1200,7 @@
      25
     ]
    ],
-   "iconFile": "spell_fire_playingwithfire"
+   "icon": "assets/game/warlock/talents/spell_fire_playingwithfire.jpg?v=216359fa"
   },
   "improved_immolate": {
    "name": "Improved Immolate",
@@ -1218,14 +1218,14 @@
      30
     ]
    ],
-   "iconFile": "spell_fire_immolation"
+   "icon": "assets/game/warlock/talents/spell_fire_immolation.jpg?v=53b45bc0"
   },
   "devastation": {
    "name": "Devastation",
    "maxPts": 1,
    "prereq": "ruin",
    "tooltipTemplate": "Increases the critical strike chance of your Destruction spells by 5%.",
-   "iconFile": "spell_fire_flameshock"
+   "icon": "assets/game/warlock/talents/spell_fire_flameshock.jpg?v=c99d7ca9"
   },
   "nether_protection": {
    "name": "Nether Protection",
@@ -1243,7 +1243,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_netherprotection"
+   "icon": "assets/game/warlock/talents/spell_shadow_netherprotection.jpg?v=f38f5956"
   },
   "emberstorm": {
    "name": "Emberstorm",
@@ -1272,14 +1272,14 @@
      -0.25
     ]
    ],
-   "iconFile": "spell_fire_selfdestruct"
+   "icon": "assets/game/warlock/talents/spell_fire_selfdestruct.jpg?v=c880d0dc"
   },
   "conflagrate": {
    "name": "Conflagrate",
    "maxPts": 1,
    "prereq": "improved_immolate",
    "tooltipTemplate": "Consumes an Immolate or Shadowflame effect on the enemy target to instantly deal damage equal to 60% of your Immolate or Shadowflame, and causes an additional 40% damage over 0 sec.",
-   "iconFile": "spell_fire_fireball"
+   "icon": "assets/game/warlock/talents/spell_fire_fireball.jpg?v=ef9598f2"
   },
   "soul_leech": {
    "name": "Soul Leech",
@@ -1297,7 +1297,7 @@
      30
     ]
    ],
-   "iconFile": "spell_shadow_soulleech_3"
+   "icon": "assets/game/warlock/talents/spell_shadow_soulleech_3.jpg?v=784008bb"
   },
   "pyroclasm": {
    "name": "Pyroclasm",
@@ -1315,7 +1315,7 @@
      6
     ]
    ],
-   "iconFile": "spell_fire_volcano"
+   "icon": "assets/game/warlock/talents/spell_fire_volcano.jpg?v=ae07d65c"
   },
   "shadow_and_flame": {
    "name": "Shadow and Flame",
@@ -1333,7 +1333,7 @@
      20
     ]
    ],
-   "iconFile": "spell_shadow_shadowandflame"
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowandflame.jpg?v=13b514dd"
   },
   "improved_soul_leech": {
    "name": "Improved Soul Leech",
@@ -1350,7 +1350,7 @@
      100
     ]
    ],
-   "iconFile": "ability_warlock_improvedsoulleech"
+   "icon": "assets/game/warlock/talents/ability_warlock_improvedsoulleech.jpg?v=7bcca8a6"
   },
   "backdraft": {
    "name": "Backdraft",
@@ -1368,14 +1368,14 @@
      30
     ]
    ],
-   "iconFile": "ability_warlock_backdraft"
+   "icon": "assets/game/warlock/talents/ability_warlock_backdraft.jpg?v=ecb335bc"
   },
   "shadowfury": {
    "name": "Shadowfury",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Shadowfury is unleashed, causing 357 to 421 Shadow damage and stunning all enemies within 8 yds for 3 sec.",
-   "iconFile": "spell_shadow_shadowfury",
+   "icon": "assets/game/warlock/talents/spell_shadow_shadowfury.jpg?v=ea9e0788",
    "active": true
   },
   "empowered_imp": {
@@ -1397,7 +1397,7 @@
      100
     ]
    ],
-   "iconFile": "ability_warlock_empoweredimp"
+   "icon": "assets/game/warlock/talents/ability_warlock_empoweredimp.jpg?v=c28b87bd"
   },
   "fire_and_brimstone": {
    "name": "Fire and Brimstone",
@@ -1418,14 +1418,14 @@
      25
     ]
    ],
-   "iconFile": "ability_warlock_fireandbrimstone"
+   "icon": "assets/game/warlock/talents/ability_warlock_fireandbrimstone.jpg?v=92d1684f"
   },
   "chaos_bolt": {
    "name": "Chaos Bolt",
    "maxPts": 1,
    "prereq": null,
    "tooltipTemplate": "Sends a bolt of chaotic fire at the enemy, dealing 870 to 1049 Shadowflame damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects.",
-   "iconFile": "ability_warlock_chaosbolt",
+   "icon": "assets/game/warlock/talents/ability_warlock_chaosbolt.jpg?v=539b7030",
    "active": true
   }
  },
@@ -1640,54 +1640,66 @@
    "key": "blood_horror",
    "name": "Blood Horror",
    "rarity": "artifact",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Teaches you: Blood Horror. \nBlood Horror: While channeling, encases yourself in a barrier of blood, making you immune to silence, stun and interrupt effects. Any time an enemy within 25 yards deals non-periodic damage to you, you drain their health and cause them to run in horror for 4 sec.",
-   "iconFile": "ability_deathwing_bloodcorruption_earth",
+   "icon": "assets/game/warlock/mystic-enchants/ability_deathwing_bloodcorruption_earth.jpg?v=e17d58ec",
    "requiredLevel": 35
   },
   {
    "key": "burning_rush",
    "name": "Burning Rush",
    "rarity": "artifact",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Teaches you: Burning Rush. \nBurning Rush: Drains 3% of your maximum health per second to increase your movement speed by 50%. Movement-impairing effects may not reduce you below 100% of normal movement speed. Lasts until cancelled.",
-   "iconFile": "ability_deathwing_sealarmorbreachtga",
+   "icon": "assets/game/warlock/mystic-enchants/ability_deathwing_sealarmorbreachtga.jpg?v=562ed2dd",
    "requiredLevel": 35
   },
   {
    "key": "demonic_leap",
    "name": "Demonic Leap",
    "rarity": "artifact",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Demonic Leap. \nDemonic Leap: Leap into the air upon demonic wings, moving a short distance. If you reactivate it within 1 sec you will leap again.",
-   "iconFile": "ability_demonhunter_glide",
+   "icon": "assets/game/warlock/mystic-enchants/ability_demonhunter_glide.jpg?v=98332208",
    "requiredLevel": 35
   },
   {
    "key": "soul_swap",
    "name": "Soul Swap",
    "rarity": "artifact",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Teaches you: Soul Swap. \nSoul Swap: You copy your Corruption, Curse of Agony and Unstable Affliction effects from the target.\n\nFor 5 sec afterwards, the next target you cast Soul Swap: Exhale on will be afflicted by the copied damage-over-time effects.\n\nYou cannot Soul Swap to the same target.",
-   "iconFile": "ability_warlock_soulswap",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_soulswap.jpg?v=ed9a3045",
    "requiredLevel": 35
   },
   {
    "key": "unending_resolve",
    "name": "Unending Resolve",
    "rarity": "artifact",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Unending Resolve. \nUnending Resolve: Hardens your skin, reducing all damage taken by 30% and granting immunity to interrupt, silence, and pushback effects for 8 sec.\n\n(60% while in Dark Apotheosis)",
-   "iconFile": "spell_shadow_demonictactics",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_demonictactics.jpg?v=fc4087e9",
    "requiredLevel": 35
   },
   {
    "key": "agent_of_chaos",
    "name": "Agent of Chaos",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Chaos Bolt\nImmolate deals half as much direct damage but lasts for 3 seconds longer.\n\nPeriodic damage from Immolate benefits from spell haste and reduces the cooldown of Chaos Bolt by 0.5 sec.",
-   "iconFile": "custom_warlock_48_border",
+   "icon": "assets/game/warlock/mystic-enchants/custom_warlock_48_border.jpg?v=fad7ad27",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1700,18 +1712,22 @@
    "key": "agonizing_coil",
    "name": "Agonizing Coil",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Using Death Coil applies Curse of Agony on the target and harvests their essence, granting you 10% increased chance to critically strike with spells for 15 sec.\n\nThe cooldown of Death Coil is reduced by 90 sec, however it no longer causes the target to run in horror.",
-   "iconFile": "_deathcoil_color_purple",
+   "icon": "assets/game/warlock/mystic-enchants/_deathcoil_color_purple.jpg?v=82e2ec22",
    "requiredLevel": 42
   },
   {
    "key": "chaos_manifesting",
    "name": "Chaos Manifesting",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Chaos Bolt\nAfter casting Chaos Bolt, you receive a Fire or Shadow Empowerment, increasing your damage dealt with that school by 10% for 10 sec.",
-   "iconFile": "ability_warlock_chaosbolt",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_chaosbolt.jpg?v=539b7030",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1724,36 +1740,44 @@
    "key": "cursed_shadows",
    "name": "Cursed Shadows",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Dealing damage with Curse of Agony has a 30% chance to increase the damage of your next Shadow Bolt by 20% and to reduce its mana cost by 20%. Lasts for 12 sec.",
-   "iconFile": "spell_shadow_soulleech_3",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_soulleech_3.jpg?v=784008bb",
    "requiredLevel": 15
   },
   {
    "key": "curseweaver",
    "name": "Curseweaver",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Your Curse of Agony and Curse of Doom no longer occupy a Curse slot, meaning they can be applied alongside any other curse.\n\nCorruption deals 4% more damage per Curse that you have applied on the target.",
-   "iconFile": "warlock_curse_shadow_aura",
+   "icon": "assets/game/warlock/mystic-enchants/warlock_curse_shadow_aura.jpg?v=e3d319e5",
    "requiredLevel": 15
   },
   {
    "key": "dark_harvest",
    "name": "Dark Harvest",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Dealing periodic damage with Corruption, Curse of Agony, Seed of Corruption or Unstable Affliction increases the damage of your next Drain Life by 5%, stacking up to 10 times.\n\nKilling an opponent that yields experience or honor grants 3 stacks.",
-   "iconFile": "ability_demonhunter_darkness",
+   "icon": "assets/game/warlock/mystic-enchants/ability_demonhunter_darkness.jpg?v=18f357fc",
    "requiredLevel": 15
   },
   {
    "key": "decisive_decimation",
    "name": "Decisive Decimation",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Conflagrate\nCasting Conflagrate reduces the cast time of your next Soul Fire by 30% and removes the Soul Shard cost.",
-   "iconFile": "sha_spell_warlock_demonsoul_nightmare",
+   "icon": "assets/game/warlock/mystic-enchants/sha_spell_warlock_demonsoul_nightmare.jpg?v=46c548bc",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1766,9 +1790,11 @@
    "key": "demonic_influence",
    "name": "Demonic Influence",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Requires Metamorphosis\nWhile in Metamorphosis your Demon and Wild Imps deal 20% increased damage.",
-   "iconFile": "_warlock_imp",
+   "icon": "assets/game/warlock/mystic-enchants/_warlock_imp.jpg?v=c52dc0e5",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1781,27 +1807,33 @@
    "key": "demonic_persistence",
    "name": "Demonic Persistence",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Casting Hand of Gul'dan increases the damage of your summoned demon and Wild Imps by 5%, stacking up to 3 times. Lasts 35 seconds.",
-   "iconFile": "ability_warlock_impoweredimp",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_impoweredimp.jpg?v=f76c8767",
    "requiredLevel": 30
   },
   {
    "key": "demonic_siphon",
    "name": "Demonic Siphon",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "When your Drain Life deals damage it also heals your summoned demon for 2% of its health and increases its damage by 3%, stacking up to 5 times. Lasts for 10 sec.",
-   "iconFile": "_d3wallofzombies",
+   "icon": "assets/game/warlock/mystic-enchants/_d3wallofzombies.jpg?v=e73c7c45",
    "requiredLevel": 15
   },
   {
    "key": "demonic_whirl",
    "name": "Demonic Whirl",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Requires Summon Felguard\nDealing damage with Shadow Bolt or Incinerate causes your Felguard to cast a Whirlwind, dealing damage to enemies within 8 yards.\n\nThis can only occur once every 3 sec.",
-   "iconFile": "ability_warlock_improveddemonictactics",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_improveddemonictactics.jpg?v=f5516d0c",
    "requiredLevel": 50,
    "requires": [
     {
@@ -1814,9 +1846,11 @@
    "key": "doomcallers_wrath",
    "name": "Doomcaller's Wrath",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Requires Eradication\nUsing Curse of Doom grants you Eradication.\n\nDuration of Eradication is increased by 5 seconds.\n\nIncreases the damage of Curse of Doom by 30%.",
-   "iconFile": "ability_warlock_eradication",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_eradication.jpg?v=81eefa79",
    "requiredLevel": 42,
    "requires": [
     {
@@ -1829,54 +1863,66 @@
    "key": "dread_communion",
    "name": "Dread Communion",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Your demon is healed for 25% of the healing you receive. Casting Demonic Empowerment triples the effect of your Master Demonologist talent for 10 seconds.",
-   "iconFile": "ability_warlock_demonicempowerment",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_demonicempowerment.jpg?v=b64686ad",
    "requiredLevel": 40
   },
   {
    "key": "dusk_till_dawn",
    "name": "Dusk Till Dawn",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Casting Shadow Bolt, Incinerate, Soul Fire, Searing Pain or Chaos Bolt grants you Dusk Till Dawn.\nDusk Till Dawn: Increases the damage of your next Shadowburn by 10%. Stacks up to 5 times and lasts 15 sec.\n\nWhen used with at least 3 stacks, Shadowburn hits 2 additional targets, applies Corruption to the targets and doesn't cost a Soul Shard.",
-   "iconFile": "5_warlock27_border",
+   "icon": "assets/game/warlock/mystic-enchants/5_warlock27_border.jpg?v=81132d8f",
    "requiredLevel": 20
   },
   {
    "key": "endless_flames",
    "name": "Endless Flames",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases the duration of Pyroclasm and Shadowflame by 6 seconds. Additionally, Shadowflame deals 15% increased damage.",
-   "iconFile": "inv_helm_hungeringdarkness_d_01",
+   "icon": "assets/game/warlock/mystic-enchants/inv_helm_hungeringdarkness_d_01.jpg?v=f54f613e",
    "requiredLevel": 38
   },
   {
    "key": "eternal_torment",
    "name": "Eternal Torment",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Your Haunt increases the damage of your Shadow damage-over-time effects by an additional 7%. \n\nYour Soul Swap: Exhale can now be cast to apply your DoTs on two targets.",
-   "iconFile": "ability_warlock_improvedsoulleech",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_improvedsoulleech.jpg?v=7bcca8a6",
    "requiredLevel": 60
   },
   {
    "key": "fel_damnation",
    "name": "Fel Damnation",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "After using Fel Domination your next Hand of Gul'dan summons double the amount of Wild Imps. Casting Hand of Gul'dan reduces the cooldown of Fel Domination by 15 seconds.",
-   "iconFile": "_demonhand_warlock",
+   "icon": "assets/game/warlock/mystic-enchants/_demonhand_warlock.jpg?v=52b145d2",
    "requiredLevel": 30
   },
   {
    "key": "fire_attunement",
    "name": "Fire Attunement",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Requires Molten Core\nDealing damage with Immolate grants you Fire Attunement.\nFire Attunement: Increases the chance to trigger your next Molten Core talent by 1%. Stacks up to 15 and lasts 15 sec.",
-   "iconFile": "ability_warlock_fireandbrimstone",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_fireandbrimstone.jpg?v=92d1684f",
    "requiredLevel": 35,
    "requires": [
     {
@@ -1889,18 +1935,22 @@
    "key": "fire_storm",
    "name": "Fire Storm",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Teaches you: Fire Storm. \nFire Storm: Calls down a fiery rain to burn enemies in the area of effect for 272.34 Fire damage over 6 sec.\n\n@ext:Scales with Rain of Fire modifiers.:ext@",
-   "iconFile": "ability_ironmaidens_rapidfire",
+   "icon": "assets/game/warlock/mystic-enchants/ability_ironmaidens_rapidfire.jpg?v=8a513f93",
    "requiredLevel": 20
   },
   {
    "key": "guldans_chosen",
    "name": "Gul'dan's Chosen",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Chaos Bolt\nCasting Chaos Bolt causes your Destruction spells to not consume Backdraft for 4 sec.",
-   "iconFile": "achievement_thenighthold_guldan",
+   "icon": "assets/game/warlock/mystic-enchants/achievement_thenighthold_guldan.jpg?v=2ce940f7",
    "requiredLevel": 60,
    "requires": [
     {
@@ -1913,63 +1963,75 @@
    "key": "heating_up",
    "name": "Heating Up!",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Your Conflagrate has 15% increased critical chance and increases your Fire damage dealt to the target by 2%, stacking up to 5 times.",
-   "iconFile": "achievement_firelands_raid_ragnaros",
+   "icon": "assets/game/warlock/mystic-enchants/achievement_firelands_raid_ragnaros.jpg?v=222f616f",
    "requiredLevel": 40
   },
   {
    "key": "heretic_of_guldan",
    "name": "Heretic of Gul'dan",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Your Incinerate, Soul Fire and Shadow Bolt reduce the cooldown of Hand of Gul'dan by 0 sec.",
-   "iconFile": "_book2motif_illidan",
+   "icon": "assets/game/warlock/mystic-enchants/_book2motif_illidan.jpg?v=426025db",
    "requiredLevel": 30
   },
   {
    "key": "inferno",
    "name": "Inferno",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Enemies hit by your Hellfire have a 20% chance to trigger an additional Hellfire explosion, dealing 50% of the original damage.",
-   "iconFile": "spell_fire_incinerate",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_incinerate.jpg?v=0845f1dc",
    "requiredLevel": 30
   },
   {
    "key": "inner_flame",
    "name": "Inner Flame",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Dealing direct damage with Fire or Shadow spells has a 12% chance to cause your next direct damage Fire spell to be a guaranteed critical strike.",
-   "iconFile": "spell_fire_playingwithfire",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_playingwithfire.jpg?v=216359fa",
    "requiredLevel": 15
   },
   {
    "key": "pendulum",
    "name": "Pendulum",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "Receive 3% spell haste while above 50% mana and 3% spell critical strike chance while below 50% mana.",
-   "iconFile": "inv_elemental_mote_mana",
+   "icon": "assets/game/warlock/mystic-enchants/inv_elemental_mote_mana.jpg?v=715abc19",
    "requiredLevel": 15
   },
   {
    "key": "pure_shadow",
    "name": "Pure Shadow",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Casting offensive Shadow spells increases the damage of Shadow Bolt by 1%, Shadow Crash by 5% and Shadowfury by 10%. Lasts for 15 sec and stacks up to 6 times.",
-   "iconFile": "_seed_shadow",
+   "icon": "assets/game/warlock/mystic-enchants/_seed_shadow.jpg?v=1acf96eb",
    "requiredLevel": 15
   },
   {
    "key": "pyroclasmic_shadows",
    "name": "Pyroclasmic Shadows",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Pyroclasm\nYour Pyroclasm also increases the critical strike chance of your Shadow Bolt by 20%.",
-   "iconFile": "custom_18_shadow_bolt2_border",
+   "icon": "assets/game/warlock/mystic-enchants/custom_18_shadow_bolt2_border.jpg?v=1a7db05c",
    "requiredLevel": 40,
    "requires": [
     {
@@ -1982,9 +2044,11 @@
    "key": "searing_brand",
    "name": "Searing Brand",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Requires Dark Apotheosis\nYour Searing Pain reduces the targets attack power by 151. This does not stack with other similar effects. \n\nBranding a target deals additional high-threat Fire damage, this can only occur once every 15 seconds per target.",
-   "iconFile": "ability_demonhunter_chaoticimprint_fire",
+   "icon": "assets/game/warlock/mystic-enchants/ability_demonhunter_chaoticimprint_fire.jpg?v=387bea81",
    "requiredLevel": 15,
    "requires": [
     {
@@ -1996,45 +2060,55 @@
    "key": "searing_flames",
    "name": "Searing Flames",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "The periodic effect of Immolate now deals damage to all enemies within 8 yards of the target, but can only be active on one target at a time.\n\nEach time Immolate deals periodic damage, your Imp's Firebolt critical strike chance increases by 3%, consumed when it critically hits.",
-   "iconFile": "inv_misc_volatilefire",
+   "icon": "assets/game/warlock/mystic-enchants/inv_misc_volatilefire.jpg?v=710a6a17",
    "requiredLevel": 15
   },
   {
    "key": "shadow_funnel",
    "name": "Shadow Funnel",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "While channeling Health Funnel on your Voidwalker, its auto-attacks trigger a Void Nova, dealing Shadow damage to enemies within 5 yards. In addition, your Health Funnel does not cause any threat.",
-   "iconFile": "spell_shadow_shadowmend",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadowmend.jpg?v=ed888325",
    "requiredLevel": 15
   },
   {
    "key": "shadow_siphon",
    "name": "Shadow Siphon",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Your Shadowburn deals 25% more damage to targets below 35% health and restores 10% health when you gain a Soul Shard from Shadowburn.",
-   "iconFile": "ability_warlock_soulsiphon",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_soulsiphon.jpg?v=18466b94",
    "requiredLevel": 20
   },
   {
    "key": "soul_link",
    "name": "Soul Link",
    "rarity": "epic",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Soul Link.\n\n@ext:Can not be used if the Soul Link talent is learned.:ext@\n@s:1469028:0:0:0:-48@",
-   "iconFile": "spell_shadow_gathershadows",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_gathershadows.jpg?v=c188ef91",
    "requiredLevel": 45
   },
   {
    "key": "sudden_aftermath",
    "name": "Sudden Aftermath",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Aftermath\nCasting Immolate on a monster which is not in combat triggers Aftermath, slowing it by 70% for 5 sec. In addition, your Aftermath increases the damage of your Immolate by 10%.",
-   "iconFile": "spell_fire_immolation",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_immolation.jpg?v=53b45bc0",
    "requiredLevel": 15,
    "requires": [
     {
@@ -2047,9 +2121,11 @@
    "key": "twilight_reaper",
    "name": "Twilight Reaper",
    "rarity": "epic",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Requires Nightfall\nThe Shadow Trance effect from Nightfall also reduces the mana cost of your Shadow Bolt by 100%.\n\nShadow Trance also makes the Shadow Bolt heal you for 50% of the damage dealt.\n\nAfter killing an opponent that yields experience or honor you trigger Shadow Trance.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_twilight.jpg?v=4d2eabad",
    "requiredLevel": 25,
    "requires": [
     {
@@ -2062,9 +2138,11 @@
    "key": "unstable_void",
    "name": "Unstable Void",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Backdraft\nRequires Backlash\nYour Shadowfury and Shadow Crash trigger your Backdraft talent. If these deal damage to a monster Backlash talent also triggers.\nBackdraft: Cast time and global cooldown of your next three Destruction spell reduced by 30%.",
-   "iconFile": "ability_warlock_backdraftgreen",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_backdraftgreen.jpg?v=4d659fa9",
    "requiredLevel": 50,
    "requires": [
     {
@@ -2081,18 +2159,20 @@
    "key": "wanding",
    "name": "Wanding",
    "rarity": "epic",
-   "spec": "",
+   "specs": [],
    "tooltip": "Wand attacks grant you stacks that increase the cast speed of your next spell by 5%, stacks up to 5 times and lasts 6 sec.",
-   "iconFile": "ability_shootwand",
+   "icon": "assets/game/warlock/mystic-enchants/ability_shootwand.jpg?v=5b9d767d",
    "requiredLevel": 15
   },
   {
    "key": "wild_felfire",
    "name": "Wild Felfire",
    "rarity": "epic",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Requires Chaos Bolt\nDealing damage with Chaos Bolt calls down a fiery rain, dealing 82.94 Fire damage to nearby enemies every second for 4 sec.",
-   "iconFile": "spell_fire_felrainoffire",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_felrainoffire.jpg?v=fb7b2bf7",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2105,45 +2185,55 @@
    "key": "affliction_mastery",
    "name": "Affliction Mastery",
    "rarity": "legendary",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Increases your spell haste by 4% and the damage of your Corruption by 6%.",
-   "iconFile": "ability_warlock_haunt",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_haunt.jpg?v=04e9dbb9",
    "requiredLevel": 30
   },
   {
    "key": "bane_of_havoc",
    "name": "Bane of Havoc",
    "rarity": "legendary",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Teaches you: Bane of Havoc. \n\nBane of Havoc: Curses the ground with a demonic bane, causing your Shadow Bolt, Incinerate, Soul Fire and Chaos Bolt spells to also strike targets marked with the bane for 50% of the damage dealt and have 15% increased critical strike chance. Lasts 15 sec.",
-   "iconFile": "ability_warlock_baneofhavoc",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_baneofhavoc.jpg?v=b8967e61",
    "requiredLevel": 30
   },
   {
    "key": "cataclysmic_burst",
    "name": "Cataclysmic Burst",
    "rarity": "legendary",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Dealing damage with Incinerate extends the duration of your Immolate by 2 seconds and increases the periodic damage of Immolate by 10%, stacking up to 4 times. This effect is consumed when casting Conflagrate.",
-   "iconFile": "sha_spell_fire_blueimmolation_nightmare",
+   "icon": "assets/game/warlock/mystic-enchants/sha_spell_fire_blueimmolation_nightmare.jpg?v=3895d89e",
    "requiredLevel": 30
   },
   {
    "key": "crazy_cultist",
    "name": "Crazy Cultist",
    "rarity": "legendary",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Your damaging Warlock spell casts have a 15% chance to cast an additional random Warlock spell for free.",
-   "iconFile": "ability_priest_clarityofpower",
+   "icon": "assets/game/warlock/mystic-enchants/ability_priest_clarityofpower.jpg?v=01a190eb",
    "requiredLevel": 30
   },
   {
    "key": "demonic_reoccurence",
    "name": "Demonic Reoccurence",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Requires Metamorphosis\nReduces the cooldown of Metamorphosis by 75 sec, but reduces the bonus armor granted by 50% and you no longer benefit from the reduced chance to be crit or reduced duration of stuns and snares.",
-   "iconFile": "achievement_boss_archimonde",
+   "icon": "assets/game/warlock/mystic-enchants/achievement_boss_archimonde.jpg?v=d2bb80f9",
    "requiredLevel": 60,
    "requires": [
     {
@@ -2156,684 +2246,839 @@
    "key": "demonology_mastery",
    "name": "Demonology Mastery",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the damage done by your summoned demon by 10% and its attack speed by 10%.",
-   "iconFile": "spell_shadow_demonicempathy",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_demonicempathy.jpg?v=112c79b2",
    "requiredLevel": 30
   },
   {
    "key": "destruction_mastery",
    "name": "Destruction Mastery",
    "rarity": "legendary",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases your Fire and Shadow damage done by 4% and the damage of your Immolate by an additional 5%.",
-   "iconFile": "ability_warlock_fireandbrimstone",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_fireandbrimstone.jpg?v=92d1684f",
    "requiredLevel": 30
   },
   {
    "key": "endless_agony",
    "name": "Endless Agony",
    "rarity": "legendary",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Dealing damage with Curse of Agony applies Endless Agony.\n\nDealing damage with Drain Life reduces the active duration and cooldown of your Curse of Doom by 3 sec.\n\nAfter a target of your Curse of Agony dies, any stacks of Endless Agony will be spread to nearby enemies within 10 yards.\nEndless Agony: Increases your damage dealt to the target with Curse of Agony by 4% and Curse of Doom by 7%. Stacks up to 20 times and lasts for 12 sec.",
-   "iconFile": "ability_warlock_improvedsoulleech",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_improvedsoulleech.jpg?v=7bcca8a6",
    "requiredLevel": 30
   },
   {
    "key": "enslave_demon",
    "name": "Enslave Demon",
    "rarity": "legendary",
-   "spec": "Demonology, Destruction, Affliction",
+   "specs": [
+    "Demonology",
+    "Destruction",
+    "Affliction"
+   ],
    "tooltip": "Teaches you how to permanently Enslave Demons. \nEnslave Demon: Begins enslaving a demon to be your companion. \n\nYour armor is reduced by 100% while you focus on taming the demon for 20 sec. \n\nIf you lose the demon's attention for any reason, the enslaving process will fail. Each type of demon has unique abilities that you will be able to make use of.",
-   "iconFile": "spell_warlock_demonbolt",
+   "icon": "assets/game/warlock/mystic-enchants/spell_warlock_demonbolt.jpg?v=e376711b",
    "requiredLevel": 30
   },
   {
    "key": "feeding_the_abyss",
    "name": "Feeding the Abyss",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Your ability to Dodge is replaced with a dark hunger. You have a chance to fully absorb incoming physical damage, storing it for later use. After 10 seconds the stored damage is fed to the abyss, causing your next Life Tap to deal damage to nearby enemies, healing you and your pet based on the damage dealt.\n\n@ext:The chance for the absorb to trigger is equal to 10% plus your spell critical strike chance.:ext@",
-   "iconFile": "_darkhand_shadow",
+   "icon": "assets/game/warlock/mystic-enchants/_darkhand_shadow.jpg?v=54bc6eca",
    "requiredLevel": 30
   },
   {
    "key": "hand_of_guldan",
    "name": "Hand of Gul'dan",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Hand of Gul'dan. \nHand of Gul'dan: Calls down a demonic meteor dealing 295.24 Shadowflame damage to enemies within 5 yards and summons 4 Wild Imps which burst forth to attack the target for 12 sec.",
-   "iconFile": "ability_warlock_handofguldan",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_handofguldan.jpg?v=d6cf3227",
    "requiredLevel": 30
   },
   {
    "key": "nether_portal",
    "name": "Nether Portal",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Nether Portal.\n \nNether Portal: Tear open a portal to the Twisting Nether for 30 sec. Casting Shadow Bolt, Soul Fire or Incinerate summons a demon to fight for you. During Decimation your Soul Fire summons an additional demon.",
-   "iconFile": "inv_netherportal",
+   "icon": "assets/game/warlock/mystic-enchants/inv_netherportal.jpg?v=796e70d7",
    "requiredLevel": 30
   },
   {
    "key": "shadow_crash",
    "name": "Shadow Crash",
    "rarity": "legendary",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Teaches you: Shadow Crash. \nShadow Crash: Hurl a bolt of slow-moving Shadow energy at the destination, dealing Shadow damage to enemies within 8 yards, pulling them towards the center of the explosion and slowing them by 70% for 3 sec.",
-   "iconFile": "_seed_shadow",
+   "icon": "assets/game/warlock/mystic-enchants/_seed_shadow.jpg?v=1acf96eb",
    "requiredLevel": 30
   },
   {
    "key": "soul_erosion",
    "name": "Soul Erosion",
    "rarity": "legendary",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Dealing damage with Unstable Affliction and Curse of Agony has a 8% chance to increase the damage of your next Drain Soul by 300% (500% if the target is below 25% health). Drain Soul cast this way only lasts for 6 sec but is impervious to spell pushback.\n\nIn addition, using Drain Soul the duration of your Haunt, Unstable Affliction, and Shadow Embrace is not reduced on the target.",
-   "iconFile": "ability_warlock_soulsiphon",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_soulsiphon.jpg?v=18466b94",
    "requiredLevel": 50
   },
   {
    "key": "soul_harvest",
    "name": "Soul Harvest",
    "rarity": "legendary",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Soul Harvest. \nSoul Harvest: Increases your magic damage and your pets' damage by 15%. Lasts 6 sec, increased by 3 sec for each target afflicted by your Corruption, Curse of Agony and Immolate up to a maximum of 24 sec.\n\nDoes not stack with other similar effects.",
-   "iconFile": "spell_warlock_demonsoul",
+   "icon": "assets/game/warlock/mystic-enchants/spell_warlock_demonsoul.jpg?v=5546e383",
    "requiredLevel": 30
   },
   {
    "key": "aftermath",
    "name": "Aftermath",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the periodic damage done by your Immolate by 6%, and your Conflagrate has a 100% chance to daze the target for 5 sec.\n\nThis Mystic Enchant does not stack with the Aftermath Talent.",
-   "iconFile": "spell_fire_fire",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_fire.jpg?v=fc2a4a48",
    "requiredLevel": 45
   },
   {
    "key": "amplify_curse",
    "name": "Amplify Curse",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nReduces the global cooldown of your Curses by -0.5 sec.\n\nThis Mystic Enchant does not stack with the Amplify Curse Talent.",
-   "iconFile": "spell_shadow_contagion",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_contagion.jpg?v=1607e76c",
    "requiredLevel": 45
   },
   {
    "key": "bane",
    "name": "Bane",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nReduces the casting time of your Shadow Bolt. Chaos Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec.\n\nThis Mystic Enchant does not stack with the Bane Talent.",
-   "iconFile": "spell_shadow_deathpact",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_deathpact.jpg?v=b447fb8b",
    "requiredLevel": 45
   },
   {
    "key": "cataclysm",
    "name": "Cataclysm",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nReduces the Mana cost of your Destruction spells by 10%.\n\nThis Mystic Enchant does not stack with the Cataclysm Talent.",
-   "iconFile": "spell_fire_windsofwoe",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_windsofwoe.jpg?v=38c6bec8",
    "requiredLevel": 45
   },
   {
    "key": "dark_power_well",
    "name": "Dark Power Well",
    "rarity": "rare",
-   "spec": "Shadow, Holy",
+   "specs": [
+    "Shadow",
+    "Holy"
+   ],
    "tooltip": "Casting damaging Shadow spells has a 15% chance to make your next non-Shadow spell have no cost.",
-   "iconFile": "spell_shadow_shadesofdarkness",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadesofdarkness.jpg?v=019640d0",
    "requiredLevel": 45
   },
   {
    "key": "demonic_aegis",
    "name": "Demonic Aegis",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effectiveness of your Demon Armor, Summoner's Armor and Fel Armor spells by 30%.\n\nThis Mystic Enchant does not stack with the Demonic Aegis Talent.",
-   "iconFile": "spell_shadow_ragingscream",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_ragingscream.jpg?v=ff15acef",
    "requiredLevel": 45
   },
   {
    "key": "demonic_brutality",
    "name": "Demonic Brutality",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%, and increases the attack power bonus on your Felguard's Demonic Frenzy effect by 3%.\n\n@ext:This Mystic Enchant does not stack with the Demonic Brutality Talent.:ext@",
-   "iconFile": "spell_shadow_summonvoidwalker",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonvoidwalker.jpg?v=7e7553df",
    "requiredLevel": 45
   },
   {
    "key": "demonic_embrace",
    "name": "Demonic Embrace",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases your total Stamina by 10%.\n\nThis Mystic Enchant does not stack with the Demonic Embrace Talent.",
-   "iconFile": "spell_shadow_metamorphosis",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_metamorphosis.jpg?v=3cfe888b",
    "requiredLevel": 45
   },
   {
    "key": "demonic_power",
    "name": "Demonic Power",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nReduces the cooldown of your Succubus' Lash of Pain spell by 6 sec. and reduces the casting time of your Imp's Firebolt spell by -0.50 sec.\n\nThis Mystic Enchant does not stack with the Demonic Power Talent.",
-   "iconFile": "spell_fire_firebolt",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_firebolt.jpg?v=f30c06df",
    "requiredLevel": 45
   },
   {
    "key": "destructive_reach",
    "name": "Destructive Reach",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your Destruction spells by 20% and reduces threat caused by Destruction spells by 20%.\n\nThis Mystic Enchant does not stack with the Destructive Reach Talent.",
-   "iconFile": "spell_shadow_corpseexplode",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_corpseexplode.jpg?v=b8e8bc50",
    "requiredLevel": 45
   },
   {
    "key": "empowered_corruption",
    "name": "Empowered Corruption",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage of your Corruption spell by an amount equal to 36% of your spell power.\n\nThis Mystic Enchant does not stack with the Empowered Corruption Talent.",
-   "iconFile": "spell_shadow_abominationexplosion",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_abominationexplosion.jpg?v=31fc3a43",
    "requiredLevel": 45
   },
   {
    "key": "fel_concentration",
    "name": "Fel Concentration",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks  while casting Drain Life, Drain Mana, Drain Soul,  Unstable Affliction, and Haunt spells by 70%.\n\nThis Mystic Enchant does not stack with the Fel Concentration Talent.",
-   "iconFile": "spell_shadow_fingerofdeath",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_fingerofdeath.jpg?v=8eea1833",
    "requiredLevel": 45
   },
   {
    "key": "fel_domination",
    "name": "Fel Domination",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Teaches you: Fel Domination\n\n@ext:Can not be used if the Fel Domination talent is learned.:ext@ \n@s:1468708:0:0:0:-32@",
-   "iconFile": "spell_nature_removecurse",
+   "icon": "assets/game/warlock/mystic-enchants/spell_nature_removecurse.jpg?v=271ab354",
    "requiredLevel": 45
   },
   {
    "key": "fel_synergy",
    "name": "Fel Synergy",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nYou have a 100% chance to heal your pet for 15% of the amount of spell damage done by you.\n\nThis Mystic Enchant does not stack with the Fel Synergy Talent.",
-   "iconFile": "spell_shadow_felmending",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_felmending.jpg?v=eadd11d3",
    "requiredLevel": 45
   },
   {
    "key": "fel_vitality",
    "name": "Fel Vitality",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the Stamina and Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by 15% and increases your maximum health and mana by 3%.\n\nThis Mystic Enchant does not stack with the Fel Vitality Talent.",
-   "iconFile": "spell_holy_magicalsentry",
+   "icon": "assets/game/warlock/mystic-enchants/spell_holy_magicalsentry.jpg?v=cc7907b0",
    "requiredLevel": 45
   },
   {
    "key": "glyph_of_chaos_bolt",
    "name": "Glyph of Chaos Bolt",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Reduces the cooldown on Chaos Bolt by -2 sec.",
-   "iconFile": "ability_warlock_chaosbolt",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_chaosbolt.jpg?v=539b7030",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_conflagrate",
    "name": "Glyph of Conflagrate",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Your Conflagrate spell no longer consumes your Immolate or Shadowflame spell from the target.",
-   "iconFile": "spell_fire_fireball",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_fireball.jpg?v=ef9598f2",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_corruption",
    "name": "Glyph of Corruption",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Your Corruption spell has a 5% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.",
-   "iconFile": "spell_shadow_abominationexplosion",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_abominationexplosion.jpg?v=31fc3a43",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_curse_of_agony",
    "name": "Glyph of Curse of Agony",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Increases the duration of your Curse of Agony by 4 sec.",
-   "iconFile": "spell_shadow_curseofsargeras",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_curseofsargeras.jpg?v=d47b184d",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_death_coil",
    "name": "Glyph of Death Coil",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Increases the duration of your Death Coil by 0.5 sec.",
-   "iconFile": "spell_shadow_deathcoil",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_deathcoil.jpg?v=286e3938",
    "requiredLevel": 42
   },
   {
    "key": "glyph_of_demonic_circle",
    "name": "Glyph of Demonic Circle",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Reduces the cooldown on Demonic Circle by -4 sec.",
-   "iconFile": "spell_shadow_demoniccircleteleport",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_demoniccircleteleport.jpg?v=3fd57de7",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_fear",
    "name": "Glyph of Fear",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Increases the damage your Fear target can take before the Fear effect is removed by 20%.",
-   "iconFile": "spell_shadow_possession",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_possession.jpg?v=6ba1c768",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_felguard",
    "name": "Glyph of Felguard",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the Felguard's total attack power by 20%.",
-   "iconFile": "spell_shadow_summonfelguard",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonfelguard.jpg?v=2a7da1fd",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_felhunter",
    "name": "Glyph of Felhunter",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "When your Felhunter uses Devour Magic, you will also be healed for that amount.",
-   "iconFile": "spell_shadow_summonfelhunter",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonfelhunter.jpg?v=46076ddf",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_haunt",
    "name": "Glyph of Haunt",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "The bonus damage granted by your Haunt spell is increased by an additional 3%.",
-   "iconFile": "ability_warlock_haunt",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_haunt.jpg?v=04e9dbb9",
    "requiredLevel": 60
   },
   {
    "key": "glyph_of_health_funnel",
    "name": "Glyph of Health Funnel",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Reduces the pushback suffered from damaging attacks while channeling your Health Funnel spell by 100%.",
-   "iconFile": "spell_shadow_lifedrain",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_lifedrain.jpg?v=92864693",
    "requiredLevel": 12
   },
   {
    "key": "glyph_of_healthstone",
    "name": "Glyph of Healthstone",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "You receive 30% more healing from using a healthstone.",
-   "iconFile": "inv_stone_04",
+   "icon": "assets/game/warlock/mystic-enchants/inv_stone_04.jpg?v=5636d120",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_howl_of_terror",
    "name": "Glyph of Howl of Terror",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Reduces the cooldown on your Howl of Terror spell by -8 sec.",
-   "iconFile": "spell_shadow_deathscream",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_deathscream.jpg?v=47725f82",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_immolate",
    "name": "Glyph of Immolate",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases the periodic damage of your Immolate by 10%.",
-   "iconFile": "spell_fire_immolation",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_immolation.jpg?v=53b45bc0",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_imp",
    "name": "Glyph of Imp",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the damage done by your Imp's Firebolt spell by 20%.",
-   "iconFile": "spell_shadow_summonimp",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonimp.jpg?v=5f57d453",
    "requiredLevel": 15
   },
   {
    "key": "glyph_of_incinerate",
    "name": "Glyph of Incinerate",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases the damage done by Incinerate by 5%.",
-   "iconFile": "spell_fire_burnout",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_burnout.jpg?v=734a5b91",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_life_tap",
    "name": "Glyph of Life Tap",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "When you use Life Tap or Dark Pact, you gain 20% of your Spirit as spell power for 40 sec.",
-   "iconFile": "spell_shadow_burningspirit",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_burningspirit.jpg?v=f86d8a40",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_metamorphosis",
    "name": "Glyph of Metamorphosis",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the duration of your Metamorphosis by 6 sec.",
-   "iconFile": "spell_shadow_demonform",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_demonform.jpg?v=5cac5019",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_quick_decay",
    "name": "Glyph of Quick Decay",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Your haste now reduces the time between periodic damage ticks of your Corruption spell.",
-   "iconFile": "spell_shadow_deathanddecay",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_deathanddecay.jpg?v=63397ae3",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_searing_pain",
    "name": "Glyph of Searing Pain",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases the critical strike bonus of your Searing Pain by 20%.",
-   "iconFile": "spell_fire_soulburn",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_soulburn.jpg?v=35eacfa0",
    "requiredLevel": 14
   },
   {
    "key": "glyph_of_shadow_bolt",
    "name": "Glyph of Shadow Bolt",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Reduces the cast time of your Shadow Bolt by 6%.",
-   "iconFile": "spell_shadow_shadowbolt",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadowbolt.jpg?v=ee1f8ee5",
    "requiredLevel": 10
   },
   {
    "key": "glyph_of_shadowburn",
    "name": "Glyph of Shadowburn",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Increases the critical strike chance and damage of Shadowburn by 20% when the target is below 35% health.",
-   "iconFile": "spell_shadow_scourgebuild",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_scourgebuild.jpg?v=05efd9a0",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_shadowflame",
    "name": "Glyph of Shadowflame",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Your Shadowflame also applies a 70% movement speed slow on its victims.",
-   "iconFile": "ability_warlock_shadowflame",
+   "icon": "assets/game/warlock/mystic-enchants/ability_warlock_shadowflame.jpg?v=799e46c1",
    "requiredLevel": 38
   },
   {
    "key": "glyph_of_siphon_life",
    "name": "Glyph of Siphon Life",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Increases the healing you receive from your Siphon Life talent by 25%.",
-   "iconFile": "spell_shadow_requiem",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_requiem.jpg?v=564ea500",
    "requiredLevel": 30
   },
   {
    "key": "glyph_of_soul_link",
    "name": "Glyph of Soul Link",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the percentage of damage shared via your Soul Link by an additional 5%.",
-   "iconFile": "spell_shadow_gathershadows",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_gathershadows.jpg?v=c188ef91",
    "requiredLevel": 20
   },
   {
    "key": "glyph_of_soulstone",
    "name": "Glyph of Soulstone",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases the amount of health you gain from resurrecting via a Soulstone by 300%.",
-   "iconFile": "spell_shadow_soulgem",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_soulgem.jpg?v=924e2a6f",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_succubus",
    "name": "Glyph of Succubus",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Your Succubus's Seduction ability also removes all damage over time effects from the target.",
-   "iconFile": "spell_shadow_summonsuccubus",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonsuccubus.jpg?v=f558276c",
    "requiredLevel": 40
   },
   {
    "key": "glyph_of_unstable_affliction",
    "name": "Glyph of Unstable Affliction",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Decreases the casting time of your Unstable Affliction by -0.2 sec and your Unstable Affliction lasts for 3 additional seconds.",
-   "iconFile": "spell_shadow_unstableaffliction_3",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_unstableaffliction_3.jpg?v=4153471b",
    "requiredLevel": 50
   },
   {
    "key": "glyph_of_voidwalker",
    "name": "Glyph of Voidwalker",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Increases your Voidwalker's total Stamina by 20%.",
-   "iconFile": "spell_shadow_summonvoidwalker",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonvoidwalker.jpg?v=7e7553df",
    "requiredLevel": 10
   },
   {
    "key": "grim_reach",
    "name": "Grim Reach",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the range of your Affliction spells by 20%.\n\nThis Mystic Enchant does not stack with the Grim Reach Talent.",
-   "iconFile": "spell_shadow_callofbone",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_callofbone.jpg?v=2db9e86b",
    "requiredLevel": 45
   },
   {
    "key": "improved_corruption",
    "name": "Improved Corruption",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Corruption by 10%, and increases the critical strike chance of your Seed of Corruption by 5%.\n\nThis Mystic Enchant does not stack with the Improved Corruption Talent.",
-   "iconFile": "spell_shadow_abominationexplosion",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_abominationexplosion.jpg?v=31fc3a43",
    "requiredLevel": 45
   },
   {
    "key": "improved_curse_of_agony",
    "name": "Improved Curse of Agony",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Curse of Agony by 10%.\n\nThis Mystic Enchant does not stack with the Improved Curse of Agony Talent.",
-   "iconFile": "spell_shadow_curseofsargeras",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_curseofsargeras.jpg?v=d47b184d",
    "requiredLevel": 45
   },
   {
    "key": "improved_curse_of_weakness",
    "name": "Improved Curse of Weakness",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount of attack power reduced by your Curse of Weakness by 20%.\n\nThis Mystic Enchant does not stack with the Improved Curse of Weakness Talent.",
-   "iconFile": "spell_shadow_curseofmannoroth",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_curseofmannoroth.jpg?v=bff90a01",
    "requiredLevel": 45
   },
   {
    "key": "improved_drain_soul",
    "name": "Improved Drain Soul",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nReturns 15% of your maximum mana if the target is killed by you while you drain its soul.  In addition, your Affliction spells generate 20% less threat.\n\nThis Mystic Enchant does not stack with the Improved Drain Soul Talent.",
-   "iconFile": "spell_shadow_haunting",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_haunting.jpg?v=f635188e",
    "requiredLevel": 45
   },
   {
    "key": "improved_fear",
    "name": "Improved Fear",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nCauses your Fear spell to inflict a Nightmare on the target when the fear effect ends. The Nightmare effect reduces the target's movement speed by 30% for 5 sec.\n\nThis Mystic Enchant does not stack with the Improved Fear Talent.",
-   "iconFile": "spell_shadow_possession",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_possession.jpg?v=6ba1c768",
    "requiredLevel": 45
   },
   {
    "key": "improved_health_funnel",
    "name": "Improved Health Funnel",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount of Health transferred by your Health Funnel spell by 20% and reduces the health cost by 20%. In addition, your summoned Demon takes 30% less damage while under the effect of your Health Funnel.\n\nThis Mystic Enchant does not stack with the Improved Health Funnel Talent.",
-   "iconFile": "spell_shadow_lifedrain",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_lifedrain.jpg?v=92864693",
    "requiredLevel": 45
   },
   {
    "key": "improved_healthstone",
    "name": "Improved Healthstone",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount of Health restored by your Healthstone by 20%.\n\nThis Mystic Enchant does not stack with the Improved Healthstone Talent.",
-   "iconFile": "inv_stone_04",
+   "icon": "assets/game/warlock/mystic-enchants/inv_stone_04.jpg?v=5636d120",
    "requiredLevel": 45
   },
   {
    "key": "improved_imp",
    "name": "Improved Imp",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%.\n\nThis Mystic Enchant does not stack with the Improved Imp Talent.",
-   "iconFile": "spell_shadow_summonimp",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonimp.jpg?v=5f57d453",
    "requiredLevel": 45
   },
   {
    "key": "improved_life_tap",
    "name": "Improved Life Tap",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount of Mana awarded by your Life Tap spell by 20%.\n\nThis Mystic Enchant does not stack with the Improved Life Tap Talent.",
-   "iconFile": "spell_shadow_burningspirit",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_burningspirit.jpg?v=f86d8a40",
    "requiredLevel": 45
   },
   {
    "key": "improved_searing_pain",
    "name": "Improved Searing Pain",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Searing Pain spell by 10%.\n\nThis Mystic Enchant does not stack with the Improved Searing Pain Talent.",
-   "iconFile": "spell_fire_soulburn",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_soulburn.jpg?v=35eacfa0",
    "requiredLevel": 45
   },
   {
    "key": "improved_shadow_bolt",
    "name": "Improved Shadow Bolt",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Shadow Bolt spell by 10%, and your Shadow Bolt has a 100% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5%. Effect lasts 30 sec.\n\nThis Mystic Enchant does not stack with the Improved Shadow Bolt Talent.",
-   "iconFile": "spell_shadow_shadowbolt",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadowbolt.jpg?v=ee1f8ee5",
    "requiredLevel": 45
   },
   {
    "key": "improved_succubus",
    "name": "Improved Succubus",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nReduces the cast time of your Succubus' Seduction by 66%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%.\n\nThis Mystic Enchant does not stack with the Improved Succubus Talent.",
-   "iconFile": "spell_shadow_summonsuccubus",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_summonsuccubus.jpg?v=f558276c",
    "requiredLevel": 45
   },
   {
    "key": "intensity",
    "name": "Intensity",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks  while casting or channeling any Destruction spell by 70%.\n\nThis Mystic Enchant does not stack with the Intensity Talent.",
-   "iconFile": "spell_fire_lavaspawn",
+   "icon": "assets/game/warlock/mystic-enchants/spell_fire_lavaspawn.jpg?v=137598c9",
    "requiredLevel": 45
   },
   {
    "key": "master_summoner",
    "name": "Master Summoner",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nReduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by 4 sec and the Mana cost by 40%.\n\nThis Mystic Enchant does not stack with the Master Summoner Talent.",
-   "iconFile": "spell_shadow_impphaseshift",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_impphaseshift.jpg?v=d74acc8d",
    "requiredLevel": 45
   },
   {
    "key": "molten_skin",
    "name": "Molten Skin",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nReduces all damage taken by 6%.\n\nThis Mystic Enchant does not stack with the Molten Skin Talent.",
-   "iconFile": "ability_mage_moltenarmor",
+   "icon": "assets/game/warlock/mystic-enchants/ability_mage_moltenarmor.jpg?v=bab7eacc",
    "requiredLevel": 45
   },
   {
    "key": "nightfall",
    "name": "Nightfall",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nGives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.\n\nThis chance increases by an additional 2% every time Shadow Trance does not trigger.\n\nThis Mystic Enchant does not stack with the Nightfall Talent.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_twilight.jpg?v=4d2eabad",
    "requiredLevel": 45
   },
   {
    "key": "ruin",
    "name": "Ruin",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of your Destruction spells and your Imp's Firebolt spell by 100%.\n\nThis Mystic Enchant does not stack with the Ruin Talent.",
-   "iconFile": "spell_shadow_shadowwordpain",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadowwordpain.jpg?v=b37fcc7d",
    "requiredLevel": 45
   },
   {
    "key": "shadowburn",
    "name": "Shadowburn",
    "rarity": "rare",
-   "spec": "Destruction",
+   "specs": [
+    "Destruction"
+   ],
    "tooltip": "Teaches you: Shadowburn\n\n@ext:Can not be used if the Shadowburn talent is learned.:ext@ \n@s:1467877:0:0:0:-48@",
-   "iconFile": "spell_shadow_scourgebuild",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_scourgebuild.jpg?v=05efd9a0",
    "requiredLevel": 20
   },
   {
    "key": "soul_siphon",
    "name": "Soul Siphon",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases the amount drained by your Drain Life and Drain Soul spells by an additional 6% for each of your Affliction effects on the target, up to a maximum of 18% additional effect.\n\nThis Mystic Enchant does not stack with the Soul Siphon Talent.",
-   "iconFile": "spell_shadow_lifedrain02",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_lifedrain02.jpg?v=cfb557da",
    "requiredLevel": 45
   },
   {
    "key": "suppression",
    "name": "Suppression",
    "rarity": "rare",
-   "spec": "Affliction",
+   "specs": [
+    "Affliction"
+   ],
    "tooltip": "Crossover Talent\nIncreases your chance to hit with spells by 3%, and reduces the mana cost of your Affliction spells by 6%.\n\nThis Mystic Enchant does not stack with the Suppression Talent.",
-   "iconFile": "spell_shadow_unsummonbuilding",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_unsummonbuilding.jpg?v=ef8abcc7",
    "requiredLevel": 45
   },
   {
    "key": "unholy_power",
    "name": "Unholy Power",
    "rarity": "rare",
-   "spec": "Demonology",
+   "specs": [
+    "Demonology"
+   ],
    "tooltip": "Crossover Talent\nIncreases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by 15%.\n\nThis Mystic Enchant does not stack with the Unholy Power Talent.",
-   "iconFile": "spell_shadow_shadowworddominate",
+   "icon": "assets/game/warlock/mystic-enchants/spell_shadow_shadowworddominate.jpg?v=10f6799e",
    "requiredLevel": 45
   }
  ],
@@ -2848,7 +3093,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Corrupts the target, causing 822 Shadow damage over 18 sec.",
-   "iconFile": "spell_shadow_abominationexplosion",
+   "icon": "assets/game/warlock/abilities/spell_shadow_abominationexplosion.jpg?v=31fc3a43",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2865,7 +3110,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Curses the target with agony, causing 1176 Shadow damage over 24 sec.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration.  Only one Curse per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_curseofsargeras",
+   "icon": "assets/game/warlock/abilities/spell_shadow_curseofsargeras.jpg?v=d47b184d",
    "costValue": "0.1",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2882,7 +3127,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Curses the target with impending doom, causing 2765 Shadow damage after 1 min.  If the target yields experience or honor when it dies from this damage, a Doomguard will be summoned.  Cannot be cast on players.",
-   "iconFile": "spell_shadow_auraofdarkness",
+   "icon": "assets/game/warlock/abilities/spell_shadow_auraofdarkness.jpg?v=41866e60",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2900,7 +3145,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Curses the target for 5 min, reducing Arcane, Fire, Frost, Nature and Shadow resistances by 75 and increasing magic damage taken by 13%.  Only one Curse per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_chilltouch",
+   "icon": "assets/game/warlock/abilities/spell_shadow_chilltouch.jpg?v=bf6768d5",
    "costValue": "0.1",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2917,7 +3162,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Forces the target to speak in Demonic, increasing the casting time of all spells by 30%.  Only one Curse per Warlock can be active on any one target.  Lasts 30 sec.",
-   "iconFile": "spell_shadow_curseoftounges",
+   "icon": "assets/game/warlock/abilities/spell_shadow_curseoftounges.jpg?v=a5e84899",
    "costValue": "0.04",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2934,7 +3179,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Target's melee attack power is reduced by 163 and armor is reduced by 5% for 2 min.  Only one Curse per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_curseofmannoroth",
+   "icon": "assets/game/warlock/abilities/spell_shadow_curseofmannoroth.jpg?v=bff90a01",
    "costValue": "0.1",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2951,7 +3196,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Drains 305 of your summoned demon's Mana, returning 100% to you.",
-   "iconFile": "spell_shadow_darkritual",
+   "icon": "assets/game/warlock/abilities/spell_shadow_darkritual.jpg?v=e26c23cd",
    "scaling": [
     {
      "stat": "sp",
@@ -2969,7 +3214,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Causes the enemy target to run in horror for 3 sec and causes 406 Shadow damage.  The caster gains 300% of the damage caused in health.",
-   "iconFile": "spell_shadow_deathcoil",
+   "icon": "assets/game/warlock/abilities/spell_shadow_deathcoil.jpg?v=286e3938",
    "costValue": "0.23",
    "costUnit": "percent",
    "costPower": "mana",
@@ -2987,7 +3232,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Transfers 71 health every 1 sec from the target to the caster.  Lasts 5 sec.",
-   "iconFile": "spell_shadow_lifedrain02",
+   "icon": "assets/game/warlock/abilities/spell_shadow_lifedrain02.jpg?v=cfb557da",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3004,7 +3249,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Transfers 3% of target's maximum mana every 1 sec from the target to the caster (up to a maximum of 6% of the caster's maximum mana every 1 sec).  Lasts 5 sec.",
-   "iconFile": "spell_shadow_siphonmana",
+   "icon": "assets/game/warlock/abilities/spell_shadow_siphonmana.jpg?v=2f0053ef",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3021,7 +3266,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Drains the soul of the target, causing 455 Shadow damage over 15 sec.  If the target is at or below 25% health, Drain Soul causes four times the normal damage. If the target dies while being drained, and yields experience or honor, the caster gains a Soul Shard.  Each time the Drain Soul damages the target, it also has a chance to generate a Soul Shard.  Soul Shards are required for other spells.",
-   "iconFile": "spell_shadow_haunting",
+   "icon": "assets/game/warlock/abilities/spell_shadow_haunting.jpg?v=f635188e",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3038,7 +3283,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Strikes fear in the enemy, causing it to run in fear for up to 20 sec.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.",
-   "iconFile": "spell_shadow_possession",
+   "icon": "assets/game/warlock/abilities/spell_shadow_possession.jpg?v=6ba1c768",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3055,7 +3300,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You send a ghostly soul into the target, dealing 405 to 473 Shadow damage and increasing all damage done by your Shadow damage-over-time effects on the target by 20% for 12 sec. When the Haunt spell ends or is dispelled, the soul returns to you, healing you for 100% of the damage it did to the target.",
-   "iconFile": "ability_warlock_haunt"
+   "icon": "assets/game/warlock/abilities/ability_warlock_haunt.jpg?v=04e9dbb9"
   },
   {
    "key": "howl_of_terror",
@@ -3067,7 +3312,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Howl, causing 5 enemies within 10 yds to flee in terror for 8 sec.  Damage caused may interrupt the effect.",
-   "iconFile": "spell_shadow_deathscream",
+   "icon": "assets/game/warlock/abilities/spell_shadow_deathscream.jpg?v=47725f82",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3084,7 +3329,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Converts 851 health into 851 mana.  Spell power increases the amount of mana returned.",
-   "iconFile": "spell_shadow_burningspirit",
+   "icon": "assets/game/warlock/abilities/spell_shadow_burningspirit.jpg?v=f86d8a40",
    "scaling": [
     {
      "stat": "SPS",
@@ -3102,7 +3347,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Imbeds a demon seed in the enemy target, causing 504 Shadow damage over 18 sec.  When the target takes 515 total damage or dies, the seed will inflict 555 to 653 Shadow damage to all enemies within 10 yards of the target.  Only one Corruption spell per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_seedofdestruction",
+   "icon": "assets/game/warlock/abilities/spell_shadow_seedofdestruction.jpg?v=81f29262",
    "costValue": "0.34",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3119,7 +3364,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shadow energy slowly destroys the target, causing 640 damage over 15 sec.  In addition, if the Unstable Affliction is dispelled it will cause 1440 damage to the dispeller and silence them for 5 sec. Only one Unstable Affliction or Immolate per Warlock can be active on any one target.",
-   "iconFile": "spell_shadow_unstableaffliction_3"
+   "icon": "assets/game/warlock/abilities/spell_shadow_unstableaffliction_3.jpg?v=4153471b"
   },
   {
    "key": "banish",
@@ -3131,7 +3376,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Banishes the enemy target, preventing all action but making it invulnerable for up to 30 sec.  Only one target can be banished at a time.  Casting Banish on a banished target will cancel the spell.  Only works on Demons and Elementals.",
-   "iconFile": "spell_shadow_cripple",
+   "icon": "assets/game/warlock/abilities/spell_shadow_cripple.jpg?v=82c5fdd8",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3148,7 +3393,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "While applied to target weapon it increases damage dealt by direct spells by 1% and spell critical strike rating by 28.  Lasts for 1 hour.",
-   "iconFile": "inv_ammo_firetar",
+   "icon": "assets/game/warlock/abilities/inv_ammo_firetar.jpg?v=c76a5f3d",
    "costValue": "0.54",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3163,7 +3408,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Creates a Major Healthstone that can be used to instantly restore 1200 health.\n\nConjured items disappear if logged out for more than 15 minutes.",
-   "iconFile": "inv_stone_04",
+   "icon": "assets/game/warlock/abilities/inv_stone_04.jpg?v=5636d120",
    "costValue": "0.53",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3178,7 +3423,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Creates a Major Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while his soul is stored, he will be able to resurrect with 2200 health and 2800 mana.\n\nConjured items disappear if logged out for more than 15 minutes.",
-   "iconFile": "spell_shadow_soulgem",
+   "icon": "assets/game/warlock/abilities/spell_shadow_soulgem.jpg?v=924e2a6f",
    "costValue": "0.68",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3193,7 +3438,7 @@
    "castTime": 5,
    "gcd": 1.5,
    "tooltipTemplate": "While applied to target weapon it increases damage dealt by periodic spells by 1% and spell haste rating by 30.  Lasts for 1 hour.",
-   "iconFile": "inv_misc_gem_sapphire_01",
+   "icon": "assets/game/warlock/abilities/inv_misc_gem_sapphire_01.jpg?v=f96be608",
    "costValue": "0.45",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3208,7 +3453,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Transform yourself into a demon, increasing your health by 15%, armor contribution from cloth items by 666% and significantly increasing your threat. While shapeshifted you cannot be interrupted by monsters, become immune to pushback effects, and damage dealt by you and your pets is reduced by 30%.\n\nWhile in Dark Apotheosis your Searing Pain spell is instant and you learn Provoke, Soul Gorge and Maw of Dread.",
-   "iconFile": "spell_shadow_demonform"
+   "icon": "assets/game/warlock/abilities/spell_shadow_demonform.jpg?v=5cac5019"
   },
   {
    "key": "demon_skin",
@@ -3220,7 +3465,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Protects the caster, increasing armor by 265, and increasing the amount of health generated through spells and effects by 20%. Only one type of Armor spell can be active on the Warlock at any time.  Lasts 30 min.",
-   "iconFile": "spell_shadow_ragingscream",
+   "icon": "assets/game/warlock/abilities/spell_shadow_ragingscream.jpg?v=ff15acef",
    "costValue": "0.31",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3236,7 +3481,7 @@
    "castTime": 0.5,
    "gcd": 1.5,
    "tooltipTemplate": "You summon a Demonic Circle at your feet, lasting 6 min. You can only have one Demonic Circle active at a time.",
-   "iconFile": "spell_shadow_demoniccirclesummon",
+   "icon": "assets/game/warlock/abilities/spell_shadow_demoniccirclesummon.jpg?v=4e5b8309",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3252,7 +3497,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Grants the Warlock's summoned demon Empowerment.\n\nImp - Increases the Imp's spell critical strike chance by 20% for 30 sec.\n\nVoidwalker - Increases the Voidwalker's health by 20%, and its threat generated from spells and attacks by 20% for 20 sec.\n\nSuccubus - Instantly vanishes, causing the Succubus to go into an improved Invisibility state. The vanish effect removes all stuns, snares and movement impairing effects from the Succubus.\n\nFelhunter - Dispels all magical effects from the Felhunter.\n\nFelguard - Increases the Felguard's attack speed by 20% and breaks all stun, snare and movement impairing effects and makes your Felguard immune to them for 15 sec.",
-   "iconFile": "ability_warlock_demonicempowerment"
+   "icon": "assets/game/warlock/abilities/ability_warlock_demonicempowerment.jpg?v=b64686ad"
   },
   {
    "key": "detect_invisibility",
@@ -3264,7 +3509,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Allows the friendly target to detect lesser invisibility for 10 min.",
-   "iconFile": "spell_shadow_detectlesserinvisibility",
+   "icon": "assets/game/warlock/abilities/spell_shadow_detectlesserinvisibility.jpg?v=79d2a2e5",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3281,7 +3526,7 @@
    "castTime": 5,
    "gcd": 1.5,
    "tooltipTemplate": "Summons an Eye of Kilrogg and binds your vision to it.  The eye moves quickly but is very fragile.",
-   "iconFile": "spell_shadow_evileye",
+   "icon": "assets/game/warlock/abilities/spell_shadow_evileye.jpg?v=3b8f9c8f",
    "costValue": "0.04",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3298,7 +3543,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Surrounds the caster with fel energy, increasing spell power by 50 plus additional spell power equal to 30% of your Spirit. In addition, you regain 2% of your maximum health every 5 sec. Only one type of Armor spell can be active on the Warlock at any time.  Lasts 30 min.",
-   "iconFile": "spell_shadow_felarmour",
+   "icon": "assets/game/warlock/abilities/spell_shadow_felarmour.jpg?v=32e7faec",
    "costValue": "0.28",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3314,7 +3559,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Gives 153 health to the caster's pet every second for 10 sec as long as the caster channels.",
-   "iconFile": "spell_shadow_lifedrain",
+   "icon": "assets/game/warlock/abilities/spell_shadow_lifedrain.jpg?v=92864693",
    "costValue": "79",
    "costUnit": "flat",
    "costPower": "health",
@@ -3331,7 +3576,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Summons a meteor from the Twisting Nether, causing 200 Fire damage and stunning all enemy targets in the area for 2 sec.  An Infernal rises from the crater, under the command of the caster for 1 min.",
-   "iconFile": "spell_shadow_summoninfernal",
+   "icon": "assets/game/warlock/abilities/spell_shadow_summoninfernal.jpg?v=e1878541",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3349,7 +3594,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "You transform into a Demon for 30 sec.  This form increases your armor contribution from items by 600%, damage by 20%, reduces the chance you'll be critically hit by melee attacks by 6% and reduces the duration of stun and snare effects by 50%.  You gain some unique demon abilities in addition to your normal abilities.",
-   "iconFile": "spell_shadow_demonform",
+   "icon": "assets/game/warlock/abilities/spell_shadow_demonform.jpg?v=5cac5019",
    "cooldown": "3 min",
    "duration": "30 sec"
   },
@@ -3363,7 +3608,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Surge into the air and scorch all enemies below with 1590 Shadowflame damage over 2.5 seconds. While airborne melee attacks against you have 60% increased chance to miss.",
-   "iconFile": "ability_warlock_inferno"
+   "icon": "assets/game/warlock/abilities/ability_warlock_inferno.jpg?v=ce3ff5a4"
   },
   {
    "key": "ritual_of_doom",
@@ -3375,7 +3620,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Begins a ritual that sacrifices a random participant's health to summon a doomguard. Requires the caster and 4 additional party members to complete the ritual.  In order to participate, all players must right-click the portal and not move until the ritual is complete.",
-   "iconFile": "spell_shadow_antimagicshell",
+   "icon": "assets/game/warlock/abilities/spell_shadow_antimagicshell.jpg?v=45084e3c",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3393,7 +3638,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Begins a ritual that creates a summoning portal.  The summoning portal can be used by 2 party or raid members to summon a targeted party or raid member.  The ritual portal requires the caster and 2 additional party or raid members to complete.  In order to participate, all players must be out of combat and right-click the portal and not move until the ritual is complete.",
-   "iconFile": "spell_shadow_twilight",
+   "icon": "assets/game/warlock/abilities/spell_shadow_twilight.jpg?v=4d2eabad",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3411,7 +3656,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Absorbs 875 shadow damage.  Lasts 30 sec.",
-   "iconFile": "spell_shadow_antishadow",
+   "icon": "assets/game/warlock/abilities/spell_shadow_antishadow.jpg?v=e2b0b420",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3428,7 +3673,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Reduces threat by 50% for all enemies within 50 yards.",
-   "iconFile": "spell_arcane_arcane01",
+   "icon": "assets/game/warlock/abilities/spell_arcane_arcane01.jpg?v=6bc02333",
    "costValue": "0.12",
    "costUnit": "percent",
    "costPower": "health",
@@ -3444,7 +3689,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Summons a Felhunter under the command of the Warlock.",
-   "iconFile": "spell_shadow_summonfelhunter",
+   "icon": "assets/game/warlock/abilities/spell_shadow_summonfelhunter.jpg?v=46076ddf",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3459,7 +3704,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Summons an Imp under the command of the Warlock.",
-   "iconFile": "spell_shadow_summonimp",
+   "icon": "assets/game/warlock/abilities/spell_shadow_summonimp.jpg?v=5f57d453",
    "costValue": "0.64",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3474,7 +3719,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Summons a Succubus under the command of the Warlock.",
-   "iconFile": "spell_shadow_summonsuccubus",
+   "icon": "assets/game/warlock/abilities/spell_shadow_summonsuccubus.jpg?v=f558276c",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3489,7 +3734,7 @@
    "castTime": 10,
    "gcd": 1.5,
    "tooltipTemplate": "Summons a Voidwalker under the command of the Warlock.",
-   "iconFile": "spell_shadow_summonvoidwalker",
+   "icon": "assets/game/warlock/abilities/spell_shadow_summonvoidwalker.jpg?v=7e7553df",
    "costValue": "0.8",
    "costUnit": "percent",
    "costPower": "mana"
@@ -3504,7 +3749,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Increases spell power of summoned demons by 1.5 and attack power of summoned demons by 2.1. Only one type of Warlock Armor spell can be active at any time. Lasts 30 min.",
-   "iconFile": "5_warlock05_border",
+   "icon": "assets/game/warlock/abilities/5_warlock05_border.jpg?v=206192bf",
    "costValue": "0.31",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3520,7 +3765,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Enslaves the target demon, up to level 64, forcing it to do your bidding.  While enslaved, the time between the demon's attacks is increased by 30% and its casting speed is slowed by 20%.  Lasts up to 5 min.",
-   "iconFile": "spell_shadow_enslavedemon",
+   "icon": "assets/game/warlock/abilities/spell_shadow_enslavedemon.jpg?v=59b6f3ee",
    "costValue": "0.27",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3537,7 +3782,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Allows the target to breathe underwater for 10 min.",
-   "iconFile": "spell_shadow_demonbreath",
+   "icon": "assets/game/warlock/abilities/spell_shadow_demonbreath.jpg?v=def8fd4f",
    "costValue": "0.02",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3554,7 +3799,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Sends a bolt of chaotic fire at the enemy, dealing 870 to 1049 Shadowflame damage. Chaos Bolt cannot be resisted, and pierces through all absorption effects.",
-   "iconFile": "ability_warlock_chaosbolt"
+   "icon": "assets/game/warlock/abilities/ability_warlock_chaosbolt.jpg?v=539b7030"
   },
   {
    "key": "hellfire",
@@ -3566,7 +3811,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Ignites the area surrounding the caster, causing 208 Fire damage to himself and 212 Fire damage to all nearby enemies every 1 sec.  Lasts 15 sec.",
-   "iconFile": "spell_fire_incinerate",
+   "icon": "assets/game/warlock/abilities/spell_fire_incinerate.jpg?v=0845f1dc",
    "costValue": "0.64",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3582,7 +3827,7 @@
    "castTime": 2,
    "gcd": 1.5,
    "tooltipTemplate": "Burns the enemy for 279 Fire damage and then an additional 510 Fire damage over 15 sec.",
-   "iconFile": "spell_fire_immolation",
+   "icon": "assets/game/warlock/abilities/spell_fire_immolation.jpg?v=53b45bc0",
    "costValue": "0.17",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3599,7 +3844,7 @@
    "castTime": 2.5,
    "gcd": 1.5,
    "tooltipTemplate": "Deals 337 to 396 Fire damage to your target and an additional 84.25 Fire damage if the target is affected by an Immolate spell.",
-   "iconFile": "spell_fire_burnout",
+   "icon": "assets/game/warlock/abilities/spell_fire_burnout.jpg?v=734a5b91",
    "costValue": "0.14",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3615,7 +3860,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Calls down a fiery rain to burn enemies in the area of effect for 1288 Fire damage over 8 sec.",
-   "iconFile": "spell_shadow_rainoffire",
+   "icon": "assets/game/warlock/abilities/spell_shadow_rainoffire.jpg?v=c33b5037",
    "costValue": "0.57",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3632,7 +3877,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Inflict searing pain on the enemy target, causing 208 to 244 Fire damage.  Causes a high amount of threat.",
-   "iconFile": "spell_fire_soulburn",
+   "icon": "assets/game/warlock/abilities/spell_fire_soulburn.jpg?v=35eacfa0",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3648,7 +3893,7 @@
    "castTime": 1.5,
    "gcd": 1.5,
    "tooltipTemplate": "Inflict searing pain on the enemy target, causing 274 to 316 Fire damage.  Causes a high amount of threat.",
-   "iconFile": "spell_fire_soulburn",
+   "icon": "assets/game/warlock/abilities/spell_fire_soulburn.jpg?v=35eacfa0",
    "costValue": "0.08",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3664,7 +3909,7 @@
    "castTime": 3,
    "gcd": 1.5,
    "tooltipTemplate": "Sends a shadowy bolt at the enemy, causing 511 to 570 Shadow damage.",
-   "iconFile": "spell_shadow_shadowbolt",
+   "icon": "assets/game/warlock/abilities/spell_shadow_shadowbolt.jpg?v=ee1f8ee5",
    "costValue": "0.15",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3680,7 +3925,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Instantly blasts the target for 118 to 130 Shadowflame damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.",
-   "iconFile": "spell_shadow_scourgebuild"
+   "icon": "assets/game/warlock/abilities/spell_shadow_scourgebuild.jpg?v=05efd9a0"
   },
   {
    "key": "shadowflame",
@@ -3692,7 +3937,7 @@
    "castTime": 0,
    "gcd": 1.5,
    "tooltipTemplate": "Targets in a cone in front of the caster take 432 to 485 Shadow damage and an additional 644 Fire damage over 8 sec.",
-   "iconFile": "ability_warlock_shadowflame",
+   "icon": "assets/game/warlock/abilities/ability_warlock_shadowflame.jpg?v=799e46c1",
    "costValue": "0.25",
    "costUnit": "percent",
    "costPower": "mana",
@@ -3708,7 +3953,7 @@
    "castTime": 0,
    "gcd": 0,
    "tooltipTemplate": "Shadowfury is unleashed, causing 357 to 421 Shadow damage and stunning all enemies within 8 yds for 3 sec.",
-   "iconFile": "spell_shadow_shadowfury"
+   "icon": "assets/game/warlock/abilities/spell_shadow_shadowfury.jpg?v=ea9e0788"
   },
   {
    "key": "soul_fire",
@@ -3720,7 +3965,7 @@
    "castTime": 6,
    "gcd": 1.5,
    "tooltipTemplate": "Burn the enemy's soul, causing 715 to 893 Fire damage.",
-   "iconFile": "spell_fire_fireball02",
+   "icon": "assets/game/warlock/abilities/spell_fire_fireball02.jpg?v=fbe63214",
    "costValue": "0.09",
    "costUnit": "percent",
    "costPower": "mana",

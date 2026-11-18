@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// Regenerates builds/index.json from the build files in builds/.
-// Run after adding or removing a build:  node tools/build-index.mjs
+// Regenerates builds/index.js (window.ASC_BUILDS: every saved build, inline) from the build files in builds/.
+// Run after adding or removing a build:  node tools/build-index.mjs  (re-stamps index.html, rule A-cache-bust)
 //
 // Each build file: { "name", "class", "focus"?, "notes"?, "points": {key: n} }
 // Points are validated against data/<class>.json (caps, prereqs, row gates).
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -21,7 +22,7 @@ const entries = [];
 const errors = [];
 
 for (const file of readdirSync(buildsDir).sort()) {
-  if (!file.endsWith('.json') || file === 'index.json') continue;
+  if (!file.endsWith('.json')) continue;
   let b;
   try { b = JSON.parse(readFileSync(join(buildsDir, file), 'utf8')); }
   catch (e) { errors.push(`${file}: invalid JSON — ${e.message}`); continue; }
@@ -89,7 +90,8 @@ for (const file of readdirSync(buildsDir).sort()) {
     });
   }
 
-  entries.push({ file, name: b.name, class: b.class, focus: b.focus || null, points: total });
+  entries.push({ file, name: b.name, class: b.class, focus: b.focus || null, total,
+                 notes: b.description || b.notes || null, points: b.points, enchants: b.enchants || [] });
 }
 
 if (errors.length) {
@@ -97,6 +99,9 @@ if (errors.length) {
   process.exit(1);
 }
 
-writeFileSync(join(buildsDir, 'index.json'), JSON.stringify(entries, null, 1));
-console.log(`OK — ${entries.length} build(s) -> builds/index.json`);
-entries.forEach(e => console.log(`  ${e.class}: ${e.name} (${e.points} pts)`));
+writeFileSync(join(buildsDir, 'index.js'), `window.ASC_BUILDS = ${JSON.stringify(entries, null, 1)};` + String.fromCharCode(10));
+rmSync(join(buildsDir, 'index.json'), { force: true });
+console.log(`OK — ${entries.length} build(s) -> builds/index.js`);
+entries.forEach(e => console.log(`  ${e.class}: ${e.name} (${e.total} pts)`));
+const st = spawnSync('python', [join(ROOT, '..', 'tools', 'app', 'stamp_cache.py'), ROOT], { stdio: 'inherit' });
+if (st.status !== 0) { console.error('stamp_cache failed (A-cache-bust)'); process.exit(1); }
