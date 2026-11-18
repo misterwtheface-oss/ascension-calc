@@ -67,7 +67,7 @@
     "name": "Druid",
     "trees": {
       "Balance":      "#8060A8",
-      "Feral Combat": "#B86820",
+      "Feral":        "#B86820",
       "Restoration":  "#408840"
     }
   }

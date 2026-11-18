@@ -1,0 +1,3883 @@
+{
+ "class": "Mage",
+ "slug": "mage",
+ "realm": "Bronzebeard - Warcraft Reborn",
+ "level": 60,
+ "pointCap": 51,
+ "trees": [
+  {
+   "name": "Arcane",
+   "accent": "#8050C0",
+   "background": "assets/game/mage/backgrounds/magearcane.jpg"
+  },
+  {
+   "name": "Fire",
+   "accent": "#C04820",
+   "background": "assets/game/mage/backgrounds/magefire.jpg"
+  },
+  {
+   "name": "Frost",
+   "accent": "#4898C8",
+   "background": "assets/game/mage/backgrounds/magefrost.jpg"
+  }
+ ],
+ "talents": {
+  "arcane_subtlety": {
+   "name": "Arcane Subtlety",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the chance your helpful spells and damage over time effects will be dispelled by [V1]% and reduces the threat caused by your Arcane spells by [V2]%.",
+   "rankValues": [
+    [
+     15,
+     20
+    ],
+    [
+     30,
+     40
+    ]
+   ],
+   "iconFile": "spell_holy_dispelmagic"
+  },
+  "arcane_focus": {
+   "name": "Arcane Focus",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to hit by [V1]% and reduces the mana cost of your Arcane spells by [V2]%.",
+   "rankValues": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "iconFile": "spell_holy_devotion"
+  },
+  "arcane_stability": {
+   "name": "Arcane Stability",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the pushback suffered from damaging attacks while casting or channeling an Arcane spell by [V1]%.",
+   "rankValues": [
+    [
+     34
+    ],
+    [
+     67
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "spell_nature_starfall"
+  },
+  "arcane_recovery": {
+   "name": "Arcane Recovery",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases your healing done by [V1]% and increases your mana by [V2]% of your Intellect.",
+   "rankValues": [
+    [
+     3,
+     150
+    ],
+    [
+     6,
+     250
+    ]
+   ],
+   "iconFile": "spell_arcane_manatap"
+  },
+  "arcane_fortitude": {
+   "name": "Arcane Fortitude",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your armor by an amount equal to [V1]% of your Intellect.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ],
+    [
+     150
+    ]
+   ],
+   "iconFile": "spell_arcane_arcaneresilience"
+  },
+  "magic_absorption": {
+   "name": "Magic Absorption",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases all resistances by [V1] per level and causes all spells that damage you have a 10% chance to restore [V2]% of your total mana. 6 second cooldown.",
+   "rankValues": [
+    [
+     0.5,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "iconFile": "spell_nature_astralrecalgroup"
+  },
+  "arcane_concentration": {
+   "name": "Arcane Concentration",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives you a [V1]% chance of entering a Clearcasting state after any damage or healing spell hits a target.  \n\nThe Clearcasting state reduces the mana cost of your next spell by 100%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "spell_shadow_manaburn"
+  },
+  "magic_attunement": {
+   "name": "Magic Attunement",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the range of your Arcane damage spells by [V1] yards and the effect of your Amplify Magic and Dampen Magic spells by [V2]%.",
+   "rankValues": [
+    [
+     3,
+     1
+    ],
+    [
+     6,
+     2
+    ]
+   ],
+   "iconFile": "spell_nature_abolishmagic"
+  },
+  "spell_impact": {
+   "name": "Spell Impact",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of your Arcane Explosion, Arcane Blast, Blast Wave, Fire Blast, Scorch, Fireball, Ice Lance and Cone of Cold spells by an additional [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_nature_wispsplode"
+  },
+  "arcane_meditation": {
+   "name": "Arcane Meditation",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Allows [V1]% of your mana regeneration to continue while casting.",
+   "rankValues": [
+    [
+     17
+    ],
+    [
+     33
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "spell_shadow_siphonmana"
+  },
+  "focus_magic": {
+   "name": "Focus Magic",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Increases the target's chance to critically hit with spells by 3%.  When the target critically hits the caster's chance to critically hit with spells is increased by 3% for 10 sec.  Cannot be cast on self.",
+   "iconFile": "spell_arcane_studentofmagic",
+   "active": true
+  },
+  "arcane_shielding": {
+   "name": "Arcane Shielding",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Decreases the mana lost per point of damage taken when Mana Shield is active by [V1]% and increases the resistances granted by Mage Armor by [V2]%.",
+   "rankValues": [
+    [
+     17,
+     25
+    ],
+    [
+     33,
+     50
+    ]
+   ],
+   "iconFile": "spell_shadow_detectlesserinvisibility"
+  },
+  "improved_counterspell": {
+   "name": "Improved Counterspell",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Your Counterspell also silences the target for [V1] sec.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ]
+   ],
+   "iconFile": "spell_frost_iceshock"
+  },
+  "arcane_momentum": {
+   "name": "Arcane Momentum",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Arcane Blast stacks empower Arcane Mending. Arcane Mending consumes an Arcane Blast stack to cast [V1]% faster and gain [V2]% increased chance to critically strike.",
+   "rankValues": [
+    [
+     10,
+     20
+    ],
+    [
+     20,
+     40
+    ],
+    [
+     30,
+     60
+    ]
+   ],
+   "iconFile": "_d3arcanetorrent"
+  },
+  "torment_the_weak": {
+   "name": "Torment the Weak",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your Frostbolt, Fireball, Frostfire Bolt, Pyroblast, Arcane Missiles, Arcane Blast, and Arcane Barrage abilities deal [V1]% more damage to snared or slowed targets.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     8
+    ],
+    [
+     12
+    ]
+   ],
+   "iconFile": "ability_mage_tormentoftheweak"
+  },
+  "improved_blink": {
+   "name": "Improved Blink",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the mana cost of Blink by [V1]% and for 4 sec after casting your chance to be hit by all attacks and spells is reduced by [V2]%.",
+   "rankValues": [
+    [
+     25,
+     15
+    ],
+    [
+     50,
+     30
+    ]
+   ],
+   "iconFile": "spell_arcane_blink"
+  },
+  "presence_of_mind": {
+   "name": "Presence of Mind",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.",
+   "iconFile": "spell_nature_enchantarmor",
+   "active": true
+  },
+  "arcane_mind": {
+   "name": "Arcane Mind",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your total Intellect by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "spell_shadow_charm"
+  },
+  "prismatic_cloak": {
+   "name": "Prismatic Cloak",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces all damage taken by [V1]% and reduces the fade time of your Invisibility spell by [V2] sec.",
+   "rankValues": [
+    [
+     2,
+     -1
+    ],
+    [
+     4,
+     -2
+    ],
+    [
+     6,
+     -3
+    ]
+   ],
+   "iconFile": "spell_arcane_prismaticcloak"
+  },
+  "arcane_instability": {
+   "name": "Arcane Instability",
+   "maxPts": 3,
+   "prereq": "presence_of_mind",
+   "tooltipTemplate": "Increases the damage, healing and critical strike chance of your spells by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "spell_shadow_teleport"
+  },
+  "arcane_potency": {
+   "name": "Arcane Potency",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your next spell by [V1]% after gaining Clearcasting or Presence of Mind.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     30
+    ]
+   ],
+   "iconFile": "spell_arcane_arcanepotency"
+  },
+  "arcane_attunement": {
+   "name": "Arcane Attunement",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Arcane Blast no longer increases damage and mana cost and instead increases your healing done by [V1]% per stack.\n\nYour Arcane Resonance now generates a stack of Arcane Blast every [V2] seconds.",
+   "rankValues": [
+    [
+     3,
+     6
+    ],
+    [
+     6,
+     3
+    ]
+   ],
+   "iconFile": "spell_arcane_arcane01"
+  },
+  "arcane_empowerment": {
+   "name": "Arcane Empowerment",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the effectiveness of your Arcane Missiles, Arcane Blast, Arcane Mending and Arcane Resonance spell by an amount equal to [V1]% of your spell power.\n\nIn addition, increases the damage of all party and raid members within 100 yds by [V2]%.",
+   "rankValues": [
+    [
+     8,
+     1
+    ],
+    [
+     16,
+     2
+    ],
+    [
+     25,
+     3
+    ]
+   ],
+   "iconFile": "spell_nature_starfall"
+  },
+  "arcane_power": {
+   "name": "Arcane Power",
+   "maxPts": 1,
+   "prereq": "arcane_instability",
+   "tooltipTemplate": "When activated, your spells deal 20% more damage and healing while costing 20% more mana to cast.  This effect lasts 15 sec.",
+   "iconFile": "spell_nature_lightning",
+   "active": true
+  },
+  "incanters_absorption": {
+   "name": "Incanter's Absorption",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "When your Mana Shield, Frost Ward, Fire Ward, or Arcane Barrier absorbs damage your spell power is increased by [V1]% of the amount absorbed for 10 sec.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "ability_mage_incantersabsorbtion"
+  },
+  "arcane_flows": {
+   "name": "Arcane Flows",
+   "maxPts": 2,
+   "prereq": "arcane_power",
+   "tooltipTemplate": "Reduces the cooldown of your Presence of Mind, Arcane Power and Invisibility spells by [V1]% and the cooldown of your Evocation spell by [V2] min.",
+   "rankValues": [
+    [
+     15,
+     1
+    ],
+    [
+     30,
+     2
+    ]
+   ],
+   "iconFile": "ability_mage_potentspirit"
+  },
+  "mind_mastery": {
+   "name": "Mind Mastery",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases spell power by [V1]% of your total Intellect.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "spell_arcane_mindmastery"
+  },
+  "slow": {
+   "name": "Slow",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Reduces target's movement speed by 60%, increases the time between ranged attacks by 60% and increases casting time by 30%.  Lasts 15 sec.  Slow can only affect one target at a time.",
+   "iconFile": "spell_nature_slow",
+   "active": true
+  },
+  "missile_barrage": {
+   "name": "Missile Barrage",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Arcane Blast a [V1]% chance, and your Arcane Barrage, Fireball, Frostbolt and Frostfire Bolt spells a [V2]% chance to empower your next Arcane Missiles or Arcane Resonance.\n\nArcane Missiles: Your missiles now trigger and channel twice as fast.\n\nArcane Resonance: Empowers Resonance causing it to trigger three times faster, healing nearby injured allies.",
+   "rankValues": [
+    [
+     14,
+     7
+    ],
+    [
+     27,
+     13.5
+    ],
+    [
+     40,
+     20
+    ]
+   ],
+   "iconFile": "ability_mage_missilebarrage"
+  },
+  "netherwind_presence": {
+   "name": "Netherwind Presence",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your spell haste by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "ability_mage_netherwindpresence"
+  },
+  "spell_power": {
+   "name": "Spell Power",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases critical strike damage bonus of all spells by [V1]%.",
+   "rankValues": [
+    [
+     25
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "spell_arcane_arcanetorrent"
+  },
+  "arcane_barrage": {
+   "name": "Arcane Barrage",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Launches several missiles at the enemy target, causing 500 to 609 Arcane damage.",
+   "iconFile": "ability_mage_arcanebarrage",
+   "active": true
+  },
+  "arcane_barrier": {
+   "name": "Arcane Barrier",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Consumes your Arcane Blast stacks to instantly heal a friendly target for 463 and surround them with an Arcane barrier for 4 seconds per stack.\n\nThe shield absorbs up to 30% of physical damage taken, up to an amount equal to 10% of your max mana. Each point of damage absorbed costs 0.1 mana.",
+   "iconFile": "ability_racial_forceshield",
+   "active": true
+  },
+  "frostbite": {
+   "name": "Frostbite",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Chill effects a [V1]% chance to freeze the target for 5 sec.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "spell_frost_frostarmor"
+  },
+  "improved_frostbolt": {
+   "name": "Improved Frostbolt",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the casting time of your Frostbolt spell by [V1] sec.",
+   "rankValues": [
+    [
+     0.1
+    ],
+    [
+     0.2
+    ],
+    [
+     0.3
+    ],
+    [
+     0.4
+    ],
+    [
+     0.5
+    ]
+   ],
+   "iconFile": "spell_frost_frostbolt02"
+  },
+  "ice_floes": {
+   "name": "Ice Floes",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Frost Nova, Cone of Cold, Ice Block and Icy Veins spells by [V1]%.",
+   "rankValues": [
+    [
+     7
+    ],
+    [
+     14
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "spell_frost_icefloes"
+  },
+  "ice_shards": {
+   "name": "Ice Shards",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike damage bonus of your Frost spells by [V1]%.",
+   "rankValues": [
+    [
+     33
+    ],
+    [
+     66
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "spell_frost_iceshard"
+  },
+  "frost_warding": {
+   "name": "Frost Warding",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the armor and resistances given by your Frost Armor and Ice Armor spells by [V1]%.  In addition, gives your Frost Ward and Fire Ward a [V2]% chance to negate the warded damage spell and restore mana equal to the damage caused.",
+   "rankValues": [
+    [
+     25,
+     15
+    ],
+    [
+     50,
+     30
+    ]
+   ],
+   "iconFile": "spell_frost_frostward"
+  },
+  "precision": {
+   "name": "Precision",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the mana cost and increases your chance to hit with spells by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "spell_ice_magicdamage"
+  },
+  "permafrost": {
+   "name": "Permafrost",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the duration of your Chill effects by 3 secs, reduces the target's speed by an additional 10%, and reduces the target's healing received by 20%.",
+   "iconFile": "spell_frost_wisp"
+  },
+  "piercing_ice": {
+   "name": "Piercing Ice",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Frost spells by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_frost_frostbolt"
+  },
+  "icy_veins": {
+   "name": "Icy Veins",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Hastens your spellcasting, increasing spell casting speed by 20% and reduces the pushback suffered from damaging attacks while casting by 100%.  Lasts 20 sec.",
+   "iconFile": "spell_frost_coldhearted",
+   "active": true
+  },
+  "improved_blizzard": {
+   "name": "Improved Blizzard",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by [V1]%.  Lasts 1.5 sec.",
+   "rankValues": [
+    [
+     25
+    ],
+    [
+     40
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "spell_frost_icestorm"
+  },
+  "arctic_reach": {
+   "name": "Arctic Reach",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the range of all your Frost spells except for Frostfire Bolt, and the radius of your Frost Nova and Cone of Cold spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "spell_shadow_darkritual"
+  },
+  "frost_channeling": {
+   "name": "Frost Channeling",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the mana cost of all spells by [V1]% and reduces the threat caused by your Frost spells by [V2]%.",
+   "rankValues": [
+    [
+     4,
+     4
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     10,
+     10
+    ]
+   ],
+   "iconFile": "spell_frost_stun"
+  },
+  "shatter": {
+   "name": "Shatter",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of all your spells against frozen targets by [V1]%.",
+   "rankValues": [
+    [
+     17
+    ],
+    [
+     34
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "spell_frost_frostshock"
+  },
+  "cold_snap": {
+   "name": "Cold Snap",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When activated, this spell finishes the cooldown on all Frost spells you recently cast.",
+   "iconFile": "spell_frost_wizardmark",
+   "active": true
+  },
+  "improved_cone_of_cold": {
+   "name": "Improved Cone of Cold",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage dealt by your Cone of Cold spell by [V1]%.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     25
+    ],
+    [
+     35
+    ]
+   ],
+   "iconFile": "spell_frost_glacier"
+  },
+  "frozen_core": {
+   "name": "Frozen Core",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the damage taken from all spells by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_frost_frozencore"
+  },
+  "cold_as_ice": {
+   "name": "Cold as Ice",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Cold Snap, Ice Barrier and Summon Water Elemental spells by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "ability_mage_coldasice"
+  },
+  "winters_chill": {
+   "name": "Winter's Chill",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to critically hit with Frostbolt by an additional [V1]% and gives your Frost damage spells a [V2]% chance to apply the Winter's Chill effect, which increases the chance spells will critically hit the target by 1% for 15 sec.  Stacks up to 5 times.",
+   "rankValues": [
+    [
+     1,
+     33
+    ],
+    [
+     2,
+     66
+    ],
+    [
+     3,
+     100
+    ]
+   ],
+   "iconFile": "spell_frost_chillingblast"
+  },
+  "shattered_barrier": {
+   "name": "Shattered Barrier",
+   "maxPts": 2,
+   "prereq": "ice_barrier",
+   "tooltipTemplate": "Gives your Ice Barrier spell a [V1]% chance to freeze all enemies within 10 yds for 8 sec when it is destroyed.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "ability_mage_shattershield"
+  },
+  "ice_barrier": {
+   "name": "Ice Barrier",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Instantly shields you, absorbing 497 damage.  Lasts 1 min.  While the shield holds, spellcasting will not be delayed by damage.",
+   "iconFile": "spell_ice_lament",
+   "active": true
+  },
+  "arctic_winds": {
+   "name": "Arctic Winds",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases all Frost damage you cause by [V1]% and reduces the chance melee and ranged attacks will hit you by [V2]%.",
+   "rankValues": [
+    [
+     2,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     6,
+     3
+    ]
+   ],
+   "iconFile": "spell_frost_arcticwinds"
+  },
+  "empowered_frostbolt": {
+   "name": "Empowered Frostbolt",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of your Frostbolt spell by an amount equal to [V1]% of your spell power and reduces the cast time by [V2] sec.",
+   "rankValues": [
+    [
+     5,
+     -0.1
+    ],
+    [
+     10,
+     -0.2
+    ]
+   ],
+   "iconFile": "spell_frost_frostbolt02"
+  },
+  "fingers_of_frost": {
+   "name": "Fingers of Frost",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Chill effects a [V1]% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen.  Lasts 15 sec.",
+   "rankValues": [
+    [
+     7
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "ability_mage_wintersgrasp"
+  },
+  "brain_freeze": {
+   "name": "Brain Freeze",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your Frost damage spells with chilling effects have a [V1]% chance to cause your next Fireball or Frostfire Bolt spell to be instant cast and cost no mana.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "ability_mage_brainfreeze"
+  },
+  "summon_water_elemental": {
+   "name": "Summon Water Elemental",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Summon a Water Elemental to fight for the caster?(s70937)[][ for 45 sec].",
+   "iconFile": "spell_frost_summonwaterelemental_2",
+   "active": true
+  },
+  "enduring_winter": {
+   "name": "Enduring Winter",
+   "maxPts": 3,
+   "prereq": "summon_water_elemental",
+   "tooltipTemplate": "Increases the duration of your Summon Water Elemental spell by [V1] sec and your Frostbolt spell has a [V2]% chance to grant up to 10 party or raid members mana regeneration equal to 1% of their maximum mana per 5 sec for 15 sec.  This effect cannot occur more often than once every 6 sec.",
+   "rankValues": [
+    [
+     5,
+     33
+    ],
+    [
+     10,
+     66
+    ],
+    [
+     15,
+     100
+    ]
+   ],
+   "iconFile": "spell_frost_summonwaterelemental_2"
+  },
+  "chilled_to_the_bone": {
+   "name": "Chilled to the Bone",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage caused by your Frostbolt, Frostfire Bolt, Deep Freeze and Ice Lance spells by [V1]% and reduces the movement speed of all chilled targets by an additional [V2]%.",
+   "rankValues": [
+    [
+     2,
+     4
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     6,
+     10
+    ]
+   ],
+   "iconFile": "ability_mage_chilledtothebone"
+  },
+  "deep_freeze": {
+   "name": "Deep Freeze",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Stuns the target for 5 seconds.  Only usable on Frozen targets.  Deals 4124 to 4396 damage to monsters permanently immune to stuns.",
+   "iconFile": "ability_mage_deepfreeze",
+   "active": true
+  },
+  "improved_fire_blast": {
+   "name": "Improved Fire Blast",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Fire Blast spell by [V1] sec.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ]
+   ],
+   "iconFile": "spell_fire_fireball"
+  },
+  "incineration": {
+   "name": "Incineration",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Fire Blast, Scorch, Arcane Blast and Cone of Cold spells by [V1]%.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ],
+    [
+     9
+    ]
+   ],
+   "iconFile": "spell_fire_flameshock"
+  },
+  "improved_fireball": {
+   "name": "Improved Fireball",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the casting time of your Fireball spell by [V1] sec.",
+   "rankValues": [
+    [
+     0.1
+    ],
+    [
+     0.2
+    ],
+    [
+     0.3
+    ],
+    [
+     0.4
+    ],
+    [
+     0.5
+    ]
+   ],
+   "iconFile": "spell_fire_flamebolt"
+  },
+  "ignite": {
+   "name": "Ignite",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Your critical strikes from Fire damage spells cause the target to burn for an additional [V1]% of your spell's damage over 4 sec.",
+   "rankValues": [
+    [
+     8
+    ],
+    [
+     16
+    ],
+    [
+     24
+    ],
+    [
+     32
+    ],
+    [
+     40
+    ]
+   ],
+   "iconFile": "spell_fire_incinerate"
+  },
+  "burning_determination": {
+   "name": "Burning Determination",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "When Interrupted or Silenced you have a [V1]% chance to become immune to the next Interrupt or Silence mechanic.  Lasts 20 sec.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "spell_fire_totemofwrath"
+  },
+  "world_in_flames": {
+   "name": "World in Flames",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Flamestrike, Pyroblast, Blast Wave, Dragon's Breath, Living Bomb, Blizzard, Arcane Explosion and Arcane Resonance spells by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "ability_mage_worldinflames"
+  },
+  "flame_throwing": {
+   "name": "Flame Throwing",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the range of all Fire spells except Frostfire Bolt by [V1] yards.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_fire_flare"
+  },
+  "impact": {
+   "name": "Impact",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives your damaging spells a [V1]% chance to cause the next Fire Blast you cast to stun the target for 2 sec.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "spell_fire_meteorstorm"
+  },
+  "pyroblast": {
+   "name": "Pyroblast",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Hurls an immense fiery boulder that causes 176 to 225 Fire damage and an additional 96 Fire damage over 12 sec.",
+   "iconFile": "spell_fire_fireball02",
+   "active": true
+  },
+  "burning_soul": {
+   "name": "Burning Soul",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the pushback suffered from damaging attacks while casting Fire spells by [V1]% and reduces the threat caused by your Fire spells by [V2]%.",
+   "rankValues": [
+    [
+     35,
+     10
+    ],
+    [
+     70,
+     20
+    ]
+   ],
+   "iconFile": "spell_fire_fire"
+  },
+  "improved_scorch": {
+   "name": "Improved Scorch",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to critically hit with Scorch, Fireball and Frostfire Bolt by an additional [V1]% and your damaging Scorch spells have a [V2]% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5% and lasts 30 sec.",
+   "rankValues": [
+    [
+     1,
+     33
+    ],
+    [
+     2,
+     66
+    ],
+    [
+     3,
+     100
+    ]
+   ],
+   "iconFile": "spell_fire_soulburn"
+  },
+  "molten_shields": {
+   "name": "Molten Shields",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Causes your Fire Ward and Frost Ward spells to have a [V1]% chance to reflect the warded spell while active. In addition, your Molten Armor has a [V2]% chance to affect ranged and spell attacks.",
+   "rankValues": [
+    [
+     15,
+     50
+    ],
+    [
+     30,
+     100
+    ]
+   ],
+   "iconFile": "spell_fire_firearmor"
+  },
+  "master_of_elements": {
+   "name": "Master of Elements",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your spell criticals will refund [V1]% of their base mana cost.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ],
+    [
+     30
+    ]
+   ],
+   "iconFile": "spell_fire_masterofelements"
+  },
+  "playing_with_fire": {
+   "name": "Playing with Fire",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases all spell damage caused by [V1]% and all spell damage taken by [V2]%.",
+   "rankValues": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "iconFile": "spell_fire_playingwithfire"
+  },
+  "critical_mass": {
+   "name": "Critical Mass",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Fire spells by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_nature_wispheal"
+  },
+  "blast_wave": {
+   "name": "Blast Wave",
+   "maxPts": 1,
+   "prereq": "pyroblast",
+   "tooltipTemplate": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 185 to 217 Fire damage, knocking them back and dazing them for 6 sec.",
+   "iconFile": "spell_holy_excorcism_02",
+   "active": true
+  },
+  "blazing_speed": {
+   "name": "Blazing Speed",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Gives you a [V1]% chance when hit by a melee attack greater than 5% of your max health to increase your movement speed by 50% and dispel all movement impairing effects.  This effect lasts 6 sec.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "spell_fire_burningspeed"
+  },
+  "fire_power": {
+   "name": "Fire Power",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Fire spells by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "spell_fire_immolation"
+  },
+  "pyromaniac": {
+   "name": "Pyromaniac",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases chance to critically hit by [V1]% and allows [V2]% of your mana regeneration to continue while casting.",
+   "rankValues": [
+    [
+     2,
+     17
+    ],
+    [
+     4,
+     33
+    ],
+    [
+     6,
+     50
+    ]
+   ],
+   "iconFile": "spell_fire_burnout"
+  },
+  "combustion": {
+   "name": "Combustion",
+   "maxPts": 1,
+   "prereq": "critical_mass",
+   "tooltipTemplate": "When activated, this spell increases your critical strike damage bonus with Fire damage spells by 50%, and causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells.",
+   "iconFile": "spell_fire_sealoffire",
+   "active": true
+  },
+  "molten_fury": {
+   "name": "Molten Fury",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases damage of all spells against targets with less than 35% health by [V1]%.",
+   "rankValues": [
+    [
+     6
+    ],
+    [
+     12
+    ]
+   ],
+   "iconFile": "spell_fire_moltenblood"
+  },
+  "fiery_payback": {
+   "name": "Fiery Payback",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "When below 35% health all damage taken is reduced by [V1]% and your Pyroblast spell's cast time is reduced by [V2] secs while the cooldown is increased by [V3] secs.  In addition, melee and ranged attacks made against you have a [V4]% chance to disarm your attacker's main hand and ranged weapons.",
+   "rankValues": [
+    [
+     10,
+     -1.75,
+     2.5,
+     5
+    ],
+    [
+     20,
+     -3.5,
+     5,
+     10
+    ]
+   ],
+   "iconFile": "ability_mage_fierypayback"
+  },
+  "empowered_fire": {
+   "name": "Empowered Fire",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of your Fireball, Frostfire Bolt and Pyroblast spells by an amount equal to [V1]% of your spell power.  In addition, each time your Ignite talent causes damage, you have a [V2]% chance to regain 4% of your base mana.",
+   "rankValues": [
+    [
+     5,
+     33
+    ],
+    [
+     10,
+     67
+    ],
+    [
+     15,
+     100
+    ]
+   ],
+   "iconFile": "spell_fire_flamebolt"
+  },
+  "firestarter": {
+   "name": "Firestarter",
+   "maxPts": 2,
+   "prereq": "dragons_breath",
+   "tooltipTemplate": "Dealing damage with Blast Wave and Dragon's Breath now has a [V1]% chance to make your next Flamestrike spell instant cast and cost no mana.  Lasts 10 sec.",
+   "rankValues": [
+    [
+     50
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "ability_mage_firestarter"
+  },
+  "dragons_breath": {
+   "name": "Dragon's Breath",
+   "maxPts": 1,
+   "prereq": "combustion",
+   "tooltipTemplate": "Targets in a cone in front of the caster take 382 to 442 Fire damage and are Disoriented for 5 sec.  Any direct damaging attack will revive targets.  Turns off your attack when used.",
+   "iconFile": "inv_misc_head_dragon_01",
+   "active": true
+  },
+  "hot_streak": {
+   "name": "Hot Streak",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Any time you score 2 non-periodic spell criticals in a row using Fireball, Fire Blast, Scorch, Living Bomb, or Frostfire Bolt, you have a [V1]% chance the next Pyroblast spell cast within 10 sec will be instant cast.",
+   "rankValues": [
+    [
+     33
+    ],
+    [
+     66
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "ability_mage_hotstreak"
+  },
+  "burnout": {
+   "name": "Burnout",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your spell critical damage bonus with all spells by [V1]% but your non-periodic spell criticals cost an additional [V2]% of the spell's cost.",
+   "rankValues": [
+    [
+     17,
+     2
+    ],
+    [
+     34,
+     4
+    ],
+    [
+     50,
+     6
+    ]
+   ],
+   "iconFile": "ability_mage_burnout"
+  },
+  "living_bomb": {
+   "name": "Living Bomb",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "The target becomes a Living Bomb, taking 612 Fire damage over 12 sec.  After 12 sec or when the spell is dispelled, the target explodes dealing 306 Fire damage to all enemies within 10 yards.",
+   "iconFile": "ability_mage_livingbomb",
+   "active": true
+  }
+ },
+ "layout": {
+  "Arcane": [
+   [
+    "arcane_subtlety",
+    "arcane_focus",
+    "arcane_stability",
+    "arcane_recovery"
+   ],
+   [
+    "arcane_fortitude",
+    "magic_absorption",
+    "arcane_concentration",
+    null
+   ],
+   [
+    "magic_attunement",
+    "spell_impact",
+    "arcane_meditation",
+    "focus_magic"
+   ],
+   [
+    "arcane_shielding",
+    "improved_counterspell",
+    "arcane_momentum",
+    "torment_the_weak"
+   ],
+   [
+    "improved_blink",
+    "presence_of_mind",
+    null,
+    "arcane_mind"
+   ],
+   [
+    "prismatic_cloak",
+    "arcane_instability",
+    "arcane_potency",
+    "arcane_attunement"
+   ],
+   [
+    "arcane_empowerment",
+    "arcane_power",
+    "incanters_absorption",
+    null
+   ],
+   [
+    null,
+    "arcane_flows",
+    "mind_mastery",
+    null
+   ],
+   [
+    null,
+    "slow",
+    "missile_barrage",
+    null
+   ],
+   [
+    null,
+    "netherwind_presence",
+    "spell_power",
+    null
+   ],
+   [
+    null,
+    "arcane_barrage",
+    "arcane_barrier",
+    null
+   ]
+  ],
+  "Fire": [
+   [
+    "improved_fire_blast",
+    "incineration",
+    "improved_fireball",
+    null
+   ],
+   [
+    "ignite",
+    "burning_determination",
+    "world_in_flames",
+    null
+   ],
+   [
+    "flame_throwing",
+    "impact",
+    "pyroblast",
+    "burning_soul"
+   ],
+   [
+    "improved_scorch",
+    "molten_shields",
+    null,
+    "master_of_elements"
+   ],
+   [
+    "playing_with_fire",
+    "critical_mass",
+    "blast_wave",
+    null
+   ],
+   [
+    "blazing_speed",
+    null,
+    "fire_power",
+    null
+   ],
+   [
+    "pyromaniac",
+    "combustion",
+    "molten_fury",
+    null
+   ],
+   [
+    "fiery_payback",
+    null,
+    "empowered_fire",
+    null
+   ],
+   [
+    "firestarter",
+    "dragons_breath",
+    "hot_streak",
+    null
+   ],
+   [
+    null,
+    "burnout",
+    null,
+    null
+   ],
+   [
+    null,
+    "living_bomb",
+    null,
+    null
+   ]
+  ],
+  "Frost": [
+   [
+    "frostbite",
+    "improved_frostbolt",
+    "ice_floes",
+    null
+   ],
+   [
+    "ice_shards",
+    "frost_warding",
+    "precision",
+    "permafrost"
+   ],
+   [
+    "piercing_ice",
+    "icy_veins",
+    "improved_blizzard",
+    null
+   ],
+   [
+    "arctic_reach",
+    "frost_channeling",
+    "shatter",
+    null
+   ],
+   [
+    null,
+    "cold_snap",
+    "improved_cone_of_cold",
+    "frozen_core"
+   ],
+   [
+    "cold_as_ice",
+    null,
+    "winters_chill",
+    null
+   ],
+   [
+    "shattered_barrier",
+    "ice_barrier",
+    "arctic_winds",
+    null
+   ],
+   [
+    null,
+    "empowered_frostbolt",
+    "fingers_of_frost",
+    null
+   ],
+   [
+    "brain_freeze",
+    "summon_water_elemental",
+    "enduring_winter",
+    null
+   ],
+   [
+    null,
+    "chilled_to_the_bone",
+    null,
+    null
+   ],
+   [
+    null,
+    "deep_freeze",
+    null,
+    null
+   ]
+  ]
+ },
+ "enchants": [
+  {
+   "key": "alter_time",
+   "name": "Alter Time",
+   "rarity": "artifact",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Alter Time. \nAlter Time: Alter the fabric of time, causing the caster to return to their current location, their health, mana and buffs when cast a second time, or after 4 sec.\n\nEffect negated if the caster dies within before the effect occurs, or moves too far away.\n\n@ext:Does not work with absorb effects.:ext@",
+   "iconFile": "spell_mage_altertime",
+   "requiredLevel": 35
+  },
+  {
+   "key": "cauterize",
+   "name": "Cauterize",
+   "rarity": "artifact",
+   "spec": "Fire",
+   "tooltip": "An attack which would otherwise kill you will instead bring you to 35% of your maximum health. When this happens all movement speed imparing effects are removed and you gain 50% movement speed for 6 sec, but burn taking 3% of your health as Fire damage every second. This effect can only occur once every minute.",
+   "iconFile": "spell_fire_rune",
+   "requiredLevel": 35
+  },
+  {
+   "key": "mass_invisibility",
+   "name": "Mass Invisibility",
+   "rarity": "artifact",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Mass Invisibility. \nMass Invisibility: You and your allies within 40 yards instantly become invisible for 5 sec. The effect is cancelled if you perform any actions. While invisible, you can only see other invisible targets and those who can see invisible.",
+   "iconFile": "ability_mage_massinvisibility",
+   "requiredLevel": 35
+  },
+  {
+   "key": "ring_of_frost",
+   "name": "Ring of Frost",
+   "rarity": "artifact",
+   "spec": "Frost",
+   "tooltip": "Teaches you: Ring of Frost. \nRing of Frost: Summons a Ring of Frost at the target location. Enemies entering the ring will become frozen for 6 sec. Lasts 8 sec and has an 8 yard radius.",
+   "iconFile": "spell_frost_ring_of_frost",
+   "requiredLevel": 35
+  },
+  {
+   "key": "shimmer",
+   "name": "Shimmer",
+   "rarity": "artifact",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Shimmer. \nShimmer: Teleports the caster 20 yards forward, unless something is in the way.\n\nThis ability can be used while casting, but not channeling, and does not trigger a global cooldown.\n\nShares a cooldown with Blink.",
+   "iconFile": "spell_arcane_massdispel",
+   "requiredLevel": 35
+  },
+  {
+   "key": "arcane_cascade",
+   "name": "Arcane Cascade",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Your Arcane Blast applies an Arcane Charge on the target and when dealing damage with Arcane Explosion on an affected target the charge triggers, dealing Arcane damage to nearby enemies and restoring 6% base mana.\n\nSubsequent casts on targets with Arcane Charge will apply it to nearby targets.",
+   "iconFile": "ability_socererking_arcanewrath",
+   "requiredLevel": 24
+  },
+  {
+   "key": "arcane_conduit",
+   "name": "Arcane Conduit",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Your Evocation channels twice as fast and every second you fire an Arcane Surge, dealing Arcane damage to your target and reduces the cooldown of Arcane Power, Presence of Mind and Evocation by 10 sec.\n\nWhile channeling you take 40% reduced damage, your Evocation suffers no pushback, and you're immune to Interrupt and Silence effects.",
+   "iconFile": "ability_socererking_arcanemines",
+   "requiredLevel": 30
+  },
+  {
+   "key": "arcane_dominance",
+   "name": "Arcane Dominance",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Requires Arcane Concentration\nIncreases your spell critical strike rating by 15% of your Intellect.\n\nUsing Mana Gem, Presence of Mind or killing an opponent that yields experience or honor you gain Clearcasting.",
+   "iconFile": "spell_arcane_arcanepotency",
+   "requiredLevel": 15,
+   "requires": [
+    {
+     "talent": "arcane_concentration",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "biting_frost",
+   "name": "Biting Frost",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Requires Frostbite\nKilling an enemy with Frost damage causes your next spell that can trigger Frostbite to have a 100% chance to trigger it. Triggering Frostbite restores 20% of your base mana.\n\nThis effect can only occur once every 5 seconds.",
+   "iconFile": "spell_frost_iceshard",
+   "requiredLevel": 15,
+   "requires": [
+    {
+     "talent": "frostbite",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "blink_of_the_warden",
+   "name": "Blink of the Warden",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Your Blink distorts reality around you, leaving behind a mirror image in the place you left for 3 sec. The next spell cast on you will be redirected to the mirror image instead.\n\nIn addition, using Blink generates two charges of Arcane Blast.",
+   "iconFile": "custom_t_nhance_rpg_icons_arcanevision_border",
+   "requiredLevel": 20
+  },
+  {
+   "key": "brand_of_the_pyromaniac",
+   "name": "Brand of the Pyromaniac",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Requires Combustion\nAfter using Combustion your next 2 Pyroblasts will hit up to 2 nearby targets. \n\nDealing direct Fire damage reduces the cooldown of Combustion and Cremation by -2 seconds.",
+   "iconFile": "inv_misc_volatilefire",
+   "requiredLevel": 40,
+   "requires": [
+    {
+     "talent": "combustion",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "critical_time",
+   "name": "Critical Time",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Requires Living Bomb\nYour spells now have a 5% increased chance to critically strike your Living Bomb targets.",
+   "iconFile": "nhi_firewatch_border",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "talent": "living_bomb",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "draconic_knowledge",
+   "name": "Draconic Knowledge",
+   "rarity": "epic",
+   "spec": "Fire, Frost, Arcane",
+   "tooltip": "Grants you an effect based on the aspect of your Dragonkin as long as it is active.\n\nBlue and Bronze: Increases your Haste by an amount equal to 12% of your Tamed Dragon's Intellect\n\nRed and Green: Increases your Critical Strike Rating by 16% of your Tamed Dragon's Intellect\n\nOther: Increases your Spell Power by 16% of your Tamed Dragon's Intellect.",
+   "iconFile": "inv_artifact_tome01",
+   "requiredLevel": 30
+  },
+  {
+   "key": "elemental_torrent",
+   "name": "Elemental Torrent",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "When your Water Elemental deals damage with Waterbolt you gain 1% haste for 10 sec, stacking up to 6 times.",
+   "iconFile": "inv_waterelementalmount",
+   "requiredLevel": 50
+  },
+  {
+   "key": "esoteric_power",
+   "name": "Esoteric Power",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Arcane Blast can stack up to 5 times. Each stack gives Arcane Blast casts a 10% chance to deal 15% bonus damage to the enemy hit.",
+   "iconFile": "_d3arcanetorrent",
+   "requiredLevel": 24
+  },
+  {
+   "key": "fire_fire_fireball",
+   "name": "Fire Fire Fireball",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "After casting Fireball 3 times in combat, your next Fireball unleashes an extra Fireball at your target. This damage benefits from Fireball modifiers and can trigger procs.",
+   "iconFile": "ability_deathwing_fierygrip",
+   "requiredLevel": 15
+  },
+  {
+   "key": "fire_walk_with_me",
+   "name": "Fire Walk With Me",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Your Flamestrike increases the movement speed of allies who walk through it by 40%. In addition, your Scorch can be cast while moving but its range is reduced by 10 yards.",
+   "iconFile": "spell_fire_selfdestruct",
+   "requiredLevel": 22
+  },
+  {
+   "key": "fired_up",
+   "name": "Fired Up",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Dealing direct damage with Fire spells has a 12% chance to cause your next direct damage Fire spell to be a guaranteed critical strike.",
+   "iconFile": "spell_fire_playingwithfire",
+   "requiredLevel": 15
+  },
+  {
+   "key": "flame_alignment",
+   "name": "Flame Alignment",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Casting Fire Blast restores 15% base mana and grants you an absorb shield equal to 5% of your maximum mana.\n\nThe movement speed buff granted by Cauterize lasts for an additional 3 seconds and increases your spell critical strike chance by 0%.",
+   "iconFile": "inv_summerfest_firespirit",
+   "requiredLevel": 22
+  },
+  {
+   "key": "flame_on",
+   "name": "Flame On!",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Your Fireball, Scorch, Frostfire Bolt and Pyroblast casts increases the critical strike chance of your next Fire Blast by 33% and reduces its mana cost by 33%, stacking up to 3 times.",
+   "iconFile": "ability_mage_fierypayback",
+   "requiredLevel": 15
+  },
+  {
+   "key": "focal_point",
+   "name": "Focal Point",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "The buff you gain from your Focus Magic can now stack up to 3 times.",
+   "iconFile": "ability_socererking_arcanemines",
+   "requiredLevel": 20
+  },
+  {
+   "key": "frozen_conduit",
+   "name": "Frozen Conduit",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Casting Frostbolt reduces the mana cost and channel time of your next Blizzard by 20%, stacking up to 3 times.",
+   "iconFile": "spell_frost_wisp",
+   "requiredLevel": 20
+  },
+  {
+   "key": "frozen_flesh",
+   "name": "Frozen Flesh",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Requires Deep Freeze\nRequires Brain Freeze\nYour Deep Freeze applies Frozen Flesh to your target. If you're dealing damage with Deep Freeze it also triggers Brain Freeze.\nFrozen Flesh: Your next 2 Fire spells shatter the target's flesh, dealing ${(330+0)*$<scalingbp>+0*0.4} Frostfire damage. Lasts for 15 sec.",
+   "iconFile": "ability_monk_counteractmagic",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "talent": "deep_freeze",
+     "rank": 1
+    },
+    {
+     "talent": "brain_freeze",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "key": "frozen_haste",
+   "name": "Frozen Haste",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Your Frost Bomb explosion increases your spell haste by 10% for 8 sec. The duration is increased by 3 sec for each additional target hit, up to a maximum of 20 sec.",
+   "iconFile": "spell_frost_arcticwinds",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glacial_cascade",
+   "name": "Glacial Cascade",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Reduces the cast time of your Frostbolt by 5%.\n\nEvery third Frostbolt triggers a cascade of Frostbolts, hitting 3 additional nearby enemies.",
+   "iconFile": "ability_mage_burstofcold",
+   "requiredLevel": 15
+  },
+  {
+   "key": "hailstorm",
+   "name": "Hailstorm",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Teaches you: Hailstorm. \nHailstorm: Ice shards pelt the target area doing 173.62 Frost damage over 6 sec.\n\n@ext:Scales with Blizzard modifiers.:ext@",
+   "iconFile": "_d3blizzard",
+   "requiredLevel": 20
+  },
+  {
+   "key": "icy_slaughter",
+   "name": "Icy Slaughter",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Deep Freeze always deals damage when used against monsters (even if they are not stun immune).\n\nYour Icy Veins increases the damage of Cone of Cold and Deep Freeze by 20% and removes their mana cost. \n\nKilling an enemy that yields experience or honor, or dealing damage with Deep Freeze reduces the cooldown of Icy Veins by 10 sec.",
+   "iconFile": "ability_demonhunter_sigilblue",
+   "requiredLevel": 20
+  },
+  {
+   "key": "impeccable_timing",
+   "name": "Impeccable Timing",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Requires Missile Barrage\nIncreases your spell haste rating by 10% of your Intellect.\n\nYour mastery of time grants you Impeccable Timing every 10 seconds. While active your next spell that can trigger Missile Barrage, is guaranteed to trigger it.",
+   "iconFile": "inv_misc_pocketwatch_01",
+   "requiredLevel": 50,
+   "requires": [
+    {
+     "talent": "missile_barrage",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "infused_gems",
+   "name": "Infused Gems",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Mana Gem grants 10% spell haste and spell critical strike chance for 15 sec when used.\n\nNewly created Mana Gems have unlimited charges.",
+   "iconFile": "inv_misc_gem_variety_01",
+   "requiredLevel": 15
+  },
+  {
+   "key": "kindling",
+   "name": "Kindling",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Blast Wave no longer knocks back and the critical strike chance of Blast Wave and Dragon's Breath is increased by 10%.\n\nYour Firestarter talent allows you to cast 2 Flamestrikes.",
+   "iconFile": "spell_fire_windsofwoe",
+   "requiredLevel": 50
+  },
+  {
+   "key": "pendulum",
+   "name": "Pendulum",
+   "rarity": "epic",
+   "spec": "",
+   "tooltip": "Receive 3% spell haste while above 50% mana and 3% spell critical strike chance while below 50% mana.",
+   "iconFile": "inv_elemental_mote_mana",
+   "requiredLevel": 15
+  },
+  {
+   "key": "power_overwhelming",
+   "name": "Power Overwhelming",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Requires Presence of Mind\nRequires Arcane Power\nDealing damage with your Arcane Missiles, Arcane Barrage or Arcane Blast reduces the cooldown of your Arcane Power by and Presence of Mind by 1 second.",
+   "iconFile": "spell_arcane_arcanetorrent",
+   "requiredLevel": 30,
+   "requires": [
+    {
+     "talent": "presence_of_mind",
+     "rank": 1
+    },
+    {
+     "talent": "arcane_power",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "precision_impact",
+   "name": "Precision Impact",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Your Meteor and Scorch deal 20% increased damage to targets affected by your Fireball or Pyroblast damage over time effect.\n\nYour Fireball and Pyroblast deal 10% more damage to targets affected by your Meteor damage over time effect.",
+   "iconFile": "ability_xavius_corruptionmeteor",
+   "requiredLevel": 30
+  },
+  {
+   "key": "pushing_the_limit",
+   "name": "Pushing the Limit",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Consuming Brain Freeze, Hot Streak or Missile Barrage increases Haste by 8% for 5 seconds.",
+   "iconFile": "spell_fire_elementaldevastation",
+   "requiredLevel": 50
+  },
+  {
+   "key": "pyroclastic_surprise",
+   "name": "Pyroclastic Surprise",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Casting Pyroblast while you and your target are not in combat guarantees it to critically hit.",
+   "iconFile": "nhi_fireblow_border",
+   "requiredLevel": 20
+  },
+  {
+   "key": "rapid_blinking",
+   "name": "Rapid Blinking",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Your damaging spells with a cast time reduce the cooldown of Blink by 1 seconds.\n\nThis effect can only occur once every second and only works against creatures.",
+   "iconFile": "nhi_water_eye_border",
+   "requiredLevel": 20
+  },
+  {
+   "key": "rapid_shatter",
+   "name": "Rapid Shatter",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Immediately following up Frostbolt while it is still in the air with any other spell, increases the damage of that spell by 15%.\n\nSpells cast this way do not consume Fingers of Frost.",
+   "iconFile": "spell_frost_ice_shards",
+   "requiredLevel": 15
+  },
+  {
+   "key": "resonant_barrage",
+   "name": "Resonant Barrage",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Your Arcane Barrage makes your next Arcane Blast deal 15% more damage and generate an additional charge, or makes your next Spellsteal steal an additional magic effect. Stacks up to 3.",
+   "iconFile": "spell_mage_nethertempest",
+   "requiredLevel": 24
+  },
+  {
+   "key": "scorched_ground",
+   "name": "Scorched Ground",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "Requires Living Bomb\nWhen your Living Bomb explodes it scorches the ground, burning enemies within the area for 91.83 Fire damage every second for 8 sec. Also, targets affected by your Living Bomb takes 10% more damage from your Living Bomb explosions.\n\nThis effect can only occur once every 8 seconds.",
+   "iconFile": "spell_druid_sunfall",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "talent": "living_bomb",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "stay_frosty",
+   "name": "Stay Frosty",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Requires Fingers of Frost\nCasting damaging spells increases the chance to trigger your Fingers of Frost talent by an additional 3% until it triggers.\n\nCasting Deep Freeze grants 1 charge of Fingers of Frost.",
+   "iconFile": "_d3rayoffrost",
+   "requiredLevel": 45,
+   "requires": [
+    {
+     "talent": "fingers_of_frost",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "transference",
+   "name": "Transference",
+   "rarity": "epic",
+   "spec": "Arcane",
+   "tooltip": "Requires Mindshift\nYour intellect is increased by 10% and your spellsteal can now be cast on allies to remove a harmful magic effect.\n\nYour Arcane Blast grants two Arcane Blast stacks",
+   "iconFile": "ability_mage_timewarp",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "name": "Mindshift"
+    }
+   ]
+  },
+  {
+   "key": "trisolaris",
+   "name": "Trisolaris",
+   "rarity": "epic",
+   "spec": "Fire",
+   "tooltip": "The periodic damage of Pyroblast can now stack up to 3 times.\n\nDealing direct Fire damage to a target afflicted by your Living Bomb has a 20% chance to cause it to spontaneously combust. This does not consume Living Bomb.",
+   "iconFile": "sha_spell_fire_bluerainoffire_nightmare",
+   "requiredLevel": 10
+  },
+  {
+   "key": "wanding",
+   "name": "Wanding",
+   "rarity": "epic",
+   "spec": "",
+   "tooltip": "Wand attacks grant you stacks that increase the cast speed of your next spell by 5%, stacks up to 5 times and lasts 6 sec.",
+   "iconFile": "ability_shootwand",
+   "requiredLevel": 15
+  },
+  {
+   "key": "winters_blaze",
+   "name": "Winter's Blaze",
+   "rarity": "epic",
+   "spec": "Frost",
+   "tooltip": "Consuming Brain Freeze with Frostfire Bolt increases its damage by 15%.\n\nFrostbolt and Ice Lance deal 10% increased damage to targets affected by Frostfire Bolt.",
+   "iconFile": "ability_mage_frostfirebolt",
+   "requiredLevel": 60
+  },
+  {
+   "key": "arcane_mastery",
+   "name": "Arcane Mastery",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Increases your haste by 4% and increases your Intellect by 8%.",
+   "iconFile": "custom_t_nhance_rpg_icons_arcaneblast_border",
+   "requiredLevel": 30
+  },
+  {
+   "key": "arcane_orb",
+   "name": "Arcane Orb",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Arcane Orb. \nArcane Orb: Launches an Arcane Orb forward from your position, traveling up to 35 yards, dealing Arcane damage to enemies it passes through and increasing their Arcane damage taken from you by 10%. Subsequent hits on the same target deals 50% less damage.",
+   "iconFile": "spell_mage_arcaneorb",
+   "requiredLevel": 30
+  },
+  {
+   "key": "arcane_reverberation",
+   "name": "Arcane Reverberation",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Your Arcane Echo healing is tripled and costs 25% less mana.\n\nArcane Power is transformed into Resonating Power.\nResonating Power: Tap into Arcane resources, making your Arcane Echo heal as if you had full mana but cost no mana. \n\nWhile active you also gain 2% increased healing done and 2% haste every 2 seconds. Maintaining this buff slowly drains your mana, and will last until your mana drops below 30%, after which it will restore the borrowed mana over 3 seconds before expiring.",
+   "iconFile": "spell_arcane_teleporthalloftheguardian",
+   "requiredLevel": 30
+  },
+  {
+   "key": "barrage_overload",
+   "name": "Barrage Overload",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Requires Arcane Barrage\nEach stack of Arcane Blast empowers your Arcane Barrage to unleash bursts of pure arcane energy over a short duration, dealing ${190*$<scalingbp>+0*0.18} Arcane damage. \n\nEach Arcane Blast stack consumed by Arcane Barrage grants you a charge of Barrage Overload.\n\nBarrage Overload: Your Arcane Blast casts 20% faster but costs 30% more mana. Your Arcane Missile hits restore 2% mana.",
+   "iconFile": "custom_t_nhance_rpg_icons_arcaneshardsfall_border",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "talent": "arcane_barrage",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "blazing_flame",
+   "name": "Blazing Flame",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Requires Blazing Speed\nBlazing Speed triggers from casting Blast Wave or Dragon's Breath instead of taking damage. In addition, Blazing Speed grants your Scorch and Pyroblast 40% increased critical strike chance and its duration is increased by 2 sec each time those spells are cast.",
+   "iconFile": "ability_racial_foregedinflames",
+   "requiredLevel": 36,
+   "requires": [
+    {
+     "talent": "blazing_speed",
+     "rank": 2
+    }
+   ]
+  },
+  {
+   "key": "cremation",
+   "name": "Cremation",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Teaches you Cremation.\nCremation: Deals 1525.58 Fire damage over 10 sec seconds, plus 2 times the total periodic damage from your Ignite, Pyroblast, and Living Bomb effects, which are consumed. This periodic damage can critically strike.",
+   "iconFile": "skill_icon_skill71_border",
+   "requiredLevel": 30
+  },
+  {
+   "key": "fire_mastery",
+   "name": "Fire Mastery",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Increases your Fire critical strike damage and critical strike chance by 4%.",
+   "iconFile": "inv_elemental_primal_fire",
+   "requiredLevel": 30
+  },
+  {
+   "key": "frost_bomb",
+   "name": "Frost Bomb",
+   "rarity": "legendary",
+   "spec": "Frost",
+   "tooltip": "Teaches you: Frost Bomb. \n\nFrost Bomb: The target becomes a Frost Bomb, exploding after 8 seconds (4 sec against players) dealing 340.32 Frost damage and slowing enemies within 10 yards by 40% for 2 sec.\n\nFrost damage dealt to the Frost Bomb activates it, dealing an additional 17% damage to the target and nearby enemies.\n\nCasting Frost Bomb on monsters also grants you Fingers of Frost (if known).",
+   "iconFile": "spell_mage_frostbomb",
+   "requiredLevel": 30
+  },
+  {
+   "key": "frost_mastery",
+   "name": "Frost Mastery",
+   "rarity": "legendary",
+   "spec": "Frost",
+   "tooltip": "Increases your Frost damage done by 5% and the damage done by your Water Elemental by 10%.",
+   "iconFile": "spell_frost_piercing_chill",
+   "requiredLevel": 30
+  },
+  {
+   "key": "frozen_orb",
+   "name": "Frozen Orb",
+   "rarity": "legendary",
+   "spec": "Frost",
+   "tooltip": "Teaches you: Frozen Orb. \nFrozen Orb: Launches a Frozen Orb forward from the caster's position, that deals 97.48 Frost damage to all nearby enemy targets for 8 sec. Targets damaged by the Frost Orb are slowed by 40% for 2 sec.",
+   "iconFile": "spell_frost_frozenorb",
+   "requiredLevel": 30
+  },
+  {
+   "key": "hot_hands",
+   "name": "Hot Hands",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Requires Pyroblast\nRequires Hot Streak\nPyroblast is also able to trigger Hot Streak.",
+   "iconFile": "nhi_firehands_border",
+   "requiredLevel": 50,
+   "requires": [
+    {
+     "talent": "pyroblast",
+     "rank": 1
+    },
+    {
+     "talent": "hot_streak",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "ice_barrage",
+   "name": "Ice Barrage",
+   "rarity": "legendary",
+   "spec": "Frost",
+   "tooltip": "Dealing damage with Frostbolt and Frostfire Bolt generates an Icicle. You can store up to 5 Icicles. At 5 stacks, your Ice Lance will treat the target as frozen.\n\nDealing damage with Ice Lance rapidly launches your stored Icicles at the target, dealing ${239*$<scalingbp>+0*0.36} Frost damage. Each Icicle also increases the damage the target takes from your Deep Freeze by 2%, stacking up to 100.\n\n@ext:You cannot gain Icicles while they are launching.:ext@",
+   "iconFile": "spell_frost_chillingblast",
+   "requiredLevel": 30
+  },
+  {
+   "key": "meteor",
+   "name": "Meteor",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Teaches you: Meteor. \nMeteor: Calls down a meteor which lands at the target location after 3 seconds, dealing 607 to 673 Fire damage, split evenly between all targets within 8 yards, and burns the ground, dealing Fire damage over 6 sec to all enemies in the area.",
+   "iconFile": "spell_mage_meteor",
+   "requiredLevel": 30
+  },
+  {
+   "key": "rune_of_power",
+   "name": "Rune of Power",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Rune of Power. \nRune of Power: Places a Rune of Power on the ground which increases all magic damage you deal by 20% and reduces the mana cost of Arcane Blast by 100% while you stand within 5 yards. Lasts for 15 sec.\n\n@ext:This does not stack with Arcane Power.:ext@",
+   "iconFile": "spell_mage_runeofpower",
+   "requiredLevel": 30
+  },
+  {
+   "key": "tame_dragonkin",
+   "name": "Tame Dragonkin",
+   "rarity": "legendary",
+   "spec": "Fire",
+   "tooltip": "Teaches you: Tame Dragonkin. \nTame Dragonkin: Begins taming a dragonkin to be your companion. Your armor is reduced by 100% while you focus on taming the dragonkin for 20 sec. If you lose the dragonkin's attention for any reason, the taming process will fail. Each type of dragonkin has unique abilities that you will be able to make use of.",
+   "iconFile": "ability_mount_drake_red",
+   "requiredLevel": 30
+  },
+  {
+   "key": "touch_of_the_magi",
+   "name": "Touch of the Magi",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Touch of the Magi. \nTouch of the Magi: Applies Touch of the Magi to the enemy, accumulating 50% of the Arcane damage you deal to the target for 10 sec, and then explodes restoring 20% total mana and dealing the accumulated Arcane damage to the target and nearby enemies.",
+   "iconFile": "ability_mage_netherwindpresence",
+   "requiredLevel": 30
+  },
+  {
+   "key": "wacky_wizardry",
+   "name": "Wacky Wizardry",
+   "rarity": "legendary",
+   "spec": "Arcane",
+   "tooltip": "Your damaging Mage spell casts have a 15% chance to cast an additional random Mage spell for free.",
+   "iconFile": "spell_nature_polymorph",
+   "requiredLevel": 30
+  },
+  {
+   "key": "abjurers_ward_arcane",
+   "name": "Abjurer's Ward: Arcane",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Absorbing damage with a Ward spell now reduces the cooldown of Presence of Mind by 10 seconds.",
+   "iconFile": "nhi_arcaneburst_border",
+   "requiredLevel": 35
+  },
+  {
+   "key": "abjurers_ward_fire",
+   "name": "Abjurer's Ward: Fire",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Absorbing damage with a Ward spell now reduces the cooldown of your Combustion by 10 seconds.",
+   "iconFile": "nhi_fire_rune_border",
+   "requiredLevel": 35
+  },
+  {
+   "key": "abjurers_ward_frost",
+   "name": "Abjurer's Ward: Frost",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Absorbing damage with a Ward spell now reduces the cooldown of Cold Snap by 10 seconds.",
+   "iconFile": "nhi_frostrune_border",
+   "requiredLevel": 35
+  },
+  {
+   "key": "arcane_concentration",
+   "name": "Arcane Concentration",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nGives you a 10% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.\n\nThis Mystic Enchant does not stack with the Arcane Concentration Talent.",
+   "iconFile": "spell_shadow_manaburn",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_focus",
+   "name": "Arcane Focus",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nIncreases your chance to hit and reduces the mana cost of your Arcane spells by 3%.\n\nThis Mystic Enchant does not stack with the Arcane Focus Talent.",
+   "iconFile": "spell_holy_devotion",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_fortitude",
+   "name": "Arcane Fortitude",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nIncreases your armor by an amount equal to 150% of your Intellect.\n\nThis Mystic Enchant does not stack with the Arcane Fortitude Talent.",
+   "iconFile": "spell_arcane_arcaneresilience",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_meditation",
+   "name": "Arcane Meditation",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nAllows 50% of your mana regeneration to continue while casting.\n\nThis Mystic Enchant does not stack with the Arcane Meditation Talent.",
+   "iconFile": "spell_shadow_siphonmana",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_power_well",
+   "name": "Arcane Power Well",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Casting damaging Arcane spells has a 15% chance to make your next non-Arcane spell have no cost.",
+   "iconFile": "ability_mage_massinvisibility",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_shielding",
+   "name": "Arcane Shielding",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nDecreases the mana lost per point of damage taken when Mana Shield is active by 33% and increases the resistances granted by Mage Armor by 50%.\n\nThis Mystic Enchant does not stack with the Arcane Shielding Talent.",
+   "iconFile": "spell_shadow_detectlesserinvisibility",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_stability",
+   "name": "Arcane Stability",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks while casting any Arcane spell by 100%.\n\nThis Mystic Enchant does not stack with the Arcane Stability Talent.",
+   "iconFile": "spell_nature_starfall",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arcane_subtlety",
+   "name": "Arcane Subtlety",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nReduces the chance your helpful spells and damage over time effects will be dispelled by 30% and reduces the threat caused by your Arcane spells by 40%.\n\nThis Mystic Enchant does not stack with the Arcane Subtlety Talent.",
+   "iconFile": "spell_holy_dispelmagic",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arctic_power_well",
+   "name": "Arctic Power Well",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Casting damaging Frost spells has a 15% chance to make your next non-Frost spell have no cost.",
+   "iconFile": "spell_deathknight_frostfever",
+   "requiredLevel": 45
+  },
+  {
+   "key": "arctic_reach",
+   "name": "Arctic Reach",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the range of your Frostbolt, Ice Lance, Deep Freeze and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%.\n\nThis Mystic Enchant does not stack with the Arctic Reach Talent.",
+   "iconFile": "spell_shadow_darkritual",
+   "requiredLevel": 45
+  },
+  {
+   "key": "burning_soul",
+   "name": "Burning Soul",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nReduces the pushback suffered from damaging attacks while casting Fire spells by 70% and reduces the threat caused by your Fire spells by 20%.\n\nThis Mystic Enchant does not stack with the Burning Soul Talent.",
+   "iconFile": "spell_fire_fire",
+   "requiredLevel": 45
+  },
+  {
+   "key": "fiery_power_well",
+   "name": "Fiery Power Well",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Casting damaging Fire spells has a 15% chance to make your next non-Fire spell within 10 sec have no cost.",
+   "iconFile": "spell_shadow_shadowandflame",
+   "requiredLevel": 45
+  },
+  {
+   "key": "flame_throwing",
+   "name": "Flame Throwing",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nIncreases the range of all Fire spells except Frostfire Bolt by 6 yards.\n\nThis Mystic Enchant does not stack with the Flame Throwing Talent.",
+   "iconFile": "spell_fire_flare",
+   "requiredLevel": 45
+  },
+  {
+   "key": "focus_magic",
+   "name": "Focus Magic",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Teaches you: Focus Magic\n\n@ext:Can not be used if the Focus Magic talent is learned.:ext@\n@s:1504646:0:0:0:-48@",
+   "iconFile": "spell_arcane_studentofmagic",
+   "requiredLevel": 45
+  },
+  {
+   "key": "frost_channeling",
+   "name": "Frost Channeling",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nReduces the mana cost of all spells by 10% and reduces the threat caused by your Frost spells by 10%.\n\nThis Mystic Enchant does not stack with the Frost Channeling Talent.",
+   "iconFile": "spell_frost_stun",
+   "requiredLevel": 45
+  },
+  {
+   "key": "frost_warding",
+   "name": "Frost Warding",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the armor and resistances given by your Frost Armor and Ice Armor spells by 50%.  In addition, gives your Frost Ward and Fire Ward a 30% chance to negate the warded damage spell and restore mana equal to the damage caused.\n\nThis Mystic Enchant does not stack with the Frost Warding Talent.",
+   "iconFile": "spell_frost_frostward",
+   "requiredLevel": 45
+  },
+  {
+   "key": "frostbite",
+   "name": "Frostbite",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nGives your Chill effects a 15% chance to freeze the target for 5 sec.\n\nThis Mystic Enchant does not stack with the Frostbite Talent.",
+   "iconFile": "spell_frost_frostarmor",
+   "requiredLevel": 45
+  },
+  {
+   "key": "glyph_of_arcane_barrage",
+   "name": "Glyph of Arcane Barrage",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Arcane Barrage now restores 5% of your missing mana.",
+   "iconFile": "ability_mage_arcanebarrage",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_arcane_blast",
+   "name": "Glyph of Arcane Blast",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Each stack of the Arcane Blast buff reduces the cast time of Arcane Blast by 4%.",
+   "iconFile": "spell_arcane_blast",
+   "requiredLevel": 24
+  },
+  {
+   "key": "glyph_of_arcane_explosion",
+   "name": "Glyph of Arcane Explosion",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Reduces mana cost of Arcane Explosion by 10%.",
+   "iconFile": "spell_nature_wispsplode",
+   "requiredLevel": 14
+  },
+  {
+   "key": "glyph_of_arcane_missiles",
+   "name": "Glyph of Arcane Missiles",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Increases the critical strike damage bonus of Arcane Missiles and Arcane Barrage by 25%.",
+   "iconFile": "spell_nature_starfall",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_arcane_power",
+   "name": "Glyph of Arcane Power",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Increases the duration of Arcane Power by 3 sec.",
+   "iconFile": "spell_nature_lightning",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_blast_wave",
+   "name": "Glyph of Blast Wave",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "The mana cost of your Blast Wave spell is reduced by 15%, but it no longer knocks enemies back.",
+   "iconFile": "spell_holy_excorcism_02",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glyph_of_blink",
+   "name": "Glyph of Blink",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Increases the distance you travel with the Blink spell by 5 yards.",
+   "iconFile": "spell_arcane_blink",
+   "requiredLevel": 20
+  },
+  {
+   "key": "glyph_of_deep_freeze",
+   "name": "Glyph of Deep Freeze",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Increases the range of Deep Freeze by 10 yards.",
+   "iconFile": "ability_mage_deepfreeze",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_eternal_water",
+   "name": "Glyph of Eternal Water",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Summon Water Elemental now lasts indefinitely, but your Water Elemental can no longer cast Freeze.",
+   "iconFile": "spell_frost_summonwaterelemental_2",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_evocation",
+   "name": "Glyph of Evocation",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Your Evocation ability also causes you to regain 60% of your health over its duration.",
+   "iconFile": "spell_nature_purge",
+   "requiredLevel": 20
+  },
+  {
+   "key": "glyph_of_fire_blast",
+   "name": "Glyph of Fire Blast",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Guarantees the critical strike of Fire Blast on stunned or incapacitated targets.",
+   "iconFile": "spell_fire_fireball",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_fireball",
+   "name": "Glyph of Fireball",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Reduces the casting time of your Fireball spell by 5%.",
+   "iconFile": "spell_fire_flamebolt",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_frost_nova",
+   "name": "Glyph of Frost Nova",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Frost Nova targets can take an additional 20% damage before the Frost Nova effect automatically breaks.",
+   "iconFile": "spell_frost_frostnova",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_frostbolt",
+   "name": "Glyph of Frostbolt",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Increases the damage dealt by Frostbolt by 10%, but removes the slowing effect.",
+   "iconFile": "spell_frost_frostbolt02",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_frostfire",
+   "name": "Glyph of Frostfire",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Increases the initial damage dealt by Frostfire Bolt by 3% and its critical strike chance by 3%.",
+   "iconFile": "ability_mage_frostfirebolt",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_ice_armor",
+   "name": "Glyph of Ice Armor",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Ice Armor and Frost Armor spells grant an additional 50% armor and resistance.",
+   "iconFile": "spell_frost_chillingarmor",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glyph_of_ice_barrier",
+   "name": "Glyph of Ice Barrier",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Increases the amount of damage absorbed by your Ice Barrier by 30%.",
+   "iconFile": "spell_ice_lament",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_ice_block",
+   "name": "Glyph of Ice Block",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Frost Nova cooldown is now reset every time you use Ice Block.",
+   "iconFile": "spell_frost_frost",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glyph_of_ice_lance",
+   "name": "Glyph of Ice Lance",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Ice Lance now causes 5 times damage against frozen targets higher level than you instead of triple damage.",
+   "iconFile": "spell_frost_frostblast",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glyph_of_icy_veins",
+   "name": "Glyph of Icy Veins",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Your Icy Veins ability also removes all movement slowing and cast time slowing effects.",
+   "iconFile": "spell_frost_coldhearted",
+   "requiredLevel": 20
+  },
+  {
+   "key": "glyph_of_invisibility",
+   "name": "Glyph of Invisibility",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Increases the duration of the Invisibility effect by 10 sec.",
+   "iconFile": "ability_mage_invisibility",
+   "requiredLevel": 48
+  },
+  {
+   "key": "glyph_of_living_bomb",
+   "name": "Glyph of Living Bomb",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "The periodic damage from your Living Bomb can now be critical strikes.",
+   "iconFile": "ability_mage_livingbomb",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_mage_armor",
+   "name": "Glyph of Mage Armor",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Your Mage Armor regenerates 2% of your maximum mana every 5 seconds but no longer grants you mana regeneration while casting.",
+   "iconFile": "spell_magearmor",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_mana_gem",
+   "name": "Glyph of Mana Gem",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Increases the mana received from using a mana gem by 40%.",
+   "iconFile": "inv_misc_gem_emerald_01",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_mending_images",
+   "name": "Glyph of Mending Images",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "While you are under the effect of Mindshift, your Mirror Images cast Arcane Mending on injured nearby allies every 2 sec.",
+   "iconFile": "_manaburn_arcane",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_mirror_image",
+   "name": "Glyph of Mirror Image",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Your Mirror Image spell now lasts for 60 seconds and creates a 4th copy.",
+   "iconFile": "spell_magic_lesserinvisibilty",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_molten_armor",
+   "name": "Glyph of Molten Armor",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Your Molten Armor grants an additional 20% of your spirit as critical strike rating.",
+   "iconFile": "ability_mage_moltenarmor",
+   "requiredLevel": 50
+  },
+  {
+   "key": "glyph_of_polymorph",
+   "name": "Glyph of Polymorph",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Your Polymorph spell also removes all damage over time effects from the target.",
+   "iconFile": "spell_nature_polymorph",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_remove_curse",
+   "name": "Glyph of Remove Curse",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Your Remove Curse spell also makes the target immune to all curses for 4 sec.",
+   "iconFile": "spell_holy_removecurse",
+   "requiredLevel": 18
+  },
+  {
+   "key": "glyph_of_scorch",
+   "name": "Glyph of Scorch",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Increases the damage of your Scorch spell by 20%.",
+   "iconFile": "spell_fire_soulburn",
+   "requiredLevel": 22
+  },
+  {
+   "key": "glyph_of_water_elemental",
+   "name": "Glyph of Water Elemental",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Reduces the cooldown of your Summon Water Elemental spell by -30 sec.",
+   "iconFile": "spell_frost_summonwaterelemental_2",
+   "requiredLevel": 40
+  },
+  {
+   "key": "ice_floes",
+   "name": "Ice Floes",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nReduces the cooldown of your Frost Nova, Cone of Cold, Ice Block and Icy Veins spells by 20%.\n\nThis Mystic Enchant does not stack with the Ice Floes Talent.",
+   "iconFile": "spell_frost_icefloes",
+   "requiredLevel": 45
+  },
+  {
+   "key": "ice_shards",
+   "name": "Ice Shards",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of your Frost spells by 100%.\n\nThis Mystic Enchant does not stack with the Ice Shards Talent.",
+   "iconFile": "spell_frost_iceshard",
+   "requiredLevel": 45
+  },
+  {
+   "key": "icy_veins",
+   "name": "Icy Veins",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Teaches you: Icy Veins\n@s:1462472:0:0:0:-32@\n@ext:Can not be used if the Icy Veins talent is learned.:ext@",
+   "iconFile": "spell_frost_coldhearted",
+   "requiredLevel": 45
+  },
+  {
+   "key": "ignite",
+   "name": "Ignite",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nYour critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec.\n\nThis Mystic Enchant does not stack with the Ignite Talent.",
+   "iconFile": "spell_fire_incinerate",
+   "requiredLevel": 45
+  },
+  {
+   "key": "impact",
+   "name": "Impact",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nGives your damaging spells a 10% chance to cause the next Fire Blast you cast to stun the target for 2 sec.\n\nThis Mystic Enchant does not stack with the Impact Talent.",
+   "iconFile": "spell_fire_meteorstorm",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_blizzard",
+   "name": "Improved Blizzard",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nAdds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 50%.  Lasts 1.5 sec.\n\nThis Mystic Enchant does not stack with the Improved Blizzard Talent.",
+   "iconFile": "spell_frost_icestorm",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_counterspell",
+   "name": "Improved Counterspell",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nYour Counterspell also silences the target for 4 sec.\n\nThis Mystic Enchant does not stack with the Improved Counterspell Talent.",
+   "iconFile": "spell_frost_iceshock",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_fire_blast",
+   "name": "Improved Fire Blast",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nReduces the cooldown of your Fire Blast spell by 2 sec.\n\nThis Mystic Enchant does not stack with the Improved Fire Blast Talent.",
+   "iconFile": "spell_fire_fireball",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_fireball",
+   "name": "Improved Fireball",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nReduces the casting time of your Fireball spell by 0.5 sec.\n\nThis Mystic Enchant does not stack with the Improved Fireball Talent.",
+   "iconFile": "spell_fire_flamebolt",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_frostbolt",
+   "name": "Improved Frostbolt",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nReduces the casting time of your Frostbolt spell by 0.5 sec.\n\nThis Mystic Enchant does not stack with the Improved Frostbolt Talent.",
+   "iconFile": "spell_frost_frostbolt02",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_scorch",
+   "name": "Improved Scorch",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nIncreases your chance to critically hit with Scorch, Fireball and Frostfire Bolt by an additional 3% and your damaging Scorch spells have a 100% chance to cause your target to be vulnerable to spell damage, increasing spell critical strike chance against that target by 5% and lasts 30 sec.\n\nThis Mystic Enchant does not stack with the Improved Scorch Talent.",
+   "iconFile": "spell_fire_soulburn",
+   "requiredLevel": 45
+  },
+  {
+   "key": "incineration",
+   "name": "Incineration",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Fire Blast, Scorch, Arcane Blast and Cone of Cold spells by 9%.\n\nThis Mystic Enchant does not stack with the Incineration Talent.",
+   "iconFile": "spell_fire_flameshock",
+   "requiredLevel": 45
+  },
+  {
+   "key": "magic_absorption",
+   "name": "Magic Absorption",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nIncreases all resistances by 1 per level and causes all spells that damage you have a 10% chance to restore 2% of your total mana. 6 second cooldown\n\nThis Mystic Enchant does not stack with the Magic Absorption Talent.",
+   "iconFile": "spell_nature_astralrecalgroup",
+   "requiredLevel": 45
+  },
+  {
+   "key": "magic_attunement",
+   "name": "Magic Attunement",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nIncreases the range of your Arcane spells by 6 yards and the effect of your Amplify Magic and Dampen Magic spells by 2%.\n\nThis Mystic Enchant does not stack with the Magic Attunement Talent.",
+   "iconFile": "spell_nature_abolishmagic",
+   "requiredLevel": 45
+  },
+  {
+   "key": "master_of_elements",
+   "name": "Master of Elements",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nYour spell criticals will refund 30% of their base mana cost.\n\nThis Mystic Enchant does not stack with the Master of Elements Talent.",
+   "iconFile": "spell_fire_masterofelements",
+   "requiredLevel": 45
+  },
+  {
+   "key": "permafrost",
+   "name": "Permafrost",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the duration of your Chill effects by 3 secs, reduces the target's speed by an additional 10%, and reduces the target's healing received by 20%.\n\nThis Mystic Enchant does not stack with the Permafrost Talent.",
+   "iconFile": "spell_frost_wisp",
+   "requiredLevel": 45
+  },
+  {
+   "key": "piercing_ice",
+   "name": "Piercing Ice",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the damage done by your Frost spells by 6%.\n\nThis Mystic Enchant does not stack with the Piercing Ice Talent.",
+   "iconFile": "spell_frost_frostbolt",
+   "requiredLevel": 45
+  },
+  {
+   "key": "precision",
+   "name": "Precision",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nReduces the mana cost and increases your chance to hit with spells by 3%.\n\nThis Mystic Enchant does not stack with the Precision Talent.",
+   "iconFile": "spell_ice_magicdamage",
+   "requiredLevel": 45
+  },
+  {
+   "key": "pyroblast",
+   "name": "Pyroblast",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Teaches you: Pyroblast\n\n@ext:Can not be used if the Pyroblast talent is learned.:ext@ \n@s:1461366:0:0:0:-48@",
+   "iconFile": "spell_fire_fireball02",
+   "requiredLevel": 20
+  },
+  {
+   "key": "shatter",
+   "name": "Shatter",
+   "rarity": "rare",
+   "spec": "Frost",
+   "tooltip": "Crossover Talent\nIncreases the critical strike chance of all your spells against frozen targets by 50%.\n\nThis Mystic Enchant does not stack with the Shatter Talent.",
+   "iconFile": "spell_frost_frostshock",
+   "requiredLevel": 45
+  },
+  {
+   "key": "spell_impact",
+   "name": "Spell Impact",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nIncreases the damage of your Arcane Explosion, Arcane Blast, Blast Wave, Fire Blast, Scorch, Fireball, Ice Lance and Cone of Cold spells by an additional 6%.\n\nThis Mystic Enchant does not stack with the Spell Impact Talent.",
+   "iconFile": "spell_nature_wispsplode",
+   "requiredLevel": 45
+  },
+  {
+   "key": "torment_the_weak",
+   "name": "Torment the Weak",
+   "rarity": "rare",
+   "spec": "Arcane",
+   "tooltip": "Crossover Talent\nYour Frostbolt, Fireball, Frostfire Bolt, Pyroblast, Arcane Missiles, Arcane Blast, and Arcane Barrage abilities deal 12% more damage to snared or slowed targets.\n\nThis Mystic Enchant does not stack with the Torment the Weak Talent.",
+   "iconFile": "ability_mage_tormentoftheweak",
+   "requiredLevel": 45
+  },
+  {
+   "key": "world_in_flames",
+   "name": "World in Flames",
+   "rarity": "rare",
+   "spec": "Fire",
+   "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Flamestrike, Pyroblast, Blast Wave, Dragon's Breath, Living Bomb, Blizzard, Arcane Explosion and Arcane Resonance spells by 6%.\n\nThis Mystic Enchant does not stack with the World in Flames Talent.",
+   "iconFile": "ability_mage_worldinflames",
+   "requiredLevel": 45
+  }
+ ],
+ "abilities": [
+  {
+   "key": "amplify_magic",
+   "name": "Amplify Magic",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 4,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 75 and healing spells by up to 80.  Lasts 10 min.",
+   "iconFile": "spell_holy_flashheal",
+   "costValue": "0.27",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "10 min",
+   "range": 30
+  },
+  {
+   "key": "arcane_barrage",
+   "name": "Arcane Barrage",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Launches several missiles at the enemy target, causing 500 to 609 Arcane damage.",
+   "iconFile": "ability_mage_arcanebarrage"
+  },
+  {
+   "key": "arcane_barrier",
+   "name": "Arcane Barrier",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Consumes your Arcane Blast stacks to instantly heal a friendly target for 463 and surround them with an Arcane barrier for 4 seconds per stack.\n\nThe shield absorbs up to 30% of physical damage taken, up to an amount equal to 10% of your max mana. Each point of damage absorbed costs 0.1 mana.",
+   "iconFile": "ability_racial_forceshield",
+   "scaling": [
+    {
+     "stat": "bh",
+     "coeff": 0.6
+    }
+   ]
+  },
+  {
+   "key": "arcane_blast",
+   "name": "Arcane Blast",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 4,
+   "school": "Arcane",
+   "castTime": 2.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Blasts the target with energy, dealing 719 to 822 Arcane damage.  Each time you cast Arcane Blast, the damage of your Arcane spells is increased by 15% and mana cost of Arcane Blast increased by 175%. Effect stacks up to 4 times and lasts 12 sec or until any Arcane damage spell except Arcane Blast is cast.",
+   "iconFile": "spell_arcane_blast",
+   "costValue": "0.1",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 30
+  },
+  {
+   "key": "arcane_explosion",
+   "name": "Arcane Explosion",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 6,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Causes an explosion of arcane magic around the caster, causing 284 to 307 Arcane damage to all targets within 10 yards.",
+   "iconFile": "spell_nature_wispsplode",
+   "costValue": "0.22",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "arcane_intellect",
+   "name": "Arcane Intellect",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 5,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Increases the target's Intellect by 31 for 30 min.",
+   "iconFile": "spell_holy_magicalsentry",
+   "costValue": "0.31",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 min",
+   "range": 30
+  },
+  {
+   "key": "arcane_missiles",
+   "name": "Arcane Missiles",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 8,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Launches Arcane Missiles at the enemy, causing 222 Arcane damage every 1 sec for 5 sec.",
+   "iconFile": "spell_nature_starfall",
+   "costValue": "0.31",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "5 sec",
+   "range": 30
+  },
+  {
+   "key": "arcane_power",
+   "name": "Arcane Power",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "When activated, your spells deal 20% more damage and healing while costing 20% more mana to cast.  This effect lasts 15 sec.",
+   "iconFile": "spell_nature_lightning"
+  },
+  {
+   "key": "blink",
+   "name": "Blink",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Teleports the caster 20 yards forward, unless something is in the way.  Also frees the caster from stuns and bonds.",
+   "iconFile": "spell_arcane_blink",
+   "costValue": "0.21",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "15 sec",
+   "duration": "0.1 sec"
+  },
+  {
+   "key": "conjure_food",
+   "name": "Conjure Food",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 7,
+   "school": "Arcane",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Conjures 10 cinnamon rolls, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+   "iconFile": "inv_misc_food_10",
+   "costValue": "0.4",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "conjure_mana_gem",
+   "name": "Conjure Mana Gem",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 4,
+   "school": "Arcane",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Conjures a mana ruby that can be used to instantly restore 1448 to 1521 mana.",
+   "iconFile": "inv_misc_gem_emerald_01",
+   "costValue": "0.75",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "conjure_refreshment",
+   "name": "Conjure Refreshment",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Conjures 20 Mana Pies providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+   "iconFile": "ability_mage_conjurefoodrank9",
+   "costValue": "0.4",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "conjure_water",
+   "name": "Conjure Water",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 7,
+   "school": "Arcane",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Conjures 10 bottles of crystal water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+   "iconFile": "inv_drink_06",
+   "costValue": "0.4",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "counterspell",
+   "name": "Counterspell",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for 8 sec.  Generates a high amount of threat.",
+   "iconFile": "spell_frost_iceshock",
+   "costValue": "0.09",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "24 sec",
+   "duration": "8 sec",
+   "range": 30
+  },
+  {
+   "key": "dampen_magic",
+   "name": "Dampen Magic",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 2,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Dampens magic used against the targeted party member.\nReduces all spell damage taken by 5% and reduces all healing taken by 5%.",
+   "iconFile": "spell_nature_abolishmagic",
+   "costValue": "0.27",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 min",
+   "range": 30
+  },
+  {
+   "key": "evocation",
+   "name": "Evocation",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "While channeling this spell, you gain 60% of your total mana over 8 sec.",
+   "iconFile": "spell_nature_purge",
+   "cooldown": "4 min",
+   "duration": "8 sec"
+  },
+  {
+   "key": "focus_magic",
+   "name": "Focus Magic",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Increases the target's chance to critically hit with spells by 3%.  When the target critically hits the caster's chance to critically hit with spells is increased by 3% for 10 sec.  Cannot be cast on self.",
+   "iconFile": "spell_arcane_studentofmagic"
+  },
+  {
+   "key": "invisibility",
+   "name": "Invisibility",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Fades the caster to invisibility over 3 sec, reducing threat each second.  The effect is cancelled if you perform any actions.  While invisible, you can only see other invisible targets and those who can see invisible.  Lasts 20 sec.",
+   "iconFile": "ability_mage_invisibility",
+   "costValue": "0.16",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "3 min",
+   "duration": "3 sec"
+  },
+  {
+   "key": "mage_armor",
+   "name": "Mage Armor",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 3,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Increases your resistance to all magic by 15 and allows 50% of your mana regeneration to continue while casting.  In addition, the duration of all harmful Magic effects used against you is reduced by 50%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts 30 min.",
+   "iconFile": "spell_magearmor",
+   "costValue": "0.26",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 min"
+  },
+  {
+   "key": "mana_shield",
+   "name": "Mana Shield",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 6,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Absorbs 570 damage, draining mana instead.  Drains 1.5 mana per damage absorbed.  Lasts 1 min.",
+   "iconFile": "spell_shadow_detectlesserinvisibility",
+   "costValue": "0.07",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "1 min"
+  },
+  {
+   "key": "mindshift",
+   "name": "Mindshift",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 5,
+   "gcd": 1.5,
+   "tooltipTemplate": "You shift into an Arcane dimension increasing your healing by 50% and reduces your damage by 50%.\n\nEnables the use of Arcane Mending and Arcane Resonance.\n\nWhile shifted your spells cannot miss and your hit rating is converted into Intellect.",
+   "iconFile": "spell_mage_overpowered",
+   "costValue": "0.26",
+   "costUnit": "percent",
+   "costPower": "mana"
+  },
+  {
+   "key": "mirror_image",
+   "name": "Mirror Image",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Creates 3 copies of the caster nearby, which cast spells and attack the mage's enemies.  Lasts 30 sec.",
+   "iconFile": "spell_magic_lesserinvisibilty",
+   "costValue": "0.1",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "3 min",
+   "duration": "30 sec"
+  },
+  {
+   "key": "polymorph",
+   "name": "Polymorph",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 4,
+   "school": "Arcane",
+   "castTime": 1.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Transforms the enemy into a sheep, forcing it to wander around for up to 50 sec.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.",
+   "iconFile": "spell_nature_polymorph",
+   "costValue": "0.07",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "50 sec",
+   "range": 30
+  },
+  {
+   "key": "presence_of_mind",
+   "name": "Presence of Mind",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.",
+   "iconFile": "spell_nature_enchantarmor"
+  },
+  {
+   "key": "remove_curse",
+   "name": "Remove Curse",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Removes 1 Curse from a friendly target.",
+   "iconFile": "spell_nature_removecurse",
+   "costValue": "0.08",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 40
+  },
+  {
+   "key": "ritual_of_refreshment",
+   "name": "Ritual of Refreshment",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Begins a ritual that creates a refreshment table.  Raid members can click the table to acquire Conjured Mana Biscuits.  The tables lasts for 3 min or 50 charges.  Requires the caster and 2 additional party members to complete the ritual.  In order to participate, all players must right-click the refreshment portal and not move until the ritual is complete.",
+   "iconFile": "spell_arcane_massdispel",
+   "costValue": "0.8",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "5 min",
+   "duration": "1 min",
+   "range": 30
+  },
+  {
+   "key": "slow",
+   "name": "Slow",
+   "spec": "Arcane",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Reduces target's movement speed by 60%, increases the time between ranged attacks by 60% and increases casting time by 30%.  Lasts 15 sec.  Slow can only affect one target at a time.",
+   "iconFile": "spell_nature_slow"
+  },
+  {
+   "key": "slow_fall",
+   "name": "Slow Fall",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Slows friendly party or raid target's falling speed for 30 sec.",
+   "iconFile": "spell_magic_featherfall",
+   "costValue": "0.06",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 sec",
+   "range": 30
+  },
+  {
+   "key": "spellsteal",
+   "name": "Spellsteal",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Steals a beneficial magic effect from the target.  This effect lasts a maximum of 2 min.",
+   "iconFile": "spell_arcane_arcane02",
+   "costValue": "0.2",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 30
+  },
+  {
+   "key": "touch_of_the_magi",
+   "name": "Touch of the Magi",
+   "spec": "Arcane",
+   "source": "Core",
+   "rank": 1,
+   "school": "Arcane",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Applies Touch of the Magi to the enemy, accumulating 50% of the Arcane damage you deal to the target for 10 sec, and then explodes restoring 20% total mana and dealing the accumulated Arcane damage to the target and nearby enemies.",
+   "iconFile": "ability_mage_netherwindpresence",
+   "cooldown": "1 min",
+   "duration": "10 sec",
+   "range": 36
+  },
+  {
+   "key": "blast_wave",
+   "name": "Blast Wave",
+   "spec": "Fire",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 185 to 217 Fire damage, knocking them back and dazing them for 6 sec.",
+   "iconFile": "spell_holy_excorcism_02"
+  },
+  {
+   "key": "combustion",
+   "name": "Combustion",
+   "spec": "Fire",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "When activated, this spell increases your critical strike damage bonus with Fire damage spells by 50%, and causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells.",
+   "iconFile": "spell_fire_sealoffire"
+  },
+  {
+   "key": "cremation",
+   "name": "Cremation",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Deals 1525.58 Fire damage over 10 sec seconds, plus 2 times the total periodic damage from your Ignite, Pyroblast, and Living Bomb effects, which are consumed. This periodic damage can critically strike.",
+   "iconFile": "skill_icon_skill71_border",
+   "costValue": "0.12",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "2 min",
+   "range": 35
+  },
+  {
+   "key": "dragons_breath",
+   "name": "Dragon's Breath",
+   "spec": "Fire",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Targets in a cone in front of the caster take 382 to 442 Fire damage and are Disoriented for 5 sec.  Any direct damaging attack will revive targets.  Turns off your attack when used.",
+   "iconFile": "inv_misc_head_dragon_01"
+  },
+  {
+   "key": "fire_blast",
+   "name": "Fire Blast",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 7,
+   "school": "Fire",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Blasts the enemy for 512 to 602 Fire damage.",
+   "iconFile": "spell_fire_fireball",
+   "costValue": "0.17",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "8 sec",
+   "range": 20
+  },
+  {
+   "key": "fire_ward",
+   "name": "Fire Ward",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 5,
+   "school": "Fire",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Absorbs 875 Fire damage.  Lasts 30 sec.",
+   "iconFile": "spell_fire_firearmor",
+   "costValue": "0.16",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "30 sec",
+   "duration": "30 sec"
+  },
+  {
+   "key": "fireball",
+   "name": "Fireball",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 12,
+   "school": "Fire",
+   "castTime": 3.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Hurls a fiery ball that causes 626 to 790 Fire damage and an additional 60 Fire damage over 8 sec.",
+   "iconFile": "spell_fire_flamebolt",
+   "costValue": "0.19",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "8 sec",
+   "range": 35
+  },
+  {
+   "key": "flamestrike",
+   "name": "Flamestrike",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 6,
+   "school": "Fire",
+   "castTime": 2,
+   "gcd": 1.5,
+   "tooltipTemplate": "Calls down a pillar of fire, burning all enemies within the area for 381 to 465 Fire damage and an additional 340 Fire damage over 8 sec.",
+   "iconFile": "spell_fire_selfdestruct",
+   "costValue": "0.35",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "8 sec",
+   "range": 30
+  },
+  {
+   "key": "living_bomb",
+   "name": "Living Bomb",
+   "spec": "Fire",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "The target becomes a Living Bomb, taking 612 Fire damage over 12 sec.  After 12 sec or when the spell is dispelled, the target explodes dealing 306 Fire damage to all enemies within 10 yards.",
+   "iconFile": "ability_mage_livingbomb"
+  },
+  {
+   "key": "molten_armor",
+   "name": "Molten Armor",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 1,
+   "school": "Fire",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Causes 75 Fire damage when hit, increases your critical strike rating by 30% of your Spirit, and reduces the chance you are critically hit by 5%.  Only one type of Armor spell can be active on the Mage at any time.  Lasts 30 min.",
+   "iconFile": "ability_mage_moltenarmor",
+   "costValue": "0.28",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 min"
+  },
+  {
+   "key": "pyroblast",
+   "name": "Pyroblast",
+   "spec": "Fire",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Hurls an immense fiery boulder that causes 176 to 225 Fire damage and an additional 96 Fire damage over 12 sec.",
+   "iconFile": "spell_fire_fireball02"
+  },
+  {
+   "key": "scorch",
+   "name": "Scorch",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 7,
+   "school": "Fire",
+   "castTime": 1.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Scorch the enemy for 237 to 279 Fire damage.",
+   "iconFile": "spell_fire_soulburn",
+   "costValue": "0.08",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 30
+  },
+  {
+   "key": "scorch_scorched_earth",
+   "name": "Scorch (Scorched Earth)",
+   "spec": "Fire",
+   "source": "Core",
+   "rank": 7,
+   "school": "Fire",
+   "castTime": 1.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Scorch the enemy for 366 to 416 Fire damage.",
+   "iconFile": "spell_fire_soulburn",
+   "costValue": "0.08",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 25
+  },
+  {
+   "key": "blizzard",
+   "name": "Blizzard",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 6,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Ice shards pelt the target area doing 1696 Frost damage over 8 sec.",
+   "iconFile": "spell_frost_icestorm",
+   "costValue": "0.74",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "8 sec",
+   "range": 30
+  },
+  {
+   "key": "cold_snap",
+   "name": "Cold Snap",
+   "spec": "Frost",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "When activated, this spell finishes the cooldown on all Frost spells you recently cast.",
+   "iconFile": "spell_frost_wizardmark"
+  },
+  {
+   "key": "cone_of_cold",
+   "name": "Cone of Cold",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 5,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Targets in a cone in front of the caster take 337 to 367 Frost damage and are slowed by 50% for 8 sec.",
+   "iconFile": "spell_frost_glacier",
+   "costValue": "0.25",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "10 sec",
+   "duration": "8 sec"
+  },
+  {
+   "key": "deep_freeze",
+   "name": "Deep Freeze",
+   "spec": "Frost",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Stuns the target for 5 seconds.  Only usable on Frozen targets.  Deals 4124 to 4396 damage to monsters permanently immune to stuns.",
+   "iconFile": "ability_mage_deepfreeze"
+  },
+  {
+   "key": "frost_armor",
+   "name": "Frost Armor",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 3,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Increases Armor by 200.  If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec.  Only one type of Armor spell can be active on the Mage at any time.  Lasts 30 min.",
+   "iconFile": "spell_frost_frostarmor02",
+   "costValue": "0.24",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "30 min"
+  },
+  {
+   "key": "frost_nova",
+   "name": "Frost Nova",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 4,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Blasts enemies near the caster for 72 to 82 Frost damage and freezes them in place for up to 8 sec.  Damage caused may interrupt the effect.",
+   "iconFile": "spell_frost_frostnova",
+   "costValue": "0.07",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "25 sec",
+   "duration": "8 sec"
+  },
+  {
+   "key": "frost_ward",
+   "name": "Frost Ward",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 5,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Absorbs 875 Frost damage.  Lasts 30 sec.",
+   "iconFile": "spell_frost_frostward",
+   "costValue": "0.16",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "30 sec",
+   "duration": "30 sec"
+  },
+  {
+   "key": "frostbolt",
+   "name": "Frostbolt",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 11,
+   "school": "Frost",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Launches a bolt of frost at the enemy, causing 578 to 620 Frost damage and slowing movement speed by 40% for 9 sec.",
+   "iconFile": "spell_frost_frostbolt02",
+   "costValue": "0.11",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "9 sec",
+   "range": 30
+  },
+  {
+   "key": "frostfire_bolt",
+   "name": "Frostfire Bolt",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 1,
+   "school": "Fire/Frost",
+   "castTime": 3,
+   "gcd": 1.5,
+   "tooltipTemplate": "Launches a bolt of frostfire at the enemy, causing 457 to 549 Frostfire damage, slowing movement speed by 40% and causing an additional 90 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists.",
+   "iconFile": "ability_mage_frostfirebolt",
+   "costValue": "0.14",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "duration": "9 sec",
+   "range": 40
+  },
+  {
+   "key": "ice_age",
+   "name": "Ice Age",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 1,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1,
+   "tooltipTemplate": "Deals 242 Frost damage to nearby enemies, freezing them for up to 4 seconds. Damage dealt can interrupt the freeze.\n\nIce Age cannot be dispelled.\n\n@ext:This uses Frost Nova modifiers.:ext@",
+   "iconFile": "_d3frostnova",
+   "costValue": "0.07",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "cooldown": "20 sec",
+   "duration": "4 sec",
+   "scaling": [
+    {
+     "stat": "SP",
+     "coeff": 0.0965
+    },
+    {
+     "stat": "AP",
+     "coeff": 0.0627
+    }
+   ]
+  },
+  {
+   "key": "ice_barrier",
+   "name": "Ice Barrier",
+   "spec": "Frost",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Instantly shields you, absorbing 497 damage.  Lasts 1 min.  While the shield holds, spellcasting will not be delayed by damage.",
+   "iconFile": "spell_ice_lament"
+  },
+  {
+   "key": "ice_block",
+   "name": "Ice Block",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 1,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move or cast spells.  Also causes Hypothermia, preventing you from recasting Ice Block for 30 sec.",
+   "iconFile": "spell_frost_frost",
+   "costValue": "15",
+   "costUnit": "flat",
+   "costPower": "mana",
+   "cooldown": "5 min",
+   "duration": "10 sec"
+  },
+  {
+   "key": "ice_lance",
+   "name": "Ice Lance",
+   "spec": "Frost",
+   "source": "Core",
+   "rank": 4,
+   "school": "Frost",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Deals 146 to 170 Frost damage to an enemy target.  Causes triple damage against Frozen targets.",
+   "iconFile": "spell_frost_frostblast",
+   "costValue": "0.06",
+   "costUnit": "percent",
+   "costPower": "mana",
+   "range": 30
+  },
+  {
+   "key": "icy_veins",
+   "name": "Icy Veins",
+   "spec": "Frost",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Hastens your spellcasting, increasing spell casting speed by 20% and reduces the pushback suffered from damaging attacks while casting by 100%.  Lasts 20 sec.",
+   "iconFile": "spell_frost_coldhearted"
+  },
+  {
+   "key": "summon_water_elemental",
+   "name": "Summon Water Elemental",
+   "spec": "Frost",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Summon a Water Elemental to fight for the caster?(s70937)[][ for 45 sec].",
+   "iconFile": "spell_frost_summonwaterelemental_2"
+  }
+ ]
+}

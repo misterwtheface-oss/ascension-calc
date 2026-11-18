@@ -1,0 +1,3491 @@
+{
+ "class": "Warrior",
+ "slug": "warrior",
+ "realm": "Bronzebeard - Warcraft Reborn",
+ "level": 60,
+ "pointCap": 51,
+ "trees": [
+  {
+   "name": "Arms",
+   "accent": "#B83A28",
+   "background": "assets/game/warrior/backgrounds/warriorarms.jpg"
+  },
+  {
+   "name": "Fury",
+   "accent": "#C87030",
+   "background": "assets/game/warrior/backgrounds/warriorfury.jpg"
+  },
+  {
+   "name": "Protection",
+   "accent": "#5880A8",
+   "background": "assets/game/warrior/backgrounds/warriorprotection.jpg"
+  }
+ ],
+ "talents": {
+  "armored_to_the_teeth": {
+   "name": "Armored to the Teeth",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your attack power by [V1] for every 108 armor value you have.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "inv_shoulder_22"
+  },
+  "booming_voice": {
+   "name": "Booming Voice",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by [V1]%.",
+   "rankValues": [
+    [
+     25
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "spell_nature_purge"
+  },
+  "cruelty": {
+   "name": "Cruelty",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to get a critical strike with melee weapons by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ]
+   ],
+   "iconFile": "ability_rogue_eviscerate"
+  },
+  "improved_demoralizing_shout": {
+   "name": "Improved Demoralizing Shout",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the melee attack power reduction of your Demoralizing Shout by [V1]%.",
+   "rankValues": [
+    [
+     8
+    ],
+    [
+     16
+    ],
+    [
+     24
+    ],
+    [
+     32
+    ],
+    [
+     40
+    ]
+   ],
+   "iconFile": "ability_warrior_warcry"
+  },
+  "unbridled_wrath": {
+   "name": "Unbridled Wrath",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Gives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 4).",
+   "iconFile": "spell_nature_stoneclawtotem"
+  },
+  "improved_cleave": {
+   "name": "Improved Cleave",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the bonus damage done by your Cleave ability by [V1]%.",
+   "rankValues": [
+    [
+     40
+    ],
+    [
+     80
+    ],
+    [
+     120
+    ]
+   ],
+   "iconFile": "ability_warrior_cleave"
+  },
+  "piercing_howl": {
+   "name": "Piercing Howl",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Causes all enemies within 10 yards to be Dazed, reducing movement speed by 50% for 6 sec.",
+   "iconFile": "spell_shadow_deathscream"
+  },
+  "blood_craze": {
+   "name": "Blood Craze",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Regenerates [V1]% of your total Health over 6 sec after being the victim of a critical strike.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "spell_shadow_summonimp"
+  },
+  "commanding_presence": {
+   "name": "Commanding Presence",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ],
+    [
+     20
+    ],
+    [
+     25
+    ]
+   ],
+   "iconFile": "spell_nature_focusedmind"
+  },
+  "dual_wield_specialization": {
+   "name": "Dual Wield Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your off-hand weapon by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ],
+    [
+     20
+    ],
+    [
+     25
+    ]
+   ],
+   "iconFile": "ability_dualwield"
+  },
+  "improved_execute": {
+   "name": "Improved Execute",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the rage cost of your Execute ability by [V1].",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     5
+    ]
+   ],
+   "iconFile": "inv_sword_48"
+  },
+  "enrage": {
+   "name": "Enrage",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Gives you a 30% chance to receive a [V1]% damage bonus for 12 sec after being the victim of a damaging attack.  This effect does not stack with Wrecking Crew.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ],
+    [
+     8
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "spell_shadow_unholyfrenzy"
+  },
+  "precision": {
+   "name": "Precision",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to hit with melee weapons by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "ability_marksmanship"
+  },
+  "death_wish": {
+   "name": "Death Wish",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When activated you become enraged, increasing your physical damage by 20% but increasing all damage taken by 5%.  Lasts 30 sec.",
+   "iconFile": "spell_shadow_deathpact"
+  },
+  "improved_intercept": {
+   "name": "Improved Intercept",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Intercept ability by [V1] sec.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "ability_rogue_sprint"
+  },
+  "improved_berserker_rage": {
+   "name": "Improved Berserker Rage",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "The Berserker Rage ability will generate [V1] rage when used.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "spell_nature_ancestralguardian"
+  },
+  "flurry": {
+   "name": "Flurry",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your attack speed by [V1]% for your next 3 swings after dealing a melee critical strike.",
+   "rankValues": [
+    [
+     8
+    ],
+    [
+     16
+    ],
+    [
+     25
+    ]
+   ],
+   "iconFile": "ability_ghoulfrenzy"
+  },
+  "intensify_rage": {
+   "name": "Intensify Rage",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Bloodrage, Berserker Rage, Recklessness and Death Wish abilities by [V1]%.",
+   "rankValues": [
+    [
+     11
+    ],
+    [
+     22
+    ],
+    [
+     33
+    ]
+   ],
+   "iconFile": "ability_warrior_endlessrage"
+  },
+  "bloodthirst": {
+   "name": "Bloodthirst",
+   "maxPts": 1,
+   "prereq": "death_wish",
+   "tooltipTemplate": "Instantly attack the target causing 0 damage.  In addition, the next 3 successful melee attacks will restore 2% of max health.  This effect lasts 8 sec.  Damage is based on your attack power.",
+   "iconFile": "spell_nature_bloodlust"
+  },
+  "improved_whirlwind": {
+   "name": "Improved Whirlwind",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of your Whirlwind ability by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "ability_whirlwind"
+  },
+  "furious_attacks": {
+   "name": "Furious Attacks",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Your normal melee attacks have a chance to reduce all healing done to the target by 25% for 10 sec.  This can stack up to 2 times.  This occurs more often than Furious Attacks (Rank 1).",
+   "iconFile": "ability_warrior_furiousresolve"
+  },
+  "improved_berserker_stance": {
+   "name": "Improved Berserker Stance",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases Strength by [V1]% and reduces threat caused by [V2]% while in Berserker Stance.",
+   "rankValues": [
+    [
+     4,
+     2
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     12,
+     6
+    ],
+    [
+     16,
+     8
+    ],
+    [
+     20,
+     10
+    ]
+   ],
+   "iconFile": "ability_racial_avatar"
+  },
+  "heroic_fury": {
+   "name": "Heroic Fury",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Removes any Immobilization effects and refreshes the cooldown of your Intercept ability.",
+   "iconFile": "ability_heroicleap",
+   "active": true
+  },
+  "rampage": {
+   "name": "Rampage",
+   "maxPts": 1,
+   "prereq": "bloodthirst",
+   "tooltipTemplate": "Increases ranged and melee critical hit chance of all party and raid members within 100 yds by 5%.",
+   "iconFile": "ability_warrior_rampage"
+  },
+  "bloodsurge": {
+   "name": "Bloodsurge",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your Heroic Strike, Bloodthirst, and Whirlwind hits have a [V1]% chance of making your next Slam instant for 8 sec.",
+   "rankValues": [
+    [
+     7
+    ],
+    [
+     13
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "ability_warrior_bloodsurge"
+  },
+  "unending_fury": {
+   "name": "Unending Fury",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage done by your Slam, Whirlwind and Bloodthirst abilities by [V1]%.",
+   "rankValues": [
+    [
+     4
+    ],
+    [
+     7
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_intensifyrage"
+  },
+  "titans_grip": {
+   "name": "Titan's Grip",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Allows you to equip two-handed axes, maces and swords in one hand.  While you have a two-handed weapon equipped in one hand, your physical damage done is reduced by 10%.",
+   "iconFile": "ability_warrior_titansgrip",
+   "active": true
+  },
+  "single_minded_fury": {
+   "name": "Single-Minded Fury",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When you dual wield one-handed weapons, you deal 5% additional damage and Slam hits with both weapons.",
+   "iconFile": "warrior_talent_icon_singlemindedfury",
+   "active": true
+  },
+  "improved_heroic_strike": {
+   "name": "Improved Heroic Strike",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cost of your Heroic Strike ability by 3 rage points.",
+   "iconFile": "ability_rogue_ambush"
+  },
+  "deflection": {
+   "name": "Deflection",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases your Parry chance by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ]
+   ],
+   "iconFile": "ability_parry"
+  },
+  "improved_rend": {
+   "name": "Improved Rend",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the bleed damage done by your Rend ability by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "ability_gouge"
+  },
+  "improved_charge": {
+   "name": "Improved Charge",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the amount of rage generated by your Charge ability by [V1].",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_charge"
+  },
+  "iron_will": {
+   "name": "Iron Will",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the duration of all Stun and Charm effects used against you by [V1]%.",
+   "rankValues": [
+    [
+     7
+    ],
+    [
+     14
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "spell_magic_magearmor"
+  },
+  "tactical_mastery": {
+   "name": "Tactical Mastery",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "You retain up to an additional 15 of your rage points when you change stances.  Also greatly increases the threat generated by your Bloodthirst and Mortal Strike abilities when you are in Defensive Stance (More effective than Rank 2).",
+   "iconFile": "spell_nature_enchantarmor"
+  },
+  "improved_overpower": {
+   "name": "Improved Overpower",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Overpower ability by [V1]%.",
+   "rankValues": [
+    [
+     25
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "inv_sword_05"
+  },
+  "anger_management": {
+   "name": "Anger Management",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Generates 1 rage per 3 seconds.",
+   "iconFile": "spell_holy_blessingofstamina"
+  },
+  "impale": {
+   "name": "Impale",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike damage bonus of your abilities by [V1]%.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "ability_searingarrow"
+  },
+  "deep_wounds": {
+   "name": "Deep Wounds",
+   "maxPts": 3,
+   "prereq": "impale",
+   "tooltipTemplate": "Your critical strikes cause the opponent to bleed, dealing [V1]% of your melee weapon's average damage over 6 sec.",
+   "rankValues": [
+    [
+     16
+    ],
+    [
+     32
+    ],
+    [
+     48
+    ]
+   ],
+   "iconFile": "ability_backstab"
+  },
+  "two_handed_weapon_specialization": {
+   "name": "Two-Handed Weapon Specialization",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage you deal with two-handed melee weapons by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ]
+   ],
+   "iconFile": "inv_axe_09"
+  },
+  "taste_for_blood": {
+   "name": "Taste for Blood",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Whenever your Rend ability causes damage, you have a [V1]% chance of allowing the use of your Overpower ability for 9 sec.  1 charge.  This effect will not occur more than once every 6 sec.",
+   "rankValues": [
+    [
+     33
+    ],
+    [
+     66
+    ],
+    [
+     100
+    ]
+   ],
+   "iconFile": "ability_rogue_hungerforblood"
+  },
+  "poleaxe_specialization": {
+   "name": "Poleaxe Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to get a critical strike and the critical damage caused with Axes and Polearms by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ]
+   ],
+   "iconFile": "inv_axe_06"
+  },
+  "sweeping_strikes": {
+   "name": "Sweeping Strikes",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Your next 5 melee attacks strike an additional nearby opponent.",
+   "iconFile": "ability_rogue_slicedice"
+  },
+  "mace_specialization": {
+   "name": "Mace Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Your attacks with maces ignore up to [V1]% of your opponent's armor.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ],
+    [
+     9
+    ],
+    [
+     12
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "inv_mace_01"
+  },
+  "sword_specialization": {
+   "name": "Sword Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Gives you a [V1]% chance to get an extra attack on the same target after hitting your target with your Sword.  This effect cannot occur more than once every 6 seconds.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ],
+    [
+     9
+    ],
+    [
+     12
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "inv_sword_27"
+  },
+  "weapon_mastery": {
+   "name": "Weapon Mastery",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the chance for your attacks to be dodged by [V1]% and reduces the duration of all Disarm effects used against you by [V2]%.  This does not stack with other Disarm duration reducing effects.",
+   "rankValues": [
+    [
+     1,
+     25
+    ],
+    [
+     2,
+     50
+    ]
+   ],
+   "iconFile": "ability_warrior_weaponmastery"
+  },
+  "improved_hamstring": {
+   "name": "Improved Hamstring",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Hamstring ability a [V1]% chance to immobilize the target for 5 sec.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "ability_shockwave"
+  },
+  "trauma": {
+   "name": "Trauma",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Your melee critical strikes increase the effectiveness of Bleed effects on the target by [V1]% for 1 min.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     30
+    ]
+   ],
+   "iconFile": "ability_warrior_bloodnova"
+  },
+  "second_wind": {
+   "name": "Second Wind",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Whenever you are struck by a Stun or Immobilize effect you will generate [V1] rage and [V2]% of your total health over 10 sec.",
+   "rankValues": [
+    [
+     10,
+     5
+    ],
+    [
+     20,
+     10
+    ]
+   ],
+   "iconFile": "ability_hunter_harass"
+  },
+  "mortal_strike": {
+   "name": "Mortal Strike",
+   "maxPts": 1,
+   "prereq": "sweeping_strikes",
+   "tooltipTemplate": "A vicious strike that deals 120% Weapon Damage plus 169 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+   "iconFile": "ability_warrior_savageblow",
+   "active": true
+  },
+  "strength_of_arms": {
+   "name": "Strength of Arms",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases your total Strength and Stamina by [V1]% and your expertise by [V2].",
+   "rankValues": [
+    [
+     2,
+     2
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "iconFile": "ability_warrior_offensivestance"
+  },
+  "improved_slam": {
+   "name": "Improved Slam",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the damage of Slam by [V1]% and reduces its swing time by [V2] sec.",
+   "rankValues": [
+    [
+     10,
+     0.5
+    ],
+    [
+     20,
+     1
+    ]
+   ],
+   "iconFile": "ability_warrior_decisivestrike"
+  },
+  "juggernaut": {
+   "name": "Juggernaut",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Your Charge ability is now usable while in combat, but the cooldown on Charge is increased by 5 sec. Following a Charge, your next Slam or Mortal Strike has an additional 25% chance to critically hit if used within 10 sec.",
+   "iconFile": "ability_warrior_bullrush"
+  },
+  "improved_mortal_strike": {
+   "name": "Improved Mortal Strike",
+   "maxPts": 2,
+   "prereq": "mortal_strike",
+   "tooltipTemplate": "Increases the damage caused by your Mortal Strike ability by [V1]% and reduces the cooldown by [V2] sec.",
+   "rankValues": [
+    [
+     5,
+     0.75
+    ],
+    [
+     10,
+     1.5
+    ]
+   ],
+   "iconFile": "ability_warrior_savageblow"
+  },
+  "unrelenting_assault": {
+   "name": "Unrelenting Assault",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Overpower and Revenge abilities by [V1] secs and increases the damage done by both abilities by [V2]%.  In addition, if you strike a player with Overpower while they are casting, their magical damage and healing will be reduced by [V3]% for 6 sec.",
+   "rankValues": [
+    [
+     2,
+     10,
+     25
+    ],
+    [
+     4,
+     20,
+     50
+    ]
+   ],
+   "iconFile": "ability_warrior_unrelentingassault"
+  },
+  "sudden_death": {
+   "name": "Sudden Death",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your melee hits have a chance of allowing the use of Execute regardless of the target's health state.  This chance increases with every hit until it occurs.  In addition, you keep at least [V1] rage after using Execute.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "ability_warrior_improveddisciplines"
+  },
+  "endless_rage": {
+   "name": "Endless Rage",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "You generate 25% more rage from damage dealt.",
+   "iconFile": "ability_warrior_endlessrage"
+  },
+  "blood_frenzy": {
+   "name": "Blood Frenzy",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases your melee attack speed by [V1]%.  In addition your Rend and Deep Wounds abilities also increase all physical damage caused to that target by [V2]%.",
+   "rankValues": [
+    [
+     5,
+     2
+    ],
+    [
+     10,
+     4
+    ]
+   ],
+   "iconFile": "ability_warrior_bloodfrenzy"
+  },
+  "wrecking_crew": {
+   "name": "Wrecking Crew",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your melee critical hits Enrage you, increasing all damage caused by [V1]% for 12 sec.  This effect does not stack with Enrage.",
+   "rankValues": [
+    [
+     3
+    ],
+    [
+     6
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_trauma"
+  },
+  "bladestorm": {
+   "name": "Bladestorm",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "You become a whirling storm of destructive force, instantly striking up to 6 nearby targets for 120% weapon damage and continuing to perform a whirlwind attack every 1 sec for 6 sec sec. \n\nDamage is increased by 30% when only hitting one target.\n\nWhile under the effects of Bladestorm, you can move but cannot perform any other abilities but you do not feel pity or remorse or fear and you cannot be stopped unless killed.",
+   "iconFile": "ability_warrior_bladestorm",
+   "active": true
+  },
+  "improved_bloodrage": {
+   "name": "Improved Bloodrage",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases the rage generated by your Bloodrage ability by [V1]%.",
+   "rankValues": [
+    [
+     25
+    ],
+    [
+     50
+    ]
+   ],
+   "iconFile": "ability_racial_bloodrage"
+  },
+  "shield_specialization": {
+   "name": "Shield Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases your chance to block attacks with a shield by [V1]% and has a [V2]% chance to generate 5 rage when a block, dodge, or parry occurs.",
+   "rankValues": [
+    [
+     1,
+     20
+    ],
+    [
+     2,
+     40
+    ],
+    [
+     3,
+     60
+    ],
+    [
+     4,
+     80
+    ],
+    [
+     5,
+     100
+    ]
+   ],
+   "iconFile": "inv_shield_06"
+  },
+  "improved_thunder_clap": {
+   "name": "Improved Thunder Clap",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cost of your Thunder Clap ability by 4 rage points and increases the damage by 30% and the slowing effect by an additional 10%.",
+   "iconFile": "ability_thunderclap"
+  },
+  "incite": {
+   "name": "Incite",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Heroic Strike, Thunder Clap and Cleave abilities by [V1]%.",
+   "rankValues": [
+    [
+     5
+    ],
+    [
+     10
+    ],
+    [
+     15
+    ]
+   ],
+   "iconFile": "ability_warrior_incite"
+  },
+  "anticipation": {
+   "name": "Anticipation",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases your Dodge chance by [V1]%.",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ]
+   ],
+   "iconFile": "spell_nature_mirrorimage"
+  },
+  "last_stand": {
+   "name": "Last Stand",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec.  After the effect expires, the health is lost.",
+   "iconFile": "spell_holy_ashestoashes"
+  },
+  "improved_revenge": {
+   "name": "Improved Revenge",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases damage of your Revenge ability by 60% and causes Revenge to strike an additional target.",
+   "iconFile": "ability_warrior_revenge"
+  },
+  "shield_mastery": {
+   "name": "Shield Mastery",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Increases your block value by [V1]% and reduces the cooldown of your Shield Block ability by [V2] sec.",
+   "rankValues": [
+    [
+     15,
+     10
+    ],
+    [
+     30,
+     20
+    ]
+   ],
+   "iconFile": "ability_warrior_shieldmastery"
+  },
+  "toughness": {
+   "name": "Toughness",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your armor value from items by [V1]% and reduces the duration of all movement slowing effects by [V2]%.",
+   "rankValues": [
+    [
+     4,
+     10
+    ],
+    [
+     7,
+     20
+    ],
+    [
+     10,
+     30
+    ]
+   ],
+   "iconFile": "spell_holy_devotion"
+  },
+  "improved_spell_reflection": {
+   "name": "Improved Spell Reflection",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the chance you'll be hit by spells by 4% and when the ability is used it will reflect the first spell cast against the 4 closest party members within 10  yards.",
+   "iconFile": "ability_warrior_shieldreflection"
+  },
+  "improved_disarm": {
+   "name": "Improved Disarm",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Disarm ability by [V1] sec and causes the target to take an additional [V2]% damage while disarmed.",
+   "rankValues": [
+    [
+     10,
+     5
+    ],
+    [
+     20,
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_disarm"
+  },
+  "puncture": {
+   "name": "Puncture",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the rage cost of your Sunder Armor and Devastate abilities by [V1].",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "ability_warrior_sunder"
+  },
+  "improved_disciplines": {
+   "name": "Improved Disciplines",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the cooldown of your Shield Wall, Retaliation and Recklessness abilities by [V1] secs.",
+   "rankValues": [
+    [
+     30
+    ],
+    [
+     60
+    ]
+   ],
+   "iconFile": "ability_warrior_shieldwall"
+  },
+  "concussion_blow": {
+   "name": "Concussion Blow",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Stuns the opponent for 5 sec and deals 0 damage (based on attack power).",
+   "iconFile": "ability_thunderbolt"
+  },
+  "gag_order": {
+   "name": "Gag Order",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Gives your Shield Bash and Heroic Throw abilities a [V1]% chance to silence the target for 3 sec and increases the damage of your Shield Slam ability by [V2]%.",
+   "rankValues": [
+    [
+     50,
+     5
+    ],
+    [
+     100,
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_shieldbash"
+  },
+  "one_handed_weapon_specialization": {
+   "name": "One-Handed Weapon Specialization",
+   "maxPts": 5,
+   "prereq": null,
+   "tooltipTemplate": "Increases physical damage you deal when a one-handed melee weapon is equipped by [V1]%.",
+   "rankValues": [
+    [
+     2
+    ],
+    [
+     4
+    ],
+    [
+     6
+    ],
+    [
+     8
+    ],
+    [
+     10
+    ]
+   ],
+   "iconFile": "inv_sword_20"
+  },
+  "improved_defensive_stance": {
+   "name": "Improved Defensive Stance",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "While in Defensive Stance all spell damage taken is reduced by [V1]% and the chance you'll be critically hit by monsters' melee attacks is reduced by [V2]%.\n\nDodging, Blocking or Parrying an attack has a [V3]% chance to Enrage you, increasing Physical damage caused by [V4]% for 12 sec.",
+   "rankValues": [
+    [
+     3,
+     3,
+     50,
+     5
+    ],
+    [
+     6,
+     6,
+     100,
+     10
+    ]
+   ],
+   "iconFile": "ability_warrior_defensivestance"
+  },
+  "vigilance": {
+   "name": "Vigilance",
+   "maxPts": 1,
+   "prereq": "concussion_blow",
+   "tooltipTemplate": "Focus your protective gaze on a group or raid target, reducing their damage taken by 3% and transfers 10% of the threat they cause to you.  In addition, each time they are hit by an attack your Taunt cooldown is refreshed.  Lasts 30 min.  This effect can only be on one target at a time.",
+   "iconFile": "ability_warrior_vigilance",
+   "active": true
+  },
+  "focused_rage": {
+   "name": "Focused Rage",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Reduces the rage cost of your offensive abilities by [V1].",
+   "rankValues": [
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "iconFile": "ability_warrior_focusedrage"
+  },
+  "vitality": {
+   "name": "Vitality",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases your total Strength by [V1]%, Stamina by [V2]% and your Expertise by [V3].",
+   "rankValues": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     4,
+     6,
+     4
+    ],
+    [
+     6,
+     9,
+     6
+    ]
+   ],
+   "iconFile": "inv_helmet_21"
+  },
+  "safeguard": {
+   "name": "Safeguard",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Reduces damage taken by the target of your Intervene ability by [V1]% for 6 sec.",
+   "rankValues": [
+    [
+     15
+    ],
+    [
+     30
+    ]
+   ],
+   "iconFile": "ability_warrior_safeguard"
+  },
+  "warbringer": {
+   "name": "Warbringer",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Your Charge, Intercept and Intervene abilities are now usable while in combat and in any stance.  In addition, your Intervene ability will remove all movement impairing effects.",
+   "iconFile": "ability_warrior_warbringer"
+  },
+  "devastate": {
+   "name": "Devastate",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Sunder the target's armor causing the Sunder Armor effect.  In addition, causes 120% of weapon damage plus 58 for each application of Sunder Armor on the target.  The Sunder Armor effect can stack up to 5 times.",
+   "iconFile": "inv_sword_11",
+   "active": true
+  },
+  "critical_block": {
+   "name": "Critical Block",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Your successful blocks have a [V1]% chance to block double the normal amount and increases your chance to critically hit with your Shield Slam ability by an additional [V2]%.",
+   "rankValues": [
+    [
+     20,
+     5
+    ],
+    [
+     40,
+     10
+    ],
+    [
+     60,
+     15
+    ]
+   ],
+   "iconFile": "ability_warrior_criticalblock"
+  },
+  "sword_and_board": {
+   "name": "Sword and Board",
+   "maxPts": 3,
+   "prereq": null,
+   "tooltipTemplate": "Increases the critical strike chance of your Devastate ability by [V1]% and when your Devastate or Revenge ability deals damage it has a [V2]% chance of refreshing the cooldown of your Shield Slam ability and reducing its cost by 100% for 5 sec.",
+   "rankValues": [
+    [
+     5,
+     10
+    ],
+    [
+     10,
+     20
+    ],
+    [
+     15,
+     30
+    ]
+   ],
+   "iconFile": "ability_warrior_swordandboard"
+  },
+  "damage_shield": {
+   "name": "Damage Shield",
+   "maxPts": 2,
+   "prereq": null,
+   "tooltipTemplate": "Whenever you take damage from or block a melee attack you cause damage equal to [V1]% of your block value.",
+   "rankValues": [
+    [
+     10
+    ],
+    [
+     20
+    ]
+   ],
+   "iconFile": "inv_shield_31"
+  },
+  "shockwave": {
+   "name": "Shockwave",
+   "maxPts": 1,
+   "prereq": null,
+   "tooltipTemplate": "Sends a wave of force in front of the warrior, causing 0 damage (based on attack power) and stunning all enemy targets within 10 yards in a frontal cone for 4 sec.",
+   "iconFile": "ability_warrior_shockwave",
+   "active": true
+  }
+ },
+ "layout": {
+  "Arms": [
+   [
+    "improved_heroic_strike",
+    "deflection",
+    "improved_rend",
+    null
+   ],
+   [
+    "improved_charge",
+    "iron_will",
+    "tactical_mastery",
+    null
+   ],
+   [
+    "improved_overpower",
+    "anger_management",
+    "impale",
+    "deep_wounds"
+   ],
+   [
+    null,
+    "two_handed_weapon_specialization",
+    "taste_for_blood",
+    null
+   ],
+   [
+    "poleaxe_specialization",
+    "sweeping_strikes",
+    "mace_specialization",
+    "sword_specialization"
+   ],
+   [
+    "weapon_mastery",
+    null,
+    "improved_hamstring",
+    "trauma"
+   ],
+   [
+    "second_wind",
+    "mortal_strike",
+    "strength_of_arms",
+    "improved_slam"
+   ],
+   [
+    "juggernaut",
+    "improved_mortal_strike",
+    "unrelenting_assault",
+    null
+   ],
+   [
+    "sudden_death",
+    "endless_rage",
+    "blood_frenzy",
+    null
+   ],
+   [
+    null,
+    "wrecking_crew",
+    null,
+    null
+   ],
+   [
+    null,
+    "bladestorm",
+    null,
+    null
+   ]
+  ],
+  "Fury": [
+   [
+    "armored_to_the_teeth",
+    "booming_voice",
+    "cruelty",
+    null
+   ],
+   [
+    null,
+    "improved_demoralizing_shout",
+    "unbridled_wrath",
+    null
+   ],
+   [
+    "improved_cleave",
+    "piercing_howl",
+    "blood_craze",
+    "commanding_presence"
+   ],
+   [
+    "dual_wield_specialization",
+    "improved_execute",
+    "enrage",
+    null
+   ],
+   [
+    "precision",
+    "death_wish",
+    "improved_intercept",
+    null
+   ],
+   [
+    "improved_berserker_rage",
+    null,
+    "flurry",
+    null
+   ],
+   [
+    "intensify_rage",
+    "bloodthirst",
+    null,
+    "improved_whirlwind"
+   ],
+   [
+    "furious_attacks",
+    null,
+    null,
+    "improved_berserker_stance"
+   ],
+   [
+    "heroic_fury",
+    "rampage",
+    "bloodsurge",
+    null
+   ],
+   [
+    null,
+    "unending_fury",
+    null,
+    null
+   ],
+   [
+    null,
+    "titans_grip",
+    "single_minded_fury",
+    null
+   ]
+  ],
+  "Protection": [
+   [
+    "improved_bloodrage",
+    "shield_specialization",
+    "improved_thunder_clap",
+    null
+   ],
+   [
+    null,
+    "incite",
+    "anticipation",
+    null
+   ],
+   [
+    "last_stand",
+    "improved_revenge",
+    "shield_mastery",
+    "toughness"
+   ],
+   [
+    "improved_spell_reflection",
+    "improved_disarm",
+    "puncture",
+    null
+   ],
+   [
+    "improved_disciplines",
+    "concussion_blow",
+    "gag_order",
+    null
+   ],
+   [
+    null,
+    null,
+    "one_handed_weapon_specialization",
+    null
+   ],
+   [
+    "improved_defensive_stance",
+    "vigilance",
+    "focused_rage",
+    null
+   ],
+   [
+    null,
+    "vitality",
+    "safeguard",
+    null
+   ],
+   [
+    "warbringer",
+    "devastate",
+    "critical_block",
+    null
+   ],
+   [
+    null,
+    "sword_and_board",
+    "damage_shield",
+    null
+   ],
+   [
+    null,
+    "shockwave",
+    null,
+    null
+   ]
+  ]
+ },
+ "enchants": [
+  {
+   "key": "avatar",
+   "name": "Avatar",
+   "rarity": "artifact",
+   "spec": "Arms",
+   "tooltip": "Teaches you: Avatar. \nAvatar: Transform into a colossus for 10 sec, causing you to take 20% less damage and become immune to immobilizing effects.",
+   "iconFile": "warrior_talent_icon_avatar",
+   "requiredLevel": 35
+  },
+  {
+   "key": "heroic_leap",
+   "name": "Heroic Leap",
+   "rarity": "artifact",
+   "spec": "Fury",
+   "tooltip": "Teaches you: Heroic Leap. \nHeroic Leap: Leap through the air toward a target location, slamming down with destructive force to deal 0 Physical damage to all enemies within 8 yards.",
+   "iconFile": "ability_heroicleap",
+   "requiredLevel": 35
+  },
+  {
+   "key": "siegebreaker",
+   "name": "Siegebreaker",
+   "rarity": "artifact",
+   "spec": "Fury",
+   "tooltip": "Teaches you: Siegebreaker. \nSiegebreaker: Use your full strength to slam the target with your weapon, dealing 100% weapon damage and knocking it back. \n\nEnemies the target collides with are knocked back slightly and take 75% weapon damage.",
+   "iconFile": "inv_mace_2h_draenorguard_b_01_horde",
+   "requiredLevel": 35
+  },
+  {
+   "key": "war_banner",
+   "name": "War Banner",
+   "rarity": "artifact",
+   "spec": "Arms",
+   "tooltip": "Teaches you: War Banner. \nWar Banner: Throw down a war banner at your feet, rallying your allies.\n\nIncreases movement speed by 30% and reduces the duration of all incoming crowd control effects by 50% to all allies within 20 yards of the war banner. Lasts 10 sec.\n\nYou can Intervene to the banner.",
+   "iconFile": "warrior_skullbanner",
+   "requiredLevel": 35
+  },
+  {
+   "key": "a_quick_death",
+   "name": "A Quick Death",
+   "rarity": "epic",
+   "spec": "Arms, Fury",
+   "tooltip": "Using Execute grants you 3% melee haste, 1% critical strike chance and increases your Bladestorm damage by 6% stacking up to 5 times and lasts for 20 sec.",
+   "iconFile": "achievement_bg_killingblow_berserker",
+   "requiredLevel": 24
+  },
+  {
+   "key": "battering_ram",
+   "name": "Battering Ram",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Your Slam applies a stack of Sunder Armor.\n\nYour attacks ignore 5% armor.",
+   "iconFile": "ability_warrior_trauma",
+   "requiredLevel": 20
+  },
+  {
+   "key": "blades_of_blood",
+   "name": "Blades of Blood",
+   "rarity": "epic",
+   "spec": "Arms, Fury",
+   "tooltip": "After using Charge your next Whirlwind or Bladestorm applies Rend to targets hit.",
+   "iconFile": "ability_warrior_bloodbath",
+   "requiredLevel": 30
+  },
+  {
+   "key": "blood_and_thunder",
+   "name": "Blood and Thunder",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Thunder Clap refreshes the duration of your Rend on your current target and spreads it to up to 5 additional targets.",
+   "iconFile": "warrior_talent_icon_bloodandthunder",
+   "requiredLevel": 15
+  },
+  {
+   "key": "bloodthirsty",
+   "name": "Bloodthirsty",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Bloodsurge\nBloodsurge causes your next Bloodthirst to gain 100% critical strike chance and to not trigger a cooldown. It no longer affects Slam. \n\nBloodsurge has double the chance to trigger from Bloodthirst and Whirlwind but will only trigger from those abilities.",
+   "iconFile": "ability_warrior_bloodsurge",
+   "requiredLevel": 40,
+   "requires": [
+    {
+     "talent": "bloodsurge",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "brutal_execution",
+   "name": "Brutal Execution",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Killing an enemy with Execute refunds 30 Rage and causes a bloody explosion, dealing 0 damage to enemies within 5 yards.",
+   "iconFile": "inv_artifact_bloodoftheassassinated",
+   "requiredLevel": 24
+  },
+  {
+   "key": "cleaving_slam",
+   "name": "Cleaving Slam",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Dealing damage with Cleave causes your next Slam to hit an additional target and cost no rage.\n\nYou can store up to 3 charges. In addition, your Cleave costs 5 less Rage.",
+   "iconFile": "inv_legendary_mace",
+   "requiredLevel": 20
+  },
+  {
+   "key": "controlled_aggression",
+   "name": "Controlled Aggression",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Requires Gladiator Stance\nRequires Sword and Board\nThe damage of your Shield Slam is increased by 25% of your attack power and the chance to trigger Sword and Board is doubled. However, the cooldown of Shield Slam is increased by 3 seconds.",
+   "iconFile": "inv_shield_75",
+   "requiredLevel": 55,
+   "requires": [
+    {
+     "name": "Gladiator Stance"
+    },
+    {
+     "talent": "sword_and_board",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "counterpoise",
+   "name": "Counterpoise",
+   "rarity": "epic",
+   "spec": "",
+   "tooltip": "While above 50% rage, you gain 5% melee haste. While below 50% rage, you gain 3% melee critical strike chance.",
+   "iconFile": "ability_warrior_weaponmastery",
+   "requiredLevel": 15
+  },
+  {
+   "key": "crackling_thunder",
+   "name": "Crackling Thunder",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Your Thunder Clap electrifies the ground, dealing ${23*0.99)+(0*0.02} Nature damage for 4 sec to nearby enemies and increasing your critical strike chance against them by 5%. \n\nThis damage generates additional threat.",
+   "iconFile": "spell_shaman_staticshock",
+   "requiredLevel": 15
+  },
+  {
+   "key": "desperation",
+   "name": "Desperation",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Increases your healing taken by 10%.\nIncreases your damage done against targets below 35% health by 8%. \n\nThese effects are tripled when you are below 50% health.",
+   "iconFile": "ability_deathwing_bloodcorruption_death",
+   "requiredLevel": 40
+  },
+  {
+   "key": "devastating_blademaster",
+   "name": "Devastating Blademaster",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Your chance to Parry is increased by 3%. After parrying an attack your next Devastate deals an additional 0% damage to all enemies within 8 yards.",
+   "iconFile": "ability_warrior_challange_teal",
+   "requiredLevel": 50
+  },
+  {
+   "key": "dragon_warrior",
+   "name": "Dragon Warrior",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Requires Dragon Roar\nDealing damage with Whirlwind reduces the cooldown of Dragon Roar by 0 sec.\n\nUsing Dragon Roar grants you Deathwish for 5 sec (if known).",
+   "iconFile": "inv_misc_head_dragon_bronze",
+   "requiredLevel": 30,
+   "requires": [
+    {
+     "name": "Dragon Roar"
+    }
+   ]
+  },
+  {
+   "key": "en_garde",
+   "name": "En Garde!",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Using Mocking Blow increases your chance to Parry by 10% for 10 sec.",
+   "iconFile": "ability_parry",
+   "requiredLevel": 16
+  },
+  {
+   "key": "going_for_the_kill",
+   "name": "Going For the Kill",
+   "rarity": "epic",
+   "spec": "Arms",
+   "tooltip": "Your Execute increases the duration of your active Rend by 4 seconds and Execute refunds any extra rage cost over 15.",
+   "iconFile": "ability_warrior_trauma",
+   "requiredLevel": 24
+  },
+  {
+   "key": "heavy_thunder",
+   "name": "Heavy Thunder",
+   "rarity": "epic",
+   "spec": "Arms",
+   "tooltip": "Your Thunder Clap deals 20% more damage when using a single Two-Handed Weapon.\n\nHitting a single target with Thunder Clap will cause your next Thunder Clap to gain 40% increase critical strike chance and cost no rage.",
+   "iconFile": "ability_thunderking_overcharge",
+   "requiredLevel": 15
+  },
+  {
+   "key": "here_comes_the_big_one",
+   "name": "Here Comes The Big One",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Bloodthirst\nEvery fourth use of Bloodthirst now deals 75% increased damage.",
+   "iconFile": "_d3warcry",
+   "requiredLevel": 40,
+   "requires": [
+    {
+     "talent": "bloodthirst",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "heroic_rush",
+   "name": "Heroic Rush",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Heroic Fury\nYour Heroic Fury ability now increases your movement speed by 50% and attack speed by 30% for 5 seconds instead of resetting the cooldown of Intercept. Its cooldown is reduced to 20 seconds.",
+   "iconFile": "_d3furiouscharge",
+   "requiredLevel": 0,
+   "requires": [
+    {
+     "talent": "heroic_fury",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "insatiable",
+   "name": "Insatiable",
+   "rarity": "epic",
+   "spec": "Arms",
+   "tooltip": "Dealing damage with Rend increases the damage of your next Overpower by 8%, stacking up to 5 times. Using Overpower while it's active also grants you 5 Rage per stack.\n\nWhenever your attack is dodged, gain the maximum amount of stacks.",
+   "iconFile": "warrior_talent_icon_furyintheblood",
+   "requiredLevel": 15
+  },
+  {
+   "key": "iron_guard",
+   "name": "Iron Guard",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Your successful blocks further reduce the damage you take from the hit by 15%.",
+   "iconFile": "inv_shield_77",
+   "requiredLevel": 15
+  },
+  {
+   "key": "jab_cross",
+   "name": "Jab Cross",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Requires Devastate\nDealing damage with Devastate increases the critical strike chance of your next single target melee ability (excluding Heroic Strike) by 20%.\n\nAdditionally, using Devastate against monsters has a chance to trigger the Improved Defensive Stance talent Enrage effect (if known).",
+   "iconFile": "ability_racial_haymaker",
+   "requiredLevel": 50,
+   "requires": [
+    {
+     "talent": "devastate",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "master_of_arms",
+   "name": "Master of Arms",
+   "rarity": "epic",
+   "spec": "Arms",
+   "tooltip": "After using Overpower, Slam or Execute your next Mortal Strike deals 15% increased damage. Stacks up to 2. Lasts 15 seconds.\n\nIncreases your armor penetration rating by 8% of your Strength.",
+   "iconFile": "ability_bastion_rogue",
+   "requiredLevel": 40
+  },
+  {
+   "key": "onslaught",
+   "name": "Onslaught",
+   "rarity": "epic",
+   "spec": "Arms, Fury",
+   "tooltip": "Using Colossus Smash allows your next Execute to be used regardless of the target's health. \n\nDamage of Execute against targets below 20% health increased by 20%.",
+   "iconFile": "_frenzy_redorange",
+   "requiredLevel": 30
+  },
+  {
+   "key": "outrage",
+   "name": "Outrage",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Enrage\nYour Enrage talent increases your physical damage by an additional 5%.",
+   "iconFile": "spell_winston_rage",
+   "requiredLevel": 29,
+   "requires": [
+    {
+     "talent": "enrage",
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "key": "overwhelming_rage",
+   "name": "Overwhelming Rage",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Your maximum rage is increased by 20.\n\nYou generate 20% more rage from damage dealt.",
+   "iconFile": "spell_nature_shamanrage",
+   "requiredLevel": 15
+  },
+  {
+   "key": "power_slam",
+   "name": "Power Slam",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Bloodsurge\nSlam is now instant cast, no longer pauses your attack timer, but its damage is halved. \n\nIt has a 50% chance to trigger 5 seconds of your Enrage talent and Bloodsurge (if known). Bloodsurge now removes the damage penalty.",
+   "iconFile": "ability_warrior_bloodfrenzy",
+   "requiredLevel": 52,
+   "requires": [
+    {
+     "talent": "bloodsurge",
+     "rank": 3
+    }
+   ]
+  },
+  {
+   "key": "raging_onslaught",
+   "name": "Raging Onslaught",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Requires Raging Blow\nIncreases the critical chance of Raging Blow by 30%. Your Bloodthirst criticals make your next Raging Blow cost no rage and trigger no cooldown.",
+   "iconFile": "novart_physical_ability_(47)_border",
+   "requiredLevel": 30,
+   "requires": [
+    {
+     "name": "Raging Blow"
+    }
+   ]
+  },
+  {
+   "key": "relentless_fury",
+   "name": "Relentless Fury",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "While any Enrage effect is active your Heroic Strike and Cleave deals 10% more damage. The health cost of Bloodrage is reduced by 100%.\n\nAfter killing an opponent that yields experience or honor the cooldown of Bloodrage is reduced by 10 sec.",
+   "iconFile": "ability_warrior_endlessrage",
+   "requiredLevel": 15
+  },
+  {
+   "key": "revengeful_block",
+   "name": "Revengeful Block",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Dealing damage with Revenge reduces the cooldown of Shield Block by 1 sec per target hit.",
+   "iconFile": "ability_warrior_revenge",
+   "requiredLevel": 16
+  },
+  {
+   "key": "revitalizing_revenge",
+   "name": "Revitalizing Revenge",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Using Revenge while Enraged Regeneration is active extends its duration by 2 seconds and heals you for 8% of your missing health. \n\nWhile Enraged Regeneration is not active, Revenge reduces the cooldown of Enraged Regeneration by 0 seconds. \n\nThese effects can only occur once every 3 seconds and do not work against players.",
+   "iconFile": "spell_warrior_barbarian",
+   "requiredLevel": 44
+  },
+  {
+   "key": "roar_of_dread",
+   "name": "Roar of Dread",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Your Demoralizing Shout overpowers your enemies with dread, dealing 241.92 high threat Physical damage and can no longer miss.\n\nHowever, the cooldown of Demoralizing Shout is increased by 12 seconds.",
+   "iconFile": "_d3gargantuan",
+   "requiredLevel": 15
+  },
+  {
+   "key": "seismic_shockwave",
+   "name": "Seismic Shockwave",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Using Devastate increases the damage of your next Shockwave by 15%. At full stacks, the range of Shockwave is increased by 5 yards and stuns for an additional 1 second. Stacks up to 3 times and lasts for 10 sec.",
+   "iconFile": "spell_winston_rage",
+   "requiredLevel": 60
+  },
+  {
+   "key": "shield_finesse",
+   "name": "Shield Finesse",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Using Shield Wall resets the cooldown of Shield Block.\n\nUsing Shield Block resets the cooldown of Shield Slam.\n\nIncreases the armor you gain from your equipped shield by 30%.",
+   "iconFile": "inv_shield_draenorquest_b_01",
+   "requiredLevel": 28
+  },
+  {
+   "key": "shield_masters_resolve",
+   "name": "Shield Master's Resolve",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Taking melee or ranged damage while below 35% health grants you Shield Block for 4 seconds. This can only occur once every 60 seconds. Will not trigger if Shield Block is already active.\n\nIn addition, damage taken while you are below 50% health is reduced by 10%.",
+   "iconFile": "inv_shield_1h_nazmirraid_d_02",
+   "requiredLevel": 16
+  },
+  {
+   "key": "skull_crusher",
+   "name": "Skull Crusher",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Casting Slam reduces the cooldown of Death Wish and Bladestorm by 0 seconds.",
+   "iconFile": "ability_rogue_rollthebones01",
+   "requiredLevel": 30
+  },
+  {
+   "key": "spell_block",
+   "name": "Spell Block",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Shield Block also reduces all magic damage taken by 20%.",
+   "iconFile": "ability_priest_reflectiveshield",
+   "requiredLevel": 16
+  },
+  {
+   "key": "sword_and_thunder",
+   "name": "Sword and Thunder",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Your Devastate and Revenge have a 30% chance to reset the cooldown of your Thunder Clap and make your next Thunder Clap cost no rage.",
+   "iconFile": "inv_shield_65",
+   "requiredLevel": 15
+  },
+  {
+   "key": "throwing_mastery",
+   "name": "Throwing Mastery",
+   "rarity": "epic",
+   "spec": "Arms",
+   "tooltip": "Storm Shield: Damage taken is reduced by 8%.\nCritical strike chance of Thunder Clap increased by 50%.\nCooldown of Thunder Clap increased by 25%.\nUsing Storm Bolt empowers your next 2 Heroic Throw abilities, allowing it to be used without a triggering a cooldown and increases the duration of Storm Shield, granted from Storm Bolt by 10 sec.\n\nIn addition, Storm Bolt and Heroic Throw applies 2 stacks of Sunder Armor.",
+   "iconFile": "inv_axe_66",
+   "requiredLevel": 46
+  },
+  {
+   "key": "thundering_blow",
+   "name": "Thundering Blow",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Requires Shockwave\nWhen Shockwave hits an enemy affected by your Thunder Clap it unleashes an additional Nature strike for 15% of the damage dealt. Reduces the cooldown of Shockwave for each enemy hit by this additional strike by 1 sec, up to a maximum of 5 sec.",
+   "iconFile": "stormspear_empowered_icon",
+   "requiredLevel": 60,
+   "requires": [
+    {
+     "talent": "shockwave",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "titans_fury",
+   "name": "Titan's Fury",
+   "rarity": "epic",
+   "spec": "Fury",
+   "tooltip": "Using Whirlwind while above 50 rage grants you Titan's Fury. Using it while below 50 rage grants you Titan's Heroism.\n\nTitan's Fury: Increases damage dealt by 5% for 10 sec.\nTitan's Heroism: Removes the rage cost of Heroic Strike and Cleave. Lasts 3 charges or 10 sec.",
+   "iconFile": "achievement_dungeon_ulduarraid_ironsentinel_01",
+   "requiredLevel": 30
+  },
+  {
+   "key": "victorious",
+   "name": "Victorious",
+   "rarity": "epic",
+   "spec": "Fury, Arms",
+   "tooltip": "Your Victory Rush deals 10% more damage and heals you for 10% health.",
+   "iconFile": "spell_impending_victory",
+   "requiredLevel": 15
+  },
+  {
+   "key": "victorious_stand",
+   "name": "Victorious Stand",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Requires Last Stand\nDealing damage with Victory Rush reduces the cooldown of Last Stand by 5 sec. \n\nUsing Last Stand grants one use of Victory Rush.",
+   "iconFile": "warrior_talent_icon_skirmisher",
+   "requiredLevel": 20,
+   "requires": [
+    {
+     "talent": "last_stand",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "vigilant_vanguard",
+   "name": "Vigilant Vanguard",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Requires Vigilance\nTransforms your Intervene into Vanguard.\nVanguard: Charge toward the target of your Vigilance, forming a Vanguard. While you remain close you follow up their auto attacks with your own attack, dealing 150% weapon damage. This attack can only occur once every 3 seconds. Lasts for 15 sec.",
+   "iconFile": "ability_warrior_swordandboard",
+   "requiredLevel": 40,
+   "requires": [
+    {
+     "talent": "vigilance",
+     "rank": 1
+    }
+   ]
+  },
+  {
+   "key": "wingman",
+   "name": "Wingman",
+   "rarity": "epic",
+   "spec": "Protection",
+   "tooltip": "Challenging Shout now decreases the damage taken by your allies by 10% and its cooldown is reduced by 60%.",
+   "iconFile": "ability_bullrush",
+   "requiredLevel": 26
+  },
+  {
+   "key": "ambidextrous",
+   "name": "Ambidextrous",
+   "rarity": "legendary",
+   "spec": "Fury",
+   "tooltip": "Your Heroic Strike also hits with your off-hand weapon, dealing 60% weapon damage. \n\nAfter using Heroic Strike you deal 5% increased damage with your off-hand attacks for 8 sec, stacking up to 3.",
+   "iconFile": "_d3calloftheancients",
+   "requiredLevel": 30
+  },
+  {
+   "key": "arms_mastery",
+   "name": "Arms Mastery",
+   "rarity": "legendary",
+   "spec": "Arms",
+   "tooltip": "Doubles the Armor Penetration rating granted from Battle Stance.",
+   "iconFile": "ability_warrior_offensivestance",
+   "requiredLevel": 30
+  },
+  {
+   "key": "bloodbath",
+   "name": "Bloodbath",
+   "rarity": "legendary",
+   "spec": "Fury",
+   "tooltip": "Teaches you: Bloodbath. \nBloodbath: For the next 6 sec your melee abilities deal 5 bleed damage over 5 sec and reduces the movement speed of the target by 30% for 5 sec.",
+   "iconFile": "ability_warrior_bloodbath",
+   "requiredLevel": 40
+  },
+  {
+   "key": "bulwark",
+   "name": "Bulwark",
+   "rarity": "legendary",
+   "spec": "Protection",
+   "tooltip": "Teaches you: Bulwark. \nBulwark: Raise a mighty bulwark that grants you 40% block chance and causes you to deal Physical damage to enemies in front of you every second, modified by your shield block value, but reduces your movement speed by 30%. Lasts for 6 sec.",
+   "iconFile": "ability_warrior_shieldguard",
+   "requiredLevel": 30
+  },
+  {
+   "key": "colossus_smash",
+   "name": "Colossus Smash",
+   "rarity": "legendary",
+   "spec": "Arms, Fury",
+   "tooltip": "Teaches you: Colossus Smash\n@s:1186361:-32:s@",
+   "iconFile": "ability_warrior_colossussmash",
+   "requiredLevel": 30
+  },
+  {
+   "key": "dragon_roar",
+   "name": "Dragon Roar",
+   "rarity": "legendary",
+   "spec": "Fury",
+   "tooltip": "Reduces the cooldown of your Whirlwind by -2 sec.\n\nTeaches you: Dragon Roar. \nDragon Roar: Roar explosively, dealing 765 Physical damage to nearby enemies and increasing your attack speed by 10% for 15 sec.\n\nUsing Dragon Roar resets the cooldown of Whirlwind.",
+   "iconFile": "ability_warrior_dragonroar",
+   "requiredLevel": 30
+  },
+  {
+   "key": "enduring_aegis",
+   "name": "Enduring Aegis",
+   "rarity": "legendary",
+   "spec": "Protection",
+   "tooltip": "While Shield Block is active your Shield Slam can hit an additional 3 targets. Using Shield Slam extends the duration of Shield Block by 3 sec.\n\nYour Block Value is further increased by 15% while Shield Block is active.",
+   "iconFile": "inv_shield_draenordungeon_c_01",
+   "requiredLevel": 30
+  },
+  {
+   "key": "fury_mastery",
+   "name": "Fury Mastery",
+   "rarity": "legendary",
+   "spec": "Fury",
+   "tooltip": "Increases your chance to hit with your off-hand auto attacks by 6% and your critical strike chance by 3%.",
+   "iconFile": "ability_warrior_titansgrip",
+   "requiredLevel": 30
+  },
+  {
+   "key": "gladiator_stance",
+   "name": "Gladiator Stance",
+   "rarity": "legendary",
+   "spec": "Protection",
+   "tooltip": "Teaches you: Gladiator Stance.\nGladiator Stance: An aggressive combat stance.\n\nWhile wearing a shield in Gladiator Stance, you can use any other stance abilities and use Revenge after critically striking. Additionally, Shield Slam no longer generates bonus threat.\n\nYour Shield Block now increases the critical chance of Shield Slam by 30% and makes your Shield Slam hit an additional nearby target, but no longer increases your chance to block.\n\nEffects that require Defensive Stance also works in Gladiator Stance.",
+   "iconFile": "achievement_featsofstrength_gladiator_08",
+   "requiredLevel": 30
+  },
+  {
+   "key": "heavyweight",
+   "name": "Heavyweight",
+   "rarity": "legendary",
+   "spec": "Arms",
+   "tooltip": "Increases the Armor Penetration of your Battle Stance by 10%. Using Overpower or Execute grants 2 stacks, and Slam grants 1 stack of Heavyweight, increasing your physical damage by 1%, stacking up to 6 times.\n\nAfter reaching max stacks you gain Ready to Crush.\nReady to Crush: Your next Mortal Strike deals 50% increased damage and has a 40% increased critical strike chance. \n\nYour next Thunder Clap sends out an aftershock, dealing 150% weapon damage to nearby enemies.",
+   "iconFile": "ability_kilruk_reave",
+   "requiredLevel": 30
+  },
+  {
+   "key": "protection_mastery",
+   "name": "Protection Mastery",
+   "rarity": "legendary",
+   "spec": "Protection",
+   "tooltip": "Reduces all damage taken while in Defensive Stance by 3% and increases all threat generated by 12%.",
+   "iconFile": "ability_warrior_defensivestance",
+   "requiredLevel": 30
+  },
+  {
+   "key": "raging_blow",
+   "name": "Raging Blow",
+   "rarity": "legendary",
+   "spec": "Fury, Arms",
+   "tooltip": "Teaches you: Raging Blow.\n\nRaging Blow: A mighty blow that deals 175% weapon damage from both melee weapons.\n\nUsing Bloodrage, Death Wish, Berserker Rage, Recklessness, or killing a target that yields experience or honor grants makes your next Raging Blow have no rage cost and trigger no cooldown. This can be stored 3 times.",
+   "iconFile": "warrior_wild_strike",
+   "requiredLevel": 30
+  },
+  {
+   "key": "ravager",
+   "name": "Ravager",
+   "rarity": "legendary",
+   "spec": "Fury",
+   "tooltip": "Teaches you: Ravager. \nRavager: Throws a whirling weapon at the target location, inflicting 40% weapon damage every second to all nearby enemies for 8 sec.",
+   "iconFile": "warrior_talent_icon_ravager",
+   "requiredLevel": 30
+  },
+  {
+   "key": "storm_bolt",
+   "name": "Storm Bolt",
+   "rarity": "legendary",
+   "spec": "Protection",
+   "tooltip": "Teaches you: Storm Bolt. \nStorm Bolt: Hurl your weapon at an enemy, causing 150% weapon damage, stunning the target for 3 sec and electrifying the ground, dealing 65.17 Nature damage to nearby enemies.\n\nIf the target is a monster you also take 8% reduced damage and your Thunder Clap gains 50% increased critical stike chance and 25% reduced cooldown for 20 sec.",
+   "iconFile": "warrior_talent_icon_stormbolt",
+   "requiredLevel": 30
+  },
+  {
+   "key": "anger_management",
+   "name": "Anger Management",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nGenerates 1 rage per 3 seconds.\n\nThis Mystic Enchant does not stack with the Anger Management Talent.",
+   "iconFile": "spell_holy_blessingofstamina",
+   "requiredLevel": 45
+  },
+  {
+   "key": "anticipation",
+   "name": "Anticipation",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases your Dodge chance by 5%.\n\nThis Mystic Enchant does not stack with the Anticipation Talent.",
+   "iconFile": "spell_nature_mirrorimage",
+   "requiredLevel": 45
+  },
+  {
+   "key": "armored_to_the_teeth",
+   "name": "Armored to the Teeth",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases your attack power by 3 for every 108 armor value you have.\n\nThis Mystic Enchant does not stack with the Armored to the Teeth Talent.",
+   "iconFile": "inv_shoulder_22",
+   "requiredLevel": 45
+  },
+  {
+   "key": "blood_craze",
+   "name": "Blood Craze",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nRegenerates 6% of your total Health over 6 sec after being the victim of a critical strike.\n\nThis Mystic Enchant does not stack with the Blood Craze Talent.",
+   "iconFile": "spell_shadow_summonimp",
+   "requiredLevel": 45
+  },
+  {
+   "key": "booming_voice",
+   "name": "Booming Voice",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases the area of effect and duration of your Battle Shout, Demoralizing Shout and Commanding Shout by 50%.\n\nThis Mystic Enchant does not stack with the Booming Voice Talent.",
+   "iconFile": "spell_nature_purge",
+   "requiredLevel": 45
+  },
+  {
+   "key": "commanding_presence",
+   "name": "Commanding Presence",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases the melee attack power bonus of your Battle Shout and the health bonus of your Commanding Shout by 25%.\n\nThis Mystic Enchant does not stack with the Commanding Presence Talent.",
+   "iconFile": "spell_nature_focusedmind",
+   "requiredLevel": 45
+  },
+  {
+   "key": "cruelty",
+   "name": "Cruelty",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases your chance to get a critical strike with melee weapons by 5%.\n\nThis Mystic Enchant does not stack with the Cruelty Talent.",
+   "iconFile": "ability_rogue_eviscerate",
+   "requiredLevel": 45
+  },
+  {
+   "key": "deep_wounds",
+   "name": "Deep Wounds",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nYour critical strikes cause the opponent to bleed, dealing 48% of your melee weapon's average damage over 6 sec.\n\nThis Mystic Enchant does not stack with the Deep Wounds Talent.",
+   "iconFile": "ability_backstab",
+   "requiredLevel": 45
+  },
+  {
+   "key": "deflection",
+   "name": "Deflection",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases your Parry chance by 5%.\n\nThis Mystic Enchant does not stack with the Deflection Talent.",
+   "iconFile": "ability_parry",
+   "requiredLevel": 45
+  },
+  {
+   "key": "dual_wield_specialization",
+   "name": "Dual Wield Specialization",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases the damage done by your off-hand weapon by 25%.\n\nThis Mystic Enchant does not stack with the Dual Wield Specialization Talent.",
+   "iconFile": "ability_dualwield",
+   "requiredLevel": 45
+  },
+  {
+   "key": "enrage",
+   "name": "Enrage",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nGives you a 30% chance to receive a 10% damage bonus for 12 sec after being the victim of a damaging attack.  This effect does not stack with Wrecking Crew.\n\nThis Mystic Enchant does not stack with the Enrage Talent.",
+   "iconFile": "spell_shadow_unholyfrenzy",
+   "requiredLevel": 45
+  },
+  {
+   "key": "glyph_of_barbaric_insults",
+   "name": "Glyph of Barbaric Insults",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Your Mocking Blow ability generates 100% additional threat.",
+   "iconFile": "ability_warrior_punishingblow",
+   "requiredLevel": 25
+  },
+  {
+   "key": "glyph_of_bladestorm",
+   "name": "Glyph of Bladestorm",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Reduces the cooldown on Bladestorm by -15 sec.",
+   "iconFile": "ability_warrior_bladestorm",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_blocking",
+   "name": "Glyph of Blocking",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Increases your block value by 10% for 10 sec after using your Shield Slam ability.",
+   "iconFile": "inv_shield_32",
+   "requiredLevel": 25
+  },
+  {
+   "key": "glyph_of_bloodthirst",
+   "name": "Glyph of Bloodthirst",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Increases the healing you receive from your Bloodthirst ability by 50%.",
+   "iconFile": "spell_nature_bloodlust",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_cleaving",
+   "name": "Glyph of Cleaving",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Increases the number of targets your Cleave hits by 1.",
+   "iconFile": "ability_warrior_cleave",
+   "requiredLevel": 25
+  },
+  {
+   "key": "glyph_of_devastate",
+   "name": "Glyph of Devastate",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Your Devastate ability now applies two stacks of Sunder Armor.",
+   "iconFile": "inv_sword_11",
+   "requiredLevel": 50
+  },
+  {
+   "key": "glyph_of_enraged_regeneration",
+   "name": "Glyph of Enraged Regeneration",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Your Enraged Regeneration ability heals for an additional 10% of your health over its duration.",
+   "iconFile": "ability_warrior_focusedrage",
+   "requiredLevel": 44
+  },
+  {
+   "key": "glyph_of_execution",
+   "name": "Glyph of Execution",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Your Execute ability deals damage as if you had 10 additional rage. Execute has 30% increased critical strike chance when hitting targets below 20% health.",
+   "iconFile": "inv_sword_48",
+   "requiredLevel": 25
+  },
+  {
+   "key": "glyph_of_hamstring",
+   "name": "Glyph of Hamstring",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Gives your Hamstring ability a 10% chance to immobilize the target for 5 sec.",
+   "iconFile": "ability_shockwave",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_heroic_strike",
+   "name": "Glyph of Heroic Strike",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "You gain 10 rage when you critically strike with your Heroic Strike ability.",
+   "iconFile": "ability_rogue_ambush",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_intervene",
+   "name": "Glyph of Intervene",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Intervene costs no rage and intervenes an extra attack.",
+   "iconFile": "ability_warrior_victoryrush",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_last_stand",
+   "name": "Glyph of Last Stand",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Reduces the cooldown of your Last Stand ability by -1 min.",
+   "iconFile": "spell_holy_ashestoashes",
+   "requiredLevel": 20
+  },
+  {
+   "key": "glyph_of_mortal_strike",
+   "name": "Glyph of Mortal Strike",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Increases the damage of your Mortal Strike ability by 10%.",
+   "iconFile": "ability_warrior_savageblow",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_overpower",
+   "name": "Glyph of Overpower",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Adds a 100% chance to enable your Overpower when your attacks are parried.",
+   "iconFile": "ability_meleedamage",
+   "requiredLevel": 12
+  },
+  {
+   "key": "glyph_of_rapid_charge",
+   "name": "Glyph of Rapid Charge",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Killing an enemy that yields experience or honor reduces the active cooldown of your Charge by 5 seconds.",
+   "iconFile": "ability_warrior_charge",
+   "requiredLevel": 25
+  },
+  {
+   "key": "glyph_of_rending",
+   "name": "Glyph of Rending",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Rend no longer costs rage and lasts for an additional 6 sec.",
+   "iconFile": "ability_gouge",
+   "requiredLevel": 15
+  },
+  {
+   "key": "glyph_of_resonating_power",
+   "name": "Glyph of Resonating Power",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Your Thunder Clap ability costs -5 less rage.",
+   "iconFile": "spell_nature_thunderclap",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_revenge",
+   "name": "Glyph of Revenge",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "After using Revenge, your next Heroic Strike or Cleave costs no rage.",
+   "iconFile": "ability_warrior_revenge",
+   "requiredLevel": 14
+  },
+  {
+   "key": "glyph_of_shield_wall",
+   "name": "Glyph of Shield Wall",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Reduces the cooldown on Shield Wall by -2 min, but Shield Wall now only reduces damage taken by 40%.",
+   "iconFile": "ability_warrior_shieldwall",
+   "requiredLevel": 28
+  },
+  {
+   "key": "glyph_of_shockwave",
+   "name": "Glyph of Shockwave",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Reduces the cooldown on Shockwave by -3 sec and increases the damage of Shockwave by 20%.",
+   "iconFile": "ability_warrior_shockwave",
+   "requiredLevel": 60
+  },
+  {
+   "key": "glyph_of_slam",
+   "name": "Glyph of Slam",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Increases the damage dealt of slam by 10% and Slam can now be cast while moving.",
+   "iconFile": "ability_warrior_decisivestrike",
+   "requiredLevel": 0
+  },
+  {
+   "key": "glyph_of_spell_reflection",
+   "name": "Glyph of Spell Reflection",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Reduces the cooldown on Spell Reflection by -1 sec.",
+   "iconFile": "ability_warrior_shieldreflection",
+   "requiredLevel": 50
+  },
+  {
+   "key": "glyph_of_sunder_armor",
+   "name": "Glyph of Sunder Armor",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Your Sunder Armor affects three nearby targets.",
+   "iconFile": "ability_warrior_sunder",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_sweeping_strikes",
+   "name": "Glyph of Sweeping Strikes",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Reduces the rage cost of your Sweeping Strikes ability by 100% and Sweeping Strikes now lasts for 3 more swings.",
+   "iconFile": "ability_rogue_slicedice",
+   "requiredLevel": 30
+  },
+  {
+   "key": "glyph_of_victory_rush",
+   "name": "Glyph of Victory Rush",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Your Victory Rush ability has a 30% increased critical strike chance.",
+   "iconFile": "ability_warrior_devastate",
+   "requiredLevel": 10
+  },
+  {
+   "key": "glyph_of_vigilance",
+   "name": "Glyph of Vigilance",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Your Vigilance ability transfers an additional 5% of your target's threat to you.",
+   "iconFile": "ability_warrior_vigilance",
+   "requiredLevel": 40
+  },
+  {
+   "key": "glyph_of_whirlwind",
+   "name": "Glyph of Whirlwind",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Reduces the cooldown of your Whirlwind by -2 sec.",
+   "iconFile": "ability_whirlwind",
+   "requiredLevel": 30
+  },
+  {
+   "key": "impale",
+   "name": "Impale",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases the critical strike damage bonus of your abilities by 20%.\n\nThis Mystic Enchant does not stack with the Impale Talent.",
+   "iconFile": "ability_searingarrow",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_bloodrage",
+   "name": "Improved Bloodrage",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases the rage generated by your Bloodrage ability by 50%.\n\nThis Mystic Enchant does not stack with the Improved Bloodrage Talent.",
+   "iconFile": "ability_racial_bloodrage",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_charge",
+   "name": "Improved Charge",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases the amount of rage generated by your Charge ability by 10.\n\nThis Mystic Enchant does not stack with the Improved Charge Talent.",
+   "iconFile": "ability_warrior_charge",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_cleave",
+   "name": "Improved Cleave",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases the bonus damage done by your Cleave ability by 120%.\n\nThis Mystic Enchant does not stack with the Improved Cleave Talent.",
+   "iconFile": "ability_warrior_cleave",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_demoralizing_shout",
+   "name": "Improved Demoralizing Shout",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nIncreases the melee attack power reduction of your Demoralizing Shout by 40%.\n\nThis Mystic Enchant does not stack with the Improved Demoralizing Shout Talent.",
+   "iconFile": "ability_warrior_warcry",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_execute",
+   "name": "Improved Execute",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nReduces the rage cost of your Execute ability by 5.\n\nThis Mystic Enchant does not stack with the Improved Execute Talent.",
+   "iconFile": "inv_sword_48",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_heroic_strike",
+   "name": "Improved Heroic Strike",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nReduces the cost of your Heroic Strike ability by 3 rage points.\n\nThis Mystic Enchant does not stack with the Improved Heroic Strike Talent.",
+   "iconFile": "ability_rogue_ambush",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_overpower",
+   "name": "Improved Overpower",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Overpower ability by 50%.\n\nThis Mystic Enchant does not stack with the Improved Overpower Talent.",
+   "iconFile": "inv_sword_05",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_rend",
+   "name": "Improved Rend",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases the bleed damage done by your Rend ability by 20%.\n\nThis Mystic Enchant does not stack with the Improved Rend Talent.",
+   "iconFile": "ability_gouge",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_revenge",
+   "name": "Improved Revenge",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases damage of your Revenge ability by 60% and causes Revenge to strike an additional target.\n\nThis Mystic Enchant does not stack with the Improved Revenge Talent.",
+   "iconFile": "ability_warrior_revenge",
+   "requiredLevel": 45
+  },
+  {
+   "key": "improved_thunder_clap",
+   "name": "Improved Thunder Clap",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nReduces the cost of your Thunder Clap ability by 4 rage points and increases the damage by 30% and the slowing effect by an additional 10%.\n\nThis Mystic Enchant does not stack with the Improved Thunder Clap Talent.",
+   "iconFile": "ability_thunderclap",
+   "requiredLevel": 45
+  },
+  {
+   "key": "incite",
+   "name": "Incite",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases the critical strike chance of your Heroic Strike, Thunder Clap and Cleave abilities by 15%.\n\nThis Mystic Enchant does not stack with the Incite Talent.",
+   "iconFile": "ability_warrior_incite",
+   "requiredLevel": 45
+  },
+  {
+   "key": "iron_will",
+   "name": "Iron Will",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nReduces the duration of all Stun and Charm effects used against you by 20%.\n\nThis Mystic Enchant does not stack with the Iron Will Talent.",
+   "iconFile": "spell_magic_magearmor",
+   "requiredLevel": 45
+  },
+  {
+   "key": "piercing_howl",
+   "name": "Piercing Howl",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nTeaches you: Piercing Howl\n\nThis Mystic Enchant does not stack with the Piercing Howl Talent.\n@s:1462323:0:0:0:-32@",
+   "iconFile": "spell_shadow_deathscream",
+   "requiredLevel": 45
+  },
+  {
+   "key": "puncture",
+   "name": "Puncture",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nReduces the rage cost of your Sunder Armor and Devastate abilities by 3.\n\nThis Mystic Enchant does not stack with the Puncture Talent.",
+   "iconFile": "ability_warrior_sunder",
+   "requiredLevel": 45
+  },
+  {
+   "key": "shield_mastery",
+   "name": "Shield Mastery",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases your block value by 30% and reduces the cooldown of your Shield Block ability by 20 sec.\n\nThis Mystic Enchant does not stack with the Shield Mastery Talent.",
+   "iconFile": "ability_warrior_shieldmastery",
+   "requiredLevel": 45
+  },
+  {
+   "key": "shield_specialization",
+   "name": "Shield Specialization",
+   "rarity": "rare",
+   "spec": "Protection",
+   "tooltip": "Crossover Talent\nIncreases your chance to block attacks with a shield by 5% and has a 100% chance to generate 5 rage when a block, dodge, or parry occurs.\n\nThis Mystic Enchant does not stack with the Shield Specialization Talent.",
+   "iconFile": "inv_shield_06",
+   "requiredLevel": 45
+  },
+  {
+   "key": "tactical_mastery",
+   "name": "Tactical Mastery",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nYou retain up to an additional 15 of your rage points when you change stances.  Also greatly increases the threat generated by your Bloodthirst and Mortal Strike abilities when you are in Defensive Stance (More effective than Rank 2).\n\nThis Mystic Enchant does not stack with the Tactical Mastery Talent.",
+   "iconFile": "spell_nature_enchantarmor",
+   "requiredLevel": 45
+  },
+  {
+   "key": "taste_for_blood",
+   "name": "Taste for Blood",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nWhenever your Rend ability causes damage, you have a 100% chance of allowing the use of your Overpower ability for 9 sec.  1 charge.  This effect will not occur more than once every 6 sec.\n\nThis Mystic Enchant does not stack with the Taste for Blood Talent.",
+   "iconFile": "ability_rogue_hungerforblood",
+   "requiredLevel": 45
+  },
+  {
+   "key": "two_handed_weapon_specialization",
+   "name": "Two-Handed Weapon Specialization",
+   "rarity": "rare",
+   "spec": "Arms",
+   "tooltip": "Crossover Talent\nIncreases the damage you deal with two-handed melee weapons by 6%.\n\nThis Mystic Enchant does not stack with the Two-Handed Weapon Specialization Talent.",
+   "iconFile": "inv_axe_09",
+   "requiredLevel": 45
+  },
+  {
+   "key": "unbridled_wrath",
+   "name": "Unbridled Wrath",
+   "rarity": "rare",
+   "spec": "Fury",
+   "tooltip": "Crossover Talent\nGives you a chance to generate an additional rage point when you deal melee damage with a weapon.  Effect occurs more often than Unbridled Wrath (Rank 4).\n\nThis Mystic Enchant does not stack with the Unbridled Wrath Talent.",
+   "iconFile": "spell_nature_stoneclawtotem",
+   "requiredLevel": 45
+  }
+ ],
+ "abilities": [
+  {
+   "key": "battle_stance",
+   "name": "Battle Stance",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A balanced combat stance that increases the armor penetration of all of your attacks by 15%. Reduces threat generated by 20%.",
+   "iconFile": "ability_warrior_offensivestance",
+   "cooldown": "1 sec"
+  },
+  {
+   "key": "bladestorm",
+   "name": "Bladestorm",
+   "spec": "Arms",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "You become a whirling storm of destructive force, instantly striking up to 6 nearby targets for 120% weapon damage and continuing to perform a whirlwind attack every 1 sec for 6 sec sec. \n\nDamage is increased by 30% when only hitting one target.\n\nWhile under the effects of Bladestorm, you can move but cannot perform any other abilities but you do not feel pity or remorse or fear and you cannot be stopped unless killed.",
+   "iconFile": "ability_warrior_bladestorm"
+  },
+  {
+   "key": "charge",
+   "name": "Charge",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 3,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Charge an enemy, generate 15 rage, and stun it for 1.5 sec.  Cannot be used in combat.",
+   "iconFile": "ability_warrior_charge",
+   "cooldown": "15 sec",
+   "range": 25
+  },
+  {
+   "key": "hamstring",
+   "name": "Hamstring",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Maims the enemy, reducing movement speed by 50% for 15 sec.",
+   "iconFile": "ability_shockwave",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "duration": "15 sec",
+   "range": 5
+  },
+  {
+   "key": "heroic_strike",
+   "name": "Heroic Strike",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 9,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A strong attack that increases melee damage by 201 and causes a high amount of threat.",
+   "iconFile": "ability_rogue_ambush",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "range": 5
+  },
+  {
+   "key": "heroic_throw",
+   "name": "Heroic Throw",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Throws your weapon at the enemy causing 12 damage (based on attack power).  This ability causes high threat.",
+   "iconFile": "inv_axe_66",
+   "cooldown": "1 min",
+   "range": 30,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.5
+    }
+   ]
+  },
+  {
+   "key": "mocking_blow",
+   "name": "Mocking Blow",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "A mocking attack that causes a moderate amount of threat and forces the target to focus attacks on you for 6 sec.  If the target is tauntable, also deals weapon damage.(This spell cannot miss)",
+   "iconFile": "ability_warrior_punishingblow",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "1 min",
+   "duration": "6 sec",
+   "range": 5
+  },
+  {
+   "key": "mortal_strike",
+   "name": "Mortal Strike",
+   "spec": "Arms",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A vicious strike that deals 120% Weapon Damage plus 169 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+   "iconFile": "ability_warrior_savageblow"
+  },
+  {
+   "key": "overpower",
+   "name": "Overpower",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Instantly overpower the enemy, causing 120% weapon damage.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.",
+   "iconFile": "ability_meleedamage",
+   "costValue": "50",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "5 sec",
+   "duration": "0 sec",
+   "range": 5
+  },
+  {
+   "key": "rend",
+   "name": "Rend",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 7,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Wounds the target causing them to bleed for 185 damage plus an additional ${0.2*5*((0+0)/2+0/14*0)} (based on weapon damage) over 15 sec.",
+   "iconFile": "ability_gouge",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "duration": "15 sec",
+   "range": 5,
+   "scaling": [
+    {
+     "stat": "MWB",
+     "coeff": 1
+    },
+    {
+     "stat": "mwb",
+     "coeff": 1
+    },
+    {
+     "stat": "AP",
+     "coeff": 1
+    },
+    {
+     "stat": "MWS",
+     "coeff": 1
+    }
+   ]
+  },
+  {
+   "key": "retaliation",
+   "name": "Retaliation",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Instantly counterattack any enemy that strikes you in melee for 12 sec.  Melee attacks made from behind cannot be counterattacked.  A maximum of 20 attacks will cause retaliation.",
+   "iconFile": "ability_warrior_challange",
+   "cooldown": "5 min",
+   "duration": "12 sec"
+  },
+  {
+   "key": "shattering_throw",
+   "name": "Shattering Throw",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 1.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Throws your weapon at the enemy causing 12 damage (based on attack power), reducing the armor on the target by 20% for 10 sec or removing any invulnerabilities.",
+   "iconFile": "ability_warrior_shatteringthrow",
+   "costValue": "250",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "5 min",
+   "duration": "10 sec",
+   "range": 30,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.5
+    }
+   ]
+  },
+  {
+   "key": "thunder_clap",
+   "name": "Thunder Clap",
+   "spec": "Arms",
+   "source": "Core",
+   "rank": 6,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Blasts nearby enemies increasing the time between their attacks by 10% for 30 sec and doing 192 damage to them.  Damage increased by attack power.  This ability causes additional threat.",
+   "iconFile": "spell_nature_thunderclap",
+   "costValue": "200",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "6 sec",
+   "duration": "30 sec"
+  },
+  {
+   "key": "battle_shout",
+   "name": "Battle Shout",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 7,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "The warrior shouts, increasing attack power of all raid and party members within 30 yards by 232.  Lasts 15 min.",
+   "iconFile": "ability_warrior_battleshout",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "duration": "15 min"
+  },
+  {
+   "key": "berserker_rage",
+   "name": "Berserker Rage",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "The warrior enters a berserker rage, removing and granting immunity to Fear, Sap and Incapacitate effects and generating extra rage when taking damage.  Lasts 10 sec.",
+   "iconFile": "spell_nature_ancestralguardian",
+   "cooldown": "30 sec",
+   "duration": "10 sec"
+  },
+  {
+   "key": "berserker_stance",
+   "name": "Berserker Stance",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "An aggressive stance.  Critical hit chance is increased by 5% and all damage taken is increased by 3%. Reduces all threat generated by 20%.",
+   "iconFile": "ability_racial_avatar",
+   "cooldown": "1 sec"
+  },
+  {
+   "key": "challenging_shout",
+   "name": "Challenging Shout",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Forces all enemies within 10 yards to focus attacks on you for 6 sec.",
+   "iconFile": "ability_bullrush",
+   "costValue": "50",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "3 min",
+   "duration": "6 sec"
+  },
+  {
+   "key": "cleave",
+   "name": "Cleave",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 5,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A sweeping attack that does your weapon damage plus 50 to the target and his nearest ally.",
+   "iconFile": "ability_warrior_cleave",
+   "costValue": "200",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "range": 5
+  },
+  {
+   "key": "commanding_shout",
+   "name": "Commanding Shout",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Increases maximum health of all party and raid members within 30 yards by 380.  Lasts 15 min.",
+   "iconFile": "ability_warrior_rallyingcry",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "duration": "15 min"
+  },
+  {
+   "key": "demoralizing_shout",
+   "name": "Demoralizing Shout",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 5,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Reduces the melee attack power of all enemies within 10 yards by 146 for 30 sec.",
+   "iconFile": "ability_warrior_warcry",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "duration": "30 sec"
+  },
+  {
+   "key": "enraged_regeneration",
+   "name": "Enraged Regeneration",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "You regenerate 30% of your total health over 10 sec.  This ability requires an Enrage effect, consumes all Enrage effects and prevents any from affecting you for the full duration.",
+   "iconFile": "ability_warrior_focusedrage",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "2 min",
+   "duration": "10 sec"
+  },
+  {
+   "key": "execute",
+   "name": "Execute",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 5,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Attempt to finish off a wounded foe, causing 708 damage and converting each extra point of rage into 15 additional damage (up to a maximum cost of 30 rage).  Only usable on enemies that have less than 20% health.",
+   "iconFile": "inv_sword_48",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "range": 5,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.2
+    }
+   ]
+  },
+  {
+   "key": "heroic_fury",
+   "name": "Heroic Fury",
+   "spec": "Fury",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Removes any Immobilization effects and refreshes the cooldown of your Intercept ability.",
+   "iconFile": "ability_heroicleap"
+  },
+  {
+   "key": "intercept",
+   "name": "Intercept",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Charge an enemy, causing 0 damage (based on attack power) and stunning it for 3 sec.",
+   "iconFile": "ability_rogue_sprint",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "30 sec",
+   "range": 25,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.12
+    }
+   ]
+  },
+  {
+   "key": "intimidating_shout",
+   "name": "Intimidating Shout",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "The warrior shouts, causing up to 5 enemies within 8 yards to cower in fear.  The targeted enemy will be unable to move while cowering.  Lasts 8 sec.",
+   "iconFile": "ability_golemthunderclap",
+   "costValue": "250",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "2 min",
+   "duration": "8 sec",
+   "range": 8
+  },
+  {
+   "key": "pummel",
+   "name": "Pummel",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Pummel the target, interrupting spellcasting and preventing any spell in that school from being cast for 4 sec.",
+   "iconFile": "inv_gauntlets_04",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "10 sec",
+   "duration": "4 sec",
+   "range": 5
+  },
+  {
+   "key": "recklessness",
+   "name": "Recklessness",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Your next 3 special ability attacks have an additional 100% chance to critically hit but all damage taken is increased by 20%.  Lasts 12 sec.",
+   "iconFile": "ability_criticalstrike",
+   "cooldown": "5 min",
+   "duration": "12 sec"
+  },
+  {
+   "key": "single_minded_fury",
+   "name": "Single-Minded Fury",
+   "spec": "Fury",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "When you dual wield one-handed weapons, you deal 5% additional damage and Slam hits with both weapons.",
+   "iconFile": "warrior_talent_icon_singlemindedfury"
+  },
+  {
+   "key": "slam",
+   "name": "Slam",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 5,
+   "school": "Physical",
+   "castTime": 1.5,
+   "gcd": 1.5,
+   "tooltipTemplate": "Slams the opponent, causing weapon damage plus 87.",
+   "iconFile": "ability_warrior_decisivestrike",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "range": 5
+  },
+  {
+   "key": "titans_grip",
+   "name": "Titan's Grip",
+   "spec": "Fury",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Allows you to equip two-handed axes, maces and swords in one hand.  While you have a two-handed weapon equipped in one hand, your physical damage done is reduced by 10%.",
+   "iconFile": "ability_warrior_titansgrip"
+  },
+  {
+   "key": "victory_rush",
+   "name": "Victory Rush",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Instantly attack the target causing 0 damage.  Can only be used within 20 sec after you kill an enemy that yields experience or honor. Damage is based on your attack power.",
+   "iconFile": "ability_warrior_devastate",
+   "range": 5,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.45
+    }
+   ]
+  },
+  {
+   "key": "whirlwind",
+   "name": "Whirlwind",
+   "spec": "Fury",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "In a whirlwind of steel you attack up to 4 enemies within 8 yards, causing weapon damage from both melee weapons to each enemy.",
+   "iconFile": "ability_whirlwind",
+   "costValue": "250",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "10 sec"
+  },
+  {
+   "key": "bloodrage",
+   "name": "Bloodrage",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Generates 20 rage at the cost of health, and then generates an additional 10 rage over 10 sec.",
+   "iconFile": "ability_racial_bloodrage",
+   "costValue": "0.16",
+   "costUnit": "percent",
+   "costPower": "health",
+   "cooldown": "1 min"
+  },
+  {
+   "key": "defensive_stance",
+   "name": "Defensive Stance",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "A defensive combat stance.  Decreases damage taken by 10% and damage caused by 5%.  Increases threat generated.",
+   "iconFile": "ability_warrior_defensivestance",
+   "cooldown": "1 sec"
+  },
+  {
+   "key": "devastate",
+   "name": "Devastate",
+   "spec": "Protection",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Sunder the target's armor causing the Sunder Armor effect.  In addition, causes 120% of weapon damage plus 58 for each application of Sunder Armor on the target.  The Sunder Armor effect can stack up to 5 times.",
+   "iconFile": "inv_sword_11"
+  },
+  {
+   "key": "disarm",
+   "name": "Disarm",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Disarm the enemy's main hand and ranged weapons for 10 sec.",
+   "iconFile": "ability_warrior_disarm",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "1 min",
+   "duration": "10 sec",
+   "range": 5
+  },
+  {
+   "key": "intervene",
+   "name": "Intervene",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Run at high speed towards a party member, intercepting the next melee or ranged attack made against them as well as reducing their total threat by 10%.",
+   "iconFile": "ability_warrior_victoryrush",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "30 sec",
+   "duration": "10 sec",
+   "range": 25
+  },
+  {
+   "key": "revenge",
+   "name": "Revenge",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 6,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Instantly counterattack an enemy for 723 to 883 damage.   Revenge is only usable after the warrior blocks, dodges or parries an attack.",
+   "iconFile": "ability_warrior_revenge",
+   "costValue": "50",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "5 sec",
+   "range": 5,
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.31
+    },
+    {
+     "stat": "AP",
+     "coeff": 0.31
+    }
+   ]
+  },
+  {
+   "key": "shield_bash",
+   "name": "Shield Bash",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Bash the target with your shield dazing them and interrupting spellcasting, which prevents any spell in that school from being cast for 6 sec.",
+   "iconFile": "ability_warrior_shieldbash",
+   "costValue": "100",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "12 sec",
+   "duration": "6 sec",
+   "range": 5
+  },
+  {
+   "key": "shield_block",
+   "name": "Shield Block",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Increases your chance to block and block value by 100% for 10 sec.",
+   "iconFile": "ability_defend",
+   "cooldown": "1 min",
+   "duration": "10 sec"
+  },
+  {
+   "key": "shield_slam",
+   "name": "Shield Slam",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 4,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Slam the target with your shield, causing 447 to 469 damage, modified by your shield block value, and dispels 1 magic effect on the target.  Also causes a high amount of threat.",
+   "iconFile": "inv_shield_05",
+   "costValue": "200",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "6 sec",
+   "range": 5
+  },
+  {
+   "key": "shield_wall",
+   "name": "Shield Wall",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Reduces all damage taken by 60% for 12 sec.",
+   "iconFile": "ability_warrior_shieldwall",
+   "cooldown": "5 min",
+   "duration": "12 sec"
+  },
+  {
+   "key": "shockwave",
+   "name": "Shockwave",
+   "spec": "Protection",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Sends a wave of force in front of the warrior, causing 0 damage (based on attack power) and stunning all enemy targets within 10 yards in a frontal cone for 4 sec.",
+   "iconFile": "ability_warrior_shockwave",
+   "scaling": [
+    {
+     "stat": "AP",
+     "coeff": 0.75
+    }
+   ]
+  },
+  {
+   "key": "spell_reflection",
+   "name": "Spell Reflection",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Raise your shield, reflecting the next spell cast on you.  Lasts 5 sec.",
+   "iconFile": "ability_warrior_shieldreflection",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "cooldown": "10 sec",
+   "duration": "5 sec"
+  },
+  {
+   "key": "sunder_armor",
+   "name": "Sunder Armor",
+   "spec": "Protection",
+   "source": "Core",
+   "rank": 1,
+   "school": "Physical",
+   "castTime": 0,
+   "gcd": 1.5,
+   "tooltipTemplate": "Sunders the target's armor, reducing it by 4% per Sunder Armor and causes a high amount of threat.  Threat increased by attack power.  Can be applied up to 5 times.  Lasts 30 sec.",
+   "iconFile": "ability_warrior_sunder",
+   "costValue": "150",
+   "costUnit": "flat",
+   "costPower": "rage",
+   "range": 5
+  },
+  {
+   "key": "vigilance",
+   "name": "Vigilance",
+   "spec": "Protection",
+   "source": "Talent",
+   "rank": 1,
+   "school": null,
+   "castTime": 0,
+   "gcd": 0,
+   "tooltipTemplate": "Focus your protective gaze on a group or raid target, reducing their damage taken by 3% and transfers 10% of the threat they cause to you.  In addition, each time they are hit by an attack your Taunt cooldown is refreshed.  Lasts 30 min.  This effect can only be on one target at a time.",
+   "iconFile": "ability_warrior_vigilance"
+  }
+ ]
+}

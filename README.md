@@ -1,19 +1,30 @@
-# Ascension Classic+ Talent Calculator
+# Ascension Talent Calculator — Bronzebeard (Warcraft Reborn)
 
-Interactive talent calculator for the [Ascension](https://ascension.gg) Classic+/Warcraft Reforged realm. One class-agnostic engine (`index.html`) renders any class from a data file.
+Interactive talent calculator for the [Ascension](https://ascension.gg) Bronzebeard realm. One class-agnostic engine (`index.html`) renders any class from a data file.
+
+All talents, abilities, Mystic Enchants, tooltips, icons and tree art come from the Ascension game client, extracted by the local datamine (`_asc_extract`, not in this repo). Only the generated runtime files are committed here.
 
 ## Structure
 
 ```
-index.html            engine — loads data/<class>.json, renders everything from it
-data/<class>.json     generated class data (talents, layout, tree colors)
-assets/icons/...      talent + background art per class
+index.html              engine — loads data/<class>.json, renders everything from it
+data/<class>.json       generated class data (talents, layout, trees, enchants, abilities)
+data/classes.json       class picker list
+assets/game/<class>/    generated icons + tree backgrounds
 tools/
-  build-class-data.mjs   CSV → JSON converter (source CSVs live in the
-                         ascension-theorycraft skill; run after any CSV change)
-  encode-build.mjs       allocation → shareable ?build= URL
-  class-meta.json        tree accent colors per class
+  build-class-data.mjs  extract → data/<class>.json + assets/game/<class>/
+  class-meta.json       tree accent colours (site styling)
+  build-index.mjs       validates builds/ and writes builds/index.json
+  encode-build.mjs      allocation → shareable ?build= URL
 ```
+
+## Updating the data
+
+1. In `_asc_extract`: `python tools/extract_mpq.py dbc …` then `python tools/export_bronzebeard.py` (see its CONTEXT_MAP.md).
+2. Here: `node tools/build-class-data.mjs --all` (or one class slug). It fails on any missing icon, label or broken reference.
+3. `node tools/build-index.mjs` to re-validate saved builds.
+
+The extract path defaults to `../_asc_extract`; override with `--extract <dir>` or `ASC_EXTRACT`.
 
 ## URLs
 
@@ -41,20 +52,11 @@ gates, enchant slot rarities, and that each enchant's requirements hold
 against the build's own talents) and regenerates `builds/index.json`, which
 feeds the site's "Load a build…" dropdown.
 
-## Adding a class
-
-1. Author `references/data/<class>/talents.csv` + `talents-layout.csv` in the
-   theorycraft skill (see the skill's SKILL.md for the schema).
-2. Add the class's tree accent colors to `tools/class-meta.json`.
-3. `node tools/build-class-data.mjs <class>` — validates and emits the JSON.
-4. Copy `assets/icons/<class>/talents` + `backgrounds` into `assets/icons/<class>/`.
-
-## Publishing a build from a theorycraft session
+## Publishing a build
 
 ```
 node tools/encode-build.mjs warlock "Improved Curse of Agony=2" haunt=1 ...
 ```
 
 Validates point caps, prereqs, and row gates, then prints the URL fragment to
-append to the site address. Build files in the skill can link straight to a
-fully-allocated calculator view.
+append to the site address.

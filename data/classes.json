@@ -3,43 +3,43 @@
   "slug": "warrior",
   "name": "Warrior",
   "accent": "#C69B3A",
-  "available": false
+  "available": true
  },
  {
   "slug": "paladin",
   "name": "Paladin",
   "accent": "#F48CBA",
-  "available": false
+  "available": true
  },
  {
   "slug": "hunter",
   "name": "Hunter",
   "accent": "#AAD372",
-  "available": false
+  "available": true
  },
  {
   "slug": "rogue",
   "name": "Rogue",
   "accent": "#FFF468",
-  "available": false
+  "available": true
  },
  {
   "slug": "priest",
   "name": "Priest",
   "accent": "#CDCDCD",
-  "available": false
+  "available": true
  },
  {
   "slug": "shaman",
   "name": "Shaman",
   "accent": "#0070DD",
-  "available": false
+  "available": true
  },
  {
   "slug": "mage",
   "name": "Mage",
   "accent": "#3FC7EB",
-  "available": false
+  "available": true
  },
  {
   "slug": "warlock",
@@ -51,6 +51,6 @@
   "slug": "druid",
   "name": "Druid",
   "accent": "#FF7C0A",
-  "available": false
+  "available": true
  }
 ]

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Talent Calculator | Ascension Classic+</title>
+<title>Talent Calculator | Ascension Bronzebeard</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -927,7 +927,7 @@ body {
   <div class="calc-header">
     <div>
       <div class="calc-title" id="calc-title">&nbsp;</div>
-      <div class="calc-subtitle">Talent Calculator — Ascension Classic+</div>
+      <div class="calc-subtitle">Talent Calculator — Ascension Bronzebeard</div>
       <a class="class-back" id="class-back" href=".">← All Classes</a>
     </div>
     <div class="header-right" id="header-right">
@@ -1215,7 +1215,7 @@ function buildEnchRow(e) {
 
 // ─── SUMMARY TAB — ability-first cards ───────────────────────────────────────
 function getAbilityIconSrc(a) {
-  return `assets/icons/${DATA.slug}/abilities/${a.iconFile || a.key}.jpg`;
+  return `assets/game/${DATA.slug}/abilities/${a.iconFile || a.key}.jpg`;
 }
 
 function getAbilityTooltip(a) {
@@ -1597,7 +1597,7 @@ const slotEls = [];
 let enchByKey = {};
 
 function enchIconSrc(e) {
-  return `assets/icons/${DATA.slug}/mystic-enchants/${e.iconFile || e.key}.jpg`;
+  return `assets/game/${DATA.slug}/mystic-enchants/${e.iconFile || e.key}.jpg`;
 }
 
 function buildEnchantBoard() {
@@ -1859,7 +1859,7 @@ async function initBuildList(slug) {
 
 // ─── CLASS PICKER ────────────────────────────────────────────────────────────
 async function showClassPicker() {
-  document.getElementById('calc-title').textContent = 'Ascension Classic+';
+  document.getElementById('calc-title').textContent = 'Ascension Bronzebeard';
   document.getElementById('header-right').style.display = 'none';
   document.getElementById('tab-bar').style.display = 'none';
   document.querySelector('.interact-hint').style.display = 'none';
@@ -1887,7 +1887,7 @@ async function showClassPicker() {
 
 // ─── UI CONSTRUCTION FROM CLASS DATA ─────────────────────────────────────────
 function buildStaticUI() {
-  document.title = `${DATA.class} — Talent Calculator | Ascension Classic+`;
+  document.title = `${DATA.class} — Talent Calculator | Ascension Bronzebeard`;
   document.getElementById('calc-title').textContent = DATA.class;
   document.getElementById('class-back').style.display = 'block';
   document.getElementById('pts-denom').textContent = ` / ${POINT_CAP}`;
@@ -1977,7 +1977,7 @@ function buildStaticUI() {
   T = DATA.talents;
   LAYOUT = DATA.layout;
   TREE_NAMES = DATA.trees.map(t => t.name);
-  ICON_BASE = `assets/icons/${DATA.slug}/talents/`;
+  ICON_BASE = `assets/game/${DATA.slug}/talents/`;
   POINT_CAP = DATA.pointCap || 51;
   enchByKey = Object.fromEntries((DATA.enchants || []).map(e => [e.key, e]));
 
