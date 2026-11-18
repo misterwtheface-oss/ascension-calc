@@ -1,4 +1,4 @@
-/* Ascension talent calculator — mobile first (base = phone), wide layout from 1000px.
+/* Ascension talent calculator — sans-serif only (rule A-sans-serif); mobile first (base = phone), wide layout from 1000px.
    Palette: every colour lives here; tree accents arrive from class data as --acc. */
 :root {
   --bg: #060810;
@@ -21,10 +21,7 @@
   --q-legendary: #ff8000;
   --q-epic: #a335ee;
   --q-rare: #0070dd;
-  --serif: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
-  --body-serif: Georgia, serif;
   --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --mono: 'Courier New', Courier, monospace;
   /* talent cell: fits a whole tree on one phone screen (width and height), never below a 40px tap target */
   --cell: clamp(40px, min(calc((100vw - 40px) / 4.45), calc((100dvh - 150px) / 13.4)), 60px);
   --board: min(360px, calc(100vw - 24px), calc(100dvh - 150px));
@@ -40,6 +37,7 @@ body {
   background-attachment: fixed;
   color: var(--text-dim);
   font-family: var(--sans);
+  font-variant-numeric: tabular-nums;   /* rule A-sans-serif: aligned numbers without a monospace */
   -webkit-font-smoothing: antialiased;
   min-height: 100dvh;
   overflow-x: hidden;
@@ -61,18 +59,18 @@ img { display: block; }
 }
 .cls-btn {
   display: flex; align-items: center; gap: 6px;
-  font-family: var(--serif); font-size: clamp(17px, 4.6vw, 22px); letter-spacing: 0.12em; text-transform: uppercase;
+  font-size: clamp(17px, 4.6vw, 22px); letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--cls, var(--text)); padding: 6px 4px; min-height: 40px;
 }
 .cls-btn .caret { font-size: 11px; color: var(--muted); letter-spacing: 0; }
-.pts { margin-left: auto; font-family: var(--mono); font-size: 20px; color: var(--acc); white-space: nowrap; }
+.pts { margin-left: auto; font-size: 20px; color: var(--acc); white-space: nowrap; }
 .pts small { font-size: 14px; color: var(--faint); }
 .tb-btn {
   min-height: 40px; min-width: 40px; padding: 0 10px;
   border: 1px solid var(--line); border-radius: 6px; color: var(--text-dim); font-size: 13px; font-weight: 600;
 }
 .tb-btn:hover { border-color: var(--acc); color: var(--text); }
-.tb-title { font-family: var(--serif); font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); padding: 8px 4px; }
+.tb-title { font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); padding: 8px 4px; }
 
 /* ── Tree switcher (phone) / tree headers (wide) ─── */
 .switcher {
@@ -86,7 +84,7 @@ img { display: block; }
   --sacc: var(--brass);
 }
 .seg-name { font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.seg-val { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.seg-val { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
 .seg.active { border-color: color-mix(in srgb, var(--sacc) 45%, transparent); background: var(--surface); }
 .seg.active .seg-name { color: var(--sacc); }
 .seg.active .seg-val { color: var(--text-dim); }
@@ -145,7 +143,7 @@ img { display: block; }
 }
 .tal .cnt {
   position: absolute; right: 7%; bottom: 6%;
-  font-family: var(--mono); font-size: clamp(10px, calc(var(--cell) * 0.2), 12px); font-weight: bold; line-height: 1;
+  font-size: clamp(10px, calc(var(--cell) * 0.2), 12px); font-weight: bold; line-height: 1;
   color: #808080; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
   pointer-events: none;
 }
@@ -177,7 +175,7 @@ img { display: block; }
 .class-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; padding: 4px 0; }
 .class-card {
   min-height: 52px; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface);
-  font-family: var(--serif); font-size: 16px; color: var(--cls); text-align: left;
+  font-size: 16px; color: var(--cls); text-align: left;
 }
 .class-card.current { border-color: var(--cls); }
 @media (hover: hover) { .class-card:hover { border-color: var(--cls); box-shadow: 0 0 14px color-mix(in srgb, var(--cls) 25%, transparent); } }
@@ -199,7 +197,7 @@ img { display: block; }
   padding: 8px 8px 8px 14px; border-bottom: 1px solid var(--line-soft); background: var(--surface-2);
 }
 .ovl-full .ovl-head { padding-top: calc(8px + env(safe-area-inset-top)); }
-.ovl-head h2 { flex: 1; font-family: var(--serif); font-weight: normal; font-size: 17px; color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ovl-head h2 { flex: 1; font-weight: normal; font-size: 17px; color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ovl-head .head-icon { width: 34px; height: 34px; border-radius: 7px; border: 2px solid var(--line); }
 .ovl-x { min-width: 40px; min-height: 40px; font-size: 18px; color: var(--muted); border-radius: 6px; }
 .ovl-x:hover { color: var(--text); }
@@ -218,11 +216,11 @@ img { display: block; }
 @media (hover: hover) { .btn:not(:disabled):hover { border-color: var(--text-dim); } }
 
 /* ── Info blocks (shared by hover tooltip, talent sheet, enchant detail) ── */
-.info-name { font-family: var(--serif); font-size: 15px; color: var(--text); margin-bottom: 2px; }
-.info-rank { font-family: var(--mono); font-size: 12px; color: var(--acc); margin-bottom: 7px; }
-.info-body { font-family: var(--body-serif); font-size: 14px; line-height: 1.55; color: var(--text-dim); white-space: pre-wrap; }
+.info-name { font-size: 15px; color: var(--text); margin-bottom: 2px; }
+.info-rank { font-size: 12px; color: var(--acc); margin-bottom: 7px; }
+.info-body { font-size: 14px; line-height: 1.55; color: var(--text-dim); white-space: pre-wrap; }
 .info-next { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line-soft); }
-.info-next-label { font-family: var(--mono); font-size: 11px; color: var(--acc); opacity: 0.75; margin-bottom: 4px; }
+.info-next-label { font-size: 11px; color: var(--acc); opacity: 0.75; margin-bottom: 4px; }
 .info-next .info-body { color: var(--muted); font-size: 13px; }
 .info-lines { margin-top: 9px; font-size: 12px; line-height: 1.5; }
 .ln-bad { color: var(--red); }
@@ -277,25 +275,25 @@ img { display: block; }
 .sec-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 8px; }
 .notes {
   min-height: 44px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg);
-  font-family: var(--body-serif); font-size: 14px; line-height: 1.6; color: var(--text-dim); outline: none;
+  font-size: 14px; line-height: 1.6; color: var(--text-dim); outline: none;
   white-space: pre-wrap; word-break: break-word;
 }
 .notes:focus { border-color: var(--acc); }
 .tree-sum { border: 1px solid var(--line-soft); border-radius: 6px; padding: 10px 12px; margin-bottom: 8px; background: var(--bg); }
 .tree-sum-head { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 32px; text-align: left; }
 .tree-sum-head .nm { font-size: 14px; font-weight: 600; color: var(--sacc); }
-.tree-sum-head .val { font-family: var(--mono); font-size: 16px; color: var(--text); }
+.tree-sum-head .val { font-size: 16px; color: var(--text); }
 .row { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; padding: 7px 0; }
 .row + .row { border-top: 1px solid var(--line-soft); }
 .row-ic { flex: 0 0 38px; width: 38px; height: 38px; border-radius: 8px; border: 2px solid var(--sacc, var(--line)); object-fit: cover; }
 .row-ic.round { border-radius: 50%; border-color: var(--q); }
 .row-main { flex: 1; min-width: 0; }
 .row-name { font-size: 13px; font-weight: 600; color: var(--text); }
-.row-rank { font-family: var(--mono); font-size: 12px; font-weight: bold; color: var(--green); margin-left: 6px; }
+.row-rank { font-size: 12px; font-weight: bold; color: var(--green); margin-left: 6px; }
 .row-rank.maxed { color: var(--gold); }
 [data-tree-bar] { display: contents; }
 .info-lines { display: block; }
-.row-body { display: block; font-family: var(--body-serif); font-size: 13px; line-height: 1.5; color: var(--text-dim); margin-top: 2px; white-space: pre-wrap; }
+.row-body { display: block; font-size: 13px; line-height: 1.5; color: var(--text-dim); margin-top: 2px; white-space: pre-wrap; }
 .quiet { color: var(--faint); font-size: 13px; }
 
 .abl-add { display: flex; gap: 8px; margin-bottom: 10px; }
@@ -316,7 +314,7 @@ img { display: block; }
 .abl-ctl .rm.armed { color: var(--red); background: rgba(192, 80, 58, 0.12); }
 @media (hover: hover) { .abl-ctl button:not(:disabled):hover { color: var(--text); } }
 .tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
-.tag { font-family: var(--mono); font-size: 11px; padding: 1px 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.tag { font-size: 11px; padding: 1px 5px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
 .tag.school-shadow { color: #9070c0; } .tag.school-fire { color: #c87a48; } .tag.school-nature { color: #5aa85a; }
 .tag.school-holy { color: #c8b070; } .tag.school-frost { color: #69b4e0; } .tag.school-arcane { color: #c890e8; }
 .abl-card .row-body { margin-top: 8px; }
@@ -332,7 +330,7 @@ img { display: block; }
 .menu-item .sub { font-size: 12px; color: var(--muted); }
 .menu-actions { display: flex; gap: 8px; margin-top: 14px; }
 
-.err-banner { position: fixed; left: 8px; right: 8px; bottom: 8px; z-index: 2000; padding: 8px 10px; border-radius: 6px; background: #3a0d0d; color: #ffb4a8; font: 12px var(--mono); }
+.err-banner { position: fixed; left: 8px; right: 8px; bottom: 8px; z-index: 2000; padding: 8px 10px; border-radius: 6px; background: #3a0d0d; color: #ffb4a8; font-size: 12px; }
 .load-error { color: var(--red); text-align: center; padding: 40px 12px; font-size: 14px; }
 .exit-toast {
   position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 3000;

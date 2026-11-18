@@ -11,7 +11,7 @@
 
   BUILD is stamped by tools/app/stamp_cache.py (data build + pre-commit hook).
 */
-const BUILD = "da9e5154";
+const BUILD = "73aee8c4";
 const SHELL = `ascbc-shell-${BUILD}`;
 const ASSETS = "ascbc-assets";
 const KEEP = new Set([SHELL, ASSETS]);
